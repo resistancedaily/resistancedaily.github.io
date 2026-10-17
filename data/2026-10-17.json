@@ -1,0 +1,246 @@
+{
+ "date": "2026-10-17",
+ "date_long": "Sat 17 Oct 2026",
+ "date_short": "Sat 17 Oct",
+ "window": "Fri 09:00 → Sat 14:30 IST",
+ "acts": [
+  [
+   "Check your voter entry",
+   "voters.eci.gov.in · Form 6 to re-enrol"
+  ],
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "detained Fri",
+   "headline": "Delhi police detain youth movement founder",
+   "text": "Police detained Abhijeet Dipke before a Connaught Place rally and arrested him to prevent a breach of the peace; he was due before a magistrate on Saturday. Student leader Neha Bora, detained the same day, was released, and Delhi Police had not responded to Reuters.",
+   "src": [
+    [
+     "Reuters via Prothom Alo",
+     "https://en.prothomalo.com/international/india/sk02eliqzl"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/16/indian-police-launch-new-delhi-clampdown-for-cockroach-party-rally"
+    ]
+   ],
+   "lead": true
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "Claims",
+   "figcap": "of assault",
+   "headline": "Protesters allege police violence in Delhi",
+   "text": "A Kerala activist says Delhi Police assaulted him, damaging his eardrum, and women's groups marched to police headquarters over alleged harassment at protests. These are allegations and no police response was found; India's government called a UN expert's report on youth retaliation 'hearsay'.",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/kerala/eardrum-damaged-after-assault-kerala-activist-recounts-delhi-police-violence"
+    ],
+    [
+     "The Statesman",
+     "https://www.thestatesman.com/cities/delhi/women-will-not-be-silenced-protesters-march-to-delhi-police-hq-over-sexual-harassment-allegations-1503652118.html"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/india-rejects-report-by-un-human-rights-expert-that-says-indian-youth-face-retaliation-terms-claims-as-hearsay/article71595548.ece"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Vijayawada, Andhra Pradesh",
+   "short": "Andhra Pradesh",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "red",
+   "fig": "₹25 lakh",
+   "figcap": "compensation",
+   "headline": "Court orders CBI probe into custodial death",
+   "text": "The Andhra Pradesh High Court ordered a CBI investigation into the death of gig worker Gade Sai Krishna, 25, and compensation for his mother. A state-appointed SIT had alleged he died of police torture in May; the court also ordered disciplinary proceedings against the officers.",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/andhra-pradesh/gade-sai-krishna-custodial-death-andhra-pradesh-high-court-directs-cbi-probe"
+    ],
+    [
+     "New Indian Express",
+     "https://www.newindianexpress.com/amp/story/states/andhra-pradesh/2026/Oct/17/andhra-hc-orders-cbi-probe-into-sai-krishnas-death"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Ukhrul–Kangpokpi, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "~100",
+   "figcap": "killed in 2026",
+   "headline": "Kuki–Naga violence deepens in Manipur hills",
+   "text": "ACLED data cited by NDTV counts nearly 100 deaths in 300+ incidents from 1 January to 10 October, including 19 in September. Kuki and Naga groups blame each other; accused groups deny involvement and no official inquiry has fixed responsibility.",
+   "src": [
+    [
+     "NDTV",
+     "https://www.ndtv.com/india-news/kuki-naga-clashes-shift-manipur-violence-to-new-hill-districts-12196144"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "india",
+   "place": "Upper Siang, Arunachal",
+   "short": "Siang",
+   "rights": [
+    "Assembly",
+    "Due process",
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "4",
+   "figcap": "still held",
+   "headline": "Four remain jailed over Siang dam protests",
+   "text": "A sessions court gave interim protection from arrest to 13 people named in two cases over the Siang dam protests, while four remain in custody under the state's anti-terror law. The state government's position was not given in the report.",
+   "src": [
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+    ],
+    [
+     "Mongabay India",
+     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Nyala, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "30",
+   "figcap": "killed",
+   "headline": "Drone strike kills 30 at Darfur market",
+   "text": "A drone strike on a cattle market in Nyala killed 30 people and wounded 47 as fighting between the army and the RSF intensifies. The UN has urged an end to drone attacks on civilians; reports seen do not establish who launched the strike.",
+   "src": [
+    [
+     "The New Arab",
+     "https://www.newarab.com/news/drone-strike-kills-30-cattle-market-sudans-darfur"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168612"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "67%",
+   "figcap": "food insecure",
+   "headline": "Deaths continue in Gaza as hunger deepens",
+   "text": "Local reports say Israeli strikes and fire killed five people on Friday and at least one on Saturday. Gaza's Health Ministry calls malnutrition catastrophic, and about 67% of people face crisis-level food insecurity or worse; Israeli military comment was not in these reports.",
+   "src": [
+    [
+     "Anadolu",
+     "https://aa.com.tr/en/middle-east/1-palestinian-killed-others-injured-in-israeli-drone-strike-in-gaza/4091665"
+    ],
+    [
+     "IMEMC",
+     "https://imemc.org/article/israeli-army-kills-five-palestinians-in-gaza-3/"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/16/gaza-malnutrition-and-starvation-at-catastrophic-levels-health-ministry"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Baku, Azerbaijan",
+   "short": "Azerbaijan",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "37–200+",
+   "figcap": "detained, one day",
+   "headline": "Hijab-ban protesters detained in Azerbaijan",
+   "text": "Amnesty says peaceful protesters against a school hijab ban were detained and an activist offering online lessons to affected girls is missing. The Interior Ministry reported 37 detentions in Baku on one day; activists reported more than 200.",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/azerbaijan-stop-denying-access-to-education-through-discriminatory-hijab-restrictions-and-release-peaceful-protesters/"
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Jos, Nigeria",
+   "short": "Nigeria",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "12",
+   "figcap": "days held",
+   "headline": "Journalist held incommunicado by Nigerian Army",
+   "text": "Amnesty says its member, journalist Lawrence Zongo, has been held incommunicado in military detention in Jos since 5 October. The Army says he entered a restricted military facility without clearance while wearing camera-equipped glasses.",
+   "src": [
+    [
+     "Daily Post",
+     "https://dailypost.ng/2026/10/17/why-we-arrested-amnesty-international-reporter-nigerian-army/"
+    ]
+   ]
+  }
+ ]
+}

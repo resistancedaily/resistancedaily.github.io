@@ -1,0 +1,11 @@
+{"india":[
+{"n":1,"lon":77.2,"lat":28.6,"sev":"orange","label":"Delhi","left":true},
+{"n":2,"lon":77.2,"lat":28.6,"sev":"orange","dx":30,"dy":22},
+{"n":3,"lon":80.6,"lat":16.5,"sev":"red","label":"Vijayawada","pos":"br"},
+{"n":4,"lon":94.0,"lat":25.0,"sev":"red","label":"Manipur","pos":"br"},
+{"n":5,"lon":95.0,"lat":28.6,"sev":"orange","label":"Siang","left":true}],
+"world":[
+{"n":6,"lon":24.9,"lat":12.05,"sev":"red","label":"Sudan","pos":"br"},
+{"n":7,"lon":34.4,"lat":31.4,"sev":"red","label":"Gaza","left":true},
+{"n":8,"lon":49.9,"lat":40.4,"sev":"orange","label":"Azerbaijan"},
+{"n":9,"lon":8.9,"lat":9.9,"sev":"orange","label":"Nigeria"}]}
