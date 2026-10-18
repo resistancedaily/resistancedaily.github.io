@@ -2,16 +2,181 @@
  "note": "Still Waiting case list, carried forward weekly. Verify each case every Sunday. Keep a balance of India and World cases (aim for at least as many World cases as India cases, across regions: Africa, Middle East, Asia, Europe, Americas).",
  "asof": "2026-10-18",
  "cases": [
-  {"region":"india","name":"Umar Khalid","where":"Delhi","since":"2020-09-13","law":"UAPA","status":"No trial yet; bail denied 30 Sep 2026","src":["CIVICUS","https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"]},
-  {"region":"india","name":"Srishti Gupta","where":"Noida","since":"2026-04-11","law":"11 cases","status":"In prison","src":["CIVICUS","https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"]},
-  {"region":"india","name":"Pranab Doley","where":"Kaziranga, Assam","since":"2026-07-12","law":"NSA","status":"High Court petition pending","src":["Assam Tribune","https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"]},
-  {"region":"india","name":"Siang protesters (4+)","where":"Upper Siang, Arunachal","since":"2026-10-09","law":"State UAPA","status":"Release is a condition for talks","src":["Mongabay India","https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"]},
-  {"region":"world","name":"Dawit Isaak","where":"Eritrea","since":"2001-09-23","law":"No charge, no trial","status":"Journalist; no proof of life given to family","src":["Raoul Wallenberg Centre","https://www.raoulwallenbergcentre.org/en/news/2026-05-15"]},
-  {"region":"world","name":"Abdulhadi Al-Khawaja","where":"Bahrain","since":"2011-04-09","law":"Life sentence (2011)","status":"Human rights defender; serving life term","src":["ADHRB","https://www.adhrb.org/2026/01/fourteen-years-of-silence-bahrain-must-release-abdulhadi-al-khawaja/"]},
-  {"region":"world","name":"Osman Kavala","where":"Türkiye","since":"2017-10-18","law":"Aggravated life sentence","status":"Retrial refused; European Court of Human Rights has ruled for release","src":["Turkish Minute","https://www.turkishminute.com/2026/10/16/kavala-says-turkish-courts-refusal-to-grant-retrial-damages-judiciarys-credibility/amp/"]},
-  {"region":"world","name":"Jimmy Lai","where":"Hong Kong","since":"2020-12-03","law":"National security law","status":"Sentenced to 20 years in Feb 2026; aged 78","src":["Hong Kong Free Press","https://hongkongfp.com/2026/09/24/prison-authorities-accuse-anti-china-figures-of-fabricating-lies-after-us-group-says-guards-rehearsed-jimmy-lais-death/"]},
-  {"region":"world","name":"Aung San Suu Kyi","where":"Myanmar","since":"2021-02-01","law":"Military detention since coup","status":"Aged 81; no public access","src":["Eurasia Review","https://www.eurasiareview.com/12102026-the-enduring-daw-aung-san-suu-kyi-factor-in-myanmar-politics-analysis/"]},
-  {"region":"world","name":"Dr Hussam Abu Safiya","where":"Gaza → Israeli custody","since":"2024-12-27","law":"No charge, no trial","status":"Hospital director; Israel alleges Hamas links, which family denies","src":["Anadolu","https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"]},
-  {"region":"world","name":"Detainees held by the RSF","where":"El Geneina, Sudan","since":"2025-10-26","count":"6,500+","countcap":"people held, incl. ~500 children","law":"Armed group detention","status":"Doctors report food shortages and rising deaths","src":["Sudan Tribune","https://sudantribune.com/article/320004"]}
+  {
+   "region": "india",
+   "name": "Umar Khalid",
+   "where": "Delhi",
+   "since": "2020-09-13",
+   "law": "UAPA",
+   "status": "Third bail plea rejected by Delhi High Court, 30 Sep 2026; trial has not begun",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Delhi/2020-delhi-riots-case-delhi-high-court-refuses-bail-to-umar-khalid-and-sharjeel-imam/article71527250.ece"
+    ],
+    [
+     "Citizens for Justice and Peace",
+     "https://cjp.org.in/six-years-without-a-trial-the-umar-khalid-case-and-indias-criminal-justice-system/"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Srishti Gupta",
+   "where": "Noida",
+   "since": "2026-04-11",
+   "law": "11 cases filed by UP Police",
+   "status": "No bail yet in 2 of the 11 cases; police chargesheet calls her a 'key conspirator'",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest/"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Pranab Doley",
+   "where": "Kaziranga, Assam",
+   "since": "2026-07-12",
+   "law": "NSA (detention order 30 Jul 2026)",
+   "status": "Held under NSA after getting bail; High Court has asked the state to respond. Govt cites public order",
+   "src": [
+    [
+     "Assam Tribune",
+     "https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Siang dam protesters (4)",
+   "where": "Upper Siang, Arunachal",
+   "since": "2026-10-09",
+   "law": "Arunachal Pradesh UAPA, 2014",
+   "status": "Protesters demand release; state says detainees must file representations",
+   "src": [
+    [
+     "Mongabay India",
+     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dawit Isaak",
+   "where": "Eritrea",
+   "since": "2001-09-23",
+   "law": "No charge, no trial",
+   "status": "Journalist; held incommunicado, no access to family",
+   "src": [
+    [
+     "RSF",
+     "https://rsf.org/en/silence-no-longer-option-133-journalists-around-world-mobilise-dawit-isaak-and-his-colleagues"
+    ],
+    [
+     "CPJ",
+     "https://cpj.org/data/people/dawit-isaak/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Abdulhadi Al-Khawaja",
+   "where": "Bahrain",
+   "since": "2011-04-09",
+   "law": "Life sentence (2011)",
+   "status": "Human rights defender; serving life sentence. Bahrain has refused release",
+   "src": [
+    [
+     "Tom Lantos HR Commission",
+     "https://humanrightscommission.house.gov/DFP/Countries/Bahrain/Abdulhadi-al-Khawaja"
+    ],
+    [
+     "ADHRB",
+     "https://www.adhrb.org/2026/01/fourteen-years-of-silence-bahrain-must-release-abdulhadi-al-khawaja/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Osman Kavala",
+   "where": "Türkiye",
+   "since": "2017-10-18",
+   "law": "Aggravated life sentence",
+   "status": "Istanbul court refused release and retrial (Oct 2026) despite European Court of Human Rights ruling for release",
+   "src": [
+    [
+     "ICJ",
+     "https://www.icj.org/turkey-re-arrest-of-osman-kavala-immediately-after-his-acquittal-is-a-travesty-of-justice/"
+    ],
+    [
+     "Turkish Minute",
+     "https://www.turkishminute.com/2026/10/16/kavala-says-turkish-courts-refusal-to-grant-retrial-damages-judiciarys-credibility/amp/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Jimmy Lai",
+   "where": "Hong Kong",
+   "since": "2020-12-31",
+   "law": "National security law",
+   "status": "Sentenced to 20 years in Feb 2026; aged 78. Authorities say the law restored stability",
+   "src": [
+    [
+     "Hong Kong Free Press",
+     "https://hongkongfp.com/2026/02/09/breaking-jimmy-lai-jailed-for-20-years-in-hong-kong-after-nat-security-conviction/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Aung San Suu Kyi",
+   "where": "Myanmar",
+   "since": "2021-02-01",
+   "law": "Military detention since coup",
+   "status": "Still detained; recent ICRC meeting in Naypyidaw; concern over her health",
+   "src": [
+    [
+     "Eurasia Review (ISEAS)",
+     "https://www.eurasiareview.com/12102026-the-enduring-daw-aung-san-suu-kyi-factor-in-myanmar-politics-analysis/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dr Hussam Abu Safiya",
+   "where": "Gaza → Israeli custody",
+   "since": "2024-12-27",
+   "law": "No charge, no trial",
+   "status": "Hospital director; Israel alleges Hamas links, which family denies",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/07/israel-opt-fears-mounting-for-arbitrarily-detained-palestinian-doctor-hussam-abu-safiya-amidst-reports-his-life-is-in-grave-danger/"
+    ],
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Detainees held by the RSF",
+   "where": "El Geneina, Sudan",
+   "since": "2025-10-26",
+   "count": "6,500+",
+   "countcap": "people held, incl. ~500 children",
+   "law": "Armed group detention",
+   "status": "Sudan Doctors Network reports food shortages and rising deaths; no RSF response reported",
+   "src": [
+    [
+     "Sudan Tribune",
+     "https://sudantribune.com/article/320004"
+    ]
+   ]
+  }
  ]
 }

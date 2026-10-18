@@ -265,6 +265,10 @@ def design_tracker():
     for c in data["cases"]:
         c["days"] = (asof - datetime.date.fromisoformat(c["since"])).days
     mx = max(c["days"] for c in data["cases"])
+    def csrc(c):
+        # src is one [name, url] pair or a list of them
+        pairs = c["src"] if isinstance(c["src"][0], list) else [c["src"]]
+        return " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in pairs)
     def card(c):
         w = max(c["days"] / mx * 100, 0.6)
         yrs = f" (~{c['days']/365.25:.1f} years)" if c["days"] > 400 else ""
@@ -274,7 +278,7 @@ def design_tracker():
             big = f'{c["days"]:,}<small>days held{yrs}</small>'
         return f"""<div class="case"><div class="top"><h3>{E(c['name'])}</h3><span class="days">{big}</span></div>
 <div class="track" aria-hidden="true"><i style="width:{w:.1f}%"></i></div>
-<div class="meta"><span><b>{E(c['where'])}</b></span><span>Since {datetime.date.fromisoformat(c['since']).strftime('%d %b %Y')}</span><span>{E(c['law'])}</span><span>{E(c['status'])}</span><span class="src"><a href="{E(c['src'][1])}">{E(c['src'][0])}</a></span></div></div>"""
+<div class="meta"><span><b>{E(c['where'])}</b></span><span>Since {datetime.date.fromisoformat(c['since']).strftime('%d %b %Y')}</span><span>{E(c['law'])}</span><span>{E(c['status'])}</span><span class="src">{csrc(c)}</span></div></div>"""
     groups = [("india", "India"), ("world", "World")]
     out = []
     for key, label in groups:
