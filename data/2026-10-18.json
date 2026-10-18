@@ -312,6 +312,35 @@
   {
    "n": 5,
    "region": "world",
+   "place": "Paris & cities across France",
+   "short": "France",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "550k–800k",
+   "figcap": "marched Sat",
+   "headline": "Hundreds of thousands march in France; 1,800 arrested",
+   "text": "About 550,000 people marched nationwide on Saturday by the Interior Ministry's count (800,000 per the CGT union) over school conditions, living costs and budget cuts; police used tear gas and arrested more than 1,800, and officials reported 150 to over 900 police injured. Human Rights Watch says a 15-year-old lost a hand to a police stun grenade during the protests; the government blames violence on looters and says the right to protest is respected.",
+   "src": [
+    [
+     "The Guardian",
+     "https://www.theguardian.com/world/2026/oct/17/protests-france-high-prices-social-security-gilets-jaunes"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/18/why-have-frances-school-protests-become-a-wider-political-crisis"
+    ],
+    [
+     "AFP",
+     "https://www.afp.com/en/looting-blazes-and-clashes-france-amid-nationwide-protests"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "region": "world",
    "place": "Taybeh, West Bank",
    "short": "West Bank",
    "rights": [
@@ -335,7 +364,7 @@
    ]
   },
   {
-   "n": 6,
+   "n": 7,
    "region": "world",
    "place": "Nyala & West Kordofan, Sudan",
    "short": "Sudan",
@@ -363,7 +392,7 @@
    ]
   },
   {
-   "n": 7,
+   "n": 8,
    "region": "world",
    "place": "Gaza",
    "short": "Gaza",
@@ -387,7 +416,7 @@
    ]
   },
   {
-   "n": 8,
+   "n": 9,
    "region": "world",
    "place": "Jos, Nigeria",
    "short": "Nigeria",
