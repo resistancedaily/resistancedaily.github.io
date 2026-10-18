@@ -167,6 +167,12 @@ DESIGN_CSS = {
 .grp{font-size:22px;font-weight:800;display:flex;justify-content:space-between;align-items:baseline;margin-top:10px;border-bottom:2px solid var(--ink);padding-bottom:4px}
 .grp span{font:500 11px var(--mono);color:var(--muted);letter-spacing:.06em}
 .case .meta b{color:var(--ink);font-weight:600}
+.news{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
+.news li{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;align-items:baseline;padding:10px 14px;border-top:1px solid var(--rule);min-width:0}
+.news li:first-child{border-top:0}
+.news .place{font-weight:600}
+.news .fig{font:800 22px var(--display);white-space:nowrap}
+.news p,.news .src{grid-column:2/4;font-size:14px}
 """,
 }
 
@@ -285,7 +291,10 @@ def design_tracker():
         cs = sorted([c for c in data["cases"] if c.get("region", "india") == key], key=lambda c: -c["days"])
         if cs:
             out.append(f'<h3 class="grp">{label}<span>{len(cs)} case{"s" if len(cs)!=1 else ""}</span></h3>' + "".join(card(c) for c in cs))
-    return f"""<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
+    news = "".join(f"""<li><i class="dot {i['sev']}"></i><span class="place">{E(i['place'])} <span class="right">· {E(rights(i))}</span></span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><p><b>{E(i['headline'])}.</b> {E(i['text'])}</p><span class="src">{src(i)}</span></li>""" for i in items)
+    news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>
+""" if items else ""
+    return news_sec + f"""<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
 <p style="color:var(--muted);max-width:66ch">People held for a long time after speaking out, protesting, reporting or providing care, with or without a verdict, around the world. All bars use one scale: the longest detention fills the bar.</p>
 <div class="cases">{''.join(out)}</div></section>"""
 
