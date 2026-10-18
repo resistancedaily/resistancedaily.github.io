@@ -1,0 +1,369 @@
+{
+ "date": "2026-10-18",
+ "date_long": "Sun 18 Oct 2026",
+ "date_short": "Sun 18 Oct",
+ "window": "Sat 09:00 → Sun 09:00 IST",
+ "acts": [
+  [
+   "Check your voter entry",
+   "voters.eci.gov.in · Form 6 to re-enrol"
+  ],
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "cases": [
+  {
+   "region": "india",
+   "name": "Umar Khalid",
+   "where": "Delhi",
+   "since": "2020-09-13",
+   "law": "UAPA",
+   "status": "No trial yet; bail denied 30 Sep 2026",
+   "src": [
+    "CIVICUS",
+    "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Srishti Gupta",
+   "where": "Noida",
+   "since": "2026-04-11",
+   "law": "11 cases",
+   "status": "In prison",
+   "src": [
+    "CIVICUS",
+    "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Pranab Doley",
+   "where": "Kaziranga, Assam",
+   "since": "2026-07-12",
+   "law": "NSA",
+   "status": "High Court petition pending",
+   "src": [
+    "Assam Tribune",
+    "https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Siang protesters (4+)",
+   "where": "Upper Siang, Arunachal",
+   "since": "2026-10-09",
+   "law": "State UAPA",
+   "status": "Release is a condition for talks",
+   "src": [
+    "Mongabay India",
+    "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dawit Isaak",
+   "where": "Eritrea",
+   "since": "2001-09-23",
+   "law": "No charge, no trial",
+   "status": "Journalist; no proof of life given to family",
+   "src": [
+    "Raoul Wallenberg Centre",
+    "https://www.raoulwallenbergcentre.org/en/news/2026-05-15"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Abdulhadi Al-Khawaja",
+   "where": "Bahrain",
+   "since": "2011-04-09",
+   "law": "Life sentence (2011)",
+   "status": "Human rights defender; serving life term",
+   "src": [
+    "ADHRB",
+    "https://www.adhrb.org/2026/01/fourteen-years-of-silence-bahrain-must-release-abdulhadi-al-khawaja/"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Osman Kavala",
+   "where": "Türkiye",
+   "since": "2017-10-18",
+   "law": "Aggravated life sentence",
+   "status": "Retrial refused; European Court of Human Rights has ruled for release",
+   "src": [
+    "Turkish Minute",
+    "https://www.turkishminute.com/2026/10/16/kavala-says-turkish-courts-refusal-to-grant-retrial-damages-judiciarys-credibility/amp/"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Jimmy Lai",
+   "where": "Hong Kong",
+   "since": "2020-12-03",
+   "law": "National security law",
+   "status": "Sentenced to 20 years in Feb 2026; aged 78",
+   "src": [
+    "Hong Kong Free Press",
+    "https://hongkongfp.com/2026/09/24/prison-authorities-accuse-anti-china-figures-of-fabricating-lies-after-us-group-says-guards-rehearsed-jimmy-lais-death/"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Aung San Suu Kyi",
+   "where": "Myanmar",
+   "since": "2021-02-01",
+   "law": "Military detention since coup",
+   "status": "Aged 81; no public access",
+   "src": [
+    "Eurasia Review",
+    "https://www.eurasiareview.com/12102026-the-enduring-daw-aung-san-suu-kyi-factor-in-myanmar-politics-analysis/"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dr Hussam Abu Safiya",
+   "where": "Gaza → Israeli custody",
+   "since": "2024-12-27",
+   "law": "No charge, no trial",
+   "status": "Hospital director; Israel alleges Hamas links, which family denies",
+   "src": [
+    "Anadolu",
+    "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Detainees held by the RSF",
+   "where": "El Geneina, Sudan",
+   "since": "2025-10-26",
+   "count": "6,500+",
+   "countcap": "people held, incl. ~500 children",
+   "law": "Armed group detention",
+   "status": "Doctors report food shortages and rising deaths",
+   "src": [
+    "Sudan Tribune",
+    "https://sudantribune.com/article/320004"
+   ]
+  }
+ ],
+ "asof": "2026-10-18",
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "1 day",
+   "figcap": "in custody",
+   "headline": "Youth movement founder freed on conditional bail",
+   "text": "Abhijeet Dipke, detained Friday before a Connaught Place rally, was released on Saturday on conditional bail; fellow activist Neha Bora was also released. Delhi Police had not responded to Reuters' request for comment.",
+   "src": [
+    [
+     "SCMP (AFP)",
+     "https://www.scmp.com/news/asia/south-asia/article/3371274/cockroach-party-founder-released-indian-police"
+    ],
+    [
+     "Dawn (Reuters)",
+     "https://www.dawn.com/news/2037811"
+    ],
+    [
+     "India Gazette",
+     "https://www.indiagazette.com/news/279381402/abhijeet-dipke-released-after-being-granted-conditional-bail-kejriwal-welcomes-move"
+    ]
+   ],
+   "lead": true
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "6",
+   "figcap": "US lawmakers",
+   "headline": "Rights groups and US lawmakers cite Delhi detentions",
+   "text": "Amnesty, CIVICUS and Front Line Defenders allege mass detentions, force against journalists and internet shutdowns around Delhi protests. Six US lawmakers asked the Secretary of State to raise the issue with India; the Indian government's reply was not in these reports.",
+   "src": [
+    [
+     "The Wire",
+     "https://thewire.in/rights/backstory-its-a-terrible-time-to-be-a-journalist-in-modis-india"
+    ],
+    [
+     "South First",
+     "https://thesouthfirst.com/beyond-south/six-us-lawmakers-urge-rubio-to-raise-protest-crackdown-sir-concerns-with-india/"
+    ],
+    [
+     "CIVICUS Monitor",
+     "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Chassad, Kamjong, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "1",
+   "figcap": "killed, 4 hurt",
+   "headline": "One killed in attack on Manipur border village",
+   "text": "Armed men attacked Chassad village on Saturday, killing one man and injuring four, including the village chief. Kuki organisations blame NSCN-IM cadres; no official finding on responsibility appeared in these reports.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/people-injure-and-killed-in-manipur-violence/article71597384.ece/amp/"
+    ],
+    [
+     "Economic Times",
+     "https://m.economictimes.com/news/india/manipur-violence-1-killed-4-injured-in-militant-firing/articleshow/135016213.cms"
+    ],
+    [
+     "Imphal Times",
+     "https://www.imphaltimes.com/news/violence-continues-in-manipur-as-4-civilians-injured-in-chassad/amp/"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Patiala, Punjab",
+   "short": "Punjab",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "farmer held",
+   "headline": "Farmer arrested over torn posters at drug protest",
+   "text": "Police in Patiala arrested dairy farmer Karamvir Singh for allegedly tearing the Chief Minister's posters during the 15 October shutdown; villagers are protesting his arrest. Police's stated grounds were not available beyond the report's summary.",
+   "src": [
+    [
+     "Times of India",
+     "https://timesofindia.indiatimes.com/city/chandigarh/man-linked-to-amritpal-party-held-for-tearing-punjab-cms-posters-during-drug-protest/articleshow/135018646.cms"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Taybeh, West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety",
+    "Land"
+   ],
+   "sev": "red",
+   "fig": "4+",
+   "figcap": "killed in harvest",
+   "headline": "Settlers attack diplomats during West Bank harvest",
+   "text": "Masked settlers attacked European diplomats in Taybeh on Saturday, a day after a US photojournalist was seriously injured. The Palestinian Health Ministry says at least four people have been killed and 100+ injured this harvest; Israel's military called the attack 'severe' and police opened an investigation.",
+   "src": [
+    [
+     "AP via PBS",
+     "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/european-diplomats-attacked-amid-settler-raids-on-west-bank-olive-harvest/"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Nyala & West Kordofan, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "30 / 4",
+   "figcap": "civilians killed",
+   "headline": "Sudan market strike disputed; more drone deaths",
+   "text": "The RSF says a Sudanese army drone killed 30 at Nyala's livestock market, while the army says it killed dozens of RSF fighters in Nyala. Separately, a monitor reports an army drone killed four civilians in West Kordofan on Saturday.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/17/2550"
+    ],
+    [
+     "Sudan Tribune",
+     "https://sudantribune.com/article/320076"
+    ],
+    [
+     "AFP via Standard",
+     "https://www.standardmedia.co.ke/africa/article/2001560304/drone-strike-kills-30-at-cattle-market-in-sudans-darfur"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "60,000",
+   "figcap": "orphaned",
+   "headline": "UNICEF: 60,000 Gaza children left orphaned",
+   "text": "UNICEF says some 60,000 children in Gaza have lost their parents. Following reports last week of a 67% crisis-level food insecurity rate, this adds to concern over child welfare; Israeli comment was not in the report.",
+   "src": [
+    [
+     "Il Sole 24 Ore",
+     "https://en.ilsole24ore.com/art/iran-and-trump-will-not-use-a-nuclear-bomb-or-send-ground-troops-but-netanyahu-is-talking-about-possible-military-action-AJYGvhlB"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/16/gaza-malnutrition-and-starvation-at-catastrophic-levels-health-ministry"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Jos, Nigeria",
+   "short": "Nigeria",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "13",
+   "figcap": "days held",
+   "headline": "Journalist still held by Nigerian Army",
+   "text": "Amnesty member Lawrence Zongo remains in military detention since 5 October; the Army says he entered a restricted facility without clearance. No new development reported.",
+   "src": [
+    [
+     "Daily Post",
+     "https://dailypost.ng/2026/10/17/why-we-arrested-amnesty-international-reporter-nigerian-army/"
+    ]
+   ]
+  }
+ ]
+}
