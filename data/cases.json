@@ -22,6 +22,28 @@
   },
   {
    "region": "india",
+   "name": "Sharjeel Imam",
+   "where": "Delhi",
+   "since": "2020-01-28",
+   "law": "UAPA, sedition and other charges",
+   "status": "Third bail plea rejected by Delhi High Court, 30 Sep 2026; 7-day interim bail in Oct for family weddings",
+   "src": [
+    [
+     "USCIRF",
+     "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Delhi/2020-delhi-riots-case-delhi-high-court-refuses-bail-to-umar-khalid-and-sharjeel-imam/article71527250.ece"
+    ],
+    [
+     "Millat Times",
+     "https://millattimes.com/sharjeel-imam-walks-out-of-tihar-on-seven-day-interim-bail/"
+    ]
+   ]
+  },
+  {
+   "region": "india",
    "name": "Srishti Gupta",
    "where": "Noida",
    "since": "2026-04-11",
