@@ -1,0 +1,77 @@
+{
+ "cover": [
+  [
+   "Manipur",
+   "28 homes torched in Kamjong in a day"
+  ],
+  [
+   "Mumbai",
+   "Police detain IIT student's parents"
+  ],
+  [
+   "Sudan",
+   "RSF accused of killing 11 displaced people"
+  ],
+  [
+   "DR Congo",
+   "UN: 77 civilians killed in Ituri"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 4,
+   "label": "India · Life & safety",
+   "fig": "28",
+   "figlab": "homes set on fire in 24 hours",
+   "place": "Kamjong, Manipur",
+   "head": "Homes burned on both sides",
+   "bullets": [
+    "Police say houses of Naga and Kuki families were torched after an attack killed a Kuki civilian.",
+    "Residents fled to forests and an Army camp.",
+    "Police sent a joint force; the Deputy CM called the arson an intolerable crime. No one held responsible yet."
+   ],
+   "src": "PTI via Rediff"
+  },
+  {
+   "n": 2,
+   "label": "India · Assembly",
+   "fig": "16–22",
+   "figlab": "students detained Sunday",
+   "place": "IIT Bombay, Mumbai",
+   "head": "Grieving parents detained",
+   "bullets": [
+    "Police detained the parents of Sahil Wakode, who died on 18 Sep, and cleared a month-long protest site.",
+    "Students allege assault; they were later released.",
+    "Police and IIT Bombay had not commented."
+   ],
+   "src": "Scroll · Indian Express · Mumbai Mirror"
+  },
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "11",
+   "figlab": "killed at a displacement site",
+   "place": "West Darfur, Sudan",
+   "head": "Most were women and children",
+   "bullets": [
+    "A Darfur regional minister blames the RSF for Saturday's attack in Sirba locality; five injured.",
+    "Local outlets describe a drone strike. The RSF did not immediately comment."
+   ],
+   "src": "Anadolu · Dabanga"
+  },
+  {
+   "n": 9,
+   "label": "World · Life & safety",
+   "fig": "77",
+   "figlab": "civilians killed in September",
+   "place": "Ituri, DR Congo",
+   "head": "UN counts a month of killings",
+   "bullets": [
+    "UN OCHA blames suspected ADF rebels for attacks in Mambasa territory.",
+    "Biakato and Bandisende were hit hardest.",
+    "The report carried no comment from the Congolese army."
+   ],
+   "src": "Anadolu via Yeni Şafak"
+  }
+ ]
+}

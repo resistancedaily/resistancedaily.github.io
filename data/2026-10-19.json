@@ -69,7 +69,19 @@
      "Mumbai Mirror",
      "https://www.mumbaimirror.com/mumbai/iit-b-protests-overrun-by-cops-1604038"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/iit-bombay-gate.webp",
+    "alt": "A tree-shaded gateway with auto-rickshaws and people walking through it.",
+    "caption": "IIT Bombay's main gate, Powai, seen from inside the campus. The protest site near the gate was cleared on Sunday.",
+    "credit": "Arne Hückelheim / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:IITBombayMainGate.JPG",
+    "kind": "file",
+    "year": "2010",
+    "changes": "cropped"
+   }
   },
   {
    "n": 3,
@@ -158,7 +170,19 @@
      "Dabanga",
      "https://www.dabangasudan.org/en/all-news/article/drone-strikes-kill-civilians-in-darfur-and-kordofan-as-attacks-target-eastern-sudan"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/darfur-camp.webp",
+    "alt": "Makeshift shelters of sticks, cloth and plastic on dry red ground under a blue sky.",
+    "caption": "Makeshift shelters at Intifada transit camp near Nyala, South Darfur.",
+    "credit": "USAID / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "cropped"
+   }
   },
   {
    "n": 7,
@@ -186,7 +210,18 @@
      "Middle East Monitor",
      "https://www.middleeastmonitor.com/20261018-palestinian-girl-killed-by-israeli-army-fire-in-central-gaza/"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   }
   },
   {
    "n": 8,
@@ -252,6 +287,17 @@
      "https://www.dw.com/en/meloni-backs-police-after-cost-of-living-protests-turn-violent-in-italian-cities/a-79692755"
     ]
    ]
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers have been detained under an anti-terror law, and gatherings are banned.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
   }
  ]
 }

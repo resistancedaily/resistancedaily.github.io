@@ -20,8 +20,8 @@ root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 cmd = [sys.executable, os.path.join(root, "tools", "design.py"), design, data_path] + ([maps_path] if maps_path else [])
 body = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
 data = json.load(open(data_path))
-# Ensure the footer carries the archive link and contact line (older design.py copies lack it)
-if "resistancedaily.in@gmail.com" not in body:
+# Ensure the footer carries the archive link and contact line (design.py does not add it)
+if 'href="archive/"' not in body:
     body = body.replace("</span></footer>", '</span><span><a href="archive/">Past editions</a> · Contact or send a tip: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span></footer>', 1)
 
 top = sorted(data["items"], key=lambda i: {"red": 0, "orange": 1, "grey": 2}[i["sev"]])[:3]
@@ -55,9 +55,10 @@ def wrap(content, canonical):
 os.makedirs(os.path.join(root, "archive"), exist_ok=True)
 os.makedirs(os.path.join(root, "build"), exist_ok=True)
 open(os.path.join(root, "index.html"), "w").write(wrap(body, SITE))
-arch = body.replace('href="archive/"', 'href="./"')
+arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
 open(os.path.join(root, "archive", f"{date}.html"), "w").write(wrap(arch, f"{SITE}archive/{date}.html"))
-open(os.path.join(root, "build", "artifact.html"), "w").write(body.replace('href="archive/"', f'href="{SITE}archive/"'))
+open(os.path.join(root, "build", "artifact.html"), "w").write(body.replace('href="archive/"', f'href="{SITE}archive/"')
+    .replace('src="images/', f'src="{SITE}images/').replace('href="focus/', f'href="{SITE}focus/'))
 
 # archive index
 names = {"map": "Map", "numbers": "Day in numbers", "ledger": "Rights ledger", "front": "Front page", "clock": "24-hour clock", "tracker": "Still waiting"}

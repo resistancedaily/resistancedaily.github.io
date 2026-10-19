@@ -5,6 +5,10 @@ DESIGN: map | numbers | ledger | front | clock | tracker
 Rotation (IST weekday): Mon map, Tue numbers, Wed ledger, Thu front, Fri clock, Sat map, Sun tracker.
 The output is page content for the Artifact tool (no doctype/html/body; the tool adds them).
 Tracker cases: region "india"|"world"; optional "count"+"countcap" for group detentions (shown instead of days).
+Photos (optional, any design): item "photo" = {src, alt, caption, credit, licence, licence_url, page, kind: "file"|"event",
+  year, changes?, pos?}. "file" photos are labelled "File photo · YEAR". src is a site path (images/...) or a hotlinkable URL.
+Focus (optional): item "focus" = slug of focus/SLUG.html (built by tools/focus.py); adds a "Photos and full story" link.
+  data "focus" = [{slug, kicker, title, dek, src, alt, photos}] shows "In focus" cards above "Act today".
 """
 import json, sys, html, datetime
 
@@ -16,7 +20,34 @@ items = data["items"]
 by_n = {i["n"]: i for i in items}
 
 def src(i):
-    return " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in i["src"])
+    s = " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in i["src"])
+    if i.get("focus"):
+        s += f' <a class="more" href="focus/{E(i["focus"])}.html">Photos and full story →</a>'
+    return s
+
+def photo_label(p):
+    return "Photo from the event" if p.get("kind") == "event" else f"File photo · {p['year']}"
+
+def photo_credit(p):
+    ch = f" ({E(p['changes'])})" if p.get("changes") else ""
+    return (f'Photo: <a href="{E(p["page"])}">{E(p["credit"])}</a>, '
+            f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}')
+
+def photo(i, cls="ph"):
+    p = i.get("photo")
+    if not p:
+        return ""
+    pos = f' style="object-position:{E(p["pos"])}"' if p.get("pos") else ""
+    return (f'<figure class="{cls}"><img src="{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
+            f'<figcaption><b>{photo_label(p)}</b>{E(p["caption"])} <span class="cr">{photo_credit(p)}</span></figcaption></figure>')
+
+def pictures():
+    """'In pictures' strip for designs without a per-item slot."""
+    ps = [i for i in items if i.get("photo")]
+    if not ps:
+        return ""
+    figs = "".join(f'<div class="pic"><span class="right"><i class="dot {i["sev"]}"></i>{i["n"]} · {E(i.get("short", i["place"]))}</span>{photo(i)}</div>' for i in ps)
+    return f'<section aria-labelledby="h-pic"><div class="sec-h"><h2 id="h-pic">In pictures</h2><span>{len(ps)} photo{"s" if len(ps) != 1 else ""}</span></div><div class="pics">{figs}</div></section>'
 
 def rights(i):
     return " · ".join(i["rights"])
@@ -71,6 +102,23 @@ pre{white-space:pre-wrap;font-family:var(--body);font-size:14px;margin:0 0 10px}
 button{font:600 14px var(--body);background:var(--ink);color:var(--bg);border:0;border-radius:4px;padding:9px 14px;cursor:pointer}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 .card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:12px;min-width:0}
+.ph{margin:0;display:grid;gap:5px;min-width:0}
+.ph img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:4px;background:var(--chip)}
+.ph figcaption{font-size:12px;line-height:1.4;color:var(--muted)}
+.ph figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
+.ph .cr{display:block;font-size:11px}
+.more{font-weight:600;color:var(--ink);white-space:nowrap}
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.pic{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px;display:grid;gap:6px;align-content:start;min-width:0}
+.pic>.right{display:flex;align-items:center}
+.focs{display:grid;gap:10px}
+.fcard{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);overflow:hidden;text-decoration:none;color:inherit}
+.fcard img{display:block;width:100%;height:100%;min-height:150px;object-fit:cover;background:var(--chip)}
+.fcard div{padding:14px 16px;display:grid;gap:6px;align-content:center}
+.fcard .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
+.fcard h3{font:800 30px/0.95 var(--display);text-transform:uppercase;text-wrap:balance}
+.fcard p{font-size:14px;color:var(--muted)}
+@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{aspect-ratio:16/9;min-height:0}}
 """
 
 DESIGN_CSS = {
@@ -87,7 +135,7 @@ DESIGN_CSS = {
 .pin.red circle{fill:var(--red)} .pin.orange circle{fill:var(--orange)} .pin.grey circle{fill:var(--grey)}
 .list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .world .list{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.item{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;grid-template-columns:30px 1fr auto;gap:2px 10px;align-items:start;min-width:0}
+.item{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;grid-template-columns:30px 1fr auto;gap:2px 10px;align-items:start;min-width:0;align-content:start}
 .item .num{grid-row:span 3}
 .place{font-weight:600}
 .item .right{display:block;margin-top:1px}
@@ -130,6 +178,8 @@ DESIGN_CSS = {
 .lead h2{font-size:clamp(30px,5vw,44px);font-weight:800;text-wrap:balance}
 .lead p{font-size:16px;max-width:60ch}
 @media (max-width:560px){.lead{grid-template-columns:1fr}.lead .big{grid-row:auto}}
+.lead>.ph{grid-column:1/-1;margin-bottom:6px}
+.lead>.ph img{aspect-ratio:21/9}
 .seconds{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px}
 .second{background:var(--paper);border:1px solid var(--rule);border-top:4px solid var(--grey);border-radius:6px;padding:14px;display:grid;gap:6px;align-content:start}
 .second.red{border-top-color:var(--red)} .second.orange{border-top-color:var(--orange)}
@@ -196,19 +246,29 @@ KEY = """<div class="key" aria-label="Colour key"><b>Key</b>
 <span><i class="dot orange"></i>Detention or restriction</span>
 <span><i class="dot grey"></i>Ongoing, no major change</span></div>"""
 
+def focus_cards():
+    fs = data.get("focus", [])
+    if not fs:
+        return ""
+    cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["src"])}" alt="{E(f["alt"])}" loading="lazy" decoding="async">
+<div><span class="k">{E(f["kicker"])}</span><h3>{E(f["title"])}</h3><p>{E(f["dek"])}</p><span class="more">See {f["photos"]} photos and the full story →</span></div></a>''' for f in fs)
+    return f'''
+<section aria-labelledby="h-foc"><div class="sec-h"><h2 id="h-foc">In focus</h2><span>In pictures</span></div><div class="focs">{cards}</div></section>'''
+
 def tail():
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in data["acts"])
     top4 = sorted(items, key=lambda i: {"red": 0, "orange": 1, "grey": 2}[i["sev"]])[:4]
     share = f"Resistance Daily, {data['date_short']}\n" + "\n".join(f"• {i.get('short', i['place'])}: {i['headline']}" for i in top4) + "\nSources for every fact: see the full edition."
-    return f"""
+    return focus_cards() + f"""
 <section aria-labelledby="h-act"><div class="sec-h"><h2 id="h-act">Act today</h2><span>Whatever your politics</span></div><div class="acts">{acts}</div></section>
 <details><summary>Copy for WhatsApp</summary><pre id="share-text">{E(share)}</pre><button id="copy" type="button">Copy text</button></details>
 <details><summary>How we report</summary><ul>
 <li>We cover rights, not parties: life, assembly, expression, press, due process, land.</li>
 <li>Every number links to its source, with ground reporting first.</li>
 <li>Official positions appear next to allegations; claims are labelled as claims.</li>
-<li>When sources disagree, we show the range. Maps show land only, with no political borders.</li></ul></details>
-<footer><span>A new edition is published every morning at 9:00 IST, in a different layout each day: Mon map · Tue numbers · Wed rights ledger · Thu front page · Fri 24-hour clock · Sat map · Sun "Still waiting".</span></footer>
+<li>When sources disagree, we show the range. Maps show land only, with no political borders.</li>
+<li>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' faces.</li></ul></details>
+<footer><span>A new edition is published every morning at 9:00 IST, in a different layout each day: Mon map · Tue numbers · Wed rights ledger · Thu front page · Fri 24-hour clock · Sat map · Sun "Still waiting".</span><span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>. We check every photo and blur faces.</span></footer>
 </div>
 <script>
 (function(){{var b=document.getElementById('copy');if(!b)return;b.addEventListener('click',function(){{
@@ -220,7 +280,7 @@ try{{navigator.clipboard.writeText(t).then(done,fb)}}catch(e){{fb()}}}});}})();
 
 def item_li(i):
     return f"""<li class="item"><span class="num bg-{i['sev']}">{i['n']}</span><span><span class="place">{E(i['place'])}</span><span class="right">{E(rights(i))}</span></span><span class="fig c-{i['sev']}">{E(i['fig'])}<small>{E(i['figcap'])}</small></span>
-<p class="what">{E(i['text'])}</p><span class="src">{src(i)}</span></li>"""
+<p class="what">{E(i['text'])}</p>{photo(i, "ph what")}<span class="src">{src(i)}</span></li>"""
 
 def design_map():
     ind = [i for i in items if i["region"] == "india"]; wor = [i for i in items if i["region"] == "world"]
@@ -231,7 +291,7 @@ def design_map():
 <div class="board world"><div class="mapbox">{maps.get('world','')}</div><ol class="list">{''.join(item_li(i) for i in wor)}</ol></div></section>"""
 
 def design_numbers():
-    tiles = "".join(f"""<div class="tile {i['sev']}"><span class="big c-{i['sev']}">{E(i['fig'])}</span><span class="cap">{E(i['figcap'])}</span>
+    tiles = "".join(f"""<div class="tile {i['sev']}">{photo(i)}<span class="big c-{i['sev']}">{E(i['fig'])}</span><span class="cap">{E(i['figcap'])}</span>
 <span class="where"><i class="dot {i['sev']}"></i>{E(i['place'])}</span><span class="right">{E(rights(i))}</span><p>{E(i['text'].split('. ')[0].rstrip('.'))}.</p><span class="src">{src(i)}</span></div>""" for i in items)
     return f"""{KEY}<section aria-labelledby="h-num"><div class="sec-h"><h2 id="h-num">The day in numbers</h2><span>{len(items)} places</span></div><div class="tiles">{tiles}</div></section>"""
 
@@ -246,15 +306,15 @@ def design_ledger():
         lis = "".join(f"""<li><span class="num bg-{i['sev']}">{i['n']}</span><span class="place">{E(i['place'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])} <span class="right">{E(i['figcap'])}</span></span><p>{E(i['text'].split('. ')[0].rstrip('.'))}.</p><span class="src">{src(i)}</span></li>""" for i in hits)
         body = f"<ul>{lis}</ul>" if hits else '<ul><li><p style="grid-column:1/-1;color:var(--muted)">No new reports in this window.</p></li></ul>'
         rows.append(f"""<div class="row{' empty' if not hits else ''}"><div class="head"><h3>{E(r)}</h3><div class="meter" aria-label="{len(hits)} places">{meter}</div><span class="cnt">{len(hits)} place{'s' if len(hits)!=1 else ''} · {E(desc)}</span></div>{body}</div>""")
-    return f"""{KEY}<section aria-labelledby="h-led"><div class="sec-h"><h2 id="h-led">Which rights were at risk</h2><span>One place can touch several rights</span></div><div class="ledger">{''.join(rows)}</div></section>"""
+    return f"""{KEY}{pictures()}<section aria-labelledby="h-led"><div class="sec-h"><h2 id="h-led">Which rights were at risk</h2><span>One place can touch several rights</span></div><div class="ledger">{''.join(rows)}</div></section>"""
 
 def design_front():
     order = sorted(items, key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]], i["n"]))
     lead, seconds, briefs = order[0], order[1:4], order[4:]
-    sec = "".join(f"""<article class="second {i['sev']}"><span class="right">{E(i['place'])} · {E(rights(i))}</span><span class="big c-{i['sev']}">{E(i['fig'])}</span><h3>{E(i['headline'])}</h3><p>{E(i['text'])}</p><span class="src">{src(i)}</span></article>""" for i in seconds)
+    sec = "".join(f"""<article class="second {i['sev']}">{photo(i)}<span class="right">{E(i['place'])} · {E(rights(i))}</span><span class="big c-{i['sev']}">{E(i['fig'])}</span><h3>{E(i['headline'])}</h3><p>{E(i['text'])}</p><span class="src">{src(i)}</span></article>""" for i in seconds)
     br = "".join(f"""<li><i class="dot {i['sev']}"></i><span class="place">{E(i['place'])}</span><span>{E(i['headline'])} <span class="src">· {src(i)}</span></span></li>""" for i in briefs)
     return f"""{KEY}
-<article class="lead"><span class="big c-{lead['sev']}">{E(lead['fig'])}</span><span class="right">{E(lead['place'])} · {E(rights(lead))}</span><h2>{E(lead['headline'])}</h2><p>{E(lead['text'])} <span class="src">{src(lead)}</span></p></article>
+<article class="lead">{photo(lead)}<span class="big c-{lead['sev']}">{E(lead['fig'])}</span><span class="right">{E(lead['place'])} · {E(rights(lead))}</span><h2>{E(lead['headline'])}</h2><p>{E(lead['text'])} <span class="src">{src(lead)}</span></p></article>
 <div class="seconds">{sec}</div>
 <section aria-labelledby="h-br"><div class="sec-h"><h2 id="h-br">Briefly</h2><span>{len(briefs)} more</span></div><ul class="briefs">{br}</ul></section>"""
 
@@ -264,7 +324,7 @@ def design_clock():
     covered = {e["n"] for e in evs}
     rest = [i for i in items if i["n"] not in covered]
     restli = "".join(f"""<li class="ev"><time>—</time><span class="num bg-{i['sev']}">{i['n']}</span><div class="body"><span class="place">{E(i['place'])}</span><p>{E(i['headline'])}</p><span class="src">{src(i)}</span></div></li>""" for i in rest)
-    return f"""{KEY}<section aria-labelledby="h-clk"><div class="sec-h"><h2 id="h-clk">The last 24 hours</h2><span>Newest first · IST</span></div><ol class="clock">{lis}</ol></section>
+    return f"""{KEY}{pictures()}<section aria-labelledby="h-clk"><div class="sec-h"><h2 id="h-clk">The last 24 hours</h2><span>Newest first · IST</span></div><ol class="clock">{lis}</ol></section>
 {'<section aria-labelledby="h-also"><div class="sec-h"><h2 id="h-also">Also reported</h2><span>Time not reported</span></div><ol class="clock">'+restli+'</ol></section>' if rest else ''}"""
 
 def design_tracker():
@@ -293,7 +353,7 @@ def design_tracker():
         if cs:
             out.append(f'<h3 class="grp">{label}<span>{len(cs)} case{"s" if len(cs)!=1 else ""}</span></h3>' + "".join(card(c) for c in cs))
     news = "".join(f"""<li><i class="dot {i['sev']}"></i><span><span class="place">{E(i.get('short', i['place']))}</span> · {E(i['headline'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><span class="src">{src(i)}</span></li>""" for i in items)
-    news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>
+    news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>{pictures()}
 """ if items else ""
     return news_sec + f"""<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
 <p style="color:var(--muted);max-width:66ch">People held for a long time after speaking out, protesting, reporting or providing care, with or without a verdict, around the world. All bars use one scale: the longest detention fills the bar.</p>

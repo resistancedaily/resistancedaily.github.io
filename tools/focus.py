@@ -1,0 +1,145 @@
+#!/usr/bin/env python3
+"""Build Resistance Daily "Focus" pages: one place or issue told through photos, with a sourced write-up.
+
+Usage (from the repo root):  python3 tools/focus.py SLUG
+Reads data/focus/SLUG.json, writes focus/SLUG.html and focus/index.html (all focus pages, newest first).
+
+data/focus/SLUG.json:
+{ "slug", "title", "kicker", "dek", "updated": "YYYY-MM-DD", "rights": [...],
+  "photos": [photo, ...]            # same photo objects as data.json items (tools/photos.py); 3-8 of them
+  "figs": [{"fig", "figcap", "src": [name, url]}],   # 2-4 key numbers
+  "story": [{"text", "src": [[name, url], ...]}],     # 3-5 short paragraphs, every fact sourced
+  "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
+  "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
+  "instagram": {"caption", "hashtags": [...]} }       # used by tools/slides.py focus SLUG
+"""
+import sys, os, json, html, datetime, glob
+
+E = html.escape
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+SITE = "https://resistancedaily.github.io/"
+
+CSS = """
+:root{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--accent:#d9661a;--red:#b3261e;--chip:#eceee9;
+--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:26px}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--display);text-transform:uppercase;margin:0;line-height:.95}
+p{margin:0}
+.top{display:flex;justify-content:space-between;gap:12px;font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:3px solid var(--ink);padding-bottom:10px}
+.top b{color:var(--ink);font-weight:500}
+.kicker{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
+.dek{font-size:18px;color:var(--muted);max-width:62ch}
+.meta{font:500 12px var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 16px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.gallery figure:first-child{grid-column:1/-1}
+.gallery figure:first-child img{aspect-ratio:16/9}
+.gallery figure:last-child:nth-child(even){grid-column:1/-1}
+.gallery figure:last-child:nth-child(even) img{aspect-ratio:16/9}
+@media (max-width:620px){.gallery{grid-template-columns:1fr}}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;background:var(--chip)}
+figcaption{font-size:13px;color:var(--muted)}
+figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
+figcaption .cr{display:block;font-size:11.5px}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.fig{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:14px;display:grid;gap:4px}
+.fig b{font:800 52px var(--display);line-height:.9;color:var(--red)}
+.fig span{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.fig a{font-size:12px;color:var(--muted)}
+.sec-h{border-bottom:1px solid var(--rule);padding-bottom:6px}
+.sec-h h2{font-size:30px;font-weight:800}
+.story{display:grid;gap:14px;max-width:66ch;font-size:16.5px}
+.src{font-size:12.5px;color:var(--muted)}
+.official{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:6px;padding:14px 16px;display:grid;gap:6px;max-width:66ch}
+.official b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:160px 1fr;overflow:hidden;text-decoration:none}
+.card img{width:100%;height:100%;min-height:110px;object-fit:cover;background:var(--chip)}
+.card div{padding:12px 14px;display:grid;gap:4px;align-content:start}
+.card h2{font-size:26px;font-weight:800}
+.card p{font-size:14px;color:var(--muted)}
+@media (max-width:520px){.card{grid-template-columns:1fr}.card img{aspect-ratio:16/9}}
+footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
+"""
+
+HEAD = """<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{title}</title><meta name="description" content="{desc}"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">
+{og_image}<meta property="og:type" content="article"><link rel="canonical" href="{canonical}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>{css}</style></head><body><div class="wrap">"""
+
+FOOT = """<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
+<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' faces.</span>
+<span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
+</div></body></html>
+"""
+
+
+def links(pairs):
+    return " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in pairs)
+
+
+def rel(src, prefix):
+    return src if src.startswith(("http://", "https://")) else prefix + src
+
+
+def figure(p, prefix="../"):
+    label = "Photo from the event" if p.get("kind") == "event" else f"File photo · {p['year']}"
+    ch = f" ({E(p['changes'])})" if p.get("changes") else ""
+    pos = f' style="object-position:{E(p["pos"])}"' if p.get("pos") else ""
+    return (f'<figure><img src="{E(rel(p["src"], prefix))}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
+            f'<figcaption><b>{label}</b>{E(p["caption"])}<span class="cr">Photo: <a href="{E(p["page"])}">{E(p["credit"])}</a>, '
+            f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></figure>')
+
+
+def page(f):
+    upd = datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")
+    figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", []))
+    story = "".join(f'<p>{E(s["text"])} <span class="src">{links(s["src"])}</span></p>' for s in f["story"])
+    off = f.get("official")
+    official = f'<div class="official"><b>Official position</b><p>{E(off["text"])} <span class="src">{links(off["src"])}</span></p></div>' if off else ""
+    eds = " · ".join(f'<a href="../archive/{d}.html">{datetime.date.fromisoformat(d).strftime("%a %d %b")}</a>' for d in sorted(f.get("editions", []), reverse=True))
+    first = f["photos"][0]["src"] if f["photos"] else ""
+    og = f'<meta property="og:image" content="{E(rel(first, SITE))}">' if first else ""
+    return HEAD.format(title=E(f"{f['title']} · Resistance Daily"), desc=E(f["dek"]), og_image=og,
+                       canonical=f"{SITE}focus/{f['slug']}.html", css=CSS) + f"""
+<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a> · <a href="../archive/">Past editions</a></span></div>
+<header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
+<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div></header>
+<section class="gallery" aria-label="Photos">{''.join(figure(p) for p in f['photos'])}</section>
+{f'<section class="figs" aria-label="Key numbers">{figs}</section>' if figs else ''}
+<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="story">{story}</div>{official}</section>
+{f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
+""" + FOOT
+
+
+def index(all_f):
+    cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="{E(f["photos"][0]["alt"])}" loading="lazy">
+<div><span class="kicker">{E(f["kicker"])}</span><h2>{E(f["title"])}</h2><p>{E(f["dek"])}</p><span class="src">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")} · {len(f["photos"])} photos</span></div></a></li>''' for f in all_f)
+    return HEAD.format(title="Focus · Resistance Daily", desc="Places and issues told through photos, with a sourced write-up.",
+                       og_image="", canonical=f"{SITE}focus/", css=CSS) + f"""
+<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
+<header style="display:grid;gap:8px"><span class="kicker">Focus</span><h1>In pictures</h1><p class="dek">One place or issue at a time, told through photos, with a short write-up where every fact is sourced.</p></header>
+<ul class="list">{cards}</ul>
+""" + FOOT
+
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        sys.exit(__doc__)
+    slug = sys.argv[1]
+    f = json.load(open(os.path.join(root, "data", "focus", f"{slug}.json")))
+    os.makedirs(os.path.join(root, "focus"), exist_ok=True)
+    open(os.path.join(root, "focus", f"{slug}.html"), "w").write(page(f))
+    all_f = [json.load(open(p)) for p in glob.glob(os.path.join(root, "data", "focus", "*.json"))]
+    all_f.sort(key=lambda x: x["updated"], reverse=True)
+    open(os.path.join(root, "focus", "index.html"), "w").write(index(all_f))
+    print("built focus", slug)

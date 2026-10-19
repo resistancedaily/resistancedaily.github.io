@@ -14,3 +14,24 @@ Mon map · Tue numbers · Wed ledger · Thu front · Fri clock · Sat map · Sun
 ## Build
 `cd tools && npm install`, then `node tools/maps.js items.json > data/DATE.maps.json && python3 tools/thin.py data/DATE.maps.json`
 and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`.
+
+## Photos
+- A few photos a day (1–3), only where a good one exists. Sources, in order: Wikimedia Commons (CC BY, CC BY-SA, CC0,
+  public domain), UN and humanitarian agencies whose terms allow reuse with credit, government press photos, Creative
+  Commons Flickr, and reader photos sent with permission. Never agency/newspaper photos we have no licence for, and never AI images.
+- Every photo is looked at before use: no graphic images of the dead or injured, no identifiable children, protesters'
+  faces blurred, and the caption must match what the photo shows (Commons titles can be wrong).
+- Labels: "File photo · YEAR" for an older picture of the place; "Photo from the event" only when it shows the event.
+  Credit line: photographer / source, licence (with link), and changes such as "cropped" or "faces blurred".
+- Tools: `python3 tools/photos.py commons api.json` (metadata), `viewer` (cut a photo out of a Commons viewer
+  screenshot when the environment cannot reach upload.wikimedia.org), `prepare` (resize, strip EXIF, blur faces → images/DATE/NAME.webp).
+  In data.json an item takes an optional `"photo"` object; see the header of tools/design.py.
+
+## Focus
+One place or issue told through 3–8 photos with a short, fully sourced write-up. Made whenever enough good photos exist.
+`data/focus/SLUG.json` → `python3 tools/focus.py SLUG` builds `focus/SLUG.html` and `focus/index.html`;
+add `"focus": [...]` to data.json to show an "In focus" card on the daily page.
+
+## Instagram
+`python3 tools/slides.py daily DATE OUTDIR` (needs data/DATE.slides.json) and `python3 tools/slides.py focus SLUG OUTDIR`.
+Python packages: playwright, pillow, "opencv-python-headless<5".

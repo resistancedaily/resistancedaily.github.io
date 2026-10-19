@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Focus · Resistance Daily</title><meta name="description" content="Places and issues told through photos, with a sourced write-up."><meta property="og:title" content="Focus · Resistance Daily"><meta property="og:description" content="Places and issues told through photos, with a sourced write-up.">
+<meta property="og:type" content="article"><link rel="canonical" href="https://resistancedaily.github.io/focus/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--accent:#d9661a;--red:#b3261e;--chip:#eceee9;
+--display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:26px}
+a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:2px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2{font-family:var(--display);text-transform:uppercase;margin:0;line-height:.95}
+p{margin:0}
+.top{display:flex;justify-content:space-between;gap:12px;font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:3px solid var(--ink);padding-bottom:10px}
+.top b{color:var(--ink);font-weight:500}
+.kicker{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
+.dek{font-size:18px;color:var(--muted);max-width:62ch}
+.meta{font:500 12px var(--mono);color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 16px}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.gallery figure:first-child{grid-column:1/-1}
+.gallery figure:first-child img{aspect-ratio:16/9}
+.gallery figure:last-child:nth-child(even){grid-column:1/-1}
+.gallery figure:last-child:nth-child(even) img{aspect-ratio:16/9}
+@media (max-width:620px){.gallery{grid-template-columns:1fr}}
+figure{margin:0;display:grid;gap:6px;min-width:0}
+figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;background:var(--chip)}
+figcaption{font-size:13px;color:var(--muted)}
+figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
+figcaption .cr{display:block;font-size:11.5px}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.fig{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:14px;display:grid;gap:4px}
+.fig b{font:800 52px var(--display);line-height:.9;color:var(--red)}
+.fig span{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.fig a{font-size:12px;color:var(--muted)}
+.sec-h{border-bottom:1px solid var(--rule);padding-bottom:6px}
+.sec-h h2{font-size:30px;font-weight:800}
+.story{display:grid;gap:14px;max-width:66ch;font-size:16.5px}
+.src{font-size:12.5px;color:var(--muted)}
+.official{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:6px;padding:14px 16px;display:grid;gap:6px;max-width:66ch}
+.official b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:160px 1fr;overflow:hidden;text-decoration:none}
+.card img{width:100%;height:100%;min-height:110px;object-fit:cover;background:var(--chip)}
+.card div{padding:12px 14px;display:grid;gap:4px;align-content:start}
+.card h2{font-size:26px;font-weight:800}
+.card p{font-size:14px;color:var(--muted)}
+@media (max-width:520px){.card{grid-template-columns:1fr}.card img{aspect-ratio:16/9}}
+footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
+</style></head><body><div class="wrap">
+<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
+<header style="display:grid;gap:8px"><span class="kicker">Focus</span><h1>In pictures</h1><p class="dek">One place or issue at a time, told through photos, with a short write-up where every fact is sourced.</p></header>
+<ul class="list"><li><a class="card" href="siang.html"><img src="../images/focus/siang/siang-river-2019.webp" alt="A wide, calm river between forested hills, with tall grass in the foreground." loading="lazy">
+<div><span class="kicker">Focus · Upper Siang, Arunachal Pradesh</span><h2>The fight over the Siang dam</h2><p>Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers have been detained under an anti-terror law, and gatherings are banned.</p><span class="src">Updated 19 Oct 2026 · 4 photos</span></div></a></li></ul>
+<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
+<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' faces.</span>
+<span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
+</div></body></html>
