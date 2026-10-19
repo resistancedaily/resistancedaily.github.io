@@ -99,6 +99,6 @@ if design != "tracker":
     missing = [i for i in data["items"] if not i.get("photo")]
     if missing:
         print(f"PHOTOS: {len(missing)} of {len(data['items'])} items have no photo "
-              f"({', '.join(str(i['n']) for i in missing)}). See ROUTINE.md, STEP 2b.")
+              f"({', '.join(str(i['n']) for i in missing)}). See ROUTINE.md, STEP 3.")
 if imgs:
-    print("BACKUP PAGE: pass the 'artifact files' map above as `files` when publishing build/artifact.html (ROUTINE.md, STEP 3).")
+    print("BACKUP PAGE: pass the 'artifact files' map above as `files` when publishing build/artifact.html (ROUTINE.md, STEP 5).")

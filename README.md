@@ -4,7 +4,7 @@ A daily, non-partisan public record of human-rights and civil-liberties events i
 Live site: https://resistancedaily.github.io/ · Past editions: `archive/` · Contact: resistancedaily.in@gmail.com
 
 ## Routine
-The daily routine reads [ROUTINE.md](ROUTINE.md) before it starts; standing changes to the routine go there.
+The daily routine's instructions live in [ROUTINE.md](ROUTINE.md); its scheduled prompt only loads that file. Change the routine by changing ROUTINE.md.
 
 ## How we report
 - Rights, not parties: life and safety, assembly, expression, press freedom, due process, land and livelihood.
