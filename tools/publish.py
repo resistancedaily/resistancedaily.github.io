@@ -94,3 +94,11 @@ li p{{margin:4px 0 0;color:var(--muted);font-size:14px}}
 </div></body></html>
 """)
 print("built", design, date)
+# Standing routine instructions live in ROUTINE.md (photos, Focus, slides). Remind the run of the photo step.
+if design != "tracker":
+    missing = [i for i in data["items"] if not i.get("photo")]
+    if missing:
+        print(f"PHOTOS: {len(missing)} of {len(data['items'])} items have no photo "
+              f"({', '.join(str(i['n']) for i in missing)}). See ROUTINE.md, STEP 2b.")
+if imgs:
+    print("BACKUP PAGE: pass the 'artifact files' map above as `files` when publishing build/artifact.html (ROUTINE.md, STEP 3).")

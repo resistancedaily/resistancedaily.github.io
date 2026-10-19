@@ -3,6 +3,9 @@
 A daily, non-partisan public record of human-rights and civil-liberties events in India and around the world.
 Live site: https://resistancedaily.github.io/ · Past editions: `archive/` · Contact: resistancedaily.in@gmail.com
 
+## Routine
+The daily routine reads [ROUTINE.md](ROUTINE.md) before it starts; standing changes to the routine go there.
+
 ## How we report
 - Rights, not parties: life and safety, assembly, expression, press freedom, due process, land and livelihood.
 - Every number and claim links to its source; independent and ground-level outlets first.
