@@ -40,7 +40,19 @@
      "Hindustan Times",
      "https://www.hindustantimes.com/cities/delhi-news/50-briefly-detained-at-multiple-protests-101792343765041.html"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi. The road beside it was the capital's main protest site until police denotified it last week.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   }
   },
   {
    "n": 2,
@@ -102,7 +114,19 @@
      "Countercurrents",
      "https://countercurrents.org/2026/10/two-anti-mining-activists-arrested-in-kantamal-case-raising-due-process-concerns/"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/rayagada-hills.webp",
+    "alt": "A road curving under a long steel bridge through green hills, under a cloudy sky.",
+    "caption": "A road through the hills of Rayagada district, Odisha.",
+    "credit": "Rkkumundan / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Greenary_Rayagada.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": ""
+   }
   },
   {
    "n": 4,
@@ -122,7 +146,19 @@
      "PTI via Rediff",
      "https://www.rediff.com/news/report/manipur-tense-as-28-homes-torched-militants-target-nagas-kukis/20261019.htm"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/ukhrul-town.webp",
+    "alt": "A hillside town of houses among green trees, with mountains and clouds behind.",
+    "caption": "Ukhrul town, Manipur, in the hills next to Kamjong district.",
+    "credit": "Ac apam / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ukhrul_-South_View.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "cropped"
+   }
   },
   {
    "n": 5,
@@ -241,7 +277,19 @@
      "Anadolu",
      "https://www.aa.com.tr/en/world/israeli-occupiers-injure-2-palestinians-attack-ambulance-in-west-bank/4092949"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/taybeh-street.webp",
+    "alt": "A stone house with a red tiled roof on a quiet street corner under a blue sky.",
+    "caption": "A street in Taybeh, in the occupied West Bank.",
+    "credit": "Bukvoed / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tayibe-WB-459.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "cropped"
+   }
   },
   {
    "n": 9,
@@ -261,7 +309,19 @@
      "Anadolu via Yeni Şafak",
      "https://en.yenisafak.com/world/77-civilians-killed-by-suspected-adf-rebels-in-dr-congo-3724548"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/mambasa-road.webp",
+    "alt": "Men push bicycles loaded with large sacks along a red dirt road through thick forest.",
+    "caption": "Traders push loaded bicycles on the forest road between Epulu and Mambasa, Ituri.",
+    "credit": "Radio Okapi / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Des_marchands_tolekistes_entre_Epulu_et_Mambasa,_2005.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": ""
+   }
   },
   {
    "n": 10,
@@ -286,7 +346,19 @@
      "DW",
      "https://www.dw.com/en/meloni-backs-police-after-cost-of-living-protests-turn-violent-in-italian-cities/a-79692755"
     ]
-   ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/milan-piazza-duomo.webp",
+    "alt": "A wide square with people walking, a grand arched gallery on the left and the Gothic cathedral on the right.",
+    "caption": "Piazza del Duomo, Milan, where protesters and police clashed on Sunday.",
+    "credit": "Steffen Schmitz / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Milano,_Duomo_with_Milan_Cathedral_and_Galleria_Vittorio_Emanuele_II,_2016.jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "cropped"
+   }
   }
  ],
  "focus": [

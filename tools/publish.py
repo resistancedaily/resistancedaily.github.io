@@ -57,8 +57,12 @@ os.makedirs(os.path.join(root, "build"), exist_ok=True)
 open(os.path.join(root, "index.html"), "w").write(wrap(body, SITE))
 arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
 open(os.path.join(root, "archive", f"{date}.html"), "w").write(wrap(arch, f"{SITE}archive/{date}.html"))
+# The backup page keeps images/ paths relative: publish those files with the artifact (see the list printed below).
 open(os.path.join(root, "build", "artifact.html"), "w").write(body.replace('href="archive/"', f'href="{SITE}archive/"')
-    .replace('src="images/', f'src="{SITE}images/').replace('href="focus/', f'href="{SITE}focus/'))
+    .replace('href="focus/', f'href="{SITE}focus/'))
+imgs = sorted(set(re.findall(r'src="(images/[^"]+)"', body)))
+if imgs:
+    print("artifact files:", json.dumps({i: i for i in imgs}))
 
 # archive index
 names = {"map": "Map", "numbers": "Day in numbers", "ledger": "Rights ledger", "front": "Front page", "clock": "24-hour clock", "tracker": "Still waiting"}

@@ -5,7 +5,8 @@ DESIGN: map | numbers | ledger | front | clock | tracker
 Rotation (IST weekday): Mon map, Tue numbers, Wed ledger, Thu front, Fri clock, Sat map, Sun tracker.
 The output is page content for the Artifact tool (no doctype/html/body; the tool adds them).
 Tracker cases: region "india"|"world"; optional "count"+"countcap" for group detentions (shown instead of days).
-Photos (optional, any design): item "photo" = {src, alt, caption, credit, licence, licence_url, page, kind: "file"|"event",
+Photos (optional; shown wherever an item has a summary, not in one-line lists such as front-page briefs or the
+  tracker's news list): item "photo" = {src, alt, caption, credit, licence, licence_url, page, kind: "file"|"event",
   year, changes?, pos?}. "file" photos are labelled "File photo · YEAR". src is a site path (images/...) or a hotlinkable URL.
 Focus (optional): item "focus" = slug of focus/SLUG.html (built by tools/focus.py); adds a "Photos and full story" link.
   data "focus" = [{slug, kicker, title, dek, src, alt, photos}] shows "In focus" cards above "Act today".
@@ -353,7 +354,7 @@ def design_tracker():
         if cs:
             out.append(f'<h3 class="grp">{label}<span>{len(cs)} case{"s" if len(cs)!=1 else ""}</span></h3>' + "".join(card(c) for c in cs))
     news = "".join(f"""<li><i class="dot {i['sev']}"></i><span><span class="place">{E(i.get('short', i['place']))}</span> · {E(i['headline'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><span class="src">{src(i)}</span></li>""" for i in items)
-    news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>{pictures()}
+    news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>
 """ if items else ""
     return news_sec + f"""<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
 <p style="color:var(--muted);max-width:66ch">People held for a long time after speaking out, protesting, reporting or providing care, with or without a verdict, around the world. All bars use one scale: the longest detention fills the bar.</p>

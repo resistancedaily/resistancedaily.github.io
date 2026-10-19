@@ -16,7 +16,9 @@ Mon map · Tue numbers · Wed ledger · Thu front · Fri clock · Sat map · Sun
 and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`.
 
 ## Photos
-- A few photos a day (1–3), only where a good one exists. Sources, in order: Wikimedia Commons (CC BY, CC BY-SA, CC0,
+- Every item with a summary gets a photo; one-line briefs do not. First choice: a photo of the event itself. Otherwise a
+  file photo of the place for context (e.g. Jantar Mantar for a Delhi protest story). No photo rather than a misleading one.
+  Sources, in order: Wikimedia Commons (CC BY, CC BY-SA, CC0,
   public domain), UN and humanitarian agencies whose terms allow reuse with credit, government press photos, Creative
   Commons Flickr, and reader photos sent with permission. Never agency/newspaper photos we have no licence for, and never AI images.
 - Every photo is looked at before use: no graphic images of the dead or injured, no identifiable children, protesters'

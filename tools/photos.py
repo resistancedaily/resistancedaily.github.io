@@ -16,7 +16,7 @@
       When this environment cannot reach upload.wikimedia.org, view the photo through Firecrawl instead: scrape
       https://commons.wikimedia.org/wiki/File:NAME#/media/File:NAME with formats ["screenshot"], viewport 1600x1150,
       waitFor 4000, download the screenshot, then run this to cut the photo out of the viewer (it drops the viewer's
-      black frame, caption bar and corner buttons). Look at the result before using it, then run "prepare".
+      black frame, caption bar, corner buttons and arrows). Look at the result before using it, then run "prepare".
 
 Rules: only free licences (CC BY, CC BY-SA, CC0, public domain, or agency terms that allow editorial reuse with credit);
 no graphic images of the dead or injured; no identifiable children; protesters' faces blurred unless they chose to be shown.
@@ -103,6 +103,8 @@ def viewer(shot, out):
     x0, y0, x1, y1 = int(xs[0]), int(ys[0]), int(xs[-1]) + 1, int(ys[-1]) + 1
     if x1 > a.shape[1] - 120:  # photo runs under the viewer's corner buttons
         x1 = a.shape[1] - 120
+    if x0 < 70:  # and under the "previous" arrow on the left edge (x 18-62)
+        x0 = 70
     if y0 < 100 and x1 > a.shape[1] - 130:
         y0 = 100
     im.crop((x0, y0, x1, y1)).save(out, quality=92)

@@ -106,6 +106,14 @@ def src_url(p):
     return s if s.startswith(("http://", "https://")) else "file://" + os.path.join(root, s)
 
 
+def big_enough(p, min_w=900):
+    """Photos narrower than min_w px look soft at 1080px; remote photos are assumed to be large enough."""
+    if p["src"].startswith(("http://", "https://")):
+        return True
+    from PIL import Image
+    return Image.open(os.path.join(root, p["src"])).size[0] >= min_w
+
+
 def render(slides, out, prefix):
     from playwright.sync_api import sync_playwright
     face = fonts()
@@ -153,6 +161,9 @@ def daily(date, out):
     for k, st in enumerate(sp["stories"], 2):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
         p = by.get(st.get("n"), {}).get("photo")
+        if p and not big_enough(p):
+            print(f"note: photo for item {st['n']} is too small for a slide; using the text layout", file=sys.stderr)
+            p = None
         if p:
             slides.append(f'''<div class="s light ph"><div class="img"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
 <div class="top"><span>{E(st["label"])}</span><span>{k} / {N}</span></div><span class="chip">{E(label(p))}</span></div>
