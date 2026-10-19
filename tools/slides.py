@@ -9,7 +9,8 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
-Writes OUTDIR/*.jpg, OUTDIR/caption.txt, OUTDIR/alt-text.txt (focus) and OUTDIR/contact.png (contact sheet).
+Writes OUTDIR/*.jpg and OUTDIR/contact.png (contact sheet); for focus also caption.txt (the post caption),
+comment-1-story.txt and comment-2-sources.txt (post these as the first two comments) and alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
 import sys, os, json, glob, html, subprocess, datetime
@@ -216,20 +217,34 @@ def focus(slug, out):
         for n, u in s["src"]:
             if n not in allsrc:
                 allsrc.append(n)
-    cap = f"""Focus · {f['title']}
+    # Instagram allows one caption per post, so the long parts go into two comments posted straight after it.
+    files_note = ("All photos are file photos of the place, not of the events. "
+                  if all(p.get("kind") != "event" for p in ph) else "")
+    parts = {
+        "caption.txt": f"""Focus · {f['title']}
 
-{ig.get('caption') or f['dek']}
+{f['dek']}
+
+{files_note}The full story is in the first comment; sources and photo credits in the second.
 
 Non-partisan. Every fact sourced. Full story and all photos: resistancedaily.github.io/focus/{slug} (link in bio).
 
-Sources: {' · '.join(allsrc)}
+{' '.join(ig.get('hashtags', []))}
+""",
+        "comment-1-story.txt": f"""The full story:
+
+{ig.get('caption') or f['dek']}
+""",
+        "comment-2-sources.txt": f"""Sources: {' · '.join(allsrc)}
 
 Photos:
 {credits}
-
-{' '.join(ig.get('hashtags', []))}
-"""
-    open(os.path.join(out, "caption.txt"), "w").write(cap)
+""",
+    }
+    for name, text in parts.items():
+        if len(text) > 2200:
+            print(f"WARNING: {name} is {len(text)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
+        open(os.path.join(out, name), "w").write(text)
     alts = [f"Slide 1: {first['alt']} Title: {f['title']}. {f['dek']}"]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
