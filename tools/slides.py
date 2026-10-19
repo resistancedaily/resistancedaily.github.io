@@ -9,8 +9,8 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
-Writes OUTDIR/*.jpg and OUTDIR/contact.png (contact sheet); for focus also caption.txt (the post caption),
-comment-1-story.txt and comment-2-sources.txt (post these as the first two comments) and alt-text.txt.
+Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet) and OUTDIR/slide-captions.txt (one caption per slide;
+Instagram carousels take a caption per photo). For focus also caption.txt (slide 1's caption) and alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
 import sys, os, json, glob, html, subprocess, datetime
@@ -102,6 +102,10 @@ def label(p):
     return "Photo from the event" if p.get("kind") == "event" else f"File photo · {p['year']}"
 
 
+def photo_line(p):
+    return f"{p['caption']} {label(p)}. {credit(p)} ({p['page']})"
+
+
 def src_url(p):
     s = p["src"]
     return s if s.startswith(("http://", "https://")) else "file://" + os.path.join(root, s)
@@ -180,6 +184,22 @@ def daily(date, out):
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 24px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Full edition: link in bio</div></div>''')
     for p in render(slides, out, date):
         print(p)
+    # Per-slide captions: slide 1 uses the post caption (OUTDIR/caption.txt, written by the routine); each story slide carries
+    # its item's full text and sources; the last slide lists the actions.
+    cp = os.path.join(out, "caption.txt")  # write caption.txt into OUTDIR first and it becomes slide 1's caption
+    caps = [open(cp).read().strip() if os.path.exists(cp) else "(Use caption.txt as the caption for slide 1.)"]
+    for st in sp["stories"]:
+        it = by.get(st.get("n"), {})
+        c = f"{st['place']}: {st['head']}"
+        if it:
+            c += "\n\n" + it["text"] + "\nSources: " + " · ".join(n for n, u in it["src"])
+            if it.get("photo") and big_enough(it["photo"]):
+                c += "\n\n" + photo_line(it["photo"])
+        caps.append(c)
+    caps.append("Act today, whatever your politics:\n" + "\n".join(f"• {t}: {s}" for t, s in d["acts"])
+                + "\n\nNon-partisan. Every fact sourced. Full edition: resistancedaily.github.io (link in bio).")
+    open(os.path.join(out, "slide-captions.txt"), "w").write(
+        "\n\n".join(f"===== Slide {i} =====\n{c}" for i, c in enumerate(caps, 1)) + "\n")
 
 
 def focus(slug, out):
@@ -211,40 +231,42 @@ def focus(slug, out):
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
     ig = f.get("instagram", {})
-    credits = "\n".join(f"{i}. {p['caption']} {label(p)}. {credit(p)} ({p['page']})" for i, p in enumerate(ph, 1))
-    allsrc = []
-    for s in f["story"] + ([f["official"]] if f.get("official") else []):
-        for n, u in s["src"]:
-            if n not in allsrc:
-                allsrc.append(n)
-    # Instagram allows one caption per post, so the long parts go into two comments posted straight after it.
+    # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
+    # story reads in order as people swipe. Story paragraphs fill the photo slides, then the key-numbers slide.
+    def srcs_of(pairs):
+        return "Sources: " + " · ".join(n for n, u in pairs)
     files_note = ("All photos are file photos of the place, not of the events. "
                   if all(p.get("kind") != "event" for p in ph) else "")
-    parts = {
-        "caption.txt": f"""Focus · {f['title']}
+    story = list(f["story"])
+    slots = len(ph) - 1 + 1  # photo slides 2..len(ph), then the key-numbers slide
+    per = [story[i:i + 1] for i in range(min(slots - 1, len(story)))]
+    per.append(story[slots - 1:] if len(story) >= slots else [])
+    per += [[] for _ in range(slots - len(per))]
+    caps = [f"""Focus · {f['title']}
 
 {f['dek']}
 
-{files_note}The full story is in the first comment; sources and photo credits in the second.
+{files_note}Swipe: each slide's caption tells the next part of the story.
+
+{photo_line(first)}
 
 Non-partisan. Every fact sourced. Full story and all photos: resistancedaily.github.io/focus/{slug} (link in bio).
 
-{' '.join(ig.get('hashtags', []))}
-""",
-        "comment-1-story.txt": f"""The full story:
-
-{ig.get('caption') or f['dek']}
-""",
-        "comment-2-sources.txt": f"""Sources: {' · '.join(allsrc)}
-
-Photos:
-{credits}
-""",
-    }
-    for name, text in parts.items():
-        if len(text) > 2200:
-            print(f"WARNING: {name} is {len(text)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
-        open(os.path.join(out, name), "w").write(text)
+{' '.join(ig.get('hashtags', []))}"""]
+    for k, p in enumerate(ph[1:]):
+        body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[k])
+        caps.append(photo_line(p) + (f"\n\n{body}" if body else ""))
+    figs_txt = "\n".join(f"{x['fig']}: {x['figcap']} ({x['src'][0]})" for x in f.get("figs", [])[:4])
+    body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[-1])
+    caps.append("Key numbers\n" + figs_txt + (f"\n\n{body}" if body else ""))
+    last = "Official position\n" + (f"{off}\n{srcs_of(f['official']['src'])}" if off else "No official response was reported.")
+    caps.append(last + f"\n\nFull story, every photo and every source: resistancedaily.github.io/focus/{slug} (link in bio).")
+    for i, c in enumerate(caps, 1):
+        if len(c) > 2200:
+            print(f"WARNING: the caption for slide {i} is {len(c)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
+    open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
+    open(os.path.join(out, "slide-captions.txt"), "w").write(
+        "\n\n".join(f"===== Slide {i} =====\n{c}" for i, c in enumerate(caps, 1)) + "\n")
     alts = [f"Slide 1: {first['alt']} Title: {f['title']}. {f['dek']}"]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")

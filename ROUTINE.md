@@ -107,7 +107,7 @@ organisers' count as a range.
 ## STEP 4. Focus (whenever there are enough photos; no weekly limit)
 - When 3–8 good photos exist for one place or issue (new or ongoing, India or world), write data/focus/SLUG.json (see
   tools/focus.py) with a short, fully sourced write-up, key numbers, the official position and an Instagram story text
-  ("instagram": {"caption": the full story in 3–4 short paragraphs, "hashtags": [...]}), then
+  ("instagram": {"hashtags": [...]}; the slide captions are built from "story"), then
   `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it.
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
 
@@ -152,11 +152,14 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   Say what the slide shows: for slide 1, the date and the 4 headlines; for slides 2–5, the big number and its label, the
   person or place, and the key fact, with the official position if the slide has one; for slide 6, the 4 actions. Use
   only facts that are on the slide. No hashtags, emoji or "image of".
-- If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt and the text in three
-  parts, because Instagram allows one caption per post: caption.txt (short post caption), comment-1-story.txt (the full
-  story, to post as the first comment) and comment-2-sources.txt (sources and photo credits, the second comment). Each
-  part must stay under 2,200 characters; the tool warns if one is longer.
-- Deliver the JPEGs, caption.txt and alt-text.txt (and all the Focus files) with SendUserFile (status "proactive").
+- Instagram takes one caption per slide. Write caption.txt into OUT before running slides.py: it becomes slide 1's
+  caption, and the tool writes OUT/slide-captions.txt with a caption for every slide (each story slide gets its item's
+  full text, sources and photo credit; slide 6 the actions).
+- If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt, caption.txt (slide
+  1's caption) and slide-captions.txt: the story continues across the slides, one paragraph per photo slide and the rest
+  on the key-numbers slide, each with its sources, and the last slide carries the official position. Every caption must
+  stay under 2,200 characters; the tool warns if one is longer.
+- Deliver the JPEGs, caption.txt, slide-captions.txt and alt-text.txt (and all the Focus files) with SendUserFile (status "proactive").
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
 
 ## STEP 7. Drive archive (second copy)
