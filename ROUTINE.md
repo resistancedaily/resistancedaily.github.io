@@ -159,10 +159,11 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   1's caption) and slide-captions.txt: the story continues across the slides, one paragraph per photo slide and the rest
   on the key-numbers slide, each with its sources, and the last slide carries the official position. Every caption must
   stay under 2,200 characters; the tool warns if one is longer.
-- Caption style (set by the owner): captions never repeat the "File photo · YEAR" label or the photo credit, because
-  both are printed on the photo. A photo slide's caption is: what the photo shows; a blank line; that slide's part of
-  the story; "Sources: …" on the next line. Focus slide 1 is: "Focus · <title>"; the summary; "Swipe: each slide's
-  caption tells the next part of the story."; what the first photo shows; at most 5 hashtags.
+- Caption style (set by the owner): a caption carries only what its slide doesn't already show; never repeat text,
+  labels, numbers, sources or credits printed on the slide. Focus: slide 1 = "Focus · <title>"; "Swipe: each slide's
+  caption tells the next part of the story."; what the first photo shows; at most 5 hashtags. Photo slides = that
+  slide's story paragraph, then "Sources: …" on the next line. Key-numbers slide = the story paragraph only. Last slide =
+  the sources of the official position. Daily: story slides = the item's full text only; slide 6 = no caption.
 - Deliver the JPEGs, caption.txt, slide-captions.txt and alt-text.txt (and all the Focus files) with SendUserFile (status "proactive").
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
 

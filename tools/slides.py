@@ -115,6 +115,14 @@ def big_enough(p, min_w=900):
     return Image.open(os.path.join(root, p["src"])).size[0] >= min_w
 
 
+def write_captions(out, caps):
+    for i, c in enumerate(caps, 1):
+        if len(c) > 2200:
+            print(f"WARNING: the caption for slide {i} is {len(c)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
+    open(os.path.join(out, "slide-captions.txt"), "w").write(
+        "\n\n".join(f"===== Slide {i} =====\n{c or '(no caption)'}" for i, c in enumerate(caps, 1)) + "\n")
+
+
 def render(slides, out, prefix):
     from playwright.sync_api import sync_playwright
     face = fonts()
@@ -180,20 +188,16 @@ def daily(date, out):
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 24px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Full edition: link in bio</div></div>''')
     for p in render(slides, out, date):
         print(p)
-    # Per-slide captions: slide 1 uses the post caption (OUTDIR/caption.txt, written by the routine); each story slide carries
-    # its item's full text and sources; the last slide lists the actions.
+    # Per-slide captions (owner's style: only what the slide doesn't show). Slide 1 uses the post caption
+    # (OUTDIR/caption.txt, written by the routine); each story slide carries its item's full text (headline, bullets
+    # and sources are on the slide); slide 6 shows everything already, so it has no caption.
     cp = os.path.join(out, "caption.txt")  # write caption.txt into OUTDIR first and it becomes slide 1's caption
     caps = [open(cp).read().strip() if os.path.exists(cp) else "(Use caption.txt as the caption for slide 1.)"]
     for st in sp["stories"]:
         it = by.get(st.get("n"), {})
-        c = f"{st['place']}: {st['head']}"
-        if it:
-            c += "\n\n" + it["text"] + "\nSources: " + " · ".join(n for n, u in it["src"])
-        caps.append(c)
-    caps.append("Act today, whatever your politics:\n" + "\n".join(f"• {t}: {s}" for t, s in d["acts"])
-                + "\n\nNon-partisan. Every fact sourced. Full edition: resistancedaily.github.io (link in bio).")
-    open(os.path.join(out, "slide-captions.txt"), "w").write(
-        "\n\n".join(f"===== Slide {i} =====\n{c}" for i, c in enumerate(caps, 1)) + "\n")
+        caps.append(it.get("text", ""))
+    caps.append("")
+    write_captions(out, caps)
 
 
 def focus(slug, out):
@@ -227,9 +231,10 @@ def focus(slug, out):
     ig = f.get("instagram", {})
     # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
     # story reads in order as people swipe. Story paragraphs fill the photo slides, then the key-numbers slide.
-    # Owner's style: a photo slide's caption is what the photo shows, a blank line, the story paragraph, then
-    # "Sources: …" on the next line. No "File photo · YEAR" and no photo credit (both are on the photo itself).
-    # Slide 1: "Focus · title", the dek, the swipe line, the first photo's caption, at most 5 hashtags.
+    # Owner's style: a caption carries only what its slide doesn't already show. Slide 1: "Focus · title", the swipe
+    # line, what the first photo shows, at most 5 hashtags. Photo slides: the story paragraph, then "Sources: …".
+    # Key-numbers slide: the story paragraph only (numbers and sources are on the slide). Last slide: the sources
+    # of the official position (the position and link are on the slide).
     def srcs_of(pairs):
         return "Sources: " + " · ".join(n for n, u in pairs)
     story = list(f["story"])
@@ -239,8 +244,6 @@ def focus(slug, out):
     per += [[] for _ in range(slots - len(per))]
     caps = [f"""Focus · {f['title']}
 
-{f['dek']}
-
 Swipe: each slide's caption tells the next part of the story.
 
 {first['caption']}
@@ -248,18 +251,13 @@ Swipe: each slide's caption tells the next part of the story.
 {' '.join(ig.get('hashtags', [])[:5])}"""]
     for k, p in enumerate(ph[1:]):
         body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[k])
-        caps.append(p["caption"] + (f"\n\n{body}" if body else ""))
-    figs_txt = "\n".join(f"{x['fig']}: {x['figcap']} ({x['src'][0]})" for x in f.get("figs", [])[:4])
-    body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[-1])
-    caps.append("Key numbers\n" + figs_txt + (f"\n\n{body}" if body else ""))
-    last = "Official position\n" + (f"{off}\n{srcs_of(f['official']['src'])}" if off else "No official response was reported.")
-    caps.append(last + f"\n\nFull story, every photo and every source: resistancedaily.github.io/focus/{slug} (link in bio).")
-    for i, c in enumerate(caps, 1):
-        if len(c) > 2200:
-            print(f"WARNING: the caption for slide {i} is {len(c)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
+        caps.append(body)
+    shown = set(srcs)  # sources printed on the key-numbers slide
+    caps.append("\n\n".join(x["text"] + ("" if {n for n, u in x["src"]} <= shown else "\n" + srcs_of(x["src"]))
+                              for x in per[-1]))
+    caps.append(srcs_of(f["official"]["src"]) if off else "")
     open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
-    open(os.path.join(out, "slide-captions.txt"), "w").write(
-        "\n\n".join(f"===== Slide {i} =====\n{c}" for i, c in enumerate(caps, 1)) + "\n")
+    write_captions(out, caps)
     alts = [f"Slide 1: {first['alt']} Title: {f['title']}. {f['dek']}"]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
