@@ -102,10 +102,6 @@ def label(p):
     return "Photo from the event" if p.get("kind") == "event" else f"File photo · {p['year']}"
 
 
-def photo_line(p):
-    return f"{p['caption']} {label(p)}. {credit(p)} ({p['page']})"
-
-
 def src_url(p):
     s = p["src"]
     return s if s.startswith(("http://", "https://")) else "file://" + os.path.join(root, s)
@@ -193,8 +189,6 @@ def daily(date, out):
         c = f"{st['place']}: {st['head']}"
         if it:
             c += "\n\n" + it["text"] + "\nSources: " + " · ".join(n for n, u in it["src"])
-            if it.get("photo") and big_enough(it["photo"]):
-                c += "\n\n" + photo_line(it["photo"])
         caps.append(c)
     caps.append("Act today, whatever your politics:\n" + "\n".join(f"• {t}: {s}" for t, s in d["acts"])
                 + "\n\nNon-partisan. Every fact sourced. Full edition: resistancedaily.github.io (link in bio).")
@@ -233,10 +227,11 @@ def focus(slug, out):
     ig = f.get("instagram", {})
     # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
     # story reads in order as people swipe. Story paragraphs fill the photo slides, then the key-numbers slide.
+    # Owner's style: a photo slide's caption is what the photo shows, a blank line, the story paragraph, then
+    # "Sources: …" on the next line. No "File photo · YEAR" and no photo credit (both are on the photo itself).
+    # Slide 1: "Focus · title", the dek, the swipe line, the first photo's caption, at most 5 hashtags.
     def srcs_of(pairs):
         return "Sources: " + " · ".join(n for n, u in pairs)
-    files_note = ("All photos are file photos of the place, not of the events. "
-                  if all(p.get("kind") != "event" for p in ph) else "")
     story = list(f["story"])
     slots = len(ph) - 1 + 1  # photo slides 2..len(ph), then the key-numbers slide
     per = [story[i:i + 1] for i in range(min(slots - 1, len(story)))]
@@ -246,16 +241,14 @@ def focus(slug, out):
 
 {f['dek']}
 
-{files_note}Swipe: each slide's caption tells the next part of the story.
+Swipe: each slide's caption tells the next part of the story.
 
-{photo_line(first)}
+{first['caption']}
 
-Non-partisan. Every fact sourced. Full story and all photos: resistancedaily.github.io/focus/{slug} (link in bio).
-
-{' '.join(ig.get('hashtags', []))}"""]
+{' '.join(ig.get('hashtags', [])[:5])}"""]
     for k, p in enumerate(ph[1:]):
         body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[k])
-        caps.append(photo_line(p) + (f"\n\n{body}" if body else ""))
+        caps.append(p["caption"] + (f"\n\n{body}" if body else ""))
     figs_txt = "\n".join(f"{x['fig']}: {x['figcap']} ({x['src'][0]})" for x in f.get("figs", [])[:4])
     body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[-1])
     caps.append("Key numbers\n" + figs_txt + (f"\n\n{body}" if body else ""))
