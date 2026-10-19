@@ -1,0 +1,257 @@
+{
+ "date": "2026-10-19",
+ "date_long": "Mon 19 Oct 2026",
+ "date_short": "Mon 19 Oct",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "50+",
+   "figcap": "detained Sun",
+   "headline": "Over 50 briefly detained at Delhi protests",
+   "text": "Delhi Police removed and detained more than 50 people from Sunday's marches, including one seeking justice in the 2022 Ankita Bhandari murder case; all were released within hours and no case was filed. Police said no permission had been sought, a week after Jantar Mantar was denotified as a protest site.",
+   "src": [
+    [
+     "Hindustan Times",
+     "https://www.hindustantimes.com/cities/delhi-news/50-briefly-detained-at-multiple-protests-101792343765041.html"
+    ]
+   ]
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "IIT Bombay, Mumbai",
+   "short": "Mumbai",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "16–22",
+   "figcap": "students held",
+   "headline": "Police detain IIT student's parents, clear protest site",
+   "text": "Mumbai Police detained the parents of IIT Bombay student Sahil Wakode, who died by suicide on 18 September and whose family alleges caste discrimination, along with 16–22 students, and demolished a month-long campus protest site; students allege assault and were later released. Police and IIT Bombay had not commented; a case under the SC/ST Atrocities Act is registered against a professor.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096488/parents-of-iit-b-student-who-died-by-suicide-detained-during-protest-at-campus"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/mumbai/iit-bombay-student-sahil-wakode-parents-detained-mumbai-police-protest-site-demolished-varsha-gaikwad-azad-maidan-10926889/"
+    ],
+    [
+     "Mumbai Mirror",
+     "https://www.mumbaimirror.com/mumbai/iit-b-protests-overrun-by-cops-1604038"
+    ]
+   ]
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Rayagada, Odisha",
+   "short": "Odisha",
+   "rights": [
+    "Due process",
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "activists jailed",
+   "headline": "Anti-mining activists jailed over Sijimali clashes",
+   "text": "Doctor Randall Sequeira and Dalit activist Laxman Naik, who work with Adivasi communities opposing mining in Sijimali, were arrested on 16 October over April clashes in Kantamal and remanded to Rayagada jail on charges including attempted murder. Supporters say neither is named in the FIR and allege they were held overnight without lawyers; no police response was found.",
+   "src": [
+    [
+     "Countercurrents",
+     "https://countercurrents.org/2026/10/two-anti-mining-activists-arrested-in-kantamal-case-raising-due-process-concerns/"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Kamjong, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "28",
+   "figcap": "homes burned",
+   "headline": "28 homes torched in Kamjong in a day",
+   "text": "Police say at least 28 houses of Naga and Kuki families were set on fire in Kamjong in 24 hours, after an attack that killed a Kuki civilian; residents fled to forests and an Army camp. Police deployed a joint force and the Deputy Chief Minister called the arson an intolerable crime; no one has been held responsible.",
+   "src": [
+    [
+     "PTI via Rediff",
+     "https://www.rediff.com/news/report/manipur-tense-as-28-homes-torched-militants-target-nagas-kukis/20261019.htm"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "india",
+   "place": "Kurukshetra, Haryana",
+   "short": "Haryana",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "detained",
+   "headline": "Kashmir-bound bus stoned in Haryana; two detained",
+   "text": "Men pelted a Delhi–Srinagar bus with stones and bricks at a dhaba near Kurukshetra on Saturday night, injuring an elderly passenger; passengers say the attackers called them terrorists. Haryana Police registered a case and detained two men, saying no complaint was made at the time.",
+   "src": [
+    [
+     "ETV Bharat",
+     "https://www.etvbharat.com/en/bharat/two-injured-after-kashmir-bound-bus-attacked-with-bricks-and-stones-in-haryana-nc-alleges-hate-crime-enn26101802150"
+    ],
+    [
+     "New Indian Express",
+     "https://www.newindianexpress.com/india/2026/Oct/18/elderly-man-injured-as-kashmir-bound-bus-attacked-with-stones-in-haryana"
+    ]
+   ]
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Sirba, West Darfur, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "11",
+   "figcap": "killed",
+   "headline": "RSF accused of killing 11 displaced people",
+   "text": "A Darfur regional health minister says an RSF attack on a displacement site in Sirba locality on Saturday killed 11 people, mostly women and children, and injured five; local outlets describe a drone strike. The RSF did not immediately comment.",
+   "src": [
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/africa/rsf-attack-kills-11-at-displacement-camp-in-sudan-s-west-darfur-official/4092951"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-strikes-kill-civilians-in-darfur-and-kordofan-as-attacks-target-eastern-sudan"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "5–8",
+   "figcap": "killed",
+   "headline": "Two children among those killed in Gaza",
+   "text": "Medics and local reports say Israeli fire killed five to eight people across Gaza from Saturday into Sunday, including two children, one a girl shot near tents in Maghazi camp. Gaza's Health Ministry counts 1,511 killed since the ceasefire; no Israeli military comment appeared in these reports.",
+   "src": [
+    [
+     "IMEMC",
+     "https://imemc.org/article/israeli-forces-kill-five-palestinians-in-gaza/"
+    ],
+    [
+     "Haaretz",
+     "https://www.haaretz.com/gaza/2026-10-18/ty-article/reports-two-children-among-at-least-eight-killed-by-israeli-fire-in-gaza/000001a1-4f13-da52-a3f1-4f5f20440000"
+    ],
+    [
+     "Middle East Monitor",
+     "https://www.middleeastmonitor.com/20261018-palestinian-girl-killed-by-israeli-army-fire-in-central-gaza/"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Near Taybeh, West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "injured",
+   "headline": "Settlers beat two Palestinians, attack ambulance",
+   "text": "Official Palestinian media say settlers accompanied by Israeli forces attacked a Bedouin community near Taybeh late Sunday, beating two people and assaulting an ambulance sent to help them. Homes near Nablus and Hebron were also attacked; no Israeli response was reported.",
+   "src": [
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/world/israeli-occupiers-injure-2-palestinians-attack-ambulance-in-west-bank/4092949"
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Mambasa, Ituri, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "77",
+   "figcap": "killed in Sept",
+   "headline": "UN: 77 civilians killed in Ituri last month",
+   "text": "UN OCHA said on Saturday that suspected ADF rebels killed at least 77 civilians in Mambasa territory in September, hitting Biakato and Bandisende hardest. The report seen carried no comment from the Congolese army.",
+   "src": [
+    [
+     "Anadolu via Yeni Şafak",
+     "https://en.yenisafak.com/world/77-civilians-killed-by-suspected-adf-rebels-in-dr-congo-3724548"
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "region": "world",
+   "place": "Milan, Italy",
+   "short": "Italy",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "60+",
+   "figcap": "held Sunday",
+   "headline": "Second day of clashes at Milan cost-of-living protests",
+   "text": "Police used tear gas and water cannon in Milan on Sunday after protesters broke windows near Piazza Duomo, and took more than 60 people in for checks; Saturday arrests are put at 28 (police, five cities) to about 50 (ANSA, Milan). ANSA reports 20 protesters and four officers hurt Saturday; PM Meloni condemned the violence and backed police.",
+   "src": [
+    [
+     "Reuters",
+     "https://www.reuters.com/world/milan-police-clash-with-protesters-second-day-unrest-2026-10-18/"
+    ],
+    [
+     "DW",
+     "https://www.dw.com/en/meloni-backs-police-after-cost-of-living-protests-turn-violent-in-italian-cities/a-79692755"
+    ]
+   ]
+  }
+ ]
+}
