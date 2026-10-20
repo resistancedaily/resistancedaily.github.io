@@ -151,7 +151,7 @@ def index(all_f):
     return HEAD.format(title="Focus · Resistance Daily", desc="Places and issues told through photos, with a sourced write-up.",
                        og_image="", canonical=f"{SITE}focus/", css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
-<header style="display:grid;gap:8px"><span class="kicker">Focus</span><h1>In pictures</h1><p class="dek">One place or issue at a time, told through photos, with a short write-up where every fact is sourced.</p></header>
+<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
 <ul class="list">{cards}</ul>
 """ + FOOT
 
