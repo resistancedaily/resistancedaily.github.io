@@ -112,6 +112,13 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .pic{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px;display:grid;gap:6px;align-content:start;min-width:0}
 .pic>.right{display:flex;align-items:center}
+.fwrap{display:grid;gap:4px;justify-items:end}
+.fstrip{width:100%;box-sizing:border-box;display:flex;align-items:center;flex-wrap:wrap;gap:6px 12px;background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:6px;padding:10px 14px;text-decoration:none;color:inherit}
+.fstrip img{width:56px;height:56px;object-fit:cover;border-radius:4px;flex:none;background:var(--chip)}
+.fstrip .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
+.fstrip b{font:800 24px/1 var(--display);text-transform:uppercase;flex:1 1 220px}
+.fstrip .go{font-weight:600;font-size:14px;white-space:nowrap}
+.fwrap .all{font-size:12.5px;color:var(--muted)}
 .focs{display:grid;gap:10px}
 .fcard{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);overflow:hidden;text-decoration:none;color:inherit}
 .fcard img{display:block;width:100%;height:100%;min-height:150px;object-fit:cover;background:var(--chip)}
@@ -240,7 +247,17 @@ def head(subtitle_tag):
   <h1>Resistance Daily</h1>
   <p class="tag">Where people's rights were at risk in the last 24 hours. Non-partisan, and every fact links to its source.</p>
   <div class="meta"><span>{E(data['date_long'])}</span><span>Covers {E(data['window'])}</span><span>2-minute read</span><b>{E(subtitle_tag)}</b></div>
-</header>"""
+</header>{focus_strip()}"""
+
+def focus_strip():
+    """Highlighted link under the masthead, so readers arriving from an Instagram Focus post find the full story at once."""
+    fs = data.get("focus", [])
+    if not fs:
+        return '\n<a class="fstrip" href="focus/"><span class="k">In focus</span><b>Photo stories with every source</b><span class="go">All stories →</span></a>'
+    f = fs[0]
+    more = f'<a class="all" href="focus/">All Focus stories</a>'
+    return (f'\n<div class="fwrap"><a class="fstrip" href="focus/{E(f["slug"])}.html"><img src="{E(f["src"])}" alt="" loading="eager" decoding="async">'
+            f'<span class="k">In focus</span><b>{E(f["title"])}</b><span class="go">Read the full story →</span></a>{more}</div>')
 
 KEY = """<div class="key" aria-label="Colour key"><b>Key</b>
 <span><i class="dot red"></i>Lives lost or violence</span>
