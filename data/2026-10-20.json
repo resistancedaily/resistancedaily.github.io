@@ -1,0 +1,344 @@
+{
+ "date": "2026-10-20",
+ "date_long": "Tue 20 Oct 2026",
+ "date_short": "Tue 20 Oct",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "more days in jail",
+   "headline": "Court extends custody of Jantar Mantar protesters",
+   "text": "A Special Executive Magistrate on Monday extended by two days the judicial custody of Ashutosh Ranka and Saurav Das of the youth-led Cockroach Janta Party, held since 13 October for entering Jantar Mantar after it was denotified as a protest site; Delhi Police did not respond to a request for comment. The party's legal head said no threat to the peace was argued and that it will appeal, and Amnesty International has called for the release of protesters it says are arbitrarily detained.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/19/indian-court-extends-detention-of-cockroach-leaders"
+    ],
+    [
+     "NDTV",
+     "https://www.ndtv.com/india-news/cjps-ashutosh-ranka-saurav-das-to-remain-in-jail-custody-extended-by-2-days-12207086"
+    ],
+    [
+     "Amnesty",
+     "https://www.amnesty.org/en/latest/research/2026/10/india-end-crackdown-peaceful-protests-release-detained-protesters/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi. The road beside it was the capital's main protest site until police denotified it this month.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Imphal East–Kangpokpi, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed in two days",
+   "headline": "Four killed in two days in Manipur",
+   "text": "Police say suspected militants shot dead three Meitei villagers collecting firewood near the Sunurok hills on Monday and injured three, with three more missing, a day after a man died in a clash between two communities in Thoubal district; the Chief Minister condemned the killings and security forces began a combing operation. Police fired tear gas when protesters placed bodies outside the Chief Minister's residence in Imphal.",
+   "src": [
+    [
+     "Times of India",
+     "https://timesofindia.indiatimes.com/india/manipur-violence-cm-condemns-killing-of-three-civilians-orders-tighter-security-in-vulnerable-areas/articleshow/135051822.cms"
+    ],
+    [
+     "New Indian Express",
+     "https://www.newindianexpress.com/india/2026/Oct/19/three-shot-dead-by-militants-in-manipur-locals-protest-with-bodies-outside-cms-house"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/imphal-ima-market.webp",
+    "alt": "Women vendors selling vegetables, fish and grain on the floor of a covered market, seen from above.",
+    "caption": "Ima Keithel, the women's market in central Imphal, where protests broke out after Monday's killings.",
+    "credit": "PP Yoonus / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ima_Market,_imphal.jpeg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Kathua, Jammu and Kashmir",
+   "short": "Kathua",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "6 mo",
+   "figcap": "held under PSA",
+   "headline": "High Court frees farmer held under PSA",
+   "text": "The Jammu and Kashmir and Ladakh High Court quashed the Public Safety Act detention of Romelu Ram, a 66-year-old farmer from Kathua held since 6 April, finding that the police dossier cited no criminal case and appeared copied from another person's file. The district magistrate had defended the detention in court; the judge ordered his immediate release and found the proceedings vitiated by malice in law.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/legal-news/fairy-story-jammu-kashmir-high-court-quash-farmer-psa-detention-10927626/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/kathua-town.webp",
+    "alt": "Rooftops and trees of a small town under a grey, cloudy sky, with hills on the horizon.",
+    "caption": "Kathua town with the Shivalik foothills behind it.",
+    "credit": "RIDH-1 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Shivalik_foothills_as_seen_from_Kathua_town.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "Abyei, Sudan–South Sudan",
+   "short": "Abyei",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "19+",
+   "figcap": "injured, UN says",
+   "headline": "Drone strike hits busy Abyei market",
+   "text": "A drone strike on a busy market in the disputed Abyei region on Monday injured at least 19 people, the UN said, while unconfirmed reports put the death toll at 73; South Sudan summoned Sudan's ambassador in protest, and the Sudanese government had not commented. Sudan Tribune reports the drones were suspected to be the Sudanese army's, and the UN says weekend drone attacks killed at least 19 people, including 10 children, in Darfur and North Kordofan.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168628"
+    ],
+    [
+     "Sudan Tribune",
+     "https://sudantribune.com/article/320174"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/abyei-aerial.webp",
+    "alt": "Flat, dry savannah dotted with trees and round huts, seen from an aircraft window.",
+    "caption": "Abyei and the surrounding plain, seen from a UN helicopter.",
+    "credit": "Sudan Envoy / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sudan_Envoy_-_Abyei_from_Above.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Gaza City and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed Monday",
+   "headline": "Strikes kill four in Gaza, including two teens",
+   "text": "Hospitals said Israeli strikes killed at least two people in Gaza City and two 17-year-olds in Khan Younis on Monday; the Israeli military said it struck Hamas fighters in Gaza City and did not comment on Khan Younis. OCHA counts 57 Palestinians killed between 29 September and 12 October, and about 950,000 displaced people living in sites at risk of winter flooding.",
+   "src": [
+    [
+     "AP via Boston Herald",
+     "https://www.bostonherald.com/2026/10/19/saudi-arabia-israel-iran-mideast-news/"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168625"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety",
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "240+",
+   "figcap": "injured in 2 weeks",
+   "headline": "UN experts warn of olive harvest attacks",
+   "text": "UN experts urged Israel on Monday to protect Palestinian olive farmers, as OCHA reported five Palestinians killed and more than 240 injured by Israeli forces or settlers in two weeks, with 160 harvest-related settler attacks; Israeli police said they arrested 10 suspects after weekend attacks on a US photojournalist and European diplomats. Rights groups say attacks on Palestinians rarely lead to arrests or punishment.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168625"
+    ],
+    [
+     "AP via Boston Herald",
+     "https://www.bostonherald.com/2026/10/19/saudi-arabia-israel-iran-mideast-news/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/olive-harvest-hebron.webp",
+    "alt": "A gloved hand picking purple olives from a branch.",
+    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank.",
+    "credit": "M sh شراونة محمد / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Paris and other cities, France",
+   "short": "France",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "2,330+",
+   "figcap": "held over weekend",
+   "headline": "Curfews and protest bans after French riots",
+   "text": "Authorities imposed overnight curfews in parts of Paris, Lyon, Nice and Lille on Monday and banned gatherings across Paris from 8 pm, after weekend cost-of-living and school protests of 550,000 (official count) to 800,000 (organisers) ended in looting and more than 2,330 people taken into custody. The interior minister said police had \"lost control\"; nearly 1,000 officers were injured on Saturday, and one protester's hand was blown off by a police crowd-control grenade.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/19/frances-macron-declines-ministers-resignation-after-violent-protests"
+    ],
+    [
+     "AP",
+     "https://apnews.com/article/france-protests-violence-looting-f5ce07c2ef46ad0c02c6ff7018532a59"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, now under an overnight curfew.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Tirana, Albania",
+   "short": "Tirana",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "295",
+   "figcap": "injured, PM says",
+   "headline": "Sixth day of clashes at Tirana student protests",
+   "text": "Police used tear gas and water cannon against thousands of student-led protesters in Tirana on Sunday, the sixth day of unrest, and masked people set a police station on fire; the Prime Minister said 295 people have been injured and backed the police against claims of excessive force. Police said ten officers were hurt, and 141 university professors condemned police violence against students.",
+   "src": [
+    [
+     "Balkan Insight",
+     "https://balkaninsight.com/2026/10/19/albanias-capital-rocked-by-chaotic-weekend-of-street-unrest/bi/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/tirana-skanderbeg.webp",
+    "alt": "A large lawn in a city square with an equestrian statue, a minaret, a tower block and a red flag.",
+    "caption": "Skanderbeg Square in central Tirana.",
+    "credit": "Pudelek / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Paletwa, Chin State, Myanmar",
+   "short": "Myanmar",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "6",
+   "figcap": "civilians killed",
+   "headline": "Airstrike kills six at Paletwa cargo site",
+   "text": "Narinjara reports that a military airstrike on a busy cargo site in the Chaungson area of Paletwa Township, Chin State, killed six civilians and injured several others on Sunday morning, in territory held by the Arakan Army. The military had not commented in the report.",
+   "src": [
+    [
+     "Narinjara",
+     "https://www.narinjara.com/news/detail/6ad5955f2bbe5aa41bdc52f0"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/paletwa-kaladan.webp",
+    "alt": "A riverside town of wooden houses and moored long boats below forested hills.",
+    "caption": "Paletwa town on the Kaladan River.",
+    "credit": "Germartin1 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Paletwa_seen_from_the_Kaladan_River_2015.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  }
+ ]
+}
