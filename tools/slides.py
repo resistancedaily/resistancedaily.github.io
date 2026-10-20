@@ -221,9 +221,9 @@ def focus(slug, out):
     # sits on a shaded photo. "numbers_photo" / "end_photo" pick them by index in "photos" (default: the cover).
     kp = f["photos"][f.get("numbers_photo", 0)]
     ep = f["photos"][f.get("end_photo", 0)]
-    slides.append(f'''<div class="s light" style="padding:0"><div style="position:relative;height:380px;flex:none"><img src="{E(src_url(kp))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(kp.get("pos", "center"))}">
-<div style="position:absolute;inset:0 0 auto 0;height:200px;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0))"></div><div class="in" style="position:relative;padding:90px 84px 0;color:#fff">{top("Focus · Key numbers", len(ph) + 1, N)}</div>
-<span style="position:absolute;left:84px;bottom:18px;font:500 18px 'IBM Plex Mono';color:#fff;background:rgba(0,0,0,.55);padding:4px 10px">{E(label(kp))} · {E(credit(kp))}</span></div>
+    slides.append(f'''<div class="s light" style="padding:0"><div class="full" style="position:relative;height:380px;flex:none"><img src="{E(src_url(kp))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(kp.get("pos", "center"))}">
+<div style="position:absolute;inset:0 0 auto 0;height:220px;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))"></div><div class="in" style="position:relative;height:auto;padding:90px 84px 0;color:#fff">{top("Focus · Key numbers", len(ph) + 1, N)}</div>
+<span style="position:absolute;left:84px;bottom:18px;font:500 18px 'IBM Plex Mono';color:#fff;background:rgba(0,0,0,.55);padding:6px 12px;line-height:1.45">{E(label(kp))} · {E(kp["caption"].split(". ")[0].rstrip("."))}<br>{E(credit(kp))}</span></div>
 <div style="padding:40px 84px 64px;display:flex;flex-direction:column;flex:1"><div class="D" style="font-size:80px">{E(f["title"])}</div>
 <div class="figs" style="margin-top:34px">{figs}</div><div class="srcs">Sources: {E(" · ".join(srcs))}</div></div></div>''')
     off = f.get("official", {}).get("text", "")
@@ -232,7 +232,7 @@ def focus(slug, out):
 <div style="margin-top:40px;border-left:8px solid {GR};padding:10px 0 10px 26px"><b style="font:800 46px 'Barlow Condensed';text-transform:uppercase;display:block">Link in bio</b>
 <span style="font:500 26px 'IBM Plex Mono';color:#9ba1aa">resistancedaily.github.io/focus/{E(slug)}</span></div>
 {f'<p style="font-size:27px;line-height:1.4;color:#b8bcc2;margin-top:40px"><b style="font:500 22px IBM Plex Mono;text-transform:uppercase;letter-spacing:.06em;color:#9ba1aa;display:block;margin-bottom:8px">Official position</b>{E(off)}</p>' if off else ''}
-<div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Photos freely licensed<br><span style="text-transform:none">{E(label(ep))} · {E(credit(ep))}</span></div></div></div>''')
+<div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Photos freely licensed<br><span style="text-transform:none">{E(label(ep))} · {E(ep["caption"].split(". ")[0].rstrip("."))} · {E(credit(ep))}</span></div></div></div>''')
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
     ig = f.get("instagram", {})

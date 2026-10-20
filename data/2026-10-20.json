@@ -340,5 +340,16 @@
     "changes": "cropped"
    }
   }
+ ],
+ "focus": [
+  {
+   "slug": "who-decides",
+   "kicker": "Focus · India and the world",
+   "title": "Who decides what you see online",
+   "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
+   "src": "images/focus/who-decides/meta-sign-2022.webp",
+   "alt": "A large white sign with the blue Meta infinity logo, reading Meta, 1 Hacker Way, in front of trees.",
+   "photos": 7
+  }
  ]
 }
