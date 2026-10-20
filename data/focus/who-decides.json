@@ -1,0 +1,254 @@
+{
+ "slug": "who-decides",
+ "kicker": "Focus · India and the world",
+ "title": "Who decides what you see online",
+ "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
+ "updated": "2026-10-20",
+ "rights": [
+  "Expression",
+  "Assembly"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/who-decides/meta-sign-2022.webp",
+   "alt": "A large white sign with the blue Meta infinity logo, reading Meta, 1 Hacker Way, in front of trees.",
+   "caption": "The sign outside Meta's headquarters in Menlo Park, California. Meta owns Facebook, Instagram and WhatsApp.",
+   "credit": "Nokia621 / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Meta_Headquarters_Sign.jpg",
+   "kind": "file",
+   "year": "2022",
+   "pos": "center 10%"
+  },
+  {
+   "src": "images/focus/who-decides/jantar-mantar-2017.webp",
+   "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+   "caption": "Jantar Mantar in New Delhi. Posts showing police detaining protesters in central Delhi were blocked in India this month.",
+   "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+   "kind": "file",
+   "year": "2017",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/focus/who-decides/instagram-phone-2016.webp",
+   "alt": "A hand holding a smartphone showing an Instagram post.",
+   "caption": "Instagram on a phone. News pages, journalists and a climate group have had Instagram accounts blocked in India since 10 October.",
+   "credit": "Santeri Viinamäki / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Instagram_app_on_smartphone.jpg",
+   "kind": "file",
+   "year": "2016",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/focus/who-decides/whatsapp-phone-2018.webp",
+   "alt": "Two hands typing a message in WhatsApp on a phone, with grass behind.",
+   "caption": "Messaging on WhatsApp, another app owned by Meta.",
+   "credit": "Santeri Viinamäki / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Whatsapp_chatting_outdoor_20180808.jpg",
+   "kind": "file",
+   "year": "2018",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/focus/who-decides/facebook-hq-2014.webp",
+   "alt": "A road junction with trees in blossom, low office buildings and a Facebook thumbs-up sign.",
+   "caption": "Facebook's headquarters in Menlo Park. The company also limits what people see by its own rules, not only on government orders.",
+   "credit": "LPS.1 / Wikimedia Commons",
+   "licence": "CC0",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Facebook_Headquarters_1_Hacker_Way_Menlo_Park.jpg",
+   "kind": "file",
+   "year": "2014",
+   "changes": "cropped",
+   "pos": "100% center"
+  },
+  {
+   "src": "images/focus/who-decides/sarachane-2025.webp",
+   "alt": "Protesters, some holding Turkish flags, face a line of riot police in front of an ancient stone aqueduct at night.",
+   "caption": "Protesters and police at Saraçhane, Istanbul, in March 2025. Rights groups say Turkey has ordered X to block at least 1,270 accounts.",
+   "credit": "Mellonsapka / Wikimedia Commons",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sara%C3%A7hane%E2%80%99de_direni%C5%9F.jpg",
+   "kind": "event",
+   "year": "2025",
+   "changes": "cropped, faces blurred"
+  },
+  {
+   "src": "images/focus/who-decides/tse-brasilia-2012.webp",
+   "alt": "A curved dark glass office building with white domes in front, under a cloudy sky.",
+   "caption": "Brazil's Superior Electoral Court in Brasília, which has ordered Meta to treat both presidential runoff candidates equally.",
+   "credit": "Alexandresena / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sede_do_Tribunal_Superior_Eleitoral,_em_Bras%C3%ADlia.jpg",
+   "kind": "file",
+   "year": "2012",
+   "changes": "cropped"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "181",
+   "figcap": "restrictions in India, 1–18 Oct",
+   "src": [
+    "ThePrint",
+    "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
+   ]
+  },
+  {
+   "fig": "1,270+",
+   "figcap": "accounts Turkey ordered X to block",
+   "src": [
+    "AP",
+    "https://www.kvue.com/article/syndication/associatedpress/rights-groups-urge-social-media-platforms-to-resist-turkish-orders-to-block-accounts/616-8e6e3913-73c1-4bca-95eb-5ae575f0ec27"
+   ]
+  },
+  {
+   "fig": "1,050",
+   "figcap": "Palestine-related cases, HRW 2023",
+   "src": [
+    "Human Rights Watch",
+    "https://www.hrw.org/news/2023/12/20/meta-systemic-censorship-palestine-content"
+   ]
+  },
+  {
+   "fig": "~250",
+   "figcap": "accounts withheld in India, 2021",
+   "src": [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2021/2/2/twitter-blocks-accounts-over-india-farmers-protest-on-govt-order"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "On 10 October India's IT ministry sent Meta an unpublished advisory. It asked Meta to make sure Facebook and Instagram do not \"disproportionately amplify\" misleading posts about protests or police action, to add context to videos of ongoing events, and to report back what it did.",
+   "src": [
+    [
+     "Hindustan Times",
+     "https://www.hindustantimes.com/india-news/centre-asks-meta-to-review-content-recommendation-system-over-law-and-order-posts-to-avoid-public-confusion-disorder-101792262032757.html"
+    ],
+    [
+     "PTI via Daily Excelsior",
+     "https://www.dailyexcelsior.com/govt-asks-meta-to-ensure-its-recommendation-systems-do-not-expose-users-to-limited-set-of-narratives/"
+    ]
+   ]
+  },
+  {
+   "text": "Between 10 and 13 October, Meta blocked in India posts or accounts of Molitics India, Mathrubhumi English, Observer Post Hindi, Journo Mirror and journalist Shubhangi Das Gupta, citing government notices or \"local IT Rules\". Some got no notice. The digital rights group SFLC.in counted 181 restrictions between 1 and 18 October.",
+   "src": [
+    [
+     "Newslaundry",
+     "https://www.newslaundry.com/2026/10/15/now-meta-restricts-reportage-on-delhi-police-crackdown-on-protesters-bans-posts-accounts-citing-it-rules"
+    ],
+    [
+     "ThePrint",
+     "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
+    ]
+   ]
+  },
+  {
+   "text": "The Instagram account of Fridays For Future India was also blocked, with no reason given. The Internet Freedom Foundation calls the advisory \"a censorship directive in all but name\" and says the ministry has no legal power to issue it. On 15 October the Supreme Court held that access to the internet is a fundamental right.",
+   "src": [
+    [
+     "MediaNama",
+     "https://www.medianama.com/2026/10/223-instagram-fridays-for-future-india-blocked/"
+    ],
+    [
+     "The South First",
+     "https://thesouthfirst.com/beyond-south/centre-tells-meta-to-curb-reach-of-content-on-anti-sir-protests-police-action-iff-says-advisory-is-illegal/"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/legal-news/children-fundamental-right-internet-supreme-court-blanket-ban-10925649/"
+    ]
+   ]
+  },
+  {
+   "text": "Companies also decide on their own. Human Rights Watch documented 1,050 cases of Palestine-related posts removed or suppressed on Instagram and Facebook after 7 October 2023; Meta said it was guided by human rights principles. In 2024 Meta stopped recommending political content on Instagram and Threads by default, then in January 2025 ended US fact-checking, saying \"too much harmless content gets censored\".",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2023/12/20/meta-systemic-censorship-palestine-content"
+    ],
+    [
+     "Instagram",
+     "https://about.instagram.com/blog/announcements/continuing-our-approach-to-political-content-on-instagram-and-threads"
+    ],
+    [
+     "Meta",
+     "https://about.fb.com/news/2025/01/meta-more-speech-fewer-mistakes/"
+    ]
+   ]
+  },
+  {
+   "text": "In Turkey, after Istanbul's mayor was detained in March 2025, X blocked accounts on official orders, later including the mayor's own, while challenging the orders in court. Rights groups say Turkey has ordered X to block at least 1,270 accounts. In India in 2021, Twitter withheld about 250 accounts during the farmers' protests; the government said they were a \"grave threat to public order\".",
+   "src": [
+    [
+     "Reuters",
+     "https://www.reuters.com/business/media-telecom/x-says-turkish-court-ordered-block-istanbul-mayor-imamoglus-candidacy-account-2026-08-05/"
+    ],
+    [
+     "AP",
+     "https://www.kvue.com/article/syndication/associatedpress/rights-groups-urge-social-media-platforms-to-resist-turkish-orders-to-block-accounts/616-8e6e3913-73c1-4bca-95eb-5ae575f0ec27"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2021/2/2/twitter-blocks-accounts-over-india-farmers-protest-on-govt-order"
+    ]
+   ]
+  },
+  {
+   "text": "In Brazil, the electoral court has ordered Meta not to \"unjustifiably restrict\" political content before the 25 October runoff, after one campaign said its reach was cut; Meta says \"any suggestion that Meta favors one side is false\". Vietnam pressed Facebook in 2020 to censor more \"anti-state\" posts, and Nigeria blocked Twitter in 2021.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/19/brazilian-court-orders-meta-to-prove-lula-and-bolsonaro-get-equal-treatment"
+    ],
+    [
+     "Reuters",
+     "https://www.reuters.com/world/asia-pacific/vietnam-threatens-shut-down-facebook-over-censorship-requests-source-2020-11-20/"
+    ],
+    [
+     "The Guardian",
+     "https://www.theguardian.com/world/2021/jun/04/nigeria-suspends-twitter-after-presidents-tweet-was-deleted"
+    ]
+   ]
+  }
+ ],
+ "official": {
+  "text": "The IT ministry's advisory says such posts, without context or amplified by recommendations, \"may contribute to public confusion, apprehension and disturbance of public order\", and that any action must respect lawful expression. The ministry and Meta did not respond to requests for comment.",
+  "src": [
+   [
+    "Hindustan Times",
+    "https://www.hindustantimes.com/india-news/centre-asks-meta-to-review-content-recommendation-system-over-law-and-order-posts-to-avoid-public-confusion-disorder-101792262032757.html"
+   ],
+   [
+    "ThePrint",
+    "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
+   ]
+  ]
+ },
+ "editions": [],
+ "instagram": {
+  "hashtags": [
+   "#RightToInformation",
+   "#FreedomOfExpression",
+   "#DigitalRights",
+   "#Meta",
+   "#ResistanceDaily"
+  ]
+ },
+ "layout": "chapters",
+ "numbers_photo": 4,
+ "end_photo": 2
+}

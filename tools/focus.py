@@ -11,7 +11,9 @@ data/focus/SLUG.json:
   "story": [{"text", "src": [[name, url], ...]}],     # 3-5 short paragraphs, every fact sourced
   "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
-  "instagram": {"caption", "hashtags": [...]} }       # used by tools/slides.py focus SLUG
+  "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
+  "layout": "chapters",                               # optional: pair story[i] with photos[i+1] instead of a gallery
+  "numbers_photo": 0, "end_photo": 0 }                # optional: photo indexes for the slides' key-numbers and last slide
 """
 import sys, os, json, html, datetime, glob
 
@@ -66,6 +68,11 @@ ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .card p{font-size:14px;color:var(--muted)}
 @media (max-width:520px){.card{grid-template-columns:1fr}.card img{aspect-ratio:16/9}}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
+.cover img{aspect-ratio:16/9}
+.chaps{display:grid;gap:26px}
+.chap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start;border-top:1px solid var(--rule);padding-top:20px}
+.chap p{font-size:16.5px}
+@media (max-width:680px){.chap{grid-template-columns:1fr}}
 """
 
 HEAD = """<!doctype html>
@@ -100,6 +107,19 @@ def figure(p, prefix="../"):
             f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></figure>')
 
 
+def body(f, figs, story, official):
+    figs_html = f'<section class="figs" aria-label="Key numbers">{figs}</section>' if figs else ''
+    if f.get("layout") != "chapters":
+        return (f'<section class="gallery" aria-label="Photos">{"".join(figure(p) for p in f["photos"])}</section>\n{figs_html}\n'
+                f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="story">{story}</div>{official}</section>')
+    # "chapters": every paragraph sits next to its own photo (photos[0] is the cover, photos[i+1] goes with story[i]).
+    ph = f["photos"]
+    chaps = "".join(f'<div class="chap">{figure(ph[i + 1]) if i + 1 < len(ph) else ""}<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p></div>'
+                    for i, x in enumerate(f["story"]))
+    return (f'<section class="cover">{figure(ph[0])}</section>\n{figs_html}\n'
+            f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="chaps">{chaps}</div>{official}</section>')
+
+
 def page(f):
     upd = datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")
     figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", []))
@@ -114,9 +134,7 @@ def page(f):
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a> · <a href="../archive/">Past editions</a></span></div>
 <header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
 <div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div></header>
-<section class="gallery" aria-label="Photos">{''.join(figure(p) for p in f['photos'])}</section>
-{f'<section class="figs" aria-label="Key numbers">{figs}</section>' if figs else ''}
-<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="story">{story}</div>{official}</section>
+{body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
 """ + FOOT
 
