@@ -69,6 +69,10 @@ ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 @media (max-width:520px){.card{grid-template-columns:1fr}.card img{aspect-ratio:16/9}}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 .cover img{aspect-ratio:16/9}
+.allf{justify-self:start;font-weight:600;font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--paper);border-radius:6px;padding:8px 12px}
+.allf.big{display:grid;gap:2px;padding:14px 16px}
+.allf.big span{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.allf.big b{font:800 26px var(--display);text-transform:uppercase}
 .chaps{display:grid;gap:26px}
 .chap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start;border-top:1px solid var(--rule);padding-top:20px}
 .chap p{font-size:16.5px}
@@ -133,9 +137,11 @@ def page(f):
                        canonical=f"{SITE}focus/{f['slug']}.html", css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a> · <a href="../archive/">Past editions</a></span></div>
 <header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
-<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div></header>
+<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
+<a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
+<a class="allf big" href="./"><span>More stories told through photos</span><b>See all Focus stories →</b></a>
 """ + FOOT
 
 
