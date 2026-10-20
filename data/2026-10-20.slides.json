@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Manipur",
+   "Four killed in two days of violence"
+  ],
+  [
+   "Abyei",
+   "Drone strike hits a busy market"
+  ],
+  [
+   "Myanmar",
+   "Airstrike kills six at Paletwa cargo site"
+  ],
+  [
+   "New Delhi",
+   "Court keeps two protesters in jail"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 2,
+   "label": "India · Life & safety",
+   "fig": "4",
+   "figlab": "killed in two days",
+   "place": "Imphal East–Kangpokpi, Manipur",
+   "head": "Villagers shot collecting firewood",
+   "bullets": [
+    "Police say suspected militants shot three Meitei villagers on Monday.",
+    "A man died in a clash in Thoubal on Sunday.",
+    "The Chief Minister condemned the killings."
+   ],
+   "src": "Times of India · New Indian Express"
+  },
+  {
+   "n": 4,
+   "label": "World · Life & safety",
+   "fig": "19+",
+   "figlab": "injured, the UN says",
+   "place": "Abyei, Sudan–South Sudan",
+   "head": "Drone strike on a busy market",
+   "bullets": [
+    "Unconfirmed reports put the death toll at 73.",
+    "South Sudan summoned Sudan's ambassador in protest.",
+    "Sudan's government had not commented."
+   ],
+   "src": "UN News · Sudan Tribune"
+  },
+  {
+   "n": 9,
+   "label": "World · Life & safety",
+   "fig": "6",
+   "figlab": "civilians killed",
+   "place": "Paletwa, Chin State, Myanmar",
+   "head": "Airstrike on a cargo site",
+   "bullets": [
+    "Narinjara reports a military airstrike hit traders in Chaungson on Sunday morning.",
+    "Several others were injured, in territory held by the Arakan Army.",
+    "The military had not commented in the report."
+   ],
+   "src": "Narinjara"
+  },
+  {
+   "n": 1,
+   "label": "India · Due process",
+   "fig": "2",
+   "figlab": "more days in jail",
+   "place": "New Delhi",
+   "head": "Custody extended after Jantar Mantar protest",
+   "bullets": [
+    "Ashutosh Ranka and Saurav Das have been held since 13 October.",
+    "They entered Jantar Mantar after it was denotified as a protest site.",
+    "Delhi Police did not respond to a request for comment; their party will appeal."
+   ],
+   "src": "Al Jazeera · NDTV"
+  }
+ ]
+}
