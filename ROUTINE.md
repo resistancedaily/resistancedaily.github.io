@@ -164,7 +164,9 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   caption tells the next part of the story."; what the first photo shows; at most 5 hashtags. Photo slides = that
   slide's story paragraph, then "Sources: …" on the next line. Key-numbers slide = the story paragraph only. Last slide =
   the sources of the official position. Daily: story slides = the item's full text only; slide 6 = no caption.
-- Deliver the JPEGs, caption.txt, slide-captions.txt and alt-text.txt (and all the Focus files) with SendUserFile (status "proactive").
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt) with
+  SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
+  its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
 
 ## STEP 7. Drive archive (second copy)
