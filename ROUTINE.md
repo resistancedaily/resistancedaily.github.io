@@ -139,8 +139,8 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   then 4 rows of place name above a one-line headline (max ~45 characters). Footer: "Swipe → · Sources: link in bio".
   Mon–Sat dark with orange place names; Sunday light with red place names and a red "+ Still waiting" tag.
 - Slides 2–5 (light): one story each, led by a big red number with a grey label, then 2–3 short bullets and a
-  "Sources: …" line. When the item has a photo, it fills the top of the slide with a "File photo · YEAR" tag and the photo
-  credit under the sources. On Sundays, show Still Waiting cases instead.
+  "Sources: …" line. Every story slide has the same shape: the top area holds the item's photo (with a "File photo · YEAR" tag
+  and the photo credit under the sources), or, when there is no photo, the big number on a grey panel. On Sundays, show Still Waiting cases instead.
 - Slide 6 (dark): "Act today", "Whatever your politics", and the 4 actions with green left borders. Footer:
   "Non-partisan · Every fact sourced · Full edition: link in bio".
 - Write data/DATE.slides.json ("cover": 4 [place, headline] rows; "stories": 4 entries with n, label, fig, figlab, place,

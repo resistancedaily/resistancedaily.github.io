@@ -70,6 +70,12 @@ li:before{{content:'';position:absolute;left:0;top:16px;width:12px;height:12px;b
 .ph ul{{margin-top:24px;gap:14px}}
 .ph li{{font-size:30px}}
 .ph .srcs{{font-size:19px}}
+/* story without a photo: the key figure fills the photo area, so every story slide has the same shape */
+.ph .img.figp{{background:#e2e5e0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
+.ph .img.figp .top{{background:none;color:#7a808a}}
+.figp .big{{font-size:240px;margin-top:40px}}
+.figp .lab{{margin-top:18px;font-size:34px}}
+.ph .body>.place:first-child{{margin-top:6px}}
 /* focus */
 .full{{padding:0;color:#fff}}
 .full .shade{{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6) 0%,rgba(0,0,0,0) 20%,rgba(0,0,0,.25) 38%,rgba(0,0,0,.9) 62%,rgba(0,0,0,.94) 100%)}}
@@ -171,7 +177,7 @@ def daily(date, out):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
         p = by.get(st.get("n"), {}).get("photo")
         if p and not big_enough(p):
-            print(f"note: photo for item {st['n']} is too small for a slide; using the text layout", file=sys.stderr)
+            print(f"note: photo for item {st['n']} is too small for a slide; showing its key figure instead", file=sys.stderr)
             p = None
         if p:
             slides.append(f'''<div class="s light ph"><div class="img"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
@@ -180,8 +186,10 @@ def daily(date, out):
 <div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
 <div class="srcs">Sources: {E(st["src"])}<br>{E(credit(p))}</div></div></div>''')
         else:
-            slides.append(f'''<div class="s light">{top(st["label"], k, N)}<div class="big" style="margin-top:50px">{E(st["fig"])}</div><div class="lab">{E(st["figlab"])}</div>
-<div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul><div class="srcs">Sources: {E(st["src"])}</div></div>''')
+            slides.append(f'''<div class="s light ph"><div class="img figp">
+<div class="top"><span>{E(st["label"])}</span><span>{k} / {N}</span></div><div class="big">{E(st["fig"])}</div><div class="lab">{E(st["figlab"])}</div></div>
+<div class="body"><div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
+<div class="srcs">Sources: {E(st["src"])}</div></div></div>''')
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in d["acts"])
     slides.append(f'''<div class="s dark">{top("Act today", N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
 <div class="D" style="font-size:64px;color:{AC};margin-top:10px">Whatever your politics</div><div style="margin-top:30px">{acts}</div>
