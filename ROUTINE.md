@@ -92,6 +92,10 @@ organisers' count as a range.
 - Find and check licences with the Commons API through Firecrawl (scrape api.php with formats ["rawHtml"]; use
   `generator=search ... &prop=imageinfo&iiprop=extmetadata&iiextmetadatafilter=LicenseShortName|LicenseUrl|Artist|DateTimeOriginal|ImageDescription`).
   Firecrawl allows about 10 requests a minute: work in small batches.
+  Without Firecrawl, use curl with a User-Agent naming the site and contact address. The API endpoints (api.php,
+  rest.php) often answer 429 to cloud servers; then search with
+  `https://commons.wikimedia.org/w/index.php?search=QUERY&title=Special:Search&ns6=1`, read the author, licence and
+  date on each `File:` page, and download with `https://commons.wikimedia.org/wiki/Special:FilePath/NAME?width=1280`.
 - LOOK AT EVERY PHOTO before using it. If upload.wikimedia.org is reachable, download the 1280px thumbnail directly.
   Otherwise take a Firecrawl screenshot of `https://commons.wikimedia.org/wiki/File:NAME#/media/File:NAME`
   (viewport 1600x1150, waitFor 4000), download it, and run `python3 tools/photos.py viewer SHOT.png cut.jpg`. View the
