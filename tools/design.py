@@ -73,6 +73,8 @@ p{margin:0}
 .mast .meta b{color:var(--accent);font-weight:500;text-transform:uppercase;letter-spacing:.06em}
 .key{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted);align-items:center}
 .key b{color:var(--ink);font-weight:600;margin-right:4px}
+.key>span{white-space:nowrap}
+@media (max-width:620px){.key{gap:8px 14px;flex-wrap:nowrap}.key .l{display:none}}
 .dot{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px;flex:none}
 .dot.red,.bg-red{background:var(--red)} .dot.orange,.bg-orange{background:var(--orange)} .dot.grey,.bg-grey{background:var(--grey)}
 .c-red{color:var(--red)} .c-orange{color:var(--orange)} .c-grey{color:var(--grey)}
@@ -155,32 +157,32 @@ DESIGN_CSS = {
 .tile .right{display:block}
 """,
 "ledger": r"""
-.ledger{display:grid;gap:10px}
-.row{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:190px 1fr;min-width:0;overflow:hidden}
-.row .head{padding:14px;border-right:1px solid var(--rule);display:grid;gap:6px;align-content:start}
-.row .head h3{font-size:24px;font-weight:800;overflow-wrap:anywhere}
+.ledger{display:grid;gap:14px}
+.row{background:var(--paper);border:1px solid var(--rule);border-radius:6px;min-width:0;overflow:hidden}
+.row .head{padding:12px 14px;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px}
+.row .head h3{font-size:26px;font-weight:800;white-space:nowrap}
 .meter{display:flex;gap:4px}
 .meter i{width:14px;height:14px;border-radius:50%}
 .row .head .cnt{font:500 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
-.row ul{list-style:none;margin:0;padding:6px 14px;display:grid}
-.row li{display:grid;grid-template-columns:200px 1fr;gap:4px 14px;align-items:start;padding:12px 0;border-top:1px solid var(--rule);scroll-margin-top:12px}
-.row li:first-child{border-top:0}
-.row li>.ph{grid-row:span 5}
-.row li>.ph img{aspect-ratio:4/3}
-.row li>.ph figcaption{font-size:11px}
-.row li:not(.pic-yes)>*{grid-column:1/-1}
-.row li .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.row li .place{font-weight:600}
-.row li .fig{font:800 22px var(--display);white-space:nowrap;margin-left:auto}
-.row li h4{font:800 22px/1 var(--display);text-transform:uppercase;margin:2px 0 0;text-wrap:balance}
-.row li p{font-size:14px}
-.row li .also{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
-.row li.xref{display:block;font-size:12.5px;color:var(--muted);padding:8px 0}
-.row .xref a{font-weight:600;color:var(--ink)}
-.row.empty .head{border-right:0}
-@media (max-width:620px){.row{grid-template-columns:1fr}.row .head{border-right:0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
-.row .head h3{overflow-wrap:normal;white-space:nowrap}.row .head .cnt{flex-basis:100%}
-.row li{grid-template-columns:1fr}.row li>.ph{grid-row:auto}.row li>.ph img{aspect-ratio:16/9}}
+.row.empty .head{border-bottom:0}
+.row .none{padding:12px 14px;color:var(--muted);font-size:14px}
+.cards{list-style:none;margin:0;padding:14px;display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px}
+.st{border:1px solid var(--rule);border-top:5px solid var(--grey);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;min-width:0;background:var(--bg);scroll-margin-top:12px}
+.st.red{border-top-color:var(--red)} .st.orange{border-top-color:var(--orange)}
+.st>.ph{gap:0}
+.st>.ph img{border-radius:0}
+.st>.ph figcaption{padding:6px 12px 0}
+.st .figp{aspect-ratio:16/9;background:var(--chip);display:grid;place-content:center;justify-items:center;gap:4px;padding:8px;text-align:center}
+.st .figp b{font:800 64px/0.9 var(--display)}
+.st .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.st .tx{padding:10px 12px 12px;display:grid;gap:5px;align-content:start}
+.st .where{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-weight:600;font-size:14px}
+.st .where .fig{font:800 22px var(--display);margin-left:auto;white-space:nowrap}
+.st h4{font:800 22px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+.st p{font-size:14px}
+.st .also{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.xref{padding:0 14px 12px;font-size:13px;color:var(--muted)}
+.xref a{font-weight:600;color:var(--ink)}
 """,
 "front": r"""
 .lead{background:var(--paper);border:1px solid var(--rule);border-top:6px solid var(--red);border-radius:6px;padding:18px;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:center}
@@ -263,9 +265,9 @@ def focus_strip():
             f'<span class="k">In focus</span><b>{E(f["title"])}</b><span class="go">Read the full story →</span></a>{more}</div>')
 
 KEY = """<div class="key" aria-label="Colour key"><b>Key</b>
-<span><i class="dot red"></i>Lives lost or violence</span>
-<span><i class="dot orange"></i>Detention or restriction</span>
-<span><i class="dot grey"></i>Ongoing, no major change</span></div>"""
+<span><i class="dot red"></i>Lives lost<span class="l"> or violence</span></span>
+<span><i class="dot orange"></i>Detention<span class="l"> or restriction</span></span>
+<span><i class="dot grey"></i>Ongoing<span class="l">, no major change</span></span></div>"""
 
 def focus_cards():
     fs = data.get("focus", [])
@@ -320,17 +322,26 @@ RIGHTS = [("Life & safety", "Killings, injuries, attacks on civilians"), ("Assem
           ("Expression", "Speech, press, art, online posts"), ("Due process", "Detention, charges, courts, legal access"),
           ("Land", "Land, forests, homes, livelihoods")]
 def design_ledger():
-    """Each place appears once, under its first right, with its photo beside the summary; other rights it touches link back to it."""
+    """Each place appears once, under its first right, as a card: photo (or its key figure when there is no photo),
+    headline, summary, sources. Cards with photos come first. Other rights a place touches link back to its card."""
+    def card(i):
+        p = i.get("photo")
+        top = photo(i) if p else f'<div class="figp"><b class="c-{i["sev"]}">{E(i["fig"])}</b><span>{E(i["figcap"])}</span></div>'
+        fig = f'<span class="fig c-{i["sev"]}">{E(i["fig"])} <span class="right">{E(i["figcap"])}</span></span>' if p else ""
+        also = f'<span class="also">Also: {E(" · ".join(i["rights"][1:]))}</span>' if len(i["rights"]) > 1 else ""
+        return (f'<li id="i{i["n"]}" class="st {i["sev"]}">{top}<div class="tx"><span class="where">{E(i["place"])}{fig}</span>'
+                f'<h4>{E(i["headline"])}</h4><p>{E(i["text"])}</p>{also}<span class="src">{src(i)}</span></div></li>')
     rows = []
     for r, desc in RIGHTS:
         hits = [i for i in items if r in i["rights"]]
-        own = [i for i in hits if i["rights"][0] == r]
+        own = sorted((i for i in hits if i["rights"][0] == r), key=lambda i: not i.get("photo"))
         xref = [i for i in hits if i["rights"][0] != r]
         meter = "".join(f'<i class="bg-{i["sev"]}"></i>' for i in hits) or '<i style="background:var(--chip)"></i>'
-        lis = "".join(f"""<li id="i{i['n']}" class="{'pic-yes' if i.get('photo') else ''}">{photo(i)}<span class="top"><span class="num bg-{i['sev']}">{i['n']}</span><span class="place">{E(i['place'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])} <span class="right">{E(i['figcap'])}</span></span></span><h4>{E(i['headline'])}</h4><p>{E(i['text'])}</p>{f'<span class="also">Also: {E(" · ".join(i["rights"][1:]))}</span>' if len(i["rights"]) > 1 else ''}<span class="src">{src(i)}</span></li>""" for i in own)
+        body = f'<ul class="cards">{"".join(card(i) for i in own)}</ul>' if own else ""
         if xref:
-            lis += '<li class="xref">Also here: ' + " · ".join(f'<a href="#i{i["n"]}">{i["n"]} {E(i.get("short", i["place"]))}</a>' for i in xref) + "</li>"
-        body = f"<ul>{lis}</ul>" if hits else '<ul><li><p style="grid-column:1/-1;color:var(--muted)">No new reports in this window.</p></li></ul>'
+            body += '<p class="xref">Also here: ' + " · ".join(f'<a href="#i{i["n"]}">{E(i.get("short", i["place"]))}</a>' for i in xref) + "</p>"
+        if not hits:
+            body = '<p class="none">No new reports in this window.</p>'
         rows.append(f"""<div class="row{' empty' if not hits else ''}"><div class="head"><h3>{E(r)}</h3><div class="meter" aria-label="{len(hits)} places">{meter}</div><span class="cnt">{len(hits)} place{'s' if len(hits)!=1 else ''} · {E(desc)}</span></div>{body}</div>""")
     return f"""{KEY}<section aria-labelledby="h-led"><div class="sec-h"><h2 id="h-led">Which rights were at risk</h2><span>Each place is listed once</span></div><div class="ledger">{''.join(rows)}</div></section>"""
 
