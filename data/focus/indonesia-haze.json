@@ -1,0 +1,237 @@
+{
+ "slug": "indonesia-haze",
+ "kicker": "Focus · Indonesia",
+ "title": "Smoke since August",
+ "dek": "Fires in Kalimantan and Sumatra have burned more than 1.9 million hectares this year, a satellite monitor says, and sent smoke across Southeast Asia. Indonesia's government calls the haze largely natural; researchers and environmental groups say people lit the fires.",
+ "updated": "2026-10-21",
+ "rights": [
+  "Life & safety",
+  "Land"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/indonesia-haze/fire-palangka-raya-campus-2026.webp",
+   "alt": "At night, flames and smoke rise from scrubland behind a lit campus building, with a fire engine on the road in front.",
+   "caption": "A fire burns beside a state campus in Palangka Raya, Central Kalimantan, on 18 August 2026.",
+   "credit": "MWul / Wikimedia Commons",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Forest_fires_around_the_state_campus_of_Palangka_Raya_City,_Central_Kalimantan.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized",
+   "pos": "72% 50%"
+  },
+  {
+   "src": "images/focus/indonesia-haze/red-sun-kalimantan-2026.webp",
+   "alt": "The sun, a small red disc, in a brown sky above tiled rooftops and power lines.",
+   "caption": "Smoke haze over a residential area in Kalimantan on 20 August 2026. The sun shows only as a red disc.",
+   "credit": "PadukaYash / Wikimedia Commons",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kalimantan_(Borneo)_under_thick_smoke_haze,_August_2026.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/indonesia-haze/palangka-raya-road-haze-2026.webp",
+   "alt": "A road with roadside stalls disappears into grey smoke; a truck is barely visible ahead.",
+   "caption": "Smoke cuts visibility on a national road in Palangka Raya, Central Kalimantan, on 29 August 2026.",
+   "credit": "ParadoxP P / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Thick_smoke_haze_Palangka_Raya.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/indonesia-haze/samarinda-haze-2026.webp",
+   "alt": "An almost empty junction with traffic lights and a mosque, under a white, hazy sky.",
+   "caption": "Haze over a junction in Samarinda, East Kalimantan, on 17 September 2026.",
+   "credit": "Hendrasaputra17 / Wikimedia Commons",
+   "licence": "CC0",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Kabut_Asap_di_Samarinda_17_September_2026.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/indonesia-haze/weather-modification-plane-2026.webp",
+   "alt": "A green twin-propeller military plane on an airfield taxiway, with trees behind.",
+   "caption": "An Indonesian Air Force plane prepares for a weather modification flight against the fires at Banjarbaru, South Kalimantan, on 22 August 2026.",
+   "credit": "Indonesian Air Force / Wikimedia Commons",
+   "licence": "Public domain (Indonesian government)",
+   "licence_url": "https://commons.wikimedia.org/wiki/File:NC212_A-2103_Operasi_Modifikasi_Cuaca_Kalsel_Aug_2026.jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:NC212_A-2103_Operasi_Modifikasi_Cuaca_Kalsel_Aug_2026.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/indonesia-haze/singapore-port-haze-2026.webp",
+   "alt": "Container yards, a highway and two tower blocks fading into thick grey haze.",
+   "caption": "Haze over the Tanjong Pagar port terminal in Singapore on 14 October 2026.",
+   "credit": "ZKang123 / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Port_of_Singapore_(Tanjong_Pagar_Terminal)_during_2026_haze_20261014_124635.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "1.9M ha",
+   "figcap": "burned, Jan–Sep (satellite monitor)",
+   "src": [
+    "The Star (AFP)",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/039utter-destruction-039-indonesia-fires-have-burned-nearly-two-million-hectares-monitor"
+   ]
+  },
+  {
+   "fig": "283,270",
+   "figcap": "respiratory illness cases, 7 provinces",
+   "src": [
+    "Mongabay",
+    "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+   ]
+  },
+  {
+   "fig": "~1,700",
+   "figcap": "deaths from fire smoke in August (CREA estimate)",
+   "src": [
+    "CREA",
+    "https://energyandcleanair.org/indonesias-fires-led-to-1700-deaths-in-august-but-regular-air-pollution-even-more/"
+   ]
+  },
+  {
+   "fig": "10",
+   "figcap": "companies served notices by Singapore",
+   "src": [
+    "Eco-Business",
+    "https://eco-business.com/news/singapore-widens-haze-crackdown-to-kalimantan-targeting-10-indonesian-firms"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "Fires in Indonesia burned more than 1.9 million hectares between January and the end of September, 38% more than at the same point in 2019, according to the satellite monitor Nusantara Atlas; the government's last official figure was 202,000 hectares at the end of July. The worst fires burn on drained peatland, where they can smoulder underground for weeks. A strong El Niño has made the year unusually dry, but Nusantara Atlas founder David Gaveau told the Guardian: “El Niño is an enabler … But you need a match. And we know what that is; it's people.”",
+   "src": [
+    [
+     "The Star (AFP)",
+     "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/039utter-destruction-039-indonesia-fires-have-burned-nearly-two-million-hectares-monitor"
+    ],
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
+    ]
+   ]
+  },
+  {
+   "text": "Indonesia's Health Ministry recorded 283,270 acute respiratory illness cases in seven fire-hit provinces as of 13 October, more than double the 113,336 of 9 September, when children under five made up more than a fifth of cases. The research group CREA estimates that fire smoke caused about 1,700 deaths in August alone. “While we sleep, the whole family is just breathing in the smoke,” Ely Marlina, a 46-year-old schoolteacher and volunteer firefighter, told the Guardian.",
+   "src": [
+    [
+     "Mongabay",
+     "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+    ],
+    [
+     "The Star",
+     "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/12/indonesia-wildfires-fuel-surge-in-respiratory-illnesses-as-haze-spreads"
+    ],
+    [
+     "CREA",
+     "https://energyandcleanair.org/indonesias-fires-led-to-1700-deaths-in-august-but-regular-air-pollution-even-more/"
+    ],
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
+    ]
+   ]
+  },
+  {
+   "text": "Fires are often lit as a cheap way to clear land for oil palm planting, the Guardian reports. Data from the environmental group Walhi show seven in ten hotspots across Kalimantan were on industrial concessions, and Nusantara Atlas found that the largest burned concessions there between January and July belong to oil palm, pulpwood and mining companies. A hotspot on company land does not by itself show who lit the fire.",
+   "src": [
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
+    ],
+    [
+     "Jakarta Post editorial, via The Star",
+     "https://www.thestar.com.my/news/focus/2026/08/16/transboundary-haze-a-preventable-disaster"
+    ],
+    [
+     "Jakarta Post",
+     "https://www.thejakartapost.com/indonesia/2026/09/10/local-foreign-firms-own-largest-burned-concessions-in-kalimantan"
+    ]
+   ]
+  },
+  {
+   "text": "Police arrested 72 people in August and said they were tracing whether companies paid for the land clearing; by late September police had arrested 113 people and the environment ministry was investigating 19 companies. On 12 October President Prabowo Subianto cited 639 hectares of active firefighting as a sign the fires were receding; the disaster agency and forestry ministry later stressed that this was only the area firefighters were working on, not all that was burning.",
+   "src": [
+    [
+     "ABC",
+     "https://www.abc.net.au/news/2026-08-24/indonesia-arrests-72-over-wildfires/107069574"
+    ],
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
+    ],
+    [
+     "Mongabay",
+     "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+    ]
+   ]
+  },
+  {
+   "text": "The smoke has reached Malaysia, Singapore, Brunei, Timor-Leste and the Philippines. Singapore has served legal notices on 10 Indonesian companies under its haze law, under which no company has been fined or sued since it came into force in 2014. In West Kalimantan, Indigenous and civil society groups are suing President Prabowo and nine other defendants for “gross negligence”, seeking a national disaster declaration and residents' healthcare costs. None of those named attended the first hearing on 7 October, and the court adjourned the case to 21 October.",
+   "src": [
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke"
+    ],
+    [
+     "Eco-Business",
+     "https://eco-business.com/news/singapore-widens-haze-crackdown-to-kalimantan-targeting-10-indonesian-firms"
+    ],
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
+    ]
+   ]
+  }
+ ],
+ "official": {
+  "text": "Indonesia's government says the haze is largely natural: the head of its communications office said Malaysia and Singapore should see it as “beyond human error” and “truly nature”. President Prabowo said on 12 October that the burning had fallen from “hundreds of thousands of hectares” to below 1,000 thanks to large-scale government intervention, and the coordinating minister for security said Indonesia was “still able to handle this”. The forestry ministry did not respond to AFP's request for comment on the 1.9 million hectare estimate.",
+  "src": [
+   [
+    "Mongabay",
+    "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+   ],
+   [
+    "The Star (AFP)",
+    "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/039utter-destruction-039-indonesia-fires-have-burned-nearly-two-million-hectares-monitor"
+   ]
+  ]
+ },
+ "editions": [],
+ "layout": "chapters",
+ "instagram": {
+  "caption": "",
+  "hashtags": [
+   "#IndonesiaHaze",
+   "#Kalimantan",
+   "#CleanAir",
+   "#ClimateJustice",
+   "#HumanRights",
+   "#Indonesia",
+   "#SoutheastAsia",
+   "#ResistanceDaily"
+  ]
+ },
+ "numbers_photo": 2,
+ "end_photo": 0
+}

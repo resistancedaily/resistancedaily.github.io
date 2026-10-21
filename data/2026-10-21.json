@@ -264,5 +264,16 @@
     ]
    ]
   }
+ ],
+ "focus": [
+  {
+   "slug": "indonesia-haze",
+   "kicker": "Focus · Indonesia",
+   "title": "Smoke since August",
+   "dek": "Fires in Kalimantan and Sumatra have burned more than 1.9 million hectares this year, a satellite monitor says, and sent smoke across Southeast Asia. Indonesia's government calls the haze largely natural; researchers and environmental groups say people lit the fires.",
+   "src": "images/focus/indonesia-haze/fire-palangka-raya-campus-2026.webp",
+   "alt": "At night, flames and smoke rise from scrubland behind a lit campus building, with a fire engine on the road in front.",
+   "photos": 6
+  }
  ]
 }

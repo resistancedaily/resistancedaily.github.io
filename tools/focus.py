@@ -141,14 +141,14 @@ def page(f):
 <a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
-<a class="allf big" href="./"><span>More stories told through photos</span><b>See all Focus stories →</b></a>
+<a class="allf big" href="./"><span>More in-depth stories, every fact sourced</span><b>See all Focus stories →</b></a>
 """ + FOOT
 
 
 def index(all_f):
     cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="{E(f["photos"][0]["alt"])}" loading="lazy">
 <div><span class="kicker">{E(f["kicker"])}</span><h2>{E(f["title"])}</h2><p>{E(f["dek"])}</p><span class="src">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")} · {len(f["photos"])} photos</span></div></a></li>''' for f in all_f)
-    return HEAD.format(title="Focus · Resistance Daily", desc="Places and issues told through photos, with a sourced write-up.",
+    return HEAD.format(title="Focus · Resistance Daily", desc="In-depth stories on places and issues, with a source for every fact.",
                        og_image="", canonical=f"{SITE}focus/", css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
