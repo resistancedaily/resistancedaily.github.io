@@ -42,14 +42,6 @@ def photo(i, cls="ph"):
     return (f'<figure class="{cls}"><img src="{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
             f'<figcaption><b>{photo_label(p)}</b>{E(p["caption"])} <span class="cr">{photo_credit(p)}</span></figcaption></figure>')
 
-def pictures():
-    """'In pictures' strip for designs without a per-item slot."""
-    ps = [i for i in items if i.get("photo")]
-    if not ps:
-        return ""
-    figs = "".join(f'<div class="pic"><span class="right"><i class="dot {i["sev"]}"></i>{i["n"]} · {E(i.get("short", i["place"]))}</span>{photo(i)}</div>' for i in ps)
-    return f'<section aria-labelledby="h-pic"><div class="sec-h"><h2 id="h-pic">In pictures</h2><span>{len(ps)} photo{"s" if len(ps) != 1 else ""}</span></div><div class="pics">{figs}</div></section>'
-
 def rights(i):
     return " · ".join(i["rights"])
 
@@ -171,14 +163,24 @@ DESIGN_CSS = {
 .meter i{width:14px;height:14px;border-radius:50%}
 .row .head .cnt{font:500 11px var(--mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
 .row ul{list-style:none;margin:0;padding:6px 14px;display:grid}
-.row li{display:grid;grid-template-columns:auto 1fr auto;gap:2px 10px;align-items:baseline;padding:8px 0;border-top:1px solid var(--rule)}
+.row li{display:grid;grid-template-columns:200px 1fr;gap:4px 14px;align-items:start;padding:12px 0;border-top:1px solid var(--rule);scroll-margin-top:12px}
 .row li:first-child{border-top:0}
+.row li>.ph{grid-row:span 5}
+.row li>.ph img{aspect-ratio:4/3}
+.row li>.ph figcaption{font-size:11px}
+.row li:not(.pic-yes)>*{grid-column:1/-1}
+.row li .top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .row li .place{font-weight:600}
-.row li .fig{font:800 24px var(--display);white-space:nowrap}
-.row li p{grid-column:2/4;font-size:13.5px}
-.row li .src{grid-column:2/4}
+.row li .fig{font:800 22px var(--display);white-space:nowrap;margin-left:auto}
+.row li h4{font:800 22px/1 var(--display);text-transform:uppercase;margin:2px 0 0;text-wrap:balance}
+.row li p{font-size:14px}
+.row li .also{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.row li.xref{display:block;font-size:12.5px;color:var(--muted);padding:8px 0}
+.row .xref a{font-weight:600;color:var(--ink)}
 .row.empty .head{border-right:0}
-@media (max-width:620px){.row{grid-template-columns:1fr}.row .head{border-right:0;border-bottom:1px solid var(--rule);display:flex;justify-content:space-between;align-items:center}}
+@media (max-width:620px){.row{grid-template-columns:1fr}.row .head{border-right:0;border-bottom:1px solid var(--rule);display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.row .head h3{overflow-wrap:normal;white-space:nowrap}.row .head .cnt{flex-basis:100%}
+.row li{grid-template-columns:1fr}.row li>.ph{grid-row:auto}.row li>.ph img{aspect-ratio:16/9}}
 """,
 "front": r"""
 .lead{background:var(--paper);border:1px solid var(--rule);border-top:6px solid var(--red);border-radius:6px;padding:18px;display:grid;grid-template-columns:auto 1fr;gap:6px 22px;align-items:center}
@@ -209,6 +211,7 @@ DESIGN_CSS = {
 .ev .body{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 12px;display:grid;gap:2px;min-width:0}
 .ev .place{font-weight:600}
 .ev p{font-size:14.5px}
+.ev .ph{margin-top:6px;max-width:420px}
 @media (max-width:480px){.clock:before{left:70px}.ev{grid-template-columns:58px 28px 1fr;gap:8px}}
 """,
 "tracker": r"""
@@ -253,7 +256,7 @@ def focus_strip():
     """Highlighted link under the masthead, so readers arriving from an Instagram Focus post find the full story at once."""
     fs = data.get("focus", [])
     if not fs:
-        return '\n<a class="fstrip" href="focus/"><span class="k">In focus</span><b>Photo stories with every source</b><span class="go">All stories →</span></a>'
+        return '\n<a class="fstrip" href="focus/"><span class="k">In focus</span><b>In-depth stories, every fact sourced</b><span class="go">All stories →</span></a>'
     f = fs[0]
     more = f'<a class="all" href="focus/">All Focus stories</a>'
     return (f'\n<div class="fwrap"><a class="fstrip" href="focus/{E(f["slug"])}.html"><img src="{E(f["src"])}" alt="" loading="eager" decoding="async">'
@@ -271,7 +274,7 @@ def focus_cards():
     cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["src"])}" alt="{E(f["alt"])}" loading="lazy" decoding="async">
 <div><span class="k">{E(f["kicker"])}</span><h3>{E(f["title"])}</h3><p>{E(f["dek"])}</p><span class="more">See {f["photos"]} photos and the full story →</span></div></a>''' for f in fs)
     return f'''
-<section aria-labelledby="h-foc"><div class="sec-h"><h2 id="h-foc">In focus</h2><span>In pictures</span></div><div class="focs">{cards}</div></section>'''
+<section aria-labelledby="h-foc"><div class="sec-h"><h2 id="h-foc">In focus</h2><span>The full story</span></div><div class="focs">{cards}</div></section>'''
 
 def tail():
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in data["acts"])
@@ -317,14 +320,19 @@ RIGHTS = [("Life & safety", "Killings, injuries, attacks on civilians"), ("Assem
           ("Expression", "Speech, press, art, online posts"), ("Due process", "Detention, charges, courts, legal access"),
           ("Land", "Land, forests, homes, livelihoods")]
 def design_ledger():
+    """Each place appears once, under its first right, with its photo beside the summary; other rights it touches link back to it."""
     rows = []
     for r, desc in RIGHTS:
         hits = [i for i in items if r in i["rights"]]
+        own = [i for i in hits if i["rights"][0] == r]
+        xref = [i for i in hits if i["rights"][0] != r]
         meter = "".join(f'<i class="bg-{i["sev"]}"></i>' for i in hits) or '<i style="background:var(--chip)"></i>'
-        lis = "".join(f"""<li><span class="num bg-{i['sev']}">{i['n']}</span><span class="place">{E(i['place'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])} <span class="right">{E(i['figcap'])}</span></span><p>{E(i['text'].split('. ')[0].rstrip('.'))}.</p><span class="src">{src(i)}</span></li>""" for i in hits)
+        lis = "".join(f"""<li id="i{i['n']}" class="{'pic-yes' if i.get('photo') else ''}">{photo(i)}<span class="top"><span class="num bg-{i['sev']}">{i['n']}</span><span class="place">{E(i['place'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])} <span class="right">{E(i['figcap'])}</span></span></span><h4>{E(i['headline'])}</h4><p>{E(i['text'])}</p>{f'<span class="also">Also: {E(" · ".join(i["rights"][1:]))}</span>' if len(i["rights"]) > 1 else ''}<span class="src">{src(i)}</span></li>""" for i in own)
+        if xref:
+            lis += '<li class="xref">Also here: ' + " · ".join(f'<a href="#i{i["n"]}">{i["n"]} {E(i.get("short", i["place"]))}</a>' for i in xref) + "</li>"
         body = f"<ul>{lis}</ul>" if hits else '<ul><li><p style="grid-column:1/-1;color:var(--muted)">No new reports in this window.</p></li></ul>'
         rows.append(f"""<div class="row{' empty' if not hits else ''}"><div class="head"><h3>{E(r)}</h3><div class="meter" aria-label="{len(hits)} places">{meter}</div><span class="cnt">{len(hits)} place{'s' if len(hits)!=1 else ''} · {E(desc)}</span></div>{body}</div>""")
-    return f"""{KEY}{pictures()}<section aria-labelledby="h-led"><div class="sec-h"><h2 id="h-led">Which rights were at risk</h2><span>One place can touch several rights</span></div><div class="ledger">{''.join(rows)}</div></section>"""
+    return f"""{KEY}<section aria-labelledby="h-led"><div class="sec-h"><h2 id="h-led">Which rights were at risk</h2><span>Each place is listed once</span></div><div class="ledger">{''.join(rows)}</div></section>"""
 
 def design_front():
     order = sorted(items, key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]], i["n"]))
@@ -338,11 +346,14 @@ def design_front():
 
 def design_clock():
     evs = sorted(data.get("events", []), key=lambda e: -e["sort"])
-    lis = "".join(f"""<li class="ev"><time>{E(e['t'])}</time><span class="num bg-{by_n[e['n']]['sev']}">{e['n']}</span><div class="body"><span class="place">{E(by_n[e['n']]['place'])} <span class="right">· {E(rights(by_n[e['n']]))}</span></span><p>{E(e['text'])}</p><span class="src">{src(by_n[e['n']])}</span></div></li>""" for e in evs)
+    first = {}
+    for e in evs:
+        first.setdefault(e["n"], e)
+    lis = "".join(f"""<li class="ev"><time>{E(e['t'])}</time><span class="num bg-{by_n[e['n']]['sev']}">{e['n']}</span><div class="body"><span class="place">{E(by_n[e['n']]['place'])} <span class="right">· {E(rights(by_n[e['n']]))}</span></span><p>{E(e['text'])}</p>{photo(by_n[e['n']]) if e is first[e['n']] else ""}<span class="src">{src(by_n[e['n']])}</span></div></li>""" for e in evs)
     covered = {e["n"] for e in evs}
     rest = [i for i in items if i["n"] not in covered]
-    restli = "".join(f"""<li class="ev"><time>—</time><span class="num bg-{i['sev']}">{i['n']}</span><div class="body"><span class="place">{E(i['place'])}</span><p>{E(i['headline'])}</p><span class="src">{src(i)}</span></div></li>""" for i in rest)
-    return f"""{KEY}{pictures()}<section aria-labelledby="h-clk"><div class="sec-h"><h2 id="h-clk">The last 24 hours</h2><span>Newest first · IST</span></div><ol class="clock">{lis}</ol></section>
+    restli = "".join(f"""<li class="ev"><time>—</time><span class="num bg-{i['sev']}">{i['n']}</span><div class="body"><span class="place">{E(i['place'])}</span><p>{E(i['headline'])}</p>{photo(i)}<span class="src">{src(i)}</span></div></li>""" for i in rest)
+    return f"""{KEY}<section aria-labelledby="h-clk"><div class="sec-h"><h2 id="h-clk">The last 24 hours</h2><span>Newest first · IST</span></div><ol class="clock">{lis}</ol></section>
 {'<section aria-labelledby="h-also"><div class="sec-h"><h2 id="h-also">Also reported</h2><span>Time not reported</span></div><ol class="clock">'+restli+'</ol></section>' if rest else ''}"""
 
 def design_tracker():

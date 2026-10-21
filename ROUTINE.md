@@ -113,7 +113,8 @@ organisers' count as a range.
 
 ## STEP 5. Publish the edition
 - Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
-  item's text is one or two plain sentences, the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
+  item's text is one or two short plain sentences (about 40–50 words,
+  official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
 - Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes index.html,
   archive/DATE.html, archive/index.html and build/artifact.html, and prints any items still missing a photo.
