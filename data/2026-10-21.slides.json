@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Sudan",
+   "Drone strike near Kordofan market"
+  ],
+  [
+   "Myanmar",
+   "Airstrikes kill at least 27 civilians"
+  ],
+  [
+   "Assam",
+   "Over 1,100 families evicted"
+  ],
+  [
+   "New Delhi",
+   "Jailed protesters move High Court"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 4,
+   "label": "World · Life & safety",
+   "fig": "80–150",
+   "figlab": "reported killed",
+   "place": "Al-Dabab, West Kordofan, Sudan",
+   "head": "Drone hits a market transport hub",
+   "bullets": [
+    "Residents and medics told Al Jazeera 80 were killed on Sunday evening; local groups say about 150.",
+    "The RSF-aligned Tasis alliance blamed an army drone; the reports carry no army response.",
+    "The UN says it is alarmed by continued deadly drone strikes on civilians."
+   ],
+   "src": "Al Jazeera · Radio Dabanga"
+  },
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "27+",
+   "figlab": "civilians killed",
+   "place": "Five regions and states, Myanmar",
+   "head": "Three days of airstrikes",
+   "bullets": [
+    "Strikes from 16 to 18 October also injured 11, The Irrawaddy reports.",
+    "A strike on a WiFi shop in Yesagyo killed 12 (NUG) to 15 (local media).",
+    "The defence minister defended military operations as steps toward peace."
+   ],
+   "src": "The Irrawaddy"
+  },
+  {
+   "n": 3,
+   "label": "India · Land",
+   "fig": "1,100+",
+   "figlab": "families evicted",
+   "place": "Nagaon, Hojai and Golaghat, Assam",
+   "head": "Evicted from forest land",
+   "bullets": [
+    "Most were Bengali-speaking Muslims; residents say they lived there for decades.",
+    "Residents say more than 10 mosques were demolished.",
+    "The state says it is reclaiming reserve forest land after a court rejected their claims."
+   ],
+   "src": "Outlook · Sentinel Assam · Siasat"
+  },
+  {
+   "n": 1,
+   "label": "India · Due process",
+   "fig": "8",
+   "figlab": "days held",
+   "place": "New Delhi",
+   "head": "Protesters ask High Court for release",
+   "bullets": [
+    "Saurav Das and Ashutosh Ranka have been held since 13 October over Jantar Mantar.",
+    "They sought an urgent night hearing, citing the right to liberty.",
+    "The magistrate found their sureties unsatisfactory and said they could breach the peace."
+   ],
+   "src": "Bar & Bench · The Wire"
+  }
+ ]
+}
