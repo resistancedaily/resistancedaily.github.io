@@ -1,0 +1,268 @@
+{
+ "date": "2026-10-21",
+ "date_long": "Wed 21 Oct 2026",
+ "date_short": "Wed 21 Oct",
+ "window": "Tue 09:00 → Wed 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "days held",
+   "headline": "Jailed Jantar Mantar protesters move High Court",
+   "text": "Saurav Das and Ashutosh Ranka of the Cockroach Janta Party, held since 13 October after entering the denotified Jantar Mantar protest site, asked the Delhi High Court on Tuesday for an urgent night hearing against the extension of their judicial custody, calling it illegal and a breach of their right to liberty under Article 21. The Special Executive Magistrate who extended the custody found their sureties unsatisfactory and said the two showed no respect for the law and could breach the peace.",
+   "src": [
+    [
+     "Bar & Bench",
+     "https://www.barandbench.com/news/saurav-das-and-ashutosh-ranka-move-delhi-high-court-against-judicial-custody"
+    ],
+    [
+     "The Wire",
+     "https://m.thewire.in/article/law/cjp-moves-delhi-high-court-seeking-urgent-hearing-for-das-rankas-release"
+    ],
+    [
+     "Bar & Bench (magistrate's order)",
+     "https://www.barandbench.com/news/saurav-das-ashutosh-ranka-have-no-respect-for-law-could-breach-peace-delhi-court"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi. The road beside it was the capital's main protest site until police denotified it this month.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Imphal valley, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "48 h",
+   "figcap": "valley shutdown",
+   "headline": "Shutdown in Manipur valley after villagers killed",
+   "text": "Markets, schools and offices stayed shut across five valley districts on Tuesday in a 48-hour strike called by the Native People Committee Manipur after three Meitei villagers were shot dead in the Sunurok hills on Monday; the committee demanded arrests within 48 hours. Officials said extra central and state forces were deployed and police reported no untoward incident.",
+   "src": [
+    [
+     "National Herald",
+     "https://www.nationalheraldindia.com/national/manipur-shutdown-disrupts-valley-life-after-three-meitei-killings"
+    ],
+    [
+     "Imphal Times",
+     "https://www.imphaltimes.com/news/normalcy-crippled-as-48-hour-strike-protests-killing-of-three-civilians/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/imphal-ima-market.webp",
+    "alt": "Women vendors selling vegetables, fish and grain on the floor of a covered market, seen from above.",
+    "caption": "Ima Keithel, the women's market in central Imphal. Markets across the valley were closed for the strike.",
+    "credit": "PP Yoonus / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ima_Market,_imphal.jpeg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Nagaon, Hojai and Golaghat, Assam",
+   "short": "Assam",
+   "rights": [
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "1,100+",
+   "figcap": "families evicted",
+   "headline": "Over 1,100 families evicted in Assam forest drive",
+   "text": "Authorities evicted more than 1,100 families, most of them Bengali-speaking Muslims, from forest land in Nagaon, Hojai and Golaghat districts over two days, and residents say more than 10 mosques were demolished and that they had lived there for decades. The state government says it is reclaiming reserve forest land from encroachment after a court rejected the residents' claims to the land, and reports say no immediate rehabilitation was provided.",
+   "src": [
+    [
+     "Outlook",
+     "https://www.outlookindia.com/national/over-1100-families-evicted-in-assam-what-we-know-about-the-drive-in-nagaon-hojai-and-golaghat"
+    ],
+    [
+     "Sentinel Assam",
+     "https://www.sentinelassam.com/north-east-india-news/assam-news/assam-eviction-drive-over-1100-families-displaced-across-three-districts"
+    ],
+    [
+     "Siasat",
+     "https://www.siasat.com/eviction-drive-in-assam-districts-leaves-over-500-muslims-homeless-3561064/"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "Al-Dabab, West Kordofan, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "80–150",
+   "figcap": "reported killed",
+   "headline": "Drone strike near Kordofan market kills dozens",
+   "text": "A drone struck a transport hub near the market in al-Dabab, an RSF-held town in West Kordofan, on Sunday evening as villagers gathered for rides home, killing 80 people according to residents and medics, while local groups cited by Radio Dabanga put the toll at about 150. The RSF-aligned Tasis alliance blamed an army drone; the reports carry no response from the army, and the UN said it is alarmed by continued deadly drone strikes on civilians across Sudan.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/19/160-reported-killed-in-escalating-drone-attacks-across-sudan"
+    ],
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-strikes-kill-civilians-in-darfur-and-kordofan-as-attacks-target-eastern-sudan"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Gaza City and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed Tuesday",
+   "headline": "Couple and teenager among four killed in Gaza",
+   "text": "Medics said an Israeli airstrike killed a husband and wife in their Gaza City apartment on Tuesday, and Israeli gunfire killed a 17-year-old in Khan Younis and another person in Zeitoun; the Israeli military said it struck a militant in Gaza City and did not immediately comment on the shootings. Gaza health officials say at least 1,500 Palestinians have been killed since the ceasefire, and Israel says four of its soldiers have been killed by militants in that time.",
+   "src": [
+    [
+     "Reuters via US News",
+     "https://www.usnews.com/news/world/articles/2026-10-20/israeli-fire-kills-four-people-in-gaza-medics-say"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/20/israeli-forces-kill-at-least-four-palestinians-in-gaza-strikes"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Magwe, Sagaing, Mandalay, Rakhine and Chin, Myanmar",
+   "short": "Myanmar",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "27+",
+   "figcap": "civilians killed",
+   "headline": "Airstrikes kill at least 27 civilians in Myanmar",
+   "text": "The Irrawaddy reports that military airstrikes from 16 to 18 October killed at least 27 civilians and injured 11 in five regions and states, including a strike on a Starlink WiFi shop in Yesagyo township that killed 12 people by the opposition NUG's count and 15 by local media's. The regime's defence minister defended military operations as steps toward peace.",
+   "src": [
+    [
+     "The Irrawaddy",
+     "https://www.irrawaddy.com/news/burma/myanmar-regime-bombs-civilians-while-claiming-military-operations-serve-peace.html"
+    ]
+   ]
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Tirana, Albania",
+   "short": "Tirana",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "days of clashes",
+   "headline": "Eighth day of protest clashes in Tirana",
+   "text": "Police fired tear gas and used water cannon to push back protesters in Tirana on Tuesday, the eighth straight day of anti-government demonstrations led by students demanding lower tuition fees and more education funding, in which protesters have thrown rocks, flares and firebombs. The Prime Minister again rejected calls to resign, saying attacks on institutions and attempts to overthrow the government will not be allowed.",
+   "src": [
+    [
+     "AP via ABC News",
+     "https://abcnews.com/International/wireStory/albanian-police-clash-anti-government-protesters-8th-day-137417515"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/tirana-skanderbeg.webp",
+    "alt": "A large lawn in a city square with an equestrian statue, a minaret, a tower block and a red flag.",
+    "caption": "Skanderbeg Square in central Tirana.",
+    "credit": "Pudelek / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Qazvin, Iran",
+   "short": "Iran",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "38–39",
+   "figcap": "arrested, officials say",
+   "headline": "Iran arrests dozens more over winter protests",
+   "text": "Iran's Qazvin provincial intelligence directorate said it had arrested 39 people over the December–January anti-government protests (VOA's headline gives 38), calling them mercenaries of the US and Israel and accusing them of arson, looting and killing security personnel. Independent rights groups including Amnesty International and Human Rights Watch have described similar charges against protesters as fabricated and politically motivated.",
+   "src": [
+    [
+     "VOA",
+     "https://www.voanews.com/a/iranian-security-forces-continue-crackdown-on-protestors-38-detained-in-qazvin/8212942.html"
+    ],
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/02/24/iran-tsunami-of-arbitrary-arrests-enforced-disappearances"
+    ]
+   ]
+  }
+ ]
+}
