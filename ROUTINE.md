@@ -115,7 +115,8 @@ organisers' count as a range.
 - When 3–8 good photos exist for one place or issue (new or ongoing, India or world), write data/focus/SLUG.json (see
   tools/focus.py) with a short, fully sourced write-up, key numbers, the official position and an Instagram story text
   ("instagram": {"hashtags": [...]}; the slide captions are built from "story"), then
-  `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it.
+  `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it. With "layout": "chapters", give
+  every paragraph that has no photo of its own a sourced "fig" and "figcap"; it fills the photo's place, as on the slides.
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
 
 ## STEP 5. Publish the edition

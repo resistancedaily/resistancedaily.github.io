@@ -8,7 +8,8 @@ data/focus/SLUG.json:
 { "slug", "title", "kicker", "dek", "updated": "YYYY-MM-DD", "rights": [...],
   "photos": [photo, ...]            # same photo objects as data.json items (tools/photos.py); 3-8 of them
   "figs": [{"fig", "figcap", "src": [name, url]}],   # 2-4 key numbers
-  "story": [{"text", "src": [[name, url], ...]}],     # 3-5 short paragraphs, every fact sourced
+  "story": [{"text", "src": [[name, url], ...], "fig"?, "figcap"?}],  # 3-5 short paragraphs, every fact sourced;
+                                                      # with "chapters", a paragraph past the last photo shows fig/figcap
   "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
   "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
@@ -77,6 +78,9 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .chap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:20px;align-items:start;border-top:1px solid var(--rule);padding-top:20px}
 .chap p{font-size:16.5px}
 @media (max-width:680px){.chap{grid-template-columns:1fr}}
+.figp{aspect-ratio:4/3;background:var(--chip);border-radius:4px;display:grid;place-content:center;justify-items:center;gap:8px;padding:16px;text-align:center}
+.figp b{font:800 clamp(64px,11vw,96px)/.9 var(--display);color:var(--red)}
+.figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);max-width:28ch}
 """
 
 HEAD = """<!doctype html>
@@ -117,8 +121,16 @@ def body(f, figs, story, official):
         return (f'<section class="gallery" aria-label="Photos">{"".join(figure(p) for p in f["photos"])}</section>\n{figs_html}\n'
                 f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="story">{story}</div>{official}</section>')
     # "chapters": every paragraph sits next to its own photo (photos[0] is the cover, photos[i+1] goes with story[i]).
+    # A paragraph without a photo shows its key figure ("fig", "figcap") in the photo's place, as the slides do.
     ph = f["photos"]
-    chaps = "".join(f'<div class="chap">{figure(ph[i + 1]) if i + 1 < len(ph) else ""}<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p></div>'
+
+    def side(i, x):
+        if i + 1 < len(ph):
+            return figure(ph[i + 1])
+        if x.get("fig"):
+            return f'<div class="figp"><b>{E(x["fig"])}</b><span>{E(x.get("figcap", ""))}</span></div>'
+        return ""
+    chaps = "".join(f'<div class="chap">{side(i, x)}<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p></div>'
                     for i, x in enumerate(f["story"]))
     return (f'<section class="cover">{figure(ph[0])}</section>\n{figs_html}\n'
             f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="chaps">{chaps}</div>{official}</section>')
