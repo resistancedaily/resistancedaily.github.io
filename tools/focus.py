@@ -88,7 +88,7 @@ HEAD = """<!doctype html>
 <style>{css}</style></head><body><div class="wrap">"""
 
 FOOT = """<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
-<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' faces.</span>
+<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' and children's faces.</span>
 <span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
 </div></body></html>
 """

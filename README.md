@@ -24,8 +24,8 @@ and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`.
   Sources, in order: Wikimedia Commons (CC BY, CC BY-SA, CC0,
   public domain), UN and humanitarian agencies whose terms allow reuse with credit, government press photos, Creative
   Commons Flickr, and reader photos sent with permission. Never agency/newspaper photos we have no licence for, and never AI images.
-- Every photo is looked at before use: no graphic images of the dead or injured, no identifiable children, protesters'
-  faces blurred, and the caption must match what the photo shows (Commons titles can be wrong).
+- Every photo is looked at before use: no graphic images of the dead or injured, protesters' and
+  children's faces blurred (other adults unblurred unless the photo puts them at particular risk), and the caption must match what the photo shows (Commons titles can be wrong).
 - Labels: "File photo · YEAR" for an older picture of the place; "Photo from the event" only when it shows the event.
   Credit line: photographer / source, licence (with link), and changes such as "cropped" or "faces blurred".
 - Tools: `python3 tools/photos.py commons api.json` (metadata), `viewer` (cut a photo out of a Commons viewer

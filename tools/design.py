@@ -290,7 +290,7 @@ def tail():
 <li>Every number links to its source, with ground reporting first.</li>
 <li>Official positions appear next to allegations; claims are labelled as claims.</li>
 <li>When sources disagree, we show the range. Maps show land only, with no political borders.</li>
-<li>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' faces.</li></ul></details>
+<li>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' and children's faces.</li></ul></details>
 <footer><span>A new edition is published every morning at 9:00 IST, in a different layout each day: Mon map · Tue numbers · Wed rights ledger · Thu front page · Fri 24-hour clock · Sat map · Sun "Still waiting".</span><span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>. We check every photo and blur faces.</span></footer>
 </div>
 <script>
