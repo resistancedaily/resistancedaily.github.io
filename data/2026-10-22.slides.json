@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Abyei", "Market strike toll rises to 153"],
+  ["Manipur", "Tear gas in Imphal; Kuki man shot dead"],
+  ["New Delhi", "Jantar Mantar pair freed"],
+  ["New Delhi", "Century-old mosque told to vacate"]
+ ],
+ "stories": [
+  {"n": 5, "label": "World · Life & safety", "fig": "153", "figlab": "killed, official says",
+   "place": "Amiet Market, Abyei", "head": "Drone strike on a border market",
+   "bullets": ["Abyei's caretaker information minister says the toll rose from 73 to 153, with fires still burning.",
+               "MSF says it is treating more than 20 wounded, some with severe burns.",
+               "South Sudan blames Sudan's army; a Sudanese officer told AP it hit RSF-bound fuel tankers and does not target civilians."],
+   "src": "Al Jazeera · The National"},
+  {"n": 3, "label": "India · Life & safety", "fig": "3", "figlab": "suspects arrested",
+   "place": "Imphal and Kangpokpi, Manipur", "head": "Tear gas at a protest in Imphal",
+   "bullets": ["Protesters over Monday's killing of three Meitei villagers tried to enter an event attended by the Chief Minister.",
+               "Police fired tear gas; three people had minor injuries.",
+               "A Kuki man, Paolen Khongsai, was shot dead on Tuesday; police arrested three in Monday's ambush."],
+   "src": "The Tribune · The Morning Voice"},
+  {"n": 1, "label": "India · Due process", "fig": "7", "figlab": "days in Tihar",
+   "place": "New Delhi", "head": "Jantar Mantar protesters released",
+   "bullets": ["A magistrate ordered the release of Saurav Das and Ashutosh Ranka on Wednesday.",
+               "The court rejected a police request for three more days' custody.",
+               "Two dozen UN experts urged an inquiry into force used at the protests; India says police acted within the law."],
+   "src": "The News Minute · Reuters"},
+  {"n": 2, "label": "India · Land", "fig": "6", "figlab": "days to vacate",
+   "place": "Race Course area, New Delhi", "head": "Mosque near PM's residence told to go",
+   "bullets": ["The Land and Development Office calls the mosque unauthorised on government land.",
+               "The Delhi Waqf Board says it is Waqf property notified in 1977.",
+               "Nearly 700 nearby families were displaced; police say they got homes in Mundka."],
+   "src": "Scroll · ETV Bharat · Siasat"}
+ ]
+}
