@@ -1,0 +1,219 @@
+{
+ "slug": "sudan-war",
+ "kicker": "Focus · Sudan",
+ "title": "Sudan's long war",
+ "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+ "updated": "2026-10-22",
+ "rights": [
+  "Life & safety",
+  "Displacement",
+  "Food"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "caption": "Sudanese refugees carry aid supplies in Adré, eastern Chad, on 3 February 2026. The town had 40,000 people before the war and now hosts more than 180,000 refugees, the UK government says.",
+   "credit": "Russell Watkins / FCDO, via Wikimedia Commons",
+   "licence": "CC BY 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Foreign_Secretary_Yvette_Cooper_meets_Sudanese_civil_war_refugees_in_Adr%C3%A9,_eastern_Chad_on_3_February_2026_-_6.jpg",
+   "kind": "event",
+   "year": "2026",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/sudan-war/al-jaili-refinery-smoke-2025.webp",
+   "alt": "A satellite view of brown desert and the green line of the Nile, with a long dark plume of smoke drifting south.",
+   "caption": "A satellite image from 24 January 2025 shows black smoke from a fire at the Al-Jaili oil refinery, about 60 km north of Khartoum, drifting over the capital.",
+   "credit": "NASA Earth Observatory (MODIS, Aqua) / Wikimedia Commons",
+   "licence": "Public domain (NASA)",
+   "licence_url": "https://commons.wikimedia.org/wiki/File:Refinery_Fire_in_Sudan_(MODIS_2025-01-26).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Refinery_Fire_in_Sudan_(MODIS_2025-01-26).jpg",
+   "kind": "event",
+   "year": "2025",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/sudan-war/el-fasher-charcoal-market-2015.webp",
+   "alt": "Three women in brightly coloured robes stand beside piles of firewood and charcoal at an open-air market.",
+   "caption": "Displaced women sell charcoal at a market in El Fasher, North Darfur, in 2015, years before the RSF siege of the city.",
+   "credit": "Roman Deckert / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:ElFasherDarfurSudan_RomanDeckert18022015.jpg",
+   "kind": "file",
+   "year": "2015",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/sudan-war/abyei-aerial-2009.webp",
+   "alt": "Flat, dry savannah dotted with trees and round huts, seen from an aircraft window.",
+   "caption": "Abyei and the surrounding plain, seen from a UN helicopter. The area is claimed by both Sudan and South Sudan.",
+   "credit": "Sudan Envoy / Wikimedia Commons",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sudan_Envoy_-_Abyei_from_Above.jpg",
+   "kind": "file",
+   "year": "2009",
+   "changes": "cropped"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "59,000+",
+   "figcap": "killed, ACLED count (estimates up to 150,000)",
+   "src": [
+    "AP via CP24",
+    "https://www.cp24.com/news/world/2026/06/17/drone-strikes-kill-over-1000-civilians-in-sudan-in-first-5-months-of-2026-un-rights-chief-says/"
+   ]
+  },
+  {
+   "fig": "~13M",
+   "figcap": "people displaced",
+   "src": [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+   ]
+  },
+  {
+   "fig": "6,000+",
+   "figcap": "killed in 3 days in El Fasher (UN)",
+   "src": [
+    "AP via OPB",
+    "https://www.opb.org/article/2026/02/15/un-says-at-least-6000-killed-over-3-days-during-rsf-attack-on-sudans-el-fasher/"
+   ]
+  },
+  {
+   "fig": "19.5M",
+   "figcap": "facing high acute hunger (IPC, May 2026)",
+   "src": [
+    "AP via WTOP",
+    "https://wtop.com/news/2026/05/over-40-of-sudans-population-face-high-levels-of-acute-food-insecurity-monitoring-group-warns/"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "The war broke out in Khartoum on 15 April 2023, after the army and the Rapid Support Forces split over plans to fold the paramilitary into the military. The conflict monitor ACLED has recorded at least 59,000 deaths in three years and says the real toll is likely higher; in 2024 the US envoy cited estimates of up to 150,000. Both sides now use armed drones: the UN human rights office recorded more than 1,000 civilians killed by drone strikes between January and May 2026.",
+   "src": [
+    [
+     "AP via CP24",
+     "https://www.cp24.com/news/world/2026/06/17/drone-strikes-kill-over-1000-civilians-in-sudan-in-first-5-months-of-2026-un-rights-chief-says/"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+    ],
+    [
+     "ACLED",
+     "https://acleddata.com/methodology/how-interpret-acleds-fatality-records-sudan"
+    ]
+   ]
+  },
+  {
+   "text": "In Darfur, the RSF and allied militias besieged El Fasher for more than 18 months and overran it on 26 October 2025. The UN human rights office says more than 6,000 people were killed in just over three days: at least 4,400 inside the city and more than 1,600 as they fled. It says the real toll is “undoubtedly significantly higher” and that sexual violence was used systematically as a weapon of war.",
+   "src": [
+    [
+     "AP via OPB",
+     "https://www.opb.org/article/2026/02/15/un-says-at-least-6000-killed-over-3-days-during-rsf-attack-on-sudans-el-fasher/"
+    ]
+   ]
+  },
+  {
+   "text": "The war crosses borders. On Monday 19 October 2026 a drone strike on Amiet Market in Abyei, an area claimed by both Sudan and South Sudan, killed at least 153 people, a local official says. South Sudan blames Sudan's army; an unnamed Sudanese officer told AP the army hit fuel tankers bound for the RSF. In November 2025 an RSF drone attack on the Heglig oil facility halted production and exports in parts of Sudan and South Sudan, where oil brings in more than 90% of government revenue.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/21/drone-attack-in-disputed-sudan-south-sudan-border-region-kills-at-least-153"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/south-sudan-oil-production-halted-after-drone-attack"
+    ]
+   ]
+  },
+  {
+   "text": "About 13 million people have been forced from their homes; UNHCR says 4.3 million are refugees in neighbouring countries, most in Egypt and eastern Chad. Famine was confirmed in Zamzam camp in 2024 and in El Fasher and Kadugli in 2025. In May 2026 the IPC found no area in famine but 14 areas at risk, and nearly 19.5 million people, more than 40% of the population, facing high levels of acute food insecurity.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+    ],
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en?p=20128493"
+    ],
+    [
+     "WFP",
+     "https://wfp.org/news/famine-conditions-confirmed-sudans-el-fasher-and-kadugli-hunger-and-malnutrition-ease-where"
+    ],
+    [
+     "AP via WTOP",
+     "https://wtop.com/news/2026/05/over-40-of-sudans-population-face-high-levels-of-acute-food-insecurity-monitoring-group-warns/"
+    ]
+   ]
+  },
+  {
+   "text": "Both sides face accusations. In January 2025 the US found that the RSF was committing genocide; in 2025 it also found that Sudan's government had used chemical weapons in 2024, which Sudan denies. The International Criminal Court says it has “concrete evidence” linking RSF leaders to recent war crimes in Darfur. UN-led talks on a ceasefire resumed in Geneva in October 2026 without either warring party at the table.",
+   "src": [
+    [
+     "AP via ClickOnDetroit",
+     "https://www.clickondetroit.com/news/world/2025/01/07/us-says-sudan-rebel-force-has-committed-genocide-and-it-imposes-sanctions-on-the-groups-leaders/"
+    ],
+    [
+     "UPI",
+     "https://www.upi.com/Top_News/US/2025/05/23/Sudan-chemical-weapons/6801747971956/"
+    ],
+    [
+     "BBC via MyJoyOnline",
+     "https://www.myjoyonline.com/international-court-tells-bbc-of-breakthrough-in-sudan-war-crimes-probe/"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168638"
+    ]
+   ]
+  }
+ ],
+ "official": {
+  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
+  "src": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+   ],
+   [
+    "BBC via MyJoyOnline",
+    "https://www.myjoyonline.com/international-court-tells-bbc-of-breakthrough-in-sudan-war-crimes-probe/"
+   ],
+   [
+    "AP via OPB",
+    "https://www.opb.org/article/2026/02/15/un-says-at-least-6000-killed-over-3-days-during-rsf-attack-on-sudans-el-fasher/"
+   ],
+   [
+    "AP via ClickOnDetroit",
+    "https://www.clickondetroit.com/news/2025/07/27/sudans-paramilitaries-announces-a-parallel-government-deepening-the-countrys-crisis/"
+   ]
+  ]
+ },
+ "editions": [
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-22"
+ ],
+ "instagram": {
+  "caption": "",
+  "hashtags": [
+   "#Sudan",
+   "#SouthSudan",
+   "#Darfur",
+   "#HumanRights",
+   "#ResistanceDaily"
+  ]
+ },
+ "layout": "chapters",
+ "numbers_photo": 0,
+ "end_photo": 3
+}
