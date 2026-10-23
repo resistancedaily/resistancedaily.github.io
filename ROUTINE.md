@@ -145,7 +145,12 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 - Slide 1 (cover): keep every element inside the middle 860px (x 110–970) so the 3:4 profile-grid crop never cuts text.
   Date as the largest element, the tagline "What happened to people's rights in the last 24 hours. Every fact sourced.",
   then 4 rows of place name above a one-line headline (max ~45 characters). Footer: "Swipe → · Sources: link in bio".
-  Mon–Sat dark with orange place names; Sunday light with red place names and a red "+ Still waiting" tag.
+  The cover style rotates by IST weekday (tools/slides.py picks it; set "cover_style" in DATE.slides.json to override):
+  Mon photo · Tue paper · Wed signal · Thu night · Fri photo · Sat paper · Sun sunday. photo = the first story photo
+  (≥900px) across the top with the date on it and the rows on dark below, with the photo's file-photo year and
+  author in the footer (falls back to night if no story has a big enough photo); paper = light newspaper front with
+  heavy rules and red numbers 01–04; signal = orange background, ink date, white place names; night = dark with
+  orange place names; sunday = light with red place names and a red "+ Still waiting" tag.
 - Slides 2–5 (light): one story each, led by a big red number with a grey label, then 2–3 short bullets and a
   "Sources: …" line. Every story slide has the same shape: the top area holds the item's photo (with a "File photo · YEAR" tag
   and the photo credit under the sources), or, when there is no photo, the big number on a grey panel. On Sundays, show Still Waiting cases instead.

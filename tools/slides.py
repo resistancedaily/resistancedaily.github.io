@@ -157,22 +157,75 @@ def render(slides, out, prefix):
     return paths
 
 
+# Daily cover styles rotate by IST weekday so the profile grid doesn't repeat one look all week.
+# data/DATE.slides.json may set "cover_style" to override. Every style keeps text inside x 110-970 (the 3:4 grid crop),
+# the date as the largest element, the tagline, 4 place/headline rows and the "Swipe" footer.
+COVER_ROTATION = ["photo", "paper", "signal", "night", "photo", "paper", "sunday"]  # Mon..Sun
+TAGLINE = "What happened to people's rights in the last 24 hours. Every fact sourced."
+
+
+def cover(dt, sp, by, N):
+    style = sp.get("cover_style") or COVER_ROTATION[dt.weekday()]
+    day, date = dt.strftime("%A"), dt.strftime("%d %b")
+    foot = "Swipe → · Sources: link in bio"
+    mono = "font:500 24px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.06em"
+    brand = lambda c: f'<span style="color:{c};display:flex;align-items:center;gap:14px"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily</span>'
+    if style == "photo":
+        # Lead story's photo fills the top; date sits on it, rows on a solid panel below. Falls back to "night".
+        p = next((by.get(st.get("n"), {}).get("photo") for st in sp["stories"]
+                  if by.get(st.get("n"), {}).get("photo") and big_enough(by[st["n"]]["photo"])), None)
+        if not p:
+            style = "night"
+        else:
+            rows = "".join(f'<div style="border-top:2px solid #333840;padding:16px 0 14px"><div class="D" style="font-size:52px;color:{AC}">{E(pl)}</div><div style="font:600 32px \'IBM Plex Sans\';margin-top:6px">{E(h)}</div></div>' for pl, h in sp["cover"])
+            return f'''<div class="s dark" style="padding:0">
+<div style="position:relative;height:590px;flex:none"><img src="{E(src_url(p))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(p.get("pos", "center"))}">
+<div style="position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.08) 28%,rgba(0,0,0,.6) 62%,{INK})"></div>
+<div style="position:absolute;inset:0;padding:80px 110px 30px;display:flex;flex-direction:column">
+<div class="top" style="color:#e6e6e6">{brand("#fff")}<span>1 / {N}</span></div>
+<div style="margin-top:auto"><div class="D" style="font-size:64px;color:{AC}">{day}</div><div class="D" style="font-size:190px;color:#fff">{date}</div></div></div></div>
+<div style="padding:10px 110px 70px;display:flex;flex-direction:column;flex:1">
+<p style="font-size:28px;color:#9ba1aa;margin:0 0 16px;line-height:1.35">{TAGLINE}</p>{rows}
+<div style="margin-top:auto;border-top:2px solid #333840;padding-top:18px;{mono};color:#9ba1aa">{foot} · {E(label(p))} · {E(p["credit"].split(" / ")[0])}, {E(p["licence"])}</div></div></div>'''
+    if style == "paper":
+        # Newspaper front: light paper, heavy rules, numbered rows.
+        rows = "".join(f'<div style="display:grid;grid-template-columns:86px 1fr;gap:8px;border-top:2px solid {INK};padding:18px 0 16px"><div class="D" style="font-size:64px;color:{RED}">{k:02d}</div><div><div class="D" style="font-size:52px">{E(pl)}</div><div style="font:400 33px \'IBM Plex Sans\';margin-top:6px;color:#3a3f47">{E(h)}</div></div></div>' for k, (pl, h) in enumerate(sp["cover"], 1))
+        return f'''<div class="s light" style="padding:90px 110px;background:#fbfaf6">
+<div class="top">{brand(INK)}<span>1 / {N}</span></div>
+<div style="border-top:10px solid {INK};border-bottom:2px solid {INK};margin-top:36px;padding:14px 0 10px;display:flex;justify-content:space-between;align-items:baseline">
+<span class="D" style="font-size:60px;color:{RED}">{day}</span><span style="{mono};color:#5b616b">The last 24 hours</span></div>
+<div class="D" style="font-size:220px;margin-top:20px">{date}</div>
+<p style="font-size:30px;color:#5b616b;margin:16px 0 30px;line-height:1.35">{TAGLINE}</p>{rows}
+<div style="margin-top:auto;border-top:10px solid {INK};padding-top:18px;{mono};color:#5b616b">{foot}</div></div>'''
+    if style == "signal":
+        # Orange poster: ink type on the accent colour.
+        rows = "".join(f'<div style="border-top:3px solid {INK};padding:18px 0 16px"><div class="D" style="font-size:60px;color:#fff">{E(pl)}</div><div style="font:600 34px \'IBM Plex Sans\';margin-top:6px;color:{INK}">{E(h)}</div></div>' for pl, h in sp["cover"])
+        return f'''<div class="s" style="padding:90px 110px;background:{AC};color:{INK}">
+<div class="top" style="color:{INK}"><span style="display:flex;align-items:center;gap:14px"><i style="display:inline-block;width:44px;height:8px;background:{INK}"></i>Resistance Daily</span><span>1 / {N}</span></div>
+<div class="D" style="font-size:240px;margin-top:40px;line-height:.82">{date}</div>
+<div class="D" style="font-size:76px;color:#fff;margin-top:8px">{day}</div>
+<p style="font-size:30px;margin:20px 0 26px;line-height:1.35;font-weight:600">{TAGLINE}</p>{rows}
+<div style="margin-top:auto;border-top:3px solid {INK};padding-top:18px;{mono}">{foot}</div></div>'''
+    # "night" (the original dark cover) and "sunday" (light, red, with the Still waiting tag)
+    sunday = style == "sunday"
+    rows = "".join(f'<div style="border-top:2px solid {"#d9dcd8" if sunday else "#333840"};padding:20px 0 18px"><div class="D" style="font-size:64px;color:{RED if sunday else AC}">{E(pl)}</div><div style="font:600 36px \'IBM Plex Sans\';margin-top:8px">{E(h)}</div></div>' for pl, h in sp["cover"])
+    tag = f' · <span style="color:{RED}">+ Still waiting</span>' if sunday else ""
+    return f'''<div class="s {'light' if sunday else 'dark'}" style="padding:90px 110px">
+<div class="top">{brand(INK if sunday else BG)}<span>1 / {N}</span></div>
+<div class="D" style="font-size:76px;color:{AC};margin-top:46px">{day}</div>
+<div class="D" style="font-size:200px">{date}</div>
+<p style="font-size:30px;color:#9ba1aa;margin:22px 0 26px;line-height:1.35">{TAGLINE}</p>
+{rows}
+<div style="margin-top:auto;border-top:2px solid {"#d9dcd8" if sunday else "#333840"};padding-top:20px;{mono};color:#9ba1aa">{foot}{tag}</div></div>'''
+
+
 def daily(date, out):
     d = json.load(open(os.path.join(root, "data", f"{date}.json")))
     sp = json.load(open(os.path.join(root, "data", f"{date}.slides.json")))
     by = {i["n"]: i for i in d["items"]}
     dt = datetime.date.fromisoformat(date)
-    sunday = dt.weekday() == 6
     N = 6
-    rows = "".join(f'<div style="border-top:2px solid {"#d9dcd8" if sunday else "#333840"};padding:20px 0 18px"><div class="D" style="font-size:64px;color:{RED if sunday else AC}">{E(p)}</div><div style="font:600 36px \'IBM Plex Sans\';margin-top:8px">{E(h)}</div></div>' for p, h in sp["cover"])
-    tag = f' · <span style="color:{RED}">+ Still waiting</span>' if sunday else ""
-    slides = [f'''<div class="s {'light' if sunday else 'dark'}" style="padding:90px 110px">
-<div class="top"><span style="color:{INK if sunday else BG};display:flex;align-items:center;gap:14px"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily</span><span>1 / {N}</span></div>
-<div class="D" style="font-size:76px;color:{AC};margin-top:46px">{dt.strftime("%A")}</div>
-<div class="D" style="font-size:200px">{dt.strftime("%d %b")}</div>
-<p style="font-size:30px;color:#9ba1aa;margin:22px 0 26px;line-height:1.35">What happened to people's rights in the last 24 hours. Every fact sourced.</p>
-{rows}
-<div style="margin-top:auto;border-top:2px solid {"#d9dcd8" if sunday else "#333840"};padding-top:20px;font:500 24px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.06em">Swipe → · Sources: link in bio{tag}</div></div>''']
+    slides = [cover(dt, sp, by, N)]
     for k, st in enumerate(sp["stories"], 2):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
         p = by.get(st.get("n"), {}).get("photo")
