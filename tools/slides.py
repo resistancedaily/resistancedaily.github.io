@@ -170,6 +170,77 @@ def cover(dt, sp, by, N):
     foot = "Swipe → · Sources: link in bio"
     mono = "font:500 24px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.06em"
     brand = lambda c: f'<span style="color:{c};display:flex;align-items:center;gap:14px"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily</span>'
+    # Cover row k goes with story k: its photo (when big enough) or its key figure fills the circle.
+    pics = []
+    for k in range(4):
+        st = sp["stories"][k] if k < len(sp["stories"]) else {}
+        ph = by.get(st.get("n"), {}).get("photo")
+        pics.append((ph if ph and big_enough(ph, 600) else None, st.get("fig", "")))
+
+    def disc(k, d, ring=AC):
+        ph, fig = pics[k]
+        inner = (f'<img src="{E(src_url(ph))}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:{E(ph.get("pos", "center"))}">'
+                 if ph else f'<span class="D" style="font-size:{int(d * .42)}px;color:#fff">{E(fig)}</span>')
+        return (f'<div style="position:relative;width:{d}px;height:{d}px;flex:none"><div style="width:100%;height:100%;border-radius:50%;overflow:hidden;'
+                f'border:8px solid {ring};background:{RED};display:grid;place-items:center">{inner}</div>'
+                f'<span style="position:absolute;left:0;top:0;width:58px;height:58px;border-radius:50%;background:{INK};color:#fff;border:4px solid {ring};'
+                f'display:grid;place-items:center;font:800 30px \'Barlow Condensed\'">{k + 1}</span></div>')
+
+    def credits():
+        cs = [f'{k + 1}: {ph["credit"].split(" / ")[0]}, {ph["licence"]}, {ph["year"]}' for k, (ph, _) in enumerate(pics) if ph]
+        return f'File photos · {" · ".join(cs)}' if cs else ""
+
+    if style == "circles":
+        # Four round photo windows in a 2x2 grid under the date; place and headline beneath each circle.
+        cells = "".join(f'<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px">{disc(k, 220)}'
+                        f'<div class="D" style="font-size:46px;color:{RED};margin-top:6px">{E(pl)}</div>'
+                        f'<div style="font:600 29px/1.25 \'IBM Plex Sans\';max-width:400px">{E(h)}</div></div>' for k, (pl, h) in enumerate(sp["cover"]))
+        return f'''<div class="s light" style="padding:80px 110px 60px">
+<div class="top">{brand(INK)}<span>1 / {N}</span></div>
+<div style="display:flex;align-items:flex-end;gap:26px;margin-top:26px"><div class="D" style="font-size:170px">{date}</div><div class="D" style="font-size:60px;color:{AC};padding-bottom:14px">{day}</div></div>
+<p style="font-size:27px;color:#5b616b;margin:10px 0 26px;line-height:1.35">{TAGLINE}</p>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:26px 40px">{cells}</div>
+<div style="margin-top:auto;padding-top:16px;border-top:2px solid #d9dcd8;{mono};font-size:17px;color:#5b616b;line-height:1.5">{foot}<br>{E(credits())}</div></div>'''
+    if style == "mosaic":
+        # Four photo quarters edge to edge; the date sits in a circle where they meet.
+        pos = [("left:0;top:0", "left"), ("right:0;top:0", "right"), ("left:0;bottom:0", "left"), ("right:0;bottom:0", "right")]
+        tiles = ""
+        for k, (pl, h) in enumerate(sp["cover"]):
+            ph, fig = pics[k]
+            bg = (f'<img src="{E(src_url(ph))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(ph.get("pos", "center"))}">'
+                  if ph else f'<div class="D" style="position:absolute;inset:0;display:grid;place-items:center;font-size:220px;color:rgba(255,255,255,.25)">{E(fig)}</div>')
+            side, al = pos[k]
+            top = k < 2
+            txt = (f'<div style="position:absolute;{"top:150px" if top else "bottom:150px"};{"left:110px" if al == "left" else "right:110px"};width:360px;text-align:{al}">'
+                   f'<div class="D" style="font-size:50px;color:{AC}">{k + 1} · {E(pl)}</div><div style="font:600 29px/1.25 \'IBM Plex Sans\';margin-top:6px">{E(h)}</div></div>')
+            shade = "linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.35) 60%,rgba(0,0,0,.55))" if top else "linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.35) 40%,rgba(0,0,0,.85))"
+            tiles += (f'<div style="position:absolute;{side};width:539px;height:674px;overflow:hidden;background:{RED if not ph else INK}">{bg}'
+                      f'<div style="position:absolute;inset:0;background:{shade}"></div></div>')
+            tiles += txt
+        return f'''<div class="s dark" style="padding:0;color:#fff">{tiles}
+<div style="position:absolute;left:110px;right:110px;top:70px" class="top"><span style="color:#fff;display:flex;align-items:center;gap:14px"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily</span><span style="color:#e6e6e6">1 / {N}</span></div>
+<div style="position:absolute;left:290px;top:425px;width:500px;height:500px;border-radius:50%;background:{AC};color:{INK};border:10px solid {INK};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+<div class="D" style="font-size:58px;color:#fff">{day}</div><div class="D" style="font-size:150px">{date}</div>
+<p style="font:600 23px/1.3 'IBM Plex Sans';max-width:330px;margin-top:10px">{TAGLINE}</p></div>
+<div style="position:absolute;left:110px;right:110px;bottom:40px;{mono};font-size:17px;color:#d0d0d0;line-height:1.5">{foot} · {E(credits())}</div></div>'''
+    if style == "ring":
+        # Type-only: the date in a big ring at the centre, the four stories in the corners around it.
+        def corner(k, pl, h):
+            al = "left" if k % 2 == 0 else "right"
+            return (f'<div style="text-align:{al};width:380px;{"justify-self:end" if al == "right" else ""}">'
+                    f'<div style="display:flex;{"flex-direction:row-reverse;" if al == "right" else ""}align-items:center;gap:14px">'
+                    f'<span style="width:62px;height:62px;border-radius:50%;background:{RED};color:#fff;display:grid;place-items:center;font:800 36px \'Barlow Condensed\';flex:none">{k + 1}</span>'
+                    f'<span class="D" style="font-size:52px;color:{AC}">{E(pl)}</span></div>'
+                    f'<div style="font:600 30px/1.25 \'IBM Plex Sans\';margin-top:10px">{E(h)}</div></div>')
+        c = [corner(k, pl, h) for k, (pl, h) in enumerate(sp["cover"])]
+        return f'''<div class="s dark" style="padding:80px 110px 60px">
+<div class="top">{brand(BG)}<span>1 / {N}</span></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:50px">{c[0]}{c[1]}</div>
+<div style="align-self:center;margin:auto 0;width:600px;height:600px;border-radius:50%;border:14px solid {AC};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
+<div class="D" style="font-size:70px;color:{AC}">{day}</div><div class="D" style="font-size:185px">{date}</div>
+<p style="font-size:26px;color:#9ba1aa;max-width:380px;line-height:1.35;margin-top:10px">{TAGLINE}</p></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px">{c[2]}{c[3]}</div>
+<div style="border-top:2px solid #333840;padding-top:18px;{mono};color:#9ba1aa">{foot}</div></div>'''
     if style == "photo":
         # Lead story's photo fills the top; date sits on it, rows on a solid panel below. Falls back to "night".
         p = next((by.get(st.get("n"), {}).get("photo") for st in sp["stories"]
