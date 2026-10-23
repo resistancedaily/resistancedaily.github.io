@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Gaza", "Four killed despite ceasefire"],
+  ["Abyei", "Khartoum denies strike; UN probe sought"],
+  ["Pasighat", "Siang dam opponents hold 24-hour sit-in"],
+  ["Manipur", "Valley sit-ins; students detained"]
+ ],
+ "stories": [
+  {"n": 7, "label": "World · Life & safety", "fig": "4", "figlab": "killed on Thursday",
+   "place": "Gaza Strip", "head": "Deaths despite the ceasefire",
+   "bullets": ["Strikes and gunfire killed at least four people in Gaza City, Khan Younis, near Nuseirat and near Jabalia.",
+               "A woman was shot near Jabalia.",
+               "Israel's military says it struck Hamas in three places and was not aware of the Jabalia incident."],
+   "src": "Dawn (agencies)"},
+  {"n": 5, "label": "World · Life & safety", "fig": "153", "figlab": "killed, officials say",
+   "place": "Amiet Market, Abyei", "head": "Who struck the market?",
+   "bullets": ["Sudan's foreign ministry says the army has 'absolutely no connection' to Monday's strike; it gave no evidence.",
+               "RSF-aligned authorities, who blame the army, asked the UN fact-finding mission to investigate.",
+               "Officials say the dead were buried in two mass graves; the African Union condemned the strikes."],
+   "src": "Radio Tamazuj · Dabanga"},
+  {"n": 1, "label": "India · Assembly · Land", "fig": "5", "figlab": "more reportedly detained",
+   "place": "Pasighat, Arunachal Pradesh", "head": "Sit-in against the Siang dam",
+   "bullets": ["A 24-hour sit-in began on Thursday against the 11,000 MW Siang Upper project.",
+               "Protesters want detained activists freed and surveys stopped; five more were reportedly taken into custody.",
+               "The district allowed the sit-in but barred marches, and says law and order is separate from dam opposition."],
+   "src": "DY365 · HubNetwork"},
+  {"n": 2, "label": "India · Assembly", "fig": "3", "figlab": "killed on 19 Oct",
+   "place": "Imphal valley, Manipur", "head": "Sit-ins over the Sunurok killings",
+   "bullets": ["Sit-ins were held across the valley districts and schools stayed shut.",
+               "Security forces clashed with student marchers near Kangla Gate; several people were detained.",
+               "No police or government statement on Thursday's protests was reported."],
+   "src": "NE Now · EastMojo"}
+ ]
+}
