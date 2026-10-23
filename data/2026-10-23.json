@@ -1,0 +1,451 @@
+{
+ "date": "2026-10-23",
+ "date_long": "Fri 23 Oct 2026",
+ "date_short": "Fri 23 Oct",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Assembly",
+    "Land",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "5",
+   "figcap": "reportedly detained",
+   "headline": "Siang dam opponents begin 24-hour sit-in",
+   "text": "Opponents of the 11,000 MW Siang Upper Multipurpose Project began a 24-hour sit-in in Pasighat on Thursday, demanding the release of detained activists and an end to surveys; five more activists were reportedly taken into custody. The district allowed the sit-in but barred any march, and says law and order is a separate matter from dam opposition.",
+   "src": [
+    [
+     "DY365",
+     "https://dy365live.com/arunachal-pradesh/arunachal-sit-in-begins-in-pasighat-as-siang-dam-opponents-demand-release-of-detainees-12717078"
+    ],
+    [
+     "HubNetwork",
+     "https://hubnetwork.in/24-hour-sit-in-begins-in-pasighat-against-siang-dam-project/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, the town where Thursday's sit-in was held.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "focus": "siang"
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Imphal valley, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "3",
+   "figcap": "killed on 19 Oct",
+   "headline": "Manipur valley sit-ins; students detained near Kangla",
+   "text": "Sit-ins were held across Manipur's valley districts on Thursday over the killing of three firewood collectors at Khongban Sunurok; schools stayed shut. Security forces clashed with student marchers near Kangla Gate in Imphal and several people were detained. No police or government statement on Thursday's protests was reported.",
+   "src": [
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/manipur/manipur-protests-erupt-in-valley-districts-over-civilian-killings-resignations-demanded.html"
+    ],
+    [
+     "EastMojo",
+     "https://eastmojo.com/manipur/2026/10/22/manipur-protests-over-sunurok-killings-demand-end-to-proxy-war/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/imphal-ima-market.webp",
+    "alt": "Women vendors selling vegetables, fish and grain on the floor of a covered market, seen from above.",
+    "caption": "Ima Keithel, the women's market in central Imphal. Its vendors closed their stalls on Thursday to join a rally.",
+    "credit": "PP Yoonus / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ima_Market,_imphal.jpeg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Leh and Kargil, Ladakh",
+   "short": "Ladakh",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "22 Oct",
+   "figcap": "talks called off",
+   "headline": "Ladakh talks with the Centre called off",
+   "text": "A 22 October round of talks between the Home Ministry and the Leh Apex Body and Kargil Democratic Alliance did not take place, Sonam Wangchuk said, accusing the Centre of going back on a May understanding. The groups seek a Union Territory with a legislature and safeguards. The ministry has not commented.",
+   "src": [
+    [
+     "ThePrint / PTI",
+     "https://theprint.in/india/sonam-wangchuk-accuses-centre-of-backtracking-reiterates-demand-for-ladakh-legislature/3078874/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/leh-town.webp",
+    "alt": "A town of low buildings and bare poplar trees in a dry valley, with snow-capped mountains behind.",
+    "caption": "Leh town, Ladakh, seen from above.",
+    "credit": "bibek / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bird%27s_eye_view_of_Leh_town,_Ladakh,_India_(2015).jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "2",
+   "figcap": "FIRs",
+   "headline": "Released protest leaders seek time from police",
+   "text": "A day after leaving Tihar, Saurav Das and Ashutosh Ranka did not appear for Crime Branch questioning on Thursday over two FIRs linked to the 13 October Jantar Mantar protest, and asked for more time. Police are expected to serve a fresh notice.",
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/law/saurav-das-ashutosh-ranka-skip-delhi-police-crime-branch-questioning-seek-more-time"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi. The road beside it was the capital's main protest site until police denotified it this month.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Amiet Market, Abyei",
+   "short": "Abyei",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "153",
+   "figcap": "killed, officials say",
+   "headline": "Khartoum denies Abyei strike; probe sought",
+   "text": "Sudan's foreign ministry said the army has 'absolutely no connection' to Monday's drone strike on Amiet Market, which Abyei officials say killed 153 people, buried in two mass graves; it gave no evidence. The RSF-aligned authorities, who blame the army, asked the UN fact-finding mission to investigate. The African Union condemned the strikes.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/khartoum-denies-role-in-abyei-killings-as-rsf-allies-seek-probe"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/african-union-condemns-deadly-drone-strikes-in-sudan-abyei"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/abyei-aerial.webp",
+    "alt": "Flat, dry savannah dotted with trees and round huts, seen from an aircraft window.",
+    "caption": "Abyei and the surrounding plain, seen from a UN helicopter.",
+    "credit": "Sudan Envoy / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sudan_Envoy_-_Abyei_from_Above.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   },
+   "focus": "sudan-war"
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Roseires and Damazin, Blue Nile, Sudan",
+   "short": "Blue Nile",
+   "rights": [
+    "Detention",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "held, no lawyers",
+   "headline": "Blue Nile detainees held without lawyers",
+   "text": "The rights group HUDO says a joint security cell arrested at least eight civilians in Roseires between 12 and 17 October on suspicion of links to the SPLA-N rebels, including an aid official and a Red Crescent volunteer, and holds them in Damazin without access to lawyers or family. No official response is reported.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/sudanese-rights-group-warns-of-torture-fears-after-arrests-in-blue-nile"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street view in Damazin, capital of Blue Nile state, where the detainees are reportedly held.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed Thursday",
+   "headline": "Four killed in Gaza despite ceasefire",
+   "text": "Israeli strikes and gunfire killed at least four people across Gaza on Thursday, in Gaza City, Khan Younis, near Nuseirat and near Jabalia, where a woman was shot, according to agency reports. Israel's military said it struck Hamas in three of the places and was not aware of the Jabalia incident.",
+   "src": [
+    [
+     "Dawn (agencies)",
+     "https://dawn.com/news/2039131/israeli-fire-kills-four-in-gaza-syrian-man"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Jerusalem and the West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety",
+    "Land",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "9 of 10",
+   "figcap": "suspects released",
+   "headline": "Settler suspects freed; olive harvest attacks continue",
+   "text": "A Jerusalem court released nine of ten settlers held over assaults on a Washington Post photojournalist and European diplomats to house arrest; police say one remains in custody. On Thursday settlers burned olive trees near Imatin and stole olives near Yabad, Wafa reports. UN officials said attacks on olive farmers 'must stop'.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/22/israel-frees-suspects-in-two-settler-attacks-as-west-bank-pogroms-intensify"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168648"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/olive-harvest-hebron.webp",
+    "alt": "A gloved hand picking purple olives from a branch.",
+    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank. The harvest season runs from October.",
+    "credit": "M sh شراونة محمد / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Ettadhamen and Jebiniana, Tunisia",
+   "short": "Tunisia",
+   "rights": [
+    "Life & safety",
+    "Assembly",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "deaths linked to police",
+   "headline": "Tunisia clashes after two deaths linked to police",
+   "text": "Police fired tear gas at protesters in the Tunis suburb of Ettadhamen after a man detained on suspicion of drug dealing died; his family blames police abuse, while local media report he swallowed drugs. In Jebiniana, relatives say a man died while chased by security forces. No official statement is reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/23/rare-unrest-flares-in-tunisian-capital-as-police-clash-with-protesters"
+    ]
+   ]
+  },
+  {
+   "n": 10,
+   "region": "world",
+   "place": "Tbilisi, Georgia",
+   "short": "Georgia",
+   "rights": [
+    "Press freedom",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "4",
+   "figcap": "years possible",
+   "headline": "Georgian journalist arrested on treason charge",
+   "text": "Georgia's Prosecutor's Office arrested Domenti Chubinidze of the newspaper Asaval-Dasavali on a treason (sabotage) charge over his reporting on the David Gareji monastery complex; it faces up to four years. Prosecutors say he acted against the state's interests and will seek pretrial detention.",
+   "src": [
+    [
+     "Georgia Today",
+     "https://georgiatoday.ge/asaval-dasavali-journalist-arrested-on-treason-charges"
+    ]
+   ]
+  },
+  {
+   "n": 11,
+   "region": "world",
+   "place": "Mopti region, Mali",
+   "short": "Mali",
+   "rights": [
+    "Life & safety",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "killed in strike, HRW says",
+   "headline": "HRW reports drone deaths and torture in Mali",
+   "text": "Human Rights Watch says an apparent army drone strike killed eight civilians in Guélédié on 16 September, and that detainees at a Sévaré base were held in a metal container and beaten, given electric shocks and waterboarded. The army said it 'neutralized' terrorists there; Mali and Russia did not reply to HRW.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/10/22/mali-army-russias-africa-corps-commit-new-abuses"
+    ]
+   ]
+  }
+ ],
+ "events": [
+  {
+   "n": 1,
+   "t": "14:00",
+   "sort": 1400,
+   "text": "A 24-hour sit-in against the Siang dam begins at Miracle Ground, Pasighat; five more activists are reportedly detained."
+  },
+  {
+   "n": 4,
+   "t": "12:00",
+   "sort": 1200,
+   "text": "Saurav Das and Ashutosh Ranka do not appear for Crime Branch questioning and ask for more time."
+  },
+  {
+   "n": 5,
+   "t": "Thu",
+   "sort": 90,
+   "text": "Sudan's foreign ministry denies any army role in the Abyei market strike; RSF-aligned authorities seek a UN probe."
+  },
+  {
+   "n": 7,
+   "t": "Thu",
+   "sort": 85,
+   "text": "Strikes and gunfire kill at least four people in Gaza City, Khan Younis, Nuseirat and Jabalia."
+  },
+  {
+   "n": 2,
+   "t": "Thu",
+   "sort": 80,
+   "text": "Valley-wide sit-ins over the Sunurok killings; several detained after a clash near Kangla Gate."
+  },
+  {
+   "n": 9,
+   "t": "Thu",
+   "sort": 75,
+   "text": "Tear gas in Ettadhamen and Jebiniana after two deaths that families link to police."
+  },
+  {
+   "n": 8,
+   "t": "Thu",
+   "sort": 70,
+   "text": "Settlers burn olive trees near Imatin; nine settler suspects are under house arrest."
+  },
+  {
+   "n": 10,
+   "t": "Thu",
+   "sort": 65,
+   "text": "Prosecutors announce the arrest of journalist Domenti Chubinidze on a treason charge."
+  },
+  {
+   "n": 6,
+   "t": "Thu",
+   "sort": 60,
+   "text": "HUDO says eight civilians held in Damazin are denied lawyers and family."
+  },
+  {
+   "n": 11,
+   "t": "Thu",
+   "sort": 55,
+   "text": "Human Rights Watch reports a deadly drone strike and torture in a container at Sévaré."
+  },
+  {
+   "n": 3,
+   "t": "Thu",
+   "sort": 50,
+   "text": "The planned round of Ladakh talks does not take place, Sonam Wangchuk says."
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}
