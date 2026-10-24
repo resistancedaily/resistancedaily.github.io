@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Sudan", "UN: drones killed 306 in three weeks"],
+  ["Karak, Jordan", "Gunmen kill seven at church funeral"],
+  ["Pasighat", "Tear gas and arson in Siang dam bandh"],
+  ["Delhi", "100+ marchers detained near EC office"]
+ ],
+ "stories": [
+  {"n": 6, "label": "World · Life & safety", "fig": "306+", "figlab": "killed by drones in October",
+   "place": "Across Sudan", "head": "Drones over homes and markets",
+   "bullets": ["The UN human rights office says drone strikes killed at least 306 people in the first three weeks of October.",
+               "It attributes the strikes to both the army and the RSF; they hit homes, markets, hospitals and displacement sites.",
+               "The Security Council condemned the Abyei market attack. Neither force's response was reported."],
+   "src": "UN News"},
+  {"n": 7, "label": "World · Life & safety", "fig": "7", "figlab": "killed, 34 wounded",
+   "place": "Hmoud, Karak, Jordan", "head": "Attack on a church funeral",
+   "bullets": ["Gunmen opened fire during a funeral at a church in Hmoud on Friday.",
+               "No one has claimed the attack.",
+               "Jordan's interior minister called it an 'unprecedented' terrorist attack; the search for the gunmen continues."],
+   "src": "Al Jazeera / Reuters · BBC"},
+  {"n": 1, "label": "India · Assembly · Land", "fig": "4–5", "figlab": "women hospitalised",
+   "place": "Pasighat, Arunachal Pradesh", "head": "Tear gas at the Siang dam bandh",
+   "bullets": ["Police fired tear gas during Friday's 12-hour bandh against the Siang Upper dam project.",
+               "Protesters later reportedly set fire to an NHPC office, a police station and police vehicles.",
+               "Police say protesters threw stones and defied prohibitory orders."],
+   "src": "NE Now · EastMojo · HubNetwork"},
+  {"n": 3, "label": "India · Assembly", "fig": "100+", "figlab": "detained, Outlook says",
+   "place": "Ashoka Road, New Delhi", "head": "March stopped short of the EC",
+   "bullets": ["Police stopped a march against the revision of electoral rolls before it reached the Election Commission.",
+               "Outlook reports more than 100 detained; Scroll says several.",
+               "Police had asked marchers to leave; no official count was reported."],
+   "src": "Outlook · Scroll"}
+ ]
+}
