@@ -1,0 +1,439 @@
+{
+ "date": "2026-10-24",
+ "date_long": "Sat 24 Oct 2026",
+ "date_short": "Sat 24 Oct",
+ "window": "Fri 09:00 → Sat 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, and Geku, Upper Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Assembly",
+    "Life & safety",
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "4–5",
+   "figcap": "women hospitalised",
+   "headline": "Tear gas and arson during Siang dam bandh",
+   "text": "Police fired tear gas during Friday's 12-hour bandh against the Siang Upper dam project, and four to five women were hospitalised. Protesters later reportedly set fire to an NHPC office, a police station and police vehicles. Police say protesters threw stones and defied prohibitory orders. Protesters want 10 arrested activists freed.",
+   "src": [
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
+    ],
+    [
+     "EastMojo",
+     "https://eastmojo.com/news/2026/10/23/five-women-from-geku-hospitalised-after-tear-gas-fired-during-siang-valley-bandh/"
+    ],
+    [
+     "HubNetwork",
+     "https://hubnetwork.in/anti-dam-protests-turn-violent-in-pasighat-nhpc-office-police-station-set-ablaze/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where Friday night's unrest took place.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "focus": "siang"
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Imphal and the valley districts, Manipur",
+   "short": "Imphal",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "5",
+   "figcap": "districts",
+   "headline": "Tear gas at Imphal protest over killings",
+   "text": "Thousands joined a 'sound protest' in five valley districts on Friday against continuing killings, four days after three people were killed in Kangpokpi district. Police fired tear gas near the governor's residence in Imphal; no injuries were reported. The state Home Minister says three people have been held.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096618/manipur-tear-gas-fired-during-imphal-protest-against-killings"
+    ],
+    [
+     "ThePrint / PTI",
+     "https://theprint.in/india/thousands-stage-sound-protest-in-manipur-over-killings-tear-gas-fired-to-disperse-protesters/3080102/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/imphal-kangla-gate.webp",
+    "alt": "An ornate wooden gateway with a sign reading Kangla and a welcome banner, behind an iron gate, with trees around it.",
+    "caption": "The western gate of Kangla Fort in central Imphal.",
+    "credit": "Dirklaureyssens / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kangla_gate_imphal.JPG",
+    "kind": "file",
+    "year": "2007",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Ashoka Road, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "100+",
+   "figcap": "detained",
+   "headline": "Marchers detained near Election Commission",
+   "text": "Police stopped a march against the Special Intensive Revision of electoral rolls on Ashoka Road on Friday, short of the Election Commission's headquarters, and detained protesters. Outlook reports more than 100 detained; Scroll says several. Police had asked the marchers to leave the area; no official count was reported.",
+   "src": [
+    [
+     "Outlook",
+     "https://www.outlookindia.com/national/more-than-hundred-detained-amid-slogans-of-wont-tolerate-vote-theft-in-delhi"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096612/delhi-several-protesters-detained-during-march-to-ec-headquarters"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/ashoka-road.webp",
+    "alt": "A green road sign reading Ashoka Road in four scripts beside a tree-lined road with a few cars.",
+    "caption": "Ashoka Road in central New Delhi, where Friday's march was stopped.",
+    "credit": "Pinakpani / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ashoka_Road_in_New_Delhi_09.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Delhi High Court, New Delhi",
+   "short": "Delhi HC",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "₹10,000",
+   "figcap": "peace bond",
+   "headline": "Court upholds peace-bond notice to student leader",
+   "text": "The Delhi High Court on Friday rejected student leader Neha Bora's plea against a magistrate's notice to sign a ₹10,000 bond to keep the peace. She was detained at a 16 October protest near Barakhamba Road. The court found 'adequate safeguards' and ordered that she be given all materials.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096615/delhi-hc-rejects-neha-boras-plea-against-notice-to-sign-bond-and-maintain-peace"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/barakhamba-road.webp",
+    "alt": "A wide tree-lined road with cars and an auto-rickshaw crossing a zebra crossing.",
+    "caption": "Barakhamba Road in New Delhi, where the 16 October protest was held.",
+    "credit": "Pinakpani / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Barakhamba_Road_in_New_Delhi_04.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 5,
+   "region": "india",
+   "place": "Town Hall to Freedom Park, Bengaluru",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "200+",
+   "figcap": "marchers",
+   "headline": "Bengaluru march allowed after placards lowered",
+   "text": "More than 200 people marched from Town Hall to Freedom Park on Friday against the electoral-roll revision; it began only after they lowered placards police objected to. The DCP said permission was conditional and covered a march with the Tricolour and constitutional placards, not a protest.",
+   "src": [
+    [
+     "South First",
+     "https://thesouthfirst.com/karnataka/bengaluru-more-than-200-protestors-take-part-in-tiranga-march-against-sir-amid-police-curbs-on-placards-and-slogans/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/bengaluru-freedom-park.webp",
+    "alt": "Large green letters reading Freedom Park in English and Kannada on a blue wall, with trees below.",
+    "caption": "The entrance sign at Freedom Park, Bengaluru's designated protest venue.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Across Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "306+",
+   "figcap": "killed by drones",
+   "headline": "UN: drones killed 306 in Sudan in October",
+   "text": "The UN human rights office says drone strikes it attributes to both the army and the RSF killed at least 306 people in the first three weeks of October, hitting homes, markets, hospitals and displacement sites. The Security Council condemned the Abyei market attack. Neither force's response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168661"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/bara-north-kordofan.webp",
+    "alt": "A loaded lorry with people sitting on top drives along a road shaded by large trees.",
+    "caption": "A road in Bara, North Kordofan. Kordofan is one of the regions hit by drone strikes.",
+    "credit": "Aziz rudwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86_%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B4%D9%85%D8%A7%D9%84_%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   },
+   "focus": "sudan-war"
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Hmoud, Karak governorate, Jordan",
+   "short": "Karak",
+   "rights": [
+    "Life & safety",
+    "Religion"
+   ],
+   "sev": "red",
+   "fig": "7",
+   "figcap": "killed",
+   "headline": "Gunmen kill seven at church funeral in Jordan",
+   "text": "Gunmen opened fire during a funeral at a church in Hmoud, Karak governorate, on Friday, killing at least seven people and wounding 34. No one has claimed the attack. Jordan's interior minister called it an 'unprecedented' terrorist attack, and the search for the gunmen continues.",
+   "src": [
+    [
+     "Al Jazeera / Reuters",
+     "https://www.aljazeera.com/news/2026/10/23/at-least-seven-killed-after-gunmen-open-fire-at-church-in-jordan"
+    ],
+    [
+     "BBC",
+     "https://www.bbc.com/news/articles/ck87zlpzny15o"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/karak-old-town.webp",
+    "alt": "A stone building with green shutters on a hillside, overlooking dry hills and a valley.",
+    "caption": "Karak old town, capital of the governorate where the attack took place.",
+    "credit": "Freedom's Falcon / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Z_Karak_Old_Town_2.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Trappes and La Verrière, Yvelines, France",
+   "short": "Trappes",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "1",
+   "figcap": "killed",
+   "headline": "One killed in suspected racist shooting near Paris",
+   "text": "A gunman killed one person and wounded four to five others, including a 12-year-old girl, in Trappes and La Verrière on Friday. A 39-year-old suspect is in custody. Anti-terror prosecutors are examining whether victims were targeted for race or religion; the Élysée called it a 'racist, terrorist attack'.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/23/one-person-killed-in-suspected-islamophobic-shooting-near-paris"
+    ],
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/23/france-police-demonstrations-civil-unrest"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/trappes-town-hall.webp",
+    "alt": "A modern red-brick and glass public building with wide steps and parked cars, under a clear blue sky.",
+    "caption": "The town hall in Trappes, west of Paris.",
+    "credit": "Henry Salomé / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Trappes_Mairie.JPG",
+    "kind": "file",
+    "year": "2006",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Hebron and the occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Movement",
+    "Detention",
+    "Land"
+   ],
+   "sev": "orange",
+   "fig": "36",
+   "figcap": "arrested Thu",
+   "headline": "West Bank lockdown after two soldiers killed",
+   "text": "Israel ordered a full West Bank lockdown after an attack in Hebron killed two Israeli soldiers; the military says it killed two gunmen. Palestinian bodies report 36 arrests and 17 attacks on olive farmers on Thursday; no Israeli comment on these was reported. The UN says closures severely restrict movement and livelihoods.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/23/israel-arrests-36-palestinians-in-the-west-bank-attacks-on-farmers-ramp-up"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168660"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 10,
+   "region": "world",
+   "place": "Taiz City, Yemen",
+   "short": "Taiz",
+   "rights": [
+    "Life & safety",
+    "Livelihood"
+   ],
+   "sev": "orange",
+   "fig": "800,000",
+   "figcap": "cut off",
+   "headline": "UN: 800,000 in Taiz cut off from aid",
+   "text": "UN agencies say Taiz City has been cut off for 20 days by fighting between Houthi forces and government troops. WFP says more than 800,000 people are cut off from assistance; water production has halved and truck water costs have tripled. No response from either side was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168654"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/taiz-city.webp",
+    "alt": "A hillside city of pale buildings and minarets below hazy mountains.",
+    "caption": "Taiz city, seen from a hillside.",
+    "credit": "Rod Waddington / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:City_of_Taiz,_Yemen.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 11,
+   "region": "world",
+   "place": "Paris and other French cities",
+   "short": "France",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "70,000",
+   "figcap": "police deployed",
+   "headline": "France bans rallies, deploys 70,000 police",
+   "text": "France is deploying about 70,000 police on Saturday and several cities have banned or rerouted protests after last weekend's rioting; 217 people have been jailed since, the justice minister says. The interior minister cited online calls for violence. Unions call the bans an abuse of authority and are challenging them in court.",
+   "src": [
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/23/france-police-demonstrations-civil-unrest"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, a usual rally point.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers have been detained under an anti-terror law, and gatherings are banned.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  },
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}
