@@ -145,6 +145,9 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 - Slide 1 (cover): keep every element inside the middle 860px (x 110–970) so the 3:4 profile-grid crop never cuts text.
   Date as the largest element, the tagline "What happened to people's rights in the last 24 hours. Every fact sourced.",
   then 4 rows of place name above a one-line headline (max ~45 characters). Footer: "Swipe → · Sources: link in bio".
+  OWNER'S REQUEST, 24–30 Oct 2026: use the "mosaic" cover every day, Sunday included (four story photos edge to edge,
+  the date in an orange circle where they meet). tools/slides.py applies it via COVER_PERIODS; after 30 Oct the
+  rotation below resumes.
   The cover style rotates by IST weekday (tools/slides.py picks it; set "cover_style" in DATE.slides.json to override):
   Mon photo · Tue paper · Wed signal · Thu night · Fri photo · Sat paper · Sun sunday. photo = the first story photo
   (≥900px) across the top with the date on it and the rows on dark below, with the photo's file-photo year and
