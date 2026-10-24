@@ -2,8 +2,8 @@
  "slug": "siang",
  "kicker": "Focus · Upper Siang, Arunachal Pradesh",
  "title": "The fight over the Siang dam",
- "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers have been detained under an anti-terror law, and gatherings are banned.",
- "updated": "2026-10-19",
+ "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers are held under an anti-terror law, protesters want 10 arrested activists freed, and a bandh on 23 October ended in tear gas and arson.",
+ "updated": "2026-10-24",
  "rights": [
   "Land",
   "Assembly",
@@ -61,14 +61,6 @@
  ],
  "figs": [
   {
-   "fig": "11,000 MW",
-   "figcap": "planned capacity",
-   "src": [
-    "Mongabay India",
-    "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
-   ]
-  },
-  {
    "fig": "27",
    "figcap": "villages to be submerged",
    "src": [
@@ -85,11 +77,19 @@
    ]
   },
   {
-   "fig": "13",
-   "figcap": "given interim protection",
+   "fig": "10",
+   "figcap": "arrested activists, protesters say",
    "src": [
-    "Arunachal Times",
-    "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+    "NE Now",
+    "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
+   ]
+  },
+  {
+   "fig": "4–5",
+   "figcap": "women hospitalised on 23 Oct",
+   "src": [
+    "NE Now",
+    "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
    ]
   }
  ],
@@ -113,7 +113,7 @@
    ]
   },
   {
-   "text": "On 9 October four villagers of Geku, Adum Tayom, Omak Paron, Okut Paloh and Oson Paron, were detained under the Arunachal Pradesh Unlawful Activities (Prevention) Act, 2014. Their lawyer says the families at first received only notices, not the detention orders. On 11 October the district banned gatherings of five or more people.",
+   "text": "On 9 October four villagers of Geku, Adum Tayom, Omak Paron, Okut Paloh and Oson Paron, were detained under the Arunachal Pradesh Unlawful Activities (Prevention) Act, 2014; their lawyer says the families at first received only notices. On 11 October the district banned gatherings of five or more people, and on 14 October a sessions court gave 13 people named in two police cases interim protection from arrest.",
    "src": [
     [
      "Arunachal Times",
@@ -126,38 +126,66 @@
    ]
   },
   {
-   "text": "On 14 October a sessions court in East Siang gave 13 people named in two police cases interim protection from arrest, pending further hearings. Local groups have asked for the detainees' release, the withdrawal of central armed police and a halt to the dam studies.",
+   "text": "On 22 October opponents began a 24-hour sit-in at Miracle Ground in Pasighat, demanding an end to survey work, the release of those held and the withdrawal of central armed police. The district allowed it but barred any march beyond the ground. Five more activists were reportedly taken into custody in Pasighat; associates said they did not know where they were held.",
    "src": [
     [
-     "Arunachal Times",
-     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+     "DY365",
+     "https://dy365live.com/arunachal-pradesh/arunachal-sit-in-begins-in-pasighat-as-siang-dam-opponents-demand-release-of-detainees-12717078"
+    ]
+   ]
+  },
+  {
+   "text": "On 23 October a 12-hour bandh was called across Siang, Upper Siang and East Siang. At Dite-Dime near Geku, police fired tear gas and four to five women were hospitalised; a cameraman was reportedly hit by a shell. That night protesters reportedly set fire to an NHPC office, a police station and police vehicles in Pasighat, and vandalised the homes of local political leaders. The unrest continued until about 4am on 24 October. Protesters want 10 arrested activists freed and an independent inquiry into the police action.",
+   "src": [
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
     ],
     [
-     "Mongabay India",
-     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+     "EastMojo",
+     "https://eastmojo.com/news/2026/10/23/five-women-from-geku-hospitalised-after-tear-gas-fired-during-siang-valley-bandh/"
+    ],
+    [
+     "HubNetwork",
+     "https://hubnetwork.in/anti-dam-protests-turn-violent-in-pasighat-nhpc-office-police-station-set-ablaze/"
+    ],
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/arunachal-pradesh/arunachal-protesters-vandalise-bjp-state-presidents-mlas-houses-over-siang-dam-project.html"
     ]
    ]
   }
  ],
  "official": {
-  "text": "The district magistrate's detention orders cite a tense and volatile situation, violence and arson, and say the detentions are meant to contain unlawful activities and protect public safety. Upper Siang's District Collector told Mongabay India the area was peaceful and that detainees must make representations to the state government.",
+  "text": "The detention orders cite a tense and volatile situation, violence and arson, and say they protect public safety. The district says opposition to the dam and law and order are separate matters. Police say protesters at Dite-Dime threw stones, tried to breach barricades and defied prohibitory orders. The state government says the project is mainly meant to store and manage water in view of China's planned dam upstream. East Siang's police chief did not respond to calls about the Pasighat violence.",
   "src": [
    [
     "Arunachal Times",
     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
    ],
    [
-    "Mongabay India",
-    "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+    "DY365",
+    "https://dy365live.com/arunachal-pradesh/arunachal-sit-in-begins-in-pasighat-as-siang-dam-opponents-demand-release-of-detainees-12717078"
+   ],
+   [
+    "ThePrint / PTI",
+    "https://theprint.in/india/four-women-injured-in-clash-with-police-over-upper-siang-power-project-in-arunachal/3079551/"
+   ],
+   [
+    "NE Now",
+    "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
    ]
   ]
  },
  "editions": [
   "2026-10-17",
-  "2026-10-18"
+  "2026-10-18",
+  "2026-10-19",
+  "2026-10-23",
+  "2026-10-24"
  ],
  "instagram": {
-  "caption": "Villages along the Siang river in Arunachal Pradesh are opposing the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant being developed by NHPC. Mongabay India reports it would submerge 27 villages, including Yingkiong, the Upper Siang district headquarters.\n\nProtests against a pre-feasibility study at the proposed dam sites turned violent early this month. Protesters set fire to vehicles and stormed an MLA's house, and police allegedly lathi-charged protesters on 4 October.\n\nOn 9 October four villagers of Geku were detained under the Arunachal Pradesh Unlawful Activities (Prevention) Act, 2014. Their lawyer says the families at first received only notices, not the detention orders. On 11 October the district banned gatherings of five or more people. On 14 October a sessions court gave 13 people named in two police cases interim protection from arrest.\n\nOfficial position: the detention orders cite a tense and volatile situation, violence and arson, and say the detentions protect public safety. The District Collector says the area is peaceful and that detainees must appeal to the state government.",
+  "caption": "Villages along the Siang river in Arunachal Pradesh oppose the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant that Mongabay India reports would submerge 27 villages.\n\nOn 9 October four Geku villagers were detained under the state's anti-terror law, and gatherings were banned. On 22 October opponents held a 24-hour sit-in in Pasighat; five more activists were reportedly taken into custody.\n\nOn 23 October police fired tear gas during a bandh and four to five women were hospitalised. That night an NHPC office, a police station and vehicles in Pasighat were reportedly set on fire. Protesters want 10 arrested activists freed.\n\nOfficial position: the detention orders cite violence and public safety; police say protesters threw stones and defied orders; the state says the dam is meant to store water in view of China's planned dam upstream.",
   "hashtags": [
    "#Siang",
    "#ArunachalPradesh",

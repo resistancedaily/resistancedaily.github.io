@@ -118,6 +118,13 @@ organisers' count as a range.
   `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it. With "layout": "chapters", give
   every paragraph that has no photo of its own a sourced "fig" and "figcap"; it fills the photo's place, as on the slides.
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
+- KEEP FOCUS STORIES CURRENT (owner's rule): a Focus is a live story, not only background. Whenever today's research
+  turns up a new development on an existing Focus (check data/focus/*.json against today's items), update that Focus
+  the same day, even without new photos: add the new events as dated, sourced paragraphs (keep earlier facts that
+  still hold; correct any that are out of date), refresh "dek", "figs", "official", "updated" and "editions", rebuild
+  with `python3 tools/focus.py SLUG`, and link the item to it with "focus". Never point readers to a Focus whose
+  summary contradicts today's edition.
+- Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
 ## STEP 5. Publish the edition
 - Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
