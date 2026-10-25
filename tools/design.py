@@ -223,6 +223,7 @@ DESIGN_CSS = {
 .case h3{font-size:26px;font-weight:800}
 .case .days{font:800 44px var(--display);line-height:.9;color:var(--orange)}
 .case .days small{font:500 12px var(--mono);color:var(--muted);text-transform:uppercase;margin-left:6px}
+@media (max-width:620px){.case .top{flex-direction:column;align-items:flex-start;gap:6px}}
 .track{height:14px;background:var(--chip);border-radius:3px;position:relative;overflow:hidden}
 .track i{position:absolute;inset:0 auto 0 0;background:var(--orange);border-radius:3px;min-width:4px}
 .case .meta{display:flex;flex-wrap:wrap;gap:4px 16px;font-size:13.5px;color:var(--muted)}
@@ -395,7 +396,7 @@ def design_tracker():
     news = "".join(f"""<li><i class="dot {i['sev']}"></i><span><span class="place">{E(i.get('short', i['place']))}</span> · {E(i['headline'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><span class="src">{src(i)}</span></li>""" for i in items)
     news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>
 """ if items else ""
-    return news_sec + f"""<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
+    return news_sec + f"""<section id="still-waiting" aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
 <p style="color:var(--muted);max-width:66ch">People held for a long time after speaking out, protesting, reporting or providing care, with or without a verdict, around the world. All bars use one scale: the longest detention fills the bar.</p>
 <div class="cases">{''.join(out)}</div></section>"""
 

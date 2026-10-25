@@ -39,7 +39,7 @@ today = "".join(f'<li><i class="dot {i["sev"]}"></i><span><b>{E(i.get("short", i
 
 cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="{E(f["photos"][0]["alt"])}" loading="lazy" decoding="async">
 <div><span class="k">{E(f["kicker"].replace("Focus · ", ""))}</span><h3>{E(f["title"])}</h3><p>{E(f["dek"])}</p>
-<span class="upd">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · What's new" if f.get("whats_new") else ""}</span></div></a>''' for f in focus[:3])
+<span class="upd">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · What's new" if f.get("whats_new") else ""}</span></div></a>''' for f in focus[:3])  # phones show the first 2 (CSS below)
 
 asof = datetime.date.fromisoformat(cases["asof"])
 cs = cases["cases"]
@@ -56,7 +56,7 @@ def ed_line(k):
         s = log[k]["summary"]
     return (f'<li><a href="archive/{k}.html"><b>{datetime.date.fromisoformat(k).strftime("%a %d %b")}</b></a>'
             f'<span class="t">{E(NAMES.get(log[k]["design"], log[k]["design"]))}</span><p>{E(s)}</p></li>')
-past = "".join(ed_line(k) for k in sorted(log, reverse=True)[1:8])
+past = "".join(ed_line(k) for k in sorted(log, reverse=True)[1:8])  # phones show the first 4
 
 CH = [("Instagram", seo.INSTAGRAM, "Photo stories and the day's slides"),
       ("WhatsApp", seo.WHATSAPP, "Each morning's headlines on your phone"),
@@ -126,6 +126,9 @@ section{display:grid;gap:12px}
 .ch b{font:800 22px var(--display);text-transform:uppercase}
 .ch span{font-size:13px;color:var(--muted)}
 .how{margin:0;padding-left:18px;display:grid;gap:4px;color:var(--muted);max-width:66ch}
+/* Phones: a shorter page, so readers see every section rather than stopping in one. */
+@media (max-width:620px){.fcard:nth-child(n+3){display:none}.past li:nth-child(n+5){display:none}
+.sw .big{display:grid;gap:12px}.sw .big>div{display:grid;gap:4px}}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 """
 
@@ -153,10 +156,10 @@ page = f"""<!doctype html>
 <p class="lede">One place or issue told in depth, with photos and a source for every fact. Updated whenever something changes.</p>
 <div class="focs">{cards}</div></section>
 
-<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2>{f'<a href="archive/{tracker}.html">Weekly tracker →</a>' if tracker else ''}</div>
+<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2>{f'<a href="archive/{tracker}.html#still-waiting">Weekly tracker →</a>' if tracker else ''}</div>
 <p class="lede">People held for a long time after speaking out, protesting, reporting or providing care, in India and around the world. Checked against sources every Sunday.</p>
 <div class="sw"><div class="big"><div><b>{len(cs)}</b> <span>people and groups tracked</span></div><div><b>{ldays:,}</b> <span>days: the longest, {E(longest["name"])}, {E(longest["where"])}</span></div></div>
-{f'<a class="go" href="archive/{tracker}.html">See every case →</a>' if tracker else ''}</div></section>
+{f'<a class="go" href="archive/{tracker}.html#still-waiting">See every case, {datetime.date.fromisoformat(tracker).strftime("%a %d %b")} →</a>' if tracker else ''}</div></section>
 
 <section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All editions →</a></div>
 <p class="lede">Every edition is kept permanently, each in its own layout.</p>
