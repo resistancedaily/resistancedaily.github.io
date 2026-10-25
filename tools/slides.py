@@ -3,6 +3,9 @@
 
   python3 tools/slides.py daily DATE OUTDIR      reads data/DATE.json and data/DATE.slides.json
   python3 tools/slides.py focus SLUG OUTDIR      reads data/focus/SLUG.json
+  python3 tools/slides.py focus SLUG OUTDIR --update
+                                                 an update post: slide 1 says "Update · DATE" and carries the Focus's
+                                                 "whats_new" text instead of the summary (see ROUTINE.md, Instagram updates)
 
 data/DATE.slides.json (the text-led daily carousel; a story slide shows its item's photo when the item has one):
 { "cover": [[place, headline <= 45 chars], x4],
@@ -224,7 +227,7 @@ def cover(dt, sp, by, N):
 <div style="position:absolute;left:290px;top:425px;width:500px;height:500px;border-radius:50%;background:{AC};color:{INK};border:10px solid {INK};display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center">
 <div class="D" style="font-size:58px;color:#fff">{day}</div><div class="D" style="font-size:150px">{date}</div>
 <p style="font:600 23px/1.3 'IBM Plex Sans';max-width:330px;margin-top:10px">{TAGLINE}</p></div>
-<div style="position:absolute;left:110px;right:110px;bottom:40px;{mono};font-size:17px;color:#d0d0d0;line-height:1.5">{foot} · {E(credits())}</div></div>'''
+<div style="position:absolute;left:110px;right:110px;bottom:40px;{mono};font-size:17px;color:#d0d0d0;line-height:1.5">{foot}{" · " + E(credits()) if credits() else ""}</div></div>'''
     if style == "ring":
         # Type-only: the date in a big ring at the centre, the four stories in the corners around it.
         def corner(k, pl, h):
@@ -329,20 +332,24 @@ def daily(date, out):
     caps = [open(cp).read().strip() if os.path.exists(cp) else "(Use caption.txt as the caption for slide 1.)"]
     for st in sp["stories"]:
         it = by.get(st.get("n"), {})
-        caps.append(it.get("text", ""))
+        caps.append(st.get("caption") or it.get("text", ""))  # "caption" for slides not tied to an item (Sunday cases)
     caps.append("")
     write_captions(out, caps)
 
 
-def focus(slug, out):
+def focus(slug, out, update=False):
     f = json.load(open(os.path.join(root, "data", "focus", f"{slug}.json")))
+    wn = f.get("whats_new") if update else None
+    if update and not wn:
+        sys.exit("--update needs a \"whats_new\" entry in the Focus JSON")
+    when = datetime.date.fromisoformat(wn["date"]).strftime("%d %b") if wn else ""
     ph = f["photos"][:7]
     N = len(ph) + 2
     first = ph[0]
     slides = [f'''<div class="s full"><img src="{E(src_url(first))}" alt="" style="object-position:{E(first.get("pos", "center"))}"><div class="shade"></div>
 <div class="in"><div class="top"><span style="display:flex;align-items:center;gap:14px;color:#fff"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily · Focus</span><span>1 / {N}</span></div>
-<div style="margin-top:auto;display:grid;gap:20px"><span class="kick on">{E(f["kicker"].replace("Focus · ", ""))}</span>
-<div class="D" style="font-size:132px">{E(f["title"])}</div><p style="font-size:34px;line-height:1.35;color:#e8e8e8">{E(f["dek"])}</p>
+<div style="margin-top:auto;display:grid;gap:20px">{f'<span class="kick on" style="background:{RED};color:#fff">Update · {E(when)}</span>' if wn else ''}<span class="kick on">{E(f["kicker"].replace("Focus · ", ""))}</span>
+<div class="D" style="font-size:132px">{E(f["title"])}</div><p style="font-size:34px;line-height:1.35;color:#e8e8e8">{E(wn["text"] if wn else f["dek"])}</p>
 <div style="font:500 22px 'IBM Plex Mono';color:#cfcfcf;text-transform:uppercase;letter-spacing:.06em;border-top:2px solid rgba(255,255,255,.3);padding-top:18px">Swipe for photos → · {E(label(first))} · {E(credit(first))}</div></div></div></div>''']
     for k, p in enumerate(ph[1:], 2):
         slides.append(f'''<div class="s pslide"><div class="pimg full"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
@@ -377,15 +384,13 @@ def focus(slug, out):
     # Key-numbers slide: the story paragraph only (numbers and sources are on the slide). Last slide: the sources
     # of the official position (the position and link are on the slide).
     def srcs_of(pairs):
-        return "Sources: " + " · ".join(n for n, u in pairs)
+        return "Sources: " + " · ".join(dict.fromkeys(n for n, u in pairs))  # each outlet named once
     story = list(f["story"])
     slots = len(ph) - 1 + 1  # photo slides 2..len(ph), then the key-numbers slide
     per = [story[i:i + 1] for i in range(min(slots - 1, len(story)))]
     per.append(story[slots - 1:] if len(story) >= slots else [])
     per += [[] for _ in range(slots - len(per))]
-    caps = [f"""Focus · {f['title']}
-
-Swipe: each slide's caption tells the next part of the story.
+    caps = [(f"Focus update · {when} · {f['title']}\n\n" if wn else f"Focus · {f['title']}\n\n") + f"""Swipe: each slide's caption tells the next part of the story.
 
 {first['caption']}
 
@@ -399,7 +404,7 @@ Swipe: each slide's caption tells the next part of the story.
     caps.append(srcs_of(f["official"]["src"]) if off else "")
     open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
     write_captions(out, caps)
-    alts = [f"Slide 1: {first['alt']} Title: {f['title']}. {f['dek']}"]
+    alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
     alts.append(f"Slide {N}: Read the full story at resistancedaily.github.io/focus/{slug}, link in bio." + (f" Official position: {off}" if off else ""))
@@ -409,4 +414,7 @@ Swipe: each slide's caption tells the next part of the story.
 if __name__ == "__main__":
     if len(sys.argv) < 4 or sys.argv[1] not in ("daily", "focus"):
         sys.exit(__doc__)
-    (daily if sys.argv[1] == "daily" else focus)(sys.argv[2], sys.argv[3])
+    if sys.argv[1] == "daily":
+        daily(sys.argv[2], sys.argv[3])
+    else:
+        focus(sys.argv[2], sys.argv[3], update="--update" in sys.argv[4:])

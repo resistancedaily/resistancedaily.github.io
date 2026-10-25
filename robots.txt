@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://resistancedaily.github.io/sitemap.xml

@@ -13,6 +13,7 @@ Then: git add -A && git commit && git push.
 Repo layout: tools/ (design.py, maps.js, thin.py, publish.py, package.json), data/ (YYYY-MM-DD.json, YYYY-MM-DD.maps.json, cases.json), archive/, .nojekyll, README.md. .gitignore: node_modules/ build/
 """
 import sys, os, re, json, subprocess, html, datetime
+import seo
 
 design, date, data_path = sys.argv[1], sys.argv[2], sys.argv[3]
 maps_path = sys.argv[4] if len(sys.argv) > 4 else None
@@ -31,8 +32,20 @@ title = f"Resistance Daily · {data['date_long']}"
 SITE = "https://resistancedaily.github.io/"
 ICON = "data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315181d'/%3E%3Crect x='14' y='18' width='22' height='6' rx='2' fill='%23d9661a'/%3E%3Ctext x='14' y='50' font-family='Arial' font-weight='900' font-size='26' fill='%23f3f4f2'%3ERD%3C/text%3E%3C/svg%3E"
 
+# Link previews: a 1200x630 JPEG from the most serious item that has a photo (none on most Sundays).
+lead = next((i for i in sorted(data["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]])) if i.get("photo")), None)
+share = seo.share_image(root, lead["photo"]["src"], f"images/{date}/share.jpg") if lead and not lead["photo"]["src"].startswith("http") else None
+
+
 def wrap(content, canonical):
     content = re.sub(r"<title>.*?</title>", "", content, count=1, flags=re.S)
+    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": title, "description": desc, "url": canonical,
+          "mainEntityOfPage": canonical, "datePublished": seo.iso(date), "dateModified": seo.iso(date),
+          "author": seo.PUBLISHER, "publisher": seo.PUBLISHER, "isAccessibleForFree": True, "inLanguage": "en"}
+    if share:
+        ld["image"] = [SITE + share]
+    img = (f'<meta property="og:image" content="{SITE}{share}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
+           f'<meta property="og:image:alt" content="{html.escape(lead["photo"]["alt"])}">') if share else ""
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
@@ -43,7 +56,10 @@ def wrap(content, canonical):
 <meta property="og:description" content="{html.escape(desc)}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{canonical}">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="Resistance Daily">
+<meta property="article:published_time" content="{seo.iso(date)}">
+{img}<meta name="twitter:card" content="{'summary_large_image' if share else 'summary'}">
+{seo.jsonld(ld)}
 <link rel="icon" href="{ICON}">
 <link rel="canonical" href="{canonical}">
 <style>body{{margin:0}}</style>
@@ -93,6 +109,7 @@ li p{{margin:4px 0 0;color:var(--muted);font-size:14px}}
 <p style="color:var(--muted);font-size:13px">Contact or send a tip: resistancedaily.in@gmail.com</p>
 </div></body></html>
 """)
+seo.write_sitemap(root)
 print("built", design, date)
 # Standing routine instructions live in ROUTINE.md (photos, Focus, slides). Remind the run of the photo step.
 if design != "tracker":

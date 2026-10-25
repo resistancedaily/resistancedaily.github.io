@@ -36,7 +36,12 @@ and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`.
 One place or issue told through 3–8 photos with a short, fully sourced write-up. Made whenever enough good photos exist.
 `data/focus/SLUG.json` → `python3 tools/focus.py SLUG` builds `focus/SLUG.html` and `focus/index.html`;
 add `"focus": [...]` to data.json to show an "In focus" card on the daily page.
+Optional `"seo_title"` (the search-friendly page title) and `"whats_new"` (the latest development, shown at the top).
+
+## Search and sharing
+`tools/seo.py` (run by publish.py and focus.py) writes `sitemap.xml`, `robots.txt`, schema.org NewsArticle data and
+1200x630 link-preview images (`share.jpg`).
 
 ## Instagram
-`python3 tools/slides.py daily DATE OUTDIR` (needs data/DATE.slides.json) and `python3 tools/slides.py focus SLUG OUTDIR`.
+`python3 tools/slides.py daily DATE OUTDIR` (needs data/DATE.slides.json) and `python3 tools/slides.py focus SLUG OUTDIR` (add `--update` for an update post; see ROUTINE.md, Instagram updates).
 Python packages: playwright, pillow, "opencv-python-headless<5".

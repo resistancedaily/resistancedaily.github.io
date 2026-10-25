@@ -117,11 +117,16 @@ organisers' count as a range.
   ("instagram": {"hashtags": [...]}; the slide captions are built from "story"), then
   `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it. With "layout": "chapters", give
   every paragraph that has no photo of its own a sourced "fig" and "figcap"; it fills the photo's place, as on the slides.
+- Give every Focus a "seo_title": the words people actually search for (place + issue, e.g. "Siang dam protests,
+  Arunachal: detentions, bandh and talks offer"), at most 65 characters, neutral, no party names. It becomes the page
+  title in search results and link previews; the heading on the page stays "title".
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
 - KEEP FOCUS STORIES CURRENT (owner's rule): a Focus is a live story, not only background. Whenever today's research
   turns up a new development on an existing Focus (check data/focus/*.json against today's items), update that Focus
   the same day, even without new photos: add the new events as dated, sourced paragraphs (keep earlier facts that
-  still hold; correct any that are out of date), refresh "dek", "figs", "official", "updated" and "editions", rebuild
+  still hold; correct any that are out of date), refresh "dek", "figs", "official", "updated" and "editions", set "whats_new" to {"date": DATE, "text": one or two
+  sentences on what changed, facts only, all of them sourced in the new paragraph} (shown at the top of the page),
+  check "seo_title" still fits, rebuild
   with `python3 tools/focus.py SLUG`, and link the item to it with "focus". Never point readers to a Focus whose
   summary contradicts today's edition.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
@@ -132,7 +137,9 @@ organisers' count as a range.
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
 - Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes index.html,
-  archive/DATE.html, archive/index.html and build/artifact.html, and prints any items still missing a photo.
+  archive/DATE.html, archive/index.html and build/artifact.html, and prints any items still missing a photo. It
+  (and tools/focus.py) also writes sitemap.xml and robots.txt, search data (schema.org NewsArticle) and a 1200x630
+  link-preview image (images/DATE/share.jpg, images/focus/SLUG/share.jpg) via tools/seo.py. Commit them all.
 - Check once with Playwright screenshots of index.html (and focus/SLUG.html if a Focus was made) at 860px and 390px for
   overlaps, clipping, horizontal scroll and photos that fail to load. Fix any problem through the data or map nudges,
   then rebuild.
@@ -188,7 +195,19 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   caption tells the next part of the story."; what the first photo shows; at most 5 hashtags. Photo slides = that
   slide's story paragraph, then "Sources: …" on the next line. Key-numbers slide = the story paragraph only. Last slide =
   the sources of the official position. Daily: story slides = the item's full text only; slide 6 = no caption.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt) with
+- INSTAGRAM UPDATES (owner's rule): never delete an older post; each post is a dated record. When a Focus changes, decide:
+  - No new facts, or only wording: nothing to post.
+  - A small development (new statement, hearing date, a few detentions): an Instagram Story. Write story.txt in the
+    Focus output folder: "<Title> · update DATE", the one-line what's-new, "Full story: link in bio". The owner adds it
+    to that Focus's Story Highlight.
+  - A big development (release, court ruling, deaths, a new crackdown, a major turn): a new carousel with
+    `python3 tools/slides.py focus SLUG OUT --update` (slide 1 shows "Update · DATE" and the "whats_new" text).
+  - Either way, write old-caption-line.txt: one line for the owner to add at the top of the previous post's caption,
+    "Update DATE: <what changed in a few words>. Latest post / full story: link in bio."
+  - A correction (an older post was wrong, not just out of date): the line instead begins "Correction DATE:" and says
+    what was wrong. Say which case applies in the notification ("Instagram: Story / update carousel / correction").
+  The same applies to a daily story that grows: post a Story, or make it a Focus.
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".

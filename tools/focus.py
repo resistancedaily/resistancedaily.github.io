@@ -13,10 +13,15 @@ data/focus/SLUG.json:
   "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
   "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
+  "seo_title": "...",                                 # optional: the words people search for, used for <title> and
+                                                      #   link previews (≤ 65 chars, neutral); the page heading stays "title"
+  "whats_new": {"date": "YYYY-MM-DD", "text": "..."}, # optional: 1-2 sentences on the latest development, shown at the top
+  "published": "YYYY-MM-DD",                          # optional: first published (default: earliest edition)
   "layout": "chapters",                               # optional: pair story[i] with photos[i+1] instead of a gallery
   "numbers_photo": 0, "end_photo": 0 }                # optional: photo indexes for the slides' key-numbers and last slide
 """
 import sys, os, json, html, datetime, glob
+import seo
 
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -80,13 +85,18 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 @media (max-width:680px){.chap{grid-template-columns:1fr}}
 .figp{aspect-ratio:4/3;background:var(--chip);border-radius:4px;display:grid;place-content:center;justify-items:center;gap:8px;padding:16px;text-align:center}
 .figp b{font:800 clamp(64px,11vw,96px)/.9 var(--display);color:var(--red)}
+.new{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--red);border-radius:6px;padding:12px 16px;display:grid;gap:4px;max-width:66ch}
+.new b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--red)}
+.more-f{display:grid;gap:6px;max-width:66ch}
+.more-f h2{font-size:24px;font-weight:800}
+.more-f ul{margin:0;padding-left:18px;display:grid;gap:4px}
 .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);max-width:28ch}
 """
 
 HEAD = """<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title><meta name="description" content="{desc}"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">
-{og_image}<meta property="og:type" content="article"><link rel="canonical" href="{canonical}">
+{og_image}<meta property="og:type" content="article"><link rel="canonical" href="{canonical}">{extra}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>{css}</style></head><body><div class="wrap">"""
@@ -136,7 +146,7 @@ def body(f, figs, story, official):
             f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="chaps">{chaps}</div>{official}</section>')
 
 
-def page(f):
+def page(f, all_f=()):
     upd = datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")
     figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", []))
     story = "".join(f'<p>{E(s["text"])} <span class="src">{links(s["src"])}</span></p>' for s in f["story"])
@@ -144,15 +154,35 @@ def page(f):
     official = f'<div class="official"><b>Official position</b><p>{E(off["text"])} <span class="src">{links(off["src"])}</span></p></div>' if off else ""
     eds = " · ".join(f'<a href="../archive/{d}.html">{datetime.date.fromisoformat(d).strftime("%a %d %b")}</a>' for d in sorted(f.get("editions", []), reverse=True))
     first = f["photos"][0]["src"] if f["photos"] else ""
-    og = f'<meta property="og:image" content="{E(rel(first, SITE))}">' if first else ""
-    return HEAD.format(title=E(f"{f['title']} · Resistance Daily"), desc=E(f["dek"]), og_image=og,
-                       canonical=f"{SITE}focus/{f['slug']}.html", css=CSS) + f"""
+    # Link previews: a 1200x630 JPEG cut from the cover photo (falls back to the .webp if Pillow is missing).
+    share = seo.share_image(root, first, f"images/focus/{f['slug']}/share.jpg") if first else None
+    img = share or first
+    og = (f'<meta property="og:image" content="{E(rel(img, SITE))}">' + ('<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' if share else "")
+          + f'<meta property="og:image:alt" content="{E(f["photos"][0]["alt"])}">') if first else ""
+    url = f"{SITE}focus/{f['slug']}.html"
+    head = f.get("seo_title") or f["title"]
+    pub = f.get("published") or min(f.get("editions") or [f["updated"]])
+    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": head[:110], "alternativeHeadline": f["title"],
+          "description": f["dek"], "url": url, "mainEntityOfPage": url, "datePublished": seo.iso(pub), "dateModified": seo.iso(f["updated"]),
+          "author": seo.PUBLISHER, "publisher": seo.PUBLISHER, "isAccessibleForFree": True, "inLanguage": "en",
+          "about": f.get("rights", []), "image": [rel(img, SITE)] if first else []}
+    extra = (f'<meta property="og:url" content="{url}"><meta property="og:site_name" content="Resistance Daily">'
+             f'<meta property="article:published_time" content="{seo.iso(pub)}"><meta property="article:modified_time" content="{seo.iso(f["updated"])}">'
+             f'<meta name="twitter:card" content="summary_large_image">{seo.jsonld(ld)}')
+    wn = f.get("whats_new")
+    new = (f'<div class="new"><b>What\'s new · {datetime.date.fromisoformat(wn["date"]).strftime("%d %b %Y")}</b><p>{E(wn["text"])}</p></div>' if wn else "")
+    others = [o for o in all_f if o["slug"] != f["slug"]]
+    more = ('<section class="more-f"><h2>Other Focus stories</h2><ul>' + "".join(
+        f'<li><a href="{E(o["slug"])}.html">{E(o.get("seo_title") or o["title"])}</a></li>' for o in others) + '</ul></section>') if others else ""
+    return HEAD.format(title=E(f"{head} · Resistance Daily"), desc=E(f["dek"]), og_image=og, extra=extra,
+                       canonical=url, css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a> · <a href="../archive/">Past editions</a></span></div>
 <header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
-<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
+{new}<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
 <a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
+{more}
 <a class="allf big" href="./"><span>More in-depth stories, every fact sourced</span><b>See all Focus stories →</b></a>
 """ + FOOT
 
@@ -161,7 +191,8 @@ def index(all_f):
     cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="{E(f["photos"][0]["alt"])}" loading="lazy">
 <div><span class="kicker">{E(f["kicker"])}</span><h2>{E(f["title"])}</h2><p>{E(f["dek"])}</p><span class="src">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")} · {len(f["photos"])} photos</span></div></a></li>''' for f in all_f)
     return HEAD.format(title="Focus · Resistance Daily", desc="In-depth stories on places and issues, with a source for every fact.",
-                       og_image="", canonical=f"{SITE}focus/", css=CSS) + f"""
+                       og_image="", extra=f'<meta property="og:url" content="{SITE}focus/"><meta property="og:site_name" content="Resistance Daily">',
+                       canonical=f"{SITE}focus/", css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
 <ul class="list">{cards}</ul>
@@ -174,8 +205,9 @@ if __name__ == "__main__":
     slug = sys.argv[1]
     f = json.load(open(os.path.join(root, "data", "focus", f"{slug}.json")))
     os.makedirs(os.path.join(root, "focus"), exist_ok=True)
-    open(os.path.join(root, "focus", f"{slug}.html"), "w").write(page(f))
     all_f = [json.load(open(p)) for p in glob.glob(os.path.join(root, "data", "focus", "*.json"))]
     all_f.sort(key=lambda x: x["updated"], reverse=True)
+    open(os.path.join(root, "focus", f"{slug}.html"), "w").write(page(f, all_f))
     open(os.path.join(root, "focus", "index.html"), "w").write(index(all_f))
+    seo.write_sitemap(root)
     print("built focus", slug)
