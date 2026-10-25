@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Eritrea",
+   "Journalist held 25 years, no trial"
+  ],
+  [
+   "Delhi",
+   "Umar Khalid: 6 years, trial not begun"
+  ],
+  [
+   "Darfur, Sudan",
+   "6,500+ held by the RSF, doctors say"
+  ],
+  [
+   "Iran",
+   "Student sentenced to death over posts"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 101,
+   "label": "Still waiting · World · Press",
+   "fig": "9,163",
+   "figlab": "days held",
+   "place": "Eritrea",
+   "head": "Dawit Isaak",
+   "bullets": [
+    "Journalist arrested 23 Sep 2001; never charged or tried.",
+    "Held incommunicado; whereabouts and health unknown.",
+    "Eritrea's president has said there will be no trial and no release."
+   ],
+   "src": "RSF · CPJ"
+  },
+  {
+   "n": 102,
+   "label": "Still waiting · India · Due process",
+   "fig": "2,233",
+   "figlab": "days held",
+   "place": "Delhi",
+   "head": "Umar Khalid",
+   "bullets": [
+    "Held under the UAPA since 13 Sep 2020; trial has not begun.",
+    "Delhi High Court rejected his bail for the third time on 30 Sep 2026.",
+    "Police called fresh bail pleas premature."
+   ],
+   "src": "Bar & Bench · Citizens for Justice and Peace"
+  },
+  {
+   "n": 103,
+   "label": "Still waiting · World · Detention",
+   "fig": "6,500+",
+   "figlab": "held in El Geneina",
+   "place": "Darfur, Sudan",
+   "head": "Detainees of the RSF",
+   "bullets": [
+    "Sudan Doctors Network reports 6,500+ held in El Geneina, with food shortages and deaths.",
+    "Amnesty reports torture, forced labour and release for ransom in El Fasher.",
+    "The RSF did not respond."
+   ],
+   "src": "Amnesty · Anadolu · Al Jazeera"
+  },
+  {
+   "n": 104,
+   "label": "Still waiting · World · Expression",
+   "fig": "264",
+   "figlab": "days held",
+   "place": "Mashhad, Iran",
+   "head": "Najmeh Amini",
+   "bullets": [
+    "23-year-old student held since 3 Feb 2026.",
+    "Sentenced to death for blasphemy over social media posts, plus 12.5 years on security charges.",
+    "No official statement reported."
+   ],
+   "src": "Center for Human Rights in Iran"
+  }
+ ]
+}
