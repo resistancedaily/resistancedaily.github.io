@@ -23,7 +23,7 @@ body = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
 data = json.load(open(data_path))
 # Ensure the footer carries the archive link and contact line (design.py does not add it)
 if 'href="archive/"' not in body:
-    body = body.replace("</span></footer>", '</span><span><a href="archive/">Past editions</a> · Contact or send a tip: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span></footer>', 1)
+    body = body.replace("</span></footer>", f'</span><span><a href="archive/">Past editions</a> · <a href="{seo.WHATSAPP}">Follow on WhatsApp</a> · Contact or send a tip: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span></footer>', 1)
 
 top = sorted(data["items"], key=lambda i: {"red": 0, "orange": 1, "grey": 2}[i["sev"]])[:3]
 desc = "; ".join(f"{i.get('short', i['place'])}: {i['headline']}" for i in top) if design != "tracker" else \

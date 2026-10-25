@@ -9,7 +9,11 @@
 import os, json, glob, datetime
 
 SITE = "https://resistancedaily.github.io/"
-PUBLISHER = {"@type": "Organization", "name": "Resistance Daily", "url": SITE, "email": "resistancedaily.in@gmail.com"}
+WHATSAPP = "https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A"
+# Official accounts; add Facebook, X and Instagram profile URLs here as they are confirmed (search engines use sameAs
+# to tie the accounts to the site).
+SAME_AS = [WHATSAPP]
+PUBLISHER = {"@type": "Organization", "name": "Resistance Daily", "url": SITE, "email": "resistancedaily.in@gmail.com", "sameAs": SAME_AS}
 
 
 def share_image(root, src, out):
