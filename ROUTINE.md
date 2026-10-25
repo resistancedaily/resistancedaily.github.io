@@ -207,7 +207,12 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   - A correction (an older post was wrong, not just out of date): the line instead begins "Correction DATE:" and says
     what was wrong. Say which case applies in the notification ("Instagram: Story / update carousel / correction").
   The same applies to a daily story that grows: post a Story, or make it a Focus.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made) with
+- FACEBOOK: slides.py also writes facebook-post.txt in each output folder (the daily one links the permanent edition
+  page and the In-focus page; the Focus one links the Focus page and, with --update, leads with what's new). Facebook
+  posts carry clickable links, so the post text uses direct links, not "link in bio". Deliver it with the slides.
+- Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
+  printed on the slide), which becomes that slide's caption.
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, and both facebook-post.txt files) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".

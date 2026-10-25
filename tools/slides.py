@@ -12,7 +12,7 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
-Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet) and OUTDIR/slide-captions.txt (one caption per slide;
+Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
 Instagram carousels take a caption per photo). For focus also caption.txt (slide 1's caption) and alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
@@ -130,6 +130,35 @@ def write_captions(out, caps):
             print(f"WARNING: the caption for slide {i} is {len(c)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
     open(os.path.join(out, "slide-captions.txt"), "w").write(
         "\n\n".join(f"===== Slide {i} =====\n{c or '(no caption)'}" for i, c in enumerate(caps, 1)) + "\n")
+
+
+SITE = "https://resistancedaily.github.io/"
+
+
+def facebook_daily(d, out):
+    """facebook-post.txt: Facebook posts carry clickable links, so link the permanent edition page (and the Focus)
+    directly. Headlines and places come from data.json; the facts and their sources are on the linked page."""
+    items = sorted(d["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]]))[:4]
+    dt = datetime.date.fromisoformat(d["date"])
+    lines = [f"Resistance Daily · {dt.strftime('%A %d %B %Y')}", "What happened to people's rights in the last 24 hours. Every fact sourced.", ""]
+    lines += [f"{k}. {i.get('short', i['place'])}: {i['headline']}" for k, i in enumerate(items, 1)]
+    if d.get("cases"):
+        lines += ["", f"Still waiting: {len(d['cases'])} people and groups held for a long time after speaking out, protesting or reporting."]
+    lines += ["", f"Full edition, with a source for every fact: {SITE}archive/{d['date']}.html"]
+    for fc in d.get("focus", []):
+        lines += [f"In focus · {fc['title']}: {SITE}focus/{fc['slug']}.html"]
+    lines += ["", "Non-partisan. Rights, not parties.", "", "#HumanRights #CivilLiberties #ResistanceDaily"]
+    open(os.path.join(out, "facebook-post.txt"), "w").write("\n".join(lines) + "\n")
+
+
+def facebook_focus(f, out, wn):
+    url = f"{SITE}focus/{f['slug']}.html"
+    when = datetime.date.fromisoformat(wn["date"]).strftime("%d %b") if wn else ""
+    lines = [f"Focus update · {when} · {f['title']}" if wn else f"Focus · {f['title']}", "",
+             (f"What's new: {wn['text']}" if wn else f["dek"]), "",
+             f"The full story, with photos and a source for every fact: {url}", "",
+             "Non-partisan. Rights, not parties.", "", " ".join(f.get("instagram", {}).get("hashtags", [])[:4])]
+    open(os.path.join(out, "facebook-post.txt"), "w").write("\n".join(lines).rstrip() + "\n")
 
 
 def render(slides, out, prefix):
@@ -335,6 +364,7 @@ def daily(date, out):
         caps.append(st.get("caption") or it.get("text", ""))  # "caption" for slides not tied to an item (Sunday cases)
     caps.append("")
     write_captions(out, caps)
+    facebook_daily(d, out)
 
 
 def focus(slug, out, update=False):
@@ -404,6 +434,7 @@ def focus(slug, out, update=False):
     caps.append(srcs_of(f["official"]["src"]) if off else "")
     open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
     write_captions(out, caps)
+    facebook_focus(f, out, wn)
     alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
