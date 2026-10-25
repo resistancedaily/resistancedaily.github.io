@@ -1,7 +1,7 @@
 # Resistance Daily
 
 A daily, non-partisan public record of human-rights and civil-liberties events in India and around the world.
-Live site: https://resistancedaily.github.io/ · Past editions: `archive/` · Contact: resistancedaily.in@gmail.com
+Live site: https://resistancedaily.github.io/ (home page: Today, In focus, Still waiting, Past editions, Follow) · Today's full edition: `today/` · Past editions: `archive/` · Contact: resistancedaily.in@gmail.com
 
 ## Routine
 The daily routine's instructions live in [ROUTINE.md](ROUTINE.md); its scheduled prompt only loads that file. Change the routine by changing ROUTINE.md.
@@ -16,7 +16,7 @@ Mon map · Tue numbers · Wed ledger · Thu front · Fri clock · Sat map · Sun
 
 ## Build
 `cd tools && npm install`, then `node tools/maps.js items.json > data/DATE.maps.json && python3 tools/thin.py data/DATE.maps.json`
-and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`.
+and `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]` (writes `today/index.html`, the archive page, and rebuilds the home page with `tools/home.py`).
 
 ## Photos
 - Every item with a summary gets a photo; one-line briefs do not. First choice: a photo of the event itself. Otherwise a

@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Resistance Daily home page: the front door to every section.
 
-Usage (from the repo root):  python3 tools/home.py [OUT]     (OUT defaults to preview.html; index.html once live)
+Usage (from the repo root):  python3 tools/home.py [OUT]     (OUT: index.html, the live home page; any other name
+                                                              builds a preview that search engines skip)
+Run automatically by publish.py and focus.py.
 Reads the latest data/YYYY-MM-DD.json, data/focus/*.json, data/cases.json and archive/editions.json.
 Sections, top to bottom: Today (top headlines + link to the full edition), In focus, Still waiting, Past editions,
 Follow us (one line on what each channel is for), How we report.
@@ -11,7 +13,7 @@ import seo
 
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-out = sys.argv[1] if len(sys.argv) > 1 else "preview.html"
+out = sys.argv[1] if len(sys.argv) > 1 else "index.html"
 preview = os.path.basename(out) != "index.html"
 SITE = seo.SITE
 SEV = {"red": 0, "orange": 1, "grey": 2}

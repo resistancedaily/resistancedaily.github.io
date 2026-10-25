@@ -5,7 +5,8 @@ Usage (from the repo root):
   python3 tools/publish.py DESIGN YYYY-MM-DD data/YYYY-MM-DD.json [data/YYYY-MM-DD.maps.json]
 
 Writes:
-  index.html                 today's edition (full HTML document)
+  index.html                 the home page (tools/home.py): Today, In focus, Still waiting, Past editions, Follow
+  today/index.html           today's full edition, always at /today/ (canonical: its archive page)
   archive/YYYY-MM-DD.html    permanent copy
   archive/index.html         list of all editions, newest first
   build/artifact.html        page content without the document wrapper (for the Claude artifact backup)
@@ -70,7 +71,10 @@ def wrap(content, canonical):
 
 os.makedirs(os.path.join(root, "archive"), exist_ok=True)
 os.makedirs(os.path.join(root, "build"), exist_ok=True)
-open(os.path.join(root, "index.html"), "w").write(wrap(body, SITE))
+# Today's full edition lives at /today/; the home page (index.html) is built by tools/home.py below.
+os.makedirs(os.path.join(root, "today"), exist_ok=True)
+tod = body.replace('href="archive/"', 'href="../archive/"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
+open(os.path.join(root, "today", "index.html"), "w").write(wrap(tod, f"{SITE}archive/{date}.html"))
 arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
 open(os.path.join(root, "archive", f"{date}.html"), "w").write(wrap(arch, f"{SITE}archive/{date}.html"))
 # The backup page keeps images/ paths relative: publish those files with the artifact (see the list printed below).
@@ -104,12 +108,13 @@ li{{background:var(--paper);border:1px solid var(--rule);border-radius:6px;paddi
 .t{{font:500 11px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-left:8px}}
 li p{{margin:4px 0 0;color:var(--muted);font-size:14px}}
 </style></head><body><div class="wrap">
-<h1>Past editions</h1><p><a href="../">← Today's edition</a> · Every edition is kept here permanently.</p>
+<h1>Past editions</h1><p><a href="../">← Home</a> · <a href="../today/">Today's edition</a> · Every edition is kept here permanently.</p>
 <ul>{rows}</ul>
 <p style="color:var(--muted);font-size:13px">Contact or send a tip: resistancedaily.in@gmail.com</p>
 </div></body></html>
 """)
 seo.write_sitemap(root)
+subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True)
 print("built", design, date)
 # Standing routine instructions live in ROUTINE.md (photos, Focus, slides). Remind the run of the photo step.
 if design != "tracker":

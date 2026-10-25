@@ -211,4 +211,7 @@ if __name__ == "__main__":
     open(os.path.join(root, "focus", f"{slug}.html"), "w").write(page(f, all_f))
     open(os.path.join(root, "focus", "index.html"), "w").write(index(all_f))
     seo.write_sitemap(root)
+    # The home page shows the latest Focus cards: rebuild it too.
+    import subprocess
+    subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True)
     print("built focus", slug)

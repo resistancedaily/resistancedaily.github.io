@@ -137,11 +137,13 @@ organisers' count as a range.
   item's text is one or two short plain sentences (about 40–50 words,
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
-- Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes index.html,
-  archive/DATE.html, archive/index.html and build/artifact.html, and prints any items still missing a photo. It
+- Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes today/index.html
+  (the full edition, always at /today/), archive/DATE.html, archive/index.html and build/artifact.html, and rebuilds
+  the home page index.html with tools/home.py (Today's top headlines, In focus, Still waiting, Past editions, Follow;
+  focus.py rebuilds it too). Never hand-edit index.html: it comes from the data. It and prints any items still missing a photo. It
   (and tools/focus.py) also writes sitemap.xml and robots.txt, search data (schema.org NewsArticle) and a 1200x630
   link-preview image (images/DATE/share.jpg, images/focus/SLUG/share.jpg) via tools/seo.py. Commit them all.
-- Check once with Playwright screenshots of index.html (and focus/SLUG.html if a Focus was made) at 860px and 390px for
+- Check once with Playwright screenshots of index.html (home), today/index.html (and focus/SLUG.html if a Focus was made) at 860px and 390px for
   overlaps, clipping, horizontal scroll and photos that fail to load. Fix any problem through the data or map nudges,
   then rebuild.
 - Then: `git add -A && git commit -m "Edition DATE (DESIGN)" && git push origin main`. Commit as
@@ -224,7 +226,7 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 
 ## STEP 7. Drive archive (second copy)
 In folder 1wJ_vpAELu7IAbRFZEI7SAtK4wId7MY4A, using Google Drive create_file with disableConversionToGoogleType true:
-"DATE Resistance Daily (DESIGN).html" (text/html, the full index.html), "DATE data.json" (text/plain), "DATE Instagram
+"DATE Resistance Daily (DESIGN).html" (text/html, the full edition today/index.html), "DATE data.json" (text/plain), "DATE Instagram
 caption.txt" and "DATE Instagram slides source.html". Don't upload JPEGs.
 
 ## STEP 8. Notify
