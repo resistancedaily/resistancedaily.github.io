@@ -2,8 +2,8 @@
  "slug": "siang",
  "kicker": "Focus · Upper Siang, Arunachal Pradesh",
  "title": "The fight over the Siang dam",
- "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers are held under an anti-terror law, protesters want 10 arrested activists freed, and a bandh on 23 October ended in tear gas and arson.",
- "updated": "2026-10-24",
+ "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers are held under an anti-terror law, a bandh on 23 October ended in tear gas and arson, and on 24 October Pasighat came under prohibitory orders as the chief minister offered talks.",
+ "updated": "2026-10-25",
  "rights": [
   "Land",
   "Assembly",
@@ -85,11 +85,11 @@
    ]
   },
   {
-   "fig": "4–5",
-   "figcap": "women hospitalised on 23 Oct",
+   "fig": "5",
+   "figcap": "police and several protesters hurt",
    "src": [
-    "NE Now",
-    "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
+    "Arunachal Times",
+    "https://arunachaltimes.in/article/tension-grips-pasighat-as-anti-dam-protesters-vandalise-nhpc-abk-offices-leaders-houses"
    ]
   }
  ],
@@ -154,10 +154,23 @@
      "https://nenow.in/north-east-news/arunachal-pradesh/arunachal-protesters-vandalise-bjp-state-presidents-mlas-houses-over-siang-dam-project.html"
     ]
    ]
+  },
+  {
+   "text": "On 24 October shops in Pasighat stayed shut. Police detained five youths for questioning over the vandalism of homes, and from 5pm gatherings of more than five people were barred in Pasighat, Mebo and Ruksin. Arunachal Times reports five police personnel and several protesters were injured in the clashes. Activists and lawyers, among them human rights lawyer Ebo Mili, surrendered to police, saying the bandh had been peaceful and young people were not behind the violence.",
+   "src": [
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/tension-grips-pasighat-as-anti-dam-protesters-vandalise-nhpc-abk-offices-leaders-houses"
+    ],
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116780&slug=none-of-us-were-able-to-breathe-many-injured-as-arunachals-peaceful-anti-dam-protest-turns-violent"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "The detention orders cite a tense and volatile situation, violence and arson, and say they protect public safety. The district says opposition to the dam and law and order are separate matters. Police say protesters at Dite-Dime threw stones, tried to breach barricades and defied prohibitory orders. The state government says the project is mainly meant to store and manage water in view of China's planned dam upstream. East Siang's police chief did not respond to calls about the Pasighat violence.",
+  "text": "The detention orders cite a tense and volatile situation, violence and arson, and say they protect public safety. Police say protesters at Dite-Dime threw stones, tried to breach barricades and defied prohibitory orders; the police inspector-general says a case will be registered over the Pasighat violence. Chief Minister Pema Khandu called the incidents regrettable and offered talks: \"The government's doors are always open.\" The state says the dam is mainly meant to store water in view of China's planned dam upstream.",
   "src": [
    [
     "Arunachal Times",
@@ -174,6 +187,10 @@
    [
     "NE Now",
     "https://nenow.in/north-east-news/assam/arunachal-siang-dam-protest-turns-violent-nhpc-office-torched-after-police-crackdown.html"
+   ],
+   [
+    "Arunachal Times",
+    "https://arunachaltimes.in/article/tension-grips-pasighat-as-anti-dam-protesters-vandalise-nhpc-abk-offices-leaders-houses"
    ]
   ]
  },
@@ -182,10 +199,11 @@
   "2026-10-18",
   "2026-10-19",
   "2026-10-23",
-  "2026-10-24"
+  "2026-10-24",
+  "2026-10-25"
  ],
  "instagram": {
-  "caption": "Villages along the Siang river in Arunachal Pradesh oppose the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant that Mongabay India reports would submerge 27 villages.\n\nOn 9 October four Geku villagers were detained under the state's anti-terror law, and gatherings were banned. On 22 October opponents held a 24-hour sit-in in Pasighat; five more activists were reportedly taken into custody.\n\nOn 23 October police fired tear gas during a bandh and four to five women were hospitalised. That night an NHPC office, a police station and vehicles in Pasighat were reportedly set on fire. Protesters want 10 arrested activists freed.\n\nOfficial position: the detention orders cite violence and public safety; police say protesters threw stones and defied orders; the state says the dam is meant to store water in view of China's planned dam upstream.",
+  "caption": "Villages along the Siang river in Arunachal Pradesh oppose the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant that Mongabay India reports would submerge 27 villages.\n\nOn 9 October four Geku villagers were detained under the state's anti-terror law, and gatherings were banned. On 22 October opponents held a 24-hour sit-in in Pasighat; five more activists were reportedly taken into custody.\n\nOn 23 October police fired tear gas during a bandh and four to five women were hospitalised. That night an NHPC office, a police station and vehicles in Pasighat were reportedly set on fire. Protesters want 10 arrested activists freed. On 24 October five youths were detained, gatherings were barred in Pasighat, and lawyer Ebo Mili and other activists surrendered to police.\n\nOfficial position: the detention orders cite violence and public safety; police say protesters threw stones and defied orders; the chief minister says the government's doors are always open; the state says the dam is meant to store water in view of China's planned dam upstream.",
   "hashtags": [
    "#Siang",
    "#ArunachalPradesh",
