@@ -103,7 +103,7 @@ HEAD = """<!doctype html>
 
 FOOT = """<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
 <span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' and children's faces.</span>
-<span><a href="{wa}">Follow Resistance Daily on WhatsApp</a> for each new edition.</span>
+<span>{follow} for each new edition.</span>
 <span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
 </div></body></html>
 """
@@ -185,7 +185,7 @@ def page(f, all_f=()):
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
 {more}
 <a class="allf big" href="./"><span>More in-depth stories, every fact sourced</span><b>See all Focus stories →</b></a>
-""" + FOOT.format(wa=seo.WHATSAPP)
+""" + FOOT.format(follow=seo.FOLLOW)
 
 
 def index(all_f):
@@ -197,7 +197,7 @@ def index(all_f):
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
 <ul class="list">{cards}</ul>
-""" + FOOT.format(wa=seo.WHATSAPP)
+""" + FOOT.format(follow=seo.FOLLOW)
 
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
-Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
+Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt, whatsapp.txt and x-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
 Instagram carousels take a caption per photo). For focus also caption.txt (slide 1's caption) and alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
@@ -151,6 +151,40 @@ def facebook_daily(d, out):
     open(os.path.join(out, "facebook-post.txt"), "w").write("\n".join(lines) + "\n")
 
 
+# Verified X accounts of outlets we cite, to tag them ("via @..."). Add a handle only after opening the account and
+# confirming it is the outlet's official one.
+X_HANDLES = {}
+
+
+def x_post(out, lines, url):
+    """x-post.txt: one post, at most 280 characters (X counts any link as 23). Drops lines from the end to fit."""
+    lines = list(lines)
+    while lines and len("\n".join(lines)) + 1 + 23 > 280:
+        lines.pop()
+    open(os.path.join(out, "x-post.txt"), "w").write("\n".join(lines + [url]) + "\n")
+
+
+def via(src):
+    tags = [X_HANDLES[n] for n, u in src if n in X_HANDLES]
+    return f" (via {' '.join(dict.fromkeys(tags))})" if tags else ""
+
+
+def social_daily(d, out):
+    """whatsapp.txt (the channel post) and x-post.txt for the daily edition."""
+    items = sorted(d["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]]))
+    dt = datetime.date.fromisoformat(d["date"])
+    ed = f"{SITE}archive/{d['date']}.html"
+    wa = [f"*Resistance Daily · {dt.strftime('%a %d %b')}*", ""] + [f"• *{i.get('short', i['place'])}:* {i['headline']}" for i in items[:5]]
+    if d.get("cases"):
+        wa += ["", f"Still waiting: {len(d['cases'])} people and groups held for a long time, with days counted."]
+    wa += ["", f"Sources for every fact, in the full edition: {ed}"]
+    for fc in d.get("focus", []):
+        wa += [f"In focus · {fc['title']}: {SITE}focus/{fc['slug']}.html"]
+    open(os.path.join(out, "whatsapp.txt"), "w").write("\n".join(wa) + "\n")
+    x = [f"Resistance Daily · {dt.strftime('%d %b')}", ""] + [f"{i.get('short', i['place'])}: {i['headline']}{via(i['src'])}" for i in items[:4]]
+    x_post(out, x + ["", "Every fact sourced:"], ed)
+
+
 def facebook_focus(f, out, wn):
     url = f"{SITE}focus/{f['slug']}.html"
     when = datetime.date.fromisoformat(wn["date"]).strftime("%d %b") if wn else ""
@@ -159,6 +193,14 @@ def facebook_focus(f, out, wn):
              f"The full story, with photos and a source for every fact: {url}", "",
              "Non-partisan. Rights, not parties.", "", " ".join(f.get("instagram", {}).get("hashtags", [])[:4])]
     open(os.path.join(out, "facebook-post.txt"), "w").write("\n".join(lines).rstrip() + "\n")
+    lead = f"Update {when} · {f['title']}" if wn else f"Focus · {f['title']}"
+    body = wn["text"] if wn else f["dek"]
+    open(os.path.join(out, "whatsapp.txt"), "w").write(f"*{lead}*\n\n{body}\n\nFull story, every fact sourced: {url}\n")
+    if len(lead) + len(body) + 2 + 1 + 23 > 280:
+        # Never cut the what's-new text part-way: it may drop the official response. Point to the page instead.
+        print('note: "whats_new" is too long for X; keep it under ~220 characters. x-post.txt links the page only.', file=sys.stderr)
+        body = "What's new, with a source for every fact:"
+    x_post(out, [lead, "", body], url)
 
 
 def render(slides, out, prefix):
@@ -365,6 +407,7 @@ def daily(date, out):
     caps.append("")
     write_captions(out, caps)
     facebook_daily(d, out)
+    social_daily(d, out)
 
 
 def focus(slug, out, update=False):

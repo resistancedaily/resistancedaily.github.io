@@ -10,9 +10,11 @@ import os, json, glob, datetime
 
 SITE = "https://resistancedaily.github.io/"
 WHATSAPP = "https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A"
-# Official accounts; add Facebook, X and Instagram profile URLs here as they are confirmed (search engines use sameAs
-# to tie the accounts to the site).
-SAME_AS = [WHATSAPP]
+FACEBOOK = "https://www.facebook.com/resistancedaily.in"
+X = "https://x.com/ResistDaily_in"
+# Official accounts (search engines use sameAs to tie them to the site); add Instagram when confirmed.
+SAME_AS = [WHATSAPP, FACEBOOK, X]
+FOLLOW = f'Follow: <a href="{WHATSAPP}">WhatsApp</a> · <a href="{FACEBOOK}">Facebook</a> · <a href="{X}">X</a>'
 PUBLISHER = {"@type": "Organization", "name": "Resistance Daily", "url": SITE, "email": "resistancedaily.in@gmail.com", "sameAs": SAME_AS}
 
 
