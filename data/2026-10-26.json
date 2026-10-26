@@ -131,43 +131,6 @@
   {
    "n": 4,
    "region": "world",
-   "place": "Kordofan, Darfur and Blue Nile, Sudan",
-   "short": "Sudan",
-   "rights": [
-    "Life & safety"
-   ],
-   "sev": "red",
-   "fig": "306",
-   "figcap": "killed by drones",
-   "headline": "UN: drones killed 306 in three weeks",
-   "text": "The UN human rights office says drone strikes killed at least 306 people in Sudan in the first three weeks of October, including 139 when a truck was hit at Dibab, West Kordofan, on 18 October. It attributes strikes to both the army and the RSF; neither side's response was reported.",
-   "src": [
-    [
-     "Radio Tamazuj",
-     "https://www.radiotamazuj.org/en/news/article/sudan-drone-strikes-kill-306-in-three-weeks-un-rights-body-says"
-    ],
-    [
-     "Dabanga",
-     "https://www.dabangasudan.org/en/all-news/article/un-human-rights-chief-sudan-drone-strikes-killed-306-in-three-weeks"
-    ]
-   ],
-   "photo": {
-    "src": "images/2026-10-24/bara-north-kordofan.webp",
-    "alt": "A loaded lorry with people sitting on top drives along a road shaded by large trees.",
-    "caption": "A road in Bara, North Kordofan. The deadliest strike in the UN's October count hit a truck at Dibab, West Kordofan.",
-    "credit": "Aziz rudwan / Wikimedia Commons",
-    "licence": "CC BY-SA 4.0",
-    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86_%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B4%D9%85%D8%A7%D9%84_%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86.jpg",
-    "kind": "file",
-    "year": "2021",
-    "changes": "cropped"
-   },
-   "focus": "sudan-war"
-  },
-  {
-   "n": 5,
-   "region": "world",
    "place": "Gaza City and Khan Younis, Gaza",
    "short": "Gaza",
    "rights": [
@@ -203,7 +166,7 @@
    }
   },
   {
-   "n": 6,
+   "n": 5,
    "region": "world",
    "place": "Hebron, occupied West Bank",
    "short": "Hebron",
@@ -240,7 +203,7 @@
    }
   },
   {
-   "n": 7,
+   "n": 6,
    "region": "world",
    "place": "Binnari, Karim Lamido, Taraba State, Nigeria",
    "short": "Taraba",
@@ -272,7 +235,7 @@
    }
   },
   {
-   "n": 8,
+   "n": 7,
    "region": "world",
    "place": "Bafwasende, Tshopo province, DR Congo",
    "short": "DR Congo",
@@ -305,7 +268,7 @@
    }
   },
   {
-   "n": 9,
+   "n": 8,
    "region": "world",
    "place": "Paris, Rome and other cities in France and Italy",
    "short": "France",
@@ -342,7 +305,7 @@
    }
   },
   {
-   "n": 10,
+   "n": 9,
    "region": "world",
    "place": "Cheras, Kuala Lumpur, Malaysia",
    "short": "Malaysia",
@@ -381,12 +344,12 @@
  ],
  "focus": [
   {
-   "slug": "sudan-war",
-   "kicker": "Focus · Sudan",
-   "title": "Sudan's long war",
-   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
-   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
-   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers are held under an anti-terror law, a bandh on 23 October ended in tear gas and arson, and Pasighat remains under prohibitory orders as the chief minister meets community groups.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
    "photos": 4
   }
  ]
