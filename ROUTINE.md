@@ -214,12 +214,12 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   and whatsapp.txt (the post for the WhatsApp Channel) in each output folder. To tag an outlet on X ("via @..."), add
   its handle to X_HANDLES in tools/slides.py only after confirming it is the outlet's official account.
   Accounts: Instagram instagram.com/resistance.daily · Facebook facebook.com/resistancedaily.in · X x.com/ResistDaily_in · WhatsApp Channel (link in tools/seo.py).
-- FACEBOOK: slides.py also writes facebook-post.txt in each output folder (the daily one links the permanent edition
-  page and the In-focus page; the Focus one links the Focus page and, with --update, leads with what's new). Facebook
-  posts carry clickable links, so the post text uses direct links, not "link in bio". Deliver it with the slides.
+- FACEBOOK (owner's rule): do not send facebook-post.txt. The owner shares each Instagram post to Facebook from
+  Instagram, which builds the Facebook post from the slides and captions. slides.py still writes the file; leave it
+  in the output folder unsent.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
   printed on the slide), which becomes that slide's caption.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, and the facebook-post.txt, x-post.txt and whatsapp.txt files) with
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, and the x-post.txt and whatsapp.txt files) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
