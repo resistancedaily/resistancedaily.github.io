@@ -3,6 +3,7 @@
 
   share_image(root, src, out)   1200x630 JPEG for link previews (og:image); WhatsApp, LinkedIn and others
                                  do not all show .webp. Returns the site path, or None if Pillow is missing.
+  text_card(root, out, kicker, lines)  1200x630 text card used instead when an edition has no photo (e.g. Sundays)
   jsonld(obj)                   <script type="application/ld+json"> block (schema.org NewsArticle etc.)
   write_sitemap(root)           sitemap.xml (home, archive, every edition, every Focus) and robots.txt
 """
@@ -36,6 +37,40 @@ def share_image(root, src, out):
     im = im.resize((round(w * s), round(h * s)), Image.LANCZOS)
     l, t = (im.width - tw) // 2, (im.height - th) // 2
     im.crop((l, t, l + tw, t + th)).save(dst, "JPEG", quality=85, optimize=True, progressive=True)
+    return out
+
+
+def text_card(root, out, kicker, lines):
+    """1200x630 JPEG for link previews when no photo exists (e.g. Sunday "Still waiting"): masthead, kicker, up to 3 lines."""
+    try:
+        from PIL import Image, ImageDraw, ImageFont
+    except Exception:
+        print("note: Pillow not available; no link-preview image")
+        return None
+
+    def font(names, size):
+        for n in names:
+            for d in ("/usr/share/fonts/truetype/liberation", "/usr/share/fonts/truetype/dejavu"):
+                p = os.path.join(d, n)
+                if os.path.exists(p):
+                    return ImageFont.truetype(p, size)
+        return ImageFont.load_default()
+    bold, reg = ["LiberationSans-Bold.ttf", "DejaVuSans-Bold.ttf"], ["LiberationSans-Regular.ttf", "DejaVuSans.ttf"]
+    im = Image.new("RGB", (1200, 630), "#15181d")
+    dr = ImageDraw.Draw(im)
+    dr.rectangle((80, 80, 200, 92), fill="#d9661a")
+    dr.text((80, 116), "RESISTANCE DAILY", font=font(bold, 84), fill="#f3f4f2")
+    dr.text((80, 230), kicker.upper(), font=font(bold, 30), fill="#f08a3c")
+    f, y = font(reg, 34), 300
+    for line in lines[:3]:
+        while dr.textlength(line, font=f) > 1040 and len(line) > 4:
+            line = line[:-2].rstrip() + "…"
+        dr.text((80, y), line, font=f, fill="#eceae5")
+        y += 56
+    dr.text((80, 545), "Non-partisan · Every fact sourced · resistancedaily.github.io", font=font(reg, 26), fill="#9ba1aa")
+    dst = os.path.join(root, out)
+    os.makedirs(os.path.dirname(dst), exist_ok=True)
+    im.save(dst, "JPEG", quality=88, optimize=True, progressive=True)
     return out
 
 

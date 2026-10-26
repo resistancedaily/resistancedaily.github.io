@@ -36,6 +36,13 @@ ICON = "data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBo
 # Link previews: a 1200x630 JPEG from the most serious item that has a photo (none on most Sundays).
 lead = next((i for i in sorted(data["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]])) if i.get("photo")), None)
 share = seo.share_image(root, lead["photo"]["src"], f"images/{date}/share.jpg") if lead and not lead["photo"]["src"].startswith("http") else None
+share_alt = lead["photo"]["alt"] if share else ""
+if not share:  # no usable photo: a text card, so X, WhatsApp and Facebook still show a large preview
+    kicker = f"{data['date_long']} · Still waiting" if design == "tracker" else data["date_long"]
+    lines = ["Long detentions after speaking out, protesting or reporting"] if design == "tracker" else []
+    lines += [f"{i.get('short', i['place'])}: {i['headline']}" for i in top]
+    share = seo.text_card(root, f"images/{date}/share.jpg", kicker, lines)
+    share_alt = f"Resistance Daily, {data['date_long']}: " + "; ".join(lines[:3])
 
 
 def wrap(content, canonical):
@@ -46,7 +53,7 @@ def wrap(content, canonical):
     if share:
         ld["image"] = [SITE + share]
     img = (f'<meta property="og:image" content="{SITE}{share}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
-           f'<meta property="og:image:alt" content="{html.escape(lead["photo"]["alt"])}">') if share else ""
+           f'<meta property="og:image:alt" content="{html.escape(share_alt)}">') if share else ""
     return f"""<!doctype html>
 <html lang="en"><head>
 <meta charset="utf-8">
