@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Gaza",
+   "Eight killed, three at Gaza university"
+  ],
+  [
+   "Taraba, Nigeria",
+   "Village attack toll rises to 40"
+  ],
+  [
+   "Karnataka",
+   "61,059 voter-deletion forms, no reasons"
+  ],
+  [
+   "Pasighat",
+   "Curbs stay as CM meets dam groups"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 4,
+   "label": "World · Life & safety",
+   "fig": "8",
+   "figlab": "killed on Sunday",
+   "place": "Gaza City and Khan Younis, Gaza",
+   "head": "Strikes hit Gaza's Islamic University",
+   "bullets": [
+    "Israeli strikes killed at least eight people across Gaza on Sunday, three of them security guards at the Islamic University.",
+    "Seven female students were hurt in an earlier strike on the campus.",
+    "Gaza's Health Ministry counts 1,551 killed since the ceasefire. No Israeli military comment was reported."
+   ],
+   "src": "Al Jazeera · Middle East Eye"
+  },
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "10–40",
+   "figlab": "killed (police–Amnesty)",
+   "place": "Binnari, Taraba State, Nigeria",
+   "head": "Village attack toll rises to 40",
+   "bullets": [
+    "Armed men attacked Binnari village on Friday, burning homes, shops and food.",
+    "Amnesty says at least 40 were killed; police had confirmed 10, and many are missing.",
+    "Police say officers were deployed to restore order. No group has been named."
+   ],
+   "src": "Premium Times"
+  },
+  {
+   "n": 3,
+   "label": "India · Vote · Due process",
+   "fig": "61,059",
+   "figlab": "deletion forms filed by officials",
+   "place": "Karnataka",
+   "head": "Voter-deletion forms with no reason",
+   "bullets": [
+    "Election officials filed at least 61,059 forms to delete names from Karnataka's rolls; none gave the reason the rules require, The Hindu found.",
+    "Most came after the 23 September deadline.",
+    "Officials say the system auto-generated them when voters could not be reached."
+   ],
+   "src": "The Hindu"
+  },
+  {
+   "n": 1,
+   "label": "India · Assembly · Land",
+   "fig": "10",
+   "figlab": "arrested activists, protesters say",
+   "place": "Pasighat, Arunachal Pradesh",
+   "head": "Curbs stay after Siang dam unrest",
+   "bullets": [
+    "Prohibitory orders stayed in force in parts of East Siang on Sunday; officials reported no fresh violence.",
+    "Chief Minister Pema Khandu met community groups and MLAs, blaming 'misinformation' for fears over the dam.",
+    "Protest groups want the project scrapped and 10 arrested activists freed."
+   ],
+   "src": "New Indian Express"
+  }
+ ]
+}
