@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-10-22",
+ "updated": "2026-10-26",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -178,6 +178,21 @@
    ],
    "fig": "Jan 2025",
    "figcap": "US genocide finding on the RSF"
+  },
+  {
+   "text": "Drone strikes are intensifying. On 25 October the UN human rights office said strikes attributed to both the army and the RSF killed at least 306 people in the first three weeks of October 2026. The deadliest it listed hit a transport truck at Dibab, West Kordofan, on 18 October, killing at least 139. UN rights chief Volker Türk said drones have caused most of Sudan's conflict-related civilian deaths this year.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-drone-strikes-kill-306-in-three-weeks-un-rights-body-says"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/un-human-rights-chief-sudan-drone-strikes-killed-306-in-three-weeks"
+    ]
+   ],
+   "fig": "306",
+   "figcap": "killed by drones, 1–21 Oct 2026 (UN)"
   }
  ],
  "official": {
@@ -205,7 +220,8 @@
   "2026-10-19",
   "2026-10-20",
   "2026-10-21",
-  "2026-10-22"
+  "2026-10-22",
+  "2026-10-26"
  ],
  "instagram": {
   "caption": "",
@@ -220,5 +236,9 @@
  "layout": "chapters",
  "numbers_photo": 0,
  "end_photo": 3,
- "seo_title": "Sudan war: civilian deaths, displacement and the RSF"
+ "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
+ "whats_new": {
+  "date": "2026-10-26",
+  "text": "The UN human rights office says drone strikes by both sides killed at least 306 people in Sudan in the first three weeks of October, including 139 in one strike on a truck at Dibab, West Kordofan."
+ }
 }

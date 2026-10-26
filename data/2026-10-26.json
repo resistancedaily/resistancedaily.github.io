@@ -1,0 +1,393 @@
+{
+ "date": "2026-10-26",
+ "date_long": "Mon 26 Oct 2026",
+ "date_short": "Mon 26 Oct",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Assembly",
+    "Land",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "10",
+   "figcap": "activists held",
+   "headline": "Curbs stay in Pasighat as CM meets groups",
+   "text": "Prohibitory orders stayed in force in parts of East Siang on Sunday; officials reported no fresh violence. Chief Minister Pema Khandu met community organisations and MLAs, blaming “misinformation” for fears over the Siang dam. Protest groups want the project scrapped, armed forces withdrawn and 10 arrested activists freed.",
+   "src": [
+    [
+     "New Indian Express",
+     "https://www.newindianexpress.com/india/2026/Oct/25/arunachal-siang-mega-dam-row-cm-pema-khandu-holds-meeting-with-community-based-organisations"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where prohibitory orders remain in force.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "focus": "siang"
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Jamia Millia Islamia, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Expression",
+    "Education"
+   ],
+   "sev": "orange",
+   "fig": "2006",
+   "figcap": "last union",
+   "headline": "Jamia students end protest after union deal",
+   "text": "Police kept students out of Jamia's locked campus on Sunday and detained some; police say two women held outside were released and a man was put in preventive detention. Students later ended their two-week protest after the university agreed to hold union elections, absent since 2006, and withdraw suspensions.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Delhi/jamia-students-climb-gates-join-protest-amid-heavy-police-deployment/article71623802.ece"
+    ],
+    [
+     "Outlook",
+     "https://www.outlookindia.com/national/jamia-millia-islamia-protest-ends-after-deal-on-union-polls-disciplinary-action"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/jamia-gate-7.webp",
+    "alt": "A red arched gate with the number 7 beside it, on a road lined with trees; a man walks past in the foreground.",
+    "caption": "Gate No. 7 of Jamia Millia Islamia, where the student protest was held.",
+    "credit": "Sabaaya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gate_no_7_jamia_Millia_Islamia.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Bengaluru and across Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Vote",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "61,059",
+   "figcap": "deletion forms",
+   "headline": "Officials filed 61,059 voter-deletion forms without reasons",
+   "text": "Election officials themselves filed at least 61,059 forms to delete names from Karnataka's rolls, none stating the reason the rules require, The Hindu found; most came after the 23 September deadline. Officials say the system auto-generated them when voters could not be reached. The final roll is due 27 October.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/over-61000-form-7-applications-filed-by-election-officials-in-karnataka-none-cites-reason/article71623783.ece"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/bommanahalli.webp",
+    "alt": "The entrance of a metro station with a dark sign reading Bommanahalli in Kannada and English, above shutters and a steel railing.",
+    "caption": "Bommanahalli metro station, Bengaluru. In Bommanahalli constituency officials filed 4,095 of 5,757 deletion forms.",
+    "credit": "Sameer2905 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bommanahalli_metro_station_(July_%2725)_-_1.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "Kordofan, Darfur and Blue Nile, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "306",
+   "figcap": "killed by drones",
+   "headline": "UN: drones killed 306 in three weeks",
+   "text": "The UN human rights office says drone strikes killed at least 306 people in Sudan in the first three weeks of October, including 139 when a truck was hit at Dibab, West Kordofan, on 18 October. It attributes strikes to both the army and the RSF; neither side's response was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-drone-strikes-kill-306-in-three-weeks-un-rights-body-says"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/un-human-rights-chief-sudan-drone-strikes-killed-306-in-three-weeks"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/bara-north-kordofan.webp",
+    "alt": "A loaded lorry with people sitting on top drives along a road shaded by large trees.",
+    "caption": "A road in Bara, North Kordofan. The deadliest strike in the UN's October count hit a truck at Dibab, West Kordofan.",
+    "credit": "Aziz rudwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86_%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B4%D9%85%D8%A7%D9%84_%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   },
+   "focus": "sudan-war"
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Gaza City and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Education"
+   ],
+   "sev": "red",
+   "fig": "8",
+   "figcap": "killed",
+   "headline": "Eight killed, three at Gaza university",
+   "text": "Israeli strikes killed at least eight people across Gaza on Sunday, including three security guards at the Islamic University in Gaza City; seven female students were hurt in an earlier strike on the campus. Gaza's Health Ministry counts 1,551 killed since the ceasefire. No Israeli military comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/25/seven-killed-in-gaza-as-israel-targets-university-campus-and-other-sites"
+    ],
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-islamic-university-suspends-classes-death-toll-reaches-eight-0"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/islamic-university-gaza.webp",
+    "alt": "Multi-storey university buildings with arched windows above a leafy courtyard, with apartment towers behind.",
+    "caption": "The Luhaidan building and campus of the Islamic University of Gaza in 2012, before the war.",
+    "credit": "Manar al Zraiy / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Luhaidan_Building_-_Islamic_University_of_Gaza-%D9%85%D8%A8%D9%86%D9%89_%D8%A7%D9%84%D9%84%D8%AD%D9%8A%D8%AF%D8%A7%D9%86_%D8%A8%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9_%D9%81%D9%8A_%D8%BA%D8%B2%D8%A9.jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Hebron, occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Displacement",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2,670",
+   "figcap": "displaced",
+   "headline": "Over 2,670 displaced in Hebron, Palestinian officials say",
+   "text": "More than 2,670 people, mostly women, children and elderly people, have been displaced by Israel's Hebron operation, the Palestinian prime minister's office said on Sunday, citing the municipality. Troops ordered residents of Ein Deir Baha to leave. Israel's public broadcaster reports the army will end the operation within days.",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/palestinian-authority-says-2670-displaced-in-israels-hebron-operation/"
+    ],
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-end-hebron-operation-within-days-israeli-media-reports"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, where the military operation continues.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Binnari, Karim Lamido, Taraba State, Nigeria",
+   "short": "Taraba",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "10–40",
+   "figcap": "killed",
+   "headline": "Toll in Taraba village attack rises to 40",
+   "text": "Amnesty International says at least 40 people were killed when armed men attacked Binnari village on Friday, burning homes, shops and food; police had earlier confirmed 10 deaths, and many people are missing. Police say officers were deployed to restore order; no group has been named.",
+   "src": [
+    [
+     "Premium Times",
+     "https://www.premiumtimesng.com/regional/nnorth-east/920137-death-toll-in-taraba-terror-attack-rises-to-40.html"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/karim-lamido-river.webp",
+    "alt": "A crowded wooden boat loaded with white sacks on a brown river, with men wading alongside and green hills behind.",
+    "caption": "Traders ferry goods across the Benue towards Karim Lamido, Taraba State.",
+    "credit": "John Ovye Godwin / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Transportation_In_river_Lamido%2C_Taraba_State.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Bafwasende, Tshopo province, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety",
+    "Health"
+   ],
+   "sev": "orange",
+   "fig": "4,700+",
+   "figcap": "Ebola deaths",
+   "headline": "Nurse killed responding to Ebola alert",
+   "text": "A nurse was killed and another health worker badly injured on Saturday in Bafwasende, Tshopo province, while responding to an Ebola alert, the WHO says. Local authorities have not commented. The outbreak, Congo's deadliest, has recorded more than 9,800 cases and 4,700 deaths since May.",
+   "src": [
+    [
+     "AP via Newsday",
+     "https://www.newsday.com/news/nation/congo-ebola-s57885"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/bafwasende.webp",
+    "alt": "A painted monument in the colours of Congo's flag on a red dirt road junction, with a man standing beside it and trees behind.",
+    "caption": "The entrance to the centre of Bafwasende, Tshopo province.",
+    "credit": "VALENTIN NVJ / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Territoire_de_Bafwasende_(Tshopo_RDC).jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Paris, Rome and other cities in France and Italy",
+   "short": "France",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "1,314",
+   "figcap": "arrests in France",
+   "headline": "France reports 1,314 arrests; Italy arrests nine",
+   "text": "France reported 1,314 arrests at Saturday's cost-of-living protests, with 53 officers hurt and two people seriously injured; the interior minister blamed “radical activists”. Italy arrested nine and took 371 people, 110 of them minors, for checks; its prime minister said peaceful protest must be protected.",
+   "src": [
+    [
+     "BBC via AOL",
+     "https://www.aol.com/articles/clashes-erupt-paris-largely-peaceful-192853000.html"
+    ],
+    [
+     "News On AIR",
+     "https://newsonair.gov.in/protesters-enter-romes-colosseum-as-demonstrations-sweep-italy-nine-arrested/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, a usual rally point.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 10,
+   "region": "world",
+   "place": "Cheras, Kuala Lumpur, Malaysia",
+   "short": "Malaysia",
+   "rights": [
+    "Due process",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "12",
+   "figcap": "days in custody",
+   "headline": "Malaysia orders CID probe into custody death",
+   "text": "Malaysia's police chief ordered the CID to investigate the death of Noorizwan Zulkefly, 42, who died on 1 October after 12 days in Cheras police custody, citing unusual injuries. Family lawyers say an autopsy found brain bleeding from head trauma; police still class it as sudden death.",
+   "src": [
+    [
+     "Malaysiakini",
+     "https://www.malaysiakini.com/news/887834-igp-orders-immediate-probe-into-custodial-death-after-unusual-injuries-found"
+    ],
+    [
+     "Free Malaysia Today",
+     "https://www.freemalaysiatoday.com/category/nation/2026/10/25/lawyers-dispute-police-findings-on-cheras-custodial-death"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/jalan-cheras.webp",
+    "alt": "A wide road with a red car, a covered walkway on the left and a shopping mall with a round orange facade behind.",
+    "caption": "Jalan Cheras, a main road through Cheras, Kuala Lumpur.",
+    "credit": "Slleong / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Jalan_Cheras_Kuala_Lumpur_1.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}
