@@ -201,8 +201,9 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 - INSTAGRAM UPDATES (owner's rule): never delete an older post; each post is a dated record. When a Focus changes, decide:
   - No new facts, or only wording: nothing to post.
   - A small development (new statement, hearing date, a few detentions): an Instagram Story. Write story.txt in the
-    Focus output folder: "<Title> · update DATE", the one-line what's-new, "Full story: link in bio". The owner adds it
-    to that Focus's Story Highlight.
+    Focus output folder: "<Title> · update DATE", the one-line what's-new, "Full story: tap the link", then a last line
+    "Link sticker: https://resistancedaily.github.io/focus/SLUG.html" (the owner puts that URL in the Story's link
+    sticker). The owner adds it to that Focus's Story Highlight.
   - A big development (release, court ruling, deaths, a new crackdown, a major turn): a new carousel with
     `python3 tools/slides.py focus SLUG OUT --update` (slide 1 shows "Update · DATE" and the "whats_new" text).
   - Either way, write old-caption-line.txt: one line for the owner to add at the top of the previous post's caption,
