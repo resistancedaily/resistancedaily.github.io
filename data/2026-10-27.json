@@ -1,0 +1,287 @@
+{
+ "date": "2026-10-27",
+ "date_long": "Tue 27 Oct 2026",
+ "date_short": "Tue 27 Oct",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "26",
+   "figcap": "arrested, 5 juveniles",
+   "headline": "26 arrested over Pasighat violence; hunger strike",
+   "text": "East Siang police said on Monday that 26 people, five of them juveniles, are arrested over the 23 October arson in Pasighat, with six more held for questioning and eight cases filed. Police urged calm and asked people not to share unverified information. Anti-dam activists Ebo Mili and Otul Jerang reportedly began a hunger strike in custody.",
+   "src": [
+    [
+     "India Today NE",
+     "https://www.indiatodayne.in/arunachal-pradesh/story/arunachal-26-arrested-including-5-juveniles-over-pasighat-violence-6-detained-1467639-2026-10-26"
+    ],
+    [
+     "Northeast News",
+     "https://nenews.in/arunachal-pradesh/26-arrested-over-siang-dam-protest-violence-in-arunachals-pasighat/68971/"
+    ],
+    [
+     "India Today NE",
+     "https://www.indiatodayne.in/arunachal-pradesh/story/siang-dam-row-anti-dam-activists-ebo-mili-otul-jerang-begin-hunger-strike-in-police-custody-in-arunachal-1467625-2026-10-26"
+    ]
+   ],
+   "focus": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where 26 people have been arrested after the 23 October violence.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Mumbai, Maharashtra",
+   "short": "Mumbai",
+   "rights": [
+    "Expression",
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "28 Oct",
+   "figcap": "deadline to leave",
+   "headline": "Actor's challenge to 'Leave India' notice deferred",
+   "text": "The Bombay High Court moved to Tuesday actor Imran Khan's challenge to an order to leave India by 28 October, issued after police detained him near an election-roll protest on 10 October. The US citizen and OCI cardholder says he was given no hearing. The notice cites the Immigration and Foreigners Act; the Solicitor General appeared for the Union.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/bombay-high-court-to-hear-actor-imran-khans-plea-against-leave-india-notice-on-october-26-555276"
+    ],
+    [
+     "LiveLaw (live)",
+     "https://www.livelaw.in/top-stories/bombay-high-court-hearing-imran-khans-plea-against-leave-india-notice-555966"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/august-kranti-maidan.webp",
+    "alt": "An arched gate with Devanagari lettering over a green iron gate, leading to a tree-lined path where a few people walk.",
+    "caption": "The entrance to August Kranti Maidan, Mumbai, near where the actor was detained on 10 October.",
+    "credit": "Karthikndr / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:August_Kranti_Maidan,_Mumbai.JPG",
+    "kind": "file",
+    "year": "2012"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Supreme Court, New Delhi; Chhattisgarh",
+   "short": "Chhattisgarh",
+   "rights": [
+    "Due process",
+    "Religion"
+   ],
+   "sev": "grey",
+   "fig": "3",
+   "figcap": "state laws heard together",
+   "headline": "Supreme Court to hear challenge to conversion law",
+   "text": "The Supreme Court on Monday issued notice to the Centre and Chhattisgarh on a tribal Christian group's challenge to the state's 2026 anti-conversion law, which requires a public declaration before changing faith. It tagged the case with challenges to similar laws in Uttar Pradesh and Rajasthan. Neither government's response has been reported.",
+   "src": [
+    [
+     "Siasat",
+     "https://www.siasat.com/scs-notices-to-centre-chhattisgarh-over-anti-conversion-law-3564724/"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/livelaw-breaking-news-alerts26-october-2026-555885"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "El Fasher, North Darfur, Sudan",
+   "short": "El Fasher",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "red",
+   "fig": "6,000+",
+   "figcap": "killed in 3 days, UN says",
+   "headline": "El Fasher a year on: thousands may be held",
+   "text": "A year after the RSF captured El Fasher, Human Rights Watch says thousands of civilians may still be in RSF detention; the UN rights office estimates more than 6,000 were killed in three days of the final offensive. Amnesty says fewer than 70,000 people remain and the RSF did not respond to its findings.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/10/26/sudan-one-year-on-from-the-cataclysm-of-el-fasher"
+    ],
+    [
+     "Amnesty",
+     "https://www.amnesty.org/en/latest/news/2026/10/sudan-el-fasher-civilians-suffer-unlawful-killings-detention-and-torture-one-year-after-citys-capture-by-the-rsf-new-testimony/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/el-fasher-aerial.webp",
+    "alt": "Rows of low houses and walled compounds on sandy ground, seen from the air.",
+    "caption": "El Fasher seen from the air, years before the war.",
+    "credit": "Fraktion DIE LINKE. im Bundestag / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:El_Fasher_in_Darfur_(5412964762).jpg",
+    "kind": "file",
+    "year": "2010"
+   }
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Al-Mawasi, Khan Younis, and Gaza City",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "5+",
+   "figcap": "killed Monday",
+   "headline": "Strike on Mawasi camp kills girl, 7",
+   "text": "At least five people were killed in Gaza on Monday, including four, among them 7-year-old Jouri al-Soufi, in a strike on a displacement camp in al-Mawasi, Nasser Hospital said. Israel's military told AFP it was looking into the reports. Medical sources count 1,559 killed since the ceasefire.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/10/26/israeli-forces-kill-at-least-five-people-in-gaza-including-7-year-old-girl"
+    ],
+    [
+     "RTÉ / AFP",
+     "https://www.rte.ie/news/2026/1026/1596841-middle-east-israel-gaza/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, after heavy rain. Monday's strike hit a similar camp in al-Mawasi.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Tirana, Albania",
+   "short": "Tirana",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "€5,000",
+   "figcap": "top fine per protester",
+   "headline": "Albania plans curbs on protests after clashes",
+   "text": "After weekend clashes in which police used tear gas, water cannon and rubber bullets, Prime Minister Edi Rama announced a bill to let police limit protests near public institutions, fine participants in unauthorised gatherings up to €5,000 and criminalise online calls for violence. He blamed the opposition and 'foreign actors'; activists warn it threatens assembly and speech.",
+   "src": [
+    [
+     "Balkan Insight",
+     "https://balkaninsight.com/2026/10/26/albanian-prime-minister-announces-new-anti-protest-law/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/tirana-skanderbeg.webp",
+    "alt": "A large lawn in a city square with an equestrian statue, a minaret, a tower block and a red flag.",
+    "caption": "Skanderbeg Square in central Tirana.",
+    "credit": "Pudelek / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tirana_-_Skanderbeg_Square_(Sheshi_Sk%C3%ABnderbej)_-_by_Pudelek.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Nairobi, Kenya",
+   "short": "Nairobi",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "Sh227",
+   "figcap": "petrol per litre",
+   "headline": "Arrests at Nairobi fuel-price march",
+   "text": "Police arrested several protesters in running battles in central Nairobi on Monday during a march against fuel prices and living costs, after petrol rose to Sh226.96 a litre. The Coalition of Human Rights Defenders says it notified police on 22 October. No police statement or arrest count was reported.",
+   "src": [
+    [
+     "Eastleigh Voice via allAfrica",
+     "https://allafrica.com/stories/202610260221.html"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/moi-avenue.webp",
+    "alt": "A city street lined with shops and an office tower, with parked cars, a cyclist and pedestrians.",
+    "caption": "Moi Avenue in central Nairobi, one of the streets where Monday's clashes took place.",
+    "credit": "Bahnfrend / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Moi_Avenue_(Nairobi),_2025_(01).jpg",
+    "kind": "file",
+    "year": "2025"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers are held under an anti-terror law, and after arson in Pasighat during a 23 October bandh police have arrested 26 people; two activists in custody have begun a hunger strike.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}
