@@ -1,0 +1,233 @@
+{
+ "slug": "brazil-election",
+ "kicker": "Focus · Brazil",
+ "title": "Brazil's vote: what's at stake for rights",
+ "dek": "Lula da Silva won Brazil's 25 October runoff by 51.8% to 48.2%. His rival first said he would seek to annul the vote; his party then accepted the result. The next term inherits fights over the Amazon, Indigenous land and deadly policing.",
+ "updated": "2026-10-27",
+ "published": "2026-10-27",
+ "rights": [
+  "Vote",
+  "Land",
+  "Life & safety",
+  "Due process"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/brazil-election/urna.webp",
+   "alt": "A finger presses the green confirm key on a white electronic voting machine, with more machines behind.",
+   "caption": "A Brazilian electronic voting machine shown by the electoral court ahead of the 2022 elections.",
+   "credit": "Superior Electoral Court of Brazil / Wikimedia Commons",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Brazilian_DRE_voting_machine_for_2022_elections.jpg",
+   "kind": "file",
+   "year": "2021"
+  },
+  {
+   "src": "images/focus/brazil-election/tse.webp",
+   "alt": "A curved dark-glass office building with a white dome in front, under a blue sky.",
+   "caption": "The headquarters of the Superior Electoral Court (TSE) in Brasília, which declared the result.",
+   "credit": "Alexandresena / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sede_do_Tribunal_Superior_Eleitoral,_em_Bras%C3%ADlia.jpg",
+   "kind": "file",
+   "year": "2012"
+  },
+  {
+   "src": "images/focus/brazil-election/rondonia.webp",
+   "alt": "Aerial view of dense forest bordering wide cleared brown fields, with a strip of trees along a stream.",
+   "caption": "Cleared land beside forest near Porto Velho, Rondônia, photographed from the air.",
+   "credit": "Bruno Kelly / Amazônia Real, via Wikimedia Commons",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:SOBREVVO_EM_RONDONIA_DIA_07-08-2020_(FOTO_BRUNO_KELLY)_(62)_(50224604772).jpg",
+   "kind": "file",
+   "year": "2020"
+  },
+  {
+   "src": "images/focus/brazil-election/javari.webp",
+   "alt": "A narrow path through thick green forest, with one person walking far in the distance.",
+   "caption": "Aldeia Bananeira, a Kanamari village in the Vale do Javari Indigenous Territory, where some voters live days from a polling place.",
+   "credit": "Bruno Kelly / Amazônia Real, via Wikimedia Commons",
+   "licence": "CC BY 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:TI_Vale_do_Javari_-_Kanamari_(32876628998).jpg",
+   "kind": "file",
+   "year": "2018"
+  },
+  {
+   "src": "images/focus/brazil-election/alemao.webp",
+   "alt": "Hillside houses packed closely together above a fenced lot, with power pylons on the skyline.",
+   "caption": "Complexo do Alemão in Rio de Janeiro, one of the areas of the October 2025 police raid.",
+   "credit": "Junius / Wikimedia Commons",
+   "licence": "Public domain",
+   "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Complexo_do_Alem%C3%A3o.JPG",
+   "kind": "file",
+   "year": "2010"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "4.4m",
+   "figcap": "vote margin in the runoff",
+   "src": [
+    "CBS News",
+    "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+   ]
+  },
+  {
+   "fig": "3,335",
+   "figcap": "sq km of Amazon cleared, a record low",
+   "src": [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record"
+   ]
+  },
+  {
+   "fig": "895 km",
+   "figcap": "some Indigenous voters' trip to vote",
+   "src": [
+    "AP via WSLS",
+    "https://www.wsls.com/news/world/2026/10/22/brazils-indigenous-voters-deep-in-amazon-struggle-to-cast-ballots/"
+   ]
+  },
+  {
+   "fig": "119–132",
+   "figcap": "killed in one Rio police raid, 2025",
+   "src": [
+    "News24 / AFP",
+    "https://www.news24.com/world/132-killed-in-massive-rio-police-crackdown-on-gang-public-defender-20251029-1150"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "In the 25 October runoff, Luiz Inácio Lula da Silva won a fourth term with 51.8% of valid votes to Senator Flávio Bolsonaro's 48.2%, a margin of about 4.4 million votes, the Superior Electoral Court (TSE) said. A Supreme Court judge kept polls open two extra hours at the request of both candidates, after bus disruptions in São Paulo and Salvador and heavy rain in the south.",
+   "src": [
+    [
+     "TSE",
+     "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/presidente-do-tse-anuncia-reeleicao-de-lula-e-faz-balanco-do-2o-turno-das-eleicoes-2026"
+    ],
+    [
+     "CBS News",
+     "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+    ]
+   ]
+  },
+  {
+   "text": "Brazil's space agency INPE says 3,335 sq km of Amazon forest were cleared in the year to July 2026, about 42% less than a year earlier and the lowest since records began in 1988. Lula's stated goal is zero illegal deforestation by 2030; Flávio Bolsonaro pledged to end illegal deforestation by 2029.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record"
+    ]
+   ]
+  },
+  {
+   "text": "Three days before the runoff, a federal court ordered the government to help Indigenous people reach polling places; some live up to 895 km away, by boat trips of three to five days. Indigenous groups such as APIB warn that the new Congress, where the Liberal Party holds 121 of 513 seats, could push to open Indigenous lands to mining.",
+   "src": [
+    [
+     "AP via WSLS",
+     "https://www.wsls.com/news/world/2026/10/22/brazils-indigenous-voters-deep-in-amazon-struggle-to-cast-ballots/"
+    ],
+    [
+     "Amazon Watch",
+     "https://amazonwatch.org/news/2026/1026-lula-wins-brazil-election-but-far-right-congress-threatens-amazon-and-indigenous-rights"
+    ]
+   ]
+  },
+  {
+   "text": "UN experts say Brazilian police kill more than 6,000 people a year, most of them Black. A 28 October 2025 raid on Rio's Alemão and Penha favelas killed 119 people by the police count, including four officers, and 132 by the public defender's count. UN experts said some bodies had hands tied or neck wounds and called for an independent investigation; Governor Cláudio Castro called the raid a 'success' against 'narcoterrorism'.",
+   "src": [
+    [
+     "EWN / AFP",
+     "https://ewn.co.za/2025/10/30/over-100-killed-in-rio-police-crackdown-on-powerful-narco-gang"
+    ],
+    [
+     "News24 / AFP",
+     "https://www.news24.com/world/132-killed-in-massive-rio-police-crackdown-on-gang-public-defender-20251029-1150"
+    ],
+    [
+     "Conectas (UN experts)",
+     "https://conectas.org/en/noticias/the-un-asks-for-an-independent-investigation-on-the-police-raid-in-rio-de-janeiro/"
+    ]
+   ]
+  },
+  {
+   "text": "The vote followed the Supreme Court's September 2025 sentence of former president Jair Bolsonaro to 27 years and 3 months for plotting a coup after the 2022 election, which barred him from running. His lawyers called it 'incredibly excessive' and said they would appeal; Flávio Bolsonaro has promised to seek an amnesty for his father.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2025/9/11/brazils-bolsonaro-found-guilty-of-coup-plot-by-top-court"
+    ],
+    [
+     "AP via theGrio",
+     "https://thegrio.com/2025/09/12/brazilian-supreme-court-panel-sentences-bolsonaro-to-more-than-27-years-in-prison-for-coup-attempt/"
+    ],
+    [
+     "CBS News",
+     "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+    ]
+   ],
+   "fig": "27 yrs",
+   "figcap": "Jair Bolsonaro's sentence for the coup plot"
+  },
+  {
+   "text": "Abroad, governments in Europe, Russia, China, India and South Africa congratulated Lula, and Colombia's president said the will of voters 'must be respected'. US President Donald Trump, who imposed 50% tariffs on Brazilian goods in 2025 and linked them to Bolsonaro's prosecution, called it 'another rigged election'. Lula said Brazil 'will not accept being anyone's backyard'.",
+   "src": [
+    [
+     "Times of Israel / AFP",
+     "https://www.timesofisrael.com/bolsonaros-party-concedes-brazil-election-loss-to-leftist-incumbent-lula/"
+    ],
+    [
+     "CBS News",
+     "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2025/9/11/brazils-bolsonaro-found-guilty-of-coup-plot-by-top-court"
+    ],
+    [
+     "AP via theGrio",
+     "https://thegrio.com/2025/09/12/brazilian-supreme-court-panel-sentences-bolsonaro-to-more-than-27-years-in-prison-for-coup-attempt/"
+    ]
+   ],
+   "fig": "50%",
+   "figcap": "US tariff on Brazilian goods since 2025"
+  }
+ ],
+ "official": {
+  "text": "TSE president Kassio Nunes Marques praised the 'successful polls' and said there 'were no changes' to the result from the two-hour extension. Flávio Bolsonaro called the extension 'unacceptable' and a 'dirty trick' and first said he would seek annulment; on 26 October his Liberal Party said: 'We recognize the presidential election results, as proclaimed by the Superior Electoral Court.' Rio's governor called the 2025 raid a success against 'narcoterrorism'.",
+  "src": [
+   [
+    "Times of Israel / AFP",
+    "https://www.timesofisrael.com/bolsonaros-party-concedes-brazil-election-loss-to-leftist-incumbent-lula/"
+   ],
+   [
+    "CBS News",
+    "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+   ],
+   [
+    "EWN / AFP",
+    "https://ewn.co.za/2025/10/30/over-100-killed-in-rio-police-crackdown-on-powerful-narco-gang"
+   ]
+  ]
+ },
+ "editions": [],
+ "instagram": {
+  "caption": "",
+  "hashtags": [
+   "#Brazil",
+   "#Eleicoes2026",
+   "#HumanRights",
+   "#Amazon",
+   "#ResistanceDaily"
+  ]
+ },
+ "layout": "chapters",
+ "numbers_photo": 0,
+ "end_photo": 1,
+ "seo_title": "Brazil election 2026: what Lula's win means for rights"
+}
