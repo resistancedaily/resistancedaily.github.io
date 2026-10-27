@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "El Fasher, Sudan",
+   "A year on, thousands may still be held"
+  ],
+  [
+   "Gaza",
+   "Strike on Mawasi camp kills girl, 7"
+  ],
+  [
+   "Pasighat",
+   "26 arrested; activists on hunger strike"
+  ],
+  [
+   "Albania",
+   "Plan to curb protests after clashes"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 4,
+   "label": "World · Life & safety · Due process",
+   "fig": "6,000+",
+   "figlab": "killed in 3 days, UN estimate",
+   "place": "El Fasher, North Darfur, Sudan",
+   "head": "El Fasher, a year after the RSF took it",
+   "bullets": [
+    "Human Rights Watch says thousands of civilians may still be held in RSF detention.",
+    "The UN rights office estimates more than 6,000 people were killed in three days of the final offensive.",
+    "Amnesty says fewer than 70,000 people remain; the RSF did not respond to its findings."
+   ],
+   "src": "HRW · Amnesty"
+  },
+  {
+   "n": 5,
+   "label": "World · Life & safety",
+   "fig": "5+",
+   "figlab": "killed in Gaza on Monday",
+   "place": "Al-Mawasi, Khan Younis, Gaza",
+   "head": "Strike on displacement camp kills girl, 7",
+   "bullets": [
+    "Four people, including 7-year-old Jouri al-Soufi, were killed in a strike on a camp in al-Mawasi, Nasser Hospital said.",
+    "Israel's military told AFP it was looking into the reports.",
+    "Medical sources count 1,559 killed since the ceasefire."
+   ],
+   "src": "Al Jazeera · RTÉ / AFP"
+  },
+  {
+   "n": 1,
+   "label": "India · Due process · Assembly",
+   "fig": "26",
+   "figlab": "arrested, 5 of them juveniles",
+   "place": "Pasighat, Arunachal Pradesh",
+   "head": "Arrests after Siang dam unrest",
+   "bullets": [
+    "Police say 26 people are arrested over the 23 October arson in Pasighat; eight cases are filed.",
+    "Police urged calm and asked people not to share unverified information.",
+    "Anti-dam activists Ebo Mili and Otul Jerang reportedly began a hunger strike in custody."
+   ],
+   "src": "India Today NE · Northeast News"
+  },
+  {
+   "n": 6,
+   "label": "World · Assembly · Expression",
+   "fig": "€5,000",
+   "figlab": "top fine per protester",
+   "place": "Tirana, Albania",
+   "head": "Albania plans curbs on protests",
+   "bullets": [
+    "Police used tear gas, water cannon and rubber bullets in weekend clashes in Tirana.",
+    "PM Edi Rama's bill would let police limit protests near public institutions and criminalise online calls for violence.",
+    "He blamed the opposition and 'foreign actors'; activists warn it threatens assembly and speech."
+   ],
+   "src": "Balkan Insight"
+  }
+ ]
+}
