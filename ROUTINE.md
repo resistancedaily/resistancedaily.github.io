@@ -230,9 +230,21 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   an update, the new development), then why it matters, then the wider picture, and close with the official
   position and the link-in-bio line. Lines still follow the slide order and the 5-second pace, and each line should
   fit what its slide shows; a line may use any sourced fact from the Focus page, not only the slide's own text.
+- REEL CAPTION (owner's rule): a Reel takes one caption, not one per slide, and viewers can't read the slides'
+  sources in 5 seconds. For every carousel made, also write reel-caption.txt in its output folder, under 2,200
+  characters:
+  - Daily: "What happened to people's rights in the last 24 hours · <Day DD Mon YYYY>"; the four stories numbered, each
+    one or two sentences with the official position (or that none was reported); "Non-partisan. Every fact sourced.
+    Full edition with links: resistancedaily.github.io (link in bio)."; "Sources: …"; a photo line ("Photos:
+    Wikimedia Commons, freely licensed (file photos, credited in the full edition)."); the same 6–10 hashtags as the
+    carousel caption.
+  - Focus or update: "Focus · <title>" (plus " · Update DATE" for an update); a short paragraph telling the story or
+    the new development, with the official position; one or two sentences of wider context; "Full story, with a
+    source for every fact: link in bio."; "Sources: …"; a photo line (say if faces were blurred); at most 5 hashtags.
+  - Same standards as every caption: neutral, every fact from a sourced item or Focus paragraph, qualifiers kept.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
   printed on the slide), which becomes that slide's caption.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt for each carousel, and the x-post.txt and whatsapp.txt files) with
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, and the x-post.txt and whatsapp.txt files) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
