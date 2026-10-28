@@ -1,0 +1,286 @@
+{
+ "date": "2026-10-28",
+ "date_long": "Wed 28 Oct 2026",
+ "date_short": "Wed 28 Oct",
+ "window": "Tue 09:00 → Wed 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "30",
+   "figcap": "central police companies",
+   "headline": "Curbs stay in Pasighat; detained activist's health worsens",
+   "text": "About 30 companies of central armed police are deployed across three Siang districts, and Pasighat's district magistrate says curbs on gatherings stay 'until further orders'. Activist Ebo Mili's family says his health is worsening in custody, where he is reportedly on hunger strike; he denies any role in the arson.",
+   "src": [
+    [
+     "ThePrint",
+     "https://theprint.in/feature/arunachal-anti-siang-dam-protest-town-reeks-of-burning-youth-on-hunger-strike-in-custody/3082743/"
+    ],
+    [
+     "Arunachal Times",
+     "https://www.arunachaltimes.in/article/detained-anti-sump-activists-launch-hunger-strike-family-voices-medical-concerns"
+    ]
+   ],
+   "focus": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where curbs on gatherings remain after the 23 October violence.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Mumbai, Maharashtra",
+   "short": "Mumbai",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "2 Nov",
+   "figcap": "next hearing",
+   "headline": "Court pauses actor's 'Leave India' notice",
+   "text": "The Bombay High Court on Tuesday kept in abeyance until 2 November a notice telling actor Imran Khan, an OCI cardholder, to leave India by 28 October after he joined a protest. The Additional Solicitor General sought more time and orally assured the court Khan would not have to leave meanwhile.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/bombay-high-court/bombay-high-court-actor-imran-khan-leave-india-assured-foreigners-registration-regional-office-556160"
+    ],
+    [
+     "Morung Express",
+     "https://morungexpress.com/actor-imran-khan-gets-major-relief-as-bombay-hc-stays-leave-india-notice"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/august-kranti-maidan.webp",
+    "alt": "An arched gate with Devanagari lettering over a green iron gate, leading to a tree-lined path where a few people walk.",
+    "caption": "The entrance to August Kranti Maidan, Mumbai, where the actor joined a protest on 10 October.",
+    "credit": "Karthikndr / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:August_Kranti_Maidan,_Mumbai.JPG",
+    "kind": "file",
+    "year": "2012"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "26 Nov",
+   "figcap": "deadline set",
+   "headline": "Groups set deadline on Bengaluru protest curbs",
+   "text": "Civil society groups and unions gave Karnataka until 26 November to withdraw the 2021 order that confines most Bengaluru protests to Freedom Park, or face civil disobedience from 28 November. Home Minister Priyank Kharge says the government is studying other protest sites and does not intend to curb protest rights.",
+   "src": [
+    [
+     "News Karnataka",
+     "https://newskarnataka.com/bengaluru/bengaluru-protest-curbs-face-november-26-deadline/27102026"
+    ],
+    [
+     "Oneindia",
+     "https://www.oneindia.com/bengaluru/bengaluru-protest-sites-kharge-explores-more-venues-as-activists-set-november-26-deadline-8243443.html"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/bengaluru-freedom-park.webp",
+    "alt": "Large green letters reading Freedom Park in English and Kannada on a blue wall, with trees below.",
+    "caption": "The entrance sign at Freedom Park, where a 2021 order confines most Bengaluru protests.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "Nyala, South Darfur, Sudan",
+   "short": "Nyala",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "36+",
+   "figcap": "killed, MSF says",
+   "headline": "Drone strike on Nyala market kills dozens",
+   "text": "A drone strike on a busy market in Nyala, South Darfur, on Monday evening killed at least 36 people and wounded over 150, MSF said, attributing it to Sudan's army; the rights group Emergency Lawyers says more than 100 died. The army has not commented. The RSF controls Nyala.",
+   "src": [
+    [
+     "MSF",
+     "https://www.msf.org/people-killed-and-150-injured-sudanese-armed-forces-strike-nyala"
+    ],
+    [
+     "AP via ClickOnDetroit",
+     "https://www.clickondetroit.com/news/world/2026/10/27/large-parts-of-sudans-capital-lose-power-after-drone-attack/"
+    ]
+   ],
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-28/nyala-market.webp",
+    "alt": "A street with a Sudapost sign over a gateway, small shops, parked cars and a few people walking on a sandy road.",
+    "caption": "A market street with the post office in Nyala, South Darfur, years before the war.",
+    "credit": "Leovdvxxx / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyala_market_street_and_post_office_2012_P1010331_608_kb.jpg",
+    "kind": "file",
+    "year": "2012"
+   }
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Hebron, occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Land",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "3,000+",
+   "figcap": "displaced, UN says",
+   "headline": "UN rights chief warns of Hebron ethnic cleansing",
+   "text": "More than 3,000 Palestinians have been forced from their homes in Israel's Hebron operation, begun after two soldiers were killed at a checkpoint on Friday, the UN says. Volker Türk called it collective punishment and warned of 'serious concerns of ethnic cleansing'. No Israeli response to his statement has been reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168672"
+    ],
+    [
+     "Arab News",
+     "https://www.arabnews.pk/middle-east/hebron-says-3000-displaced-in-israeli-operation-after-gun-attack-3005306"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, where an Israeli operation has displaced thousands since Saturday.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "950,000",
+   "figcap": "at flood risk",
+   "headline": "Gaza aid paused as Israel shuts crossing",
+   "text": "UN aid transport in Gaza was suspended on Tuesday after Israel closed the Kerem Shalom crossing for its election day, the UN says. About 950,000 people live in displacement sites at medium to high risk of flooding as a fourth winter in tents nears.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168685"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Tents of displaced Palestinians flooded by heavy rain in Deir el-Balah, central Gaza, last winter.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Moyale, Kenya–Ethiopia border",
+   "short": "Moyale",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "36,600",
+   "figcap": "fled to Kenya",
+   "headline": "36,600 flee Ethiopian clashes into Kenya",
+   "text": "About 36,600 people have fled fighting between Somali and Oromia regional forces in southern Ethiopia into northern Kenya, the UN migration agency says; nearly 11,000 shelter in a church compound and the rest with host families. Kenya's government leads the response; no statement from Ethiopia's federal government has been reported.",
+   "src": [
+    [
+     "UN News (IOM)",
+     "https://news.un.org/en/story/2026/10/1168674"
+    ],
+    [
+     "UN News (UNICEF)",
+     "https://news.un.org/en/story/2026/10/1168682"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-28/moyale-road.webp",
+    "alt": "A newly paved road runs straight through flat land dotted with acacia trees and red earth, toward a distant horizon.",
+    "caption": "A road leading to Moyale, the town that straddles the Ethiopia–Kenya border.",
+    "credit": "george kaguangi / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Moyale_road.jpg",
+    "kind": "file",
+    "year": "2015"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

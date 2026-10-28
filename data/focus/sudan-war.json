@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-10-26",
+ "updated": "2026-10-28",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -193,6 +193,19 @@
    ],
    "fig": "306",
    "figcap": "killed by drones, 1–21 Oct 2026 (UN)"
+  },
+  {
+   "text": "On the evening of 26 October a drone strike hit a busy market in west Nyala, South Darfur, which the RSF holds. MSF, which attributes it to the Sudanese Armed Forces, said Nyala Teaching Hospital received 36 bodies, 21 in civilian clothing, and more than 150 wounded; the rights group Emergency Lawyers put the toll above 100. The army has not commented. On 27 October large parts of Khartoum lost power for over 12 hours after a drone hit a transformer station in Omdurman; an electricity official blamed the RSF.",
+   "src": [
+    [
+     "MSF",
+     "https://www.msf.org/people-killed-and-150-injured-sudanese-armed-forces-strike-nyala"
+    ],
+    [
+     "AP via ClickOnDetroit",
+     "https://www.clickondetroit.com/news/world/2026/10/27/large-parts-of-sudans-capital-lose-power-after-drone-attack/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -221,7 +234,8 @@
   "2026-10-20",
   "2026-10-21",
   "2026-10-22",
-  "2026-10-26"
+  "2026-10-26",
+  "2026-10-28"
  ],
  "instagram": {
   "caption": "",
@@ -238,7 +252,7 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-10-26",
-  "text": "The UN human rights office says drone strikes by both sides killed at least 306 people in Sudan in the first three weeks of October, including 139 in one strike on a truck at Dibab, West Kordofan."
+  "date": "2026-10-28",
+  "text": "A drone strike on a Nyala market killed at least 36 people and wounded over 150, MSF says, blaming Sudan's army; a rights group says over 100 died. The army has not commented."
  }
 }
