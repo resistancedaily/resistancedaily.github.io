@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Nyala, Sudan", "Drone strike on market kills dozens"],
+  ["Hebron", "3,000+ displaced; UN warns of ethnic cleansing"],
+  ["Mumbai", "Court pauses actor's 'Leave India' notice"],
+  ["Pasighat", "Curbs stay; detained activist's health worsens"]
+ ],
+ "stories": [
+  {"n": 4, "label": "World · Life & safety", "fig": "36+", "figlab": "killed, MSF says", "place": "Nyala, South Darfur, Sudan",
+   "head": "Drone strike hits a busy market",
+   "bullets": ["MSF says at least 36 people were killed and over 150 wounded on Monday evening, and blames Sudan's army.",
+               "The rights group Emergency Lawyers says more than 100 died.",
+               "The army has not commented. The RSF controls Nyala."],
+   "src": "MSF · AP"},
+  {"n": 5, "label": "World · Land · Life & safety", "fig": "3,000+", "figlab": "displaced, UN says", "place": "Hebron, occupied West Bank",
+   "head": "UN warns of ethnic cleansing",
+   "bullets": ["More than 3,000 Palestinians have been forced from their homes in Israel's Hebron operation, the UN says.",
+               "It began after two Israeli soldiers were killed at a checkpoint on Friday.",
+               "Volker Türk called it collective punishment; no Israeli response to him has been reported."],
+   "src": "UN News · Arab News"},
+  {"n": 2, "label": "India · Expression · Due process", "fig": "2 Nov", "figlab": "next hearing", "place": "Mumbai, Maharashtra",
+   "head": "Court pauses 'Leave India' notice",
+   "bullets": ["Actor Imran Khan, an OCI cardholder, was told to leave India by 28 October after joining a protest.",
+               "The Bombay High Court kept the notice in abeyance until 2 November.",
+               "The government sought time and orally assured he would not have to leave meanwhile."],
+   "src": "LiveLaw · Morung Express"},
+  {"n": 1, "label": "India · Due process · Assembly", "fig": "30", "figlab": "central police companies deployed", "place": "Pasighat, Arunachal Pradesh",
+   "head": "Curbs stay after Siang dam unrest",
+   "bullets": ["About 30 companies of central armed police are deployed across three Siang districts.",
+               "The district magistrate says curbs on gatherings stay 'until further orders'.",
+               "Activist Ebo Mili's family says his health is worsening in custody, where he is reportedly on hunger strike."],
+   "src": "ThePrint · Arunachal Times"}
+ ]
+}
