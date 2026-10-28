@@ -225,6 +225,11 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   that reads more naturally, e.g. "twenty-six", "five thousand euros"). Use only facts printed on that slide, keep
   "reportedly" and other qualifiers, stay neutral, and end on the link-in-bio line. Where a line runs long, add an
   "(or: ...)" shorter alternative.
+  Daily carousels: one line per story, as above. Focus and update carousels (owner's rule): narrate them as one
+  story, not as a list of headlines, so a viewer gets the gist of what is happening. Open with what happened (for
+  an update, the new development), then why it matters, then the wider picture, and close with the official
+  position and the link-in-bio line. Lines still follow the slide order and the 5-second pace, and each line should
+  fit what its slide shows; a line may use any sourced fact from the Focus page, not only the slide's own text.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
   printed on the slide), which becomes that slide's caption.
 - Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt for each carousel, and the x-post.txt and whatsapp.txt files) with
