@@ -3,7 +3,7 @@
  "kicker": "Focus · Indonesia",
  "title": "Smoke since August",
  "dek": "Fires in Kalimantan and Sumatra have burned more than 1.9 million hectares this year, a satellite monitor says, and sent smoke across Southeast Asia. Indonesia's government calls the haze largely natural; researchers and environmental groups say people lit the fires.",
- "updated": "2026-10-21",
+ "updated": "2026-10-29",
  "rights": [
   "Life & safety",
   "Land"
@@ -202,10 +202,19 @@
      "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
     ]
    ]
+  },
+  {
+   "text": "On 28 October thousands protested in Jakarta and in Bandung, Malang, Yogyakarta and Makassar over economic hardship, corruption and the handling of the fires, AFP reports; protesters demanded a national emergency declaration. In Jakarta about 14,000 police officers, plus soldiers, were deployed, and police fired several tear gas canisters near Bundaran HI square after some in the crowd threw plastic bottles and burned rubbish. No arrests or injuries were reported.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Indonesia's government says the haze is largely natural: the head of its communications office said Malaysia and Singapore should see it as “beyond human error” and “truly nature”. President Prabowo said on 12 October that the burning had fallen from “hundreds of thousands of hectares” to below 1,000 thanks to large-scale government intervention, and the coordinating minister for security said Indonesia was “still able to handle this”. The forestry ministry did not respond to AFP's request for comment on the 1.9 million hectare estimate.",
+  "text": "Indonesia's government says the haze is largely natural: the head of its communications office said Malaysia and Singapore should see it as “beyond human error” and “truly nature”. President Prabowo said on 12 October that the burning had fallen from “hundreds of thousands of hectares” to below 1,000 thanks to large-scale government intervention, and the coordinating minister for security said Indonesia was “still able to handle this”. The forestry ministry did not respond to AFP's request for comment on the 1.9 million hectare estimate. On 28 October the government said it understood students' concerns; its spokesman said more than 72,000 people were deployed in firefighting and 5.3 million masks distributed.",
   "src": [
    [
     "Mongabay",
@@ -214,10 +223,16 @@
    [
     "The Star (AFP)",
     "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/039utter-destruction-039-indonesia-fires-have-burned-nearly-two-million-hectares-monitor"
+   ],
+   [
+    "France 24 (AFP)",
+    "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
    ]
   ]
  },
- "editions": [],
+ "editions": [
+  "2026-10-29"
+ ],
  "layout": "chapters",
  "instagram": {
   "caption": "",
@@ -234,5 +249,9 @@
  },
  "numbers_photo": 2,
  "end_photo": 0,
- "seo_title": "Indonesia haze 2026: Kalimantan and Sumatra fires"
+ "seo_title": "Indonesia haze 2026: Kalimantan and Sumatra fires",
+ "whats_new": {
+  "date": "2026-10-29",
+  "text": "Thousands protested in Jakarta and four other cities on 28 October over corruption and the fires, seeking a national emergency; police fired tear gas in Jakarta. The government says it understands the concerns."
+ }
 }

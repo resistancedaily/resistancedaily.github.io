@@ -1,0 +1,295 @@
+{
+ "date": "2026-10-29",
+ "date_long": "Thu 29 Oct 2026",
+ "date_short": "Thu 29 Oct",
+ "window": "Wed 09:00 → Thu 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Pasighat",
+   "rights": [
+    "Due process",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "69",
+   "figcap": "arrested, police say",
+   "headline": "69 arrested under Arunachal anti-terror law",
+   "text": "Police say 69 people have been arrested and four detained under Arunachal's Unlawful Activities (Prevention) Act over the 23 October arson in Pasighat, in 55 cases. A minister met representatives of 72 villages on the dam and said local communities' rights must stay central.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
+    ],
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/arunachal-pradesh/arunachal-minister-ojing-tasing-meets-representatives-of-72-villages-over-siang-project-concerns.html"
+    ]
+   ],
+   "focus": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where curbs on gatherings remain after the 23 October violence.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "rights": [
+    "Vote"
+   ],
+   "sev": "orange",
+   "fig": "~1 crore",
+   "figcap": "fewer voters",
+   "headline": "Karnataka voter roll shrinks by nearly one crore",
+   "text": "Karnataka's final voter roll, published on 27 October after a special revision, lists about 4.55 crore electors, nearly one crore fewer than before; Bengaluru's fell from about 1.03 crore to 59.08 lakh. The Chief Electoral Officer says deletion forms covered electors found ineligible at hearings, and denies bulk filings without reasons.",
+   "src": [
+    [
+     "Sabrang India",
+     "https://sabrangindia.in/karnatakas-final-sir-roll-delete-electorate-by-nearly-1-crore-bengaluru-loses-over-43-lakh-names/"
+    ],
+    [
+     "NE Now",
+     "https://nenow.in/national/nearly-1-crore-names-removed-from-electoral-rolls-after-sir-in-karnataka.html"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-29/bengaluru-voters-queue.webp",
+    "alt": "Men, women and children stand in a queue on the veranda of an old school building used as a polling booth.",
+    "caption": "Voters queue at a polling booth in Bengaluru during the 2014 general election.",
+    "credit": "Press Information Bureau / Wikimedia Commons",
+    "licence": "GODL-India",
+    "licence_url": "https://data.gov.in/government-open-data-license-india",
+    "page": "https://commons.wikimedia.org/wiki/File:Voters_standing_in_a_queue_to_cast_their_votes,_at_a_polling_booth,_during_the_5th_Phase_of_General_Elections-2014,_in_Bangalore,_Karnataka_on_April_17,_2014.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "children's faces blurred"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Khatauli, Muzaffarnagar, Uttar Pradesh",
+   "short": "Muzaffarnagar",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "23",
+   "figcap": "age of victim",
+   "headline": "Dalit man killed; wife's brother arrested",
+   "text": "Akshay, a 23-year-old Dalit man who married against his wife's family's wishes, was beaten with bricks in Khatauli on Monday and died on Tuesday. Police arrested two people on Wednesday, including her brother, and say the killing appears premeditated.",
+   "src": [
+    [
+     "The Observer Post",
+     "https://theobserverpost.com/dalit-man-allegedly-killed-by-wifes-family-in-ups-muzaffarnagar-over-inter-caste-marriage/"
+    ],
+    [
+     "Indian Opinion",
+     "https://indianopinion.org/dalit-man-killed-by-wifes-family-in-muzaffarnagar-two-arrested/"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Supreme Court",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "43D(7)",
+   "figcap": "UAPA bail bar",
+   "headline": "Foreign nationality alone no bar to UAPA bail",
+   "text": "The Supreme Court ruled on 27 October that the UAPA's bail bar for foreigners applies only if the prosecution shows the accused entered India illegally, dismissing the Union government's appeal against bail for a Sri Lankan national.",
+   "src": [
+    [
+     "LawChakra",
+     "https://lawchakra.in/supreme-court/uapa-bail-foreign-national/"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Kordofan and Blue Nile, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "lead": true,
+   "fig": "1 year",
+   "figcap": "since El Fasher fell",
+   "headline": "UN warns Kordofan sieges risk new atrocities",
+   "text": "A year after the RSF seized El Fasher, UN officials warned on Wednesday that sieges in Kordofan and Blue Nile could bring new atrocities; UN investigators said they found hallmarks of genocide in El Fasher. No army or RSF response was reported; the RSF says El Fasher is safe for civilians.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/10/28/un-warns-of-new-atrocities-risk-in-sudan/"
+    ],
+    [
+     "Amnesty UK",
+     "https://www.amnesty.org.uk/latest/sudan-everybody-is-terrorised-unlawful-killings-detention-starvation-and-torture-in-el-fasher-one-year-after-rsf-capture/"
+    ]
+   ],
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-24/bara-north-kordofan.webp",
+    "alt": "A loaded lorry with people sitting on top drives along a road shaded by large trees.",
+    "caption": "A road in Bara, North Kordofan, one of the regions where UN officials warn sieges could bring new atrocities.",
+    "credit": "Aziz rudwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86_%D9%88%D9%84%D8%A7%D9%8A%D8%A9_%D8%B4%D9%85%D8%A7%D9%84_%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Rafah and Khan Younis, Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "5",
+   "figcap": "killed, rescuers say",
+   "headline": "Five killed in Gaza strikes after Israeli vote",
+   "text": "Israeli strikes in Rafah and Khan Younis killed five people on Wednesday, Gaza's civil defence agency and a hospital said, three of them in a drone strike in Rafah. The Israeli army said it 'struck terrorists in the area'.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/gaza-health-officials-say-israeli-strikes-kill-5-3008739"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in Gaza City's Sheikh Radwan district in 2025. Wednesday's strikes hit Rafah and Khan Younis.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Hebron, occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Land",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "~5,000",
+   "figcap": "displaced or trapped",
+   "headline": "Hebron operation now affects about 5,000 people",
+   "text": "About 780 families, roughly 5,000 people, have been displaced or are trapped at home as Israel's Hebron operation entered its sixth day, the city's municipality says. The army began it after two soldiers were killed on Friday; no Israeli comment on the figures was reported.",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/hebron-municipality-some-5000-residents-still-impacted-by-ongoing-idf-operation-in-city/"
+    ],
+    [
+     "The New Arab",
+     "https://www.newarab.com/news/nearly-5000-palestinians-displaced-israels-hebron-siege"
+    ]
+   ]
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Cairo, Egypt",
+   "short": "Cairo",
+   "rights": [
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "3m",
+   "figcap": "pound fine",
+   "headline": "Egypt court orders Mada Masr shut",
+   "text": "A Cairo court ordered the independent outlet Mada Masr closed and fined editor Lina Attalah 3 million Egyptian pounds for running an unlicensed website. She was held for hours until the fine was paid and faces a retrial on 11 November over a 2024 sentence. No official comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/27/egypt-orders-closure-of-leading-independent-news-site-mada-masr"
+    ],
+    [
+     "The National",
+     "https://www.thenationalnews.com/news/mena/2026/10/28/egyptian-court-orders-closure-of-news-website-and-fines-editor-in-chief/"
+    ]
+   ]
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Jakarta, Indonesia",
+   "short": "Jakarta",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "14,000",
+   "figcap": "police deployed",
+   "headline": "Tear gas at Jakarta protest over graft, fires",
+   "text": "Thousands protested in Jakarta and four other cities on Wednesday over corruption and the handling of wildfires, seeking a national emergency. Police fired tear gas in Jakarta after bottles were thrown. The government said it understands the students' concerns.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
+    ]
+   ],
+   "focus": "indonesia-haze"
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested under the state's anti-terror law; curbs on gatherings continue, and two activists in custody are reportedly on hunger strike.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}
