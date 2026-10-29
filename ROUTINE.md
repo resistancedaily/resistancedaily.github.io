@@ -234,6 +234,8 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   an update, the new development), then why it matters, then the wider picture, and close with the official
   position and the link-in-bio line. Lines still follow the slide order and the 5-second pace, and each line should
   fit what its slide shows; a line may use any sourced fact from the Focus page, not only the slide's own text.
+  Same length and pauses as daily lines (about 9-11 words, " …" after each but the last), and each line picks up
+  from the one before so it sounds like one story, not a list: e.g. "It followed…", "Reports say…", "Now…".
 - REEL CAPTION (owner's rule): a Reel takes one caption, not one per slide, and viewers can't read the slides'
   sources in 5 seconds. For every carousel made, also write reel-caption.txt in its output folder, under 2,200
   characters:
