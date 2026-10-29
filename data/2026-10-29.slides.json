@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Kordofan, Sudan", "UN warns sieges risk new atrocities"],
+  ["Gaza", "Five killed in strikes after Israeli vote"],
+  ["Pasighat", "69 arrested under state anti-terror law"],
+  ["Karnataka", "Voter roll nearly one crore smaller"]
+ ],
+ "stories": [
+  {"n": 5, "label": "World · Life & safety", "fig": "1 year", "figlab": "since El Fasher fell", "place": "Kordofan and Blue Nile, Sudan",
+   "head": "UN warns of new atrocities",
+   "bullets": ["A year after the RSF seized El Fasher, UN officials warned on Wednesday that sieges in Kordofan and Blue Nile could bring new atrocities.",
+               "UN investigators say they found hallmarks of genocide in El Fasher.",
+               "No army or RSF response was reported; the RSF says El Fasher is safe for civilians."],
+   "src": "Darfur24 · Amnesty"},
+  {"n": 6, "label": "World · Life & safety", "fig": "5", "figlab": "killed, rescuers say", "place": "Rafah and Khan Younis, Gaza",
+   "head": "Strikes kill five after Israeli vote",
+   "bullets": ["Gaza's civil defence agency and a hospital say Israeli strikes killed five people on Wednesday.",
+               "Three died in a drone strike in Rafah.",
+               "The Israeli army said it 'struck terrorists in the area'."],
+   "src": "AFP via Arab News"},
+  {"n": 1, "label": "India · Due process · Assembly", "fig": "69", "figlab": "arrested, police say", "place": "Pasighat, Arunachal Pradesh",
+   "head": "Arrests under anti-terror law",
+   "bullets": ["Police say 69 people were arrested and four detained under Arunachal's Unlawful Activities (Prevention) Act over the 23 October arson.",
+               "55 cases are registered across three Siang districts.",
+               "A minister met 72 villages' representatives and said local communities' rights must stay central."],
+   "src": "Scroll · NE Now"},
+  {"n": 2, "label": "India · Vote", "fig": "~1 crore", "figlab": "fewer voters", "place": "Karnataka",
+   "head": "Voter roll shrinks after revision",
+   "bullets": ["The final roll, published 27 October, lists about 4.55 crore electors, nearly one crore fewer than before.",
+               "Bengaluru's electorate fell from about 1.03 crore to 59.08 lakh.",
+               "The Chief Electoral Officer says deletion forms covered electors found ineligible at hearings."],
+   "src": "Sabrang India · NE Now"}
+ ]
+}
