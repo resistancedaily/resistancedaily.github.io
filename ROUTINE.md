@@ -221,11 +221,14 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 - REEL NARRATION (owner's rule): the owner turns each carousel into a Reel at about 5 seconds per slide and narrates
   it slowly and calmly. For every carousel made (daily, Focus, update carousel), write narration.txt in its output
   folder: one line per slide, "Slide N (5s): <line>", with a total time at the top ("6 slides · about 30 seconds").
-  Each line is one short spoken sentence of about 10-12 words, written as it is said aloud (numbers in words where
-  that reads more naturally, e.g. "twenty-six", "five thousand euros"). Use only facts printed on that slide, keep
-  "reportedly" and other qualifiers, stay neutral, and end on the link-in-bio line. Where a line runs long, add an
-  "(or: ...)" shorter alternative.
-  Daily carousels: one line per story, as above. Focus and update carousels (owner's rule): narrate them as one
+  Each line is at most about 8 words (about 4 seconds read slowly), then " …" marking a 1-second pause before the
+  next slide (owner's rule, 29 Oct 2026: 10-12 words was too rushed). Put a pace note under the total time: "Pace:
+  slow and calm. Each line is about 4 seconds of speech, then a 1-second pause ( … ) before the next slide." Write
+  lines as they are said aloud (numbers in words where that reads more naturally, e.g. "twenty-six", "five thousand
+  euros"). Use only facts printed on that slide, keep "reportedly" and other qualifiers, stay neutral, and end on the
+  link-in-bio line (no pause after it). Cut detail rather than speed up; the caption carries the rest.
+  Daily carousels: one line per story, linked by short continuations so it flows as one bulletin ("First, Sudan." ·
+  "Next, Gaza." · "In Arunachal, …" · "And Karnataka: …"), each naming the place, then the key fact. Focus and update carousels (owner's rule): narrate them as one
   story, not as a list of headlines, so a viewer gets the gist of what is happening. Open with what happened (for
   an update, the new development), then why it matters, then the wider picture, and close with the official
   position and the link-in-bio line. Lines still follow the slide order and the 5-second pace, and each line should
