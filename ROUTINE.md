@@ -221,9 +221,10 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
 - REEL NARRATION (owner's rule): the owner turns each carousel into a Reel at about 5 seconds per slide and narrates
   it slowly and calmly. For every carousel made (daily, Focus, update carousel), write narration.txt in its output
   folder: one line per slide, "Slide N (5s): <line>", with a total time at the top ("6 slides · about 30 seconds").
-  Each line is at most about 8 words (about 4 seconds read slowly), then " …" marking a 1-second pause before the
-  next slide (owner's rule, 29 Oct 2026: 10-12 words was too rushed). Put a pace note under the total time: "Pace:
-  slow and calm. Each line is about 4 seconds of speech, then a 1-second pause ( … ) before the next slide." Write
+  Each line is about 9-11 words (about 4.5 seconds read slowly), then " …" marking a short pause before the next
+  slide (owner's rule, 29 Oct 2026: longer lines felt rushed, 6-8 words felt too thin). Each story line says the
+  place, who reports it and the key fact in one full sentence. Put a pace note under the total time: "Pace: slow and
+  calm. Each line is about 4.5 seconds of speech, then a short pause ( … ) before the next slide." Write
   lines as they are said aloud (numbers in words where that reads more naturally, e.g. "twenty-six", "five thousand
   euros"). Use only facts printed on that slide, keep "reportedly" and other qualifiers, stay neutral, and end on the
   link-in-bio line (no pause after it). Cut detail rather than speed up; the caption carries the rest.
