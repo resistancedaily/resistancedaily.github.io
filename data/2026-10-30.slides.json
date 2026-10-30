@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Nyala, Sudan", "UNICEF: five children killed in market strike"],
+  ["Dnipro, Ukraine", "Drone strike on rail station kills 13"],
+  ["Gaza", "Six killed in 24 hours, ministry says"],
+  ["Siang, Arunachal", "Dam opponents march; 200+ get notices"]
+ ],
+ "stories": [
+  {"n": 5, "label": "World · Life & safety", "fig": "5", "figlab": "children killed, UNICEF says", "place": "Nyala and El Fasher, Sudan",
+   "head": "Children among the dead",
+   "bullets": ["UNICEF says at least five children were killed in Monday's drone strike on a Nyala market.",
+               "A Yale lab reports a near-total absence of civilian life in El Fasher a year after the RSF took it.",
+               "No army comment was reported; the RSF says life in El Fasher is normal."],
+   "src": "UN News · Dabanga"},
+  {"n": 7, "label": "World · Life & safety", "fig": "13", "figlab": "killed, officials say", "place": "Dnipro, Ukraine",
+   "head": "Drone hits a station platform",
+   "bullets": ["A jet-powered drone hit Dnipro's main railway station on Thursday as a train for Zaporizhzhia was boarding.",
+               "The UN says 10 people were injured, and condemned the attack.",
+               "No Russian comment was reported."],
+   "src": "UN News · Reuters"},
+  {"n": 6, "label": "World · Life & safety", "fig": "6", "figlab": "killed in 24 hours", "place": "Maghazi and al-Mawasi, Gaza",
+   "head": "Ministry staff among the dead",
+   "bullets": ["Gaza's Health Ministry says six people were killed in 24 hours.",
+               "A drone strike on a car near Maghazi camp killed two on Thursday; the toll from Wednesday's strike on an Economy Ministry post rose to four.",
+               "No Israeli military comment was reported."],
+   "src": "Al Jazeera · Anadolu · MEMO"},
+  {"n": 1, "label": "India · Assembly · Due process", "fig": "200+", "figlab": "served police notices", "place": "Siang valley, Arunachal Pradesh",
+   "head": "Dam opponents march again",
+   "bullets": ["Opponents of the Siang dam marched on Thursday, demanding its cancellation and the release of those in custody.",
+               "Police report 69 arrests in 53 cases, and notices to more than 200 people.",
+               "The state says current work is only feasibility surveys."],
+   "src": "The Federal · Bombay Samachar"}
+ ]
+}
