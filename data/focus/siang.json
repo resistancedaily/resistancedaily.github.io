@@ -2,8 +2,8 @@
  "slug": "siang",
  "kicker": "Focus · Upper Siang, Arunachal Pradesh",
  "title": "The fight over the Siang dam",
- "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested under the state's anti-terror law; curbs on gatherings continue, and two activists in custody are reportedly on hunger strike.",
- "updated": "2026-10-29",
+ "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested and over 200 served notices; opponents marched on 29 October and refuse talks until detainees are freed.",
+ "updated": "2026-10-30",
  "rights": [
   "Land",
   "Assembly",
@@ -85,11 +85,11 @@
    ]
   },
   {
-   "fig": "5",
-   "figcap": "police and several protesters hurt",
+   "fig": "200+",
+   "figcap": "served notices under the BNSS",
    "src": [
-    "Arunachal Times",
-    "https://arunachaltimes.in/article/tension-grips-pasighat-as-anti-dam-protesters-vandalise-nhpc-abk-offices-leaders-houses"
+    "The Federal",
+    "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
    ]
   }
  ],
@@ -223,10 +223,23 @@
      "https://nenow.in/north-east-news/arunachal-pradesh/arunachal-minister-ojing-tasing-meets-representatives-of-72-villages-over-siang-project-concerns.html"
     ]
    ]
+  },
+  {
+   "text": "On 29 October The Federal reported Hibu Tamang's count as 53 cases (26 in Upper Siang, 21 in Siang and 6 in East Siang) and 69 arrests, with notices under the BNSS served on more than 200 people. The Siang Indigenous Farmers' Forum said it will not meet Chief Minister Pema Khandu until those jailed are released and army and paramilitary forces leave Siang and Upper Siang. The same day, protesters in traditional dress marched against the dam, demanding the release of those in custody and the withdrawal of cases.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
+    ],
+    [
+     "Bombay Samachar",
+     "https://english.bombaysamachar.com/india-news/arunachal-protesters-rally-against-siang-dam-demand-activists-release/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "The detention orders cite violence, arson and public safety. Police say protesters at Dite-Dime threw stones and defied prohibitory orders; on 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property. Chief Minister Pema Khandu offered talks (\"The government's doors are always open\") and says the dam is mainly meant to store water in view of China's planned dam upstream. On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue. No police comment on the hunger strike was reported.",
+  "text": "The detention orders cite violence, arson and public safety. Police say protesters at Dite-Dime threw stones and defied prohibitory orders; on 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property. Chief Minister Pema Khandu offered talks (\"The government's doors are always open\") and says the dam is mainly meant to store water in view of China's planned dam upstream. On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue. No police comment on the hunger strike was reported. On 29 October the state government said current work is only technical and environmental surveys for a feasibility report; the chief minister says the government will protect national interests while respecting Siang Valley residents' rights.",
   "src": [
    [
     "Arunachal Times",
@@ -263,6 +276,14 @@
    [
     "NE Now",
     "https://nenow.in/north-east-news/arunachal-pradesh/arunachal-minister-ojing-tasing-meets-representatives-of-72-villages-over-siang-project-concerns.html"
+   ],
+   [
+    "Bombay Samachar",
+    "https://english.bombaysamachar.com/india-news/arunachal-protesters-rally-against-siang-dam-demand-activists-release/"
+   ],
+   [
+    "The Federal",
+    "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
    ]
   ]
  },
@@ -276,7 +297,8 @@
   "2026-10-26",
   "2026-10-27",
   "2026-10-28",
-  "2026-10-29"
+  "2026-10-29",
+  "2026-10-30"
  ],
  "instagram": {
   "caption": "Villages along the Siang river in Arunachal Pradesh oppose the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant that Mongabay India reports would submerge 27 villages.\n\nOn 9 October four Geku villagers were detained under the state's anti-terror law, and gatherings were banned. On 22 October opponents held a 24-hour sit-in in Pasighat; five more activists were reportedly taken into custody.\n\nOn 23 October police fired tear gas during a bandh and four to five women were hospitalised. That night an NHPC office, a police station and vehicles in Pasighat were reportedly set on fire. Protesters want 10 arrested activists freed. On 24 October five youths were detained, gatherings were barred in Pasighat, and lawyer Ebo Mili and other activists surrendered to police.\n\nOfficial position: the detention orders cite violence and public safety; police say protesters threw stones and defied orders; the chief minister says the government's doors are always open; the state says the dam is meant to store water in view of China's planned dam upstream.",
@@ -291,9 +313,9 @@
    "#ResistanceDaily"
   ]
  },
- "seo_title": "Siang dam protests, Arunachal: 69 arrests under anti-terror law",
+ "seo_title": "Siang dam protests, Arunachal: 69 arrests, 200+ police notices",
  "whats_new": {
-  "date": "2026-10-29",
-  "text": "Police say 69 people have been arrested and four detained under Arunachal's anti-terror law over the 23 October violence, in 55 cases. A minister met 72 villages' representatives and called for dialogue."
+  "date": "2026-10-30",
+  "text": "Dam opponents marched on 29 Oct demanding detainees' release. Police report 69 arrests in 53 cases and notices to 200+ people; farmers' forum refuses talks until releases. State says work is only surveys."
  }
 }

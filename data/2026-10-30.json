@@ -1,0 +1,382 @@
+{
+ "date": "2026-10-30",
+ "date_long": "Fri 30 Oct 2026",
+ "date_short": "Fri 30 Oct",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "events": [
+  {
+   "n": 5,
+   "t": "Thu",
+   "sort": 95,
+   "text": "UNICEF says at least five children were among those killed in Monday's Nyala market strike."
+  },
+  {
+   "n": 7,
+   "t": "Thu",
+   "sort": 92,
+   "text": "A drone hits a platform at Dnipro's main station as a train for Zaporizhzhia boards; 13 killed."
+  },
+  {
+   "n": 6,
+   "t": "Thu",
+   "sort": 89,
+   "text": "A drone strike on a car near Maghazi camp kills two; Gaza's Health Ministry reports six killed in 24 hours."
+  },
+  {
+   "n": 1,
+   "t": "Thu",
+   "sort": 86,
+   "text": "Siang dam opponents march; police put the count at 69 arrests in 53 cases."
+  },
+  {
+   "n": 2,
+   "t": "Thu",
+   "sort": 83,
+   "text": "Jamia agrees to hold union elections and revokes action against protesting students."
+  },
+  {
+   "n": 3,
+   "t": "Thu",
+   "sort": 80,
+   "text": "The Centre tells the Delhi High Court there will be no coercive action on the Race Course mosque for four weeks."
+  },
+  {
+   "n": 8,
+   "t": "Thu",
+   "sort": 77,
+   "text": "A UN rapporteur says Myanmar's military has killed at least 8,384 civilians since the coup."
+  },
+  {
+   "n": 9,
+   "t": "Wed",
+   "sort": 60,
+   "text": "Two activist-journalists attacked by settlers near Umm al-Kheir are arrested, then banned from the West Bank."
+  },
+  {
+   "n": 4,
+   "t": "Thu",
+   "sort": 74,
+   "text": "Reported: the Bombay High Court orders ₹2 lakh compensation for Arun Ferreira's 2011 re-arrest."
+  }
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Pasighat and the Siang valley, Arunachal Pradesh",
+   "short": "Siang",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "200+",
+   "figcap": "served police notices",
+   "headline": "Siang dam opponents march; 200+ get notices",
+   "text": "Opponents of the Siang dam marched on Thursday, demanding its cancellation and the release of those in custody. Police say 69 people are arrested in 53 cases and over 200 served notices; the state says current work is only feasibility surveys.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
+    ],
+    [
+     "Bombay Samachar",
+     "https://english.bombaysamachar.com/india-news/arunachal-protesters-rally-against-siang-dam-demand-activists-release/"
+    ]
+   ],
+   "focus": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat. Opponents of the dam marched in Arunachal Pradesh on Thursday.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Jamia Millia Islamia, New Delhi",
+   "short": "Jamia",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "18 days",
+   "figcap": "of protest",
+   "headline": "Jamia agrees to student polls after protest",
+   "text": "Jamia Millia Islamia agreed on Thursday to hold students' union elections, not held since 2006, and revoked action against protesters, ending an 18-day protest. Students say police detained over 70 of them and that they were pressured to sign; an FIR was filed on the university's vandalism complaint.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096745/jamia-millia-islamia-agrees-to-hold-student-elections-after-weeks-long-protest"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-26/jamia-gate-7.webp",
+    "alt": "A red arched gate with the number 7 beside it, on a road lined with trees; a man walks past in the foreground.",
+    "caption": "Gate No. 7 of Jamia Millia Islamia, the site of the 18-day student protest.",
+    "credit": "Sabaaya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gate_no_7_jamia_Millia_Islamia.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Race Course Road, New Delhi",
+   "short": "Delhi mosque",
+   "rights": [
+    "Religion",
+    "Land"
+   ],
+   "sev": "grey",
+   "fig": "4 weeks",
+   "figcap": "no demolition",
+   "headline": "Delhi mosque demolition on hold for four weeks",
+   "text": "The Union government told the Delhi High Court on Thursday it will take no coercive action for four weeks against the Race Course mosque near the Prime Minister's residence while it decides a Waqf Board representation. Its notice calls the mosque unauthorised, on government land; the NDMC lists it as heritage.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096735/delhi-demolition-of-heritage-mosque-near-pm-modis-official-residence-paused-for-four-weeks"
+    ]
+   ]
+  },
+  {
+   "n": 4,
+   "region": "india",
+   "place": "Bombay High Court, Maharashtra",
+   "short": "Bombay HC",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "₹2 lakh",
+   "figcap": "compensation",
+   "headline": "Court: activist's 2011 re-arrest violated rights",
+   "text": "The Bombay High Court ruled that activist Arun Ferreira's 2011 re-arrest at Nagpur jail's gate, as he left after acquittals, violated his rights to liberty and to be told the grounds, and ordered Maharashtra to pay ₹2 lakh. The state had argued due process was followed.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096742/activist-arun-ferreiras-re-arrest-in-2011-violated-fundamental-rights-says-hc"
+    ]
+   ]
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Nyala and El Fasher, Darfur, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "5",
+   "figcap": "children killed",
+   "headline": "UNICEF: five children killed in Nyala strike",
+   "text": "UNICEF said on Thursday at least five children were killed in Monday's drone strike on a Nyala market. A Yale lab reports a near-total absence of civilian life in El Fasher a year after the RSF took it. No army comment was reported; the RSF says life there is normal.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168703"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/sudan-war-yale-report-reveals-el-fashers-devastation-a-year-after-rsf-takeover"
+    ]
+   ],
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-28/nyala-market.webp",
+    "alt": "A street with a Sudapost sign over a gateway, small shops, parked cars and a few people walking on a sandy road.",
+    "caption": "A market street in Nyala, South Darfur, in 2012, years before the war and Monday's strike.",
+    "credit": "Leovdvxxx / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyala_market_street_and_post_office_2012_P1010331_608_kb.jpg",
+    "kind": "file",
+    "year": "2012"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Maghazi and al-Mawasi, Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "6",
+   "figcap": "killed in 24 hours",
+   "headline": "Gaza: six killed, including ministry staff",
+   "text": "Gaza's Health Ministry said six people were killed in 24 hours. A drone strike on a car near Maghazi camp killed two on Thursday, and the toll from Wednesday's strike on an Economy Ministry post in al-Mawasi rose to four employees. No Israeli military comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/10/29/israeli-strikes-hit-gaza-as-health-ministry-urges-rafah-opening"
+    ],
+    [
+     "Anadolu",
+     "https://aa.com.tr/en/middle-east/israel-kills-6-palestinians-in-gaza-strikes-despite-ceasefire/4104705"
+    ],
+    [
+     "Middle East Monitor",
+     "https://www.middleeastmonitor.com/20261029-israel-kills-4-palestinians-in-strike-on-government-post-in-gaza-despite-ceasefire/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, in 2025. Thursday's strike hit a car near Maghazi camp, also in central Gaza.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Dnipro, Ukraine",
+   "short": "Dnipro",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "13",
+   "figcap": "killed",
+   "headline": "Drone strike on Dnipro rail station kills 13",
+   "text": "A jet-powered drone hit a platform at Dnipro's main railway station on Thursday as a train for Zaporizhzhia was boarding, killing 13 people, officials said; the UN says 10 were injured and condemned the attack. No Russian comment was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168702"
+    ],
+    [
+     "Korea Times (Reuters)",
+     "https://www.koreatimes.co.kr/world/20261029/russian-drone-attack-on-train-station-kills-13-in-ukraines-dnipro"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-30/dnipro-station.webp",
+    "alt": "A blue and white passenger train stands at a covered platform in front of a large stone station building with the city's name on its roof.",
+    "caption": "Platforms at Dnipro's main railway station in 2021. A drone hit a platform here on Thursday.",
+    "credit": "Toss12 / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dnipro_railway_station._Platforms.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Myanmar",
+   "short": "Myanmar",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "8,384",
+   "figcap": "civilians killed",
+   "headline": "UN expert: military killed 8,384 civilians since coup",
+   "text": "A UN special rapporteur said on Thursday that Myanmar's military has killed at least 8,384 civilians since the 2021 coup, about 753 of them during its '100-day peace plan' this year, and called attacks on civilian infrastructure deliberate. No military response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168705"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/paletwa-kaladan.webp",
+    "alt": "A riverside town of wooden houses and moored long boats below forested hills.",
+    "caption": "Paletwa on the Kaladan River, in Myanmar's Chin State, years before the 2021 coup.",
+    "credit": "Germartin1 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Paletwa_seen_from_the_Kaladan_River_2015.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Umm al-Kheir, South Hebron Hills, occupied West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Press freedom",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "activists arrested",
+   "headline": "Activists attacked by settlers are arrested, banned",
+   "text": "Israeli police arrested two activist-journalists after footage showed settlers, one armed, attacking them near Umm al-Kheir overnight Wednesday; they were released but banned from the West Bank for the rest of the year. Police cite an alleged attempt to steal weapons; no settlers were reported arrested.",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/activists-arrested-after-footage-shows-settlers-beating-them-in-west-bank/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-30/umm-al-kheir.webp",
+    "alt": "Piles of stone rubble in front of sheds and water tanks on a dry hillside, with rows of houses on the slope behind.",
+    "caption": "Umm al-Kheir in the South Hebron Hills in 2012: the rubble of a demolished home, with the Karmel settlement behind.",
+    "credit": "Friends123 / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Umm_al-Kheir.1.JPG",
+    "kind": "file",
+    "year": "2012",
+    "changes": "cropped"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested and over 200 served notices; opponents marched on 29 October and refuse talks until detainees are freed.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}

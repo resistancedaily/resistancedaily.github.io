@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-10-28",
+ "updated": "2026-10-30",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -206,6 +206,21 @@
      "https://www.clickondetroit.com/news/world/2026/10/27/large-parts-of-sudans-capital-lose-power-after-drone-attack/"
     ]
    ]
+  },
+  {
+   "text": "On 29 October UNICEF said at least five children, three boys and two girls aged 7 to 14, were among those killed in the Nyala market strike. The same day a Yale Humanitarian Research Lab report, based on satellite imagery, found a near-total absence of civilian life in El Fasher a year after the RSF took the city, with excavation and burning sites at five hospitals and an earth barrier about 75 km around it. The report says this contradicts RSF claims that life has returned to normal.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168703"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/sudan-war-yale-report-reveals-el-fashers-devastation-a-year-after-rsf-takeover"
+    ]
+   ],
+   "fig": "5",
+   "figcap": "children killed in Nyala strike (UNICEF)"
   }
  ],
  "official": {
@@ -235,7 +250,9 @@
   "2026-10-21",
   "2026-10-22",
   "2026-10-26",
-  "2026-10-28"
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30"
  ],
  "instagram": {
   "caption": "",
@@ -252,7 +269,7 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-10-28",
-  "text": "A drone strike on a Nyala market killed at least 36 people and wounded over 150, MSF says, blaming Sudan's army; a rights group says over 100 died. The army has not commented."
+  "date": "2026-10-30",
+  "text": "UNICEF says at least five children were killed in the 26 Oct Nyala market strike. A Yale lab finds near-total absence of civilian life in El Fasher a year after the RSF took it; the RSF says life is normal."
  }
 }
