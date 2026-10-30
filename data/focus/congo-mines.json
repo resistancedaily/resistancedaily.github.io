@@ -1,0 +1,209 @@
+{
+ "slug": "congo-mines",
+ "kicker": "Focus · Democratic Republic of the Congo",
+ "title": "Congo's mines and the minerals in our devices",
+ "dek": "Congo mines about three-quarters of the world's cobalt and much of its coltan, much of it dug by hand. Children have been documented in the pits, an armed group taxes mines in the east, and courts are testing who is responsible further down the supply chain.",
+ "updated": "2026-10-30",
+ "published": "2026-10-30",
+ "rights": [
+  "Life & safety",
+  "Child labour"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/congo-mines/rubaya-luwowo-mine-2014.webp",
+   "alt": "Seen from above, hundreds of people stand and work among dozens of deep hand-dug pits on a bare hillside, with a few tarpaulin shelters.",
+   "caption": "The Luwowo coltan mine near Rubaya, North Kivu, in March 2014, a decade before the M23 took control of Rubaya. Hundreds of miners work among hand-dug pits.",
+   "credit": "MONUSCO / Wikimedia Commons",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:SRSG_visits_coltan_mine_in_Rubaya_(13406579753).jpg",
+   "kind": "file",
+   "year": "2014"
+  },
+  {
+   "src": "images/focus/congo-mines/cobalt-miners-lualaba-2020.webp",
+   "alt": "Two men on a rocky slope below a tall wall of excavated earth; one carries a heavy sack on his shoulder, the other fills a sack with rocks.",
+   "caption": "Artisanal cobalt miners fill and carry sacks of ore by hand in southern Congo, 2020.",
+   "credit": "International Institute for Environment and Development / Wikimedia Commons",
+   "licence": "CC BY 2.5",
+   "licence_url": "https://creativecommons.org/licenses/by/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Artisanal_cobalt_miners_in_the_Democratic_Republic_of_Congo.jpg",
+   "kind": "file",
+   "year": "2020"
+  },
+  {
+   "src": "images/focus/congo-mines/kamatanda-miner-2014.webp",
+   "alt": "A miner covered in grey dust, wearing a head lamp, seen from behind as he stands among a crowd of other miners.",
+   "caption": "A miner at Kamatanda, near Likasi in Congo's southern mining belt, in 2014.",
+   "credit": "MONUSCO / Myriam Asmani / Wikimedia Commons",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Photo_of_the_Day,_11_February_2014_(12457257263).jpg",
+   "kind": "file",
+   "year": "2014"
+  },
+  {
+   "src": "images/focus/congo-mines/tantalum-miners-gao-2015.webp",
+   "alt": "Workers in overalls and helmets dig in a muddy trench on a hillside while others watch from above; all faces are blurred.",
+   "caption": "Artisanal miners at a tantalum mine in eastern Congo, in a photo published by the US Government Accountability Office in 2015.",
+   "credit": "US Government Accountability Office / Wikimedia Commons",
+   "licence": "Public domain",
+   "licence_url": "https://commons.wikimedia.org/wiki/Template:PD-USGov-GAO",
+   "page": "https://commons.wikimedia.org/wiki/File:Figure_8-_Artisanal_Miners_at_a_Tantalum_Mine_in_the_Democratic_Republic_of_the_Congo_(21572643706).jpg",
+   "kind": "file",
+   "year": "2015",
+   "changes": "cropped; faces blurred by the GAO"
+  },
+  {
+   "src": "images/focus/congo-mines/kailo-hand-digging-2007.webp",
+   "alt": "Four men in an open pit of orange rock; two dig with a shovel and a hammer while two stand behind them.",
+   "caption": "Miners dig by hand for tin and tungsten ore in an open pit at Kailo, Maniema province, in 2007.",
+   "credit": "Julien Harneis / Wikimedia Commons",
+   "licence": "CC BY-SA 2.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Wolframite_Mining_in_Kailo,_DRC.jpg",
+   "kind": "file",
+   "year": "2007",
+   "changes": "resized, a young worker's face blurred"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "73%",
+   "figcap": "of world cobalt mined in Congo, 2025",
+   "src": [
+    "US Geological Survey",
+    "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+   ]
+  },
+  {
+   "fig": "40,000",
+   "figcap": "children in southern mines, 2014 UNICEF estimate",
+   "src": [
+    "Amnesty International",
+    "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
+   ]
+  },
+  {
+   "fig": "$800,000",
+   "figcap": "a month to M23 from coltan taxes, UN says",
+   "src": [
+    "AP via Yahoo News",
+    "https://www.yahoo.com/news/congos-coltan-miners-dig-worlds-060408136.html"
+   ]
+  },
+  {
+   "fig": "200+",
+   "figcap": "killed in Rubaya collapse, Jan 2026",
+   "src": [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "Congo mined an estimated 73% of the world's cobalt in 2025, the US Geological Survey says, far ahead of Indonesia at 14%. Cobalt is used in the lithium-ion batteries of phones and electric cars. In February 2025 Congo temporarily banned cobalt exports over oversupply and low prices, and in October it replaced the ban with export quotas.",
+   "src": [
+    [
+     "US Geological Survey",
+     "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
+    ]
+   ]
+  },
+  {
+   "text": "Much of the digging is done by hand. In 2016 Amnesty International and the Congolese group Afrewatch reported that UNICEF had estimated about 40,000 children worked in mines across southern Congo in 2014, many of them mining cobalt, some as young as seven. Children told researchers they worked up to 12 hours a day for one to two dollars, and at least 80 artisanal miners died underground in the region between September 2014 and December 2015.",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
+    ]
+   ]
+  },
+  {
+   "text": "In eastern Congo the prize is coltan, which is processed into tantalum. Congo produced about 40% of the world's coltan in 2023, AP reports, citing the US Geological Survey, and the Rubaya mines in North Kivu produce about 15%. The M23 armed group has controlled Rubaya since 2024; a UN report says it taxes the trade and transport of about 120 tonnes of coltan a month, earning at least $800,000 a month, and UN experts say the ore is exported to Rwanda. One miner told AP he earns $40 a month.",
+   "src": [
+    [
+     "AP via Yahoo News",
+     "https://www.yahoo.com/news/congos-coltan-miners-dig-worlds-060408136.html"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+    ]
+   ]
+  },
+  {
+   "text": "In late January 2026 the ground gave way at Rubaya during the rainy season. More than 200 people were killed, among them miners, children and market women, according to the spokesperson of the M23-appointed provincial governor; some victims were buried alive in the shafts. Local people dig there by hand for a few dollars a day.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+    ],
+    [
+     "NPR via Michigan Public",
+     "https://www.michiganpublic.org/2026-01-31/mine-collapses-in-eastern-congo-leaving-at-least-200-dead"
+    ]
+   ]
+  },
+  {
+   "text": "The trade has reached the courts. Congo's government filed criminal complaints against Apple subsidiaries in France and Belgium; French prosecutors dropped their case, citing lack of evidence, while the Belgian complaint is still under investigation. In November 2025 the US group International Rights Advocates sued Apple in Washington, alleging that cobalt, tin, tantalum and tungsten linked to child and forced labour and to armed groups still reach its supply chain, including through three named Chinese smelters. The suit seeks a ruling and an injunction, not damages.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/economy/2025/11/26/us-group-sues-apple-over-dr-congo-conflict-minerals"
+    ]
+   ],
+   "fig": "3",
+   "figcap": "Chinese smelters named in the US lawsuit"
+  },
+  {
+   "text": "Talks to end the fighting in the east continue. From 17 to 21 August 2026 Congo's government and the M23 met in Switzerland and agreed a roadmap and timetable for negotiations under the Doha framework, mediated by Qatar, Togo, Switzerland and the African Union. Fighting and accusations of ceasefire violations have continued.",
+   "src": [
+    [
+     "Africanews",
+     "https://www.africanews.com/amp/2026/08/24/drc-m23-agree-peace-roadmap-as-doha-talks-seek-to-regain-momentum/"
+    ]
+   ],
+   "fig": "17–21 Aug",
+   "figcap": "2026 roadmap talks"
+  }
+ ],
+ "official": {
+  "text": "Apple has repeatedly denied sourcing minerals from conflict zones or using forced labour, citing audits and its supplier code; it said there was \"no reasonable basis\" to conclude that smelters in its supply chain financed armed groups, says 76% of the cobalt in its devices was recycled in 2024, and says it told suppliers to stop sourcing from Congo and Rwanda. Rwanda denies backing the M23. Congo's government accused the rebels of exploiting the region's resources illegally and unsafely, and the M23-appointed authorities blamed the Rubaya collapse on the ground giving way in the rainy season.",
+  "src": [
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/economy/2025/11/26/us-group-sues-apple-over-dr-congo-conflict-minerals"
+   ],
+   [
+    "NPR via Michigan Public",
+    "https://www.michiganpublic.org/2026-01-31/mine-collapses-in-eastern-congo-leaving-at-least-200-dead"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+   ]
+  ]
+ },
+ "editions": [],
+ "instagram": {
+  "caption": "",
+  "hashtags": [
+   "#DRCongo",
+   "#Cobalt",
+   "#ChildLabour",
+   "#HumanRights",
+   "#ResistanceDaily"
+  ]
+ },
+ "layout": "chapters",
+ "numbers_photo": 0,
+ "end_photo": 0,
+ "seo_title": "Congo cobalt and coltan mining: child labour, M23 and Apple"
+}
