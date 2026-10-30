@@ -235,8 +235,9 @@ def render(slides, out, prefix):
 # data/DATE.slides.json may set "cover_style" to override. Every style keeps text inside x 110-970 (the 3:4 grid crop),
 # the date as the largest element, the tagline, 4 place/headline rows and the "Swipe" footer.
 COVER_ROTATION = ["photo", "paper", "signal", "night", "photo", "paper", "sunday"]  # Mon..Sun
-# Owner's request: the mosaic cover every day for seven days, 23–29 Oct, then back to the rotation.
-COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic")]
+# Owner's requests: the mosaic cover every day 23–29 Oct, then the photo cover every day 30 Oct–5 Nov,
+# then back to the rotation.
+COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic"), ("2026-10-30", "2026-11-05", "photo")]
 TAGLINE = "What happened to people's rights in the last 24 hours. Every fact sourced."
 
 
