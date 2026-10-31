@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Darfur, Sudan", "Investigators name 25 commanders over rape"],
+  ["Gaza", "UN: people pushed into ever smaller areas"],
+  ["Moscow, Russia", "Novaya Gazeta says it is forced to close"],
+  ["New Delhi", "Supreme Court upholds Khurram Parvez's bail"]
+ ],
+ "stories": [
+  {"n": 4, "label": "World · Life & safety", "fig": "25", "figlab": "commanders named by investigators", "place": "Darfur and Gezira, Sudan",
+   "head": "Commanders linked to rape",
+   "bullets": ["A UK open-source group, the Centre for Information Resilience, names 25 RSF, army and allied commanders.",
+               "It says they were directly or indirectly responsible for sexual violence at five sites, including El Fasher.",
+               "Neither force responded to Al Jazeera; both have denied such abuses."],
+   "src": "Al Jazeera"},
+  {"n": 5, "label": "World · Life & safety · Shelter", "fig": "800", "figlab": "displaced by one fire", "place": "Gaza City, Gaza",
+   "head": "Displacement 'acute and chronic'",
+   "bullets": ["The UN rights office says Israeli military zones are expanding west, pushing people into smaller areas.",
+               "A 25 October drone strike and fire at tents in Al Shujaiyeh displaced about 800 people.",
+               "Israel has said it aims to deploy across 70% of Gaza; no Israeli comment was reported."],
+   "src": "UN News"},
+  {"n": 7, "label": "World · Press freedom", "fig": "9 Nov", "figlab": "the paper's last day", "place": "Moscow, Russia",
+   "head": "An independent paper shuts",
+   "bullets": ["Novaya Gazeta says authorities and security services forced it to close, and that it was evicted from its office.",
+               "UN rights chief Volker Türk called it a devastating blow to independent media.",
+               "No Kremlin comment was reported."],
+   "src": "Al Jazeera · Meduza · UN News"},
+  {"n": 1, "label": "India · Due process", "fig": "4.5 yrs", "figlab": "held before bail", "place": "Supreme Court, New Delhi",
+   "head": "Bail stands for Khurram Parvez",
+   "bullets": ["The Supreme Court dismissed the NIA's challenge to bail for the Kashmiri activist in a UAPA case.",
+               "It cited his long incarceration since his arrest in November 2021.",
+               "The NIA's arguments were not reported."],
+   "src": "LiveLaw"}
+ ]
+}
