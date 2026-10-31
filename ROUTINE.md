@@ -250,7 +250,24 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   - Same standards as every caption: neutral, every fact from a sourced item or Focus paragraph, qualifiers kept.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
   printed on the slide), which becomes that slide's caption.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, and the x-post.txt and whatsapp.txt files) with
+- REACH COMMENTS (owner's rule, 31 Oct 2026): the routine DRAFTS comments; the owner posts them by hand from the
+  Resistance Daily account. Never post, like or comment anywhere yourself, never use a browser logged in to any of
+  the owner's accounts, and never automate posting: Instagram and YouTube treat automated or repeated promotional
+  comments as spam and can restrict the account.
+  - Find 3–5 recent posts or videos (ideally from the last 48 hours) by credible outlets or organisations (e.g. BBC
+    News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News, Amnesty, HRW) on the same story as one of
+    our Focus pages, preferring the Focus updated today. Use web search; give the exact post or video URL, and open
+    it to confirm it is about that story. Skip partisan accounts, politicians' and parties' accounts, and posts
+    about unrelated topics, and don't pick the same outlet's account two days running unless the story moved.
+  - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
+    platform, the outlet, the URL, then a comment of 1–2 short sentences (under 300 characters) that adds ONE
+    sourced fact from our Focus page that the post doesn't already give (with its date, and qualifiers kept), then a
+    pointer to the page. Instagram: links in comments aren't clickable, so end with "Daily updates, every fact
+    sourced: Resistance Daily (link in bio)". YouTube and other sites: end with the Focus URL
+    (https://resistancedaily.github.io/focus/SLUG.html). Under each comment, give the source for its fact.
+  - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
+    no opinions on the post or the outlet, neutral wording. Suggest at most 3 comments for any one Focus a day.
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
@@ -264,4 +281,4 @@ caption.txt" and "DATE Instagram slides source.html". Don't upload JPEGs.
 Send a PushNotification inside <routine_summary> tags. Lead with the single most important rights development, then 5–8
 short neutral lines, then: "Today's design: <name>. Photos: <N> of <M> items. Focus: <title or none>. Site:
 resistancedaily.github.io (pushed / NOT pushed: reason). Backup page updated; Instagram slides + caption in today's run;
-archived to Drive." If any step fails, still notify and say what failed.
+reach comments: <N> drafted in reach.txt; archived to Drive." If any step fails, still notify and say what failed.
