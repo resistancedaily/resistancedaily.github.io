@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -221,10 +221,19 @@
    ],
    "fig": "5",
    "figcap": "children killed in Nyala strike (UNICEF)"
+  },
+  {
+   "text": "On 30 October Al Jazeera reported an investigation by the Centre for Information Resilience, a UK open-source group, which identifies 25 commanders of the RSF, the Sudanese Armed Forces and allied forces it has reasonable grounds to believe were directly or indirectly responsible for sexual violence at five locations and periods of reported abuse, including El Fasher, Zamzam camp and parts of Gezira. The group does not attribute specific rapes to individuals. Neither force responded to Al Jazeera; both have previously denied sexual violence by their personnel.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/features/2026/10/30/sudan-investigation-maps-commanders-linked-wartime-rape"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
+  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses.",
   "src": [
    [
     "Al Jazeera",
@@ -241,6 +250,10 @@
    [
     "AP via ClickOnDetroit",
     "https://www.clickondetroit.com/news/2025/07/27/sudans-paramilitaries-announces-a-parallel-government-deepening-the-countrys-crisis/"
+   ],
+   [
+    "Al Jazeera",
+    "https://aljazeera.com/features/2026/10/30/sudan-investigation-maps-commanders-linked-wartime-rape"
    ]
   ]
  },
@@ -252,7 +265,8 @@
   "2026-10-26",
   "2026-10-28",
   "2026-10-29",
-  "2026-10-30"
+  "2026-10-30",
+  "2026-10-31"
  ],
  "instagram": {
   "caption": "",
@@ -269,7 +283,7 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-10-30",
-  "text": "UNICEF says at least five children were killed in the 26 Oct Nyala market strike. A Yale lab finds near-total absence of civilian life in El Fasher a year after the RSF took it; the RSF says life is normal."
+  "date": "2026-10-31",
+  "text": "UK open-source investigators name 25 RSF, army and allied commanders they believe were responsible for sexual violence at five sites. Neither force responded; both deny such abuses."
  }
 }
