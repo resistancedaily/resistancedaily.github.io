@@ -42,6 +42,8 @@ p{margin:0}
 .top b{color:var(--ink);font-weight:500}
 .top a{white-space:nowrap}
 .top>span{text-align:right}
+.top .sep{font-style:normal}
+@media (max-width:520px){.top>span{display:flex;flex-direction:column;align-items:flex-end;gap:6px}.top .sep{display:none}}
 .kicker{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
 .dek{font-size:18px;color:var(--muted);max-width:62ch}
@@ -179,7 +181,7 @@ def page(f, all_f=()):
         f'<li><a href="{E(o["slug"])}.html">{E(o.get("seo_title") or o["title"])}</a></li>' for o in others) + '</ul></section>') if others else ""
     return HEAD.format(title=E(f"{head} · Resistance Daily"), desc=E(f["dek"]), og_image=og, extra=extra,
                        canonical=url, css=CSS) + f"""
-<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a> · <a href="../archive/">Past editions</a></span></div>
+<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a><i class="sep"> · </i><a href="../archive/">Past editions</a></span></div>
 <header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
 {new}<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
 <a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
