@@ -1,22 +1,83 @@
 {
+ "cover_style": "sunday",
  "cover": [
-  ["Pakistan", "Rights lawyers sentenced to 10 years"],
-  ["Kaziranga, Assam", "Pranab Doley: 112 days under NSA"],
-  ["Iran", "Photojournalist gets 26 years, ill"],
-  ["Upper Siang", "4 villagers held under state UAPA"]
+  [
+   "Pakistan",
+   "Rights lawyers sentenced to 10 years"
+  ],
+  [
+   "Kaziranga, Assam",
+   "Pranab Doley: 112 days under NSA"
+  ],
+  [
+   "Iran",
+   "Photojournalist gets 26 years, ill"
+  ],
+  [
+   "Upper Siang",
+   "4 villagers held under state UAPA"
+  ]
  ],
  "stories": [
-  {"n": 101, "label": "Still waiting · World · Due process", "fig": "282", "figlab": "days held", "place": "Islamabad, Pakistan", "head": "Imaan Mazari-Hazir and Hadi Ali Chattha",
-   "bullets": ["Human rights lawyers held since 23 Jan 2026.", "Anti-terrorism court sentenced both to 10 years on 29 Oct, after a trial inside Adiala prison.", "Law minister says the judiciary is independent."],
-   "src": "Al Jazeera · HRW · Amnesty", "caption": "Human Rights Watch reports the Supreme Court had suspended their earlier sentences on 17 September; the couple deny the charges."},
-  {"n": 102, "label": "Still waiting · India · Due process", "fig": "112", "figlab": "days held", "place": "Kaziranga, Assam", "head": "Pranab Doley",
-   "bullets": ["Arrested 12 Jul 2026; held under the NSA (order 30 Jul) after getting bail.", "Gauhati High Court reserved its verdict on his challenge on 14 Oct.", "Govt cites public order; police did not answer press questions."],
-   "src": "Assam Tribune · The Wire", "caption": "The Wire says it sent questions to Assam Police on 28 and 29 October and received no response."},
-  {"n": 103, "label": "Still waiting · World · Press", "fig": "286", "figlab": "days held", "place": "Tehran, Iran", "head": "Artin Ghazanfari",
-   "bullets": ["Baha'i photojournalist arrested 19 Jan 2026.", "Sentenced to 26 years, told on 26 Oct; has heart failure.", "Judge reportedly refused a hospital transfer; Iran did not reply to CPJ."],
-   "src": "CPJ · Iran International", "caption": "CPJ reports that 20 of the 26 years are for \"media activities\", and that he is held in Greater Tehran Prison."},
-  {"n": 104, "label": "Still waiting · India · Assembly", "fig": "23", "figlab": "days held", "place": "Upper Siang, Arunachal Pradesh", "head": "Four Geku villagers",
-   "bullets": ["Held since 9 Oct under the state's anti-terror law amid dam protests.", "After the 23 Oct Pasighat arson, police say 69 people were arrested.", "The chief minister has offered talks."],
-   "src": "Arunachal Times · Mongabay · Scroll", "caption": "Arunachal Times names them as Adum Tayom, Omak Paron, Okut Paloh and Oson Paron."}
+  {
+   "n": 101,
+   "label": "Still waiting · World · Due process",
+   "fig": "282",
+   "figlab": "days held",
+   "place": "Islamabad, Pakistan",
+   "head": "Imaan Mazari-Hazir and Hadi Ali Chattha",
+   "bullets": [
+    "Human rights lawyers held since 23 Jan 2026.",
+    "Anti-terrorism court sentenced both to 10 years on 29 Oct, after a trial inside Adiala prison.",
+    "Law minister says the judiciary is independent."
+   ],
+   "src": "Al Jazeera · HRW · Amnesty",
+   "caption": "Human Rights Watch reports the Supreme Court had suspended their earlier sentences on 17 September; the couple deny the charges."
+  },
+  {
+   "n": 102,
+   "label": "Still waiting · India · Due process",
+   "fig": "112",
+   "figlab": "days held",
+   "place": "Kaziranga, Assam",
+   "head": "Pranab Doley",
+   "bullets": [
+    "Arrested 12 Jul 2026; held under the NSA (order 30 Jul) after getting bail.",
+    "Gauhati High Court reserved its verdict on his challenge on 14 Oct.",
+    "Govt cites public order; police did not answer press questions."
+   ],
+   "src": "Assam Tribune · The Wire",
+   "caption": "The Wire says it sent questions to Assam Police on 28 and 29 October and received no response."
+  },
+  {
+   "n": 103,
+   "label": "Still waiting · World · Press",
+   "fig": "286",
+   "figlab": "days held",
+   "place": "Tehran, Iran",
+   "head": "Artin Ghazanfari",
+   "bullets": [
+    "Baha'i photojournalist arrested 19 Jan 2026.",
+    "Sentenced to 26 years, told on 26 Oct; has heart failure.",
+    "Judge reportedly refused a hospital transfer; Iran did not reply to CPJ."
+   ],
+   "src": "CPJ · Iran International",
+   "caption": "CPJ reports that 20 of the 26 years are for \"media activities\", and that he is held in Greater Tehran Prison."
+  },
+  {
+   "n": 104,
+   "label": "Still waiting · India · Assembly",
+   "fig": "23",
+   "figlab": "days held",
+   "place": "Upper Siang, Arunachal Pradesh",
+   "head": "Four Geku villagers",
+   "bullets": [
+    "Held since 9 Oct under the state's anti-terror law amid dam protests.",
+    "After the 23 Oct Pasighat arson, police say 69 people were arrested.",
+    "The chief minister has offered talks."
+   ],
+   "src": "Arunachal Times · Mongabay · Scroll",
+   "caption": "Arunachal Times names them as Adum Tayom, Omak Paron, Okut Paloh and Oson Paron."
+  }
  ]
 }
