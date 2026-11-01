@@ -1,0 +1,718 @@
+{
+ "date": "2026-11-01",
+ "date_long": "Sun 1 Nov 2026",
+ "date_short": "Sun 1 Nov",
+ "window": "Sat 09:00 → Sun 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "cases": [
+  {
+   "region": "india",
+   "name": "Umar Khalid",
+   "where": "Delhi",
+   "since": "2020-09-13",
+   "law": "UAPA",
+   "status": "Delhi High Court rejected his bail for the third time on 30 Sep 2026; trial not begun. Prosecution said he cannot seek bail again before Jan 2027",
+   "src": [
+    [
+     "Bar & Bench",
+     "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
+    ],
+    [
+     "Citizens for Justice and Peace",
+     "https://cjp.org.in/six-years-without-a-trial-the-umar-khalid-case-and-indias-criminal-justice-system/"
+    ],
+    [
+     "The Week (PTI)",
+     "https://www.theweek.in/wire-updates/national/2024/09/14/lgd8-dl-court-khalid.html"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Sharjeel Imam",
+   "where": "Delhi",
+   "since": "2020-01-28",
+   "law": "UAPA, sedition and other charges",
+   "status": "Bail rejected by Delhi High Court 30 Sep 2026. A 7-day interim bail ended 10 Oct; a court found a media-contact breach but did not cancel it. Police called it misuse of liberty",
+   "src": [
+    [
+     "USCIRF",
+     "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
+    ],
+    [
+     "Bar & Bench (30 Sep)",
+     "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
+    ],
+    [
+     "Millat Times",
+     "https://millattimes.com/sharjeel-imam-walks-out-of-tihar-on-seven-day-interim-bail/"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/news-updates/sharjeel-imam-flouted-conditions-imposed-while-granting-interim-bail-delhi-court-554070"
+    ],
+    [
+     "Bar & Bench (10 Oct)",
+     "https://www.barandbench.com/amp/story/news/litigation/delhi-court-says-sharjeel-imam-violated-interim-bail-condition-by-interacting-with-media"
+    ],
+    [
+     "The Week",
+     "https://www.theweek.in/news/india/2020/01/28/sharjeel-imam-jnu-student-accused-of-sedition-arrested-in-jehanabad.amp.html"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Srishti Gupta",
+   "where": "Noida",
+   "since": "2026-04-11",
+   "law": "11 FIRs over Noida wage protest",
+   "status": "No bail in 2 of 11 cases. Her bail order notes she was not at the site of the violence; police chargesheet calls her a key conspirator",
+   "src": [
+    [
+     "Reporters' Collective",
+     "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
+    ],
+    [
+     "CIVICUS Monitor",
+     "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Satyam Verma",
+   "where": "Noida / Lucknow, UP",
+   "since": "2026-04-17",
+   "law": "NSA (order 12 May 2026) plus Noida protest FIRs",
+   "status": "Journalist still held under NSA despite bail in one case on 15 Sep. Allahabad High Court reserved its verdict on his NSA challenge on 8 Oct; state's arguments not reported",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-high-court-reserves-journalist-satyam-verma-habeas-plea-nsa-detention-noida-protest-553689"
+    ],
+    [
+     "The Quint",
+     "https://www.thequint.com/news/breaking-news/allahabad-high-court-bail-satyam-verma-noida-case"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Pranab Doley",
+   "where": "Kaziranga, Assam",
+   "since": "2026-07-12",
+   "law": "NSA (detention order 30 Jul 2026)",
+   "status": "Held under NSA after getting bail. Gauhati High Court reserved its verdict on his challenge on 14 Oct. Govt cites public order; Assam Police did not answer press questions",
+   "src": [
+    [
+     "Assam Tribune",
+     "https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"
+    ],
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/charged-with-the-nsa-for-protesting-a-luxury-hotel-project-on-indigenous-land-pranab-doley-completes-111-days-in-detention"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Siang dam protesters (4)",
+   "where": "Upper Siang, Arunachal",
+   "since": "2026-10-09",
+   "law": "Arunachal Pradesh UAPA, 2014",
+   "status": "Four Geku villagers still held. After the 23 Oct arson in Pasighat, police say 69 people were arrested under the same law. CM has offered talks",
+   "src": [
+    [
+     "Mongabay India",
+     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+    ],
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
+    ],
+    [
+     "Outlook",
+     "https://www.outlookindia.com/national/siang-dam-protest-turns-violent-govt-offices-police-vehicles-set-ablaze-in-arunachal-pradesh"
+    ],
+    [
+     "ThePrint",
+     "https://theprint.in/feature/arunachal-women-leading-protests-siang-valley-dam-survey/3086926/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dawit Isaak",
+   "where": "Eritrea",
+   "since": "2001-09-23",
+   "law": "No charge, no trial",
+   "status": "Journalist held incommunicado 25 years; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release",
+   "src": [
+    [
+     "RSF",
+     "https://rsf.org/en/silence-no-longer-option-133-journalists-around-world-mobilise-dawit-isaak-and-his-colleagues"
+    ],
+    [
+     "CPJ",
+     "https://cpj.org/data/people/dawit-isaak/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Abdulhadi Al-Khawaja",
+   "where": "Bahrain",
+   "since": "2011-04-09",
+   "law": "Life sentence (2011)",
+   "status": "Human rights defender in Jau Prison; rights groups urged France's president to press for his release before his 20 Oct visit. No Bahraini government response reported",
+   "src": [
+    [
+     "Tom Lantos HR Commission",
+     "https://humanrightscommission.house.gov/DFP/Countries/Bahrain/Abdulhadi-al-Khawaja"
+    ],
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/10/16/president-macrons-visit-to-bahrain-amid-an-escalating-human-rights-crackdown"
+    ],
+    [
+     "ADHRB",
+     "https://www.adhrb.org/2026/01/fourteen-years-of-silence-bahrain-must-release-abdulhadi-al-khawaja/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Osman Kavala",
+   "where": "Türkiye",
+   "since": "2017-10-18",
+   "law": "Aggravated life sentence",
+   "status": "Istanbul court refused release and retrial (13 Oct) despite a European Court of Human Rights ruling; government says courts are independent and the case is not political",
+   "src": [
+    [
+     "Amnesty UK",
+     "https://www.amnesty.org.uk/knowledge-hub/all-resources/turkey-charges-against-osman-kavala-must-be-dropped/"
+    ],
+    [
+     "Turkish Minute",
+     "https://www.turkishminute.com/2026/10/14/turkish-court-rejects-kavalas-release-and-retrial-despite-ecthr-ruling/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Jimmy Lai",
+   "where": "Hong Kong",
+   "since": "2020-12-31",
+   "law": "National security law (collusion, sedition)",
+   "status": "Serving 20 years, aged 78. UK urged his release (22 Oct); Hong Kong rejected this, saying he was not tried for his political views",
+   "src": [
+    [
+     "Hong Kong Free Press",
+     "https://hongkongfp.com/2026/02/09/breaking-jimmy-lai-jailed-for-20-years-in-hong-kong-after-nat-security-conviction/"
+    ],
+    [
+     "UK Government (six-monthly report)",
+     "https://www.gov.uk/government/publications/six-monthly-report-on-hong-kong-january-to-june-2026/six-monthly-report-on-hong-kong-1-january-to-30-june-2026"
+    ],
+    [
+     "HKSAR Government",
+     "https://www.info.gov.hk/gia/general/202610/23/P2026102300030.htm"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Aung San Suu Kyi",
+   "where": "Myanmar",
+   "since": "2021-02-01",
+   "law": "18-year sentence after coup",
+   "status": "Under house arrest in Naypyidaw; spoke to her son by phone on 22 Oct, the first time in five years. Government rejects calls for release",
+   "src": [
+    [
+     "AP via Daily Pioneer",
+     "https://dailypioneer.com/amp/story/world/suu-kyi-speaks-to-son-for-first-time-in-5-years"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/20/myanmars-detained-ex-leader-suu-kyi-receives-package-from-king-charles-iii"
+    ],
+    [
+     "AFP via The Standard",
+     "https://www.thestandard.com.hk/world/article/346233/Son-of-Myanmars-Suu-Kyi-says-had-first-call-in-five-years"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Imran Aliyev",
+   "where": "Azerbaijan",
+   "since": "2024-04-18",
+   "law": "Smuggling, money laundering, tax evasion, forgery charges",
+   "status": "Meclis.info founder; prosecutors sought 12 years (20 Oct), verdict expected 3 Nov. Authorities say outlets broke foreign-grant rules",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/10/azerbaijan-prosecutors-seek-prison-terms-of-up-12-years-for-meclis-info-journalists/amp/"
+    ],
+    [
+     "CPJ (2024 arrest)",
+     "https://cpj.org/2024/04/azerbaijan-arrests-13th-journalist-over-alleged-international-donor-funding/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dr Hussam Abu Safiya",
+   "where": "Gaza → Israeli custody",
+   "since": "2024-12-27",
+   "law": "Unlawful Combatants Law; no charge, no trial",
+   "status": "Hospital director; lawyer reports abuse in custody. Israel alleges Hamas links, which family and lawyers deny",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/07/israel-opt-fears-mounting-for-arbitrarily-detained-palestinian-doctor-hussam-abu-safiya-amidst-reports-his-life-is-in-grave-danger/"
+    ],
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
+    ],
+    [
+     "CIVICUS",
+     "https://www.civicus.org/index.php/media-resources/news/8868-release-dr-hussam-abu-safiya-and-13-other-doctors-held-without-charge"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Detainees held by the RSF",
+   "where": "Darfur (El Fasher, El Geneina), Sudan",
+   "since": "2025-10-26",
+   "count": "6,500+",
+   "countcap": "held in El Geneina, doctors say",
+   "law": "Armed group detention",
+   "status": "Amnesty reports torture, forced labour and ransom-for-release in El Fasher; doctors report food shortages and deaths in El Geneina. RSF did not respond",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/sudan-el-fasher-civilians-suffer-unlawful-killings-detention-and-torture-one-year-after-citys-capture-by-the-rsf-new-testimony/"
+    ],
+    [
+     "Dabanga",
+     "https://dabangasudan.org/en/all-news/article/atrocities-persist-in-el-fasher-one-year-after-rsf-takeover"
+    ],
+    [
+     "Anadolu via Yeni Şafak",
+     "https://en.yenisafak.com/world/sudan-doctors-network-warns-6500-rsf-detainees-face-dire-conditions-3724488"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2025/10/26/battle-for-sudans-el-fasher-intensifies-as-rsf-claims-seizing-army-hq"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Najmeh Amini",
+   "where": "Iran",
+   "since": "2026-02-03",
+   "law": "Death sentence for blasphemy; 12.5 years on security charges",
+   "status": "23-year-old student held in Mashhad Central Prison, sentenced to death over social media posts. No official statement reported",
+   "src": [
+    [
+     "Center for Human Rights in Iran",
+     "https://iranhumanrights.org/2026/10/iranian-student-sentenced-to-death-over-social-media-post/"
+    ],
+    [
+     "Hengaw",
+     "https://hengaw.org/en/content/article-42934"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Imaan Mazari-Hazir and Hadi Ali Chattha",
+   "where": "Pakistan",
+   "since": "2026-01-23",
+   "law": "Anti-Terrorism Act; earlier 17 years under electronic crimes law (PECA)",
+   "status": "Human rights lawyers sentenced to 10 years on 29 Oct after trial inside Adiala prison. Law minister says the judiciary is independent",
+   "src": [
+    [
+     "Al Jazeera (AFP/Reuters)",
+     "https://www.aljazeera.com/news/2026/10/29/pakistan-rights-activist-imaan-mazari-and-husband-jailed-for-10-years"
+    ],
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/pakistan-rights-lawyers-receive-10-year-sentences"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/pakistan-terrorism-conviction-of-human-rights-lawyers-an-indictment-of-justice-system/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Artin Ghazanfari",
+   "where": "Iran",
+   "since": "2026-01-19",
+   "law": "26 years incl. 'media activities' under espionage-penalties law",
+   "status": "Baha'i photojournalist with heart failure; judge reportedly refused hospital transfer. Sentence told to him on 26 Oct. Iran did not respond to CPJ",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/10/iran-sentences-journalists-under-espionage-law/"
+    ],
+    [
+     "Iran International",
+     "https://www.iranintl.com/en/202610288721"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Mountaga Tall",
+   "where": "Mali",
+   "since": "2026-05-02",
+   "law": "Enforced disappearance; no charge disclosed",
+   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Authorities have not acknowledged holding either",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/critic-of-malis-junta-forcibly-disappeared-six-months-on"
+    ],
+    [
+     "Amnesty International France",
+     "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
+    ]
+   ]
+  }
+ ],
+ "asof": "2026-11-01",
+ "items": [
+  {
+   "region": "india",
+   "place": "Arunachal Bhawan, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "~40",
+   "figcap": "detained",
+   "headline": "Siang dam protesters detained in Delhi",
+   "text": "Delhi Police detained protesters, including activist Katon Moyong, outside Arunachal Bhawan on Saturday as they opposed the Siang dam. Organisers say about 40 were held and allege some were sexually assaulted; some were later released. No Delhi Police response to the allegations was reported.",
+   "src": [
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/scores-of-anti-sump-citizens-in-delhi-detained-allegedly-tortured"
+    ],
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116829&slug=my-shirt-was-lifted-i-was-pinched-on-my-private-parts-siang-dam-protesters-detained-in-delhi-allege-sexual-assault-by-police"
+    ],
+    [
+     "ETV Bharat",
+     "https://www.etvbharat.com/en/bharat/anti-siang-dam-protest-reaches-delhi-students-activists-gherao-arunachal-bhawan-enn26103106374"
+    ]
+   ],
+   "focus": "siang",
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Noney district, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "3",
+   "figcap": "killed",
+   "headline": "Three Kuki men killed in Noney gunfight",
+   "text": "Three Kuki men were killed on Saturday in a gunfight between armed groups at Kekru Naga village, police said, adding that security had been stepped up. The Kuki Inpi Manipur said the dead were village volunteers and blamed Naga armed groups; police have not identified those responsible.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/manipur/3-killed-in-gunfight-between-rival-groups-in-manipurs-noney/article71651975.ece"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/manipur-noney-district-violence-kekru-naga-three-kuki-zo-men-killed-10945215/"
+    ]
+   ],
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Mangolpuri Industrial Area, Delhi",
+   "short": "Mangolpuri",
+   "rights": [
+    "Life & safety",
+    "Land & livelihood"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "workers killed",
+   "headline": "Four workers die in Delhi shoe factory fire",
+   "text": "Four workers died in a fire at a shoe factory in Mangolpuri; relatives allege they were made to work extra hours in the festive season. Police arrested two management members on Saturday and filed an FIR for culpable homicide and negligence against the owner and others.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Delhi/mangolpuri-factory-fire-families-recall-workers-final-calls-two-management-members-arrested-for-culpable-homicide-negligence/article71649133.ece"
+    ]
+   ],
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Banashankari, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "playwright attacked",
+   "headline": "Playwright smeared with ink during Gandhi play",
+   "text": "Protesters objecting to a play's portrayal of Mahatma Gandhi smeared ink on playwright Addanda Cariappa during a show in Bengaluru on Saturday. A complaint has been filed at Banashankari police station and police say investigations are on; the protesters' own complaint seeks action against Cariappa.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/protesters-smear-ink-on-addanda-cariappas-face-over-his-play-on-gandhi/article71650593.ece"
+    ],
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/bengaluru/playwright-addanda-cariappa-attacked-with-ink-during-play-in-bengaluru-4202909"
+    ]
+   ],
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Press",
+   "rights": [
+    "Press freedom",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "12",
+   "figcap": "years archived",
+   "headline": "Journalist's website taken offline by host",
+   "text": "Hosting firm Hostinger suspended journalist Paranjoy Guha Thakurta's website on 28 October over a \"Fraud/Scam\" abuse report, days after a court ordered one 2019 article removed in a defamation suit. In a statement on Saturday he called it backdoor censorship; Hostinger support said suspension was \"not negotiable\".",
+   "src": [
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116828&slug=twelve-years-of-journalism-wiped-off-the-internet-overnight-paranjoy-guha-thakurtas-website-taken-down-after-indiabulls-founders-legal-notices"
+    ]
+   ],
+   "n": 5
+  },
+  {
+   "region": "india",
+   "place": "Press Club of India, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "25",
+   "figcap": "testified",
+   "headline": "Tribunal says July protest policing was excessive",
+   "text": "A people's tribunal of retired civil servants, chaired by former judge Anjana Prakash, reported on Saturday that Delhi Police used disproportionate force and arbitrary mass detentions against July's exam-leak protests. It heard 25 people; Delhi Police and the Rapid Action Force were invited but did not respond.",
+   "src": [
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116830&slug=nail-fitted-batons-pellets-and-locked-exits-peoples-tribunal-says-delhi-police-set-out-to-crush-july-neet-protests-not-disperse-them"
+    ]
+   ],
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Nyala, South Darfur, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "life & safety",
+    "civilian harm"
+   ],
+   "sev": "red",
+   "fig": "102",
+   "figcap": "killed in Nyala",
+   "headline": "UN chief condemns escalating Sudan drone strikes",
+   "text": "On Saturday UN Secretary-General Guterres, through his spokesman, condemned escalating drone attacks by the parties in Sudan, after Monday's strike on Nyala's Tanqonj market killed at least 102 people. The strike has been attributed to the army. No army or RSF response was reported.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/un-chief-appalled-by-sudan-drone-strikes-on-civilians-3009161"
+    ],
+    [
+     "NBC News",
+     "https://www.nbcnews.com/world/africa/100-people-killed-sudanese-army-drone-attack-market-says-sudanese-righ-rcna606044"
+    ]
+   ],
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Nuseirat and al-Mawasi, Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "life & safety",
+    "civilian harm"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed Saturday",
+   "headline": "Four Palestinians die in Gaza despite ceasefire",
+   "text": "Hospitals said Israeli shelling of Nuseirat killed a teacher, a man died of earlier strike wounds, and two girls died after a tent fire of unclear cause in al-Mawasi. Gaza's health ministry counts 1,580 killed since the ceasefire. No Israeli military comment was reported.",
+   "src": [
+    [
+     "Al Jazeera (Anadolu)",
+     "https://www.aljazeera.com/news/2026/10/31/at-least-four-palestinians-killed-in-gaza-as-israeli-attacks-continue"
+    ],
+    [
+     "Times of Israel liveblog",
+     "https://www.timesofisrael.com/liveblog-october-31-2026/"
+    ]
+   ],
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Paris, Lyon and cities across France",
+   "short": "France",
+   "rights": [
+    "assembly",
+    "expression"
+   ],
+   "sev": "orange",
+   "fig": "290+",
+   "figcap": "arrested",
+   "headline": "Police fire tear gas at French youth protests",
+   "text": "Authorities counted 320,000 marchers on Saturday's cost-of-living and schools protests, organisers nearly half a million. Police used tear gas in Paris and Lyon and the interior ministry reported at least 290 arrests. The government says it has heard protesters and is studying cost-of-living measures.",
+   "src": [
+    [
+     "Al Jazeera (AFP)",
+     "https://www.aljazeera.com/news/2026/10/31/tension-and-clashes-as-hundreds-of-thousands-protest-again-in-france"
+    ],
+    [
+     "Times of Israel liveblog",
+     "https://www.timesofisrael.com/liveblog-october-31-2026/"
+    ]
+   ],
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "US Embassy, London, United Kingdom",
+   "short": "London",
+   "rights": [
+    "assembly",
+    "expression",
+    "due process"
+   ],
+   "sev": "orange",
+   "fig": "139",
+   "figcap": "arrested",
+   "headline": "London police arrest 139 at Palestine Action protest",
+   "text": "Police arrested 139 people at a protest outside the US embassy against the ban on Palestine Action, mostly for expressing support for a proscribed group, the Metropolitan Police said. Organisers Defend Our Juries call the vigils peaceful and say arrests under the ban now exceed 4,000.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/31/london-police-arrest-48-as-hundreds-protest-palestine-action-ban"
+    ],
+    [
+     "Times of Israel liveblog",
+     "https://www.timesofisrael.com/liveblog-october-31-2026/"
+    ]
+   ],
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Houthi-held Yemen",
+   "short": "Yemen",
+   "rights": [
+    "due process",
+    "life & safety"
+   ],
+   "sev": "orange",
+   "fig": "71",
+   "figcap": "UN staff held",
+   "headline": "UN rights chief seeks probe into detainee death",
+   "text": "UN rights chief Volker Türk demanded an independent investigation into the death of staffer Mohammad el Shami, held by Houthi authorities since June 2024, whose family learned of it weeks late. The UN says 71 personnel remain detained. No Houthi response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168716"
+    ]
+   ],
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Berlin, Cologne, Hamburg and Frankfurt, Germany",
+   "short": "Germany",
+   "rights": [
+    "assembly",
+    "expression"
+   ],
+   "sev": "grey",
+   "fig": "100,000+",
+   "figcap": "organisers' count",
+   "headline": "Gen Z protests spread across German cities",
+   "text": "Youth-led rallies on Saturday over living costs, education cuts and conscription drew 5,000 in Berlin by police count and 10,000 by organisers, who claim 100,000–120,000 nationwide. Police used water cannon in Cologne, saying their measures targeted violent individuals, not peaceful participants.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/31/thousands-rally-in-berlin-as-gen-z-plans-protests-in-30-german-cities"
+    ],
+    [
+     "CNN",
+     "https://edition.cnn.com/2026/10/31/europe/protests-europe-germany-halloween-intl"
+    ]
+   ],
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested; on 31 October Delhi Police detained protesters outside Arunachal Bhawan, who allege sexual assault.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}
