@@ -265,11 +265,17 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   - ALL PLATFORMS (owner's rule, 1 Nov 2026): spread the drafts across every platform we post on, Instagram,
     Facebook and X, plus YouTube, not just one. Each day aim for a mix (for example one Instagram, one Facebook or X,
     one YouTube) and rotate so no platform is skipped for long.
-  - Find 3–5 recent posts or videos (ideally from the last 48 hours) by credible outlets or organisations (e.g. BBC
-    News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News, Amnesty, HRW) on the same story as one of
-    our Focus pages, preferring the Focus updated today. Skip partisan accounts, politicians' and parties' accounts,
-    and posts about unrelated topics, and don't pick the same outlet's account two days running unless the story
-    moved.
+  - WHAT TO COMMENT ON (owner's rule, 1 Nov 2026): not only Focus stories. In priority order: (1) Focus stories
+    that are actively developing (e.g. Siang, Sudan), preferring the Focus updated today; (2) any story in today's
+    edition; (3) ongoing "Still waiting" cases. Find recent posts or videos (ideally from the last 48 hours) by
+    credible outlets or organisations (e.g. BBC News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News,
+    Amnesty, HRW) on those stories. Skip partisan accounts, politicians' and parties' accounts, and posts about
+    unrelated topics.
+  - HOW MANY: about 6–10 drafts a day in total across Instagram, Facebook, X and YouTube, listed in priority order
+    so the owner can stop wherever they like. To stay clear of spam filters: at most 2 comments a day under any one
+    outlet's posts, every comment written fresh with a fact the post doesn't already give, and a note at the top of
+    reach.txt to spread posting through the day rather than all at once. Don't pick the same outlet's account two
+    days running for the same story unless the story moved.
   - YouTube (and any page that opens without logging in): give the exact URL and open it to confirm it is about
     that story.
   - Instagram, Facebook and X show posts only to logged-in users, and the routine must never log in. For these,
@@ -285,13 +291,16 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     are indexed less, so when nothing turns up, fall back to the outlet's article and "Look for: …" as above.
   - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
     platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
-    fact from our Focus page that the post doesn't already give (with its date, and qualifiers kept), then a pointer
-    to the page. Endings by platform: Instagram (links in comments aren't clickable) ends with "Daily updates, every
-    fact sourced: Resistance Daily (link in bio)"; Facebook, YouTube and other sites end with the Focus URL
-    (https://resistancedaily.github.io/focus/SLUG.html); X replies must fit in 280 characters with the Focus URL
-    (which X counts as 23). Keep other comments under 300 characters. Under each comment, give the source for its fact.
+    fact from our Focus page or today's edition that the post doesn't already give (with its date, and qualifiers
+    kept), then a pointer to the page. Link: a Focus story links to its Focus page
+    (https://resistancedaily.github.io/focus/SLUG.html); any other story links to that day's edition at its stable
+    address (https://resistancedaily.github.io/archive/DATE.html), never /today/, which changes daily. Endings by
+    platform: Instagram (links in comments aren't clickable) ends with "Daily updates, every fact sourced: Resistance
+    Daily (link in bio)"; Facebook, YouTube and other sites end with the link; X replies must fit in 280 characters
+    with the link (which X counts as 23). Keep other comments under 300 characters. Under each comment, give the source for its fact.
   - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
-    no opinions on the post or the outlet, neutral wording. Suggest at most 3 comments for any one Focus a day.
+    no opinions on the post or the outlet, neutral wording. Under posts about deaths, attacks or other tragedies, keep
+    the comment to the facts: no promotional framing beyond the closing pointer.
 - Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
