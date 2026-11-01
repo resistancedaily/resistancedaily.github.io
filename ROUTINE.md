@@ -277,6 +277,12 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     the owner exactly what to look for ("@account's post on <story>, around <date>") and mark the entry "post not
     opened: check it matches before commenting". If a post URL turns up in search results, include it, marked the
     same way. Never guess or invent an account handle: name the outlet if the handle isn't confirmed.
+  - HOW TO FIND SOCIAL POSTS (owner's tip, 1 Nov 2026): search engines index many public posts. Use WebSearch with
+    allowed_domains ["instagram.com"], ["facebook.com"] or ["x.com"] and the story's key words (place, issue,
+    outlet name); results show the post's text and account even though the post can't be opened. Google itself
+    shows a robot check to this server, so don't scrape it. An X post's date can be read from its status ID:
+    UTC time = ((ID >> 22) + 1288834974657) ms since 1970. Use it to keep to the last 48 hours. Instagram and Facebook
+    are indexed less, so when nothing turns up, fall back to the outlet's article and "Look for: …" as above.
   - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
     platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
     fact from our Focus page that the post doesn't already give (with its date, and qualifiers kept), then a pointer
