@@ -165,6 +165,11 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   OWNER'S REQUEST, 23–29 Oct 2026: use the "mosaic" cover every day, Sunday included (four story photos edge to edge,
   the date in an orange circle where they meet). OWNER'S REQUEST, 30 Oct–5 Nov 2026: use the "photo" cover every day,
   Sunday included. tools/slides.py applies both via COVER_PERIODS; after 5 Nov the rotation below resumes.
+  SUNDAY COVER (owner's rule, 1 Nov 2026): on Sunday, keep the SAME LAYOUT as the current week's cover (the active
+  COVER_PERIODS style), only in white: light panel, red place names and the red "+ Still waiting" tag. tools/slides.py
+  does this automatically (cover_style(): photo → "photo-sunday", night → "sunday"; mosaic keeps its layout). The
+  layout must match even without a photo: "photo-sunday" then keeps the photo area as a plain dark block. Don't fall
+  back to a different layout on Sunday. When no period is active, Sunday uses the rotation's "sunday" cover.
   The cover style rotates by IST weekday (tools/slides.py picks it; set "cover_style" in DATE.slides.json to override):
   Mon photo · Tue paper · Wed signal · Thu night · Fri photo · Sat paper · Sun sunday. photo = the first story photo
   (≥900px) across the top with the date on it and the rows on dark below, with the photo's file-photo year and
@@ -249,7 +254,10 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     source for every fact: link in bio."; "Sources: …"; a photo line (say if faces were blurred); at most 5 hashtags.
   - Same standards as every caption: neutral, every fact from a sourced item or Focus paragraph, qualifiers kept.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
-  printed on the slide), which becomes that slide's caption.
+  printed on the slide), which becomes that slide's caption, and, so the slides match the rest of the week, a "photo"
+  (same fields as an item photo, chosen and checked under STEP 3: usually a file photo of the place, labelled with
+  its year; never a photo of the detained person unless freely licensed and appropriate). The first case photo
+  (≥900px) also fills the Sunday photo cover.
 - REACH COMMENTS (owner's rule, 31 Oct 2026): the routine DRAFTS comments; the owner posts them by hand from the
   Resistance Daily account. Never post, like or comment anywhere yourself, never use a browser logged in to any of
   the owner's accounts, and never automate posting: Instagram and YouTube treat automated or repeated promotional

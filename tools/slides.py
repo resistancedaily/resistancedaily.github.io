@@ -12,6 +12,7 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
   Sunday case slides (not tied to an item) may carry their own "photo" (same fields as an item photo) and a "caption".
   "cover_style": "photo-sunday" = the photo cover on a light panel with red place names and "+ Still waiting".
+  Sundays pick the current week's cover layout in white automatically (see cover_style()); set "cover_style" to override.
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
 Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt, whatsapp.txt and x-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
@@ -248,8 +249,22 @@ COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic"), ("2026-10-30", "2026-11
 TAGLINE = "What happened to people's rights in the last 24 hours. Every fact sourced."
 
 
+# Owner's rule (1 Nov 2026): Sunday keeps the layout of the current week's cover, but in white (light panel, red place
+# names, "+ Still waiting"). Layouts with a dark panel map to their light Sunday version; others keep their layout.
+SUNDAY_LIGHT = {"photo": "photo-sunday", "night": "sunday"}
+
+
+def cover_style(dt, sp):
+    if sp.get("cover_style"):
+        return sp["cover_style"]
+    period = next((s for a, b, s in COVER_PERIODS if a <= dt.isoformat() <= b), None)
+    if period:
+        return SUNDAY_LIGHT.get(period, period) if dt.weekday() == 6 else period
+    return COVER_ROTATION[dt.weekday()]
+
+
 def cover(dt, sp, by, N):
-    style = sp.get("cover_style") or next((s for a, b, s in COVER_PERIODS if a <= dt.isoformat() <= b), COVER_ROTATION[dt.weekday()])
+    style = cover_style(dt, sp)
     day, date = dt.strftime("%A"), dt.strftime("%d %b")
     foot = "Swipe → · Sources: link in bio"
     mono = "font:500 24px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.06em"
@@ -328,24 +343,27 @@ def cover(dt, sp, by, N):
     if style in ("photo", "photo-sunday"):
         # Lead story's photo fills the top; date sits on it, rows on a solid panel below. Falls back to "night".
         p = next((pic(st, by) for st in sp["stories"] if pic(st, by) and big_enough(pic(st, by))), None)
-        if not p:
-            style = "sunday" if style == "photo-sunday" else "night"
+        if not p and style == "photo":
+            style = "night"
         else:
+            # "photo-sunday" without a photo keeps the same layout, with a plain dark block where the photo goes.
             # "photo-sunday": the same layout on a light panel with red place names and the "+ Still waiting" tag.
             sun = style == "photo-sunday"
             # Light panel: the photo keeps a dark lower edge (no fade to white) so the white date stays readable.
             rule, place, fade = ("#d9dcd8", RED, "rgba(0,0,0,.7)") if sun else ("#333840", AC, INK)
             tag = f' · <span style="color:{RED}">+ Still waiting</span>' if sun else ""
+            img = (f'<img src="{E(src_url(p))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(p.get("pos", "center"))}">' if p else "")
+            cred = f' · {E(label(p))} · {E(p["credit"].split(" / ")[0])}, {E(p["licence"])}' if p else ""
             rows = "".join(f'<div style="border-top:2px solid {rule};padding:16px 0 14px"><div class="D" style="font-size:52px;color:{place}">{E(pl)}</div><div style="font:600 32px \'IBM Plex Sans\';margin-top:6px">{E(h)}</div></div>' for pl, h in sp["cover"])
             return f'''<div class="s {'light' if sun else 'dark'}" style="padding:0">
-<div style="position:relative;height:590px;flex:none"><img src="{E(src_url(p))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(p.get("pos", "center"))}">
+<div style="position:relative;height:590px;flex:none;background:{INK}">{img}
 <div style="position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.08) 28%,rgba(0,0,0,.6) 62%,{fade})"></div>
 <div style="position:absolute;inset:0;padding:80px 110px 30px;display:flex;flex-direction:column">
 <div class="top" style="color:#e6e6e6">{brand("#fff")}<span>1 / {N}</span></div>
 <div style="margin-top:auto"><div class="D" style="font-size:64px;color:{AC}">{day}</div><div class="D" style="font-size:190px;color:#fff">{date}</div></div></div></div>
 <div style="padding:10px 110px 70px;display:flex;flex-direction:column;flex:1">
 <p style="font-size:28px;color:{'#5b616b' if sun else '#9ba1aa'};margin:0 0 16px;line-height:1.35">{TAGLINE}</p>{rows}
-<div style="margin-top:auto;border-top:2px solid {rule};padding-top:18px;{mono};color:{'#5b616b' if sun else '#9ba1aa'}">{foot}{tag} · {E(label(p))} · {E(p["credit"].split(" / ")[0])}, {E(p["licence"])}</div></div></div>'''
+<div style="margin-top:auto;border-top:2px solid {rule};padding-top:18px;{mono};color:{'#5b616b' if sun else '#9ba1aa'}">{foot}{tag}{cred}</div></div></div>'''
     if style == "paper":
         # Newspaper front: light paper, heavy rules, numbered rows.
         rows = "".join(f'<div style="display:grid;grid-template-columns:86px 1fr;gap:8px;border-top:2px solid {INK};padding:18px 0 16px"><div class="D" style="font-size:64px;color:{RED}">{k:02d}</div><div><div class="D" style="font-size:52px">{E(pl)}</div><div style="font:400 33px \'IBM Plex Sans\';margin-top:6px;color:#3a3f47">{E(h)}</div></div></div>' for k, (pl, h) in enumerate(sp["cover"], 1))
