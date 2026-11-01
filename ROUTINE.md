@@ -262,17 +262,28 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   Resistance Daily account. Never post, like or comment anywhere yourself, never use a browser logged in to any of
   the owner's accounts, and never automate posting: Instagram and YouTube treat automated or repeated promotional
   comments as spam and can restrict the account.
+  - ALL PLATFORMS (owner's rule, 1 Nov 2026): spread the drafts across every platform we post on, Instagram,
+    Facebook and X, plus YouTube, not just one. Each day aim for a mix (for example one Instagram, one Facebook or X,
+    one YouTube) and rotate so no platform is skipped for long.
   - Find 3–5 recent posts or videos (ideally from the last 48 hours) by credible outlets or organisations (e.g. BBC
     News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News, Amnesty, HRW) on the same story as one of
-    our Focus pages, preferring the Focus updated today. Use web search; give the exact post or video URL, and open
-    it to confirm it is about that story. Skip partisan accounts, politicians' and parties' accounts, and posts
-    about unrelated topics, and don't pick the same outlet's account two days running unless the story moved.
+    our Focus pages, preferring the Focus updated today. Skip partisan accounts, politicians' and parties' accounts,
+    and posts about unrelated topics, and don't pick the same outlet's account two days running unless the story
+    moved.
+  - YouTube (and any page that opens without logging in): give the exact URL and open it to confirm it is about
+    that story.
+  - Instagram, Facebook and X show posts only to logged-in users, and the routine must never log in. For these,
+    confirm that the outlet covered the story by opening the outlet's own article on it (give that URL), then tell
+    the owner exactly what to look for ("@account's post on <story>, around <date>") and mark the entry "post not
+    opened: check it matches before commenting". If a post URL turns up in search results, include it, marked the
+    same way. Never guess or invent an account handle: name the outlet if the handle isn't confirmed.
   - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
-    platform, the outlet, the URL, then a comment of 1–2 short sentences (under 300 characters) that adds ONE
-    sourced fact from our Focus page that the post doesn't already give (with its date, and qualifiers kept), then a
-    pointer to the page. Instagram: links in comments aren't clickable, so end with "Daily updates, every fact
-    sourced: Resistance Daily (link in bio)". YouTube and other sites: end with the Focus URL
-    (https://resistancedaily.github.io/focus/SLUG.html). Under each comment, give the source for its fact.
+    platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
+    fact from our Focus page that the post doesn't already give (with its date, and qualifiers kept), then a pointer
+    to the page. Endings by platform: Instagram (links in comments aren't clickable) ends with "Daily updates, every
+    fact sourced: Resistance Daily (link in bio)"; Facebook, YouTube and other sites end with the Focus URL
+    (https://resistancedaily.github.io/focus/SLUG.html); X replies must fit in 280 characters with the Focus URL
+    (which X counts as 23). Keep other comments under 300 characters. Under each comment, give the source for its fact.
   - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
     no opinions on the post or the outlet, neutral wording. Suggest at most 3 comments for any one Focus a day.
 - Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
