@@ -8,8 +8,11 @@ data/focus/SLUG.json:
 { "slug", "title", "kicker", "dek", "updated": "YYYY-MM-DD", "rights": [...],
   "photos": [photo, ...]            # same photo objects as data.json items (tools/photos.py); 3-8 of them
   "figs": [{"fig", "figcap", "src": [name, url]}],   # 2-4 key numbers
-  "story": [{"text", "src": [[name, url], ...], "fig"?, "figcap"?}],  # 3-5 short paragraphs, every fact sourced;
-                                                      # with "chapters", a paragraph past the last photo shows fig/figcap
+  "story": [{"text", "src": [[name, url], ...], "fig"?, "figcap"?, "date"?}],  # short paragraphs, every fact sourced;
+                                                      # with "chapters", a paragraph past the last photo shows fig/figcap.
+                                                      # "date" (YYYY-MM-DD) marks a dated update: with 3+ dated paragraphs
+                                                      # the page shows "The background" (undated paragraphs) and then a
+                                                      # "Timeline" of the dated ones, newest first, older ones folded.
   "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
   "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
@@ -94,6 +97,27 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .more-f{display:grid;gap:6px;max-width:66ch}
 .more-f h2{font-size:24px;font-weight:800}
 .more-f ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;max-width:760px}
+.tl li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;position:relative;padding:0 0 22px}
+.tl li:before{content:"";position:absolute;left:90px;top:6px;bottom:0;width:2px;background:var(--rule)}
+.tl li:last-child:before{display:none}
+.tl time{font:800 22px/1 var(--display);text-transform:uppercase;text-align:right;color:var(--muted);padding-top:2px}
+.tl time small{display:block;font:500 11px var(--mono);letter-spacing:.05em;margin-top:3px}
+.tl .ev{display:grid;gap:8px;padding-left:18px;position:relative;min-width:0}
+.tl .ev:before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--muted);box-sizing:border-box}
+.tl .ev p{font-size:16.5px}
+.tl li.latest time{color:var(--red)}
+.tl li.latest .ev:before{border-color:var(--red);background:var(--red)}
+.tl .badge{justify-self:start;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:#fff;background:var(--red);border-radius:3px;padding:2px 7px}
+.tl .tfig{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tl .tfig b{font:800 34px/1 var(--display);color:var(--red)}
+.tl .tfig span{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.tl figure{max-width:440px}
+.older{max-width:760px}
+.older summary{cursor:pointer;font-weight:600;font-size:14px;list-style:none;border:1px solid var(--rule);background:var(--paper);border-radius:6px;padding:8px 12px;display:inline-block;margin:0 0 18px 92px}
+.older summary::-webkit-details-marker{display:none}
+.older[open] summary{margin-bottom:22px}
+@media (max-width:520px){.tl li{grid-template-columns:52px minmax(0,1fr);gap:18px}.tl li:before{left:68px}.tl time{font-size:18px}.older summary{margin-left:70px}}
 .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);max-width:28ch}
 """
 
@@ -130,8 +154,53 @@ def figure(p, prefix="../"):
             f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></figure>')
 
 
+SHOW_LATEST = 5  # timeline entries shown before "Show earlier updates"
+
+
+def timeline(f, dated, side_photo):
+    """Dated updates, newest first; the newest is marked "Latest" and entries past SHOW_LATEST fold away."""
+    order = sorted(dated, key=lambda ix: (ix[1]["date"], ix[0]), reverse=True)
+
+    def item(k, i, x):
+        d = datetime.date.fromisoformat(x["date"])
+        ph = side_photo(i)
+        fig = (f'<div class="tfig"><b>{E(x["fig"])}</b><span>{E(x.get("figcap", ""))}</span></div>'
+               if x.get("fig") and not ph else "")
+        badge = '<span class="badge">Latest</span>' if k == 0 else ""
+        return (f'<li class="{"latest" if k == 0 else ""}"><time datetime="{x["date"]}">{d.strftime("%d %b")}<small>{d.year}</small></time>'
+                f'<div class="ev">{badge}<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p>{fig}{ph}</div></li>')
+    items = [item(k, i, x) for k, (i, x) in enumerate(order)]
+    shown, rest = items[:SHOW_LATEST], items[SHOW_LATEST:]
+    older = (f'<details class="older"><summary>Show {len(rest)} earlier update{"s" if len(rest) != 1 else ""} ↓</summary>'
+             f'<ol class="tl">{"".join(rest)}</ol></details>') if rest else ""
+    return (f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>Timeline</h2></div>'
+            f'<p class="src">Newest first. Every update links to its sources.</p><ol class="tl">{"".join(shown)}</ol>{older}</section>')
+
+
 def body(f, figs, story, official):
     figs_html = f'<section class="figs" aria-label="Key numbers">{figs}</section>' if figs else ''
+    dated = [(i, x) for i, x in enumerate(f["story"]) if x.get("date")]
+    if len(dated) >= 3:
+        # Live story: undated paragraphs are the background, dated ones form the timeline (newest first).
+        ph = f["photos"]
+        chapters = f.get("layout") == "chapters"
+        side_photo = (lambda i: figure(ph[i + 1]) if chapters and i + 1 < len(ph) else "")
+        bg = [(i, x) for i, x in enumerate(f["story"]) if not x.get("date")]
+        if chapters:
+            def side(i, x):
+                if i + 1 < len(ph):
+                    return figure(ph[i + 1])
+                if x.get("fig"):
+                    return f'<div class="figp"><b>{E(x["fig"])}</b><span>{E(x.get("figcap", ""))}</span></div>'
+                return ""
+            bg_html = "".join(f'<div class="chap">{side(i, x)}<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p></div>' for i, x in bg)
+            top = f'<section class="cover">{figure(ph[0])}</section>\n{figs_html}'
+            bg_sec = f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>The background</h2></div><div class="chaps">{bg_html}</div></section>' if bg else ""
+        else:
+            bg_html = "".join(f'<p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p>' for i, x in bg)
+            top = f'<section class="gallery" aria-label="Photos">{"".join(figure(p) for p in ph)}</section>\n{figs_html}'
+            bg_sec = f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>The background</h2></div><div class="story">{bg_html}</div></section>' if bg else ""
+        return f'{top}\n{bg_sec}\n{timeline(f, dated, side_photo)}\n<section style="display:grid;gap:14px">{official}</section>'
     if f.get("layout") != "chapters":
         return (f'<section class="gallery" aria-label="Photos">{"".join(figure(p) for p in f["photos"])}</section>\n{figs_html}\n'
                 f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>What is happening</h2></div><div class="story">{story}</div>{official}</section>')

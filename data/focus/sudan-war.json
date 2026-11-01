@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-10-31",
+ "updated": "2026-11-01",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -131,7 +131,8 @@
      "Radio Tamazuj",
      "https://www.radiotamazuj.org/en/news/article/south-sudan-oil-production-halted-after-drone-attack"
     ]
-   ]
+   ],
+   "date": "2026-10-19"
   },
   {
    "text": "About 13 million people have been forced from their homes; UNHCR says 4.3 million are refugees in neighbouring countries, most in Egypt and eastern Chad. Famine was confirmed in Zamzam camp in 2024 and in El Fasher and Kadugli in 2025. In May 2026 the IPC found no area in famine but 14 areas at risk, and nearly 19.5 million people, more than 40% of the population, facing high levels of acute food insecurity.",
@@ -192,7 +193,8 @@
     ]
    ],
    "fig": "306",
-   "figcap": "killed by drones, 1–21 Oct 2026 (UN)"
+   "figcap": "killed by drones, 1–21 Oct 2026 (UN)",
+   "date": "2026-10-25"
   },
   {
    "text": "On the evening of 26 October a drone strike hit a busy market in west Nyala, South Darfur, which the RSF holds. MSF, which attributes it to the Sudanese Armed Forces, said Nyala Teaching Hospital received 36 bodies, 21 in civilian clothing, and more than 150 wounded; the rights group Emergency Lawyers put the toll above 100. The army has not commented. On 27 October large parts of Khartoum lost power for over 12 hours after a drone hit a transformer station in Omdurman; an electricity official blamed the RSF.",
@@ -207,7 +209,8 @@
     ]
    ],
    "fig": "36",
-   "figcap": "bodies received at Nyala hospital (MSF)"
+   "figcap": "bodies received at Nyala hospital (MSF)",
+   "date": "2026-10-26"
   },
   {
    "text": "On 29 October UNICEF said at least five children, three boys and two girls aged 7 to 14, were among those killed in the Nyala market strike. The same day a Yale Humanitarian Research Lab report, based on satellite imagery, found a near-total absence of civilian life in El Fasher a year after the RSF took the city, with excavation and burning sites at five hospitals and an earth barrier about 75 km around it. The report says this contradicts RSF claims that life has returned to normal.",
@@ -222,7 +225,8 @@
     ]
    ],
    "fig": "5",
-   "figcap": "children killed in Nyala strike (UNICEF)"
+   "figcap": "children killed in Nyala strike (UNICEF)",
+   "date": "2026-10-29"
   },
   {
    "text": "On 30 October Al Jazeera reported an investigation by the Centre for Information Resilience, a UK open-source group, which identifies 25 commanders of the RSF, the Sudanese Armed Forces and allied forces it has reasonable grounds to believe were directly or indirectly responsible for sexual violence at five locations and periods of reported abuse, including El Fasher, Zamzam camp and parts of Gezira. The group does not attribute specific rapes to individuals. Neither force responded to Al Jazeera; both have previously denied sexual violence by their personnel.",
@@ -233,7 +237,20 @@
     ]
    ],
    "fig": "25",
-   "figcap": "commanders named by investigators (CIR)"
+   "figcap": "commanders named by investigators (CIR)",
+   "date": "2026-10-30"
+  },
+  {
+   "text": "On 31 October UN Secretary-General António Guterres, through his spokesman, said he \"strongly condemns the escalating drone attacks in Sudan by the parties to the conflict\" and called for civilians and civilian infrastructure to be spared, AFP reports. The statement followed the 26 October strike on Nyala's Tanqonj market, which AFP says killed at least 102 people and which has been attributed to the army. No army or RSF response was reported.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/un-chief-appalled-by-sudan-drone-strikes-on-civilians-3009161"
+    ]
+   ],
+   "date": "2026-10-31",
+   "fig": "102",
+   "figcap": "killed in Nyala market strike (AFP)"
   }
  ],
  "official": {
@@ -270,7 +287,8 @@
   "2026-10-28",
   "2026-10-29",
   "2026-10-30",
-  "2026-10-31"
+  "2026-10-31",
+  "2026-11-01"
  ],
  "instagram": {
   "caption": "",
@@ -287,7 +305,7 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-10-31",
-  "text": "UK open-source investigators name 25 RSF, army and allied commanders they believe were responsible for sexual violence at five sites. Neither force responded; both deny such abuses."
+  "date": "2026-11-01",
+  "text": "On 31 Oct the UN Secretary-General condemned escalating drone attacks by both sides in Sudan, after a Nyala market strike that killed at least 102. No army or RSF response was reported."
  }
 }

@@ -123,13 +123,19 @@ organisers' count as a range.
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
 - KEEP FOCUS STORIES CURRENT (owner's rule): a Focus is a live story, not only background. Whenever today's research
   turns up a new development on an existing Focus (check data/focus/*.json against today's items), update that Focus
-  the same day, even without new photos: add the new events as dated, sourced paragraphs (keep earlier facts that
+  the same day, even without new photos: add the new events as dated, sourced paragraphs, each with "date":
+  "YYYY-MM-DD" (the day it happened) (keep earlier facts that
   still hold; correct any that are out of date), refresh "dek", "figs", "official", "updated" and "editions", set "whats_new" to {"date": DATE, "text": one or two
   sentences on what changed, at most 220 characters so it fits an X post whole, facts only, all of them sourced in the
   new paragraph, with the official response if there is one} (shown at the top of the page),
   check "seo_title" still fits, rebuild
   with `python3 tools/focus.py SLUG`, and link the item to it with "focus". Never point readers to a Focus whose
   summary contradicts today's edition.
+- TIMELINE (owner's choice, 1 Nov 2026): a Focus with 3 or more dated paragraphs shows "The background" (the undated
+  paragraphs: what the issue is and why it matters) and then a "Timeline" of the dated updates, newest first, with the
+  newest marked "Latest" and older ones folded under "Show earlier updates". tools/focus.py does this automatically
+  from "date". Keep background paragraphs undated and current; put every new development in a dated paragraph. A
+  dated paragraph's "fig"/"figcap" shows under its text.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
 ## STEP 5. Publish the edition
