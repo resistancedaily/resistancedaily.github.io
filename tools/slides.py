@@ -10,6 +10,8 @@
 data/DATE.slides.json (the text-led daily carousel; a story slide shows its item's photo when the item has one):
 { "cover": [[place, headline <= 45 chars], x4],
   "stories": [{"n": item number, "label": "India · Life & safety", "fig", "figlab", "place", "head", "bullets": [2-3], "src": "A · B"}, x4] }
+  Sunday case slides (not tied to an item) may carry their own "photo" (same fields as an item photo) and a "caption".
+  "cover_style": "photo-sunday" = the photo cover on a light panel with red place names and "+ Still waiting".
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
 Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt, whatsapp.txt and x-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
@@ -114,6 +116,11 @@ def label(p):
 def src_url(p):
     s = p["src"]
     return s if s.startswith(("http://", "https://")) else "file://" + os.path.join(root, s)
+
+
+def pic(st, by):
+    """A story slide's photo: its own "photo" (Sunday case slides, not tied to an item) or its item's photo."""
+    return st.get("photo") or by.get(st.get("n"), {}).get("photo")
 
 
 def big_enough(p, min_w=900):
@@ -251,7 +258,7 @@ def cover(dt, sp, by, N):
     pics = []
     for k in range(4):
         st = sp["stories"][k] if k < len(sp["stories"]) else {}
-        ph = by.get(st.get("n"), {}).get("photo")
+        ph = pic(st, by) if st else None
         pics.append((ph if ph and big_enough(ph, 600) else None, st.get("fig", "")))
 
     def disc(k, d, ring=AC):
@@ -318,23 +325,27 @@ def cover(dt, sp, by, N):
 <p style="font-size:26px;color:#9ba1aa;max-width:380px;line-height:1.35;margin-top:10px">{TAGLINE}</p></div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:40px">{c[2]}{c[3]}</div>
 <div style="border-top:2px solid #333840;padding-top:18px;{mono};color:#9ba1aa">{foot}</div></div>'''
-    if style == "photo":
+    if style in ("photo", "photo-sunday"):
         # Lead story's photo fills the top; date sits on it, rows on a solid panel below. Falls back to "night".
-        p = next((by.get(st.get("n"), {}).get("photo") for st in sp["stories"]
-                  if by.get(st.get("n"), {}).get("photo") and big_enough(by[st["n"]]["photo"])), None)
+        p = next((pic(st, by) for st in sp["stories"] if pic(st, by) and big_enough(pic(st, by))), None)
         if not p:
-            style = "night"
+            style = "sunday" if style == "photo-sunday" else "night"
         else:
-            rows = "".join(f'<div style="border-top:2px solid #333840;padding:16px 0 14px"><div class="D" style="font-size:52px;color:{AC}">{E(pl)}</div><div style="font:600 32px \'IBM Plex Sans\';margin-top:6px">{E(h)}</div></div>' for pl, h in sp["cover"])
-            return f'''<div class="s dark" style="padding:0">
+            # "photo-sunday": the same layout on a light panel with red place names and the "+ Still waiting" tag.
+            sun = style == "photo-sunday"
+            # Light panel: the photo keeps a dark lower edge (no fade to white) so the white date stays readable.
+            rule, place, fade = ("#d9dcd8", RED, "rgba(0,0,0,.7)") if sun else ("#333840", AC, INK)
+            tag = f' · <span style="color:{RED}">+ Still waiting</span>' if sun else ""
+            rows = "".join(f'<div style="border-top:2px solid {rule};padding:16px 0 14px"><div class="D" style="font-size:52px;color:{place}">{E(pl)}</div><div style="font:600 32px \'IBM Plex Sans\';margin-top:6px">{E(h)}</div></div>' for pl, h in sp["cover"])
+            return f'''<div class="s {'light' if sun else 'dark'}" style="padding:0">
 <div style="position:relative;height:590px;flex:none"><img src="{E(src_url(p))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(p.get("pos", "center"))}">
-<div style="position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.08) 28%,rgba(0,0,0,.6) 62%,{INK})"></div>
+<div style="position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.08) 28%,rgba(0,0,0,.6) 62%,{fade})"></div>
 <div style="position:absolute;inset:0;padding:80px 110px 30px;display:flex;flex-direction:column">
 <div class="top" style="color:#e6e6e6">{brand("#fff")}<span>1 / {N}</span></div>
 <div style="margin-top:auto"><div class="D" style="font-size:64px;color:{AC}">{day}</div><div class="D" style="font-size:190px;color:#fff">{date}</div></div></div></div>
 <div style="padding:10px 110px 70px;display:flex;flex-direction:column;flex:1">
-<p style="font-size:28px;color:#9ba1aa;margin:0 0 16px;line-height:1.35">{TAGLINE}</p>{rows}
-<div style="margin-top:auto;border-top:2px solid #333840;padding-top:18px;{mono};color:#9ba1aa">{foot} · {E(label(p))} · {E(p["credit"].split(" / ")[0])}, {E(p["licence"])}</div></div></div>'''
+<p style="font-size:28px;color:{'#5b616b' if sun else '#9ba1aa'};margin:0 0 16px;line-height:1.35">{TAGLINE}</p>{rows}
+<div style="margin-top:auto;border-top:2px solid {rule};padding-top:18px;{mono};color:{'#5b616b' if sun else '#9ba1aa'}">{foot}{tag} · {E(label(p))} · {E(p["credit"].split(" / ")[0])}, {E(p["licence"])}</div></div></div>'''
     if style == "paper":
         # Newspaper front: light paper, heavy rules, numbered rows.
         rows = "".join(f'<div style="display:grid;grid-template-columns:86px 1fr;gap:8px;border-top:2px solid {INK};padding:18px 0 16px"><div class="D" style="font-size:64px;color:{RED}">{k:02d}</div><div><div class="D" style="font-size:52px">{E(pl)}</div><div style="font:400 33px \'IBM Plex Sans\';margin-top:6px;color:#3a3f47">{E(h)}</div></div></div>' for k, (pl, h) in enumerate(sp["cover"], 1))
@@ -376,7 +387,7 @@ def daily(date, out):
     slides = [cover(dt, sp, by, N)]
     for k, st in enumerate(sp["stories"], 2):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
-        p = by.get(st.get("n"), {}).get("photo")
+        p = pic(st, by)
         if p and not big_enough(p):
             print(f"note: photo for item {st['n']} is too small for a slide; showing its key figure instead", file=sys.stderr)
             p = None

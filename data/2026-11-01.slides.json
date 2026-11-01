@@ -1,5 +1,5 @@
 {
- "cover_style": "sunday",
+ "cover_style": "photo-sunday",
  "cover": [
   [
    "Pakistan",
@@ -32,7 +32,19 @@
     "Law minister says the judiciary is independent."
    ],
    "src": "Al Jazeera · HRW · Amnesty",
-   "caption": "Human Rights Watch reports the Supreme Court had suspended their earlier sentences on 17 September; the couple deny the charges."
+   "caption": "Human Rights Watch reports the Supreme Court had suspended their earlier sentences on 17 September; the couple deny the charges.",
+   "photo": {
+    "src": "images/2026-11-01/islamabad.webp",
+    "alt": "Faisal Mosque in Islamabad lit at dusk, with the city's lights spread out behind it.",
+    "caption": "Islamabad at dusk in 2014, with Faisal Mosque in front.",
+    "credit": "Abdul Baqi / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Faisal_Masjid_From_Damn_e_koh.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "resized"
+   }
   },
   {
    "n": 102,
@@ -47,7 +59,19 @@
     "Govt cites public order; police did not answer press questions."
    ],
    "src": "Assam Tribune · The Wire",
-   "caption": "The Wire says it sent questions to Assam Police on 28 and 29 October and received no response."
+   "caption": "The Wire says it sent questions to Assam Police on 28 and 29 October and received no response.",
+   "photo": {
+    "src": "images/2026-11-01/kaziranga.webp",
+    "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",
+    "caption": "Grassland in Kaziranga National Park, Assam, in 2023.",
+    "credit": "Shyamal / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaziranga_habitat_20231221_084943.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   }
   },
   {
    "n": 103,
@@ -62,7 +86,19 @@
     "Judge reportedly refused a hospital transfer; Iran did not reply to CPJ."
    ],
    "src": "CPJ · Iran International",
-   "caption": "CPJ reports that 20 of the 26 years are for \"media activities\", and that he is held in Greater Tehran Prison."
+   "caption": "CPJ reports that 20 of the 26 years are for \"media activities\", and that he is held in Greater Tehran Prison.",
+   "photo": {
+    "src": "images/2026-11-01/tehran.webp",
+    "alt": "Tehran's buildings and a highway below snow-capped mountains under clouds.",
+    "caption": "Tehran with the Alborz mountains behind, in 2015.",
+    "credit": "Mhsheikholeslami / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tehran_skyline-_Alborz_Mountains_on_background-20150401.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   }
   },
   {
    "n": 104,
@@ -77,7 +113,19 @@
     "The chief minister has offered talks."
    ],
    "src": "Arunachal Times · Mongabay · Scroll",
-   "caption": "Arunachal Times names them as Adum Tayom, Omak Paron, Okut Paloh and Oson Paron."
+   "caption": "Arunachal Times names them as Adum Tayom, Omak Paron, Okut Paloh and Oson Paron.",
+   "photo": {
+    "src": "images/focus/siang/siang-river-2019.webp",
+    "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+    "caption": "The Siang river in Arunachal Pradesh. The proposed Siang Upper Multipurpose Project would dam this river.",
+    "credit": "ঈশান জ্যোতি বৰা / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_in_Arunachal_Pradesh.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   }
   }
  ]
 }
