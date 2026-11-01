@@ -136,6 +136,13 @@ organisers' count as a range.
   newest marked "Latest" and older ones folded under "Show earlier updates". tools/focus.py does this automatically
   from "date". Keep background paragraphs undated and current; put every new development in a dated paragraph. A
   dated paragraph's "fig"/"figcap" shows under its text.
+- VISUAL LAYOUT (pilot on indonesia-haze, 1 Nov 2026; the owner reviews Focus stories every Saturday before it is
+  rolled out further): a Focus with "summary" shows three answer-first cards (What's happening / Why it matters /
+  What's next, each ≤ 25 words, sourced), and a paragraph with "takeaway" becomes a block: one visual (photo, simple bar
+  chart, dot diagram, map from data/focus/maps/SLUG.json via `node tools/maps.js`, or the key figure), a one-sentence
+  takeaway, and the full paragraph folded under "More detail and sources". See the header of tools/focus.py. When you
+  update a Focus that uses it, keep the summary cards current and give every new paragraph a takeaway and a visual.
+  Charts only compare like with like (same source, same measure); map pins mark only places our sources name.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
 ## STEP 5. Publish the edition

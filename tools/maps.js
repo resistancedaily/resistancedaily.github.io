@@ -35,7 +35,10 @@ function render(points, opts) {
   return `<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="${opts.aria}"><path class="land" d="${land}"/>${pins}</svg>`;
 }
 
-const out = {
+// Focus maps: {"custom": {"points": [...], "box": [lon0, lon1, lat0, lat1], "w", "h", "aria"}} -> {"custom": svg}.
+// A point with an empty "n" draws a small dot instead of a numbered pin.
+const c = items.custom;
+const out = c ? { custom: render(c.points, { w: c.w || 860, h: c.h || 520, land: land50, minPad: 1, r: c.r || 9, box: c.box, aria: c.aria || 'Map' }) } : {
   india: render(items.india, { w: 380, h: 340, land: land50, minPad: 3, r: 14, box: [68, 97, 8, 35], aria: 'Map of India with numbered locations' }),
   world: render(items.world, { w: 860, h: 440, land: land110, minPad: 8, r: 16, aria: 'World map with numbered locations' }),
 };

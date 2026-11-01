@@ -1,0 +1,76 @@
+{
+ "custom": {
+  "w": 860,
+  "h": 600,
+  "r": 9,
+  "box": [
+   98,
+   127,
+   -10,
+   15.5
+  ],
+  "aria": "Map of Southeast Asia: fire areas in Kalimantan and Sumatra, and the countries the smoke has reached",
+  "points": [
+   {
+    "n": "",
+    "lon": 113.92,
+    "lat": -2.21,
+    "sev": "red",
+    "label": "Palangka Raya"
+   },
+   {
+    "n": "",
+    "lon": 117.15,
+    "lat": -0.5,
+    "sev": "red",
+    "label": "Samarinda"
+   },
+   {
+    "n": "",
+    "lon": 101.45,
+    "lat": 0.0,
+    "sev": "red",
+    "label": "Sumatra",
+    "left": true
+   },
+   {
+    "n": "",
+    "lon": 101.69,
+    "lat": 3.14,
+    "sev": "grey",
+    "label": "Malaysia",
+    "left": true
+   },
+   {
+    "n": "",
+    "lon": 103.82,
+    "lat": 1.35,
+    "sev": "grey",
+    "label": "Singapore"
+   },
+   {
+    "n": "",
+    "lon": 114.94,
+    "lat": 4.9,
+    "sev": "grey",
+    "label": "Brunei"
+   },
+   {
+    "n": "",
+    "lon": 125.57,
+    "lat": -8.56,
+    "sev": "grey",
+    "label": "Timor-Leste",
+    "left": true
+   },
+   {
+    "n": "",
+    "lon": 120.98,
+    "lat": 14.6,
+    "sev": "grey",
+    "label": "Philippines",
+    "left": true
+   }
+  ]
+ }
+}

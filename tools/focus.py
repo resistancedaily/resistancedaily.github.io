@@ -21,7 +21,15 @@ data/focus/SLUG.json:
   "whats_new": {"date": "YYYY-MM-DD", "text": "..."}, # optional: 1-2 sentences on the latest development, shown at the top
   "published": "YYYY-MM-DD",                          # optional: first published (default: earliest edition)
   "layout": "chapters",                               # optional: pair story[i] with photos[i+1] instead of a gallery
-  "numbers_photo": 0, "end_photo": 0 }                # optional: photo indexes for the slides' key-numbers and last slide
+  "numbers_photo": 0, "end_photo": 0,                 # optional: photo indexes for the slides' key-numbers and last slide
+  # Visual layout (optional): "summary" puts three answer-first cards under the header, and a paragraph with a
+  # "takeaway" becomes a block: its visual, the one-sentence takeaway, and the full text under "More detail".
+  "summary": [{"label": "What's happening"|"Why it matters"|"What's next", "text" (<= 25 words), "src"}, x3],
+  # story[i]["takeaway"]: one sentence; story[i]["visual"]: {"type": "photo", "i": photo index} |
+  #   {"type": "chart", "title", "bars": [[label, value], ...], "src"} | {"type": "dots", "n", "of", "cap", "src"} |
+  #   {"type": "map", "cap", "src"} (inlines data/focus/maps/SLUG.svg, made by tools/maps.js from data/focus/maps/SLUG.json "custom") | {"type": "fig"}
+  # Photos not used by a block appear in an "In pictures" strip.
+}                # optional: photo indexes for the slides' key-numbers and last slide
 """
 import sys, os, json, html, datetime, glob
 import seo
@@ -97,6 +105,36 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .more-f{display:grid;gap:6px;max-width:66ch}
 .more-f h2{font-size:24px;font-weight:800}
 .more-f ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.sum div{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--accent);border-radius:6px;padding:14px 16px;display:grid;gap:6px;align-content:start}
+.sum b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
+.sum p{font-size:16px;line-height:1.4}
+.blocks{display:grid;gap:30px}
+.blk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center;border-top:1px solid var(--rule);padding-top:22px}
+.blk h3{font:600 21px/1.3 var(--body);margin:0}
+.blk .tx{display:grid;gap:10px}
+.blk details summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)}
+.blk details p{font-size:15.5px;margin-top:8px}
+.blk.wide{grid-template-columns:1fr}
+@media (max-width:680px){.blk{grid-template-columns:1fr}}
+.viz{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:14px;display:grid;gap:10px}
+.viz .t{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bars{display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;align-items:center;font-size:13px;color:var(--muted)}
+.bar i{display:block;height:34px;background:var(--red);border-radius:3px;position:relative;min-width:4px}
+.bar i span{position:absolute;left:8px;top:50%;transform:translateY(-50%);font:800 22px var(--display);color:#fff;white-space:nowrap}
+.dots{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:300px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--chip);border:2px solid var(--rule)}
+.dots i.on{background:var(--red);border-color:var(--red)}
+.viz .big{font:800 56px/0.9 var(--display);color:var(--red)}
+.map{width:100%;height:auto;display:block}
+.land{fill:var(--chip)}
+.pin circle{stroke:var(--paper);stroke-width:2}
+.pin text{font:700 13px var(--body);fill:#fff}
+.pin text.pl{font:600 17px var(--body);fill:var(--ink);paint-order:stroke;stroke:var(--chip);stroke-width:4px}
+.pin.red circle{fill:var(--red)} .pin.grey circle{fill:#7a808a}
+@media (max-width:520px){.pin text.pl{font-size:25px}.pin circle{r:13px}}
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .tl{list-style:none;margin:0;padding:0;display:grid;gap:0;max-width:760px}
 .tl li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;position:relative;padding:0 0 22px}
 .tl li:before{content:"";position:absolute;left:90px;top:6px;bottom:0;width:2px;background:var(--rule)}
@@ -154,6 +192,62 @@ def figure(p, prefix="../"):
             f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></figure>')
 
 
+def viz(f, x, used):
+    """The visual for a block (see the docstring); records which photos it uses."""
+    v = x.get("visual") or {"type": "fig"}
+    vs = f'<span class="src">{links(v["src"])}</span>' if v.get("src") else ""
+    t = v["type"]
+    if t == "photo" and v.get("i") is not None and v["i"] < len(f["photos"]):
+        used.add(v["i"])
+        return figure(f["photos"][v["i"]])
+    if t == "chart":
+        mx = max(b[1] for b in v["bars"]) or 1
+        bars = "".join(f'<div class="bar"><span>{E(str(lbl))}</span><i style="width:{max(val / mx * 100, 2):.1f}%"><span>{val:,}</span></i></div>' for lbl, val in v["bars"])
+        return f'<div class="viz"><span class="t">{E(v.get("title", ""))}</span><div class="bars">{bars}</div>{vs}</div>'
+    if t == "dots":
+        dots = "".join(f'<i class="{"on" if k < v["n"] else ""}"></i>' for k in range(v["of"]))
+        return (f'<div class="viz"><div class="big">{v["n"]} in {v["of"]}</div><div class="dots" role="img" aria-label="{v["n"]} of {v["of"]}">{dots}</div>'
+                f'<span class="t">{E(v.get("cap", ""))}</span>{vs}</div>')
+    if t == "map":
+        try:
+            svg = open(os.path.join(root, "data", "focus", "maps", f"{f['slug']}.svg")).read()
+        except OSError:
+            svg = ""
+        return f'<div class="viz">{svg}<span class="t">{E(v.get("cap", ""))}</span>{vs}</div>'
+    if x.get("fig"):
+        return f'<div class="figp"><b>{E(x["fig"])}</b><span>{E(x.get("figcap", ""))}</span></div>'
+    return ""
+
+
+def blocks(f, idx, used):
+    """Visual layout: per paragraph, its visual, the one-sentence takeaway, and the full text folded."""
+    out = []
+    for i in idx:
+        x = f["story"][i]
+        tx = (f'<div class="tx"><h3>{E(x["takeaway"])}</h3>'
+              f'<details><summary>More detail and sources</summary><p>{E(x["text"])} <span class="src">{links(x["src"])}</span></p></details></div>')
+        if (x.get("visual") or {}).get("type") == "map":  # maps need the full width: takeaway first, then the map
+            out.append(f'<div class="blk wide">{tx}{viz(f, x, used)}</div>')
+        else:
+            out.append(f'<div class="blk">{viz(f, x, used)}{tx}</div>')
+    return f'<div class="blocks">{"".join(out)}</div>'
+
+
+def visual_body(f, figs_html, official):
+    used = {0}
+    ph = f["photos"]
+    dated = [(i, x) for i, x in enumerate(f["story"]) if x.get("date")]
+    tl = len(dated) >= 3
+    idx = [i for i, x in enumerate(f["story"]) if not (tl and x.get("date"))]
+    main = blocks(f, idx, used)
+    tl_html = timeline(f, dated, lambda i: "") if tl else ""
+    rest = [p for k, p in enumerate(ph) if k not in used]
+    pics = (f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>In pictures</h2></div><div class="pics">{"".join(figure(p) for p in rest)}</div></section>') if rest else ""
+    return (f'<section class="cover">{figure(ph[0])}</section>\n{figs_html}\n'
+            f'<section style="display:grid;gap:14px"><div class="sec-h"><h2>{"The background" if tl else "The story"}</h2></div>{main}</section>\n'
+            f'{tl_html}\n{pics}\n<section style="display:grid;gap:14px">{official}</section>')
+
+
 SHOW_LATEST = 5  # timeline entries shown before "Show earlier updates"
 
 
@@ -179,6 +273,8 @@ def timeline(f, dated, side_photo):
 
 def body(f, figs, story, official):
     figs_html = f'<section class="figs" aria-label="Key numbers">{figs}</section>' if figs else ''
+    if any(x.get("takeaway") for x in f["story"]):
+        return visual_body(f, figs_html, official)
     dated = [(i, x) for i, x in enumerate(f["story"]) if x.get("date")]
     if len(dated) >= 3:
         # Live story: undated paragraphs are the background, dated ones form the timeline (newest first).
@@ -245,6 +341,8 @@ def page(f, all_f=()):
              f'<meta name="twitter:card" content="summary_large_image">{seo.jsonld(ld)}')
     wn = f.get("whats_new")
     new = (f'<div class="new"><b>What\'s new · {datetime.date.fromisoformat(wn["date"]).strftime("%d %b %Y")}</b><p>{E(wn["text"])}</p></div>' if wn else "")
+    summary = ('<section class="sum" aria-label="The story in brief">' + "".join(
+        f'<div><b>{E(c["label"])}</b><p>{E(c["text"])}</p><span class="src">{links(c["src"])}</span></div>' for c in f["summary"]) + '</section>') if f.get("summary") else ""
     others = [o for o in all_f if o["slug"] != f["slug"]]
     more = ('<section class="more-f"><h2>Other Focus stories</h2><ul>' + "".join(
         f'<li><a href="{E(o["slug"])}.html">{E(o.get("seo_title") or o["title"])}</a></li>' for o in others) + '</ul></section>') if others else ""
@@ -254,6 +352,7 @@ def page(f, all_f=()):
 <header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
 {new}<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
 <a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
+{summary}
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
 {more}
