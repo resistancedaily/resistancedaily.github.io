@@ -34,6 +34,15 @@ Mon = map · Tue = numbers · Wed = ledger · Thu = front · Fri = clock · Sat 
   Choose cases by severity and by how much they need attention, not to balance numbers. Include Indian cases that matter,
   and keep looking worldwide: long detentions anywhere are equally important. Save the updated list back to
   data/cases.json and include it as "cases" in data.json.
+- TODAY ON THE MAP + RIGHTS COLOURS (owner's request, 1 Nov 2026), every design: give every item "lon" and "lat" (the
+  place in "place"; for a country-wide story, its capital or the main city named). publish.py then builds
+  data/DATE.items.json and data/DATE.maps.json itself and shows India and world maps at the top, whose numbered pins
+  jump to each story; on map days keep passing data/DATE.maps.json as before. Pins in the same city overlap: add
+  "map": {"dx", "dy"} (about ±13) to spread them, "label": "" on all but one, and "left": true / "pos": "br" to move a
+  label. Check the strip in the screenshots. Rights show as coloured chips automatically; use the usual right names
+  (Life & safety, Assembly, Expression, Press freedom, Due process, Land & livelihood, Civilian harm).
+  No national flags: several places we cover are disputed (Gaza and the West Bank, Kashmir, Tibet, Abyei), and our
+  maps show land only, with no political borders.
 Never hand-edit the generated layout or add charts.
 
 ## EDITORIAL STANDARDS (most important)

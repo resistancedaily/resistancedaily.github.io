@@ -443,7 +443,15 @@
     ]
    ],
    "focus": "siang",
-   "n": 1
+   "n": 1,
+   "lon": 77.21,
+   "lat": 28.6,
+   "map": {
+    "dx": -13,
+    "dy": -13,
+    "label": "Delhi",
+    "left": true
+   }
   },
   {
    "region": "india",
@@ -467,7 +475,9 @@
      "https://indianexpress.com/article/india/manipur-noney-district-violence-kekru-naga-three-kuki-zo-men-killed-10945215/"
     ]
    ],
-   "n": 2
+   "n": 2,
+   "lon": 93.55,
+   "lat": 24.85
   },
   {
    "region": "india",
@@ -488,7 +498,14 @@
      "https://www.thehindu.com/news/cities/Delhi/mangolpuri-factory-fire-families-recall-workers-final-calls-two-management-members-arrested-for-culpable-homicide-negligence/article71649133.ece"
     ]
    ],
-   "n": 3
+   "n": 3,
+   "lon": 77.08,
+   "lat": 28.7,
+   "map": {
+    "dx": 13,
+    "dy": -13,
+    "label": ""
+   }
   },
   {
    "region": "india",
@@ -512,7 +529,12 @@
      "https://www.deccanherald.com/india/karnataka/bengaluru/playwright-addanda-cariappa-attacked-with-ink-during-play-in-bengaluru-4202909"
     ]
    ],
-   "n": 4
+   "n": 4,
+   "lon": 77.57,
+   "lat": 12.93,
+   "map": {
+    "pos": "br"
+   }
   },
   {
    "region": "india",
@@ -533,7 +555,14 @@
      "https://maktoobmedia.com/post?id=116828&slug=twelve-years-of-journalism-wiped-off-the-internet-overnight-paranjoy-guha-thakurtas-website-taken-down-after-indiabulls-founders-legal-notices"
     ]
    ],
-   "n": 5
+   "n": 5,
+   "lon": 77.21,
+   "lat": 28.62,
+   "map": {
+    "dx": -13,
+    "dy": 13,
+    "label": ""
+   }
   },
   {
    "region": "india",
@@ -554,7 +583,14 @@
      "https://maktoobmedia.com/post?id=116830&slug=nail-fitted-batons-pellets-and-locked-exits-peoples-tribunal-says-delhi-police-set-out-to-crush-july-neet-protests-not-disperse-them"
     ]
    ],
-   "n": 6
+   "n": 6,
+   "lon": 77.22,
+   "lat": 28.61,
+   "map": {
+    "dx": 13,
+    "dy": 13,
+    "label": ""
+   }
   },
   {
    "region": "world",
@@ -580,7 +616,12 @@
     ]
    ],
    "n": 7,
-   "focus": "sudan-war"
+   "focus": "sudan-war",
+   "lon": 24.88,
+   "lat": 12.05,
+   "map": {
+    "left": true
+   }
   },
   {
    "region": "world",
@@ -605,7 +646,9 @@
      "https://www.timesofisrael.com/liveblog-october-31-2026/"
     ]
    ],
-   "n": 8
+   "n": 8,
+   "lon": 34.39,
+   "lat": 31.45
   },
   {
    "region": "world",
@@ -630,7 +673,13 @@
      "https://www.timesofisrael.com/liveblog-october-31-2026/"
     ]
    ],
-   "n": 9
+   "n": 9,
+   "lon": 2.35,
+   "lat": 48.86,
+   "map": {
+    "left": true,
+    "dy": 8
+   }
   },
   {
    "region": "world",
@@ -656,7 +705,13 @@
      "https://www.timesofisrael.com/liveblog-october-31-2026/"
     ]
    ],
-   "n": 10
+   "n": 10,
+   "lon": -0.13,
+   "lat": 51.51,
+   "map": {
+    "left": true,
+    "dy": -6
+   }
   },
   {
    "region": "world",
@@ -677,7 +732,9 @@
      "https://news.un.org/en/story/2026/10/1168716"
     ]
    ],
-   "n": 11
+   "n": 11,
+   "lon": 44.21,
+   "lat": 15.35
   },
   {
    "region": "world",
@@ -702,7 +759,12 @@
      "https://edition.cnn.com/2026/10/31/europe/protests-europe-germany-halloween-intl"
     ]
    ],
-   "n": 12
+   "n": 12,
+   "lon": 13.4,
+   "lat": 52.52,
+   "map": {
+    "dy": -6
+   }
   }
  ],
  "focus": [
