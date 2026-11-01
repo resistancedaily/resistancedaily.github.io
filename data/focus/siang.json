@@ -101,7 +101,12 @@
      "Mongabay India",
      "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
     ]
-   ]
+   ],
+   "takeaway": "The 11,000 MW dam, built by NHPC, would submerge 27 villages, Mongabay India reports, and residents have long opposed it.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
   },
   {
    "text": "The current protests oppose a pre-feasibility study by NHPC at the proposed dam sites, one of the last studies before the dam's detailed project report. Early this month protests turned violent: protesters set fire to vehicles and stormed an MLA's house, and police allegedly lathi-charged protesters on 4 October.",
@@ -110,7 +115,12 @@
      "Mongabay India",
      "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
     ]
-   ]
+   ],
+   "takeaway": "Today's protests target the pre-feasibility study, one of the last steps before the dam's detailed project report.",
+   "visual": {
+    "type": "photo",
+    "i": 2
+   }
   },
   {
    "text": "On 9 October four villagers of Geku, Adum Tayom, Omak Paron, Okut Paloh and Oson Paron, were detained under the Arunachal Pradesh Unlawful Activities (Prevention) Act, 2014; their lawyer says the families at first received only notices. On 11 October the district banned gatherings of five or more people, and on 14 October a sessions court gave 13 people named in two police cases interim protection from arrest.",
@@ -322,6 +332,14 @@
     "The Federal",
     "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
    ]
+  ],
+  "points": [
+   "Detention orders cite violence, arson and public safety; police say protesters at Dite-Dime threw stones and defied prohibitory orders.",
+   "On 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property.",
+   "Chief Minister Pema Khandu has offered talks (“The government's doors are always open”) and says the dam is mainly meant to store water in view of China's planned dam upstream.",
+   "On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue.",
+   "On 29 October the state government said current work is only technical and environmental surveys for a feasibility report; the chief minister says it will protect national interests while respecting residents' rights.",
+   "No police comment on the hunger strike, and no Delhi Police response to the 31 October allegations, was reported."
   ]
  },
  "editions": [
@@ -356,5 +374,49 @@
  "whats_new": {
   "date": "2026-11-01",
   "text": "Delhi Police detained protesters outside Arunachal Bhawan on 31 Oct; organisers say about 40 were held and allege sexual assault. No police response was reported. A tribal forum formed a peace committee."
- }
+ },
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Adi villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages; protests turned to arson in Pasighat on 23 October.",
+   "src": [
+    [
+     "Mongabay India",
+     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
+    ],
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/tension-grips-pasighat-as-anti-dam-protesters-vandalise-nhpc-abk-offices-leaders-houses"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "Police say 69 people have been arrested under the state's anti-terror law, and four villagers have been held since 9 October.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
+    ],
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Opponents refuse talks until detainees are freed; the chief minister offers dialogue, and protests have spread to Guwahati and Delhi.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/north-east/arunachal-pradesh/siang-upper-multipurpose-project-sump-dam-project-protests-261160"
+    ],
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/scores-of-anti-sump-citizens-in-delhi-detained-allegedly-tortured"
+    ]
+   ]
+  }
+ ]
 }

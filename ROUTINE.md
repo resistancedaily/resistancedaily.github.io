@@ -136,13 +136,18 @@ organisers' count as a range.
   newest marked "Latest" and older ones folded under "Show earlier updates". tools/focus.py does this automatically
   from "date". Keep background paragraphs undated and current; put every new development in a dated paragraph. A
   dated paragraph's "fig"/"figcap" shows under its text.
-- VISUAL LAYOUT (pilot on indonesia-haze, 1 Nov 2026; the owner reviews Focus stories every Saturday before it is
-  rolled out further): a Focus with "summary" shows three answer-first cards (What's happening / Why it matters /
-  What's next, each ≤ 25 words, sourced), and a paragraph with "takeaway" becomes a block: one visual (photo, simple bar
-  chart, dot diagram, map from data/focus/maps/SLUG.json via `node tools/maps.js`, or the key figure), a one-sentence
-  takeaway, and the full paragraph folded under "More detail and sources". See the header of tools/focus.py. When you
-  update a Focus that uses it, keep the summary cards current and give every new paragraph a takeaway and a visual.
-  Charts only compare like with like (same source, same measure); map pins mark only places our sources name.
+- VISUAL LAYOUT (owner's rule, 1 Nov 2026; every Focus uses it): "summary" = three answer-first cards (What's
+  happening / Why it matters / What's next, each ≤ 25 words, sourced); every undated paragraph has a "takeaway" (one
+  sentence) and a "visual": a photo, a simple bar chart, a dot diagram, a map (data/focus/maps/SLUG.json → `node
+  tools/maps.js data/focus/maps/SLUG.json`, saved as data/focus/maps/SLUG.svg) or the paragraph's key figure. The full
+  paragraph is folded under "More detail and sources"; unused photos go to "In pictures". See the header of
+  tools/focus.py. When you update a Focus, keep the summary cards current, and give every new undated paragraph a
+  takeaway and a visual (dated updates go in the timeline and need neither). Pair a photo only with a paragraph it
+  actually illustrates; otherwise use the key figure. Charts only compare like with like (same source, same measure);
+  map pins mark only places our sources name.
+- OFFICIAL POSITION AS POINTS (owner's rule, 1 Nov 2026): give every Focus "official": {"text", "src", "points"}, with
+  3–6 short bullets that restate the official position (one claim each, quotes kept, plus who has not responded).
+  The page shows the bullets with the shared sources under them; "text" stays for the slides. Update both together.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
 ## STEP 5. Publish the edition

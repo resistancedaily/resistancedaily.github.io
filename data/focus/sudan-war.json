@@ -109,7 +109,12 @@
      "ACLED",
      "https://acleddata.com/methodology/how-interpret-acleds-fatality-records-sudan"
     ]
-   ]
+   ],
+   "takeaway": "The war began in Khartoum on 15 April 2023. ACLED has recorded at least 59,000 deaths and says the real toll is likely higher.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
   },
   {
    "text": "In Darfur, the RSF and allied militias besieged El Fasher for more than 18 months and overran it on 26 October 2025. The UN human rights office says more than 6,000 people were killed in just over three days: at least 4,400 inside the city and more than 1,600 as they fled. It says the real toll is “undoubtedly significantly higher” and that sexual violence was used systematically as a weapon of war.",
@@ -118,7 +123,28 @@
      "AP via OPB",
      "https://www.opb.org/article/2026/02/15/un-says-at-least-6000-killed-over-3-days-during-rsf-attack-on-sudans-el-fasher/"
     ]
-   ]
+   ],
+   "takeaway": "When the RSF overran El Fasher in October 2025, the UN says more than 6,000 people were killed in just over three days.",
+   "visual": {
+    "type": "chart",
+    "title": "People killed in El Fasher in just over three days (UN human rights office)",
+    "bars": [
+     [
+      "In the city",
+      4400
+     ],
+     [
+      "Fleeing",
+      1600
+     ]
+    ],
+    "src": [
+     [
+      "AP via OPB",
+      "https://www.opb.org/article/2026/02/15/un-says-at-least-6000-killed-over-3-days-during-rsf-attack-on-sudans-el-fasher/"
+     ]
+    ]
+   }
   },
   {
    "text": "The war crosses borders. On Monday 19 October 2026 a drone strike on Amiet Market in Abyei, an area claimed by both Sudan and South Sudan, killed at least 153 people, a local official says. South Sudan blames Sudan's army; an unnamed Sudanese officer told AP the army hit fuel tankers bound for the RSF. In November 2025 an RSF drone attack on the Heglig oil facility halted production and exports in parts of Sudan and South Sudan, where oil brings in more than 90% of government revenue.",
@@ -155,7 +181,11 @@
     ]
    ],
    "fig": "4.3M",
-   "figcap": "refugees in neighbouring countries (UNHCR)"
+   "figcap": "refugees in neighbouring countries (UNHCR)",
+   "takeaway": "About 13 million people have been forced from their homes; 4.3 million are refugees abroad.",
+   "visual": {
+    "type": "fig"
+   }
   },
   {
    "text": "Both sides face accusations. In January 2025 the US found that the RSF was committing genocide; in 2025 it also found that Sudan's government had used chemical weapons in 2024, which Sudan denies. The International Criminal Court says it has “concrete evidence” linking RSF leaders to recent war crimes in Darfur. UN-led talks on a ceasefire resumed in Geneva in October 2026 without either warring party at the table.",
@@ -178,7 +208,11 @@
     ]
    ],
    "fig": "Jan 2025",
-   "figcap": "US genocide finding on the RSF"
+   "figcap": "US genocide finding on the RSF",
+   "takeaway": "Both sides face accusations of atrocities, and ceasefire talks resumed without either warring party.",
+   "visual": {
+    "type": "fig"
+   }
   },
   {
    "text": "Drone strikes are intensifying. On 25 October the UN human rights office said strikes attributed to both the army and the RSF killed at least 306 people in the first three weeks of October 2026. The deadliest it listed hit a transport truck at Dibab, West Kordofan, on 18 October, killing at least 139. UN rights chief Volker Türk said drones have caused most of Sudan's conflict-related civilian deaths this year.",
@@ -276,6 +310,13 @@
     "Al Jazeera",
     "https://aljazeera.com/features/2026/10/30/sudan-investigation-maps-commanders-linked-wartime-rape"
    ]
+  ],
+  "points": [
+   "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan.",
+   "The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale.",
+   "The RSF and its allies have formed a parallel government in areas they hold.",
+   "The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
+   "Neither the RSF nor the army responded to Al Jazeera on the sexual-violence findings; both have previously denied such abuses."
   ]
  },
  "editions": [
@@ -307,5 +348,45 @@
  "whats_new": {
   "date": "2026-11-01",
   "text": "On 31 Oct the UN Secretary-General condemned escalating drone attacks by both sides in Sudan, after a Nyala market strike that killed at least 102. No army or RSF response was reported."
- }
+ },
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Since April 2023 Sudan's army and the paramilitary RSF have fought a war that has killed at least 59,000 people by one count.",
+   "src": [
+    [
+     "ACLED",
+     "https://acleddata.com/methodology/how-interpret-acleds-fatality-records-sudan"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "About 13 million people have fled their homes, and the UN rights chief says drones have caused most civilian deaths this year.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-drone-strikes-kill-306-in-three-weeks-un-rights-body-says"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "UN-led ceasefire talks resumed in Geneva in October without either side; the army chief rejects negotiations.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168638"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/7/sudans-al-burhan-rejects-talks-vows-to-retake-all-territory-from-rsf"
+    ]
+   ]
+  }
+ ]
 }

@@ -13,7 +13,9 @@ data/focus/SLUG.json:
                                                       # "date" (YYYY-MM-DD) marks a dated update: with 3+ dated paragraphs
                                                       # the page shows "The background" (undated paragraphs) and then a
                                                       # "Timeline" of the dated ones, newest first, older ones folded.
-  "official": {"text", "src": [[name, url], ...]},    # the authorities' position, or that they have not responded
+  "official": {"text", "src": [[name, url], ...],     # the authorities' position, or that they have not responded
+               "points"?: [str | {"text", "src"}]},   # optional: the same position as 3-6 short bullets (strings share "src"), shown on
+                                                      #   the page instead of "text" (the slides keep using "text")
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
   "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
   "seo_title": "...",                                 # optional: the words people search for, used for <title> and
@@ -26,7 +28,7 @@ data/focus/SLUG.json:
   # "takeaway" becomes a block: its visual, the one-sentence takeaway, and the full text under "More detail".
   "summary": [{"label": "What's happening"|"Why it matters"|"What's next", "text" (<= 25 words), "src"}, x3],
   # story[i]["takeaway"]: one sentence; story[i]["visual"]: {"type": "photo", "i": photo index} |
-  #   {"type": "chart", "title", "bars": [[label, value], ...], "src"} | {"type": "dots", "n", "of", "cap", "src"} |
+  #   {"type": "chart", "title", "bars": [[label, value], ...], "unit"?, "src"} | {"type": "dots", "n", "of", "cap", "src"} |
   #   {"type": "map", "cap", "src"} (inlines data/focus/maps/SLUG.svg, made by tools/maps.js from data/focus/maps/SLUG.json "custom") | {"type": "fig"}
   # Photos not used by a block appear in an "In pictures" strip.
 }                # optional: photo indexes for the slides' key-numbers and last slide
@@ -81,6 +83,9 @@ figcaption .cr{display:block;font-size:11.5px}
 .src{font-size:12.5px;color:var(--muted)}
 .official{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:6px;padding:14px 16px;display:grid;gap:6px;max-width:66ch}
 .official b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.opts{margin:0;padding-left:18px;display:grid;gap:8px}
+.opts li{padding-left:2px}
+.opts li::marker{color:var(--muted)}
 ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:160px 1fr;overflow:hidden;text-decoration:none}
 .card img{width:100%;height:100%;min-height:110px;object-fit:cover;background:var(--chip)}
@@ -202,7 +207,7 @@ def viz(f, x, used):
         return figure(f["photos"][v["i"]])
     if t == "chart":
         mx = max(b[1] for b in v["bars"]) or 1
-        bars = "".join(f'<div class="bar"><span>{E(str(lbl))}</span><i style="width:{max(val / mx * 100, 2):.1f}%"><span>{val:,}</span></i></div>' for lbl, val in v["bars"])
+        bars = "".join(f'<div class="bar"><span>{E(str(lbl))}</span><i style="width:{max(val / mx * 100, 2):.1f}%"><span>{val:,}{E(v.get("unit", ""))}</span></i></div>' for lbl, val in v["bars"])
         return f'<div class="viz"><span class="t">{E(v.get("title", ""))}</span><div class="bars">{bars}</div>{vs}</div>'
     if t == "dots":
         dots = "".join(f'<i class="{"on" if k < v["n"] else ""}"></i>' for k in range(v["of"]))
@@ -321,7 +326,16 @@ def page(f, all_f=()):
     figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", []))
     story = "".join(f'<p>{E(s["text"])} <span class="src">{links(s["src"])}</span></p>' for s in f["story"])
     off = f.get("official")
-    official = f'<div class="official"><b>Official position</b><p>{E(off["text"])} <span class="src">{links(off["src"])}</span></p></div>' if off else ""
+    if off and off.get("points"):
+        # A point is a string (sources shared, listed once under the bullets) or {"text", "src"} with its own sources.
+        lis = "".join(f'<li>{E(pt)}</li>' if isinstance(pt, str) else f'<li>{E(pt["text"])} <span class="src">{links(pt["src"])}</span></li>'
+                      for pt in off["points"])
+        shared = f'<span class="src">Sources: {links(off["src"])}</span>' if any(isinstance(pt, str) for pt in off["points"]) else ""
+        official = f'<div class="official"><b>Official position</b><ul class="opts">{lis}</ul>{shared}</div>'
+    elif off:
+        official = f'<div class="official"><b>Official position</b><p>{E(off["text"])} <span class="src">{links(off["src"])}</span></p></div>'
+    else:
+        official = ""
     eds = " · ".join(f'<a href="../archive/{d}.html">{datetime.date.fromisoformat(d).strftime("%a %d %b")}</a>' for d in sorted(f.get("editions", []), reverse=True))
     first = f["photos"][0]["src"] if f["photos"] else ""
     # Link previews: a 1200x630 JPEG cut from the cover photo (falls back to the .webp if Pillow is missing).
