@@ -267,10 +267,12 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     one YouTube) and rotate so no platform is skipped for long.
   - WHAT TO COMMENT ON (owner's rule, 1 Nov 2026): not only Focus stories. In priority order: (1) Focus stories
     that are actively developing (e.g. Siang, Sudan), preferring the Focus updated today; (2) any story in today's
-    edition; (3) ongoing "Still waiting" cases. Find recent posts or videos (ideally from the last 48 hours) by
+    edition; (3) ongoing "Still waiting" cases. Find posts or videos by
     credible outlets or organisations (e.g. BBC News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News,
     Amnesty, HRW) on those stories. Skip partisan accounts, politicians' and parties' accounts, and posts about
-    unrelated topics.
+    unrelated topics. RECENCY (owner's rule, 1 Nov 2026): prefer posts from the last 48 hours, but older posts that
+    are still relevant are welcome (people keep finding and reading them), especially for ongoing stories; list
+    recent ones first and give each post's age.
   - HOW MANY: about 6–10 drafts a day in total across Instagram, Facebook, X and YouTube, listed in priority order
     so the owner can stop wherever they like. To stay clear of spam filters: at most 2 comments a day under any one
     outlet's posts, every comment written fresh with a fact the post doesn't already give, and a note at the top of
@@ -287,7 +289,7 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     allowed_domains ["instagram.com"], ["facebook.com"] or ["x.com"] and the story's key words (place, issue,
     outlet name); results show the post's text and account even though the post can't be opened. Google itself
     shows a robot check to this server, so don't scrape it. An X post's date can be read from its status ID:
-    UTC time = ((ID >> 22) + 1288834974657) ms since 1970. Use it to keep to the last 48 hours. Instagram and Facebook
+    UTC time = ((ID >> 22) + 1288834974657) ms since 1970. Use it to give each post's age and put recent posts first. Instagram and Facebook
     are indexed less, so when nothing turns up, fall back to the outlet's article and "Look for: …" as above.
   - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
     platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
