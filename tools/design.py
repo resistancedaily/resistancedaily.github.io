@@ -163,7 +163,7 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .fcard .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
 .fcard h3{font:800 30px/0.95 var(--display);text-transform:uppercase;text-wrap:balance}
 .fcard p{font-size:14px;color:var(--muted)}
-@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{aspect-ratio:16/9;min-height:0}}
+@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{height:auto;aspect-ratio:16/9;min-height:0}}
 """
 
 DESIGN_CSS = {
