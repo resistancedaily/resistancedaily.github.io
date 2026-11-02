@@ -1,0 +1,386 @@
+{
+ "date": "2026-11-02",
+ "date_long": "Mon 2 Nov 2026",
+ "date_short": "Mon 2 Nov",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-02",
+ "items": [
+  {
+   "region": "india",
+   "place": "Alamganj, Dhubri district, Assam",
+   "short": "Dhubri",
+   "rights": [
+    "Land & livelihood",
+    "Shelter"
+   ],
+   "sev": "orange",
+   "fig": "4,000+",
+   "figcap": "displaced",
+   "headline": "Dhubri eviction drive displaces over 4,000 people",
+   "text": "Authorities in Assam's Dhubri district demolished the homes of more than 640 Bengali Muslim families on Sunday, displacing over 4,000 people, officials told Scroll. The district commissioner said the land is meant for an industrial park and claimed most residents have land elsewhere; one resident says he has lived there since 1962.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096794/assam-over-4000-evicted-after-homes-of-640-bengali-muslim-families-demolished-in-dhubri"
+    ]
+   ],
+   "lon": 89.98,
+   "lat": 26.02,
+   "photo": {
+    "src": "images/2026-11-02/dhubri.webp",
+    "alt": "A street with a building under construction wrapped in bamboo scaffolding, an auto-rickshaw, a cow and a few people walking.",
+    "caption": "A street near Melamaidan in Dhubri town, in 2024. Sunday's eviction was in Alamganj village in the district.",
+    "credit": "Plentyhabib19 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dhubri_City_Street_View.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "map": {
+    "left": true
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Senapati district, Manipur",
+   "short": "Senapati",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "68",
+   "figcap": "killed since Feb",
+   "headline": "Two missing Kuki men found dead in Manipur",
+   "text": "Manipur Police said on Sunday that two Kuki civilians missing from Taphou Kuki village since Wednesday were found dead, Scroll reports, taking deaths in Naga-Kuki clashes since February to 68. Naga groups led by the NPO question the recovery's timeline and seek an impartial inquiry; no police response to them was reported.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096789/manipur-three-kuki-men-killed-in-gunfight-between-armed-groups"
+    ],
+    [
+     "Northeast Now",
+     "https://nenow.in/north-east-news/manipur/manipur-npo-questions-circumstances-surrounding-recovery-of-two-kuki-bodies-in-senapati.html"
+    ]
+   ],
+   "lon": 94.02,
+   "lat": 25.27,
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Ujjain-Dewas Road, Ujjain, Madhya Pradesh",
+   "short": "Ujjain",
+   "rights": [
+    "Life & safety",
+    "Land & livelihood"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "workers died",
+   "headline": "Four workers die in Ujjain hotel waste chamber",
+   "text": "Four men died of suspected suffocation late on Saturday inside a food-waste chamber at a hotel on the Ujjain-Dewas Road, and two who tried to rescue them fell ill. Police are investigating, officials are checking whether safety precautions were in place, and the state announced ₹4 lakh for each family.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/ujjain-shri-ganga-hotel-four-workers-die-food-waste-chamber-toxic-gas-suffocation-mohan-yadav-10946253/"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/madhya-pradesh/several-dead-of-suspected-suffocation-while-cleaning-waste-chamber-in-madhya-pradesh-ujjain-hotel/article71652480.ece"
+    ]
+   ],
+   "lon": 75.78,
+   "lat": 23.18,
+   "photo": {
+    "src": "images/2026-11-02/ujjain.webp",
+    "alt": "A busy street junction with barricades, people sitting by the roadside, shops and billboards under a hazy sky.",
+    "caption": "A street in front of the Mahakaleshwar Temple in Ujjain, in 2013.",
+    "credit": "Bernard Gagnon / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ujjain_01.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Saidongar, Karjat, Raigad district, Maharashtra",
+   "short": "Karjat",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "~150",
+   "figcap": "families unrecorded",
+   "headline": "Karjat forest families left out of project clearance",
+   "text": "About 150 mostly Katkari families who live off Saidongar forest were never recorded as forest-dependent, so a 3,000 MW Torrent Power project was cleared with no rehabilitation planned, The Indian Express found. About 1,100 trees were felled before a pause; a forest officer says the gram sabha never submitted records.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/karjat-pumped-storage-project-torrent-power-forest-felling-western-ghats-tribals-10946476/"
+    ]
+   ],
+   "lon": 73.33,
+   "lat": 18.91,
+   "map": {
+    "left": true
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Blue Nile state, Sudan",
+   "short": "Blue Nile",
+   "rights": [
+    "Life & safety",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "27,400",
+   "figcap": "displaced",
+   "headline": "Blue Nile's displaced short of food, medicine",
+   "text": "Displaced people in Sudan's Blue Nile state told Radio Tamazuj on Sunday that aid falls short as food and medicines run low and disease spreads. The state aid commissioner puts the displaced at about 27,400 (Dabanga reports the figure as families) and says WFP and others are delivering food, cash and hygiene kits.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/idps-face-food-medicine-shortages-in-blue-nile"
+    ],
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/sudan-war-intense-fighting-in-blue-nile-drives-fresh-displacement"
+    ]
+   ],
+   "lon": 34.36,
+   "lat": 11.79,
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street in Damazin, capital of Blue Nile state, where many of the state's displaced people shelter in camps.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "focus": "sudan-war",
+   "map": {
+    "left": true
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Gaza City and al-Mawasi, Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "8",
+   "figcap": "killed Sunday",
+   "headline": "Israeli strikes kill eight in Gaza, hospitals say",
+   "text": "Hospitals said Israeli strikes on Sunday killed three people, including a four-year-old boy, near a school in Gaza City, and five police officers in al-Mawasi, Khan Younis. The Israeli military said it struck military operatives but gave no details; Gaza's health ministry counts 1,580 killed since the ceasefire.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo"
+    ]
+   ],
+   "lon": 34.45,
+   "lat": 31.5,
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "map": {
+    "left": true,
+    "dx": -12,
+    "dy": 10
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Hebron, occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Land & livelihood",
+    "Movement"
+   ],
+   "sev": "grey",
+   "fig": "~5,000",
+   "figcap": "displaced",
+   "headline": "Hebron operation has displaced almost 5,000",
+   "text": "Al Jazeera reported on Sunday that almost 5,000 people have been displaced since Israel's military operation in Hebron began on 23 October, after two Israeli soldiers were shot. UNICEF counts over 480 families displaced, including more than 1,800 children. Israel's defence minister says residents cannot return until operations end.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege"
+    ],
+    [
+     "UNICEF via ReliefWeb",
+     "https://reliefweb.int/report/occupied-palestinian-territory/unicef-state-palestine-humanitarian-situation-update-hebron-30-october-2026"
+    ],
+    [
+     "AP via KATV",
+     "https://katv.com/news/nation-world/israeli-forces-lock-down-hebron-displace-up-to-2200-after-attack-kills-2-soldiers"
+    ]
+   ],
+   "lon": 35.1,
+   "lat": 31.53,
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, years before the current operation.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   },
+   "map": {
+    "dx": 12,
+    "dy": -12
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Kambove, Haut-Katanga, DR Congo",
+   "short": "Kambove",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "500+",
+   "figcap": "detained",
+   "headline": "Congo police detain over 500 at Kambove mine",
+   "text": "Police in Haut-Katanga said more than 500 people were detained in a special operation at the Kambove mining site near Likasi, Actualité.cd reported on Sunday. The provincial police chief said it targeted people illegally occupying public-service roles at the site; no charges or access to lawyers were reported.",
+   "src": [
+    [
+     "Actualité.cd",
+     "https://actualite.cd/2026/11/01/haut-katanga-vaste-operation-policiere-plus-de-500-personnes-interpellees-kambove"
+    ]
+   ],
+   "lon": 26.6,
+   "lat": -10.87,
+   "photo": {
+    "src": "images/focus/congo-mines/kamatanda-miner-2014.webp",
+    "alt": "A miner covered in grey dust, wearing a head lamp, seen from behind as he stands among a crowd of other miners.",
+    "caption": "A miner at Kamatanda, near Likasi in Congo's southern mining belt. Kambove lies about 30 km from Likasi.",
+    "credit": "MONUSCO / Myriam Asmani / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Photo_of_the_Day,_11_February_2014_(12457257263).jpg",
+    "kind": "file",
+    "year": "2014"
+   },
+   "focus": "congo-mines",
+   "map": {
+    "pos": "br"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Vinnytsia and Kherson regions, Ukraine",
+   "short": "Ukraine",
+   "rights": [
+    "Civilian harm",
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "killed",
+   "headline": "Russian strikes cut power as Kherson truce ends",
+   "text": "President Zelensky said Russian strikes on energy sites in four regions overnight into Sunday left hundreds of thousands of homes without power; a strike killed two, including a girl of 13, in Vinnytsia region. A six-day local truce around Oleshky in Kherson ended Sunday night. No Russian comment on the strikes was reported.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c64g1y90p71eo"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/1/ukraine-evacuates-civilians-in-kherson-region-as-localised-ceasefire-ends"
+    ]
+   ],
+   "lon": 28.47,
+   "lat": 49.23,
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Western Australia",
+   "short": "Perth",
+   "rights": [
+    "Privacy",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "1.38M",
+   "figcap": "faces scanned",
+   "headline": "WA police face-scanning trial checked 1.38 million faces",
+   "text": "Western Australia Police said a five-month live facial-recognition trial that ended on Saturday scanned 1,380,882 faces, leading to 122 arrests and nine false alerts. The commissioner said no one wrongly flagged was arrested; Civil Liberties Australia criticised how police presented the error rate.",
+   "src": [
+    [
+     "Guardian",
+     "https://www.theguardian.com/australia-news/2026/nov/02/wa-police-facial-recognition-technology-trial"
+    ]
+   ],
+   "lon": 115.86,
+   "lat": -31.95,
+   "map": {
+    "left": true
+   },
+   "n": 10
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since April 2023 Sudan's war has killed at least 59,000 people by one count and driven about 13 million from their homes. In Blue Nile state, displaced people now say aid falls short as food and medicines run low.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

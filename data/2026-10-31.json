@@ -1,0 +1,343 @@
+{
+ "date": "2026-10-31",
+ "date_long": "Sat 31 Oct 2026",
+ "date_short": "Sat 31 Oct",
+ "window": "Fri 09:00 → Sat 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "items": [
+  {
+   "n": 1,
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "4.5 yrs",
+   "figcap": "held before bail",
+   "headline": "Supreme Court upholds bail for Khurram Parvez",
+   "text": "The Supreme Court on Friday dismissed the NIA's challenge to bail for Kashmiri activist Khurram Parvez in a UAPA terror-funding case, citing his long incarceration since his November 2021 arrest. The High Court had granted bail in July after nearly four and a half years; the NIA's arguments were not reported.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/supreme-court-dismisses-nias-plea-challenging-bail-of-kashmiri-activist-khurram-parvez-in-uapa-case-556619"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, which ruled on the bail on Friday.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "n": 2,
+   "region": "india",
+   "place": "Hulimangala, near Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "19",
+   "figcap": "arrested",
+   "headline": "Vigilante group confronts migrant workers; 19 held",
+   "text": "Members of the group Rashtra Rakshana Pade entered a shed housing labourers in Hulimangala, near Bengaluru, on 28 October, accusing them of being illegal Bangladeshi migrants, and a fight followed. Police arrested 19 people from both sides on complaints and counter-complaints; a police release says the workers maintain they are from West Bengal.",
+   "src": [
+    [
+     "Deccan Chronicle",
+     "https://www.deccanchronicle.com/southern-states/karnataka/rashtra-rakshana-pade-attacks-west-bengal-workers-in-bengaluru-19-held-2000212"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-31/hebbagodi.webp",
+    "alt": "A metro station entrance with a blue sign reading Biocon Hebbagodi in Kannada and English, above half-closed shutters and a steel railing.",
+    "caption": "Biocon Hebbagodi metro station on Bengaluru's southern edge, in the area where the clash took place.",
+    "credit": "Sameer2905 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Biocon_Hebbagodi_metro_station_(July_%2725)_-_1.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 3,
+   "region": "india",
+   "place": "Guwahati, Assam",
+   "short": "Guwahati",
+   "rights": [
+    "Assembly",
+    "Land"
+   ],
+   "sev": "grey",
+   "fig": "69",
+   "figcap": "Arunachal arrests",
+   "headline": "Guwahati protest backs Siang dam opponents",
+   "text": "Citizens protested outside Nehru Park in Guwahati on Friday against the Upper Siang dam in Arunachal Pradesh, demanding the release of arrested Adi leaders and protesters. Arunachal police report 69 arrests after the 23 October violence; no official response to the Guwahati protest was reported.",
+   "src": [
+    [
+     "Assam Tribune",
+     "https://assamtribune.com/guwahati/citizens-in-guwahati-oppose-upper-siang-dam-seek-release-of-arrested-leaders-1621614"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
+    ]
+   ],
+   "focus": "siang",
+   "photo": {
+    "src": "images/2026-10-31/saraighat.webp",
+    "alt": "A long lit bridge stretching across a wide, calm river at dusk, with hills on the far bank.",
+    "caption": "The Saraighat Bridge over the Brahmaputra at Guwahati. The Siang flows into the Brahmaputra downstream of the proposed dam.",
+    "credit": "Vikramjit Kakati / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Saraighat_Bridge,_Guwahati,_Assam,_India.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 4,
+   "region": "world",
+   "place": "Darfur, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "25",
+   "figcap": "named",
+   "headline": "Investigators name 25 commanders over wartime rape",
+   "text": "The Centre for Information Resilience, a UK open-source group, says it has reasonable grounds to believe 25 commanders of the RSF, the army and allied forces were directly or indirectly responsible for sexual violence at five sites, including El Fasher and Gezira. Neither force responded to Al Jazeera; both have denied such abuses.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/features/2026/10/30/sudan-investigation-maps-commanders-linked-wartime-rape"
+    ]
+   ],
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-27/el-fasher-aerial.webp",
+    "alt": "Rows of low houses and walled compounds on sandy ground, seen from the air.",
+    "caption": "El Fasher seen from the air, years before the war; the city is one of the sites in the investigation.",
+    "credit": "Fraktion DIE LINKE. im Bundestag / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:El_Fasher_in_Darfur_(5412964762).jpg",
+    "kind": "file",
+    "year": "2010"
+   }
+  },
+  {
+   "n": 5,
+   "region": "world",
+   "place": "Gaza City, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Shelter"
+   ],
+   "sev": "red",
+   "fig": "800",
+   "figcap": "displaced",
+   "headline": "UN: Gazans pushed into ever smaller areas",
+   "text": "The UN rights office said on Friday Israeli military zones in Gaza are expanding west, pushing Palestinians into smaller areas; a 25 October drone strike and fire at tents in Al Shujaiyeh displaced about 800 people. Israel has said it aims to deploy across 70 per cent of Gaza; no Israeli comment was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168707"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 6,
+   "region": "world",
+   "place": "Occupied West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety",
+    "Livelihood"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "arrested",
+   "headline": "Olive pickers attacked; two harvesters arrested",
+   "text": "Settlers beat a Palestinian man in Burqa and attacked olive pickers and a foreign activist in Kafr Malik on Friday, where soldiers arrested two Palestinian harvesters, according to reports citing Wafa; troops fired sound grenades at pickers in Al-Lubban Al-Sharqiya. No Israeli military comment was reported.",
+   "src": [
+    [
+     "TRT World",
+     "https://www.trtworld.com/article/adc5e4a08dd3"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-20/olive-harvest-hebron.webp",
+    "alt": "A gloved hand picking purple olives from a branch.",
+    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank.",
+    "credit": "M sh شراونة محمد / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped"
+   }
+  },
+  {
+   "n": 7,
+   "region": "world",
+   "place": "Moscow, Russia",
+   "short": "Moscow",
+   "rights": [
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "9 Nov",
+   "figcap": "last day",
+   "headline": "Novaya Gazeta says it is forced to close",
+   "text": "Novaya Gazeta, Russia's best-known independent newspaper, said on Friday it will close on 9 November because authorities and security services forced it to; it reports being evicted from its Moscow office. UN rights chief Volker Türk called it a devastating blow to independent media. No Kremlin comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/30/russia-forces-closure-of-investigative-newspaper-novaya-gazeta"
+    ],
+    [
+     "Meduza",
+     "https://meduza.io/en/feature/2026/10/30/they-killed-us-russian-independent-newspaper-novaya-gazeta-announces-its-closure-after-decades-of-repression"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168713"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-31/potapovsky.webp",
+    "alt": "A narrow street of pastel-coloured old buildings with snow on the pavements and a few people walking.",
+    "caption": "Potapovsky Lane in central Moscow, where Novaya Gazeta says it has been evicted from its office.",
+    "credit": "Artyom Svetlov / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Potapovsky_Lane_2024-02_1708881068.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 8,
+   "region": "world",
+   "place": "Kathmandu, Nepal",
+   "short": "Kathmandu",
+   "rights": [
+    "Press freedom",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "2+",
+   "figcap": "detained",
+   "headline": "Police detain journalists without warrants",
+   "text": "Plainclothes police in Kathmandu took at least two journalists, Bishwamani Subedi of Nepal Press and editor Shovaraj Baral, for questioning on Friday without showing warrants or stating grounds. The Prime Minister's office said it had no prior knowledge and ordered their release; the Press Council demanded the legal basis.",
+   "src": [
+    [
+     "Kathmandu Post",
+     "https://kathmandupost.com/national/2026/10/30/an-attack-on-the-constitution-police-detention-of-journalists-draw-widespread-condemnation"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-31/kathmandu.webp",
+    "alt": "A busy road junction with motorbikes, cars, solar street lights and Nepal's flag, with clouded hills behind.",
+    "caption": "Maitighar Mandala in central Kathmandu.",
+    "credit": "Gunjan Raj Giri / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maitighar_Mandala_kathmandu.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 9,
+   "region": "world",
+   "place": "Eastern DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety",
+    "Livelihood"
+   ],
+   "sev": "orange",
+   "fig": "28.8M",
+   "figcap": "acutely hungry",
+   "headline": "28.8 million face acute hunger in Congo",
+   "text": "About 28.8 million people in DR Congo, 23 per cent of those analysed, face high acute food insecurity through December, a new IPC alert says, with North Kivu, South Kivu and Ituri hardest hit. It cites conflict, displacement, an Ebola outbreak and falling aid. No government response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168708"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-19/mambasa-road.webp",
+    "alt": "Men push bicycles loaded with large sacks along a red dirt road through thick forest.",
+    "caption": "Traders push loaded bicycles on the forest road between Epulu and Mambasa, Ituri, one of the hardest-hit provinces.",
+    "credit": "Radio Okapi / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Des_marchands_tolekistes_entre_Epulu_et_Mambasa,_2005.jpg",
+    "kind": "file",
+    "year": "2005"
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

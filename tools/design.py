@@ -45,6 +45,23 @@ def photo(i, cls="ph"):
 def rights(i):
     return " · ".join(i["rights"])
 
+# Each right gets its own colour, so readers can scan the page by right (owner's request, 1 Nov 2026).
+RIGHT_KIND = {"life": "life", "civilian": "life", "assembly": "assembly", "movement": "assembly", "due": "due", "detention": "due",
+              "expression": "expr", "press": "expr", "land": "land", "livelihood": "land", "displacement": "land", "shelter": "land"}
+
+def chips(i):
+    def kind(r):
+        return RIGHT_KIND.get(r.lower().split()[0].strip("&"), "other")
+    return '<span class="chips">' + "".join(f'<span class="chip k-{kind(r)}">{E(r)}</span>' for r in i["rights"]) + '</span>'
+
+def mapstrip():
+    """"Today on the map": India and world maps with numbered pins that jump to each story (all designs except map)."""
+    if D == "map" or not maps:
+        return ""
+    return (f'<section class="mstrip" aria-labelledby="h-mapstrip"><div class="sec-h"><h2 id="h-mapstrip">Today on the map</h2>'
+            f'<span>Tap a number to jump to the story</span></div><div class="mgrid"><div class="mapbox">{maps.get("india", "")}</div>'
+            f'<div class="mapbox wm">{maps.get("world", "")}</div></div>{KEY}</section>')
+
 CSS = r"""
 :root{
   --bg:#f3f4f2; --paper:#ffffff; --ink:#15181d; --muted:#5b616b; --rule:#d9dcd8;
@@ -78,6 +95,32 @@ p{margin:0}
 .dot{display:inline-block;width:12px;height:12px;border-radius:50%;vertical-align:-1px;margin-right:6px;flex:none}
 .dot.red,.bg-red{background:var(--red)} .dot.orange,.bg-orange{background:var(--orange)} .dot.grey,.bg-grey{background:var(--grey)}
 .c-red{color:var(--red)} .c-orange{color:var(--orange)} .c-grey{color:var(--grey)}
+.chips{display:inline-flex;flex-wrap:wrap;gap:4px;vertical-align:middle}
+.chip{font:600 10.5px/1 var(--mono);text-transform:uppercase;letter-spacing:.04em;padding:4px 7px;border-radius:999px;white-space:nowrap;border:1px solid transparent}
+.k-life{background:#fbe3e0;color:#9a1f17}.k-assembly{background:#e0ebfb;color:#1d4f91}.k-due{background:#ece3f8;color:#5b2d91}
+.k-expr{background:#dff3f0;color:#11655b}.k-land{background:#e4f2e3;color:#2d6a2a}.k-other{background:#f6ecd9;color:#7a5512}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip{background:transparent}
+:root:not([data-theme="light"]) .k-life{color:#ff9d93;border-color:#6b2a24}:root:not([data-theme="light"]) .k-assembly{color:#9cc2ff;border-color:#294a75}
+:root:not([data-theme="light"]) .k-due{color:#cfb2ff;border-color:#4b3473}:root:not([data-theme="light"]) .k-expr{color:#86ddd1;border-color:#245a53}
+:root:not([data-theme="light"]) .k-land{color:#9fdc9a;border-color:#2f5a2c}:root:not([data-theme="light"]) .k-other{color:#f0c97a;border-color:#6a5222}}
+:root[data-theme="dark"] .chip{background:transparent}
+:root[data-theme="dark"] .k-life{color:#ff9d93;border-color:#6b2a24}:root[data-theme="dark"] .k-assembly{color:#9cc2ff;border-color:#294a75}
+:root[data-theme="dark"] .k-due{color:#cfb2ff;border-color:#4b3473}:root[data-theme="dark"] .k-expr{color:#86ddd1;border-color:#245a53}
+:root[data-theme="dark"] .k-land{color:#9fdc9a;border-color:#2f5a2c}:root[data-theme="dark"] .k-other{color:#f0c97a;border-color:#6a5222}
+.mgrid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);gap:10px}
+@media (max-width:620px){.mgrid{grid-template-columns:1fr}}
+.mapbox{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:8px;min-width:0}
+.map{width:100%;height:auto;display:block}
+.land{fill:var(--land)}
+.pin circle{stroke:var(--paper);stroke-width:3}
+.pin text{font:700 15px var(--body);fill:#fff}
+.pin text.pl{font:600 15px var(--body);fill:var(--ink);paint-order:stroke;stroke:var(--land);stroke-width:4px}
+.pin.red circle{fill:var(--red)} .pin.orange circle{fill:var(--orange)} .pin.grey circle{fill:var(--grey)}
+.wm .pin text{font-size:21px}.wm .pin text.pl{font-size:22px}.wm .pin circle{r:20px}
+a.pinl{cursor:pointer} a.pinl:hover circle,a.pinl:focus circle{stroke:var(--ink)}
+[id^="i"]{scroll-margin-top:16px}
+li:target,article:target,div:target{animation:hl 2.4s ease-out}
+@keyframes hl{0%{background:color-mix(in srgb,var(--accent) 22%,transparent)}100%{background:transparent}}
 section{display:grid;gap:12px}
 .sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule);padding-bottom:6px}
 .sec-h h2{font-size:32px;font-weight:800}
@@ -120,7 +163,7 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .fcard .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
 .fcard h3{font:800 30px/0.95 var(--display);text-transform:uppercase;text-wrap:balance}
 .fcard p{font-size:14px;color:var(--muted)}
-@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{aspect-ratio:16/9;min-height:0}}
+@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{height:auto;aspect-ratio:16/9;min-height:0}}
 """
 
 DESIGN_CSS = {
@@ -303,7 +346,7 @@ try{{navigator.clipboard.writeText(t).then(done,fb)}}catch(e){{fb()}}}});}})();
 </script>"""
 
 def item_li(i):
-    return f"""<li class="item"><span class="num bg-{i['sev']}">{i['n']}</span><span><span class="place">{E(i['place'])}</span><span class="right">{E(rights(i))}</span></span><span class="fig c-{i['sev']}">{E(i['fig'])}<small>{E(i['figcap'])}</small></span>
+    return f"""<li class="item" id="i{i['n']}"><span class="num bg-{i['sev']}">{i['n']}</span><span><span class="place">{E(i['place'])}</span>{chips(i)}</span><span class="fig c-{i['sev']}">{E(i['fig'])}<small>{E(i['figcap'])}</small></span>
 <p class="what">{E(i['text'])}</p>{photo(i, "ph what")}<span class="src">{src(i)}</span></li>"""
 
 def design_map():
@@ -315,8 +358,8 @@ def design_map():
 <div class="board world"><div class="mapbox">{maps.get('world','')}</div><ol class="list">{''.join(item_li(i) for i in wor)}</ol></div></section>"""
 
 def design_numbers():
-    tiles = "".join(f"""<div class="tile {i['sev']}">{photo(i)}<span class="big c-{i['sev']}">{E(i['fig'])}</span><span class="cap">{E(i['figcap'])}</span>
-<span class="where"><i class="dot {i['sev']}"></i>{E(i['place'])}</span><span class="right">{E(rights(i))}</span><p>{E(i['text'].split('. ')[0].rstrip('.'))}.</p><span class="src">{src(i)}</span></div>""" for i in items)
+    tiles = "".join(f"""<div class="tile {i['sev']}" id="i{i['n']}">{photo(i)}<span class="big c-{i['sev']}">{E(i['fig'])}</span><span class="cap">{E(i['figcap'])}</span>
+<span class="where"><i class="dot {i['sev']}"></i>{E(i['place'])}</span>{chips(i)}<p>{E(i['text'].split('. ')[0].rstrip('.'))}.</p><span class="src">{src(i)}</span></div>""" for i in items)
     return f"""{KEY}<section aria-labelledby="h-num"><div class="sec-h"><h2 id="h-num">The day in numbers</h2><span>{len(items)} places</span></div><div class="tiles">{tiles}</div></section>"""
 
 RIGHTS = [("Life & safety", "Killings, injuries, attacks on civilians"), ("Assembly", "Protests, marches, gathering bans"),
@@ -349,10 +392,10 @@ def design_ledger():
 def design_front():
     order = sorted(items, key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]], i["n"]))
     lead, seconds, briefs = order[0], order[1:4], order[4:]
-    sec = "".join(f"""<article class="second {i['sev']}">{photo(i)}<span class="right">{E(i['place'])} · {E(rights(i))}</span><span class="big c-{i['sev']}">{E(i['fig'])}</span><h3>{E(i['headline'])}</h3><p>{E(i['text'])}</p><span class="src">{src(i)}</span></article>""" for i in seconds)
-    br = "".join(f"""<li><i class="dot {i['sev']}"></i><span class="place">{E(i['place'])}</span><span>{E(i['headline'])} <span class="src">· {src(i)}</span></span></li>""" for i in briefs)
+    sec = "".join(f"""<article class="second {i['sev']}" id="i{i['n']}">{photo(i)}<span class="right">{E(i['place'])}</span>{chips(i)}<span class="big c-{i['sev']}">{E(i['fig'])}</span><h3>{E(i['headline'])}</h3><p>{E(i['text'])}</p><span class="src">{src(i)}</span></article>""" for i in seconds)
+    br = "".join(f"""<li id="i{i['n']}"><i class="dot {i['sev']}"></i><span class="place">{E(i['place'])}</span><span>{E(i['headline'])} <span class="src">· {src(i)}</span></span></li>""" for i in briefs)
     return f"""{KEY}
-<article class="lead">{photo(lead)}<span class="big c-{lead['sev']}">{E(lead['fig'])}</span><span class="right">{E(lead['place'])} · {E(rights(lead))}</span><h2>{E(lead['headline'])}</h2><p>{E(lead['text'])} <span class="src">{src(lead)}</span></p></article>
+<article class="lead" id="i{lead['n']}">{photo(lead)}<span class="big c-{lead['sev']}">{E(lead['fig'])}</span><span class="right">{E(lead['place'])}</span>{chips(lead)}<h2>{E(lead['headline'])}</h2><p>{E(lead['text'])} <span class="src">{src(lead)}</span></p></article>
 <div class="seconds">{sec}</div>
 <section aria-labelledby="h-br"><div class="sec-h"><h2 id="h-br">Briefly</h2><span>{len(briefs)} more</span></div><ul class="briefs">{br}</ul></section>"""
 
@@ -361,10 +404,10 @@ def design_clock():
     first = {}
     for e in evs:
         first.setdefault(e["n"], e)
-    lis = "".join(f"""<li class="ev"><time>{E(e['t'])}</time><span class="num bg-{by_n[e['n']]['sev']}">{e['n']}</span><div class="body"><span class="place">{E(by_n[e['n']]['place'])} <span class="right">· {E(rights(by_n[e['n']]))}</span></span><p>{E(e['text'])}</p>{photo(by_n[e['n']]) if e is first[e['n']] else ""}<span class="src">{src(by_n[e['n']])}</span></div></li>""" for e in evs)
+    lis = "".join(f"""<li class="ev"{' id="i' + str(e['n']) + '"' if e is first[e['n']] else ''}><time>{E(e['t'])}</time><span class="num bg-{by_n[e['n']]['sev']}">{e['n']}</span><div class="body"><span class="place">{E(by_n[e['n']]['place'])}</span>{chips(by_n[e['n']])}<p>{E(e['text'])}</p>{photo(by_n[e['n']]) if e is first[e['n']] else ""}<span class="src">{src(by_n[e['n']])}</span></div></li>""" for e in evs)
     covered = {e["n"] for e in evs}
     rest = [i for i in items if i["n"] not in covered]
-    restli = "".join(f"""<li class="ev"><time>—</time><span class="num bg-{i['sev']}">{i['n']}</span><div class="body"><span class="place">{E(i['place'])}</span><p>{E(i['headline'])}</p>{photo(i)}<span class="src">{src(i)}</span></div></li>""" for i in rest)
+    restli = "".join(f"""<li class="ev" id="i{i['n']}"><time>—</time><span class="num bg-{i['sev']}">{i['n']}</span><div class="body"><span class="place">{E(i['place'])}</span><p>{E(i['headline'])}</p>{photo(i)}<span class="src">{src(i)}</span></div></li>""" for i in rest)
     return f"""{KEY}<section aria-labelledby="h-clk"><div class="sec-h"><h2 id="h-clk">The last 24 hours</h2><span>Newest first · IST</span></div><ol class="clock">{lis}</ol></section>
 {'<section aria-labelledby="h-also"><div class="sec-h"><h2 id="h-also">Also reported</h2><span>Time not reported</span></div><ol class="clock">'+restli+'</ol></section>' if rest else ''}"""
 
@@ -393,7 +436,7 @@ def design_tracker():
         cs = sorted([c for c in data["cases"] if c.get("region", "india") == key], key=lambda c: -c["days"])
         if cs:
             out.append(f'<h3 class="grp">{label}<span>{len(cs)} case{"s" if len(cs)!=1 else ""}</span></h3>' + "".join(card(c) for c in cs))
-    news = "".join(f"""<li><i class="dot {i['sev']}"></i><span><span class="place">{E(i.get('short', i['place']))}</span> · {E(i['headline'])}</span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><span class="src">{src(i)}</span></li>""" for i in items)
+    news = "".join(f"""<li id="i{i['n']}"><i class="dot {i['sev']}"></i><span><span class="place">{E(i.get('short', i['place']))}</span> · {E(i['headline'])} {chips(i)}</span><span class="fig c-{i['sev']}">{E(i['fig'])}</span><span class="src">{src(i)}</span></li>""" for i in items)
     news_sec = f"""{KEY}<section aria-labelledby="h-news"><div class="sec-h"><h2 id="h-news">Today's news</h2><span>{len(items)} places</span></div><ul class="news">{news}</ul></section>
 """ if items else ""
     return news_sec + f"""<section id="still-waiting" aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2><span>Weekly · days counted to {asof.strftime('%d %b %Y')}</span></div>
@@ -402,4 +445,7 @@ def design_tracker():
 
 TAGS = {"map": "Map edition", "numbers": "Numbers edition", "ledger": "Rights ledger", "front": "Front page", "clock": "24-hour clock", "tracker": "Still waiting · weekly"}
 body = {"map": design_map, "numbers": design_numbers, "ledger": design_ledger, "front": design_front, "clock": design_clock, "tracker": design_tracker}[D]()
-sys.stdout.write(head(TAGS[D]) + body + tail())
+strip = mapstrip()
+if strip:
+    body = body.replace(KEY, "", 1)  # the colour key sits under the map instead
+sys.stdout.write(head(TAGS[D]) + strip + body + tail())

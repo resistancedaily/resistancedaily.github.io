@@ -19,6 +19,22 @@ import seo
 design, date, data_path = sys.argv[1], sys.argv[2], sys.argv[3]
 maps_path = sys.argv[4] if len(sys.argv) > 4 else None
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# "Today on the map" (every design): when no maps file is given and every item has "lon"/"lat", build
+# data/DATE.items.json from the items (label = "short"; optional "map": {"left", "pos", "dx", "dy"} nudges) and run
+# tools/maps.js + tools/thin.py to make data/DATE.maps.json.
+_d = json.load(open(data_path))
+if not maps_path and _d["items"] and all("lon" in i and "lat" in i for i in _d["items"]):
+    pts = {"india": [], "world": []}
+    for i in _d["items"]:
+        pt = {"n": i["n"], "lon": i["lon"], "lat": i["lat"], "sev": i["sev"], "label": i.get("short", "")}
+        pt.update(i.get("map", {}))
+        pts["india" if i["region"] == "india" else "world"].append(pt)
+    ip, mp = os.path.join(root, "data", f"{date}.items.json"), os.path.join(root, "data", f"{date}.maps.json")
+    json.dump(pts, open(ip, "w"), ensure_ascii=False, indent=1)
+    with open(mp, "w") as fh:
+        subprocess.run(["node", os.path.join(root, "tools", "maps.js"), ip], check=True, stdout=fh, cwd=os.path.join(root, "tools"))
+    subprocess.run([sys.executable, os.path.join(root, "tools", "thin.py"), mp], check=True)
+    maps_path = mp
 cmd = [sys.executable, os.path.join(root, "tools", "design.py"), design, data_path] + ([maps_path] if maps_path else [])
 body = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
 data = json.load(open(data_path))

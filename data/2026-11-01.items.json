@@ -1,0 +1,106 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.21,
+   "lat": 28.6,
+   "sev": "orange",
+   "label": "Delhi",
+   "dx": -13,
+   "dy": -13,
+   "left": true
+  },
+  {
+   "n": 2,
+   "lon": 93.55,
+   "lat": 24.85,
+   "sev": "red",
+   "label": "Manipur"
+  },
+  {
+   "n": 3,
+   "lon": 77.08,
+   "lat": 28.7,
+   "sev": "red",
+   "label": "",
+   "dx": 13,
+   "dy": -13
+  },
+  {
+   "n": 4,
+   "lon": 77.57,
+   "lat": 12.93,
+   "sev": "orange",
+   "label": "Bengaluru",
+   "pos": "br"
+  },
+  {
+   "n": 5,
+   "lon": 77.21,
+   "lat": 28.62,
+   "sev": "orange",
+   "label": "",
+   "dx": -13,
+   "dy": 13
+  },
+  {
+   "n": 6,
+   "lon": 77.22,
+   "lat": 28.61,
+   "sev": "grey",
+   "label": "",
+   "dx": 13,
+   "dy": 13
+  }
+ ],
+ "world": [
+  {
+   "n": 7,
+   "lon": 24.88,
+   "lat": 12.05,
+   "sev": "red",
+   "label": "Sudan",
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": 34.39,
+   "lat": 31.45,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 9,
+   "lon": 2.35,
+   "lat": 48.86,
+   "sev": "orange",
+   "label": "France",
+   "left": true,
+   "dy": 8
+  },
+  {
+   "n": 10,
+   "lon": -0.13,
+   "lat": 51.51,
+   "sev": "orange",
+   "label": "London",
+   "left": true,
+   "dy": -6
+  },
+  {
+   "n": 11,
+   "lon": 44.21,
+   "lat": 15.35,
+   "sev": "orange",
+   "label": "Yemen"
+  },
+  {
+   "n": 12,
+   "lon": 13.4,
+   "lat": 52.52,
+   "sev": "grey",
+   "label": "Germany",
+   "dy": -6
+  }
+ ]
+}

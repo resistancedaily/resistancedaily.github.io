@@ -141,7 +141,12 @@
      "PTI via Daily Excelsior",
      "https://www.dailyexcelsior.com/govt-asks-meta-to-ensure-its-recommendation-systems-do-not-expose-users-to-limited-set-of-narratives/"
     ]
-   ]
+   ],
+   "takeaway": "India's IT ministry sent Meta an unpublished advisory on 10 October about how protest posts are amplified.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
   },
   {
    "text": "Between 10 and 13 October, Meta blocked in India posts or accounts of Molitics India, Mathrubhumi English, Observer Post Hindi, Journo Mirror and journalist Shubhangi Das Gupta, citing government notices or \"local IT Rules\". Some got no notice. The digital rights group SFLC.in counted 181 restrictions between 1 and 18 October.",
@@ -154,7 +159,13 @@
      "ThePrint",
      "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
     ]
-   ]
+   ],
+   "takeaway": "Meta blocked posts or accounts of several news outlets and a journalist in India, citing government notices.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "181",
+   "figcap": "restrictions in India, 1–18 Oct (SFLC.in)"
   },
   {
    "text": "The Instagram account of Fridays For Future India was also blocked, with no reason given. The Internet Freedom Foundation calls the advisory \"a censorship directive in all but name\" and says the ministry has no legal power to issue it. On 15 October the Supreme Court held that access to the internet is a fundamental right.",
@@ -171,7 +182,12 @@
      "Indian Express",
      "https://indianexpress.com/article/legal-news/children-fundamental-right-internet-supreme-court-blanket-ban-10925649/"
     ]
-   ]
+   ],
+   "takeaway": "A climate group's Instagram account was also blocked; rights groups say the ministry lacks the legal power.",
+   "visual": {
+    "type": "photo",
+    "i": 2
+   }
   },
   {
    "text": "Companies also decide on their own. Human Rights Watch documented 1,050 cases of Palestine-related posts removed or suppressed on Instagram and Facebook after 7 October 2023; Meta said it was guided by human rights principles. In 2024 Meta stopped recommending political content on Instagram and Threads by default, then in January 2025 ended US fact-checking, saying \"too much harmless content gets censored\".",
@@ -188,7 +204,12 @@
      "Meta",
      "https://about.fb.com/news/2025/01/meta-more-speech-fewer-mistakes/"
     ]
-   ]
+   ],
+   "takeaway": "Platforms also decide on their own: HRW documented 1,050 Palestine-related removals in 2023.",
+   "visual": {
+    "type": "photo",
+    "i": 4
+   }
   },
   {
    "text": "In Turkey, after Istanbul's mayor was detained in March 2025, X blocked accounts on official orders, later including the mayor's own, while challenging the orders in court. Rights groups say Turkey has ordered X to block at least 1,270 accounts. In India in 2021, Twitter withheld about 250 accounts during the farmers' protests; the government said they were a \"grave threat to public order\".",
@@ -205,7 +226,12 @@
      "Al Jazeera",
      "https://www.aljazeera.com/news/2021/2/2/twitter-blocks-accounts-over-india-farmers-protest-on-govt-order"
     ]
-   ]
+   ],
+   "takeaway": "Elsewhere, Turkey has ordered X to block at least 1,270 accounts.",
+   "visual": {
+    "type": "photo",
+    "i": 5
+   }
   },
   {
    "text": "In Brazil, the electoral court has ordered Meta not to \"unjustifiably restrict\" political content before the 25 October runoff, after one campaign said its reach was cut; Meta says \"any suggestion that Meta favors one side is false\". Vietnam pressed Facebook in 2020 to censor more \"anti-state\" posts, and Nigeria blocked Twitter in 2021.",
@@ -222,7 +248,12 @@
      "The Guardian",
      "https://www.theguardian.com/world/2021/jun/04/nigeria-suspends-twitter-after-presidents-tweet-was-deleted"
     ]
-   ]
+   ],
+   "takeaway": "Brazil's electoral court ordered Meta not to restrict political content before the runoff.",
+   "visual": {
+    "type": "photo",
+    "i": 6
+   }
   }
  ],
  "official": {
@@ -236,6 +267,11 @@
     "ThePrint",
     "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
    ]
+  ],
+  "points": [
+   "The IT ministry's advisory says such posts, without context or amplified by recommendations, “may contribute to public confusion, apprehension and disturbance of public order”.",
+   "It says any action must respect lawful expression.",
+   "The ministry and Meta did not respond to requests for comment."
   ]
  },
  "editions": [
@@ -253,5 +289,45 @@
  "layout": "chapters",
  "numbers_photo": 4,
  "end_photo": 2,
- "seo_title": "India, Meta and protest posts: who decides what you see online"
+ "seo_title": "India, Meta and protest posts: who decides what you see online",
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "On 10 October India's IT ministry asked Meta to curb how protest posts are recommended; posts by news pages and journalists were then blocked.",
+   "src": [
+    [
+     "Hindustan Times",
+     "https://www.hindustantimes.com/india-news/centre-asks-meta-to-review-content-recommendation-system-over-law-and-order-posts-to-avoid-public-confusion-disorder-101792262032757.html"
+    ],
+    [
+     "Newslaundry",
+     "https://www.newslaundry.com/2026/10/15/now-meta-restricts-reportage-on-delhi-police-crackdown-on-protesters-bans-posts-accounts-citing-it-rules"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "A digital rights group counted 181 restrictions in India between 1 and 18 October.",
+   "src": [
+    [
+     "ThePrint",
+     "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Rights groups call the advisory censorship; the Supreme Court has held that internet access is a fundamental right.",
+   "src": [
+    [
+     "MediaNama",
+     "https://www.medianama.com/2026/10/223-instagram-fridays-for-future-india-blocked/"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/legal-news/children-fundamental-right-internet-supreme-court-blanket-ban-10925649/"
+    ]
+   ]
+  }
+ ]
 }

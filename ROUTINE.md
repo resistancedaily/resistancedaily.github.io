@@ -34,6 +34,15 @@ Mon = map · Tue = numbers · Wed = ledger · Thu = front · Fri = clock · Sat 
   Choose cases by severity and by how much they need attention, not to balance numbers. Include Indian cases that matter,
   and keep looking worldwide: long detentions anywhere are equally important. Save the updated list back to
   data/cases.json and include it as "cases" in data.json.
+- TODAY ON THE MAP + RIGHTS COLOURS (owner's request, 1 Nov 2026), every design: give every item "lon" and "lat" (the
+  place in "place"; for a country-wide story, its capital or the main city named). publish.py then builds
+  data/DATE.items.json and data/DATE.maps.json itself and shows India and world maps at the top, whose numbered pins
+  jump to each story; on map days keep passing data/DATE.maps.json as before. Pins in the same city overlap: add
+  "map": {"dx", "dy"} (about ±13) to spread them, "label": "" on all but one, and "left": true / "pos": "br" to move a
+  label. Check the strip in the screenshots. Rights show as coloured chips automatically; use the usual right names
+  (Life & safety, Assembly, Expression, Press freedom, Due process, Land & livelihood, Civilian harm).
+  No national flags: several places we cover are disputed (Gaza and the West Bank, Kashmir, Tibet, Abyei), and our
+  maps show land only, with no political borders.
 Never hand-edit the generated layout or add charts.
 
 ## EDITORIAL STANDARDS (most important)
@@ -123,13 +132,31 @@ organisers' count as a range.
 - Add it to data.json "focus" so the daily page shows an "In focus" card.
 - KEEP FOCUS STORIES CURRENT (owner's rule): a Focus is a live story, not only background. Whenever today's research
   turns up a new development on an existing Focus (check data/focus/*.json against today's items), update that Focus
-  the same day, even without new photos: add the new events as dated, sourced paragraphs (keep earlier facts that
+  the same day, even without new photos: add the new events as dated, sourced paragraphs, each with "date":
+  "YYYY-MM-DD" (the day it happened) (keep earlier facts that
   still hold; correct any that are out of date), refresh "dek", "figs", "official", "updated" and "editions", set "whats_new" to {"date": DATE, "text": one or two
   sentences on what changed, at most 220 characters so it fits an X post whole, facts only, all of them sourced in the
   new paragraph, with the official response if there is one} (shown at the top of the page),
   check "seo_title" still fits, rebuild
   with `python3 tools/focus.py SLUG`, and link the item to it with "focus". Never point readers to a Focus whose
   summary contradicts today's edition.
+- TIMELINE (owner's choice, 1 Nov 2026): a Focus with 3 or more dated paragraphs shows "The background" (the undated
+  paragraphs: what the issue is and why it matters) and then a "Timeline" of the dated updates, newest first, with the
+  newest marked "Latest" and older ones folded under "Show earlier updates". tools/focus.py does this automatically
+  from "date". Keep background paragraphs undated and current; put every new development in a dated paragraph. A
+  dated paragraph's "fig"/"figcap" shows under its text.
+- VISUAL LAYOUT (owner's rule, 1 Nov 2026; every Focus uses it): "summary" = three answer-first cards (What's
+  happening / Why it matters / What's next, each ≤ 25 words, sourced); every undated paragraph has a "takeaway" (one
+  sentence) and a "visual": a photo, a simple bar chart, a dot diagram, a map (data/focus/maps/SLUG.json → `node
+  tools/maps.js data/focus/maps/SLUG.json`, saved as data/focus/maps/SLUG.svg) or the paragraph's key figure. The full
+  paragraph is folded under "More detail and sources"; unused photos go to "In pictures". See the header of
+  tools/focus.py. When you update a Focus, keep the summary cards current, and give every new undated paragraph a
+  takeaway and a visual (dated updates go in the timeline and need neither). Pair a photo only with a paragraph it
+  actually illustrates; otherwise use the key figure. Charts only compare like with like (same source, same measure);
+  map pins mark only places our sources name.
+- OFFICIAL POSITION AS POINTS (owner's rule, 1 Nov 2026): give every Focus "official": {"text", "src", "points"}, with
+  3–6 short bullets that restate the official position (one claim each, quotes kept, plus who has not responded).
+  The page shows the bullets with the shared sources under them; "text" stays for the slides. Update both together.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
 ## STEP 5. Publish the edition
@@ -163,8 +190,13 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   Date as the largest element, the tagline "What happened to people's rights in the last 24 hours. Every fact sourced.",
   then 4 rows of place name above a one-line headline (max ~45 characters). Footer: "Swipe → · Sources: link in bio".
   OWNER'S REQUEST, 23–29 Oct 2026: use the "mosaic" cover every day, Sunday included (four story photos edge to edge,
-  the date in an orange circle where they meet). tools/slides.py applies it via COVER_PERIODS; after 29 Oct the
-  rotation below resumes.
+  the date in an orange circle where they meet). OWNER'S REQUEST, 30 Oct–5 Nov 2026: use the "photo" cover every day,
+  Sunday included. tools/slides.py applies both via COVER_PERIODS; after 5 Nov the rotation below resumes.
+  SUNDAY COVER (owner's rule, 1 Nov 2026): on Sunday, keep the SAME LAYOUT as the current week's cover (the active
+  COVER_PERIODS style), only in white: light panel, red place names and the red "+ Still waiting" tag. tools/slides.py
+  does this automatically (cover_style(): photo → "photo-sunday", night → "sunday"; mosaic keeps its layout). The
+  layout must match even without a photo: "photo-sunday" then keeps the photo area as a plain dark block. Don't fall
+  back to a different layout on Sunday. When no period is active, Sunday uses the rotation's "sunday" cover.
   The cover style rotates by IST weekday (tools/slides.py picks it; set "cover_style" in DATE.slides.json to override):
   Mon photo · Tue paper · Wed signal · Thu night · Fri photo · Sat paper · Sun sunday. photo = the first story photo
   (≥900px) across the top with the date on it and the rows on dark below, with the photo's file-photo year and
@@ -260,8 +292,56 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
     source for every fact: link in bio."; "Sources: …"; a photo line (say if faces were blurred); at most 5 hashtags.
   - Same standards as every caption: neutral, every fact from a sourced item or Focus paragraph, qualifiers kept.
 - Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
-  printed on the slide), which becomes that slide's caption.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, and the x-post.txt and whatsapp.txt files) with
+  printed on the slide), which becomes that slide's caption, and, so the slides match the rest of the week, a "photo"
+  (same fields as an item photo, chosen and checked under STEP 3: usually a file photo of the place, labelled with
+  its year; never a photo of the detained person unless freely licensed and appropriate). The first case photo
+  (≥900px) also fills the Sunday photo cover.
+- REACH COMMENTS (owner's rule, 31 Oct 2026): the routine DRAFTS comments; the owner posts them by hand from the
+  Resistance Daily account. Never post, like or comment anywhere yourself, never use a browser logged in to any of
+  the owner's accounts, and never automate posting: Instagram and YouTube treat automated or repeated promotional
+  comments as spam and can restrict the account.
+  - ALL PLATFORMS (owner's rule, 1 Nov 2026): spread the drafts across every platform we post on, Instagram,
+    Facebook and X, plus YouTube, not just one. Each day aim for a mix (for example one Instagram, one Facebook or X,
+    one YouTube) and rotate so no platform is skipped for long.
+  - WHAT TO COMMENT ON (owner's rule, 1 Nov 2026): not only Focus stories. In priority order: (1) Focus stories
+    that are actively developing (e.g. Siang, Sudan), preferring the Focus updated today; (2) any story in today's
+    edition; (3) ongoing "Still waiting" cases. Find posts or videos by
+    credible outlets or organisations (e.g. BBC News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News,
+    Amnesty, HRW) on those stories. Skip partisan accounts, politicians' and parties' accounts, and posts about
+    unrelated topics. RECENCY (owner's rule, 1 Nov 2026): prefer posts from the last 48 hours, but older posts that
+    are still relevant are welcome (people keep finding and reading them), especially for ongoing stories; list
+    recent ones first and give each post's age.
+  - HOW MANY: about 6–10 drafts a day in total across Instagram, Facebook, X and YouTube, listed in priority order
+    so the owner can stop wherever they like. To stay clear of spam filters: at most 2 comments a day under any one
+    outlet's posts, every comment written fresh with a fact the post doesn't already give, and a note at the top of
+    reach.txt to spread posting through the day rather than all at once. Don't pick the same outlet's account two
+    days running for the same story unless the story moved.
+  - YouTube (and any page that opens without logging in): give the exact URL and open it to confirm it is about
+    that story.
+  - Instagram, Facebook and X show posts only to logged-in users, and the routine must never log in. For these,
+    confirm that the outlet covered the story by opening the outlet's own article on it (give that URL), then tell
+    the owner exactly what to look for ("@account's post on <story>, around <date>") and mark the entry "post not
+    opened: check it matches before commenting". If a post URL turns up in search results, include it, marked the
+    same way. Never guess or invent an account handle: name the outlet if the handle isn't confirmed.
+  - HOW TO FIND SOCIAL POSTS (owner's tip, 1 Nov 2026): search engines index many public posts. Use WebSearch with
+    allowed_domains ["instagram.com"], ["facebook.com"] or ["x.com"] and the story's key words (place, issue,
+    outlet name); results show the post's text and account even though the post can't be opened. Google itself
+    shows a robot check to this server, so don't scrape it. An X post's date can be read from its status ID:
+    UTC time = ((ID >> 22) + 1288834974657) ms since 1970. Use it to give each post's age and put recent posts first. Instagram and Facebook
+    are indexed less, so when nothing turns up, fall back to the outlet's article and "Look for: …" as above.
+  - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
+    platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
+    fact from our Focus page or today's edition that the post doesn't already give (with its date, and qualifiers
+    kept), then a pointer to the page. Link: a Focus story links to its Focus page
+    (https://resistancedaily.github.io/focus/SLUG.html); any other story links to that day's edition at its stable
+    address (https://resistancedaily.github.io/archive/DATE.html), never /today/, which changes daily. Endings by
+    platform: Instagram (links in comments aren't clickable) ends with "Daily updates, every fact sourced: Resistance
+    Daily (link in bio)"; Facebook, YouTube and other sites end with the link; X replies must fit in 280 characters
+    with the link (which X counts as 23). Keep other comments under 300 characters. Under each comment, give the source for its fact.
+  - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
+    no opinions on the post or the outlet, neutral wording. Under posts about deaths, attacks or other tragedies, keep
+    the comment to the facts: no promotional framing beyond the closing pointer.
+- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
   SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
   its text is already slide 1 in slide-captions.txt.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
@@ -275,4 +355,4 @@ caption.txt" and "DATE Instagram slides source.html". Don't upload JPEGs.
 Send a PushNotification inside <routine_summary> tags. Lead with the single most important rights development, then 5–8
 short neutral lines, then: "Today's design: <name>. Photos: <N> of <M> items. Focus: <title or none>. Site:
 resistancedaily.github.io (pushed / NOT pushed: reason). Backup page updated; Instagram slides + caption in today's run;
-archived to Drive." If any step fails, still notify and say what failed.
+reach comments: <N> drafted in reach.txt; archived to Drive." If any step fails, still notify and say what failed.

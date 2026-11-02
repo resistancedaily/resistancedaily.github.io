@@ -1,0 +1,34 @@
+{
+ "cover": [
+  ["Dhubri, Assam", "Eviction drive displaces over 4,000"],
+  ["Gaza", "Strikes kill eight, a boy of four among them"],
+  ["Ujjain, MP", "Four workers die in hotel waste chamber"],
+  ["Blue Nile, Sudan", "Displaced short of food and medicine"]
+ ],
+ "stories": [
+  {"n": 1, "label": "India · Land & livelihood", "fig": "4,000+", "figlab": "people displaced", "place": "Alamganj, Dhubri district, Assam",
+   "head": "Homes of 640+ families demolished",
+   "bullets": ["Authorities demolished homes of more than 640 Bengali Muslim families on Sunday, officials told Scroll.",
+               "The district commissioner says the land is for an industrial park and claims most residents have land elsewhere.",
+               "One resident says he has lived there since 1962."],
+   "src": "Scroll"},
+  {"n": 6, "label": "World · Life & safety", "fig": "8", "figlab": "killed on Sunday", "place": "Gaza City and al-Mawasi, Gaza",
+   "head": "Strikes despite the ceasefire",
+   "bullets": ["Hospitals say three people, including a four-year-old boy, were killed near a school in Gaza City.",
+               "Five police officers were killed in al-Mawasi, Khan Younis.",
+               "Israel's military says it struck military operatives, without details."],
+   "src": "BBC"},
+  {"n": 3, "label": "India · Life & safety", "fig": "4", "figlab": "workers died", "place": "Ujjain, Madhya Pradesh",
+   "head": "Deaths in a waste chamber",
+   "bullets": ["Four men died of suspected suffocation late on Saturday in a hotel's food-waste chamber.",
+               "Two who tried to rescue them fell ill.",
+               "Police are investigating; the state announced ₹4 lakh for each family."],
+   "src": "Indian Express · The Hindu"},
+  {"n": 5, "label": "World · Life & safety", "fig": "27,400", "figlab": "displaced, state count", "place": "Blue Nile state, Sudan",
+   "head": "Aid falls short for the displaced",
+   "bullets": ["Displaced people say food and medicines are running low and disease is spreading.",
+               "The state aid commissioner counts about 27,400 displaced; Dabanga reports the figure as families.",
+               "She says WFP and other groups are delivering food, cash and hygiene kits."],
+   "src": "Radio Tamazuj · Dabanga"}
+ ]
+}

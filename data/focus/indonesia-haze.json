@@ -129,7 +129,12 @@
      "Guardian",
      "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
     ]
-   ]
+   ],
+   "takeaway": "A satellite monitor counts more than 1.9 million hectares burned by end-September, 38% more than at the same point in 2019. The government's last official figure was 202,000 hectares.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
   },
   {
    "text": "Indonesia's Health Ministry recorded 283,270 acute respiratory illness cases in seven fire-hit provinces as of 13 October, more than double the 113,336 of 9 September, when children under five made up more than a fifth of cases. The research group CREA estimates that fire smoke caused about 1,700 deaths in August alone. “While we sleep, the whole family is just breathing in the smoke,” Ely Marlina, a 46-year-old schoolteacher and volunteer firefighter, told the Guardian.",
@@ -150,7 +155,32 @@
      "Guardian",
      "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
     ]
-   ]
+   ],
+   "takeaway": "Respiratory illness cases more than doubled in five weeks.",
+   "visual": {
+    "type": "chart",
+    "title": "Acute respiratory illness cases, seven fire-hit provinces (Health Ministry)",
+    "bars": [
+     [
+      "9 Sep",
+      113336
+     ],
+     [
+      "13 Oct",
+      283270
+     ]
+    ],
+    "src": [
+     [
+      "The Star",
+      "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/09/12/indonesia-wildfires-fuel-surge-in-respiratory-illnesses-as-haze-spreads"
+     ],
+     [
+      "Mongabay",
+      "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+     ]
+    ]
+   }
   },
   {
    "text": "Fires are often lit as a cheap way to clear land for oil palm planting, the Guardian reports. Data from the environmental group Walhi show seven in ten hotspots across Kalimantan were on industrial concessions, and Nusantara Atlas found that the largest burned concessions there between January and July belong to oil palm, pulpwood and mining companies. A hotspot on company land does not by itself show who lit the fire.",
@@ -167,7 +197,20 @@
      "Jakarta Post",
      "https://www.thejakartapost.com/indonesia/2026/09/10/local-foreign-firms-own-largest-burned-concessions-in-kalimantan"
     ]
-   ]
+   ],
+   "takeaway": "Seven in ten hotspots in Kalimantan were on industrial concessions, Walhi data show, though a hotspot alone does not show who lit a fire.",
+   "visual": {
+    "type": "dots",
+    "n": 7,
+    "of": 10,
+    "cap": "of 10 Kalimantan hotspots were on industrial concessions (Walhi data)",
+    "src": [
+     [
+      "Guardian",
+      "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
+     ]
+    ]
+   }
   },
   {
    "text": "Police arrested 72 people in August and said they were tracing whether companies paid for the land clearing; by late September police had arrested 113 people and the environment ministry was investigating 19 companies. On 12 October President Prabowo Subianto cited 639 hectares of active firefighting as a sign the fires were receding; the disaster agency and forestry ministry later stressed that this was only the area firefighters were working on, not all that was burning.",
@@ -184,7 +227,32 @@
      "Mongabay",
      "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
     ]
-   ]
+   ],
+   "takeaway": "Arrests rose from 72 in August to 113 by late September; 19 companies are under investigation.",
+   "visual": {
+    "type": "chart",
+    "title": "People arrested over the fires (police)",
+    "bars": [
+     [
+      "August",
+      72
+     ],
+     [
+      "Late Sep",
+      113
+     ]
+    ],
+    "src": [
+     [
+      "ABC",
+      "https://www.abc.net.au/news/2026-08-24/indonesia-arrests-72-over-wildfires/107069574"
+     ],
+     [
+      "Guardian",
+      "https://www.theguardian.com/world/2026/sep/21/indonesia-borneo-sumatra-fires-smoke-toxic-air"
+     ]
+    ]
+   }
   },
   {
    "text": "The smoke has reached Malaysia, Singapore, Brunei, Timor-Leste and the Philippines. Singapore has served legal notices on 10 Indonesian companies under its haze law, under which no company has been fined or sued since it came into force in 2014. In West Kalimantan, Indigenous and civil society groups are suing President Prabowo and nine other defendants for “gross negligence”, seeking a national disaster declaration and residents' healthcare costs. None of those named attended the first hearing on 7 October, and the court adjourned the case to 21 October.",
@@ -201,7 +269,18 @@
      "Guardian",
      "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
     ]
-   ]
+   ],
+   "takeaway": "The smoke has reached five more countries. Singapore has served legal notices on 10 Indonesian firms.",
+   "visual": {
+    "type": "map",
+    "cap": "Red: fire areas named in the reporting. Grey: countries the smoke has reached.",
+    "src": [
+     [
+      "Guardian",
+      "https://www.theguardian.com/world/2026/oct/16/singapore-threatens-prosecute-indonesia-fires-toxic-haze-smoke"
+     ]
+    ]
+   }
   },
   {
    "text": "On 28 October thousands protested in Jakarta and in Bandung, Malang, Yogyakarta and Makassar over economic hardship, corruption and the handling of the fires, AFP reports; protesters demanded a national emergency declaration. In Jakarta about 14,000 police officers, plus soldiers, were deployed, and police fired several tear gas canisters near Bundaran HI square after some in the crowd threw plastic bottles and burned rubbish. No arrests or injuries were reported.",
@@ -210,7 +289,14 @@
      "France 24 (AFP)",
      "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
     ]
-   ]
+   ],
+   "fig": "14,000",
+   "figcap": "police deployed in Jakarta, 28 Oct",
+   "date": "2026-10-28",
+   "takeaway": "Thousands protested in five cities on 28 October; police fired tear gas in Jakarta. No arrests or injuries were reported.",
+   "visual": {
+    "type": "fig"
+   }
   }
  ],
  "official": {
@@ -228,6 +314,13 @@
     "France 24 (AFP)",
     "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
    ]
+  ],
+  "points": [
+   "The government says the haze is largely natural; its communications chief said Malaysia and Singapore should see it as “beyond human error” and “truly nature”.",
+   "President Prabowo said on 12 October that the burning had fallen from “hundreds of thousands of hectares” to below 1,000, thanks to large-scale government intervention.",
+   "The coordinating minister for security said Indonesia was “still able to handle this”.",
+   "The forestry ministry did not respond to AFP's request for comment on the 1.9 million hectare estimate.",
+   "On 28 October the government said it understood students' concerns; its spokesman said more than 72,000 people were fighting the fires and 5.3 million masks had been handed out."
   ]
  },
  "editions": [
@@ -253,5 +346,49 @@
  "whats_new": {
   "date": "2026-10-29",
   "text": "Thousands protested in Jakarta and four other cities on 28 October over corruption and the fires, seeking a national emergency; police fired tear gas in Jakarta. The government says it understands the concerns."
- }
+ },
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Fires in Kalimantan and Sumatra have burned more than 1.9 million hectares this year, a satellite monitor says, sending smoke across Southeast Asia.",
+   "src": [
+    [
+     "The Star (AFP)",
+     "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/10/19/039utter-destruction-039-indonesia-fires-have-burned-nearly-two-million-hectares-monitor"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "Respiratory illness cases in seven provinces passed 283,000 by 13 October; researchers estimate about 1,700 smoke deaths in August alone.",
+   "src": [
+    [
+     "Mongabay",
+     "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+    ],
+    [
+     "CREA",
+     "https://energyandcleanair.org/indonesias-fires-led-to-1700-deaths-in-august-but-regular-air-pollution-even-more/"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Indigenous and civil society groups are suing the president for negligence, and protesters want a national emergency. The government says it can still handle the fires.",
+   "src": [
+    [
+     "Guardian",
+     "https://www.theguardian.com/world/2026/oct/08/indonesia-wildfires-gross-negligence-lawsuit-haze-region"
+    ],
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/live-news/20261028-eat-the-rich-indonesians-protest-against-graft-wildfires-2"
+    ],
+    [
+     "Mongabay",
+     "https://news.mongabay.com/2026/10/perpetuating-stupidity-indonesia-comes-under-fire-for-response-to-burning-and-haze/"
+    ]
+   ]
+  }
+ ]
 }

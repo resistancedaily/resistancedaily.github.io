@@ -30,14 +30,19 @@ function render(points, opts) {
   const pins = points.map(p => {
     let [x, y] = proj([p.lon, p.lat]);
     x += p.dx || 0; y += p.dy || 0;
-    return `<g class="pin ${p.sev}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}"/><text x="${x.toFixed(1)}" y="${(y + r * 0.36).toFixed(1)}" text-anchor="middle">${p.n}</text>${p.label ? (p.pos === 'br' ? `<text class="pl" x="${(x + 4).toFixed(1)}" y="${(y + r + 18).toFixed(1)}" text-anchor="start">${p.label}</text>` : `<text class="pl" x="${(x + (p.left ? -1 : 1) * (r + 6)).toFixed(1)}" y="${(y + 6).toFixed(1)}" text-anchor="${p.left ? 'end' : 'start'}">${p.label}</text>`) : ''}</g>`;
+    const g = `<g class="pin ${p.sev}"><circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r}"/><text x="${x.toFixed(1)}" y="${(y + r * 0.36).toFixed(1)}" text-anchor="middle">${p.n}</text>${p.label ? (p.pos === 'br' ? `<text class="pl" x="${(x + 4).toFixed(1)}" y="${(y + r + 18).toFixed(1)}" text-anchor="start">${p.label}</text>` : `<text class="pl" x="${(x + (p.left ? -1 : 1) * (r + 6)).toFixed(1)}" y="${(y + 6).toFixed(1)}" text-anchor="${p.left ? 'end' : 'start'}">${p.label}</text>`) : ''}</g>`;
+    // Numbered pins link to their story on the page (#iN); Focus-map dots (empty n) stay plain.
+    return p.n !== '' && p.n !== undefined ? `<a class="pinl" href="#i${p.n}" aria-label="${p.label || 'Story ' + p.n}">${g}</a>` : g;
   }).join('');
   return `<svg class="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="${opts.aria}"><path class="land" d="${land}"/>${pins}</svg>`;
 }
 
-const out = {
-  india: render(items.india, { w: 380, h: 340, land: land50, minPad: 3, r: 14, box: [68, 97, 8, 35], aria: 'Map of India with numbered locations' }),
-  world: render(items.world, { w: 860, h: 440, land: land110, minPad: 8, r: 16, aria: 'World map with numbered locations' }),
+// Focus maps: {"custom": {"points": [...], "box": [lon0, lon1, lat0, lat1], "w", "h", "aria"}} -> {"custom": svg}.
+// A point with an empty "n" draws a small dot instead of a numbered pin.
+const c = items.custom;
+const out = c ? { custom: render(c.points, { w: c.w || 860, h: c.h || 520, land: land50, minPad: 1, r: c.r || 9, box: c.box, aria: c.aria || 'Map' }) } : {
+  india: !(items.india || []).length ? '' : render(items.india, { w: 380, h: 340, land: land50, minPad: 3, r: 14, box: [68, 97, 8, 35], aria: 'Map of India with numbered locations' }),
+  world: !(items.world || []).length ? '' : render(items.world, { w: 860, h: 440, land: land110, minPad: 8, r: 16, aria: 'World map with numbered locations' }),
 };
 process.stdout.write(JSON.stringify(out));
 

@@ -17,6 +17,10 @@ h1,h2{font-family:var(--display);text-transform:uppercase;margin:0;line-height:.
 p{margin:0}
 .top{display:flex;justify-content:space-between;gap:12px;font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:3px solid var(--ink);padding-bottom:10px}
 .top b{color:var(--ink);font-weight:500}
+.top a{white-space:nowrap}
+.top>span{text-align:right}
+.top .sep{font-style:normal}
+@media (max-width:520px){.top>span{display:flex;flex-direction:column;align-items:flex-end;gap:6px}.top .sep{display:none}}
 .kicker{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
 h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
 .dek{font-size:18px;color:var(--muted);max-width:62ch}
@@ -43,13 +47,16 @@ figcaption .cr{display:block;font-size:11.5px}
 .src{font-size:12.5px;color:var(--muted)}
 .official{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:6px;padding:14px 16px;display:grid;gap:6px;max-width:66ch}
 .official b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.opts{margin:0;padding-left:18px;display:grid;gap:8px}
+.opts li{padding-left:2px}
+.opts li::marker{color:var(--muted)}
 ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:160px 1fr;overflow:hidden;text-decoration:none}
 .card img{width:100%;height:100%;min-height:110px;object-fit:cover;background:var(--chip)}
 .card div{padding:12px 14px;display:grid;gap:4px;align-content:start}
 .card h2{font-size:26px;font-weight:800}
 .card p{font-size:14px;color:var(--muted)}
-@media (max-width:520px){.card{grid-template-columns:1fr}.card img{aspect-ratio:16/9}}
+@media (max-width:520px){.card{grid-template-columns:1fr}.card img{height:auto;aspect-ratio:16/9;min-height:0}}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 .cover img{aspect-ratio:16/9}
 .allf{justify-self:start;font-weight:600;font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--paper);border-radius:6px;padding:8px 12px}
@@ -67,14 +74,67 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .more-f{display:grid;gap:6px;max-width:66ch}
 .more-f h2{font-size:24px;font-weight:800}
 .more-f ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.sum div{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--accent);border-radius:6px;padding:14px 16px;display:grid;gap:6px;align-content:start}
+.sum b{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
+.sum p{font-size:16px;line-height:1.4}
+.blocks{display:grid;gap:30px}
+.blk{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center;border-top:1px solid var(--rule);padding-top:22px}
+.blk h3{font:600 21px/1.3 var(--body);margin:0}
+.blk .tx{display:grid;gap:10px}
+.blk details summary{cursor:pointer;font-size:13.5px;font-weight:600;color:var(--muted)}
+.blk details p{font-size:15.5px;margin-top:8px}
+.blk.wide{grid-template-columns:1fr}
+@media (max-width:680px){.blk{grid-template-columns:1fr}}
+.viz{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:14px;display:grid;gap:10px}
+.viz .t{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.bars{display:grid;gap:10px}
+.bar{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;align-items:center;font-size:13px;color:var(--muted)}
+.bar i{display:block;height:34px;background:var(--red);border-radius:3px;position:relative;min-width:4px}
+.bar i span{position:absolute;left:8px;top:50%;transform:translateY(-50%);font:800 22px var(--display);color:#fff;white-space:nowrap}
+.dots{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;max-width:300px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--chip);border:2px solid var(--rule)}
+.dots i.on{background:var(--red);border-color:var(--red)}
+.viz .big{font:800 56px/0.9 var(--display);color:var(--red)}
+.map{width:100%;height:auto;display:block}
+.land{fill:var(--chip)}
+.pin circle{stroke:var(--paper);stroke-width:2}
+.pin text{font:700 13px var(--body);fill:#fff}
+.pin text.pl{font:600 17px var(--body);fill:var(--ink);paint-order:stroke;stroke:var(--chip);stroke-width:4px}
+.pin.red circle{fill:var(--red)} .pin.grey circle{fill:#7a808a}
+@media (max-width:520px){.pin text.pl{font-size:25px}.pin circle{r:13px}}
+.pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;max-width:760px}
+.tl li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:16px;position:relative;padding:0 0 22px}
+.tl li:before{content:"";position:absolute;left:90px;top:6px;bottom:0;width:2px;background:var(--rule)}
+.tl li:last-child:before{display:none}
+.tl time{font:800 22px/1 var(--display);text-transform:uppercase;text-align:right;color:var(--muted);padding-top:2px}
+.tl time small{display:block;font:500 11px var(--mono);letter-spacing:.05em;margin-top:3px}
+.tl .ev{display:grid;gap:8px;padding-left:18px;position:relative;min-width:0}
+.tl .ev:before{content:"";position:absolute;left:-8px;top:5px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--muted);box-sizing:border-box}
+.tl .ev p{font-size:16.5px}
+.tl li.latest time{color:var(--red)}
+.tl li.latest .ev:before{border-color:var(--red);background:var(--red)}
+.tl .badge{justify-self:start;font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:#fff;background:var(--red);border-radius:3px;padding:2px 7px}
+.tl .tfig{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.tl .tfig b{font:800 34px/1 var(--display);color:var(--red)}
+.tl .tfig span{font:500 11.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.tl figure{max-width:440px}
+.older{max-width:760px}
+.older summary{cursor:pointer;font-weight:600;font-size:14px;list-style:none;border:1px solid var(--rule);background:var(--paper);border-radius:6px;padding:8px 12px;display:inline-block;margin:0 0 18px 92px}
+.older summary::-webkit-details-marker{display:none}
+.older[open] summary{margin-bottom:22px}
+@media (max-width:520px){.tl li{grid-template-columns:52px minmax(0,1fr);gap:18px}.tl li:before{left:68px}.tl time{font-size:18px}.older summary{margin-left:70px}}
 .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);max-width:28ch}
 </style></head><body><div class="wrap">
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
 <h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
-<ul class="list"><li><a class="card" href="sudan-war.html"><img src="../images/focus/sudan-war/adre-refugees-aid-2026.webp" alt="Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them." loading="lazy">
-<div><span class="kicker">Focus · Sudan</span><h2>Sudan&#x27;s long war</h2><p>Since 15 April 2023, fighting between Sudan&#x27;s army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.</p><span class="src">Updated 30 Oct 2026 · 4 photos</span></div></a></li><li><a class="card" href="congo-mines.html"><img src="../images/focus/congo-mines/rubaya-luwowo-mine-2014.webp" alt="Seen from above, hundreds of people stand and work among dozens of deep hand-dug pits on a bare hillside, with a few tarpaulin shelters." loading="lazy">
-<div><span class="kicker">Focus · Democratic Republic of the Congo</span><h2>Congo&#x27;s mines and the minerals in our devices</h2><p>Congo mines about three-quarters of the world&#x27;s cobalt and much of its coltan, much of it dug by hand. Children have been documented in the pits, an armed group taxes mines in the east, and courts are testing who is responsible further down the supply chain.</p><span class="src">Updated 30 Oct 2026 · 5 photos</span></div></a></li><li><a class="card" href="siang.html"><img src="../images/focus/siang/siang-river-2019.webp" alt="A wide, calm river between forested hills, with tall grass in the foreground." loading="lazy">
-<div><span class="kicker">Focus · Upper Siang, Arunachal Pradesh</span><h2>The fight over the Siang dam</h2><p>Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested and over 200 served notices; opponents marched on 29 October and refuse talks until detainees are freed.</p><span class="src">Updated 30 Oct 2026 · 4 photos</span></div></a></li><li><a class="card" href="indonesia-haze.html"><img src="../images/focus/indonesia-haze/fire-palangka-raya-campus-2026.webp" alt="At night, flames and smoke rise from scrubland behind a lit campus building, with a fire engine on the road in front." loading="lazy">
+<ul class="list"><li><a class="card" href="kashmir.html"><img src="../images/focus/kashmir/srinagar-old-city-2016.webp" alt="A narrow alley between tall brick houses with wooden windows and tangled wires overhead; a woman in a headscarf stands in the shade." loading="lazy">
+<div><span class="kicker">Focus · Jammu &amp; Kashmir and Ladakh</span><h2>Preventive detention in Jammu &amp; Kashmir: what the courts are finding</h2><p>Jammu and Kashmir&#x27;s High Court keeps quashing detentions under the Public Safety Act, citing delays and vague police reports. Activist Khurram Parvez spent nearly five years held before his bail was upheld. The administration says its zero-tolerance policy has &quot;established peace&quot;.</p><span class="src">Updated 02 Nov 2026 · 4 photos</span></div></a></li><li><a class="card" href="sudan-war.html"><img src="../images/focus/sudan-war/adre-refugees-aid-2026.webp" alt="Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them." loading="lazy">
+<div><span class="kicker">Focus · Sudan</span><h2>Sudan&#x27;s long war</h2><p>Since 15 April 2023, fighting between Sudan&#x27;s army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.</p><span class="src">Updated 02 Nov 2026 · 4 photos</span></div></a></li><li><a class="card" href="congo-mines.html"><img src="../images/focus/congo-mines/rubaya-luwowo-mine-2014.webp" alt="Seen from above, hundreds of people stand and work among dozens of deep hand-dug pits on a bare hillside, with a few tarpaulin shelters." loading="lazy">
+<div><span class="kicker">Focus · Democratic Republic of the Congo</span><h2>Congo&#x27;s mines and the minerals in our devices</h2><p>Congo mines about three-quarters of the world&#x27;s cobalt and much of its coltan, much of it dug by hand. Children have been documented in the pits, an armed group taxes mines in the east, and courts are testing who is responsible further down the supply chain.</p><span class="src">Updated 02 Nov 2026 · 5 photos</span></div></a></li><li><a class="card" href="siang.html"><img src="../images/focus/siang/siang-river-2019.webp" alt="A wide, calm river between forested hills, with tall grass in the foreground." loading="lazy">
+<div><span class="kicker">Focus · Upper Siang, Arunachal Pradesh</span><h2>The fight over the Siang dam</h2><p>Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. After arson in Pasighat on 23 October, police say 69 people have been arrested; on 31 October Delhi Police detained protesters outside Arunachal Bhawan, who allege sexual assault.</p><span class="src">Updated 01 Nov 2026 · 4 photos</span></div></a></li><li><a class="card" href="tibet.html"><img src="../images/focus/tibet/potala.webp" alt="A huge white and red palace with rows of windows rising above low whitewashed houses, under a deep blue sky." loading="lazy">
+<div><span class="kicker">Focus · Tibet</span><h2>Tibet: schools, faith and who chooses the next Dalai Lama</h2><p>UN experts say about a million Tibetan children are in state boarding schools; China says they serve children in remote areas. Exile officials report school closures, a five-year sentence for prayers and demolitions at a monastery in recent weeks. Beijing insists it must approve the next Dalai Lama.</p><span class="src">Updated 31 Oct 2026 · 4 photos</span></div></a></li><li><a class="card" href="indonesia-haze.html"><img src="../images/focus/indonesia-haze/fire-palangka-raya-campus-2026.webp" alt="At night, flames and smoke rise from scrubland behind a lit campus building, with a fire engine on the road in front." loading="lazy">
 <div><span class="kicker">Focus · Indonesia</span><h2>Smoke since August</h2><p>Fires in Kalimantan and Sumatra have burned more than 1.9 million hectares this year, a satellite monitor says, and sent smoke across Southeast Asia. Indonesia&#x27;s government calls the haze largely natural; researchers and environmental groups say people lit the fires.</p><span class="src">Updated 29 Oct 2026 · 6 photos</span></div></a></li><li><a class="card" href="brazil-election.html"><img src="../images/focus/brazil-election/urna.webp" alt="A finger presses the green confirm key on a white electronic voting machine, with more machines behind." loading="lazy">
 <div><span class="kicker">Focus · Brazil</span><h2>Brazil&#x27;s vote: what&#x27;s at stake for rights</h2><p>Lula da Silva won Brazil&#x27;s 25 October runoff by 51.8% to 48.2%. His rival first said he would seek to annul the vote; his party then accepted the result. The next term inherits fights over the Amazon, Indigenous land and deadly policing.</p><span class="src">Updated 27 Oct 2026 · 5 photos</span></div></a></li><li><a class="card" href="who-decides.html"><img src="../images/focus/who-decides/meta-sign-2022.webp" alt="A large white sign with the blue Meta infinity logo, reading Meta, 1 Hacker Way, in front of trees." loading="lazy">
 <div><span class="kicker">Focus · India and the world</span><h2>Who decides what you see online</h2><p>This month India&#x27;s IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.</p><span class="src">Updated 20 Oct 2026 · 7 photos</span></div></a></li></ul>

@@ -114,7 +114,33 @@
      "CBS News",
      "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
     ]
-   ]
+   ],
+   "takeaway": "Lula won a fourth term by about 4.4 million votes, the electoral court said.",
+   "visual": {
+    "type": "chart",
+    "title": "Share of valid votes, 25 October runoff (TSE)",
+    "bars": [
+     [
+      "Lula",
+      51.8
+     ],
+     [
+      "F. Bolsonaro",
+      48.2
+     ]
+    ],
+    "unit": "%",
+    "src": [
+     [
+      "Times of Israel / AFP",
+      "https://www.timesofisrael.com/bolsonaros-party-concedes-brazil-election-loss-to-leftist-incumbent-lula/"
+     ],
+     [
+      "CBS News",
+      "https://www.cbsnews.com/news/brazil-presidential-runoff-lula-flavio-bolsonaro/"
+     ]
+    ]
+   }
   },
   {
    "text": "Brazil's space agency INPE says 3,335 sq km of Amazon forest were cleared in the year to July 2026, about 42% less than a year earlier and the lowest since records began in 1988. Lula's stated goal is zero illegal deforestation by 2030; Flávio Bolsonaro pledged to end illegal deforestation by 2029.",
@@ -123,7 +149,12 @@
      "Al Jazeera",
      "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record"
     ]
-   ]
+   ],
+   "takeaway": "Amazon clearing fell to 3,335 sq km in the year to July 2026, the lowest since records began in 1988.",
+   "visual": {
+    "type": "photo",
+    "i": 2
+   }
   },
   {
    "text": "Three days before the runoff, a federal court ordered the government to help Indigenous people reach polling places; some live up to 895 km away, by boat trips of three to five days. Indigenous groups such as APIB warn that the new Congress, where the Liberal Party holds 121 of 513 seats, could push to open Indigenous lands to mining.",
@@ -136,7 +167,12 @@
      "Amazon Watch",
      "https://amazonwatch.org/news/2026/1026-lula-wins-brazil-election-but-far-right-congress-threatens-amazon-and-indigenous-rights"
     ]
-   ]
+   ],
+   "takeaway": "Some Indigenous voters live up to 895 km from a polling place; a court ordered the government to help them vote.",
+   "visual": {
+    "type": "photo",
+    "i": 3
+   }
   },
   {
    "text": "UN experts say Brazilian police kill more than 6,000 people a year, most of them Black. A 28 October 2025 raid on Rio's Alemão and Penha favelas killed 119 people by the police count, including four officers, and 132 by the public defender's count. UN experts said some bodies had hands tied or neck wounds and called for an independent investigation; Governor Cláudio Castro called the raid a 'success' against 'narcoterrorism'.",
@@ -153,7 +189,32 @@
      "Conectas (UN experts)",
      "https://conectas.org/en/noticias/the-un-asks-for-an-independent-investigation-on-the-police-raid-in-rio-de-janeiro/"
     ]
-   ]
+   ],
+   "takeaway": "UN experts say Brazilian police kill more than 6,000 people a year; one 2025 Rio raid killed 119 to 132.",
+   "visual": {
+    "type": "chart",
+    "title": "People killed in the 28 Oct 2025 Rio raid, by count",
+    "bars": [
+     [
+      "Police count",
+      119
+     ],
+     [
+      "Public defender",
+      132
+     ]
+    ],
+    "src": [
+     [
+      "EWN / AFP",
+      "https://ewn.co.za/2025/10/30/over-100-killed-in-rio-police-crackdown-on-powerful-narco-gang"
+     ],
+     [
+      "Khaleej Times / Reuters",
+      "https://www.khaleejtimes.com/world/americas/rio-police-raids-kill-at-least-132-corpses-line-street"
+     ]
+    ]
+   }
   },
   {
    "text": "The vote followed the Supreme Court's September 2025 sentence of former president Jair Bolsonaro to 27 years and 3 months for plotting a coup after the 2022 election, which barred him from running. His lawyers called it 'incredibly excessive' and said they would appeal; Flávio Bolsonaro has promised to seek an amnesty for his father.",
@@ -172,7 +233,11 @@
     ]
    ],
    "fig": "27 yrs",
-   "figcap": "Jair Bolsonaro's sentence for the coup plot"
+   "figcap": "Jair Bolsonaro's sentence for the coup plot",
+   "takeaway": "The vote followed Jair Bolsonaro's 27-year sentence for plotting a coup, which barred him from running.",
+   "visual": {
+    "type": "fig"
+   }
   },
   {
    "text": "Abroad, governments in Europe, Russia, China, India and South Africa congratulated Lula, and Colombia's president said the will of voters 'must be respected'. US President Donald Trump, who imposed 50% tariffs on Brazilian goods in 2025 and linked them to Bolsonaro's prosecution, called it 'another rigged election'. Lula said Brazil 'will not accept being anyone's backyard'.",
@@ -195,7 +260,11 @@
     ]
    ],
    "fig": "50%",
-   "figcap": "US tariff on Brazilian goods since 2025"
+   "figcap": "US tariff on Brazilian goods since 2025",
+   "takeaway": "Most governments congratulated Lula; the US president called it rigged.",
+   "visual": {
+    "type": "fig"
+   }
   }
  ],
  "official": {
@@ -213,6 +282,12 @@
     "EWN / AFP",
     "https://ewn.co.za/2025/10/30/over-100-killed-in-rio-police-crackdown-on-powerful-narco-gang"
    ]
+  ],
+  "points": [
+   "Electoral court (TSE) president Kassio Nunes Marques praised the “successful polls” and said there “were no changes” to the result from the two-hour extension.",
+   "Flávio Bolsonaro called the extension “unacceptable” and a “dirty trick” and first said he would seek annulment.",
+   "On 26 October his Liberal Party said: “We recognize the presidential election results, as proclaimed by the Superior Electoral Court.”",
+   "Rio's governor called the 2025 police raid a success against “narcoterrorism”."
   ]
  },
  "editions": [],
@@ -229,5 +304,41 @@
  "layout": "chapters",
  "numbers_photo": 0,
  "end_photo": 1,
- "seo_title": "Brazil election 2026: what Lula's win means for rights"
+ "seo_title": "Brazil election 2026: what Lula's win means for rights",
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Lula da Silva won Brazil's 25 October runoff with 51.8% of the vote; his rival's party accepted the result after first threatening to challenge it.",
+   "src": [
+    [
+     "Times of Israel / AFP",
+     "https://www.timesofisrael.com/bolsonaros-party-concedes-brazil-election-loss-to-leftist-incumbent-lula/"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "The new term inherits fights over the Amazon, Indigenous land and policing that kills more than 6,000 people a year, UN experts say.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/17/brazils-amazon-deforestation-hits-lowest-level-on-record"
+    ],
+    [
+     "Conectas (UN experts)",
+     "https://conectas.org/en/noticias/the-un-asks-for-an-independent-investigation-on-the-police-raid-in-rio-de-janeiro/"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Indigenous groups warn the new Congress could push to open their lands to mining.",
+   "src": [
+    [
+     "Amazon Watch",
+     "https://amazonwatch.org/news/2026/1026-lula-wins-brazil-election-but-far-right-congress-threatens-amazon-and-indigenous-rights"
+    ]
+   ]
+  }
+ ]
 }

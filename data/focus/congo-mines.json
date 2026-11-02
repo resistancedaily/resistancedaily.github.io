@@ -3,7 +3,7 @@
  "kicker": "Focus · Democratic Republic of the Congo",
  "title": "Congo's mines and the minerals in our devices",
  "dek": "Congo mines about three-quarters of the world's cobalt and much of its coltan, much of it dug by hand. Children have been documented in the pits, an armed group taxes mines in the east, and courts are testing who is responsible further down the supply chain.",
- "updated": "2026-10-30",
+ "updated": "2026-11-02",
  "published": "2026-10-30",
  "rights": [
   "Life & safety",
@@ -114,7 +114,29 @@
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
     ]
-   ]
+   ],
+   "takeaway": "Congo mined an estimated 73% of the world's cobalt in 2025, far ahead of Indonesia.",
+   "visual": {
+    "type": "chart",
+    "title": "Share of world cobalt mined, 2025 (US Geological Survey)",
+    "bars": [
+     [
+      "Congo",
+      73
+     ],
+     [
+      "Indonesia",
+      14
+     ]
+    ],
+    "unit": "%",
+    "src": [
+     [
+      "US Geological Survey",
+      "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+     ]
+    ]
+   }
   },
   {
    "text": "Much of the digging is done by hand. In 2016 Amnesty International and the Congolese group Afrewatch reported that UNICEF had estimated about 40,000 children worked in mines across southern Congo in 2014, many of them mining cobalt, some as young as seven. Children told researchers they worked up to 12 hours a day for one to two dollars, and at least 80 artisanal miners died underground in the region between September 2014 and December 2015.",
@@ -123,7 +145,12 @@
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
     ]
-   ]
+   ],
+   "takeaway": "UNICEF estimated about 40,000 children worked in southern Congo's mines in 2014, some as young as seven.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
   },
   {
    "text": "In eastern Congo the prize is coltan, which is processed into tantalum. Congo produced about 40% of the world's coltan in 2023, AP reports, citing the US Geological Survey, and the Rubaya mines in North Kivu produce about 15%. The M23 armed group has controlled Rubaya since 2024; a UN report says it taxes the trade and transport of about 120 tonnes of coltan a month, earning at least $800,000 a month, and UN experts say the ore is exported to Rwanda. One miner told AP he earns $40 a month.",
@@ -136,7 +163,12 @@
      "Al Jazeera",
      "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
     ]
-   ]
+   ],
+   "takeaway": "In the east, the M23 armed group controls the Rubaya coltan mines and taxes the trade, a UN report says.",
+   "visual": {
+    "type": "photo",
+    "i": 3
+   }
   },
   {
    "text": "In late January 2026 the ground gave way at Rubaya during the rainy season. More than 200 people were killed, among them miners, children and market women, according to the spokesperson of the M23-appointed provincial governor; some victims were buried alive in the shafts. Local people dig there by hand for a few dollars a day.",
@@ -149,7 +181,13 @@
      "NPR via Michigan Public",
      "https://www.michiganpublic.org/2026-01-31/mine-collapses-in-eastern-congo-leaving-at-least-200-dead"
     ]
-   ]
+   ],
+   "takeaway": "More than 200 people were killed when the ground gave way at Rubaya in January 2026.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "200+",
+   "figcap": "killed in the Rubaya collapse, Jan 2026"
   },
   {
    "text": "The trade has reached the courts. Congo's government filed criminal complaints against Apple subsidiaries in France and Belgium; French prosecutors dropped their case, citing lack of evidence, while the Belgian complaint is still under investigation. In November 2025 the US group International Rights Advocates sued Apple in Washington, alleging that cobalt, tin, tantalum and tungsten linked to child and forced labour and to armed groups still reach its supply chain, including through three named Chinese smelters. The suit seeks a ruling and an injunction, not damages.",
@@ -160,7 +198,11 @@
     ]
    ],
    "fig": "3",
-   "figcap": "Chinese smelters named in the US lawsuit"
+   "figcap": "Chinese smelters named in the US lawsuit",
+   "takeaway": "Congo has filed complaints against Apple subsidiaries, and a US group is suing Apple over its supply chain.",
+   "visual": {
+    "type": "fig"
+   }
   },
   {
    "text": "Talks to end the fighting in the east continue. From 17 to 21 August 2026 Congo's government and the M23 met in Switzerland and agreed a roadmap and timetable for negotiations under the Doha framework, mediated by Qatar, Togo, Switzerland and the African Union. Fighting and accusations of ceasefire violations have continued.",
@@ -171,7 +213,27 @@
     ]
    ],
    "fig": "17–21 Aug",
-   "figcap": "2026 roadmap talks"
+   "figcap": "2026 roadmap talks",
+   "takeaway": "Congo's government and the M23 agreed a roadmap for negotiations in August 2026; fighting has continued.",
+   "visual": {
+    "type": "fig"
+   }
+  },
+  {
+   "date": "2026-11-01",
+   "text": "Police in Haut-Katanga, the southern copper and cobalt province, said more than 500 people were detained in a special operation at the Kambove Mining site, about 30 km from Likasi, Actualité.cd reported on 1 November. The provincial police chief, Blaise Kilimbalimba, said the operation aimed to end the illegal occupation of public-service functions at the site, which he called \"a republic within a republic\", and police said a reinforced security presence would remain. No charges, releases or access to lawyers for those held were reported.",
+   "src": [
+    [
+     "Actualité.cd",
+     "https://actualite.cd/2026/11/01/haut-katanga-vaste-operation-policiere-plus-de-500-personnes-interpellees-kambove"
+    ]
+   ],
+   "takeaway": "Police say they detained more than 500 people at the Kambove mining site in the copper and cobalt belt on 1 November.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "500+",
+   "figcap": "detained at Kambove"
   }
  ],
  "official": {
@@ -188,10 +250,24 @@
    [
     "Al Jazeera",
     "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+   ],
+   [
+    "Actualité.cd",
+    "https://actualite.cd/2026/11/01/haut-katanga-vaste-operation-policiere-plus-de-500-personnes-interpellees-kambove"
    ]
+  ],
+  "points": [
+   "Apple has repeatedly denied sourcing minerals from conflict zones or using forced labour, citing audits and its supplier code.",
+   "Apple said there was “no reasonable basis” to conclude that smelters in its supply chain financed armed groups, says 76% of the cobalt in its devices was recycled in 2024, and says it told suppliers to stop sourcing from Congo and Rwanda.",
+   "Rwanda denies backing the M23.",
+   "Congo's government accuses the rebels of exploiting the region's resources illegally and unsafely.",
+   "The M23-appointed authorities blamed the Rubaya collapse on the ground giving way in the rainy season.",
+   "Haut-Katanga police say the Kambove operation targeted people illegally occupying public-service roles at the mining site and aims to restore state authority."
   ]
  },
- "editions": [],
+ "editions": [
+  "2026-11-02"
+ ],
  "instagram": {
   "caption": "",
   "hashtags": [
@@ -215,5 +291,53 @@
  "layout": "chapters",
  "numbers_photo": 0,
  "end_photo": 0,
- "seo_title": "Congo cobalt and coltan mining: child labour, M23 and Apple"
+ "seo_title": "Congo cobalt and coltan mining: child labour, M23 and Apple",
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Congo mines about three-quarters of the world's cobalt and much of its coltan, much of it dug by hand.",
+   "src": [
+    [
+     "US Geological Survey",
+     "https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-cobalt.pdf"
+    ],
+    [
+     "AP via Yahoo News",
+     "https://www.yahoo.com/news/congos-coltan-miners-dig-worlds-060408136.html"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "Children have been documented in the pits, and the UN says an armed group earns at least $800,000 a month taxing coltan.",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2016/01/child-labour-behind-smart-phone-and-electric-car-batteries/"
+    ],
+    [
+     "AP via Yahoo News",
+     "https://www.yahoo.com/news/congos-coltan-miners-dig-worlds-060408136.html"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Courts in Belgium and the US are testing whether tech companies are responsible; peace talks continue under the Doha framework.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/economy/2025/11/26/us-group-sues-apple-over-dr-congo-conflict-minerals"
+    ],
+    [
+     "Africanews",
+     "https://www.africanews.com/amp/2026/08/24/drc-m23-agree-peace-roadmap-as-doha-talks-seek-to-regain-momentum/"
+    ]
+   ]
+  }
+ ],
+ "whats_new": {
+  "date": "2026-11-02",
+  "text": "Haut-Katanga police say more than 500 people were detained at the Kambove mining site; they say those held had illegally taken over public-service roles. No charges were reported."
+ }
 }

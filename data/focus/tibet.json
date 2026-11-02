@@ -1,0 +1,231 @@
+{
+ "slug": "tibet",
+ "kicker": "Focus · Tibet",
+ "title": "Tibet: schools, faith and who chooses the next Dalai Lama",
+ "seo_title": "Tibet human rights: boarding schools, monks jailed, succession",
+ "dek": "UN experts say about a million Tibetan children are in state boarding schools; China says they serve children in remote areas. Exile officials report school closures, a five-year sentence for prayers and demolitions at a monastery in recent weeks. Beijing insists it must approve the next Dalai Lama.",
+ "updated": "2026-10-31",
+ "published": "2026-10-31",
+ "rights": [
+  "Religion",
+  "Education",
+  "Culture",
+  "Due process"
+ ],
+ "photos": [
+  {
+   "src": "images/focus/tibet/potala.webp",
+   "alt": "A huge white and red palace with rows of windows rising above low whitewashed houses, under a deep blue sky.",
+   "caption": "The Potala Palace in Lhasa, the Dalai Lamas' traditional seat, in 1987.",
+   "credit": "Jan Kranendonk / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Potala_Palace_in_Lhasa,_Tibet.jpg",
+   "kind": "file",
+   "year": "1987",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/tibet/ragya.webp",
+   "alt": "Low buildings with painted Tibetan-style roofs at the foot of a steep red rock mountain, under a clear sky.",
+   "caption": "Ragya (Rakya) monastery in Golog. Exile officials say its former abbot was sentenced to five years this autumn.",
+   "credit": "Hana Cincerova / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Rakya_monatery_2013.JPG",
+   "kind": "file",
+   "year": "2013",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/tibet/tawo.webp",
+   "alt": "A hillside covered in strings of prayer flags overlooking a town in a wide valley, with snow-capped mountains behind.",
+   "caption": "Tawo, the county town of Machen in Golog, where exile officials say three Tibetan schools were closed in August and September.",
+   "credit": "Hana Cincerova / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tawo_town,_Machen.JPG",
+   "kind": "file",
+   "year": "2013",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/tibet/dsala.webp",
+   "alt": "Hillside buildings with green roofs among trees, below a range of snow-covered mountains.",
+   "caption": "Dharamshala in India, home of the Dalai Lama and the Central Tibetan Administration.",
+   "credit": "Oleg Bor / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Residential_neighborhoods_of_Dharamsala_on_the_background_of_the_Himalayas.jpg",
+   "kind": "file",
+   "year": "2020"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "~1M",
+   "figcap": "Tibetan children in state boarding schools (UN experts, 2023)",
+   "src": [
+    "UN News",
+    "https://news.un.org/en/story/2023/02/1133212"
+   ]
+  },
+  {
+   "fig": "5 yrs",
+   "figcap": "sentence for a former abbot, exile officials say",
+   "src": [
+    "Central Tibetan Administration",
+    "https://tibet.net/former-abbot-of-ragya-monastery-sentenced-to-five-years-for-reportedly-performing-long-life-prayers-for-his-holiness-the-dalai-lama/"
+   ]
+  },
+  {
+   "fig": "200+",
+   "figcap": "monks' homes reportedly demolished at Sershul",
+   "src": [
+    "Central Tibetan Administration",
+    "https://tibet.net/chinese-authorities-reportedly-carrying-out-demolition-drive-at-historic-dza-sershul-monastery-in-eastern-tibet/"
+   ]
+  },
+  {
+   "fig": "91",
+   "figcap": "the Dalai Lama's age",
+   "src": [
+    "TIME",
+    "https://time.com/article/2026/07/09/china-dalai-lama-succession-tibet/"
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "In February 2023 three UN independent experts said about a million Tibetan children had been placed in government-run boarding schools, taught in Mandarin with no substantive study of Tibetan language, history or culture. They called it \"a mandatory large-scale programme\" and a policy of forced assimilation, and said rural schools in Tibetan areas were being closed.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2023/02/1133212"
+    ]
+   ],
+   "takeaway": "UN experts say about a million Tibetan children are in state boarding schools, with little study of Tibetan language or culture.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "~1M",
+   "figcap": "Tibetan children in state boarding schools (UN experts, 2023)"
+  },
+  {
+   "text": "The Central Tibetan Administration, the exile government in Dharamshala, reported on 17 October 2026 that three Tibetan schools in Machen County, Golog, were closed in August and September: an orphan school with over 300 children, a girls' school with about 800 students, and a village school whose roughly 300 pupils were sent to state boarding schools. It cites unnamed sources; the reports could not be independently verified.",
+   "src": [
+    [
+     "Central Tibetan Administration",
+     "https://tibet.net/three-more-tibetan-schools-shut-down-in-golog-as-china-tightens-its-grip-on-tibetan-language-education/"
+    ]
+   ],
+   "takeaway": "Exile officials report that three Tibetan schools in Golog were closed in August and September; this could not be independently verified.",
+   "visual": {
+    "type": "photo",
+    "i": 2
+   }
+  },
+  {
+   "text": "The same office reports that Khensur Lobsang Tenpa, a former abbot of Ragya monastery in Golog, was detained on 5 July 2026, the eve of the Dalai Lama's 91st birthday, and later sentenced to five years, reportedly for performing long-life prayers for him; the charges and court have not been made public. On 27 October it reported, citing Radio Free Asia, that more than 200 monks' homes at Dza Sershul monastery were being demolished; it says the date and scale are unverified.",
+   "src": [
+    [
+     "Central Tibetan Administration",
+     "https://tibet.net/former-abbot-of-ragya-monastery-sentenced-to-five-years-for-reportedly-performing-long-life-prayers-for-his-holiness-the-dalai-lama/"
+    ],
+    [
+     "Central Tibetan Administration",
+     "https://tibet.net/chinese-authorities-reportedly-carrying-out-demolition-drive-at-historic-dza-sershul-monastery-in-eastern-tibet/"
+    ]
+   ],
+   "takeaway": "A former abbot was reportedly sentenced to five years for long-life prayers for the Dalai Lama.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
+  },
+  {
+   "text": "Succession is the larger dispute. On 2 July 2025 the Dalai Lama said the Gaden Phodrang Trust he founded \"has the sole authority to recognise the future reincarnation\". China's foreign ministry replied that his reincarnation must follow domestic recognition, the Golden Urn lot-drawing \"and approval by the central government\". He turned 91 on 6 July 2026; the whereabouts of the boy he named as Panchen Lama in 1995, whom China then replaced with its own choice, remain unknown.",
+   "src": [
+    [
+     "The Week / PTI",
+     "https://www.theweek.in/wire-updates/national/2025/07/02/del51-ldall-dalai-lama.html"
+    ],
+    [
+     "TIME",
+     "https://time.com/article/2026/07/09/china-dalai-lama-succession-tibet/"
+    ]
+   ],
+   "takeaway": "The Dalai Lama says only his trust can recognise his reincarnation; China says the central government must approve it.",
+   "visual": {
+    "type": "photo",
+    "i": 3
+   }
+  }
+ ],
+ "official": {
+  "text": "China says boarding schools serve children of herders and farmers in remote areas: Zhaluo of the China Tibetology Research Center told a UN side-event in 2023 that they are \"the best way to promote school education\" and differ fundamentally from colonial-era residential schools. On succession, the foreign ministry says the Dalai Lama's reincarnation requires central government approval and the Golden Urn process. No Chinese official comment was reported on the Golog school closures, the Ragya sentence or the Sershul demolitions.",
+  "src": [
+   [
+    "Xinhua",
+    "https://english.news.cn/20230310/d60f759c96494c9c93b0649f4e3dfa08/c.html"
+   ],
+   [
+    "The Week / PTI",
+    "https://www.theweek.in/wire-updates/national/2025/07/02/del51-ldall-dalai-lama.html"
+   ]
+  ],
+  "points": [
+   "China says boarding schools serve children of herders and farmers in remote areas.",
+   "At a 2023 UN side-event, Zhaluo of the China Tibetology Research Center called them “the best way to promote school education”, fundamentally different from colonial-era residential schools.",
+   "On succession, the foreign ministry says the Dalai Lama's reincarnation requires central government approval and the Golden Urn process.",
+   "No Chinese official comment was reported on the Golog school closures, the Ragya sentence or the Sershul demolitions."
+  ]
+ },
+ "editions": [],
+ "instagram": {
+  "caption": "",
+  "hashtags": [
+   "#Tibet",
+   "#HumanRights",
+   "#FreedomOfReligion",
+   "#RightToEducation",
+   "#ResistanceDaily"
+  ]
+ },
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "UN experts say about a million Tibetan children are in state boarding schools taught in Mandarin; China says the schools serve remote areas.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2023/02/1133212"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "Exile officials report school closures, a five-year sentence for prayers and monastery demolitions in recent months; China has not commented.",
+   "src": [
+    [
+     "Central Tibetan Administration",
+     "https://tibet.net/three-more-tibetan-schools-shut-down-in-golog-as-china-tightens-its-grip-on-tibetan-language-education/"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "The Dalai Lama, now 91, says his own trust will name his successor; Beijing says it must approve.",
+   "src": [
+    [
+     "The Week / PTI",
+     "https://www.theweek.in/wire-updates/national/2025/07/02/del51-ldall-dalai-lama.html"
+    ],
+    [
+     "TIME",
+     "https://time.com/article/2026/07/09/china-dalai-lama-succession-tibet/"
+    ]
+   ]
+  }
+ ]
+}

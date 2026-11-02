@@ -1,6 +1,6 @@
 {
  "note": "Still Waiting case list, carried forward weekly. Verify each case every Sunday against sources that name the person and state each fact. Choose cases by severity and need for attention, not to balance India against World: include Indian cases that matter, and keep the world in view, since cases elsewhere are equally important.",
- "asof": "2026-10-25",
+ "asof": "2026-11-01",
  "cases": [
   {
    "region": "india",
@@ -8,7 +8,7 @@
    "where": "Delhi",
    "since": "2020-09-13",
    "law": "UAPA",
-   "status": "Delhi High Court rejected his bail for the third time on 30 Sep 2026; trial not begun. Police called fresh bail pleas premature",
+   "status": "Delhi High Court rejected his bail for the third time on 30 Sep 2026; trial not begun. Prosecution said he cannot seek bail again before Jan 2027",
    "src": [
     [
      "Bar & Bench",
@@ -17,6 +17,10 @@
     [
      "Citizens for Justice and Peace",
      "https://cjp.org.in/six-years-without-a-trial-the-umar-khalid-case-and-indias-criminal-justice-system/"
+    ],
+    [
+     "The Week (PTI)",
+     "https://www.theweek.in/wire-updates/national/2024/09/14/lgd8-dl-court-khalid.html"
     ]
    ]
   },
@@ -33,7 +37,7 @@
      "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
     ],
     [
-     "Bar & Bench",
+     "Bar & Bench (30 Sep)",
      "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
     ],
     [
@@ -43,6 +47,14 @@
     [
      "LiveLaw",
      "https://www.livelaw.in/news-updates/sharjeel-imam-flouted-conditions-imposed-while-granting-interim-bail-delhi-court-554070"
+    ],
+    [
+     "Bar & Bench (10 Oct)",
+     "https://www.barandbench.com/amp/story/news/litigation/delhi-court-says-sharjeel-imam-violated-interim-bail-condition-by-interacting-with-media"
+    ],
+    [
+     "The Week",
+     "https://www.theweek.in/news/india/2020/01/28/sharjeel-imam-jnu-student-accused-of-sedition-arrested-in-jehanabad.amp.html"
     ]
    ]
   },
@@ -92,15 +104,15 @@
    "where": "Kaziranga, Assam",
    "since": "2026-07-12",
    "law": "NSA (detention order 30 Jul 2026)",
-   "status": "Held under NSA after getting bail. High Court hearings on his challenge keep being adjourned as the state seeks time to file its affidavit. Govt cites public order",
+   "status": "Held under NSA after getting bail. Gauhati High Court reserved its verdict on his challenge on 14 Oct. Govt cites public order; Assam Police did not answer press questions",
    "src": [
     [
      "Assam Tribune",
      "https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"
     ],
     [
-     "NorthEast Now (Assamese)",
-     "https://assam.nenow.in/date-after-date-court-again-adjourns-hearing-in-pranab-doley-case/"
+     "The Wire",
+     "https://m.thewire.in/article/rights/charged-with-the-nsa-for-protesting-a-luxury-hotel-project-on-indigenous-land-pranab-doley-completes-111-days-in-detention"
     ]
    ]
   },
@@ -110,23 +122,27 @@
    "where": "Upper Siang, Arunachal",
    "since": "2026-10-09",
    "law": "Arunachal Pradesh UAPA, 2014",
-   "status": "Still held. A 23 Oct bandh demanding their release ended in arson in Pasighat. District says detainees must make representations; CM has offered talks",
+   "status": "Four Geku villagers still held. After the 23 Oct arson in Pasighat, police say 69 people were arrested under the same law. CM has offered talks",
    "src": [
     [
      "Mongabay India",
      "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
     ],
     [
-     "Deccan Chronicle",
-     "https://www.deccanchronicle.com/amp/nation/current-affairs/tension-escalates-over-proposed-siang-upper-multipurpose-project-in-arunachal-1994642"
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
     ],
     [
-     "Maktoob Media",
-     "https://maktoobmedia.com/post?id=116780&slug=none-of-us-were-able-to-breathe-many-injured-as-arunachals-peaceful-anti-dam-protest-turns-violent"
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
     ],
     [
      "Outlook",
      "https://www.outlookindia.com/national/siang-dam-protest-turns-violent-govt-offices-police-vehicles-set-ablaze-in-arunachal-pradesh"
+    ],
+    [
+     "ThePrint",
+     "https://theprint.in/feature/arunachal-women-leading-protests-siang-valley-dam-survey/3086926/"
     ]
    ]
   },
@@ -136,7 +152,7 @@
    "where": "Eritrea",
    "since": "2001-09-23",
    "law": "No charge, no trial",
-   "status": "Journalist held incommunicado 25 years; whereabouts and health unknown. Eritrea's president has said there will be no trial and no release",
+   "status": "Journalist held incommunicado 25 years; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release",
    "src": [
     [
      "RSF",
@@ -154,7 +170,7 @@
    "where": "Bahrain",
    "since": "2011-04-09",
    "law": "Life sentence (2011)",
-   "status": "Human rights defender in Jau Prison; rights groups urged France's president to press for his release (16 Oct). No Bahraini government response reported",
+   "status": "Human rights defender in Jau Prison; rights groups urged France's president to press for his release before his 20 Oct visit. No Bahraini government response reported",
    "src": [
     [
      "Tom Lantos HR Commission",
@@ -176,15 +192,15 @@
    "where": "Türkiye",
    "since": "2017-10-18",
    "law": "Aggravated life sentence",
-   "status": "Istanbul court refused release and retrial (14 Oct) despite a European Court of Human Rights ruling; government says courts are independent and the case is not political",
+   "status": "Istanbul court refused release and retrial (13 Oct) despite a European Court of Human Rights ruling; government says courts are independent and the case is not political",
    "src": [
     [
-     "ICJ",
-     "https://www.icj.org/turkey-re-arrest-of-osman-kavala-immediately-after-his-acquittal-is-a-travesty-of-justice/"
+     "Amnesty UK",
+     "https://www.amnesty.org.uk/knowledge-hub/all-resources/turkey-charges-against-osman-kavala-must-be-dropped/"
     ],
     [
      "Turkish Minute",
-     "https://www.turkishminute.com/2026/10/16/kavala-says-turkish-courts-refusal-to-grant-retrial-damages-judiciarys-credibility/amp/"
+     "https://www.turkishminute.com/2026/10/14/turkish-court-rejects-kavalas-release-and-retrial-despite-ecthr-ruling/"
     ]
    ]
   },
@@ -194,15 +210,15 @@
    "where": "Hong Kong",
    "since": "2020-12-31",
    "law": "National security law (collusion, sedition)",
-   "status": "Serving 20 years, aged 78. UK urged release (22 Oct); Hong Kong rejected this, saying he was not tried for his political views",
+   "status": "Serving 20 years, aged 78. UK urged his release (22 Oct); Hong Kong rejected this, saying he was not tried for his political views",
    "src": [
     [
      "Hong Kong Free Press",
      "https://hongkongfp.com/2026/02/09/breaking-jimmy-lai-jailed-for-20-years-in-hong-kong-after-nat-security-conviction/"
     ],
     [
-     "Hong Kong Free Press",
-     "https://hongkongfp.com/2026/10/23/hong-kong-slams-uks-untruthful-remarks-in-6-monthly-report-highlighting-expanding-scope-of-national-security-laws/"
+     "UK Government (six-monthly report)",
+     "https://www.gov.uk/government/publications/six-monthly-report-on-hong-kong-january-to-june-2026/six-monthly-report-on-hong-kong-1-january-to-30-june-2026"
     ],
     [
      "HKSAR Government",
@@ -243,6 +259,10 @@
     [
      "CPJ",
      "https://cpj.org/2026/10/azerbaijan-prosecutors-seek-prison-terms-of-up-12-years-for-meclis-info-journalists/amp/"
+    ],
+    [
+     "CPJ (2024 arrest)",
+     "https://cpj.org/2024/04/azerbaijan-arrests-13th-journalist-over-alleged-international-donor-funding/"
     ]
    ]
   },
@@ -261,6 +281,10 @@
     [
      "Anadolu",
      "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
+    ],
+    [
+     "CIVICUS",
+     "https://www.civicus.org/index.php/media-resources/news/8868-release-dr-hussam-abu-safiya-and-13-other-doctors-held-without-charge"
     ]
    ]
   },
@@ -277,6 +301,10 @@
     [
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2026/10/sudan-el-fasher-civilians-suffer-unlawful-killings-detention-and-torture-one-year-after-citys-capture-by-the-rsf-new-testimony/"
+    ],
+    [
+     "Dabanga",
+     "https://dabangasudan.org/en/all-news/article/atrocities-persist-in-el-fasher-one-year-after-rsf-takeover"
     ],
     [
      "Anadolu via Yeni Şafak",
@@ -299,6 +327,68 @@
     [
      "Center for Human Rights in Iran",
      "https://iranhumanrights.org/2026/10/iranian-student-sentenced-to-death-over-social-media-post/"
+    ],
+    [
+     "Hengaw",
+     "https://hengaw.org/en/content/article-42934"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Imaan Mazari-Hazir and Hadi Ali Chattha",
+   "where": "Pakistan",
+   "since": "2026-01-23",
+   "law": "Anti-Terrorism Act; earlier 17 years under electronic crimes law (PECA)",
+   "status": "Human rights lawyers sentenced to 10 years on 29 Oct after trial inside Adiala prison. Law minister says the judiciary is independent",
+   "src": [
+    [
+     "Al Jazeera (AFP/Reuters)",
+     "https://www.aljazeera.com/news/2026/10/29/pakistan-rights-activist-imaan-mazari-and-husband-jailed-for-10-years"
+    ],
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/pakistan-rights-lawyers-receive-10-year-sentences"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/pakistan-terrorism-conviction-of-human-rights-lawyers-an-indictment-of-justice-system/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Artin Ghazanfari",
+   "where": "Iran",
+   "since": "2026-01-19",
+   "law": "26 years incl. 'media activities' under espionage-penalties law",
+   "status": "Baha'i photojournalist with heart failure; judge reportedly refused hospital transfer. Sentence told to him on 26 Oct. Iran did not respond to CPJ",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/10/iran-sentences-journalists-under-espionage-law/"
+    ],
+    [
+     "Iran International",
+     "https://www.iranintl.com/en/202610288721"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Mountaga Tall",
+   "where": "Mali",
+   "since": "2026-05-02",
+   "law": "Enforced disappearance; no charge disclosed",
+   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Authorities have not acknowledged holding either",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/critic-of-malis-junta-forcibly-disappeared-six-months-on"
+    ],
+    [
+     "Amnesty International France",
+     "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
     ]
    ]
   }
