@@ -187,17 +187,28 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   person or place, and the key fact, with the official position if the slide has one; for slide 6, the 4 actions. Use
   only facts that are on the slide. No hashtags, emoji or "image of".
 - Instagram takes one caption per slide. Write caption.txt into OUT before running slides.py: it becomes slide 1's
-  caption, and the tool writes OUT/slide-captions.txt with a caption for every slide (each story slide gets its item's
-  full text, sources and photo credit; slide 6 the actions).
+  caption, and the tool writes OUT/slide-captions.txt with a caption for every slide (each story slide gets the
+  story's short "caption" from DATE.slides.json; slide 6 none).
 - If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt, caption.txt (slide
-  1's caption) and slide-captions.txt: the story continues across the slides, one paragraph per photo slide and the rest
-  on the key-numbers slide, each with its sources, and the last slide carries the official position. Every caption must
+  1's caption) and slide-captions.txt from "instagram": {"slide_captions"} (see Caption style below), and the last
+  slide carries the one-line "official_short". Every caption must
   stay under 2,200 characters; the tool warns if one is longer.
-- Caption style (set by the owner): a caption carries only what its slide doesn't already show; never repeat text,
-  labels, numbers, sources or credits printed on the slide. Focus: slide 1 = "Focus · <title>"; "Swipe: each slide's
-  caption tells the next part of the story."; what the first photo shows; at most 5 hashtags. Photo slides = that
-  slide's story paragraph, then "Sources: …" on the next line. Key-numbers slide = the story paragraph only. Last slide =
-  the sources of the official position. Daily: story slides = the item's full text only; slide 6 = no caption.
+- Caption style (owner's rule, 2 Nov 2026): Instagram is the teaser, the website is the depth. Captions are short
+  and tell a story: each gives a feel for what is happening to people's rights there, plus the one number that
+  shows why it is news, and pushes interested readers to the website. Every slide caption is 1–2 short sentences
+  (about 100–230 characters), then one short "Source: <outlet>" line; never a full paragraph, never a list of every
+  outlet. Never repeat text printed on the slide. Read in order, the captions tell the story in a few lines.
+  Focus: write them by hand as "instagram": {"slide_captions": [one per slide], "official_short": "..."} in
+  data/focus/SLUG.json (slides.py uses them; without them it falls back to the long paragraphs and warns). Slide 1 =
+  "Focus · <short title>", one line on what is happening, "Swipe for their story.", "Full story, with a source for
+  every fact: link in bio.", at most 5 hashtags. Last slide = the official position in one sentence and the
+  link-in-bio line. "official_short" is the one-sentence official position printed on the last slide; the full
+  paragraph stays on the website. Daily: give every story in DATE.slides.json a short "caption" (one or two
+  sentences with the official position in a few words, then "Source: …"); slide 6 = no caption.
+- Slide credits and the last slide (owner's rule, 2 Nov 2026): on slides, a photo credit is only "Photo: <author> ·
+  <licence family>" (plus "faces blurred" when true); full credits, licence versions and changes stay on the website.
+  slides.py does this. A Focus's last slide shows only "Read the full story", the link and the one-line
+  "official_short".
 - INSTAGRAM UPDATES (owner's rule): never delete an older post; each post is a dated record. When a Focus changes, decide:
   - No new facts, or only wording: nothing to post.
   - A small development (new statement, hearing date, a few detentions): an Instagram Story. Write story.txt in the

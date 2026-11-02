@@ -16,7 +16,7 @@ Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.tx
 Instagram carousels take a caption per photo). For focus also caption.txt (slide 1's caption) and alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
-import sys, os, json, glob, html, subprocess, datetime
+import sys, os, re, json, glob, html, subprocess, datetime
 
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -103,8 +103,12 @@ def top(label, n, N, light=False):
 
 
 def credit(p):
-    ch = f" ({p['changes']})" if p.get("changes") else ""
-    return f"Photo: {p['credit']}, {p['licence']}{ch}"
+    """Short on-slide credit (owner's rule): author and licence family; the full credit, licence version and changes
+    are on the website. "faces blurred" stays, because it tells viewers the photo was altered."""
+    who = p["credit"].replace(", via Wikimedia Commons", "").replace(" / Wikimedia Commons", "")
+    lic = re.sub(r"\s+[0-9.]+(\s+igo)?$", "", p["licence"], flags=re.I)
+    blur = " · faces blurred" if "blur" in p.get("changes", "") else ""
+    return f"Photo: {who} · {lic}{blur}"
 
 
 def label(p):
@@ -437,19 +441,23 @@ def focus(slug, out, update=False):
     ep = f["photos"][f.get("end_photo", 0)]
     slides.append(f'''<div class="s light" style="padding:0"><div class="full" style="position:relative;height:380px;flex:none"><img src="{E(src_url(kp))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(kp.get("pos", "center"))}">
 <div style="position:absolute;inset:0 0 auto 0;height:220px;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))"></div><div class="in" style="position:relative;height:auto;padding:90px 84px 0;color:#fff">{top("Focus · Key numbers", len(ph) + 1, N)}</div>
-<span style="position:absolute;left:84px;bottom:18px;font:500 18px 'IBM Plex Mono';color:#fff;background:rgba(0,0,0,.55);padding:6px 12px;line-height:1.45">{E(label(kp))} · {E(kp["caption"].split(". ")[0].rstrip("."))}<br>{E(credit(kp))}</span></div>
+<span style="position:absolute;left:84px;bottom:18px;font:500 18px 'IBM Plex Mono';color:#fff;background:rgba(0,0,0,.55);padding:6px 12px;line-height:1.45">{E(label(kp))} · {E(credit(kp))}</span></div>
 <div style="padding:40px 84px 64px;display:flex;flex-direction:column;flex:1"><div class="D" style="font-size:80px">{E(f["title"])}</div>
 <div class="figs" style="margin-top:34px">{figs}</div><div class="srcs">Sources: {E(" · ".join(srcs))}</div></div></div>''')
-    off = f.get("official", {}).get("text", "")
+    ig = f.get("instagram", {})
+    # Last slide (owner's rule): one short line on the official position ("instagram": {"official_short"}), not the
+    # full paragraph, which stays on the website.
+    off = ig.get("official_short") or f.get("official", {}).get("text", "").split(". ")[0].rstrip(".") + "."
+    if not ig.get("official_short") and f.get("official"):
+        print('note: add "instagram": {"official_short": "..."} (one sentence) for the last slide', file=sys.stderr)
     slides.append(f'''<div class="s full"><img src="{E(src_url(ep))}" alt="" style="object-position:{E(ep.get("pos", "center"))};filter:brightness(.55)"><div class="shade"></div><div class="in">{top("Focus · Full story", N, N)}<div class="D" style="font-size:120px;margin-top:60px">Read the full story</div>
-<p style="font-size:34px;line-height:1.4;color:#d0d3d8;margin-top:34px">Every photo with its caption, and what is happening, with a source for every fact.</p>
+<p style="font-size:34px;line-height:1.4;color:#d0d3d8;margin-top:34px">The full story, with a source for every fact, is on our website.</p>
 <div style="margin-top:40px;border-left:8px solid {GR};padding:10px 0 10px 26px"><b style="font:800 46px 'Barlow Condensed';text-transform:uppercase;display:block">Link in bio</b>
 <span style="font:500 26px 'IBM Plex Mono';color:#9ba1aa">resistancedaily.github.io/focus/{E(slug)}</span></div>
-{f'<p style="font-size:27px;line-height:1.4;color:#b8bcc2;margin-top:40px"><b style="font:500 22px IBM Plex Mono;text-transform:uppercase;letter-spacing:.06em;color:#9ba1aa;display:block;margin-bottom:8px">Official position</b>{E(off)}</p>' if off else ''}
-<div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Photos freely licensed<br><span style="text-transform:none">{E(label(ep))} · {E(ep["caption"].split(". ")[0].rstrip("."))} · {E(credit(ep))}</span></div></div></div>''')
+{f'<p style="font-size:32px;line-height:1.4;color:#b8bcc2;margin-top:44px"><b style="font:500 22px IBM Plex Mono;text-transform:uppercase;letter-spacing:.06em;color:#9ba1aa;display:block;margin-bottom:8px">Official position</b>{E(off)}</p>' if off else ''}
+<div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced<br><span style="text-transform:none">{E(label(ep))} · {E(credit(ep))}</span></div></div></div>''')
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
-    ig = f.get("instagram", {})
     # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
     # story reads in order as people swipe. Story paragraphs fill the photo slides, then the key-numbers slide.
     # Owner's style: a caption carries only what its slide doesn't already show. Slide 1: "Focus · title", the swipe
@@ -475,6 +483,12 @@ def focus(slug, out, update=False):
     caps.append("\n\n".join(x["text"] + ("" if {n for n, u in x["src"]} <= shown else "\n" + srcs_of(x["src"]))
                               for x in per[-1]))
     caps.append(srcs_of(f["official"]["src"]) if off else "")
+    if ig.get("slide_captions"):  # owner's rule: short hand-written captions, one per slide, win when given
+        if len(ig["slide_captions"]) != N:
+            sys.exit(f'"slide_captions" has {len(ig["slide_captions"])} entries; this carousel has {N} slides')
+        caps = list(ig["slide_captions"])
+    else:
+        print('note: no "instagram": {"slide_captions"}; using the long story paragraphs as captions', file=sys.stderr)
     open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
     write_captions(out, caps)
     facebook_focus(f, out, wn)
