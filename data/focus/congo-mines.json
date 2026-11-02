@@ -3,7 +3,7 @@
  "kicker": "Focus · Democratic Republic of the Congo",
  "title": "Congo's mines and the minerals in our devices",
  "dek": "Congo mines about three-quarters of the world's cobalt and much of its coltan, much of it dug by hand. Children have been documented in the pits, an armed group taxes mines in the east, and courts are testing who is responsible further down the supply chain.",
- "updated": "2026-10-30",
+ "updated": "2026-11-02",
  "published": "2026-10-30",
  "rights": [
   "Life & safety",
@@ -218,6 +218,22 @@
    "visual": {
     "type": "fig"
    }
+  },
+  {
+   "date": "2026-11-01",
+   "text": "Police in Haut-Katanga, the southern copper and cobalt province, said more than 500 people were detained in a special operation at the Kambove Mining site, about 30 km from Likasi, Actualité.cd reported on 1 November. The provincial police chief, Blaise Kilimbalimba, said the operation aimed to end the illegal occupation of public-service functions at the site, which he called \"a republic within a republic\", and police said a reinforced security presence would remain. No charges, releases or access to lawyers for those held were reported.",
+   "src": [
+    [
+     "Actualité.cd",
+     "https://actualite.cd/2026/11/01/haut-katanga-vaste-operation-policiere-plus-de-500-personnes-interpellees-kambove"
+    ]
+   ],
+   "takeaway": "Police say they detained more than 500 people at the Kambove mining site in the copper and cobalt belt on 1 November.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "500+",
+   "figcap": "detained at Kambove"
   }
  ],
  "official": {
@@ -234,6 +250,10 @@
    [
     "Al Jazeera",
     "https://www.aljazeera.com/news/2026/1/31/more-than-200-killed-in-mine-collapse-in-eastern-dr-congo-report"
+   ],
+   [
+    "Actualité.cd",
+    "https://actualite.cd/2026/11/01/haut-katanga-vaste-operation-policiere-plus-de-500-personnes-interpellees-kambove"
    ]
   ],
   "points": [
@@ -241,10 +261,13 @@
    "Apple said there was “no reasonable basis” to conclude that smelters in its supply chain financed armed groups, says 76% of the cobalt in its devices was recycled in 2024, and says it told suppliers to stop sourcing from Congo and Rwanda.",
    "Rwanda denies backing the M23.",
    "Congo's government accuses the rebels of exploiting the region's resources illegally and unsafely.",
-   "The M23-appointed authorities blamed the Rubaya collapse on the ground giving way in the rainy season."
+   "The M23-appointed authorities blamed the Rubaya collapse on the ground giving way in the rainy season.",
+   "Haut-Katanga police say the Kambove operation targeted people illegally occupying public-service roles at the mining site and aims to restore state authority."
   ]
  },
- "editions": [],
+ "editions": [
+  "2026-11-02"
+ ],
  "instagram": {
   "caption": "",
   "hashtags": [
@@ -302,5 +325,9 @@
     ]
    ]
   }
- ]
+ ],
+ "whats_new": {
+  "date": "2026-11-02",
+  "text": "Haut-Katanga police say more than 500 people were detained at the Kambove mining site; they say those held had illegally taken over public-service roles. No charges were reported."
+ }
 }

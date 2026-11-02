@@ -1,0 +1,86 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 89.98,
+   "lat": 26.02,
+   "sev": "orange",
+   "label": "Dhubri",
+   "left": true
+  },
+  {
+   "n": 2,
+   "lon": 94.02,
+   "lat": 25.27,
+   "sev": "red",
+   "label": "Senapati"
+  },
+  {
+   "n": 3,
+   "lon": 75.78,
+   "lat": 23.18,
+   "sev": "red",
+   "label": "Ujjain"
+  },
+  {
+   "n": 4,
+   "lon": 73.33,
+   "lat": 18.91,
+   "sev": "orange",
+   "label": "Karjat",
+   "left": true
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 34.36,
+   "lat": 11.79,
+   "sev": "orange",
+   "label": "Blue Nile",
+   "left": true
+  },
+  {
+   "n": 6,
+   "lon": 34.45,
+   "lat": 31.5,
+   "sev": "red",
+   "label": "Gaza",
+   "left": true,
+   "dx": -12,
+   "dy": 10
+  },
+  {
+   "n": 7,
+   "lon": 35.1,
+   "lat": 31.53,
+   "sev": "grey",
+   "label": "Hebron",
+   "dx": 12,
+   "dy": -12
+  },
+  {
+   "n": 8,
+   "lon": 26.6,
+   "lat": -10.87,
+   "sev": "orange",
+   "label": "Kambove",
+   "pos": "br"
+  },
+  {
+   "n": 9,
+   "lon": 28.47,
+   "lat": 49.23,
+   "sev": "red",
+   "label": "Ukraine"
+  },
+  {
+   "n": 10,
+   "lon": 115.86,
+   "lat": -31.95,
+   "sev": "grey",
+   "label": "Perth",
+   "left": true
+  }
+ ]
+}
