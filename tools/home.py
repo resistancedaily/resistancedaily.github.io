@@ -48,6 +48,12 @@ cs = cases["cases"]
 longest = min(cs, key=lambda c: c["since"])
 ldays = (asof - datetime.date.fromisoformat(longest["since"])).days
 tracker = max((k for k, v in log.items() if v["design"] == "tracker"), default=None)
+# Accountability Watch (tools/accountability.py): open cases and the share still without an arrest.
+acc = load("data/accountability.json") if os.path.exists(os.path.join(root, "data", "accountability.json")) else None
+if acc:
+    acc_open = [c for c in acc["cases"] if not c.get("closed")]
+    acc_noarrest = sum(1 for c in acc_open if not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
+    acc_states = len({c["state"] for c in acc_open})
 
 def ed_line(k):
     try:
@@ -163,7 +169,12 @@ page = f"""<!doctype html>
 <div class="sw"><div class="big"><div><b>{len(cs)}</b> <span>people and groups tracked</span></div><div><b>{ldays:,}</b> <span>days: the longest, {E(longest["name"])}, {E(longest["where"])}</span></div></div>
 {f'<a class="go" href="archive/{tracker}.html#still-waiting">See every case, {datetime.date.fromisoformat(tracker).strftime("%a %d %b")} →</a>' if tracker else ''}</div></section>
 
-<section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All editions →</a></div>
+{f'''<section aria-labelledby="h-acc"><div class="sec-h"><h2 id="h-acc">Accountability Watch</h2><a href="accountability/">Every case →</a></div>
+<p class="lede">The weak against the powerful: abuse by those with a uniform, an office, money or social dominance, followed from complaint to arrest, chargesheet and verdict, whoever governs the state.</p>
+<div class="sw"><div class="big"><div><b>{len(acc_open)}</b> <span>open cases in {acc_states} states</span></div><div><b>{acc_noarrest}</b> <span>with no arrest reported</span></div></div>
+<a class="go" href="accountability/">See every case →</a></div></section>
+
+''' if acc else ""}<section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All editions →</a></div>
 <p class="lede">Every edition is kept permanently, each in its own layout.</p>
 <ul class="past">{past}</ul></section>
 

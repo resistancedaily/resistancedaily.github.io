@@ -91,6 +91,9 @@ def write_sitemap(root):
     if foc:
         urls.append((SITE + "focus/", max(d for _, d in foc)))
     urls += sorted(foc, key=lambda x: x[1], reverse=True)
+    acc = os.path.join(root, "data", "accountability.json")
+    if os.path.exists(acc) and os.path.exists(os.path.join(root, "accountability", "index.html")):
+        urls.append((SITE + "accountability/", json.load(open(acc))["updated"]))
     urls += [(f"{SITE}archive/{d}.html", d) for d in reversed(eds)]
     rows = "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
     open(os.path.join(root, "sitemap.xml"), "w").write(

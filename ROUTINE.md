@@ -159,6 +159,35 @@ organisers' count as a range.
   The page shows the bullets with the shared sources under them; "text" stays for the slides. Update both together.
 - Show ONE "In focus" card per edition: the Focus most relevant to today's news (normally the one just updated).
 
+## STEP 4b. Accountability Watch (owner's request, 3 Nov 2026; every day)
+"The weak against the powerful": abuse by those with a uniform, an office, money or social dominance (police and
+officials, elected leaders and their supporters, employers, landlords, dominant-caste groups), followed to the outcome.
+Page: https://resistancedaily.github.io/accountability/ (data/accountability.json → `python3 tools/accountability.py`,
+which also rebuilds the home page and sitemap). See the header of tools/accountability.py for the schema.
+- WHAT GETS IN: (1) a clear power gap; (2) a named source AND an official step (FIR, suspension, court notice or arrest),
+  never a bare accusation; (3) the same bar whoever governs the state. Judge the act and the power imbalance, not the
+  party. Types: custodial deaths and police violence, caste atrocities, assault or intimidation by elected leaders or
+  political workers of any party, attacks on RTI activists, whistleblowers and journalists, bonded labour and wage theft,
+  land grabs by the influential.
+- PRIVACY AND FAIRNESS: describe the accused by role ("police", "a local elected leader"); name them only once police or a
+  court have named them in a source. Put the police or official version (or that none was reported) in "official".
+  Never include sexual-assault cases or anything that could identify a survivor or a child victim (BNS s.72, POCSO
+  s.23). No photos of bodies or of victims. Write "alleged" and "accused" until a court rules.
+- DAILY: while researching STEP 2, look for new qualifying cases and add them (they may also be items in the edition;
+  give such an item an "Accountability Watch" right chip only if it is added here). Then check every open case whose
+  30-, 90- or 180-day check date has arrived (the page shows "Next check"): search for an arrest, bail, chargesheet,
+  departmental action or verdict; update "steps" (status "done" with the date and source, "unknown" when not reported),
+  "src" and "checked". If nothing is reported, keep it open: the page shows the days without an arrest. A case that
+  moves can return to the edition as a grey item. When a case ends (verdict, acquittal, closure report accepted), set
+  "closed" to one plain sentence on the outcome, with its source.
+- BALANCE: keep "states" current (who governs each state with a case, with a 2026 source). Aim for cases across
+  states governed by different parties; if coverage is uneven, the page says so. Never add or drop a case to balance
+  numbers: look harder instead.
+- WEEKLY (Wednesday): if any case moved or was added that week, write accountability-weekly.txt in the daily output
+  folder: a short post for WhatsApp and X listing each case that moved (place, what changed, date), ending with
+  https://resistancedaily.github.io/accountability/ ; deliver it with the other files.
+- Report in the notification: "Accountability Watch: <N> open cases (<M> with no arrest), <K> updated today".
+
 ## STEP 5. Publish the edition
 - Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
   item's text is one or two short plain sentences (about 40–50 words,
