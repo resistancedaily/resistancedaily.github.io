@@ -69,6 +69,14 @@ Never hand-edit the generated layout or add charts.
 - Photos follow the same honesty rules: a caption states only what the photo shows, and a file photo is always labelled
   with its year.
 
+- BREVITY (owner's rule, 3 Nov 2026; applies to every page, card, slide and post): numbers, facts and sources first;
+  as little text as possible. A reader should see the whole picture at a glance and choose what to open; no single
+  block should pull them in by its length. Lead with the key figure, then one short line; put detail behind a link,
+  a "More detail" fold or the Focus page. Cut adjectives, background and repetition before cutting a source or the
+  official position. Limits: daily item text ≤ 35 words (one or two sentences, official position included); Focus
+  "dek" ≤ 30 words; summary cards ≤ 20 words; home-page cards show a title and one key number only. When you add a
+  new page or section, follow the home page's pattern: a big number, one line, a link.
+
 ## STEP 1. Yesterday
 Read the backup page (Artifact tool, action "read") or the latest data/*.json in the repo to see what yesterday covered.
 Repeat a place only if something new happened there. Ongoing cases with no change may appear as grey items, at most 2.
@@ -146,7 +154,7 @@ organisers' count as a range.
   from "date". Keep background paragraphs undated and current; put every new development in a dated paragraph. A
   dated paragraph's "fig"/"figcap" shows under its text.
 - VISUAL LAYOUT (owner's rule, 1 Nov 2026; every Focus uses it): "summary" = three answer-first cards (What's
-  happening / Why it matters / What's next, each ≤ 25 words, sourced); every undated paragraph has a "takeaway" (one
+  happening / Why it matters / What's next, each ≤ 20 words, sourced); every undated paragraph has a "takeaway" (one
   sentence) and a "visual": a photo, a simple bar chart, a dot diagram, a map (data/focus/maps/SLUG.json → `node
   tools/maps.js data/focus/maps/SLUG.json`, saved as data/focus/maps/SLUG.svg) or the paragraph's key figure. The full
   paragraph is folded under "More detail and sources"; unused photos go to "In pictures". See the header of
@@ -191,7 +199,7 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
 
 ## STEP 5. Publish the edition
 - Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
-  item's text is one or two short plain sentences (about 40–50 words,
+  item's text is one or two short plain sentences (at most 35 words, see BREVITY;
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
 - Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes today/index.html

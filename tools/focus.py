@@ -26,7 +26,7 @@ data/focus/SLUG.json:
   "numbers_photo": 0, "end_photo": 0,                 # optional: photo indexes for the slides' key-numbers and last slide
   # Visual layout (optional): "summary" puts three answer-first cards under the header, and a paragraph with a
   # "takeaway" becomes a block: its visual, the one-sentence takeaway, and the full text under "More detail".
-  "summary": [{"label": "What's happening"|"Why it matters"|"What's next", "text" (<= 25 words), "src"}, x3],
+  "summary": [{"label": "What's happening"|"Why it matters"|"What's next", "text" (<= 20 words), "src"}, x3],
   # story[i]["takeaway"]: one sentence; story[i]["visual"]: {"type": "photo", "i": photo index} |
   #   {"type": "chart", "title", "bars": [[label, value], ...], "unit"?, "src"} | {"type": "dots", "n", "of", "cap", "src"} |
   #   {"type": "map", "cap", "src"} (inlines data/focus/maps/SLUG.svg, made by tools/maps.js from data/focus/maps/SLUG.json "custom") | {"type": "fig"}

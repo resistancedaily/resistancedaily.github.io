@@ -5,8 +5,9 @@ Usage (from the repo root):  python3 tools/home.py [OUT]     (OUT: index.html, t
                                                               builds a preview that search engines skip)
 Run automatically by publish.py and focus.py.
 Reads the latest data/YYYY-MM-DD.json, data/focus/*.json, data/cases.json and archive/editions.json.
-Sections, top to bottom: Today (top headlines + link to the full edition), In focus, Still waiting, Past editions,
-Follow us (one line on what each channel is for), How we report.
+Sections, top to bottom (kept minimal: numbers first, one line each): Today, In focus (4 compact cards with each
+story's key number), Tracking (Still waiting + Accountability Watch), Past editions (one headline each), How we report
+(folded). Follow links sit in the masthead chips and the footer.
 """
 import sys, os, json, glob, html, datetime
 import seo
@@ -39,9 +40,13 @@ full = f"archive/{date}.html" if preview else "today/"
 top = sorted(d["items"], key=lambda i: (not i.get("lead"), SEV[i["sev"]]))[:4]
 today = "".join(f'<li><i class="dot {i["sev"]}"></i><span><b>{E(i.get("short", i["place"]))}</b> · {E(i["headline"])}</span></li>' for i in top)
 
-cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="{E(f["photos"][0]["alt"])}" loading="lazy" decoding="async">
-<div><span class="k">{E(f["kicker"].replace("Focus · ", ""))}</span><h3>{E(f["title"])}</h3><p>{E(f["dek"])}</p>
-<span class="upd">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · What's new" if f.get("whats_new") else ""}</span></div></a>''' for f in focus[:3])  # phones show the first 2 (CSS below)
+def lead_fig(f):
+    x = (f.get("figs") or [{}])[0]
+    return f'<span class="kf"><b>{E(x["fig"])}</b> {E(x["figcap"])}</span>' if x.get("fig") else ""
+
+
+cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="" loading="lazy" decoding="async">
+<div><span class="k">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · New" if f.get("whats_new") else ""}</span><h3>{E(f["title"])}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
 
 asof = datetime.date.fromisoformat(cases["asof"])
 cs = cases["cases"]
@@ -60,12 +65,12 @@ def ed_line(k):
     try:
         x = load(f"data/{k}.json")
         h = sorted(x["items"], key=lambda i: (not i.get("lead"), SEV[i["sev"]]))
-        s = "; ".join(f'{i.get("short", i["place"])}: {i["headline"]}' for i in h[:2])
+        s = f'{h[0].get("short", h[0]["place"])}: {h[0]["headline"]}'
     except Exception:
         s = log[k]["summary"]
     return (f'<li><a href="archive/{k}.html"><b>{datetime.date.fromisoformat(k).strftime("%a %d %b")}</b></a>'
             f'<span class="t">{E(NAMES.get(log[k]["design"], log[k]["design"]))}</span><p>{E(s)}</p></li>')
-past = "".join(ed_line(k) for k in sorted(log, reverse=True)[1:8])  # phones show the first 4
+past = "".join(ed_line(k) for k in sorted(log, reverse=True)[1:5])
 
 CH = [("Instagram", seo.INSTAGRAM, "Photo stories and the day's slides"),
       ("WhatsApp", seo.WHATSAPP, "Each morning's headlines on your phone"),
@@ -90,7 +95,7 @@ CSS = """
 :root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--grey:#8d939c;--green:#3fb07a;--chip:#22262c;color-scheme:dark}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body)}
-.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:34px}
+.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:26px}
 a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:2px}
 a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 h1,h2,h3{font-family:var(--display);margin:0;text-transform:uppercase;line-height:.95}
@@ -113,31 +118,28 @@ section{display:grid;gap:12px}
 .dot{display:inline-block;width:11px;height:11px;border-radius:50%;flex:none;transform:translateY(1px)}
 .dot.red{background:var(--red)}.dot.orange{background:var(--accent)}.dot.grey{background:var(--grey)}
 .go{justify-self:start;font-weight:600;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:4px;padding:10px 16px}
-.focs{display:grid;gap:10px}
-.fcard{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);overflow:hidden;text-decoration:none;color:inherit}
-.fcard img{display:block;width:100%;height:100%;min-height:150px;object-fit:cover;background:var(--chip)}
-.fcard div{padding:14px 16px;display:grid;gap:6px;align-content:center}
-.fcard .k,.upd{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.07em;color:var(--accent)}
-.upd{color:var(--muted)}
-.fcard h3{font-size:30px;font-weight:800;text-wrap:balance}
-.fcard p{font-size:14px;color:var(--muted)}
-@media (max-width:560px){.fcard{grid-template-columns:1fr}.fcard img{height:auto;aspect-ratio:16/9;min-height:0}}
-.sw{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:16px 18px;display:grid;gap:10px}
-.sw .big{display:flex;flex-wrap:wrap;gap:6px 26px;align-items:baseline}
-.sw .big b{font:800 64px/0.9 var(--display);color:var(--red)}
-.sw .big span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.past{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.past li{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}
-.past .t{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-left:8px}
-.past p{color:var(--muted);font-size:14px;margin-top:2px}
-.chs{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px}
-.ch{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--green);border-radius:6px;padding:10px 12px;display:grid;gap:2px;text-decoration:none}
-.ch b{font:800 22px var(--display);text-transform:uppercase}
-.ch span{font-size:13px;color:var(--muted)}
-.how{margin:0;padding-left:18px;display:grid;gap:4px;color:var(--muted);max-width:66ch}
-/* Phones: a shorter page, so readers see every section rather than stopping in one. */
-@media (max-width:620px){.fcard:nth-child(n+3){display:none}.past li:nth-child(n+5){display:none}
-.sw .big{display:grid;gap:12px}.sw .big>div{display:grid;gap:4px}}
+.focs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:8px}
+.fcard{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:84px minmax(0,1fr);overflow:hidden;text-decoration:none;color:inherit}
+.fcard img{display:block;width:84px;height:100%;min-height:84px;object-fit:cover;background:var(--chip)}
+.fcard div{padding:8px 12px;display:grid;gap:3px;align-content:center;min-width:0}
+.fcard .k{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fcard h3{font-size:21px;font-weight:800;text-wrap:balance}
+.kf{font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.kf b{font:800 17px var(--display);color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px}
+.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:12px 14px;display:grid;gap:2px;text-decoration:none;color:inherit;align-content:start}
+.stat .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.stat b{font:800 52px/0.95 var(--display);color:var(--red)}
+.stat span{font-size:14px}.stat .sub{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.past{list-style:none;margin:0;padding:0;display:grid;gap:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
+.past li{padding:8px 14px;border-top:1px solid var(--rule);display:flex;gap:10px;align-items:baseline;min-width:0}
+.past li:first-child{border-top:0}
+.past li a{white-space:nowrap;flex:none}
+.past .t{display:none}
+.past p{color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.how{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}
+.how summary{cursor:pointer;font-weight:600}
+.how ul{margin:8px 0 0;padding-left:18px;display:grid;gap:4px;color:var(--muted);font-size:14px}
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 """
 
@@ -153,41 +155,31 @@ page = f"""<!doctype html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>{CSS}</style></head><body><div class="wrap">
 <header class="mast"><div class="bar" aria-hidden="true"></div><h1>Resistance Daily</h1>
-<p class="tag">A non-partisan daily record of human rights and civil liberties in India and around the world. Every fact links to its source.</p>
+<p class="tag">Human rights in India and the world, daily. Non-partisan. Every fact sourced.</p>
 <nav class="chips" aria-label="Follow Resistance Daily">{chips}</nav></header>
 
 <section aria-labelledby="h-today"><div class="sec-h"><h2 id="h-today">Today</h2><a href="{full}">Full edition →</a></div>
-<p class="lede">What happened to people's rights in the last 24 hours, with the official position next to every claim. A new edition every morning at 9:00 IST.</p>
-<div class="today"><span class="when">{dt.strftime("%A %d %B %Y")} · {E(NAMES.get(log.get(date, {}).get("design", ""), ""))}</span><ul>{today}</ul>
-<a class="go" href="{full}">Read today's full edition →</a></div></section>
+<div class="today"><span class="when">{dt.strftime("%a %d %b %Y")} · {E(NAMES.get(log.get(date, {}).get("design", ""), ""))} · {len(d["items"])} stories</span><ul>{today}</ul>
+<a class="go" href="{full}">Read today's edition →</a></div></section>
 
-<section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All {len(focus)} stories →</a></div>
-<p class="lede">One place or issue told in depth, with photos and a source for every fact. Updated whenever something changes.</p>
+<section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All {len(focus)} →</a></div>
 <div class="focs">{cards}</div></section>
 
-<section aria-labelledby="h-sw"><div class="sec-h"><h2 id="h-sw">Still waiting</h2>{f'<a href="archive/{tracker}.html#still-waiting">Weekly tracker →</a>' if tracker else ''}</div>
-<p class="lede">People held for a long time after speaking out, protesting, reporting or providing care, in India and around the world. Checked against sources every Sunday.</p>
-<div class="sw"><div class="big"><div><b>{len(cs)}</b> <span>people and groups tracked</span></div><div><b>{ldays:,}</b> <span>days: the longest, {E(longest["name"])}, {E(longest["where"])}</span></div></div>
-{f'<a class="go" href="archive/{tracker}.html#still-waiting">See every case, {datetime.date.fromisoformat(tracker).strftime("%a %d %b")} →</a>' if tracker else ''}</div></section>
+<section aria-labelledby="h-track"><div class="sec-h"><h2 id="h-track">Tracking</h2></div><div class="stats">
+<a class="stat" href="{f'archive/{tracker}.html#still-waiting' if tracker else 'archive/'}"><span class="k">Still waiting</span><b>{len(cs)}</b><span>people and groups held after speaking out</span><span class="sub">Longest: {ldays:,} days, {E(longest["name"])}</span></a>
+{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><b>{len(acc_open)}</b><span>abuse-of-power cases in {acc_states} states</span><span class="sub">{acc_noarrest} with no arrest reported</span></a>''' if acc else ""}
+</div></section>
 
-{f'''<section aria-labelledby="h-acc"><div class="sec-h"><h2 id="h-acc">Accountability Watch</h2><a href="accountability/">Every case →</a></div>
-<p class="lede">The weak against the powerful: abuse by those with a uniform, an office, money or social dominance, followed from complaint to arrest, chargesheet and verdict, whoever governs the state.</p>
-<div class="sw"><div class="big"><div><b>{len(acc_open)}</b> <span>open cases in {acc_states} states</span></div><div><b>{acc_noarrest}</b> <span>with no arrest reported</span></div></div>
-<a class="go" href="accountability/">See every case →</a></div></section>
-
-''' if acc else ""}<section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All editions →</a></div>
-<p class="lede">Every edition is kept permanently, each in its own layout.</p>
+<section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All →</a></div>
 <ul class="past">{past}</ul></section>
 
-<section aria-labelledby="h-follow"><div class="sec-h"><h2 id="h-follow">Follow us your way</h2></div><div class="chs">{follow}</div></section>
-
-<section aria-labelledby="h-how"><div class="sec-h"><h2 id="h-how">How we report</h2></div><ul class="how">
-<li>We cover rights, not parties: life and safety, assembly, expression, press freedom, due process, land and livelihood.</li>
+<details class="how"><summary>How we report</summary><ul>
+<li>Rights, not parties: life and safety, assembly, expression, press freedom, due process, land and livelihood.</li>
 <li>Every number links to its source, with ground-level reporting first.</li>
-<li>Official positions appear next to allegations; claims are labelled as claims; when sources disagree we show the range.</li>
-<li>Photos are freely licensed and credited; we blur protesters' and children's faces.</li></ul></section>
+<li>The official position sits next to every allegation; when sources disagree we show the range.</li>
+<li>Photos are freely licensed and credited; protesters' and children's faces are blurred.</li></ul></details>
 
-<footer><span>Seen something? Send photos with the date, the place and your permission to publish, or a tip or correction, to <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a>.</span>
+<footer><span>Tips, photos or corrections: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span>
 <span>{seo.FOLLOW}</span></footer>
 </div></body></html>
 """
