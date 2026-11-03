@@ -382,7 +382,7 @@ def index(all_f):
         x = (f.get("figs") or [{}])[0]
         return f'<span class="kf"><b>{E(x["fig"])}</b> {E(x["figcap"])}</span>' if x.get("fig") else ""
     cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="" loading="lazy">
-<div><span class="kicker">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}</span><h2>{E(f.get("short", f["title"]))}</h2>{kf(f)}</div></a></li>''' for f in all_f)
+<div><h2>{E(f.get("short", f["title"]))}</h2>{kf(f)}</div></a></li>''' for f in all_f)
     return HEAD.format(title="Focus · Resistance Daily", desc="In-depth stories on places and issues, with a source for every fact.",
                        og_image="", extra=f'<meta property="og:url" content="{SITE}focus/"><meta property="og:site_name" content="Resistance Daily">',
                        canonical=f"{SITE}focus/", css=CSS) + f"""

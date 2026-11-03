@@ -46,7 +46,7 @@ def lead_fig(f):
 
 
 cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="" loading="lazy" decoding="async">
-<div><span class="k">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · New" if f.get("whats_new") else ""}</span><h3>{E(f.get("short", f["title"]))}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
+<div><h3>{E(f.get("short", f["title"]))}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
 
 asof = datetime.date.fromisoformat(cases["asof"])
 cs = cases["cases"]
