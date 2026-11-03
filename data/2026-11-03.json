@@ -1,0 +1,399 @@
+{
+ "date": "2026-11-03",
+ "date_long": "Tue 3 Nov 2026",
+ "date_short": "Tue 3 Nov",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-03",
+ "items": [
+  {
+   "region": "india",
+   "place": "Upper Siang, Siang and East Siang districts, Arunachal Pradesh",
+   "short": "Upper Siang",
+   "rights": [
+    "Expression",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "36 hrs",
+   "figcap": "shutdown",
+   "headline": "Internet cut in Upper Siang during dam shutdown",
+   "text": "A 36-hour shutdown against the proposed Siang dam began on Monday demanding detainees' release, and internet was suspended in four Upper Siang areas \"to curb misinformation\", Arunachal Times reports; Chief Minister Pema Khandu said \"we are not talking about dam construction at this stage\".",
+   "src": [
+    [
+     "Arunachal Times",
+     "https://arunachaltimes.in/article/shutdown-over-sump-issue-paralyses-normal-life-in-u-siang-internet-suspended"
+    ],
+    [
+     "Hub Network",
+     "https://hubnetwork.in/amid-siang-project-protests-khandu-says-no-decision-on-dam-construction-without-public-consent/"
+    ]
+   ],
+   "lon": 95.03,
+   "lat": 28.61,
+   "photo": {
+    "src": "images/focus/siang/siang-valley-2023.webp",
+    "alt": "A river valley between steep green hills, seen from a bridge.",
+    "caption": "The Siang valley in Arunachal Pradesh, seen from a bridge. The shutdown covered Siang, Upper Siang and East Siang districts.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:SiangRiverArunachal.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "focus": "siang",
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Torsa Tea Garden, near Jaigaon, north Bengal",
+   "short": "Torsa",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "11",
+   "figcap": "detained",
+   "headline": "Bulldozers clear Torsa tea garden protest site",
+   "text": "Bulldozers cleared a 100-day protest site of about 80 families at Torsa Tea Garden in north Bengal on Monday for the proposed Jaigaon land port, and 11 people were detained, The Statesman reports; the families seek rehabilitation, the case is before the Calcutta High Court, and no official response was reported.",
+   "src": [
+    [
+     "The Statesman",
+     "https://www.thestatesman.com/cities/siliguri/bulldozers-raze-100-day-protest-site-at-north-bengals-torsa-11-detained-1503658150.html"
+    ]
+   ],
+   "lon": 89.38,
+   "lat": 26.85,
+   "photo": {
+    "src": "images/2026-11-03/jaigaon.webp",
+    "alt": "A busy shopping street with clothes stalls on the left, an auto-rickshaw and shop signs, and a gate at the far end.",
+    "caption": "A street in Jaigaon, north Bengal, in 2015. The land port that the Torsa families are being evicted for is planned at Jaigaon.",
+    "credit": "Christopher J. Fynn / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jaigaon_street_below_Bhutan_gate.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Bombay High Court, Mumbai, Maharashtra",
+   "short": "Mumbai",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "7 Dec",
+   "figcap": "next hearing",
+   "headline": "Court says OCI cardholders cannot protest",
+   "text": "The Bombay High Court said on Monday that Overseas Citizen of India cardholders have no right to protest and asked actor Imran Khan, a US citizen detained at a 10 October Mumbai protest, to apologise, Scroll reports; he apologised, and the court kept on hold a notice ordering him to leave India.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096818/hc-says-oci-cardholders-dont-have-right-to-protest-asks-actor-imran-khan-to-apologise"
+    ]
+   ],
+   "lon": 72.83,
+   "lat": 18.93,
+   "photo": {
+    "src": "images/2026-10-27/august-kranti-maidan.webp",
+    "alt": "An arched gate with Devanagari lettering over a green iron gate, leading to a tree-lined path where a few people walk.",
+    "caption": "The entrance to August Kranti Maidan, Mumbai, where Imran Khan was detained at a protest on 10 October.",
+    "credit": "Karthikndr / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:August_Kranti_Maidan,_Mumbai.JPG",
+    "kind": "file",
+    "year": "2012"
+   },
+   "map": {
+    "left": true
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Anantapur district, Andhra Pradesh",
+   "short": "Anantapur",
+   "rights": [
+    "Due process",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "shot in custody",
+   "headline": "Police shoot Andhra suspect, say he fled",
+   "text": "Police in Anantapur district shot a man arrested on Sunday over a chainsaw attack on a schoolgirl, saying they fired in self-defence when he threw stones and tried to flee; he is in serious condition, Scroll reports, and no inquiry has been reported.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096799/police-shoot-andhra-man-who-attacked-schoolgirl-while-allegedly-trying-to-escape-custody"
+    ]
+   ],
+   "lon": 77.6,
+   "lat": 14.68,
+   "photo": {
+    "src": "images/2026-11-03/anantapur.webp",
+    "alt": "A clock tower lit up at night at a busy roundabout, with light trails from traffic.",
+    "caption": "The clock tower in Anantapur town at night, in 2011.",
+    "credit": "Maheshrig / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Anantapur_Clock_tower_at_night.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Kassala, River Nile and Northern states, Sudan",
+   "short": "Kassala",
+   "rights": [
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "16",
+   "figcap": "stations hit",
+   "headline": "Drone strikes cut power across eastern Sudan",
+   "text": "Drones hit three substations in Kassala and near Merowe on Monday, cutting power, and at least 16 power stations were targeted in a week, Anadolu reports; Sudan's government accuses Ethiopia of involvement, Ethiopia gave no immediate comment, and the RSF generally does not comment.",
+   "src": [
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/world/drone-attacks-hit-3-power-stations-in-sudan-trigger-widespread-outages/4108387"
+    ]
+   ],
+   "lon": 36.4,
+   "lat": 15.45,
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-03/kassala.webp",
+    "alt": "Rooftops and a street with parked cars in a town, with tall granite domes of mountains behind.",
+    "caption": "The centre of Kassala, eastern Sudan, with the Taka Mountains behind, in 2008.",
+    "credit": "Bertramz / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kassala_center_Totil.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Press freedom",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "Art. 51",
+   "figcap": "amended",
+   "headline": "Sudan law puts journalists at risk, CPJ says",
+   "text": "CPJ said on Monday that a 19 October change to Article 51 of Sudan's Criminal Act, criminalising online or media support for threats to state security, could bring journalists life in prison or death; the journalists' syndicate warned of prosecutions, and the army did not answer CPJ.",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/11/sudan-amends-anti-state-law-to-target-online-and-media-publishing/"
+    ]
+   ],
+   "lon": 32.53,
+   "lat": 15.59,
+   "focus": "sudan-war",
+   "map": {
+    "left": true
+   },
+   "photo": {
+    "src": "images/2026-11-03/khartoum.webp",
+    "alt": "A donkey cart beside a dusty street with a painted wall and a white building behind.",
+    "caption": "A street in Khartoum, Sudan's capital, in 2013.",
+    "credit": "Shmyg / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Khartoum_Street.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Gaza City, Khan Younis and Deir al-Balah, Gaza Strip",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "5",
+   "figcap": "killed",
+   "headline": "Israeli fire kills five in Gaza, medics say",
+   "text": "Israeli strikes and fire killed five Palestinians on Monday in Gaza City, al-Mawasi, Khan Younis and east of Deir al-Balah, medical sources told Anadolu; Gaza's government media office counts 1,593 killed since the October 2025 ceasefire, and no Israeli military comment was reported.",
+   "src": [
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/middle-east/israeli-fire-kills-5-palestinians-injures-13-amid-gaza-ceasefire-violations/4108392"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, in 2025. One of Monday's deaths was east of Deir al-Balah.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Mrauk-U, Rakhine State, and Loikaw, Kayah State, Myanmar",
+   "short": "Mrauk-U",
+   "rights": [
+    "Civilian harm",
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "15",
+   "figcap": "killed",
+   "headline": "Air strikes hit Myanmar clinic and school",
+   "text": "Military air strikes on Sunday killed at least 12 people in Rakhine State, including a week-old baby at a maternity clinic in Mrauk-U, and three students at a Loikaw school, an armed group, an aid worker and monitors told Reuters; the military government did not immediately respond.",
+   "src": [
+    [
+     "Reuters via Free Malaysia Today",
+     "https://www.freemalaysiatoday.com/category/world/2026/11/02/newborn-among-15-killed-in-myanmar-military-strikes-on-clinic-school"
+    ]
+   ],
+   "lon": 93.19,
+   "lat": 20.59,
+   "photo": {
+    "src": "images/2026-11-03/mrauk-u.webp",
+    "alt": "Old stone temples and stupas among green trees and grass, with a few people and cows on a dirt path, under grey clouds.",
+    "caption": "Temples at Mrauk-U, Rakhine State, in 2017.",
+    "credit": "Arezarni / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mrauk_U_Landscape.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Ashulia, Gazipur and Mirpur, around Dhaka, Bangladesh",
+   "short": "Dhaka",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "57",
+   "figcap": "arrested",
+   "headline": "Garment workers clash with police over wages",
+   "text": "Thousands of garment workers seeking a 30,000-taka minimum wage clashed with police around Dhaka on Monday, with tear gas used and at least 57 arrested and 58 police injured, AFP reports; the government formed a wage board, and the home minister warned of an \"iron hand\".",
+   "src": [
+    [
+     "AFP via Yahoo",
+     "https://www.yahoo.com/news/world/articles/bangladesh-garment-workers-clash-police-090102098.html"
+    ]
+   ],
+   "lon": 90.3,
+   "lat": 23.9,
+   "photo": {
+    "src": "images/2026-11-03/ashulia.webp",
+    "alt": "A brick embankment road beside wide floodwater under a cloudy sky, with a food cart and a few people.",
+    "caption": "An embankment road in Ashulia, near Dhaka, in 2007. Ashulia is one of the industrial areas where workers protested.",
+    "credit": "Shahnoor Habib Munmun / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ashulia_Dhaka_Bangladesh_1.JPG",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Isfahan, Iran",
+   "short": "Isfahan",
+   "rights": [
+    "Due process",
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "37",
+   "figcap": "protest executions",
+   "headline": "Iran sets execution of two young protesters",
+   "text": "Iran scheduled the execution of Amirhossein Maleki, 20, and Abolfazl Ebrahimi, 18, in Isfahan on 3 November over January's protests, rights groups told ABC News; authorities accuse them of involvement in killing four security personnel, while a defence lawyer says none was charged with murder.",
+   "src": [
+    [
+     "ABC News",
+     "https://abcnews.com/International/iran-set-execute-2-men-18-20-protest/story?id=137788302"
+    ]
+   ],
+   "lon": 51.67,
+   "lat": 32.65,
+   "photo": {
+    "src": "images/2026-11-03/isfahan.webp",
+    "alt": "A wide rectangular square with lawns and paths, surrounded by long arcaded buildings.",
+    "caption": "Naqsh-e Jahan Square in Isfahan, Iran, in 2016.",
+    "credit": "Bernard Gagnon / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Naqsh-e_Jahan_Square,_Isfahan_01.jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "resized"
+   },
+   "n": 10
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Police say 69 people have been arrested since arson in Pasighat on 23 October; on 2 November a 36-hour shutdown began and internet was suspended in parts of Upper Siang.",
+   "src": "images/focus/siang/siang-valley-2023.webp",
+   "alt": "A river valley between steep green hills, seen from a bridge.",
+   "photos": 4
+  }
+ ]
+}
