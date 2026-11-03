@@ -1,0 +1,82 @@
+{
+ "cover": [
+  [
+   "Upper Siang, Arunachal",
+   "Internet cut during 36-hour dam shutdown"
+  ],
+  [
+   "Torsa, north Bengal",
+   "Protest site razed, 11 detained"
+  ],
+  [
+   "Kassala, Sudan",
+   "Drones hit power stations, outages spread"
+  ],
+  [
+   "Mrauk-U, Myanmar",
+   "Air strikes hit a maternity clinic"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 1,
+   "label": "India · Expression",
+   "fig": "36 hrs",
+   "figlab": "shutdown",
+   "place": "Upper Siang, Arunachal Pradesh",
+   "head": "Internet cut during dam shutdown",
+   "bullets": [
+    "A 36-hour shutdown began on Monday, demanding the release of detained dam protesters.",
+    "Internet was suspended in Yingkiong, Simong, Komkar and Geku \"to curb misinformation\".",
+    "CM Pema Khandu: \"We are not talking about dam construction at this stage.\""
+   ],
+   "src": "Arunachal Times · Hub Network",
+   "caption": "Families in the Siang valley shut shops and roads for 36 hours to demand their detained neighbours back, and then lost the internet. The full Siang story is on our site.\nSource: Arunachal Times"
+  },
+  {
+   "n": 2,
+   "label": "India · Land & livelihood",
+   "fig": "11",
+   "figlab": "detained",
+   "place": "Torsa Tea Garden, north Bengal",
+   "head": "Protest site razed for land port",
+   "bullets": [
+    "Bulldozers cleared a 100-day protest site on Monday evening for the proposed Jaigaon land port.",
+    "About 80 families seek land rights, compensation and rehabilitation; the case is in the Calcutta High Court.",
+    "No official response was reported."
+   ],
+   "src": "The Statesman",
+   "caption": "Tea garden families who held out for more than 100 days on land they call ancestral watched it cleared in one evening. No official response yet.\nSource: The Statesman"
+  },
+  {
+   "n": 5,
+   "label": "World · Civilian harm",
+   "fig": "16",
+   "figlab": "power stations hit in a week",
+   "place": "Kassala and Merowe, Sudan",
+   "head": "Drones cut power across Sudan",
+   "bullets": [
+    "Drones hit New Halfa and Aroma substations in Kassala and one near Merowe on Monday.",
+    "Power was cut across Merowe and much of Kassala.",
+    "Sudan accuses Ethiopia of involvement; Ethiopia gave no immediate comment, and the RSF generally does not comment."
+   ],
+   "src": "Anadolu",
+   "caption": "After a week of drone strikes on Sudan's grid, whole towns went dark again on Monday, in a war that has already driven about 13 million from their homes.\nSource: Anadolu"
+  },
+  {
+   "n": 8,
+   "label": "World · Civilian harm",
+   "fig": "15",
+   "figlab": "killed, incl. a newborn",
+   "place": "Mrauk-U and Loikaw, Myanmar",
+   "head": "Clinic and school hit",
+   "bullets": [
+    "Strikes on Sunday killed at least 12 in Rakhine State, including a week-old baby at a maternity clinic in Mrauk-U.",
+    "Three students were killed when a school in Loikaw was hit.",
+    "The military government did not immediately respond."
+   ],
+   "src": "Reuters via Free Malaysia Today",
+   "caption": "A week-old girl, due home the next day, died when the clinic collapsed; her twin survived. The military has called its campaign one against \"terrorists\".\nSource: Reuters"
+  }
+ ]
+}
