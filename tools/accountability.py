@@ -10,7 +10,7 @@ data/accountability.json:
   "figures": [{"fig", "cap", "src": [name, url]}],                    # 2-4 national anchor numbers
   "states": {"State": {"cm", "party", "src": [name, url]}},             # who governs each state with a case (balance log)
   "cases": [{
-     "id", "kind": "Custody"|"Caste"|"Political power"|"RTI & whistleblowers"|"Workers"|"Land",
+     "id", "region": "india" (default) | "world" (then "state" is the country), "kind": "Custody"|"Caste"|"Political power"|"RTI & whistleblowers"|"Workers"|"Land",
      "state", "place", "date": "YYYY-MM-DD" (the incident), "power": who held power, by ROLE (e.g. "Police"),
      "head" (<= 9 words, neutral), "text" (2 sentences: what is alleged, by whom), "official" (police/official version,
      or that none was reported), "steps": [{"step", "status": "done"|"unknown"|"open", "date"?, "note"?}],
@@ -60,7 +60,7 @@ def card(c):
     else:
         line = f'<p class="stall">{days} days since the incident · no arrest reported</p>'
     src = " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in c["src"])
-    return (f'<article class="case" id="{E(c["id"])}" data-k="{E(c["kind"])}"><div class="top"><span class="chip">{E(c["kind"])}</span>'
+    return (f'<article class="case" id="{E(c["id"])}" data-k="{E(c["kind"])}" data-r="{E(c.get("region", "india"))}"><div class="top"><span class="chip">{E(c["kind"])}</span>'
             f'<span class="pw">Power: {E(c["power"])}</span></div><h3>{E(c["head"])}</h3>'
             f'<p class="where">{E(c["place"])} · {fmt(c["date"])}{gov}</p><p>{E(c["text"])}</p>'
             f'<p class="off"><b>Official version:</b> {E(c["official"])}</p><ol class="steps" aria-label="Case progress">{steps}</ol>{line}'
@@ -69,7 +69,10 @@ def card(c):
 
 
 kinds = ["All"] + sorted({c["kind"] for c in cases})
-case_states = sorted({c["state"] for c in open_cases})
+region = lambda c: c.get("region", "india")
+case_states = sorted({c["state"] for c in open_cases if region(c) == "india"})
+world_open = [c for c in open_cases if region(c) == "world"]
+countries = sorted({c["state"] for c in world_open})
 parties = {}
 for s in case_states:
     if s in states:
@@ -79,8 +82,8 @@ gov_src = " · ".join(f'<a href="{E(states[s]["src"][1])}">{E(s)}</a>' for s in 
 figs = "".join(f'<div class="fig"><b>{E(f["fig"])}</b><span>{E(f["cap"])}</span><a href="{E(f["src"][1])}">{E(f["src"][0])}</a></div>'
                for f in data.get("figures", []))
 ordered = sorted(open_cases, key=lambda c: c["date"], reverse=True) + [c for c in cases if c.get("closed")]
-title = "Accountability Watch: abuse of power in India, tracked to the outcome"
-desc = (f"{len(open_cases)} open cases from {len(case_states)} states: custodial deaths, caste violence, attacks on RTI activists "
+title = "Accountability Watch: abuse of power in India and worldwide, tracked to the outcome"
+desc = (f"{len(open_cases)} open cases from {len(case_states)} Indian states and {len(countries)} other countries: custodial deaths, caste violence, attacks on RTI activists "
         "and abuse by the powerful, each followed from complaint to arrest, chargesheet and verdict. Non-partisan, every fact sourced.")
 url = SITE + "accountability/"
 ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": url,
@@ -148,15 +151,17 @@ page = f"""<!doctype html>
 <style>{CSS}</style></head><body><div class="wrap">
 <nav class="top-nav"><a href="../"><b>Resistance Daily</b></a><span><a href="../focus/">Focus</a> · <a href="../archive/">Past editions</a></span></nav>
 <header><span class="k">Accountability Watch</span><h1>The weak against the powerful</h1>
-<p class="lede">Abuse by those with a uniform, an office, money or social dominance, and what happens next. We judge each case by the act and the imbalance of power, not by who governs the state, and we follow every case to its outcome.</p></header>
+<p class="lede">Abuse by those with a uniform, an office, money or social dominance, followed to the outcome. Judged by the act, not by who governs.</p></header>
 <section class="figs" aria-label="Key figures">{figs}</section>
-<div class="bal"><span><b>Balance:</b> {len(open_cases)} open cases from {len(case_states)} states. {bal}.</span>
+<div class="bal"><span><b>Balance:</b> India: {len(open_cases) - len(world_open)} open cases in {len(case_states)} states. {bal}.{f" World: {len(world_open)} in {', '.join(E(x) for x in countries)}." if world_open else ""}</span>
 <small>We log which party governs each state with a case and say openly when coverage is uneven. Who governs: {gov_src}. Updated {fmt(data["updated"])}.</small></div>
-<div class="filters" role="group" aria-label="Filter cases by type">{"".join(f'<button type="button" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
+<div class="filters" role="group" aria-label="Filter cases by region">{"".join(f'<button type="button" class="fr" aria-pressed="{str(k == "All").lower()}" data-r="{E(k.lower())}">{E(k)}</button>' for k in ["All", "India", "World"])}</div>
+<div class="filters" role="group" aria-label="Filter cases by type">{"".join(f'<button type="button" class="fk" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
 <section class="cases" aria-label="Cases">{"".join(card(c) for c in ordered)}</section>
 <details><summary>How cases are chosen</summary><ul>
 <li>A clear power gap: police or officials, elected leaders and their supporters, employers, landlords, or a dominant group over a weaker one.</li>
 <li>A named source and an official step (an FIR, a suspension or a court notice). No bare accusations.</li>
+<li>Outside India, only cases where an accountability process (a charge, a prosecution, an inquiry) is reported and can be followed; at most about a third of open cases.</li>
 <li>The accused are described by role, and named only once police or a court have named them. The police or official version sits beside every allegation.</li>
 <li>Sexual-assault survivors and child victims are never identifiable. No photos of bodies.</li>
 <li>Every case is re-checked 30, 90 and 180 days after the incident. If nothing is reported, we say so, with the date.</li>
@@ -164,9 +169,11 @@ page = f"""<!doctype html>
 <footer><span>Know of a case, an update or a correction? Write to <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a>.</span><span>{seo.FOLLOW}</span></footer>
 </div>
 <script>
-document.querySelectorAll('.filters button').forEach(function(b){{b.addEventListener('click',function(){{
-document.querySelectorAll('.filters button').forEach(function(x){{x.setAttribute('aria-pressed',x===b)}});
-document.querySelectorAll('.case').forEach(function(c){{c.hidden=!(b.dataset.k==='All'||c.dataset.k===b.dataset.k)}});}})}});
+(function(){{var r='all',k='All';
+function apply(){{document.querySelectorAll('.case').forEach(function(c){{c.hidden=!((r==='all'||c.dataset.r===r)&&(k==='All'||c.dataset.k===k))}})}}
+function wire(sel,set){{document.querySelectorAll(sel).forEach(function(b){{b.addEventListener('click',function(){{
+document.querySelectorAll(sel).forEach(function(x){{x.setAttribute('aria-pressed',x===b)}});set(b);apply();}})}})}}
+wire('.fr',function(b){{r=b.dataset.r}});wire('.fk',function(b){{k=b.dataset.k}});}})();
 </script></body></html>
 """
 os.makedirs(os.path.join(root, "accountability"), exist_ok=True)
@@ -174,4 +181,4 @@ open(os.path.join(root, "accountability", "index.html"), "w").write(page)
 seo.write_sitemap(root)
 # The home page shows the open-case count: rebuild it too.
 subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True)
-print(f"built accountability/index.html: {len(open_cases)} open cases, {len(case_states)} states")
+print(f"built accountability/index.html: {len(open_cases)} open cases, {len(case_states)} states, {len(countries)} countries")

@@ -189,6 +189,12 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
   moves can return to the edition as a grey item. When a case ends (verdict, acquittal, closure report accepted), set
   "closed" to one plain sentence on the outcome, with its source. Run `python3 tools/accountability.py` every day,
   even with no changes, so the day counts stay current, and commit it with the edition.
+- WORLD CASES (owner's choice, 3 Nov 2026): India stays the core. Add a case outside India ("region": "world",
+  "state" = the country) only when an accountability process is visible AND reported so we can follow it: officers or
+  officials arrested or charged, a prosecution, a court case, or an official or independent inquiry with a due date.
+  Keep world cases to about a third of open cases. Spread them across regions and governments; never choose by politics.
+  Same privacy and fairness rules; follow-up checks as for India (outcome sources: national outlets plus Reuters, AP,
+  AFP, BBC, Al Jazeera, Amnesty, HRW).
 - BALANCE: keep "states" current (who governs each state with a case, with a 2026 source). Aim for cases across
   states governed by different parties; if coverage is uneven, the page says so. Never add or drop a case to balance
   numbers: look harder instead.

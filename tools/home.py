@@ -59,7 +59,8 @@ if acc:
     acc_open = [c for c in acc["cases"] if not c.get("closed")]
     acc_noarrest = sum(1 for c in acc_open if any(s["step"].lower().startswith("arrest") for s in c["steps"])
                        and not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
-    acc_states = len({c["state"] for c in acc_open})
+    acc_states = len({c["state"] for c in acc_open if c.get("region", "india") == "india"})
+    acc_countries = len({c["state"] for c in acc_open if c.get("region") == "world"})
 
 def ed_line(k):
     try:
@@ -167,7 +168,7 @@ page = f"""<!doctype html>
 
 <section aria-labelledby="h-track"><div class="sec-h"><h2 id="h-track">Tracking</h2></div><div class="stats">
 <a class="stat" href="{f'archive/{tracker}.html#still-waiting' if tracker else 'archive/'}"><span class="k">Still waiting</span><b>{len(cs)}</b><span>people and groups held after speaking out</span><span class="sub">Longest: {ldays:,} days, {E(longest["name"])}</span></a>
-{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><b>{len(acc_open)}</b><span>abuse-of-power cases in {acc_states} states</span><span class="sub">{acc_noarrest} with no arrest reported</span></a>''' if acc else ""}
+{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><b>{len(acc_open)}</b><span>abuse-of-power cases in {acc_states} states{f" and {acc_countries} countries" if acc_countries else ""}</span><span class="sub">{acc_noarrest} with no arrest reported</span></a>''' if acc else ""}
 </div></section>
 
 <section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All →</a></div>
