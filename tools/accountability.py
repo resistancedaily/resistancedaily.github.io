@@ -10,7 +10,7 @@ data/accountability.json:
   "figures": [{"fig", "cap", "src": [name, url]}],                    # 2-4 national anchor numbers
   "states": {"State": {"cm", "party", "src": [name, url]}},             # who governs each state with a case (balance log)
   "cases": [{
-     "id", "region": "india" (default) | "world" (then "state" is the country), "kind": "Custody"|"Caste"|"Political power"|"RTI & whistleblowers"|"Workers"|"Land",
+     "id", "region": "india" (default) | "world" (then "state" is the country), "kind": "Custody"|"Police force"|"Caste"|"Political power"|"RTI & whistleblowers"|"Workers"|"Land",
      "state", "place", "date": "YYYY-MM-DD" (the incident), "power": who held power, by ROLE (e.g. "Police"),
      "head" (<= 9 words, neutral), "text" (2 sentences: what is alleged, by whom), "official" (police/official version,
      or that none was reported), "steps": [{"step", "status": "done"|"unknown"|"open", "date"?, "note"?}],
@@ -118,6 +118,7 @@ h1{font-size:clamp(40px,8vw,60px);font-weight:800;margin-top:6px}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}
 .case{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:14px;display:grid;gap:8px;align-content:start;min-width:0;scroll-margin-top:16px}
+.case[hidden]{display:none}
 .case .top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .chip{font:600 10.5px var(--mono);text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--chip)}
 .pw{font:500 11px var(--mono);color:var(--muted);text-transform:uppercase}

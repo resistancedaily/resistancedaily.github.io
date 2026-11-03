@@ -399,6 +399,129 @@
     ]
    ],
    "checked": "2026-11-03"
+  },
+  {
+   "id": "nairobi-ojwang",
+   "region": "world",
+   "kind": "Custody",
+   "state": "Kenya",
+   "place": "Central Police Station, Nairobi, Kenya",
+   "date": "2025-06-08",
+   "power": "Police",
+   "head": "Blogger dies in police cell; officers on trial",
+   "text": "Teacher and blogger Albert Ojwang, 30, died in a Nairobi police cell after his arrest over posts about a senior police officer. The state pathologist found head injury, neck compression and other injuries \"pointing towards assault\".",
+   "official": "Police first said he hit his head against a cell wall; the Inspector-General later withdrew that statement. The station commander and other officers are on trial for murder.",
+   "steps": [
+    {
+     "step": "Officers charged",
+     "status": "done",
+     "note": "murder"
+    },
+    {
+     "step": "Trial opened",
+     "status": "done",
+     "date": "2026-07-21",
+     "note": "High Court, Kibera"
+    },
+    {
+     "step": "Next hearing",
+     "status": "open",
+     "date": "2026-12-14"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.com/news/articles/cn9jw20nr5ro"
+    ],
+    [
+     "The Star (Kenya)",
+     "https://www.the-star.co.ke/news/2026-07-22-ojwang-murder-trial-adjourned-to-dec-14"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "rio-operacao-contencao",
+   "region": "world",
+   "kind": "Police force",
+   "state": "Brazil",
+   "place": "Penha and Alemão favelas, Rio de Janeiro, Brazil",
+   "date": "2025-10-28",
+   "power": "State police",
+   "head": "Rio raid killed 121; no one charged over the deaths",
+   "text": "A police operation against a drug gang in Rio's Penha and Alemão favelas left 121 people dead, four of them police, the deadliest in Brazil's history. A year on, inquiries into the deaths, including a decapitated body and suspected torture and executions, have not concluded.",
+   "official": "Police called it a mega-operation against the Comando Vermelho gang. Prosecutors have charged 27 officers with offences such as stealing seized rifles and home invasions, none for the killings; at least 17% of one police unit's body cameras were deliberately switched off, they found.",
+   "steps": [
+    {
+     "step": "Inquiry opened",
+     "status": "done",
+     "note": "state prosecutors and Federal Police"
+    },
+    {
+     "step": "Officers charged",
+     "status": "done",
+     "note": "27, for theft and abuses, not killings"
+    },
+    {
+     "step": "Charges over the deaths",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Agência Brasil via O Tempo",
+     "https://www.otempo.com.br/brasil/2026/10/27/um-ano-apos-operacao-no-alemao-e-na-penha-mortes-seguem-sob-investigacao"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "memphis-tyrin-johnson",
+   "region": "world",
+   "kind": "Police force",
+   "state": "United States",
+   "place": "Memphis, Tennessee, United States",
+   "date": "2026-07-05",
+   "power": "National Guard troops on a federal crime task force",
+   "head": "Man shot dead by National Guard; charges undecided",
+   "text": "Tyrin Johnson, 20, was shot and killed by Tennessee National Guard troops chasing an armed man in Memphis. Video released on 2 November shows troops training guns on him as he lay dying; his family's autopsy says he was shot in the back.",
+   "official": "A Guard report says he \"rounded on them and pointed a tan handgun at them\"; investigators say he was armed. The district attorney has not decided whether to file charges.",
+   "steps": [
+    {
+     "step": "State investigation",
+     "status": "done",
+     "note": "Tennessee Bureau of Investigation"
+    },
+    {
+     "step": "Video released",
+     "status": "done",
+     "date": "2026-11-02"
+    },
+    {
+     "step": "Charging decision",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Guardian (AP)",
+     "https://www.theguardian.com/us-news/2026/nov/02/tennessee-shooting-tyrin-johnson-video"
+    ]
+   ],
+   "checked": "2026-11-03"
   }
  ]
 }
