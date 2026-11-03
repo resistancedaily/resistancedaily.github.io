@@ -179,7 +179,8 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
   departmental action or verdict; update "steps" (status "done" with the date and source, "unknown" when not reported),
   "src" and "checked". If nothing is reported, keep it open: the page shows the days without an arrest. A case that
   moves can return to the edition as a grey item. When a case ends (verdict, acquittal, closure report accepted), set
-  "closed" to one plain sentence on the outcome, with its source.
+  "closed" to one plain sentence on the outcome, with its source. Run `python3 tools/accountability.py` every day,
+  even with no changes, so the day counts stay current, and commit it with the edition.
 - BALANCE: keep "states" current (who governs each state with a case, with a 2026 source). Aim for cases across
   states governed by different parties; if coverage is uneven, the page says so. Never add or drop a case to balance
   numbers: look harder instead.
