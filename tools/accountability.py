@@ -55,7 +55,7 @@ def card(c):
         for s in c["steps"])
     if c.get("closed"):
         line = f'<p class="outcome">Outcome: {E(c["closed"])}</p>'
-    elif arrested:
+    elif arrested or not any(s["step"].lower().startswith("arrest") for s in c["steps"]):
         line = f'<p class="ok">{days} days since the incident</p>'
     else:
         line = f'<p class="stall">{days} days since the incident · no arrest reported</p>'

@@ -52,7 +52,8 @@ tracker = max((k for k, v in log.items() if v["design"] == "tracker"), default=N
 acc = load("data/accountability.json") if os.path.exists(os.path.join(root, "data", "accountability.json")) else None
 if acc:
     acc_open = [c for c in acc["cases"] if not c.get("closed")]
-    acc_noarrest = sum(1 for c in acc_open if not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
+    acc_noarrest = sum(1 for c in acc_open if any(s["step"].lower().startswith("arrest") for s in c["steps"])
+                       and not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
     acc_states = len({c["state"] for c in acc_open})
 
 def ed_line(k):

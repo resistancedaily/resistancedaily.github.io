@@ -1,0 +1,404 @@
+{
+ "updated": "2026-11-03",
+ "figures": [
+  {
+   "fig": "170",
+   "cap": "deaths in custody in 2025-26, up to 15 March",
+   "src": [
+    "The Wire (govt data in Lok Sabha)",
+    "https://m.thewire.in/article/government/custodial-deaths-at-170-this-year-accountability-nearly-absent-govt-data/amp"
+   ]
+  },
+  {
+   "fig": "1",
+   "cap": "case of disciplinary action over custodial deaths reported in five years",
+   "src": [
+    "The Wire",
+    "https://m.thewire.in/article/government/custodial-deaths-at-170-this-year-accountability-nearly-absent-govt-data/amp"
+   ]
+  },
+  {
+   "fig": "48,669",
+   "cap": "cases under the SC/ST (Prevention of Atrocities) Act in 2024",
+   "src": [
+    "SCC Online (NCRB data)",
+    "https://www.scconline.com/blog/post/2026/07/31/sc-st-atrocities-act-cases-convictions-ncrb-data-2024/"
+   ]
+  }
+ ],
+ "states": {
+  "Uttar Pradesh": {
+   "cm": "Yogi Adityanath",
+   "party": "BJP",
+   "src": [
+    "The Hindu",
+    "https://www.thehindu.com/news/national/varanasi-air-show-rafale-chinook-thrill-spectators-with-aerial-manoeuvres-over-ganga/article71619689.ece"
+   ]
+  },
+  "Bihar": {
+   "cm": "Samrat Choudhary",
+   "party": "BJP",
+   "src": [
+    "The Hindu",
+    "https://www.thehindu.com/news/national/bihar/bihar-cm-samrat-choudhary-calls-for-adequate-ganga-water-share-to-boost-states-growth/article71645338.ece"
+   ]
+  },
+  "Rajasthan": {
+   "cm": "Bhajanlal Sharma",
+   "party": "BJP",
+   "src": [
+    "ThePrint (PTI)",
+    "https://theprint.in/india/reach-out-to-every-rural-family-bhajanlal-sharma-tells-bjp-workers-ahead-of-panchayat-polls/3059599/"
+   ]
+  },
+  "Telangana": {
+   "cm": "A. Revanth Reddy",
+   "party": "Congress",
+   "src": [
+    "The Hindu",
+    "https://www.thehindu.com/news/national/telangana/bjp-conspiring-to-delete-20-crore-votes-says-cm-revanth/article71653693.ece"
+   ]
+  },
+  "Jharkhand": {
+   "cm": "Hemant Soren",
+   "party": "JMM-led alliance",
+   "src": [
+    "The Tribune (sworn in Nov 2024, after the state election)",
+    "https://www.tribuneindia.com/news/india/hemant-soren-takes-oath-as-14th-cm-of-jharkhand-rahul-akhelesh-attend-ceremony"
+   ]
+  },
+  "Kerala": {
+   "cm": "V.D. Satheesan",
+   "party": "Congress-led UDF",
+   "src": [
+    "The Hindu",
+    "https://www.thehindu.com/news/national/kerala/satheesan-anwar-ibrahim-discuss-investment-opportunities-in-keralam/article71466012.ece"
+   ]
+  },
+  "Tamil Nadu": {
+   "cm": "C. Joseph Vijay",
+   "party": "TVK-led coalition",
+   "src": [
+    "The Hindu",
+    "https://www.thehindu.com/news/national/tamil-nadu/after-theni-jailbreak-tamil-nadu-cm-vijay-constitutes-high-level-committee-to-strengthen-prison-security/article71656855.ece"
+   ]
+  }
+ },
+ "cases": [
+  {
+   "id": "pratapgarh-custody",
+   "kind": "Custody",
+   "state": "Uttar Pradesh",
+   "place": "Patti police station, Pratapgarh, Uttar Pradesh",
+   "date": "2026-09-21",
+   "power": "Police",
+   "head": "Dalit man, 22, dies in a police station",
+   "text": "Arjun, a 22-year-old Dalit man, died in a restroom at Patti police station. His father's complaint led to an FIR with murder and SC/ST Act charges; reports differ on whether police are named in it alongside a family he had a dispute with.",
+   "official": "Police say he died by suicide. The station officer and a sub-inspector were suspended, and a separate case covers official lapses.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "note": "murder, SC/ST Act"
+    },
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "note": "SHO and sub-inspector"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/government/opposition-asks-for-murder-probe-as-suspensions-follow-dalit-mans-death-in-uttar-pradesh-police-custody"
+    ],
+    [
+     "Amrit Vichar",
+     "https://www.amritvichar.com/article/594014/pratapgarh-patti-kotwali-dalit-youth-suspicious-death-fir-filed"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "west-champaran-custody",
+   "kind": "Custody",
+   "state": "Bihar",
+   "place": "West Champaran, Bihar",
+   "date": "2026-10-12",
+   "power": "Police",
+   "head": "Man dies after arrest; six police suspended",
+   "text": "Dilshad Ansari died after police arrested him at about 2 am in a 2025 drugs case. His family says he was beaten.",
+   "official": "Police say he jumped from the moving police vehicle. The district police chief suspended six personnel, including the station officer, and said further legal steps would follow NHRC guidelines.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "unknown"
+    },
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "note": "six personnel"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/dilshad-ansari-custodial-death-bihar-police-suspended-10921572/"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "beawar-rti-march",
+   "kind": "RTI & whistleblowers",
+   "state": "Rajasthan",
+   "place": "Beawar, Rajasthan",
+   "date": "2026-10-11",
+   "power": "A mob",
+   "head": "Mob attacks march marking 21 years of RTI",
+   "text": "A mob attacked a procession by the Mazdoor Kisan Shakti Sangathan (MKSS) marking the 21st anniversary of the Right to Information Act, and activists were assaulted. A local BJP MLA alleged that slogans at the march hurt religious sentiment.",
+   "official": "The superintendent of police said the procession lacked permission and that further action was under way. Both sides have filed FIRs against each other, the station officer said.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "note": "cross-FIRs by both sides"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/activists-marking-21st-anniversary-of-rti-act-assaulted-by-mob-in-rajasthans-beawar"
+    ],
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/clash-over-ram-temple-donation-reference-disrupts-rti-activists-procession-in-rajasthan/3068748/"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "nalgonda-gram-sabha",
+   "kind": "Political power",
+   "state": "Telangana",
+   "place": "PK Mallepally, Nalgonda district, Telangana",
+   "date": "2026-10-02",
+   "power": "A local leader of the ruling Congress",
+   "head": "Dalit woman allegedly assaulted at a village meeting",
+   "text": "A local Congress leader is accused of assaulting a Dalit woman, a former village organisation assistant, at a gram sabha. Police registered a case under the BNS and the SC/ST Act.",
+   "official": "Police registered the case on her complaint; no statement from the accused was reported.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "note": "BNS, SC/ST Act"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "South First",
+     "https://thesouthfirst.com/telangana/police-register-case-against-nalgonda-congress-leader-for-assaulting-dalit-woman/"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "ranchi-well",
+   "kind": "Caste",
+   "state": "Jharkhand",
+   "place": "HEC Sector 2, Ranchi, Jharkhand",
+   "date": "2026-10-10",
+   "power": "Neighbours (dominant caste, alleged)",
+   "head": "Dalit woman allegedly barred from a well and assaulted",
+   "text": "A Dalit woman says neighbours had stopped her using a well since July and assaulted her on 10 October. Five people were booked under the SC/ST Act and the BNS.",
+   "official": "Police say the well is on the accused family's premises, that family has filed a counter-complaint, and action will follow the investigation.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "note": "five booked"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "New Indian Express",
+     "https://www.newindianexpress.com/india/2026/Oct/13/dalit-woman-assaulted-stopped-from-fetching-water-from-well-in-ranchi-five-booked"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "kalady-custody",
+   "kind": "Custody",
+   "state": "Kerala",
+   "place": "Kalady police station, Ernakulam, Kerala",
+   "date": "2026-09-02",
+   "power": "Police",
+   "head": "Taxi driver alleges torture in police station",
+   "text": "A 32-year-old airport taxi driver alleges police stripped and beat him for hours at Kalady station. A departmental inquiry found he was held from 1 pm to 5 pm without an entry in the General Diary, his family was not told and medical procedures were skipped.",
+   "official": "The range DIG suspended a sub-inspector, an assistant sub-inspector and two other officers over the lapses. No police account of the alleged assault was reported.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "unknown",
+     "note": "no criminal case reported"
+    },
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "note": "four officers"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Onmanorama",
+     "https://www.onmanorama.com/news/kerala/2026/09/07/kochi-man-alleges-brutal-custodial-torture-four-cops-suspended.html"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "theni-jail",
+   "kind": "Custody",
+   "state": "Tamil Nadu",
+   "place": "Theni district jail, Tamil Nadu",
+   "date": "2026-10-26",
+   "power": "Prison warders",
+   "head": "Inquiry into alleged torture after Theni jailbreak",
+   "text": "Seventeen remand prisoners escaped from Theni district jail and were later caught; one alleged in a video that warders tortured them and denied them food and water. On 2 November the State Legal Services Authority ordered an inquiry, including whether the prisoners have since been threatened or coerced.",
+   "official": "The Chief Minister set up a high-level committee to strengthen prison security; no response to the torture allegations was reported.",
+   "steps": [
+    {
+     "step": "Inquiry ordered",
+     "status": "done",
+     "date": "2026-11-02",
+     "note": "State Legal Services Authority"
+    },
+    {
+     "step": "Inquiry report",
+     "status": "open"
+    },
+    {
+     "step": "Action on staff",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/tamil-nadu/prisoners-escape-from-theni-jail-tnslsa-orders-inquiry-into-alleged-torture-of-inmates/article71656567.ece"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/tamil-nadu/after-theni-jailbreak-tamil-nadu-cm-vijay-constitutes-high-level-committee-to-strengthen-prison-security/article71656855.ece"
+    ]
+   ],
+   "checked": "2026-11-03"
+  },
+  {
+   "id": "tn-prison-toilets",
+   "kind": "Caste",
+   "state": "Tamil Nadu",
+   "place": "Prisons in Madurai, Trichy and Tirunelveli districts, Tamil Nadu",
+   "date": "2026-08-31",
+   "power": "Prison authorities",
+   "head": "Court orders probe into Dalit prisoners cleaning toilets",
+   "text": "A petition alleges prisoners from marginalised communities are kept in separate blocks and made to clean about 150 toilets and do manual scavenging. On 31 August the Madurai Bench of the Madras High Court ordered district judges to inspect the prisons and examine CCTV footage.",
+   "official": "Prison authorities say municipal services clean the toilets.",
+   "steps": [
+    {
+     "step": "Court-ordered inspection",
+     "status": "done",
+     "date": "2026-08-31"
+    },
+    {
+     "step": "Inspection reports",
+     "status": "unknown"
+    },
+    {
+     "step": "Court ruling",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/tamil-nadu/madras-hc-orders-probe-into-allegations-of-dalit-prisoners-being-forced-to-clean-toilets"
+    ]
+   ],
+   "checked": "2026-11-03"
+  }
+ ]
+}
