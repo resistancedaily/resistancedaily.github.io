@@ -160,7 +160,7 @@ page = f"""<!doctype html>
 <nav class="chips" aria-label="Follow Resistance Daily">{chips}</nav></header>
 
 <section aria-labelledby="h-today"><div class="sec-h"><h2 id="h-today">Today</h2><a href="{full}">Full edition →</a></div>
-<div class="today"><span class="when">{dt.strftime("%a %d %b %Y")} · {E(NAMES.get(log.get(date, {}).get("design", ""), ""))} · {len(d["items"])} stories</span><ul>{today}</ul>
+<div class="today"><span class="when">{dt.strftime("%a %d %b %Y")}</span><ul>{today}</ul>
 <a class="go" href="{full}">Read today's edition →</a></div></section>
 
 <section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All {len(focus)} →</a></div>
