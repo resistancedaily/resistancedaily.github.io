@@ -18,6 +18,7 @@ data/focus/SLUG.json:
                                                       #   the page instead of "text" (the slides keep using "text")
   "editions": ["YYYY-MM-DD", ...],                    # daily editions that covered it
   "instagram": {"caption", "hashtags": [...]},       # used by tools/slides.py focus SLUG
+  "short": "...",                                     # 2-4 words for cards on the home page and the Focus list
   "seo_title": "...",                                 # optional: the words people search for, used for <title> and
                                                       #   link previews (≤ 65 chars, neutral); the page heading stays "title"
   "whats_new": {"date": "YYYY-MM-DD", "text": "..."}, # optional: 1-2 sentences on the latest development, shown at the top
@@ -87,12 +88,14 @@ figcaption .cr{display:block;font-size:11.5px}
 .opts li{padding-left:2px}
 .opts li::marker{color:var(--muted)}
 ul.list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
-.card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:160px 1fr;overflow:hidden;text-decoration:none}
-.card img{width:100%;height:100%;min-height:110px;object-fit:cover;background:var(--chip)}
-.card div{padding:12px 14px;display:grid;gap:4px;align-content:start}
-.card h2{font-size:26px;font-weight:800}
+.card{background:var(--paper);border:1px solid var(--rule);border-radius:6px;display:grid;grid-template-columns:76px 1fr;overflow:hidden;text-decoration:none;color:inherit}
+.card img{width:76px;height:100%;min-height:68px;object-fit:cover;background:var(--chip)}
+.card div{padding:8px 12px;display:grid;gap:2px;align-content:center;min-width:0}
+.card h2{font:600 17px/1.25 var(--body);text-transform:none;letter-spacing:0}
+.card .kicker{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.kf{font-size:13px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.kf b{font:800 17px var(--display);color:var(--red)}
 .card p{font-size:14px;color:var(--muted)}
-@media (max-width:520px){.card{grid-template-columns:1fr}.card img{height:auto;aspect-ratio:16/9;min-height:0}}
+
 footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
 .cover img{aspect-ratio:16/9}
 .allf{justify-self:start;font-weight:600;font-size:14px;color:var(--ink);text-decoration:none;border:1px solid var(--rule);border-left:4px solid var(--accent);background:var(--paper);border-radius:6px;padding:8px 12px}
@@ -375,8 +378,11 @@ def page(f, all_f=()):
 
 
 def index(all_f):
-    cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="{E(f["photos"][0]["alt"])}" loading="lazy">
-<div><span class="kicker">{E(f["kicker"])}</span><h2>{E(f["title"])}</h2><p>{E(f["dek"])}</p><span class="src">Updated {datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")} · {len(f["photos"])} photos</span></div></a></li>''' for f in all_f)
+    def kf(f):
+        x = (f.get("figs") or [{}])[0]
+        return f'<span class="kf"><b>{E(x["fig"])}</b> {E(x["figcap"])}</span>' if x.get("fig") else ""
+    cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="" loading="lazy">
+<div><span class="kicker">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}</span><h2>{E(f.get("short", f["title"]))}</h2>{kf(f)}</div></a></li>''' for f in all_f)
     return HEAD.format(title="Focus · Resistance Daily", desc="In-depth stories on places and issues, with a source for every fact.",
                        og_image="", extra=f'<meta property="og:url" content="{SITE}focus/"><meta property="og:site_name" content="Resistance Daily">',
                        canonical=f"{SITE}focus/", css=CSS) + f"""

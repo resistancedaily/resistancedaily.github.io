@@ -134,6 +134,8 @@ organisers' count as a range.
   ("instagram": {"hashtags": [...]}; the slide captions are built from "story"), then
   `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it. With "layout": "chapters", give
   every paragraph that has no photo of its own a sourced "fig" and "figcap"; it fills the photo's place, as on the slides.
+- Give every Focus a "short" title (2-4 plain words, e.g. "Sudan's war", "Kashmir detentions"): cards on the home page
+  and the Focus list show only it and the first key number in "figs", so put the most telling number first.
 - Give every Focus a "seo_title": the words people actually search for (place + issue, e.g. "Siang dam protests,
   Arunachal: detentions, bandh and talks offer"), at most 65 characters, neutral, no party names. It becomes the page
   title in search results and link previews; the heading on the page stays "title".

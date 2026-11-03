@@ -46,7 +46,7 @@ def lead_fig(f):
 
 
 cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="" loading="lazy" decoding="async">
-<div><span class="k">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · New" if f.get("whats_new") else ""}</span><h3>{E(f["title"])}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
+<div><span class="k">{E(f["kicker"].replace("Focus · ", "").split(", ")[0])} · {datetime.date.fromisoformat(f["updated"]).strftime("%d %b")}{" · New" if f.get("whats_new") else ""}</span><h3>{E(f.get("short", f["title"]))}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
 
 asof = datetime.date.fromisoformat(cases["asof"])
 cs = cases["cases"]
@@ -120,11 +120,11 @@ section{display:grid;gap:12px}
 .dot.red{background:var(--red)}.dot.orange{background:var(--accent)}.dot.grey{background:var(--grey)}
 .go{justify-self:start;font-weight:600;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:4px;padding:10px 16px}
 .focs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:8px}
-.fcard{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:84px minmax(0,1fr);overflow:hidden;text-decoration:none;color:inherit}
-.fcard img{display:block;width:84px;height:100%;min-height:84px;object-fit:cover;background:var(--chip)}
+.fcard{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:76px minmax(0,1fr);overflow:hidden;text-decoration:none;color:inherit}
+.fcard img{display:block;width:76px;height:100%;min-height:68px;object-fit:cover;background:var(--chip)}
 .fcard div{padding:8px 12px;display:grid;gap:3px;align-content:center;min-width:0}
 .fcard .k{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fcard h3{font-size:21px;font-weight:800;text-wrap:balance}
+.fcard h3{font:600 17px/1.25 var(--body);text-transform:none}
 .kf{font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .kf b{font:800 17px var(--display);color:var(--red)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px}
