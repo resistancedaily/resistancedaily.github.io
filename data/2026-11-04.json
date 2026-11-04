@@ -1,0 +1,478 @@
+{
+ "date": "2026-11-04",
+ "date_long": "Wed 4 Nov 2026",
+ "date_short": "Wed 4 Nov",
+ "window": "Tue 09:00 → Wed 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-04",
+ "items": [
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "1,500",
+   "figcap": "capacity, police say",
+   "headline": "Police say Jantar Mantar unfit as protest site",
+   "text": "Delhi Police told the Supreme Court on Tuesday that Jantar Mantar, a public road holding about 1,500 people, should never have been a protest site; petitioners say de-notifying it violates free assembly.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096855/jantar-mantar-should-never-have-been-designated-as-protest-site-delhi-police-tells-sc"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/supreme-court-denotification-of-jantar-mantar-delhi-police-response-3-alternate-protest-sites-identified-ramlila-maidan-law-and-order-new-parliament-557137"
+    ]
+   ],
+   "lon": 77.217,
+   "lat": 28.627,
+   "photo": {
+    "src": "images/2026-10-20/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi. The road beside it was the capital's main protest site until police de-notified it on 11 October.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   },
+   "n": 1,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "High Court of Karnataka, Bengaluru",
+   "short": "Bengaluru",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "lawyers killed",
+   "headline": "High Court takes up killings of Karnataka lawyers",
+   "text": "Karnataka's High Court opened a PIL on Tuesday over violence against lawyers, including two October murders, asking the state how it handles lawyers' complaints against police; no state response was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-initiates-suo-motu-pil-on-violence-against-advocates/article71661622.ece"
+    ]
+   ],
+   "lon": 77.592,
+   "lat": 12.98,
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Sivasagar district, Assam",
+   "short": "Sivasagar",
+   "rights": [
+    "Due process",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "killed in custody",
+   "headline": "Guwahati shooting accused killed in police custody",
+   "text": "Ghanakanta Gogoi, accused in the 26 October Guwahati hotel shooting that killed five, died when police fired during his transfer in Sivasagar; police say he tried to seize an officer's pistol. No inquiry was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/ghanakanta-gogoi-shooting-people-guwahati-encounter-hotel-bilas-10949669/"
+    ]
+   ],
+   "lon": 94.64,
+   "lat": 26.98,
+   "photo": {
+    "src": "images/2026-11-04/sivasagar.webp",
+    "alt": "A tall dark stone temple on a lawn with clipped bushes, framed by trees.",
+    "caption": "A temple beside the Na-Pukhuri tank in Sivasagar, Assam, in 2026.",
+    "credit": "Rangan Datta Wiki / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Na-Pukhuri_Tank_Shiva_Dol_1.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Pulwama, Jammu and Kashmir",
+   "short": "Pulwama",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "15 mo",
+   "figcap": "held under PSA",
+   "headline": "Court: encrypted app no ground for PSA detention",
+   "text": "The J&K High Court quashed the Public Safety Act detention of a Pulwama man held since July 2025 over alleged militant contacts, saying use of an encrypted app was no adequate basis for detention.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+    ]
+   ],
+   "lon": 74.89,
+   "lat": 33.87,
+   "focus": "kashmir",
+   "photo": {
+    "src": "images/focus/kashmir/srinagar-old-city-2016.webp",
+    "alt": "A narrow alley between tall brick houses with wooden windows and tangled wires overhead; a woman in a headscarf stands in the shade.",
+    "caption": "An alley in Srinagar's old city in 2016. The Public Safety Act is the main preventive detention law in Jammu and Kashmir.",
+    "credit": "Adam Jones / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_City_Alleyway_-_Srinagar_-_Jammu_%26_Kashmir_-_India_(26837611965).jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "Babubarhi, Madhubani district, Bihar",
+   "short": "Madhubani",
+   "rights": [
+    "Life & safety",
+    "Accountability Watch"
+   ],
+   "sev": "red",
+   "fig": "1",
+   "figcap": "killed",
+   "headline": "Bihar police officer fires on villagers, one dead",
+   "text": "A police ASI fired his service pistol at villagers in Madhubani district early Tuesday, killing one and injuring three, police say; he has been suspended, faces a murder case and is absconding.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/bihar-asi-opens-fire-after-villagers-corner-him-at-womans-house-one-killed-three-injured-10948815/"
+    ]
+   ],
+   "lon": 86.07,
+   "lat": 26.35,
+   "photo": {
+    "src": "images/2026-11-04/madhubani-station.webp",
+    "alt": "A railway platform whose walls are covered in colourful Mithila paintings, with red chairs and a few people.",
+    "caption": "Madhubani railway station, Bihar, decorated with Mithila paintings, in 2021.",
+    "credit": "Sntshkumar750 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madhubani_paintings_(Madhubani_Railway_Station).jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "pos": "br"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Ahmedabad, Gujarat",
+   "short": "Ahmedabad",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "61",
+   "figcap": "detained",
+   "headline": "61 alleged undocumented migrants detained in Ahmedabad",
+   "text": "Police detained 61 people, including women and children, in Ahmedabad on Monday as alleged undocumented immigrants, mostly Bangladeshi, they say; officials say deportation proceedings are under way.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096831/ahmedabad-61-allegedly-undocumented-immigrants-detained-in-pre-diwali-safety-drive"
+    ]
+   ],
+   "lon": 72.58,
+   "lat": 23.02,
+   "map": {
+    "left": true
+   },
+   "photo": {
+    "src": "images/2026-11-04/ahmedabad-old-city.webp",
+    "alt": "The carved wooden facade of an old two-storey house with balconies and pillars.",
+    "caption": "A carved house front in Ahmedabad's old city, in 2023.",
+    "credit": "Ninara / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Historic_City_of_Ahmedabad_(52683813072).jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Wadi Majrur, Al-Malha locality, North Darfur, Sudan",
+   "short": "North Darfur",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "killed",
+   "headline": "Drone kills two travellers in North Darfur",
+   "text": "A drone struck a vehicle in Wadi Majrur, Al-Malha locality, on Sunday, killing two civilians, a local rights monitor told Radio Tamazuj; it blames the army, and no army response was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/2-killed-as-drone-strikes-vehicle-in-wadi-majrur-north-darfur"
+    ]
+   ],
+   "lon": 26.2,
+   "lat": 15.13,
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-27/el-fasher-aerial.webp",
+    "alt": "Rows of low houses and walled compounds on sandy ground, seen from the air.",
+    "caption": "El Fasher, capital of North Darfur, seen from the air in 2010. Al-Malha locality lies to its north.",
+    "credit": "Fraktion DIE LINKE. im Bundestag / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:El_Fasher_in_Darfur_(5412964762).jpg",
+    "kind": "file",
+    "year": "2010"
+   },
+   "n": 7,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Komyshuvakha, Zaporizhzhia region, Ukraine",
+   "short": "Zaporizhzhia",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "33",
+   "figcap": "killed",
+   "headline": "Bombs hit Ukrainian aid centre, 33 dead",
+   "text": "At least 33 people died when aerial bombs hit an aid distribution centre in Komyshuvakha, Zaporizhzhia, on Monday, Ukrainian officials say; Russia's defence ministry says it targeted military units.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c65ynez5y599o"
+    ]
+   ],
+   "lon": 35.53,
+   "lat": 47.7,
+   "photo": {
+    "src": "images/2026-11-04/komyshuvakha.webp",
+    "alt": "A single-storey public building with a red roof and flags, behind a fence and a road.",
+    "caption": "The public services centre in Komyshuvakha, Zaporizhzhia region, in 2025.",
+    "credit": "Вадим Балачук / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:ЦНАП,_селище_Комишуваха.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Gaza City and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "3",
+   "figcap": "killed Tuesday",
+   "headline": "Girl killed in drone strike on Gaza tent",
+   "text": "Three Palestinians, including a girl hit when a drone struck a tent in Gaza City, were killed on Tuesday, medical sources told Anadolu; no Israeli military comment was reported.",
+   "src": [
+    [
+     "Middle East Monitor / Anadolu",
+     "https://middleeastmonitor.com/20261103-3-palestinians-killed-in-israeli-attacks-amid-gaza-ceasefire-violations"
+    ]
+   ],
+   "lon": 34.45,
+   "lat": 31.51,
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Loikaw Township, Kayah state, Myanmar",
+   "short": "Loikaw",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "3",
+   "figcap": "children killed",
+   "headline": "Air strike on Myanmar school kills three children",
+   "text": "An air strike on a school sheltering displaced families in Loikaw, Kayah state, on Saturday killed three children and injured five, UNICEF says; no military response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/feed/view/en/story/2026/11/1168729"
+    ]
+   ],
+   "lon": 97.21,
+   "lat": 19.67,
+   "photo": {
+    "src": "images/2026-11-04/loikaw-road.webp",
+    "alt": "A narrow paved road through red earth and green fields, with tall trees under a cloudy sky.",
+    "caption": "The road from Loikaw to Hopong, Kayah state, in 2018.",
+    "credit": "Htet Ko Aung29292 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Loikaw_-_Hopong_Road.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 10,
+   "map": {
+    "dy": -6
+   }
+  },
+  {
+   "region": "world",
+   "place": "Addis Ababa, Ethiopia",
+   "short": "Addis Ababa",
+   "rights": [
+    "Expression",
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "Indefinite",
+   "figcap": "suspension",
+   "headline": "Ethiopia suspends one of its oldest newspapers",
+   "text": "Ethiopia's Media Authority indefinitely suspended the Reporter, the last private Amharic newspaper, on 2 November, accusing it of content against \"national interests\"; HRW calls it part of a wider media crackdown.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/03/ethiopian-authorities-suspend-independent-newspaper"
+    ]
+   ],
+   "lon": 38.75,
+   "lat": 9.03,
+   "photo": {
+    "src": "images/2026-11-04/addis-ababa.webp",
+    "alt": "A city street with men standing around a table football game, parked cars and tall buildings behind.",
+    "caption": "Cunningham Street in Addis Ababa, in 2023.",
+    "credit": "Radosław Botev / Wikimedia Commons",
+    "licence": "CC BY 3.0 PL",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0/pl/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Cunningham_Street,_Addis_Ababa_(1).jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Bangkok, Thailand",
+   "short": "Bangkok",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "12 yrs",
+   "figcap": "detained",
+   "headline": "Two Uyghurs face deportation from Thailand, HRW warns",
+   "text": "Two Uyghur men held in Thailand since 2014 were moved to Bangkok immigration detention ahead of possible return to China, HRW said on Tuesday; Thai officials told MPs China had demanded their return.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/03/thailand-two-uyghurs-at-risk-of-return-to-china"
+    ]
+   ],
+   "lon": 100.53,
+   "lat": 13.72,
+   "photo": {
+    "src": "images/2026-11-04/suan-phlu.webp",
+    "alt": "A city street corner with shops, cafes, a food cart and dense overhead cables.",
+    "caption": "Suan Phlu Road in Bangkok, in 2026. The two men are held at the immigration detention centre in Suan Phlu.",
+    "credit": "Chainwit. / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Suan_Phlu_ถนนสวนพลู_(2026)_-_IMG_07.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "resized"
+   },
+   "n": 12,
+   "map": {
+    "dy": 12
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "kashmir",
+   "kicker": "Focus · Jammu & Kashmir and Ladakh",
+   "title": "Preventive detention in Jammu & Kashmir: what the courts are finding",
+   "dek": "J&K's High Court keeps quashing Public Safety Act detentions over vague police reports; on 30 October it ruled an encrypted app no ground to detain. The administration cites \"established peace\".",
+   "src": "images/focus/kashmir/srinagar-old-city-2016.webp",
+   "alt": "A narrow alley between tall brick houses with wooden windows and tangled wires overhead; a woman in a headscarf stands in the shade.",
+   "photos": 4
+  }
+ ]
+}

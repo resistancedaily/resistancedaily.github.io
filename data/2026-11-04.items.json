@@ -1,0 +1,96 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.217,
+   "lat": 28.627,
+   "sev": "orange",
+   "label": "Delhi",
+   "left": true
+  },
+  {
+   "n": 2,
+   "lon": 77.592,
+   "lat": 12.98,
+   "sev": "orange",
+   "label": "Bengaluru"
+  },
+  {
+   "n": 3,
+   "lon": 94.64,
+   "lat": 26.98,
+   "sev": "orange",
+   "label": "Sivasagar"
+  },
+  {
+   "n": 4,
+   "lon": 74.89,
+   "lat": 33.87,
+   "sev": "orange",
+   "label": "Pulwama"
+  },
+  {
+   "n": 5,
+   "lon": 86.07,
+   "lat": 26.35,
+   "sev": "red",
+   "label": "Madhubani",
+   "pos": "br"
+  },
+  {
+   "n": 6,
+   "lon": 72.58,
+   "lat": 23.02,
+   "sev": "orange",
+   "label": "Ahmedabad",
+   "left": true
+  }
+ ],
+ "world": [
+  {
+   "n": 7,
+   "lon": 26.2,
+   "lat": 15.13,
+   "sev": "red",
+   "label": "North Darfur",
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": 35.53,
+   "lat": 47.7,
+   "sev": "red",
+   "label": "Zaporizhzhia"
+  },
+  {
+   "n": 9,
+   "lon": 34.45,
+   "lat": 31.51,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 10,
+   "lon": 97.21,
+   "lat": 19.67,
+   "sev": "red",
+   "label": "Loikaw",
+   "dy": -6
+  },
+  {
+   "n": 11,
+   "lon": 38.75,
+   "lat": 9.03,
+   "sev": "orange",
+   "label": "Addis Ababa"
+  },
+  {
+   "n": 12,
+   "lon": 100.53,
+   "lat": 13.72,
+   "sev": "orange",
+   "label": "Bangkok",
+   "dy": 12
+  }
+ ]
+}

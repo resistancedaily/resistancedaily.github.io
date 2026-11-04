@@ -3,8 +3,8 @@
  "kicker": "Focus · Jammu & Kashmir and Ladakh",
  "title": "Preventive detention in Jammu & Kashmir: what the courts are finding",
  "seo_title": "Jammu & Kashmir PSA detentions quashed by High Court, 2026",
- "dek": "Jammu and Kashmir's High Court keeps quashing detentions under the Public Safety Act, citing delays and vague police reports. Activist Khurram Parvez spent nearly five years held before his bail was upheld. The administration says its zero-tolerance policy has \"established peace\".",
- "updated": "2026-11-02",
+ "dek": "J&K's High Court keeps quashing Public Safety Act detentions over vague police reports; on 30 October it ruled an encrypted app no ground to detain. The administration cites \"established peace\".",
+ "updated": "2026-11-04",
  "published": "2026-11-02",
  "rights": [
   "Due process",
@@ -79,19 +79,19 @@
    ]
   },
   {
+   "fig": "15 mo",
+   "figcap": "a Pulwama man was held under the PSA before the court freed him",
+   "src": [
+    "Indian Express",
+    "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+   ]
+  },
+  {
    "fig": "80+",
    "figcap": "employees dismissed without inquiry since 2019",
    "src": [
     "The Hindu",
     "https://www.thehindu.com/news/national/jammu-and-kashmir/jk-government-invokes-article-311-provisions-for-the-first-time-to-fire-teacheraccused-of-raping-student/article71492577.ece"
-   ]
-  },
-  {
-   "fig": "81",
-   "figcap": "arrests after the 2025 Leh firing",
-   "src": [
-    "Outlook",
-    "https://www.outlookindia.com/national/ladakh-sonam-wangchuk-seeks-judicial-inquiry-report"
    ]
   }
  ],
@@ -244,6 +244,16 @@
    ]
   },
   {
+   "date": "2026-10-30",
+   "text": "On 30 October Justice Wasim Sadiq Nargal quashed the PSA detention of Ajaz Ahmad Seh, 26, of Pulwama, held since 28 July 2025. The police dossier alleged contact with Jaish-e-Mohammad handlers through the encrypted app Zangi over a VPN; the court said such assertions, without particulars of dates or content, were not \"an adequate basis for curtailing personal liberty\", and flagged the mechanical reproduction of the police dossier.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+    ]
+   ]
+  },
+  {
    "date": "2026-10-31",
    "text": "On 31 October the High Court quashed the PSA detention of Umer Hamid Sheikh of Srinagar, ordered on 2 June 2025, and directed his release. It said the unexplained 25-day delay after police sought his detention showed there was \"no urgency\", and found the police reports relied on vague and contradictory. An earlier PSA order against him, from 2021, had also been quashed in 2023.",
    "src": [
@@ -262,10 +272,24 @@
      "https://kashmirobserver.net/2026/11/02/four-held-after-stone-pelting-at-mosque-in-anantnag-fir-registered/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "text": "On 3 November the Ladakh administration told Sonam Wangchuk's Himalayan Institute of Alternatives to maintain status quo and not run classes at its Desert Flower School in Phyang while the High Court hears its challenge to the August 2025 cancellation of its land lease. The administration says lease conditions were not met.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/ladakh-administration-issues-notice-sonam-wangchuk-hial-desert-flower-school-status-quo-phyang-land-cancellation-10949332/"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096845/ladakh-administration-tells-sonam-wangchuk-founded-school-to-halt-activities"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Lieutenant Governor Manoj Sinha says a zero-tolerance policy has \"established peace\", that more than 780 militants have been killed since 2020, that local recruitment has ended and stone-pelting has been eradicated. The NIA challenged Khurram Parvez's bail in a case it describes as terror funding. The army censured a senior officer over the 2023 Poonch deaths; Indian security sources say the four killed at the Line of Control were militants. Police in Anantnag say law and order is normal.",
+  "text": "Lieutenant Governor Manoj Sinha says a zero-tolerance policy has \"established peace\", that more than 780 militants have been killed since 2020, that local recruitment has ended and stone-pelting has been eradicated. The NIA challenged Khurram Parvez's bail in a case it describes as terror funding. The army censured a senior officer over the 2023 Poonch deaths; Indian security sources say the four killed at the Line of Control were militants. Police in Anantnag say law and order is normal. In the Pulwama case, the police dossier alleged contact with Jaish-e-Mohammad handlers. Ladakh's administration says Wangchuk's institute did not meet its lease conditions.",
   "src": [
    [
     "Kashmir Observer",
@@ -286,23 +310,44 @@
    [
     "Kashmir Observer",
     "https://kashmirobserver.net/2026/11/02/four-held-after-stone-pelting-at-mosque-in-anantnag-fir-registered/"
+   ],
+   [
+    "Indian Express",
+    "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+   ],
+   [
+    "Indian Express",
+    "https://indianexpress.com/article/india/ladakh-administration-issues-notice-sonam-wangchuk-hial-desert-flower-school-status-quo-phyang-land-cancellation-10949332/"
    ]
   ],
   "points": [
    "Lieutenant Governor Manoj Sinha: \"We did not buy peace, we established peace\" through a zero-tolerance policy.",
    "He says more than 780 militants have been killed since 2020, local recruitment has ended and stone-pelting has been eradicated.",
+   {
+    "text": "In the Pulwama case, police alleged contact with Jaish-e-Mohammad handlers; Ladakh's administration says Wangchuk's institute broke its lease conditions.",
+    "src": [
+     [
+      "Indian Express",
+      "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+     ],
+     [
+      "Indian Express",
+      "https://indianexpress.com/article/india/ladakh-administration-issues-notice-sonam-wangchuk-hial-desert-flower-school-status-quo-phyang-land-cancellation-10949332/"
+     ]
+    ]
+   },
    "The NIA challenged Khurram Parvez's bail in what it calls a terror-funding case; the Supreme Court dismissed its plea.",
    "The army censured a senior officer over the 2023 Poonch custodial deaths; the Armed Forces Tribunal later struck the censure from his record.",
-   "Indian security sources say the four men killed at the Line of Control on 12 October were infiltrating militants.",
-   "Anantnag police say the situation after the mosque attack is normal and under control."
+   "Indian security sources say the four men killed at the Line of Control on 12 October were infiltrating militants."
   ]
  },
  "whats_new": {
-  "date": "2026-11-02",
-  "text": "On 31 Oct the High Court quashed another PSA detention, citing a 25-day unexplained delay and vague police reports; on 30 Oct the Supreme Court upheld Khurram Parvez's bail."
+  "date": "2026-11-04",
+  "text": "On 30 Oct the High Court quashed a Pulwama man's PSA detention, saying alleged use of an encrypted app was no adequate ground; on 3 Nov Ladakh told Wangchuk's school to halt classes."
  },
  "editions": [
-  "2026-10-31"
+  "2026-10-31",
+  "2026-11-04"
  ],
  "instagram": {
   "hashtags": [

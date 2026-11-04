@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-04",
  "figures": [
   {
    "fig": "170",
@@ -171,6 +171,49 @@
     ]
    ],
    "checked": "2026-11-03"
+  },
+  {
+   "id": "madhubani-asi-firing",
+   "kind": "Police force",
+   "state": "Bihar",
+   "place": "Balirajgarh, Babubarhi, Madhubani district, Bihar",
+   "date": "2026-11-03",
+   "power": "Police",
+   "head": "Police officer fires on villagers; one man killed",
+   "text": "A police assistant sub-inspector allegedly fired four rounds from his service pistol at villagers who had confronted and locked him in a room, killing a 50-year-old man and injuring three. He fled after the firing.",
+   "official": "Madhubani SSP Yogendra Kumar says the officer has been suspended and will be dismissed, a murder case is being registered, five teams are searching for him and a Rs 25,000 reward has been announced.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "date": "2026-11-03",
+     "note": "murder case being registered, police say"
+    },
+    {
+     "step": "Officer suspended",
+     "status": "done",
+     "date": "2026-11-03"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/bihar-asi-opens-fire-after-villagers-corner-him-at-womans-house-one-killed-three-injured-10948815/"
+    ]
+   ],
+   "checked": "2026-11-04"
   },
   {
    "id": "beawar-rti-march",
