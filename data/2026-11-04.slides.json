@@ -1,0 +1,82 @@
+{
+ "cover": [
+  [
+   "Zaporizhzhia, Ukraine",
+   "Aid centre bombed, at least 33 dead"
+  ],
+  [
+   "North Darfur, Sudan",
+   "Drone kills two travellers"
+  ],
+  [
+   "Madhubani, Bihar",
+   "Police officer fires on villagers, one dead"
+  ],
+  [
+   "Delhi",
+   "Police: Jantar Mantar never fit for protests"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 8,
+   "label": "World · Life & safety",
+   "fig": "33",
+   "figlab": "killed",
+   "place": "Komyshuvakha, Zaporizhzhia, Ukraine",
+   "head": "Aid centre bombed",
+   "bullets": [
+    "Aerial bombs hit an aid distribution centre in a school building on Monday.",
+    "More than 50 people may be trapped under the rubble, President Zelensky said.",
+    "Russia's defence ministry says it targeted Ukrainian military units."
+   ],
+   "src": "BBC",
+   "caption": "People had gathered for aid when the bombs fell, officials say, and rescuers searched the rubble for survivors. Russia says it hit military units.\nSource: BBC"
+  },
+  {
+   "n": 7,
+   "label": "World · Life & safety",
+   "fig": "2",
+   "figlab": "civilians killed",
+   "place": "Wadi Majrur, North Darfur, Sudan",
+   "head": "Drone hits travellers' car",
+   "bullets": [
+    "A drone struck a private vehicle carrying goods on Sunday; a third man survived.",
+    "A local rights monitor blames the army's drones.",
+    "No army response was reported."
+   ],
+   "src": "Radio Tamazuj",
+   "caption": "Two men carrying goods home to Al-Malha were killed on the road, a witness says; one victim's brother, riding with them, survived. The army has not commented.\nSource: Radio Tamazuj"
+  },
+  {
+   "n": 5,
+   "label": "India · Life & safety",
+   "fig": "1",
+   "figlab": "killed, 3 injured",
+   "place": "Madhubani district, Bihar",
+   "head": "Police officer fires on villagers",
+   "bullets": [
+    "An ASI fired four rounds from his service pistol early Tuesday after villagers confronted him, police say.",
+    "He has been suspended and faces a murder case.",
+    "Five police teams are searching for him; a Rs 25,000 reward is offered."
+   ],
+   "src": "Indian Express",
+   "caption": "A 50-year-old man died in hospital. Police say the officer will be dismissed; we are following the case on Accountability Watch.\nSource: Indian Express"
+  },
+  {
+   "n": 1,
+   "label": "India · Assembly",
+   "fig": "1,500",
+   "figlab": "capacity, police say",
+   "place": "Supreme Court, New Delhi",
+   "head": "Protest site 'never fit'",
+   "bullets": [
+    "Delhi Police told the Supreme Court that Jantar Mantar is a public road and should never have been a protest site.",
+    "Police named three other grounds for protests.",
+    "Petitioners say the 11 October de-notification violates free speech and assembly."
+   ],
+   "src": "Scroll · LiveLaw",
+   "caption": "For years Jantar Mantar was where Delhi went to be heard. Police now say nearness to government no longer matters in the age of social media.\nSource: Scroll"
+  }
+ ]
+}
