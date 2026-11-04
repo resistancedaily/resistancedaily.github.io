@@ -235,7 +235,7 @@ DESIGN_CSS = {
 .st .tx{padding:12px 14px 14px;display:grid;gap:8px;align-content:start}
 .st .tx>.fig{font:800 34px/0.9 var(--display);display:flex;align-items:baseline;gap:8px}
 .st .tx>.fig .right{font-size:11px}
-.st h4{font:800 24px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+.st h4{font:600 19px/1.25 var(--body);text-transform:none;margin:0;text-wrap:balance}
 .st p{font-size:15px;line-height:1.45}
 .st .src .where{font-weight:600;color:var(--ink)}
 .st .also{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
@@ -254,7 +254,7 @@ DESIGN_CSS = {
 .second{background:var(--paper);border:1px solid var(--rule);border-top:4px solid var(--grey);border-radius:6px;padding:14px;display:grid;gap:6px;align-content:start}
 .second.red{border-top-color:var(--red)} .second.orange{border-top-color:var(--orange)}
 .second .big{font:800 44px var(--display);line-height:.9}
-.second h3{font-size:22px;font-weight:800;text-wrap:balance}
+.second h3{font:600 19px/1.25 var(--body);text-transform:none;margin:0;text-wrap:balance}
 .second p{font-size:14px}
 .briefs{list-style:none;margin:0;padding:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
 .briefs li{display:grid;grid-template-columns:auto 150px 1fr;gap:10px;align-items:baseline;padding:9px 14px;border-top:1px solid var(--rule);font-size:14px}

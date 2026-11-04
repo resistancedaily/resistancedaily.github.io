@@ -103,7 +103,7 @@ h1 span{color:var(--green)}
 .fp b{font:800 64px/.9 var(--display);color:var(--green);text-transform:uppercase}.fp span{font:500 11px var(--mono);text-transform:uppercase;color:var(--muted)}
 .c .t{padding:12px 14px;display:grid;gap:6px}
 .k{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--green)}
-.c h3{font:800 24px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+.c h3{font:600 19px/1.25 var(--body);text-transform:none;margin:0;text-wrap:balance}
 .c p{font-size:14px}
 .where{font:500 12px var(--mono);color:var(--muted)}
 .src{font-size:12px;color:var(--muted)}.more{font-weight:600;color:var(--ink)}
