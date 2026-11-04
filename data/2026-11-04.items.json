@@ -71,11 +71,11 @@
   },
   {
    "n": 10,
-   "lon": 97.21,
-   "lat": 19.67,
-   "sev": "red",
-   "label": "Loikaw",
-   "dy": -6
+   "lon": 93.19,
+   "lat": 20.59,
+   "sev": "orange",
+   "label": "Rakhine",
+   "dy": -8
   },
   {
    "n": 11,

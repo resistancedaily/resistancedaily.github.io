@@ -355,40 +355,39 @@
   },
   {
    "region": "world",
-   "place": "Loikaw Township, Kayah state, Myanmar",
-   "short": "Loikaw",
+   "place": "International Court of Justice, The Hague · Rakhine State, Myanmar",
+   "short": "Rakhine",
    "rights": [
-    "Life & safety",
-    "Civilian harm"
+    "Due process"
    ],
-   "sev": "red",
-   "fig": "3",
-   "figcap": "children killed",
-   "headline": "Air strike on Myanmar school kills three children",
-   "text": "An air strike on a school sheltering displaced families in Loikaw, Kayah state, on Saturday killed three children and injured five, UNICEF says; no military response was reported.",
+   "sev": "orange",
+   "fig": "19 Nov",
+   "figcap": "ICJ ruling",
+   "headline": "World Court to rule in Myanmar genocide case",
+   "text": "The International Court of Justice will rule on 19 November in Gambia's case accusing Myanmar of genocide against the Rohingya, over 700,000 of whom fled in 2017, HRW said; no Myanmar comment was reported.",
    "src": [
     [
-     "UN News",
-     "https://news.un.org/feed/view/en/story/2026/11/1168729"
+     "HRW",
+     "https://www.hrw.org/news/2026/11/03/world-court-set-to-rule-in-myanmar-genocide-case"
     ]
    ],
-   "lon": 97.21,
-   "lat": 19.67,
+   "lon": 93.19,
+   "lat": 20.59,
    "photo": {
-    "src": "images/2026-11-04/loikaw-road.webp",
-    "alt": "A narrow paved road through red earth and green fields, with tall trees under a cloudy sky.",
-    "caption": "The road from Loikaw to Hopong, Kayah state, in 2018.",
-    "credit": "Htet Ko Aung29292 / Wikimedia Commons",
+    "src": "images/2026-11-03/mrauk-u.webp",
+    "alt": "Old stone temples and stupas among green trees and grass, with a few people and cows on a dirt path, under grey clouds.",
+    "caption": "Temples at Mrauk-U, Rakhine State, in 2017. The Rohingya were driven from northern Rakhine in 2017.",
+    "credit": "Arezarni / Wikimedia Commons",
     "licence": "CC BY-SA 4.0",
     "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-    "page": "https://commons.wikimedia.org/wiki/File:Loikaw_-_Hopong_Road.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Mrauk_U_Landscape.jpg",
     "kind": "file",
-    "year": "2018",
+    "year": "2017",
     "changes": "resized"
    },
    "n": 10,
    "map": {
-    "dy": -6
+    "dy": -8
    }
   },
   {
