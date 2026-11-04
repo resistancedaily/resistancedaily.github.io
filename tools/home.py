@@ -1,205 +1,205 @@
 #!/usr/bin/env python3
-"""Resistance Daily home page: the front door to every section.
+"""Resistance Daily home page = today's edition (the "Threads" redesign, Nov 2026; spec: design handoff 5a/5b).
 
-Usage (from the repo root):  python3 tools/home.py [OUT]     (OUT: index.html, the live home page; any other name
-                                                              builds a preview that search engines skip)
-Run automatically by publish.py and focus.py.
-Reads the latest data/YYYY-MM-DD.json, data/focus/*.json, data/cases.json and archive/editions.json.
-Sections, top to bottom (kept minimal: numbers first, one line each): Today, In focus (4 compact cards with each
-story's key number), Tracking (Still waiting + Accountability Watch), Past editions (one headline each), How we report
-(folded). Follow links sit in the masthead chips and the footer.
+Usage (from the repo root):
+  python3 tools/home.py [OUT]       builds the latest edition as OUT (default index.html; another name = noindex preview)
+Imported by publish.py, which builds the same page three ways with build():
+  index.html (prefix ""), today/index.html and archive/DATE.html (prefix "../", canonical archive/DATE.html).
+
+Top of the page = today: hero with "Play today", thread cards (threads that moved; followed quiet threads appear via
+assets/rd.js), "Also today" (one-off stories), Rights upheld + Today on the map. Below "When you have more time":
+All threads, Past editions, Act today, How we report, and "All stories this day" (every item in full with its photo,
+sources and anchor #iN: the complete sourced record). Tags are calm words (Lives lost, Right upheld, Assembly...),
+never red. Thread logic lives in tools/threads.py.
 """
-import sys, os, json, glob, html, datetime
+import sys, os, json, math, html, datetime
 import seo
+import rdsite as S
+import threads as T
 
 E = html.escape
-root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-out = sys.argv[1] if len(sys.argv) > 1 else "index.html"
-preview = os.path.basename(out) != "index.html"
-SITE = seo.SITE
-SEV = {"red": 0, "orange": 1, "grey": 2}
+root = S.root
 
 
-def load(p):
-    return json.load(open(os.path.join(root, p)))
+def esc_json(o):
+    return json.dumps(o, ensure_ascii=False).replace("</", "<\\/")
 
 
-dates = sorted(os.path.basename(p)[:-5] for p in glob.glob(os.path.join(root, "data", "????-??-??.json")))
-date = dates[-1]
-d = load(f"data/{date}.json")
-dt = datetime.date.fromisoformat(date)
-focus = sorted((load(p[len(root) + 1:]) for p in glob.glob(os.path.join(root, "data", "focus", "*.json"))
-                if os.path.exists(os.path.join(root, "focus", os.path.basename(p)[:-5] + ".html"))),
-               key=lambda f: f["updated"], reverse=True)
-cases = load("data/cases.json")
-log = load("archive/editions.json")
-NAMES = {"map": "Map", "numbers": "Day in numbers", "ledger": "Rights ledger", "front": "Front page", "clock": "24-hour clock", "tracker": "Still waiting"}
-# The full edition: /today/ once the hub is live, the dated archive page while previewing.
-full = f"archive/{date}.html" if preview else "today/"
-
-top = sorted(d["items"], key=lambda i: (not i.get("lead"), SEV[i["sev"]]))[:4]
-today = "".join(f'<li><i class="dot {i["sev"]}"></i><span><b>{E(i.get("short", i["place"]))}</b> · {E(i["headline"])}</span></li>' for i in top)
-
-def lead_fig(f):
-    x = (f.get("figs") or [{}])[0]
-    return f'<span class="kf"><b>{E(x["fig"])}</b> {E(x["figcap"])}</span>' if x.get("fig") else ""
+def item_rank(i, date):
+    return (not T.upheld(i, date), S.SEV[i["sev"]], i["n"])
 
 
-cards = "".join(f'''<a class="fcard" href="focus/{E(f["slug"])}.html"><img src="{E(f["photos"][0]["src"])}" alt="" loading="lazy" decoding="async">
-<div><h3>{E(f.get("short", f["title"]))}</h3>{lead_fig(f)}</div></a>''' for f in focus[:4])  # phones show the first 2 (CSS below)
+def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=False, inline=False):
+    """kind: "home" (index.html), "today" or "archive". inline=True embeds CSS/JS (backup artifact)."""
+    d = S.load(f"data/{date}.json")
+    dt = datetime.date.fromisoformat(date)
+    ups = T.all_updates(date)
+    reg = T.registry()
+    regs = {t["slug"]: t for t in reg}
+    items = d["items"]
+    by_thread = {}
+    oneoffs = []
+    for i in items:
+        s = T.thread_of(i)
+        if s in regs:
+            by_thread.setdefault(s, []).append(i)
+        else:
+            oneoffs.append(i)
+    # Order: upheld first, then most serious, then registry order.
+    moved = sorted(by_thread, key=lambda s: (min(item_rank(i, date) for i in by_thread[s]), [t["slug"] for t in reg].index(s)))
+    quiet = [t["slug"] for t in reg if t["slug"] not in by_thread]
+    words = sum(len(i.get("text", "").split()) for s in moved for i in by_thread[s])
+    mins = max(1, math.ceil(words / 200))
 
-asof = datetime.date.fromisoformat(cases["asof"])
-cs = cases["cases"]
-longest = min(cs, key=lambda c: c["since"])
-ldays = (asof - datetime.date.fromisoformat(longest["since"])).days
-tracker = max((k for k, v in log.items() if v["design"] == "tracker"), default=None)
-# Accountability Watch (tools/accountability.py): open cases and the share still without an arrest.
-acc = load("data/accountability.json") if os.path.exists(os.path.join(root, "data", "accountability.json")) else None
-if acc:
-    acc_open = [c for c in acc["cases"] if not c.get("closed")]
-    acc_noarrest = sum(1 for c in acc_open if any(s["step"].lower().startswith("arrest") for s in c["steps"])
-                       and not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
-    acc_states = len({c["state"] for c in acc_open if c.get("region", "india") == "india"})
-    acc_countries = len({c["state"] for c in acc_open if c.get("region") == "world"})
-    acc_latest = max(acc_open, key=lambda c: c["date"])
+    def card(s, is_moved):
+        t = regs[s]
+        u = ups.get(s, [])
+        p = T.photo_of(t, u)
+        ring = (f'<img class="washed" src="{E(S.rel(p["src"], prefix))}" alt="" loading="lazy" decoding="async">' if p and is_moved else "<i></i>")
+        if is_moved:
+            top = sorted(by_thread[s], key=lambda i: item_rank(i, date))[0]
+            tg, cls = T.tag(top, date)
+            n = len(by_thread[s])
+            up = T.upheld(top, date)
+            return (f'<a class="rd-thread{" is-upheld" if up else ""}" data-thread="{E(s)}" href="{T.link(t, prefix)}">'
+                    f'<span class="rd-ring">{ring}</span><span class="rd-tx"><span class="rd-tx-top"><h3>{E(t["name"])}</h3>'
+                    f'<span class="{cls}">{E(tg)}</span><span class="rd-state rd-state-m">{n} new</span></span>'
+                    f'<p>{E(top["headline"])}</p><span class="rd-state">{n} new</span></span></a>')
+        return (f'<a class="rd-thread is-quiet" data-thread="{E(s)}" href="{T.link(t, prefix)}" hidden>'
+                f'<span class="rd-ring"><i></i></span><span class="rd-tx"><span class="rd-tx-top"><h3>{E(t["name"])}</h3>'
+                f'<span class="tag tag-neutral">Quiet</span><span class="rd-state rd-state-m">Quiet</span></span>'
+                f'<p>No new report today</p><span class="rd-state">Quiet</span></span></a>')
 
-# Signs of hope (tools/hope.py, owner's request 4 Nov 2026): a green "Need hope?" chip and a card under Today.
-hope = None
-if os.path.exists(os.path.join(root, "data", "hope.json")) and os.path.exists(os.path.join(root, "hope", "index.html")):
-    import hope as hopemod
-    hope = hopemod.counts(hopemod.load(), dt)
+    grid = "".join(card(s, True) for s in moved) + "".join(card(s, False) for s in quiet)
 
-def ed_line(k):
+    # Also today: one-off stories (rows jump to the full story below).
+    also_rows = "".join(f'<li><b>{E(i.get("short", i["place"]))}</b><a href="#i{i["n"]}">{E(i["headline"])}</a></li>'
+                        for i in sorted(oneoffs, key=lambda i: item_rank(i, date)))
+    also = (f'<details class="rd-also"><summary><b>Also today</b><span class="rd-sub"><span class="rd-sub-d"> · {len(oneoffs)} '
+            f'stor{"y" if len(oneoffs) == 1 else "ies"} outside a thread</span><span class="rd-k-m"> · {len(oneoffs)}</span></span>'
+            f'<span class="rd-show"><span class="rd-show-t">Show all {len(oneoffs)}</span><span class="rd-hide">Hide</span></span></summary>'
+            f'<ul>{also_rows}</ul></details>') if oneoffs else ""
+
+    # Rights upheld (data/hope.json via hope.py) + today's upheld item.
+    upheld_html = ""
+    if os.path.exists(os.path.join(root, "data", "hope.json")):
+        import hope as H
+        n, period = H.counts(H.load(), dt)
+        todays = sorted((i for i in items if T.upheld(i, date)), key=lambda i: i["n"])
+        line = (f"Today: {todays[0]['headline']}." if todays else
+                f"Latest: {H.recent(H.load(), 1)[0]['headline']}." if H.load()["items"] else "")
+        upheld_html = (f'<a class="rd-upheld" href="{prefix}hope/" style="text-decoration:none"><span class="rd-n">{n}</span><span>'
+                       f'<h2>Rights upheld {E(period)}</h2><p>{E(line)}</p><span style="font-weight:600;text-decoration:underline">See all {n} →</span></span></a>')
+
+    # Today on the map: the edition's SVG maps in a dialog.
+    mp = os.path.join(root, "data", f"{date}.maps.json")
+    maps = json.load(open(mp)) if os.path.exists(mp) else {}
+    n_in = sum(1 for i in items if i["region"] == "india")
+    n_w = len(items) - n_in
+    map_html, map_dialog = "", ""
+    if maps.get("india") or maps.get("world"):
+        place_line = f"{len(items)} places · {n_in} in India, {n_w} worldwide"
+        map_html = (f'<div class="rd-mapc"><h2>Today on the map</h2><p>{place_line}</p><button class="btn btn-secondary" data-rd-map>Open map →</button></div>'
+                    f'<button class="rd-map-m" data-rd-map><span><b>Today on the map</b> · {len(items)} places</span><span aria-hidden="true">→</span></button>')
+        map_dialog = (f'<dialog class="rd-mapd" aria-label="Today on the map"><button class="rd-p-close rd-mapd-x" data-close aria-label="Close" '
+                      f'style="color:var(--color-text);border-color:var(--color-divider)">✕</button><h2 class="rd-h">Today on the map</h2>'
+                      f'<p class="rd-sub">{place_line}. Tap a number to read that story.</p>'
+                      f'<div class="rd-mapd-g"><div>{maps.get("india", "")}</div><div>{maps.get("world", "")}</div></div></dialog>')
+    two = f'<div class="rd-two">{upheld_html}<div>{map_html}</div></div>' if (upheld_html or map_html) else ""
+
+    # All threads (key fact each) and past editions.
+    tlink = lambda t: (f'{prefix}{t["page"]}' if t.get("page") else
+                       f'{prefix}focus/{t["focus"]}.html' if t.get("focus") and os.path.exists(os.path.join(root, "focus", f'{t["focus"]}.html'))
+                       else T.link(t, prefix))
+    pills = "".join(f'<a href="{tlink(t)}">{E(t["name"])}</a>' for t in reg)
+    tcards = [f'<a class="rd-tcard" href="{tlink(t)}"><b>{E(t["name"])}</b><span>{E(T.stat(t) or "Every update, newest first")}</span></a>' for t in reg]
+    allth = (f'<div class="rd-all">{"".join(tcards[:6])}</div>'
+             + (f'<details class="rd-allmore"><summary class="rd-sub" style="font-family:var(--font-heading);color:var(--color-accent-700)">'
+                f'<span class="a">All {len(reg)} threads ↓</span><span class="b">Fewer ↑</span></summary><div class="rd-all">{"".join(tcards[6:])}</div></details>' if len(tcards) > 6 else "")
+             + f'<div class="rd-pills">{pills}</div>')
+    eds = [e for e in S.editions() if e < date][-4:][::-1]
+    past = "".join(f'<li><a href="{prefix}archive/{e}.html"><b>{E(S.nice(e))}</b><span>{E(S.top_line(e))}</span></a></li>' for e in eds)
+    acts = "".join(f'<div class="rd-act"><b>{E(a)}</b><span>{E(b)}</span></div>' for a, b in d.get("acts", []))
+
+    # All stories this day: the full sourced record (anchors #iN).
+    def story(i):
+        p = i.get("photo")
+        tg, cls = T.tag(i, date)
+        s = T.thread_of(i)
+        th = (f' · <a href="{T.link(regs[s], prefix)}">{E(regs[s]["name"])} thread →</a>' if s in regs else "")
+        fig = (f'<figure><img class="washed" src="{E(S.rel(p["src"], prefix))}" alt="{E(p["alt"])}" loading="lazy" decoding="async">'
+               f'<figcaption><b>{E(S.photo_label(p))}</b> · {E(p.get("caption", ""))} {S.photo_credit(p)}</figcaption></figure>') if p else ""
+        foc = (f' · <a href="{prefix}focus/{E(i["focus"])}.html">Photos and full story →</a>'
+               if i.get("focus") and os.path.exists(os.path.join(root, "focus", f'{i["focus"]}.html')) else "")
+        return (f'<article class="rd-story{"" if p else " nophoto"}" id="i{i["n"]}">{fig}<div><div class="rd-meta"><span class="{cls}">{E(tg)}</span>'
+                f'<span>{E(i["place"])}</span></div><h3>{E(i["headline"])}</h3><p>{E(i.get("text", ""))}</p>'
+                f'<span class="rd-src">{S.src_links(i.get("src", []))}{foc}{th}</span></div></article>')
+    stories = "".join(story(i) for i in sorted(items, key=lambda i: i["n"]))
+
+    pdata = {"date": date, "order": moved + quiet, "threads": T.player_data(date, prefix, ups)}
+    kicker_d = f'{S.nice(date)} · covers {d.get("window", "")}'
+    kicker_m = f'{S.nice(date)} · {len(moved)} thread{"s" if len(moved) != 1 else ""} moved'
+    page_title = ("Resistance Daily · Human rights, every fact sourced" if kind == "home" else f'Resistance Daily · {d["date_long"]}')
+    top3 = sorted(items, key=lambda i: item_rank(i, date))[:3]
+    desc = S.DESC if kind == "home" else "; ".join(f'{i.get("short", i["place"])}: {i["headline"]}' for i in top3)
+    if kind == "home":
+        ld = [{"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "Resistance Daily", "url": S.SITE,
+               "email": "resistancedaily.in@gmail.com", "sameAs": seo.SAME_AS, "description": S.DESC},
+              {"@context": "https://schema.org", "@type": "WebSite", "name": "Resistance Daily", "url": S.SITE, "inLanguage": "en"}]
+    else:
+        ld = [{"@context": "https://schema.org", "@type": "NewsArticle", "headline": page_title, "description": desc, "url": canonical,
+               "mainEntityOfPage": canonical, "datePublished": seo.iso(date), "dateModified": seo.iso(date),
+               "author": seo.PUBLISHER, "publisher": seo.PUBLISHER, "isAccessibleForFree": True, "inLanguage": "en"}]
+        if og_image:
+            ld[0]["image"] = [S.SITE + og_image]
+    og = (f'<meta property="og:image" content="{S.SITE}{og_image}"><meta property="og:image:width" content="1200">'
+          f'<meta property="og:image:height" content="630">' if og_image else "")
+    extra = (og + f'<meta property="og:type" content="{"website" if kind == "home" else "article"}"><meta property="og:url" content="{canonical}">'
+             + (f'<meta property="article:published_time" content="{seo.iso(date)}">' if kind != "home" else "")
+             + '<meta name="twitter:card" content="summary_large_image">' + "".join(seo.jsonld(x) for x in ld))
+
+    body = f"""{S.nav(prefix)}
+<header class="rd-hero"><div><span class="rd-kicker"><span class="rd-k-d">{E(kicker_d)}</span><span class="rd-k-m">{E(kicker_m)}</span></span>
+<h1>Where things stand today</h1><p>Human rights in India and the world. Non-partisan. Every fact sourced.</p></div>
+{f'<button class="btn btn-primary rd-play" data-rd-play-all>▶&nbsp; Play today · {mins} min</button>' if moved else ''}</header>
+<div class="rd-caught" data-rd-caught-up hidden><b>You're caught up.</b> {upheld_count_line(dt)}</div>
+<div class="rd-grid" data-rd-thread-grid>{grid}</div>
+{also}
+{two}
+<div class="rd-divider">When you have more time</div>
+<div class="rd-more2"><section class="rd-sec"><div class="rd-hd"><h2 class="rd-h">All threads</h2><a href="{prefix}focus/">All {len(reg)} →</a></div>
+<p class="rd-sub" style="margin:0">Long-running stories, including the In focus pieces, Accountability Watch and Still waiting.</p>{allth}</section>
+<section class="rd-sec"><div class="rd-hd"><h2 class="rd-h">Past editions</h2><a href="{prefix}archive/">All →</a></div><ul class="rd-past">{past}</ul></section></div>
+<section class="rd-sec"><h2 class="rd-h">Act today <span class="rd-sub">· whatever your politics</span></h2><div class="rd-acts">{acts}</div></section>
+<details class="rd-stories" id="stories"><summary><b>All stories this day</b><span class="rd-sub"> · {len(items)}, each with its sources</span>
+<span class="rd-show">Show</span></summary>{stories}</details>
+<details class="rd-how" id="how"><summary>How we report</summary><ul>{S.HOW}</ul></details>
+{map_dialog}
+<script type="application/json" id="rd-threads">{esc_json(pdata)}</script>"""
+    html_ = S.head(page_title, desc, prefix, canonical, extra, noindex) + body + S.footer(prefix)
+    if inline:
+        css = open(os.path.join(root, "assets", "organic.css")).read() + open(os.path.join(root, "assets", "rd.css")).read()
+        js = open(os.path.join(root, "assets", "rd.js")).read()
+        html_ = (html_.replace(f'<link rel="stylesheet" href="{prefix}assets/organic.css"><link rel="stylesheet" href="{prefix}assets/rd.css">',
+                               f"<style>{css}</style>")
+                 .replace(f'<script src="{prefix}assets/rd.js" defer></script>', f"<script>{js}</script>"))
+    os.makedirs(os.path.dirname(os.path.join(root, out)) or root, exist_ok=True)
+    open(os.path.join(root, out), "w").write(html_)
+    return html_
+
+
+def upheld_count_line(dt):
     try:
-        x = load(f"data/{k}.json")
-        h = sorted(x["items"], key=lambda i: (not i.get("lead"), SEV[i["sev"]]))
-        s = f'{h[0].get("short", h[0]["place"])}: {h[0]["headline"]}'
+        import hope as H
+        n, period = H.counts(H.load(), dt)
+        return f"{n} right{'s were' if n != 1 else ' was'} upheld {period}."
     except Exception:
-        s = log[k]["summary"]
-    return (f'<li><a href="archive/{k}.html"><b>{datetime.date.fromisoformat(k).strftime("%a %d %b")}</b></a>'
-            f'<span class="t">{E(NAMES.get(log[k]["design"], log[k]["design"]))}</span><p>{E(s)}</p></li>')
-past = "".join(ed_line(k) for k in sorted(log, reverse=True)[1:5])
+        return ""
 
-CH = [("Instagram", seo.INSTAGRAM, "Photo stories and the day's slides"),
-      ("WhatsApp", seo.WHATSAPP, "Each morning's headlines on your phone"),
-      ("X", seo.X, "Short updates and links"),
-      ("Facebook", seo.FACEBOOK, "Editions and Focus stories to share")]
-follow = "".join(f'<a class="ch" href="{u}"><b>{n}</b><span>{E(t)}</span></a>' for n, u, t in CH)
-chips = "".join(f'<a href="{u}">{n}</a>' for n, u, t in CH)
 
-desc = "A non-partisan daily record of human-rights and civil-liberties events in India and around the world. Every fact links to its source."
-ld = [{"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "Resistance Daily", "url": SITE,
-       "email": "resistancedaily.in@gmail.com", "sameAs": seo.SAME_AS, "description": desc},
-      {"@context": "https://schema.org", "@type": "WebSite", "name": "Resistance Daily", "url": SITE, "inLanguage": "en"}]
-share = next((f"images/focus/{f['slug']}/share.jpg" for f in focus if os.path.exists(os.path.join(root, "images", "focus", f["slug"], "share.jpg"))), None)
-og = f'<meta property="og:image" content="{SITE}{share}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' if share else ""
-ICON = ("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315181d'/%3E"
-        "%3Crect x='14' y='18' width='22' height='6' rx='2' fill='%23d9661a'/%3E%3Ctext x='14' y='50' font-family='Arial' font-weight='900' font-size='26' fill='%23f3f4f2'%3ERD%3C/text%3E%3C/svg%3E")
-
-CSS = """
-:root{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--accent:#d9661a;--red:#b3261e;--grey:#7a808a;--green:#1d7a4c;--chip:#eceee9;
---display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--grey:#8d939c;--green:#3fb07a;--chip:#22262c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--grey:#8d939c;--green:#3fb07a;--chip:#22262c;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 var(--body)}
-.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:26px}
-a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:2px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
-h1,h2,h3{font-family:var(--display);margin:0;text-transform:uppercase;line-height:.95}
-p{margin:0}
-.mast{display:grid;gap:10px;border-bottom:3px solid var(--ink);padding-bottom:14px}
-.mast .bar{height:5px;width:72px;background:var(--accent);border-radius:2px}
-.mast h1{font-size:clamp(44px,9vw,72px);font-weight:800}
-.mast .tag{color:var(--muted);max-width:60ch;font-size:16px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips a{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:6px 12px}
-.chips a.hope{background:var(--green);border-color:var(--green);color:#fff}
-.hopec{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:8px;background:color-mix(in srgb,var(--green) 12%,var(--paper));border:1px solid color-mix(in srgb,var(--green) 35%,var(--rule));border-left:5px solid var(--green);text-decoration:none;color:inherit}
-.hopec b{font:800 48px/.9 var(--display);color:var(--green)}
-.hopec strong{display:block;font:800 22px/1 var(--display);text-transform:uppercase}
-.hopec span span{font-size:13.5px;color:var(--muted)}
-section{display:grid;gap:12px}
-.sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule);padding-bottom:6px}
-.sec-h h2{font-size:34px;font-weight:800}
-.sec-h a{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);white-space:nowrap}
-.lede{color:var(--muted);max-width:66ch}
-.today{background:var(--paper);border:1px solid var(--rule);border-left:5px solid var(--accent);border-radius:6px;padding:16px 18px;display:grid;gap:12px}
-.today .when{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
-.today ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;font-size:16px}
-.today li{display:flex;gap:10px;align-items:baseline}
-.dot{display:inline-block;width:11px;height:11px;border-radius:50%;flex:none;transform:translateY(1px)}
-.dot.red{background:var(--red)}.dot.orange{background:var(--accent)}.dot.grey{background:var(--grey)}
-.go{justify-self:start;font-weight:600;background:var(--ink);color:var(--bg);text-decoration:none;border-radius:4px;padding:10px 16px}
-.focs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:8px}
-.fcard{background:var(--paper);border:1px solid var(--rule);border-left:4px solid var(--accent);border-radius:6px;display:grid;grid-template-columns:76px minmax(0,1fr);overflow:hidden;text-decoration:none;color:inherit}
-.fcard img{display:block;width:76px;height:100%;min-height:68px;object-fit:cover;background:var(--chip)}
-.fcard div{padding:8px 12px;display:grid;gap:3px;align-content:center;min-width:0}
-.fcard .k{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fcard h3{font:600 17px/1.25 var(--body);text-transform:none}
-.kf{font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
-.kf b{font:800 17px var(--display);color:var(--red)}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px}
-.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:14px 16px;display:grid;gap:6px;text-decoration:none;color:inherit;align-content:start}
-.stat .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
-.stat h3{font:600 19px/1.25 var(--body);text-transform:none}
-.stat .n{font-size:14px;color:var(--muted)}.stat .n b{font:800 24px/1 var(--display);color:var(--red);margin-right:2px}
-.stat .ex{font-size:13px;color:var(--muted)}
-.stat .cta{font-weight:600;font-size:14px;margin-top:2px}
-.past{list-style:none;margin:0;padding:0;display:grid;gap:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
-.past li{padding:8px 14px;border-top:1px solid var(--rule);display:flex;gap:10px;align-items:baseline;min-width:0}
-.past li:first-child{border-top:0}
-.past li a{white-space:nowrap;flex:none}
-.past .t{display:none}
-.past p{color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.how{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}
-.how summary{cursor:pointer;font-weight:600}
-.how ul{margin:8px 0 0;padding-left:18px;display:grid;gap:4px;color:var(--muted);font-size:14px}
-footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
-"""
-
-page = f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Resistance Daily · Human rights, every fact sourced</title>
-<meta name="description" content="{E(desc)}">{'<meta name="robots" content="noindex">' if preview else ''}
-<meta property="og:title" content="Resistance Daily"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
-<meta property="og:url" content="{SITE}"><meta property="og:site_name" content="Resistance Daily">{og}<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="{SITE}"><link rel="icon" href="{ICON}">
-{"".join(seo.jsonld(x) for x in ld)}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
-<style>{CSS}</style></head><body><div class="wrap">
-<header class="mast"><div class="bar" aria-hidden="true"></div><h1>Resistance Daily</h1>
-<p class="tag">Human rights in India and the world, daily. Non-partisan. Every fact sourced.</p>
-<nav class="chips" aria-label="Follow Resistance Daily">{'<a class="hope" href="hope/">Need hope?</a>' if hope else ''}{chips}</nav></header>
-
-<section aria-labelledby="h-today"><div class="sec-h"><h2 id="h-today">Today</h2><a href="{full}">Full edition →</a></div>
-<div class="today"><span class="when">{dt.strftime("%a %d %b %Y")}</span><ul>{today}</ul>
-<a class="go" href="{full}">Read today's edition →</a></div>
-{f'<a class="hopec" href="hope/"><b>{hope[0]}</b><span><strong>Need hope?</strong><span>{hope[0]} right{"s" if hope[0] != 1 else ""} upheld {hope[1]} →</span></span></a>' if hope else ''}</section>
-
-<section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All {len(focus)} →</a></div>
-<div class="focs">{cards}</div></section>
-
-<section aria-labelledby="h-track"><div class="sec-h"><h2 id="h-track">Tracking</h2></div><div class="stats">
-<a class="stat" href="{f'archive/{tracker}.html#still-waiting' if tracker else 'archive/'}"><span class="k">Still waiting</span><h3>Jailed for speaking out</h3>
-<span class="n"><b>{len(cs)}</b> activists, journalists and groups held</span><span class="ex">Longest: {E(longest["name"])}, {ldays:,} days</span><span class="cta">See who →</span></a>
-{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><h3>Abuse of power, followed to the end</h3>
-<span class="n"><b>{len(acc_open)}</b> cases · <b class="r">{acc_noarrest}</b> with no arrest</span><span class="ex">Latest: {E(acc_latest["head"])} ({E(acc_latest["state"])})</span><span class="cta">Follow the cases →</span></a>''' if acc else ""}
-</div></section>
-
-<section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All →</a></div>
-<ul class="past">{past}</ul></section>
-
-<details class="how"><summary>How we report</summary><ul>
-<li>Rights, not parties: life and safety, assembly, expression, press freedom, due process, land and livelihood.</li>
-<li>Every number links to its source, with ground-level reporting first.</li>
-<li>The official position sits next to every allegation; when sources disagree we show the range.</li>
-<li>Photos are freely licensed and credited; protesters' and children's faces are blurred.</li></ul></details>
-
-<footer><span>Tips, photos or corrections: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span>
-<span>{seo.FOLLOW}</span></footer>
-</div></body></html>
-"""
-open(os.path.join(root, out), "w").write(page)
-print("built home", out, date)
+if __name__ == "__main__":
+    out = sys.argv[1] if len(sys.argv) > 1 else "index.html"
+    date = S.editions()[-1]
+    share = f"images/{date}/share.jpg" if os.path.exists(os.path.join(root, "images", date, "share.jpg")) else None
+    build(date, out, "", S.SITE, "home", share, noindex=os.path.basename(out) != "index.html")
+    print("built home", out, date)

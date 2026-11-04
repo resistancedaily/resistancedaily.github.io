@@ -1,15 +1,20 @@
 #!/usr/bin/env python3
 """Build one Resistance Daily edition into the site repository (github.com/resistancedaily/resistancedaily.github.io).
 
+"Threads" redesign (Nov 2026): the web edition is no longer a weekday layout. DESIGN is still accepted (it is logged
+in archive/editions.json, and the slides may use it) but every page is built by tools/home.py: the home page, today/
+and archive/DATE.html share one layout. Thread pages (threads/SLUG.html) come from tools/threads.py.
+
 Usage (from the repo root):
   python3 tools/publish.py DESIGN YYYY-MM-DD data/YYYY-MM-DD.json [data/YYYY-MM-DD.maps.json]
 
 Writes:
-  index.html                 the home page (tools/home.py): Today, In focus, Still waiting, Past editions, Follow
-  today/index.html           today's full edition, always at /today/ (canonical: its archive page)
-  archive/YYYY-MM-DD.html    permanent copy
-  archive/index.html         list of all editions, newest first
-  build/artifact.html        page content without the document wrapper (for the Claude artifact backup)
+  index.html                 the home page = today's edition (tools/home.py)
+  today/index.html           the same edition at /today/ (canonical: its archive page)
+  archive/YYYY-MM-DD.html    permanent copy, with every story in full under "All stories this day" (#iN anchors)
+  archive/index.html         all editions by month, newest first
+  threads/SLUG.html          every registry thread, newest update first (tools/threads.py)
+  build/artifact.html        the edition with CSS and JS inlined (the Claude artifact backup)
 Then: git add -A && git commit && git push.
 Repo layout: tools/ (design.py, maps.js, thin.py, publish.py, package.json), data/ (YYYY-MM-DD.json, YYYY-MM-DD.maps.json, cases.json), archive/, .nojekyll, README.md. .gitignore: node_modules/ build/
 """
@@ -35,128 +40,59 @@ if not maps_path and _d["items"] and all("lon" in i and "lat" in i for i in _d["
         subprocess.run(["node", os.path.join(root, "tools", "maps.js"), ip], check=True, stdout=fh, cwd=os.path.join(root, "tools"))
     subprocess.run([sys.executable, os.path.join(root, "tools", "thin.py"), mp], check=True)
     maps_path = mp
-cmd = [sys.executable, os.path.join(root, "tools", "design.py"), design, data_path] + ([maps_path] if maps_path else [])
-body = subprocess.run(cmd, check=True, capture_output=True, text=True).stdout
 data = json.load(open(data_path))
-# Ensure the footer carries the archive link and contact line (design.py does not add it)
-if 'href="archive/"' not in body:
-    body = body.replace("</span></footer>", f'</span><span><a href="archive/">Past editions</a> · {seo.FOLLOW} · Contact or send a tip: <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a></span></footer>', 1)
+import rdsite as S
+import home as HOME
+import threads as T
+SITE = seo.SITE
+top = sorted(data["items"], key=lambda i: (not i.get("lead"), S.SEV[i["sev"]]))[:3]
+desc = "; ".join(f"{i.get('short', i['place'])}: {i['headline']}" for i in top)
 
-top = sorted(data["items"], key=lambda i: {"red": 0, "orange": 1, "grey": 2}[i["sev"]])[:3]
-desc = "; ".join(f"{i.get('short', i['place'])}: {i['headline']}" for i in top) if design != "tracker" else \
-    "Still waiting: people held for long periods after speaking out, protesting or reporting, in India and around the world."
-title = f"Resistance Daily · {data['date_long']}"
-SITE = "https://resistancedaily.github.io/"
-ICON = "data:image/svg+xml," + "%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315181d'/%3E%3Crect x='14' y='18' width='22' height='6' rx='2' fill='%23d9661a'/%3E%3Ctext x='14' y='50' font-family='Arial' font-weight='900' font-size='26' fill='%23f3f4f2'%3ERD%3C/text%3E%3C/svg%3E"
-
-# Link previews: a 1200x630 JPEG from the most serious item that has a photo (none on most Sundays).
-lead = next((i for i in sorted(data["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]])) if i.get("photo")), None)
+# Link previews: a 1200x630 JPEG from the most serious item that has a photo, else a text card.
+lead = next((i for i in sorted(data["items"], key=lambda i: (not i.get("lead"), S.SEV[i["sev"]])) if i.get("photo")), None)
 share = seo.share_image(root, lead["photo"]["src"], f"images/{date}/share.jpg") if lead and not lead["photo"]["src"].startswith("http") else None
-share_alt = lead["photo"]["alt"] if share else ""
-if not share:  # no usable photo: a text card, so X, WhatsApp and Facebook still show a large preview
-    kicker = f"{data['date_long']} · Still waiting" if design == "tracker" else data["date_long"]
-    lines = ["Long detentions after speaking out, protesting or reporting"] if design == "tracker" else []
-    lines += [f"{i.get('short', i['place'])}: {i['headline']}" for i in top]
-    share = seo.text_card(root, f"images/{date}/share.jpg", kicker, lines)
-    share_alt = f"Resistance Daily, {data['date_long']}: " + "; ".join(lines[:3])
+if not share:
+    lines = [f"{i.get('short', i['place'])}: {i['headline']}" for i in top]
+    share = seo.text_card(root, f"images/{date}/share.jpg", f"{data['date_long']} · Where things stand today", lines)
 
-
-def wrap(content, canonical):
-    content = re.sub(r"<title>.*?</title>", "", content, count=1, flags=re.S)
-    ld = {"@context": "https://schema.org", "@type": "NewsArticle", "headline": title, "description": desc, "url": canonical,
-          "mainEntityOfPage": canonical, "datePublished": seo.iso(date), "dateModified": seo.iso(date),
-          "author": seo.PUBLISHER, "publisher": seo.PUBLISHER, "isAccessibleForFree": True, "inLanguage": "en"}
-    if share:
-        ld["image"] = [SITE + share]
-    img = (f'<meta property="og:image" content="{SITE}{share}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">'
-           f'<meta property="og:image:alt" content="{html.escape(share_alt)}">') if share else ""
-    return f"""<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
-<meta property="og:type" content="article">
-<meta property="og:url" content="{canonical}">
-<meta property="og:site_name" content="Resistance Daily">
-<meta property="article:published_time" content="{seo.iso(date)}">
-{img}<meta name="twitter:card" content="{'summary_large_image' if share else 'summary'}">
-{seo.jsonld(ld)}
-<link rel="icon" href="{ICON}">
-<link rel="canonical" href="{canonical}">
-<style>body{{margin:0}}</style>
-</head><body>
-{content}
-</body></html>
-"""
-
-os.makedirs(os.path.join(root, "archive"), exist_ok=True)
-os.makedirs(os.path.join(root, "build"), exist_ok=True)
-# Today's full edition lives at /today/; the home page (index.html) is built by tools/home.py below.
-os.makedirs(os.path.join(root, "today"), exist_ok=True)
-tod = body.replace('href="archive/"', 'href="../archive/"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/').replace('href="hope/', 'href="../hope/')
-open(os.path.join(root, "today", "index.html"), "w").write(wrap(tod, f"{SITE}archive/{date}.html"))
-arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/').replace('href="hope/', 'href="../hope/')
-open(os.path.join(root, "archive", f"{date}.html"), "w").write(wrap(arch, f"{SITE}archive/{date}.html"))
+canon = f"{SITE}archive/{date}.html"
+HOME.build(date, "today/index.html", "../", canon, "today", share)
+HOME.build(date, f"archive/{date}.html", "../", canon, "archive", share)
+body = HOME.build(date, "build/artifact.html", "", canon, "archive", share, inline=True)
 # The backup page keeps images/ paths relative: publish those files with the artifact (see the list printed below).
-open(os.path.join(root, "build", "artifact.html"), "w").write(body.replace('href="archive/"', f'href="{SITE}archive/"')
-    .replace('href="focus/', f'href="{SITE}focus/').replace('href="hope/', f'href="{SITE}hope/'))
 imgs = sorted(set(re.findall(r'src="(images/[^"]+)"', body)))
 if imgs:
     print("artifact files:", json.dumps({i: i for i in imgs}))
 
-# archive index
-names = {"map": "Map", "numbers": "Day in numbers", "ledger": "Rights ledger", "front": "Front page", "clock": "24-hour clock", "tracker": "Still waiting"}
+# archive index: grouped by month, one top line per day
 log_path = os.path.join(root, "archive", "editions.json")
 log = json.load(open(log_path)) if os.path.exists(log_path) else {}
 log[date] = {"design": design, "summary": desc}
 json.dump(log, open(log_path, "w"), ensure_ascii=False, indent=1)
+
+
 def top_line(d, v):
-    """One line per day (owner's declutter, 4 Nov 2026): the edition's most serious headline."""
-    try:
-        x = json.load(open(os.path.join(root, "data", f"{d}.json")))
-        h = sorted(x["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]]))[0]
-        return f'{h.get("short", h["place"])}: {h["headline"]}'
-    except Exception:
-        return v["summary"]
+    return S.top_line(d) or v["summary"]
 
 
-rows = "".join(
-    f'<li><a href="{d}.html"><b>{datetime.date.fromisoformat(d).strftime("%a %d %b")}</b></a><p>{html.escape(top_line(d, v))}</p></li>'
-    for d, v in sorted(log.items(), reverse=True))
-open(os.path.join(root, "archive", "index.html"), "w").write(f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Resistance Daily · Past editions</title><link rel="icon" href="{ICON}">
-<style>
-:root{{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--accent:#d9661a}}
-@media (prefers-color-scheme:dark){{:root{{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;color-scheme:dark}}}}
-body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}}
-.wrap{{max-width:760px;margin:0 auto;padding:24px max(16px,env(safe-area-inset-left))}}
-h1{{font:800 44px "Arial Narrow",Arial,sans-serif;text-transform:uppercase;margin:0 0 4px}}
-a{{color:inherit;text-decoration-color:var(--accent)}}
-ul{{list-style:none;padding:0;display:grid;gap:8px}}
-ul{{gap:0!important;background:var(--paper);border:1px solid var(--rule);border-radius:6px}}
-li{{padding:9px 14px;border-top:1px solid var(--rule);display:flex;gap:12px;align-items:baseline;min-width:0}}
-li:first-child{{border-top:0}}
-li a{{white-space:nowrap;flex:none}}
-.t{{font:500 11px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-left:8px}}
-li p{{margin:0;color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}}
-</style></head><body><div class="wrap">
-<h1>Past editions</h1><p><a href="../">← Home</a> · <a href="../today/">Today's edition</a></p>
-<ul>{rows}</ul>
-<p style="color:var(--muted);font-size:13px">Contact or send a tip: resistancedaily.in@gmail.com</p>
-</div></body></html>
-""")
+months, rows = {}, []
+for d, v in sorted(log.items(), reverse=True):
+    m = datetime.date.fromisoformat(d).strftime("%B %Y")
+    months.setdefault(m, []).append(f'<li><a href="{d}.html"><b>{html.escape(S.nice(d))}</b><span>{html.escape(top_line(d, v))}</span></a></li>')
+lists = "".join(f'<section class="rd-sec"><h2 class="rd-h">{html.escape(m)}</h2><ul class="rd-past rd-arch-list">{"".join(r)}</ul></section>'
+                for m, r in months.items())
+ai = (S.head("Past editions · Resistance Daily", "Every Resistance Daily edition, newest first.", "../", f"{SITE}archive/")
+      + S.nav("../") + f'<header><span class="rd-kicker">Archive</span><h1 style="font-size:44px;margin:6px 0 0">Past editions</h1></header>{lists}'
+      + S.footer("../"))
+open(os.path.join(root, "archive", "index.html"), "w").write(ai)
+
+T.build_all()
 seo.write_sitemap(root)
-subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True)
+subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True, cwd=root)
 print("built", design, date)
-# Standing routine instructions live in ROUTINE.md (photos, Focus, slides). Remind the run of the photo step.
-if design != "tracker":
-    missing = [i for i in data["items"] if not i.get("photo")]
-    if missing:
-        print(f"PHOTOS: {len(missing)} of {len(data['items'])} items have no photo "
-              f"({', '.join(str(i['n']) for i in missing)}). See ROUTINE.md, STEP 3.")
+missing = [i for i in data["items"] if not i.get("photo")]
+if missing:
+    print(f"PHOTOS: {len(missing)} of {len(data['items'])} items have no photo "
+          f"({', '.join(str(i['n']) for i in missing)}). See ROUTINE.md, STEP 3.")
 if imgs:
     print("BACKUP PAGE: pass the 'artifact files' map above as `files` when publishing build/artifact.html (ROUTINE.md, STEP 5).")

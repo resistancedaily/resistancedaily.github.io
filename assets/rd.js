@@ -1,0 +1,145 @@
+/* Resistance Daily · thread player + reader state (vanilla JS, no build step). Adapted from the design handoff's
+   reference/rd-player.js. Reader state lives only in localStorage on this device: rd.follow (slugs), rd.seen
+   ({slug: edition date}). No accounts, no cookies, nothing leaves the device.
+   Page hooks: #rd-threads (JSON: {date, order, threads}), .rd-thread[data-thread] cards, [data-rd-play-all],
+   [data-rd-follow-count], [data-rd-caught-up], #rd-player, [data-rd-follow="slug"], [data-rd-map] + dialog.rd-mapd,
+   details.rd-stories (opened when the URL points at one story, #iN). */
+(function () {
+  const K = { follow: 'rd.follow', seen: 'rd.seen' };
+  const read = (k, d) => { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } };
+  const write = (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  let follow = new Set(read(K.follow, []));
+  let seen = read(K.seen, {});
+  const saveFollow = () => write(K.follow, [...follow]);
+  const paintCount = () => document.querySelectorAll('[data-rd-follow-count]').forEach(el => { el.textContent = follow.size; });
+
+  // Follow buttons on thread / focus / accountability pages (work without the player).
+  document.querySelectorAll('[data-rd-follow]').forEach(b => {
+    const s = b.dataset.rdFollow, lab = () => { b.textContent = follow.has(s) ? 'Following' : 'Follow this thread'; b.setAttribute('aria-pressed', follow.has(s)); };
+    lab(); b.addEventListener('click', () => { follow.has(s) ? follow.delete(s) : follow.add(s); saveFollow(); lab(); paintCount(); });
+  });
+  paintCount();
+
+  // A link to one story (#iN) opens the folded "All stories" list.
+  function openStory() {
+    const m = location.hash.match(/^#i\d+$/); if (!m) return;
+    const el = document.querySelector(location.hash); const d = el && el.closest('details');
+    if (d && !d.open) { d.open = true; el.scrollIntoView(); }
+  }
+  window.addEventListener('hashchange', openStory); openStory();
+
+  // Map dialog.
+  const mapd = document.querySelector('dialog.rd-mapd');
+  document.querySelectorAll('[data-rd-map]').forEach(b => b.addEventListener('click', () => { if (mapd && mapd.showModal) mapd.showModal(); }));
+  if (mapd) {
+    mapd.addEventListener('click', e => { if (e.target === mapd || e.target.closest('[data-close]')) mapd.close(); });
+    mapd.querySelectorAll('a.pinl').forEach(a => a.addEventListener('click', () => mapd.close()));
+  }
+
+  const dataEl = document.getElementById('rd-threads');
+  const player = document.getElementById('rd-player');
+  if (!dataEl || !player) return;
+  const DATA = JSON.parse(dataEl.textContent);
+  let cur = null, step = 0, playAll = false, lastFocus = null;
+  const isNew = s => DATA.threads[s] && DATA.threads[s].updates.some(u => u.isNew);
+  const moved = () => DATA.order.filter(isNew);
+
+  function paintCards() {
+    document.querySelectorAll('.rd-thread[data-thread]').forEach(el => {
+      const s = el.dataset.thread, t = DATA.threads[s]; if (!t) return;
+      const done = seen[s] === DATA.date, mv = isNew(s), n = t.updates.filter(u => u.isNew).length;
+      el.classList.toggle('is-seen', done && mv);
+      el.classList.toggle('is-following', follow.has(s));
+      if (!mv) el.hidden = !follow.has(s);              // quiet threads show only when followed
+      el.querySelectorAll('.rd-state').forEach(st => { st.textContent = !mv ? 'Quiet' : done ? 'Seen' : `${n} new`; });
+    });
+    paintCount();
+    const grid = document.querySelector('[data-rd-thread-grid]');
+    if (grid) [...grid.children].sort((a, b) => (follow.has(b.dataset.thread) - follow.has(a.dataset.thread))).forEach(c => grid.appendChild(c));
+    const cu = document.querySelector('[data-rd-caught-up]');
+    if (cu && moved().length && moved().every(s => seen[s] === DATA.date)) cu.hidden = false;
+  }
+
+  function render() {
+    const t = DATA.threads[cur], u = t.updates[step];
+    const shown = playAll ? t.updates.filter(x => x.isNew) : t.updates;
+    const segs = shown.map((_, i) => `<i class="${i <= step ? 'on' : ''}"></i>`).join('');
+    const src = (u.src || []).map(([n, url]) => `<a href="${esc(url)}">${esc(n)}</a>`).join(' · ');
+    const fol = follow.has(cur) ? 'Following' : 'Follow';
+    player.innerHTML = `
+      <div class="rd-p-card">
+        <div class="rd-p-segs" aria-hidden="true">${segs}</div>
+        <div class="rd-p-head"><h2 id="rd-p-name">${esc(t.name)}</h2>
+          <div class="rd-p-actions"><button class="btn btn-secondary" data-act="follow" aria-pressed="${follow.has(cur)}">${fol}</button>
+          <button class="rd-p-close" data-act="close" aria-label="Close">✕</button></div></div>
+        <div class="rd-p-body${t.img ? '' : ' nophoto'}">
+          ${t.img ? `<figure class="rd-p-photo"><img class="washed" src="${esc(t.img)}" alt="">
+            <span class="rd-p-ptag">${esc(t.photoTag)}</span>
+            <details><summary aria-label="About this photo">i</summary><figcaption>Photo: <a href="${esc(t.creditUrl)}">${esc(t.credit)}</a></figcaption></details></figure>` : ''}
+          <div class="rd-p-text">
+            <div class="rd-p-tags"><span class="tag tag-neutral">${esc(u.d)}</span>${u.isNew ? '<span class="tag tag-accent">New today</span>' : ''}${u.upheld ? '<span class="tag tag-accent-2">Right upheld</span>' : ''}</div>
+            <h3>${esc(u.t)}</h3>
+            ${u.text ? `<p>${esc(u.text)}</p>` : ''}
+            ${src ? `<span class="rd-p-src">Source: ${src}</span>` : ''}
+            ${t.stat ? `<span class="rd-p-stat">${esc(t.stat)}</span>` : ''}
+            ${t.focusUrl ? `<a class="rd-p-focus" href="${esc(t.focusUrl)}">${esc(t.focusLabel || 'Read the full story')} →</a>` : `<a class="rd-p-focus" href="${esc(t.page)}">Every update in this thread →</a>`}
+            <div class="rd-p-nav"><button class="btn btn-ghost" data-act="prev"${step ? '' : ' disabled'}>← Back</button>
+              <button class="btn btn-secondary rd-p-fm" data-act="follow">${fol}</button>
+              <button class="btn btn-primary" data-act="next">Next →</button></div>
+          </div></div></div>`;
+  }
+
+  function open(slug, all) {
+    if (!DATA.threads[slug] || !DATA.threads[slug].updates.length) return;
+    lastFocus = document.activeElement; cur = slug; step = 0; playAll = !!all;
+    player.hidden = false; document.documentElement.classList.add('rd-noscroll');
+    history.replaceState(null, '', '#t=' + slug);
+    render(); player.querySelector('[data-act="next"]').focus();
+  }
+  function markSeen(slug) { seen[slug] = DATA.date; write(K.seen, seen); }
+  function close(done) {
+    if (cur) markSeen(cur);
+    player.hidden = true; player.innerHTML = ''; cur = null;
+    document.documentElement.classList.remove('rd-noscroll');
+    history.replaceState(null, '', location.pathname + location.search);
+    const cu = document.querySelector('[data-rd-caught-up]'); if (cu && done) cu.hidden = false;
+    paintCards(); if (lastFocus) lastFocus.focus();
+  }
+  function next() {
+    const t = DATA.threads[cur];
+    // One thread opened: walk back through its recent updates. "Play today": only today's updates, then the next thread.
+    if (step < t.updates.length - 1 && (!playAll || t.updates[step + 1].isNew)) { step++; return render(); }
+    markSeen(cur);
+    const mv = moved(), i = mv.indexOf(cur);
+    if (playAll && mv[i + 1]) { cur = mv[i + 1]; step = 0; render(); return player.querySelector('[data-act="next"]').focus(); }
+    close(playAll || mv.every(s => seen[s] === DATA.date));
+  }
+  function prev() { if (step > 0) { step--; render(); } }
+
+  player.addEventListener('click', e => {
+    if (e.target === player) return close(false);           // backdrop
+    const a = e.target.closest('[data-act]'); if (!a) return;
+    ({ next, prev, close: () => close(false),
+       follow: () => { follow.has(cur) ? follow.delete(cur) : follow.add(cur); saveFollow(); render(); paintCards(); } })[a.dataset.act]();
+  });
+  document.addEventListener('keydown', e => {
+    if (player.hidden) return;
+    if (e.key === 'ArrowRight') next(); else if (e.key === 'ArrowLeft') prev(); else if (e.key === 'Escape') close(false);
+  });
+  let x0 = null;                                              // swipe left / right
+  player.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  player.addEventListener('touchend', e => { if (x0 == null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 50) (dx < 0 ? next : prev)(); x0 = null; });
+
+  document.querySelectorAll('.rd-thread[data-thread]').forEach(el => el.addEventListener('click', e => {
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.button === 1) return;   // modified clicks open the thread page
+    if (!DATA.threads[el.dataset.thread] || !DATA.threads[el.dataset.thread].updates.length) return;
+    e.preventDefault(); open(el.dataset.thread, false);
+  }));
+  document.querySelectorAll('[data-rd-play-all]').forEach(b => b.addEventListener('click', () => {
+    const first = moved().find(s => seen[s] !== DATA.date) || moved()[0]; if (first) open(first, true);
+  }));
+
+  paintCards();
+  const m = location.hash.match(/^#t=([\w-]+)/); if (m) open(m[1], false);
+})();

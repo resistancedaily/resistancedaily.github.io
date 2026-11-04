@@ -56,18 +56,18 @@ def text_card(root, out, kicker, lines):
                     return ImageFont.truetype(p, size)
         return ImageFont.load_default()
     bold, reg = ["LiberationSans-Bold.ttf", "DejaVuSans-Bold.ttf"], ["LiberationSans-Regular.ttf", "DejaVuSans.ttf"]
-    im = Image.new("RGB", (1200, 630), "#15181d")
+    im = Image.new("RGB", (1200, 630), "#201e1d")
     dr = ImageDraw.Draw(im)
-    dr.rectangle((80, 80, 200, 92), fill="#d9661a")
-    dr.text((80, 116), "RESISTANCE DAILY", font=font(bold, 84), fill="#f3f4f2")
-    dr.text((80, 230), kicker.upper(), font=font(bold, 30), fill="#f08a3c")
+    dr.rectangle((80, 80, 200, 92), fill="#c67139")
+    dr.text((80, 116), "RESISTANCE DAILY", font=font(bold, 84), fill="#f5ead8")
+    dr.text((80, 230), kicker.upper(), font=font(bold, 30), fill="#f6a06b")
     f, y = font(reg, 34), 300
     for line in lines[:3]:
         while dr.textlength(line, font=f) > 1040 and len(line) > 4:
             line = line[:-2].rstrip() + "…"
-        dr.text((80, y), line, font=f, fill="#eceae5")
+        dr.text((80, y), line, font=f, fill="#f9f4ed")
         y += 56
-    dr.text((80, 545), "Non-partisan · Every fact sourced · resistancedaily.github.io", font=font(reg, 26), fill="#9ba1aa")
+    dr.text((80, 545), "Non-partisan · Every fact sourced · resistancedaily.github.io", font=font(reg, 26), fill="#c0b6a5")
     dst = os.path.join(root, out)
     os.makedirs(os.path.dirname(dst), exist_ok=True)
     im.save(dst, "JPEG", quality=88, optimize=True, progressive=True)
@@ -97,6 +97,11 @@ def write_sitemap(root):
     hope = os.path.join(root, "data", "hope.json")
     if os.path.exists(hope) and os.path.exists(os.path.join(root, "hope", "index.html")):
         urls.append((SITE + "hope/", json.load(open(hope))["updated"]))
+    tf = os.path.join(root, "data", "threads.json")
+    if os.path.exists(tf) and eds:
+        for t in json.load(open(tf))["threads"]:
+            if os.path.exists(os.path.join(root, "threads", t["slug"] + ".html")):
+                urls.append((f"{SITE}threads/{t['slug']}.html", eds[-1]))
     urls += [(f"{SITE}archive/{d}.html", d) for d in reversed(eds)]
     rows = "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
     open(os.path.join(root, "sitemap.xml"), "w").write(

@@ -63,7 +63,8 @@
    "n": 1,
    "map": {
     "left": true
-   }
+   },
+   "thread": "jantar-mantar"
   },
   {
    "region": "india",
@@ -98,7 +99,8 @@
     "year": "2019",
     "changes": "resized"
    },
-   "n": 2
+   "n": 2,
+   "upheld": true
   },
   {
    "region": "india",
@@ -168,7 +170,8 @@
     "year": "2016",
     "changes": "resized"
    },
-   "n": 4
+   "n": 4,
+   "upheld": true
   },
   {
    "region": "india",
