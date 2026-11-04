@@ -61,6 +61,7 @@ if acc:
                        and not any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"]))
     acc_states = len({c["state"] for c in acc_open if c.get("region", "india") == "india"})
     acc_countries = len({c["state"] for c in acc_open if c.get("region") == "world"})
+    acc_latest = max(acc_open, key=lambda c: c["date"])
 
 # Signs of hope (tools/hope.py, owner's request 4 Nov 2026): a green "Need hope?" chip and a card under Today.
 hope = None
@@ -139,10 +140,12 @@ section{display:grid;gap:12px}
 .kf{font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .kf b{font:800 17px var(--display);color:var(--red)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px}
-.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:12px 14px;display:grid;gap:2px;text-decoration:none;color:inherit;align-content:start}
+.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:14px 16px;display:grid;gap:6px;text-decoration:none;color:inherit;align-content:start}
 .stat .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
-.stat b{font:800 52px/0.95 var(--display);color:var(--red)}
-.stat span{font-size:14px}.stat .sub{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.stat h3{font:800 28px/1 var(--display);text-transform:uppercase}
+.stat .n{font-size:15px}.stat .n b{font:800 34px/1 var(--display);color:var(--ink);margin-right:2px}.stat .n b.r{color:var(--red)}
+.stat .ex{font-size:13px;color:var(--muted)}
+.stat .cta{font-weight:600;font-size:14px;margin-top:2px}
 .past{list-style:none;margin:0;padding:0;display:grid;gap:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
 .past li{padding:8px 14px;border-top:1px solid var(--rule);display:flex;gap:10px;align-items:baseline;min-width:0}
 .past li:first-child{border-top:0}
@@ -179,8 +182,10 @@ page = f"""<!doctype html>
 <div class="focs">{cards}</div></section>
 
 <section aria-labelledby="h-track"><div class="sec-h"><h2 id="h-track">Tracking</h2></div><div class="stats">
-<a class="stat" href="{f'archive/{tracker}.html#still-waiting' if tracker else 'archive/'}"><span class="k">Still waiting</span><b>{len(cs)}</b><span>people and groups held after speaking out</span><span class="sub">Longest: {ldays:,} days, {E(longest["name"])}</span></a>
-{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><b>{len(acc_open)}</b><span>abuse-of-power cases in {acc_states} states{f" and {acc_countries} countries" if acc_countries else ""}</span><span class="sub">{acc_noarrest} with no arrest reported</span></a>''' if acc else ""}
+<a class="stat" href="{f'archive/{tracker}.html#still-waiting' if tracker else 'archive/'}"><span class="k">Still waiting</span><h3>Jailed for speaking out</h3>
+<span class="n"><b>{len(cs)}</b> activists, journalists and groups held</span><span class="ex">Longest: {E(longest["name"])}, {ldays:,} days</span><span class="cta">See who →</span></a>
+{f'''<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><h3>Abuse of power, followed to the end</h3>
+<span class="n"><b>{len(acc_open)}</b> cases · <b class="r">{acc_noarrest}</b> with no arrest</span><span class="ex">Latest: {E(acc_latest["head"])} ({E(acc_latest["state"])})</span><span class="cta">Follow the cases →</span></a>''' if acc else ""}
 </div></section>
 
 <section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All →</a></div>

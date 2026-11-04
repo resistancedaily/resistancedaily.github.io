@@ -52,10 +52,12 @@ section{display:grid;gap:12px}
 .kf{font-size:13px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
 .kf b{font:800 17px var(--display);color:var(--red)}
 .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:8px}
-.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:12px 14px;display:grid;gap:2px;text-decoration:none;color:inherit;align-content:start}
+.stat{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:14px 16px;display:grid;gap:6px;text-decoration:none;color:inherit;align-content:start}
 .stat .k{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
-.stat b{font:800 52px/0.95 var(--display);color:var(--red)}
-.stat span{font-size:14px}.stat .sub{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.stat h3{font:800 28px/1 var(--display);text-transform:uppercase}
+.stat .n{font-size:15px}.stat .n b{font:800 34px/1 var(--display);color:var(--ink);margin-right:2px}.stat .n b.r{color:var(--red)}
+.stat .ex{font-size:13px;color:var(--muted)}
+.stat .cta{font-weight:600;font-size:14px;margin-top:2px}
 .past{list-style:none;margin:0;padding:0;display:grid;gap:0;background:var(--paper);border:1px solid var(--rule);border-radius:6px}
 .past li{padding:8px 14px;border-top:1px solid var(--rule);display:flex;gap:10px;align-items:baseline;min-width:0}
 .past li:first-child{border-top:0}
@@ -84,8 +86,10 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 <div><h3>Congo&#x27;s mines</h3><span class="kf"><b>73%</b> of world cobalt mined in Congo, 2025</span></div></a></div></section>
 
 <section aria-labelledby="h-track"><div class="sec-h"><h2 id="h-track">Tracking</h2></div><div class="stats">
-<a class="stat" href="archive/2026-11-01.html#still-waiting"><span class="k">Still waiting</span><b>18</b><span>people and groups held after speaking out</span><span class="sub">Longest: 9,170 days, Dawit Isaak</span></a>
-<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><b>12</b><span>abuse-of-power cases in 7 states and 3 countries</span><span class="sub">7 with no arrest reported</span></a>
+<a class="stat" href="archive/2026-11-01.html#still-waiting"><span class="k">Still waiting</span><h3>Jailed for speaking out</h3>
+<span class="n"><b>18</b> activists, journalists and groups held</span><span class="ex">Longest: Dawit Isaak, 9,170 days</span><span class="cta">See who →</span></a>
+<a class="stat" href="accountability/"><span class="k">Accountability Watch</span><h3>Abuse of power, followed to the end</h3>
+<span class="n"><b>12</b> cases · <b class="r">7</b> with no arrest</span><span class="ex">Latest: Police officer fires on villagers; one man killed (Bihar)</span><span class="cta">Follow the cases →</span></a>
 </div></section>
 
 <section aria-labelledby="h-past"><div class="sec-h"><h2 id="h-past">Past editions</h2><a href="archive/">All →</a></div>

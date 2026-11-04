@@ -43,29 +43,35 @@ def next_check(c):
 
 
 def card(c):
+    """Owner's request (4 Nov 2026): a card shows only the counter, the headline, the place and the progress; the story,
+    the official version and the sources sit under "Details"."""
     days = (today - datetime.date.fromisoformat(c["date"])).days
+    dl = f'{days} day{"s" if days != 1 else ""}'
     arrested = any(s["step"].lower().startswith("arrest") and s["status"] == "done" for s in c["steps"])
+    has_arrest_step = any(s["step"].lower().startswith("arrest") for s in c["steps"])
     st = states.get(c["state"])
-    gov = f' · Governed by {E(st["party"])}' if st else ""
-    steps = "".join(
-        f'<li class="{E(s["status"])}"><b>{E(s["step"])}</b>'
-        + (f'<small>{fmt(s["date"])}</small>' if s.get("date") else "")
-        + (f'<small>{E(s["note"])}</small>' if s.get("note") else "")
-        + (f'<small>not reported</small>' if s["status"] == "unknown" and not s.get("note") else "") + "</li>"
-        for s in c["steps"])
     if c.get("closed"):
-        line = f'<p class="outcome">Outcome: {E(c["closed"])}</p>'
-    elif arrested or not any(s["step"].lower().startswith("arrest") for s in c["steps"]):
-        line = f'<p class="ok">{days} days since the incident</p>'
+        counter = '<div class="ctr done"><b>Closed</b><span>outcome reached</span></div>'
+    elif has_arrest_step and not arrested:
+        counter = f'<div class="ctr stall"><b>{dl}</b><span>no arrest reported</span></div>'
     else:
-        line = f'<p class="stall">{days} days since the incident · no arrest reported</p>'
+        counter = f'<div class="ctr"><b>{dl}</b><span>since the incident</span></div>'
+    bar = "".join(f'<li class="{E(s["status"])}"><span>{E(s["step"])}</span></li>' for s in c["steps"])
+    notes = "".join(
+        f'<li><b>{E(s["step"])}:</b> ' + {"done": "done", "unknown": "not reported", "open": "not yet"}.get(s["status"], s["status"])
+        + (f', {fmt(s["date"])}' if s.get("date") else "") + (f' ({E(s["note"])})' if s.get("note") else "") + "</li>"
+        for s in c["steps"])
     src = " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in c["src"])
-    return (f'<article class="case" id="{E(c["id"])}" data-k="{E(c["kind"])}" data-r="{E(c.get("region", "india"))}"><div class="top"><span class="chip">{E(c["kind"])}</span>'
-            f'<span class="pw">Power: {E(c["power"])}</span></div><h3>{E(c["head"])}</h3>'
-            f'<p class="where">{E(c["place"])} · {fmt(c["date"])}{gov}</p><p>{E(c["text"])}</p>'
-            f'<p class="off"><b>Official version:</b> {E(c["official"])}</p><ol class="steps" aria-label="Case progress">{steps}</ol>{line}'
-            f'<p class="src">Sources: {src} · Last checked {fmt(c["checked"])}'
-            + ("" if c.get("closed") else f' · Next check {next_check(c).strftime("%d %b")}') + '</p></article>')
+    gov = f' Governed by {E(st["party"])}.' if st else ""
+    outcome = f'<p class="outcome">Outcome: {E(c["closed"])}</p>' if c.get("closed") else ""
+    nxt = "" if c.get("closed") else f' · Next check {next_check(c).strftime("%d %b")}'
+    return (f'<article class="case" id="{E(c["id"])}" data-k="{E(c["kind"])}" data-r="{E(c.get("region", "india"))}">'
+            f'<div class="hd">{counter}<span class="chip">{E(c["kind"])}</span></div>'
+            f'<h3>{E(c["head"])}</h3><p class="where">{E(c["state"])} · {fmt(c["date"])}</p>'
+            f'<ol class="bar" aria-label="Case progress">{bar}</ol>{outcome}'
+            f'<details><summary>Details</summary><p>{E(c["text"])}</p>'
+            f'<p class="off"><b>Official version:</b> {E(c["official"])}</p><ul class="notes">{notes}</ul>'
+            f'<p class="src">{E(c["place"])}. Power: {E(c["power"])}.{gov}<br>Sources: {src} · Last checked {fmt(c["checked"])}{nxt}</p></details></article>')
 
 
 kinds = ["All"] + sorted({c["kind"] for c in cases})
@@ -81,6 +87,8 @@ bal = "; ".join(f'{E(p)}: {", ".join(E(x) for x in v)}' for p, v in sorted(parti
 gov_src = " · ".join(f'<a href="{E(states[s]["src"][1])}">{E(s)}</a>' for s in case_states if s in states)
 figs = "".join(f'<div class="fig"><b>{E(f["fig"])}</b><span>{E(f["cap"])}</span><a href="{E(f["src"][1])}">{E(f["src"][0])}</a></div>'
                for f in data.get("figures", []))
+noarrest = sum(1 for c in open_cases if any(x["step"].lower().startswith("arrest") for x in c["steps"])
+               and not any(x["step"].lower().startswith("arrest") and x["status"] == "done" for x in c["steps"]))
 ordered = sorted(open_cases, key=lambda c: c["date"], reverse=True) + [c for c in cases if c.get("closed")]
 title = "Accountability Watch: abuse of power in India and worldwide, tracked to the outcome"
 desc = (f"{len(open_cases)} open cases from {len(case_states)} Indian states and {len(countries)} other countries: custodial deaths, caste violence, attacks on RTI activists "
@@ -106,7 +114,11 @@ p{margin:0}
 .k{font:500 12px var(--mono);color:var(--accent);text-transform:uppercase;letter-spacing:.07em}
 h1{font-size:clamp(40px,8vw,60px);font-weight:800;margin-top:6px}
 .lede{color:var(--muted);max-width:66ch;margin-top:8px;font-size:16px}
-.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.hero div{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:12px 14px}
+.hero b{display:block;font:800 52px/0.95 var(--display);color:var(--red)}
+.hero span{font-size:14px}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
 .fig{background:var(--paper);border:1px solid var(--rule);border-top:5px solid var(--red);border-radius:6px;padding:12px 14px;display:grid;gap:4px;align-content:start}
 .fig b{font:800 40px/1 var(--display);color:var(--red)}
 .fig span{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
@@ -116,8 +128,22 @@ h1{font-size:clamp(40px,8vw,60px);font-weight:800;margin-top:6px}
 .filters{display:flex;flex-wrap:wrap;gap:6px}
 .filters button{font:600 13px var(--body);border:1px solid var(--rule);background:var(--paper);color:var(--ink);border-radius:999px;padding:6px 12px;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.filters.ks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-top:-14px}
+.filters.ks button{flex:none;font-size:12px;padding:5px 10px}
 .cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:12px}
 .case{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:14px;display:grid;gap:8px;align-content:start;min-width:0;scroll-margin-top:16px}
+.case .hd{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.ctr b{display:block;font:800 40px/0.9 var(--display);color:var(--ink)}
+.ctr span{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.ctr.stall b,.ctr.stall span{color:var(--red)}.ctr.done b{color:var(--green)}
+.bar{list-style:none;margin:2px 0 0;padding:0;display:flex;gap:4px}
+.bar li{flex:1;min-width:0;border-top:6px solid var(--rule);padding-top:4px;font-size:11px;line-height:1.2;color:var(--muted)}
+.bar li.done{border-color:var(--green);color:var(--ink)}
+.bar li.unknown{border-color:var(--accent);border-top-style:dashed}
+.case details{padding:8px 0 0;border:0;border-top:1px solid var(--rule);border-radius:0;background:none}
+.case details>*+*{margin-top:8px}
+.case details p{font-size:14px}
+.notes{margin:0;padding-left:18px;font-size:13px;color:var(--muted);display:grid;gap:2px}
 .case[hidden]{display:none}
 .case .top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
 .chip{font:600 10.5px var(--mono);text-transform:uppercase;padding:4px 8px;border-radius:999px;background:var(--chip)}
@@ -152,13 +178,14 @@ page = f"""<!doctype html>
 <style>{CSS}</style></head><body><div class="wrap">
 <nav class="top-nav"><a href="../"><b>Resistance Daily</b></a><span><a href="../focus/">Focus</a> · <a href="../archive/">Past editions</a></span></nav>
 <header><span class="k">Accountability Watch</span><h1>The weak against the powerful</h1>
-<p class="lede">Abuse by those with a uniform, an office, money or social dominance, followed to the outcome. Judged by the act, not by who governs.</p></header>
-<section class="figs" aria-label="Key figures">{figs}</section>
-<div class="bal"><span><b>Balance:</b> India: {len(open_cases) - len(world_open)} open cases in {len(case_states)} states. {bal}.{f" World: {len(world_open)} in {', '.join(E(x) for x in countries)}." if world_open else ""}</span>
-<small>We log which party governs each state with a case and say openly when coverage is uneven. Who governs: {gov_src}. Updated {fmt(data["updated"])}.</small></div>
+<p class="lede">Abuse by police, officials and the powerful, followed until there is an outcome.</p></header>
+<div class="hero"><div><b>{len(open_cases)}</b><span>open cases we are following</span></div><div><b>{noarrest}</b><span>still with no arrest reported</span></div></div>
 <div class="filters" role="group" aria-label="Filter cases by region">{"".join(f'<button type="button" class="fr" aria-pressed="{str(k == "All").lower()}" data-r="{E(k.lower())}">{E(k)}</button>' for k in ["All", "India", "World"])}</div>
-<div class="filters" role="group" aria-label="Filter cases by type">{"".join(f'<button type="button" class="fk" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
+<div class="filters ks" role="group" aria-label="Filter cases by type">{"".join(f'<button type="button" class="fk" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
 <section class="cases" aria-label="Cases">{"".join(card(c) for c in ordered)}</section>
+<details><summary>The bigger picture</summary><section class="figs" aria-label="Key figures">{figs}</section></details>
+<details><summary>Balance: where our cases are</summary><p style="font-size:14px;margin-top:8px">India: {len(open_cases) - len(world_open)} open cases in {len(case_states)} states. {bal}.{f" World: {len(world_open)} in {', '.join(E(x) for x in countries)}." if world_open else ""}</p>
+<p style="font-size:12px;color:var(--muted);margin-top:6px">We log which party governs each state with a case and say openly when coverage is uneven. Who governs: {gov_src}. Updated {fmt(data["updated"])}.</p></details>
 <details><summary>How cases are chosen</summary><ul>
 <li>A clear power gap: police or officials, elected leaders and their supporters, employers, landlords, or a dominant group over a weaker one.</li>
 <li>A named source and an official step (an FIR, a suspension or a court notice). No bare accusations.</li>
