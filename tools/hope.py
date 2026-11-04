@@ -58,7 +58,7 @@ def card(i):
           f'<a href="{E(p["page"])}">{E(p["credit"])}</a>, <a href="{E(p["licence_url"])}">{E(p["licence"])}</a></span>') if p else ""
     return (f'<article class="c" id="{E(i["id"])}" data-k="{E(i["kind"])}">{top}<div class="t">'
             f'<span class="k">{E(i["kind"])} · {E(" · ".join(i["rights"]))} · {d}</span><h3>{E(i["headline"])}</h3>'
-            f'<p>{E(i["text"])}</p><span class="where">{E(i["place"])}</span><span class="src">{src}</span>{cr}</div></article>')
+            f'<p>{E(i["text"])}</p><span class="src"><b class="where">{E(i["place"].split(",")[0])}</b> · {src}</span>{cr}</div></article>')
 
 
 def build(today):
@@ -105,7 +105,7 @@ h1 span{color:var(--green)}
 .k{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--green)}
 .c h3{font:600 19px/1.25 var(--body);text-transform:none;margin:0;text-wrap:balance}
 .c p{font-size:14px}
-.where{font:500 12px var(--mono);color:var(--muted)}
+.where{font-weight:600;color:var(--ink)}
 .src{font-size:12px;color:var(--muted)}.more{font-weight:600;color:var(--ink)}
 .cr{font-size:11px;color:var(--muted)}
 .back{display:flex;gap:10px;flex-wrap:wrap}

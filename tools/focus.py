@@ -68,7 +68,13 @@ h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
 .gallery figure:last-child:nth-child(even){grid-column:1/-1}
 .gallery figure:last-child:nth-child(even) img{aspect-ratio:16/9}
 @media (max-width:620px){.gallery{grid-template-columns:1fr}}
-figure{margin:0;display:grid;gap:6px;min-width:0}
+figure{margin:0;display:grid;gap:6px;min-width:0;position:relative}
+.pw{position:relative;min-width:0}
+.ptag{position:absolute;left:8px;bottom:8px;font:500 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(0,0,0,.62);padding:5px 7px;border-radius:3px}
+.pinfo summary{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.62);color:#fff;font:italic 600 14px/26px var(--body);text-align:center;list-style:none;cursor:pointer}
+.pinfo summary::-webkit-details-marker{display:none}
+.pinfo[open] summary{background:var(--ink)}
+.morep{list-style:none;margin-left:-18px}.morep summary{cursor:pointer;font-weight:600;font-size:14px}.morep .opts{margin-top:8px}
 figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;background:var(--chip)}
 figcaption{font-size:13px;color:var(--muted)}
 figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
@@ -175,10 +181,8 @@ HEAD = """<!doctype html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>{css}</style></head><body><div class="wrap">"""
 
-FOOT = """<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
-<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' and children's faces.</span>
-<span>{follow} for each new edition.</span>
-<span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
+FOOT = """<footer><span>Non-partisan. Every fact links to its source. Photos are freely licensed; "file photo" means an older picture of the place.</span>
+<span>{follow} · Tips and photos: <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a></span></footer>
 </div></body></html>
 """
 
@@ -195,9 +199,11 @@ def figure(p, prefix="../"):
     label = "Photo from the event" if p.get("kind") == "event" else f"File photo · {p['year']}"
     ch = f" ({E(p['changes'])})" if p.get("changes") else ""
     pos = f' style="object-position:{E(p["pos"])}"' if p.get("pos") else ""
-    return (f'<figure><img src="{E(rel(p["src"], prefix))}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
-            f'<figcaption><b>{label}</b>{E(p["caption"])}<span class="cr">Photo: <a href="{E(p["page"])}">{E(p["credit"])}</a>, '
-            f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></figure>')
+    # Owner's request (4 Nov 2026): clean photos; the caption and credit open from the (i) button.
+    return (f'<figure><div class="pw"><img src="{E(rel(p["src"], prefix))}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
+            f'<span class="ptag">{label}</span></div><details class="pinfo"><summary aria-label="About this photo">i</summary>'
+            f'<figcaption>{E(p["caption"])}<span class="cr">Photo: <a href="{E(p["page"])}">{E(p["credit"])}</a>, '
+            f'<a href="{E(p["licence_url"])}">{E(p["licence"])}</a>{ch}</span></figcaption></details></figure>')
 
 
 def viz(f, x, used):
@@ -205,7 +211,7 @@ def viz(f, x, used):
     v = x.get("visual") or {"type": "fig"}
     vs = f'<span class="src">{links(v["src"])}</span>' if v.get("src") else ""
     t = v["type"]
-    if t == "photo" and v.get("i") is not None and v["i"] < len(f["photos"]):
+    if t == "photo" and v.get("i") is not None and 0 < v["i"] < len(f["photos"]):  # photo 0 is the cover: never shown twice
         used.add(v["i"])
         return figure(f["photos"][v["i"]])
     if t == "chart":
@@ -256,7 +262,7 @@ def visual_body(f, figs_html, official):
             f'{tl_html}\n{pics}\n<section style="display:grid;gap:14px">{official}</section>')
 
 
-SHOW_LATEST = 5  # timeline entries shown before "Show earlier updates"
+SHOW_LATEST = 1  # timeline entries shown before "Show earlier updates"
 
 
 def timeline(f, dated, side_photo):
@@ -326,13 +332,15 @@ def body(f, figs, story, official):
 
 def page(f, all_f=()):
     upd = datetime.date.fromisoformat(f["updated"]).strftime("%d %b %Y")
-    figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", []))
+    figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span><a href="{E(x["src"][1])}">{E(x["src"][0])}</a></div>' for x in f.get("figs", [])[:2])
     story = "".join(f'<p>{E(s["text"])} <span class="src">{links(s["src"])}</span></p>' for s in f["story"])
     off = f.get("official")
     if off and off.get("points"):
         # A point is a string (sources shared, listed once under the bullets) or {"text", "src"} with its own sources.
-        lis = "".join(f'<li>{E(pt)}</li>' if isinstance(pt, str) else f'<li>{E(pt["text"])} <span class="src">{links(pt["src"])}</span></li>'
-                      for pt in off["points"])
+        li = lambda pt: f'<li>{E(pt)}</li>' if isinstance(pt, str) else f'<li>{E(pt["text"])} <span class="src">{links(pt["src"])}</span></li>'
+        lis = "".join(li(pt) for pt in off["points"][:3])
+        if len(off["points"]) > 3:
+            lis += f'<li class="morep"><details><summary>Show {len(off["points"]) - 3} more</summary><ul class="opts">{"".join(li(pt) for pt in off["points"][3:])}</ul></details></li>'
         shared = f'<span class="src">Sources: {links(off["src"])}</span>' if any(isinstance(pt, str) for pt in off["points"]) else ""
         official = f'<div class="official"><b>Official position</b><ul class="opts">{lis}</ul>{shared}</div>'
     elif off:
@@ -362,13 +370,12 @@ def page(f, all_f=()):
         f'<div><b>{E(c["label"])}</b><p>{E(c["text"])}</p><span class="src">{links(c["src"])}</span></div>' for c in f["summary"]) + '</section>') if f.get("summary") else ""
     others = [o for o in all_f if o["slug"] != f["slug"]]
     more = ('<section class="more-f"><h2>Other Focus stories</h2><ul>' + "".join(
-        f'<li><a href="{E(o["slug"])}.html">{E(o.get("seo_title") or o["title"])}</a></li>' for o in others) + '</ul></section>') if others else ""
+        f'<li><a href="{E(o["slug"])}.html">{E(o.get("short") or o["title"])}</a></li>' for o in others[:3]) + '</ul></section>') if others else ""
     return HEAD.format(title=E(f"{head} · Resistance Daily"), desc=E(f["dek"]), og_image=og, extra=extra,
                        canonical=url, css=CSS) + f"""
 <div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a><i class="sep"> · </i><a href="../archive/">Past editions</a></span></div>
-<header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f['dek'])}</p>
-{new}<div class="meta"><span>Updated {upd}</span><span>{E(" · ".join(f.get("rights", [])))}</span><span>{len(f["photos"])} photos</span></div>
-<a class="allf" href="./">Looking for another story? See all Focus stories →</a></header>
+<header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1>{'' if f.get("summary") else f'<p class="dek">{E(f["dek"])}</p>'}
+{new or f'<div class="meta"><span>Updated {upd}</span></div>'}</header>
 {summary}
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}

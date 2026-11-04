@@ -31,7 +31,13 @@ h1{font-size:clamp(40px,8vw,72px);font-weight:800;text-wrap:balance}
 .gallery figure:last-child:nth-child(even){grid-column:1/-1}
 .gallery figure:last-child:nth-child(even) img{aspect-ratio:16/9}
 @media (max-width:620px){.gallery{grid-template-columns:1fr}}
-figure{margin:0;display:grid;gap:6px;min-width:0}
+figure{margin:0;display:grid;gap:6px;min-width:0;position:relative}
+.pw{position:relative;min-width:0}
+.ptag{position:absolute;left:8px;bottom:8px;font:500 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(0,0,0,.62);padding:5px 7px;border-radius:3px}
+.pinfo summary{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.62);color:#fff;font:italic 600 14px/26px var(--body);text-align:center;list-style:none;cursor:pointer}
+.pinfo summary::-webkit-details-marker{display:none}
+.pinfo[open] summary{background:var(--ink)}
+.morep{list-style:none;margin-left:-18px}.morep summary{cursor:pointer;font-weight:600;font-size:14px}.morep .opts{margin-top:8px}
 figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;background:var(--chip)}
 figcaption{font-size:13px;color:var(--muted)}
 figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
@@ -140,8 +146,6 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 <div><h2>Indonesia&#x27;s haze</h2><span class="kf"><b>1.9M ha</b> burned, Jan–Sep (satellite monitor)</span></div></a></li><li><a class="card" href="brazil-election.html"><img src="../images/focus/brazil-election/urna.webp" alt="" loading="lazy">
 <div><h2>Brazil&#x27;s vote</h2><span class="kf"><b>4.4m</b> vote margin in the runoff</span></div></a></li><li><a class="card" href="who-decides.html"><img src="../images/focus/who-decides/meta-sign-2022.webp" alt="" loading="lazy">
 <div><h2>Who decides online</h2><span class="kf"><b>181</b> restrictions in India, 1–18 Oct</span></div></a></li></ul>
-<footer><span>Resistance Daily is a non-partisan public record of human-rights events. Every fact links to its source.</span>
-<span>Photos are freely licensed and credited. "File photo" marks an older picture of the place, not of the event. We blur protesters' and children's faces.</span>
-<span>Follow: <a href="https://www.instagram.com/resistance.daily/">Instagram</a> · <a href="https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A">WhatsApp</a> · <a href="https://www.facebook.com/resistancedaily.in">Facebook</a> · <a href="https://x.com/ResistDaily_in">X</a> for each new edition.</span>
-<span>Seen something? Send photos with the date, the place and your permission to publish to <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a>.</span></footer>
+<footer><span>Non-partisan. Every fact links to its source. Photos are freely licensed; "file photo" means an older picture of the place.</span>
+<span>Follow: <a href="https://www.instagram.com/resistance.daily/">Instagram</a> · <a href="https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A">WhatsApp</a> · <a href="https://www.facebook.com/resistancedaily.in">Facebook</a> · <a href="https://x.com/ResistDaily_in">X</a> · Tips and photos: <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a></span></footer>
 </div></body></html>

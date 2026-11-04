@@ -76,6 +76,12 @@ Never hand-edit the generated layout or add charts.
   official position. Limits: daily item text ≤ 35 words (one or two sentences, official position included); Focus
   "dek" ≤ 30 words; summary cards ≤ 20 words; home-page cards show a title and one key number only. When you add a
   new page or section, follow the home page's pattern: a big number, one line, a link.
+- LESS CLUTTER (owner's rule, 4 Nov 2026): readers can get endless information elsewhere; we give a clear picture at a
+  glance. Every card shows only its key number, a plain headline (regular sans font; the heavy condensed font is for
+  section titles), one short line and a quiet "place · source" line. Photo captions and credits sit behind the (i)
+  button; story detail, official versions and step notes sit behind a "Details" fold. No fact is dropped, it is folded.
+  Focus pages show 2 key numbers, only the latest timeline update (older ones folded) and 3 official-position points
+  (the rest folded). Don't add new visible text blocks to any page without the owner's approval.
 
 ## STEP 1. Yesterday
 Read the backup page (Artifact tool, action "read") or the latest data/*.json in the repo to see what yesterday covered.

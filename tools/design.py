@@ -309,7 +309,7 @@ def head(subtitle_tag):
 <header class="mast">
   <div class="bar" aria-hidden="true"></div>
   <h1>Resistance Daily</h1>
-  <p class="tag">Where people's rights were at risk in the last 24 hours. Non-partisan, and every fact links to its source.</p>
+  <p class="tag">Rights at risk in the last 24 hours. Every fact sourced.</p>
   <div class="meta"><span>{E(data['date_long'])}</span><span>Covers {E(data['window'])}</span><span>2-minute read</span><b>{E(subtitle_tag)}</b><a class="hope" href="hope/">Need hope?</a></div>
 </header>{focus_strip()}"""
 
@@ -341,7 +341,7 @@ def tail():
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in data["acts"])
     top4 = sorted(items, key=lambda i: {"red": 0, "orange": 1, "grey": 2}[i["sev"]])[:4]
     share = f"Resistance Daily, {data['date_short']}\n" + "\n".join(f"• {i.get('short', i['place'])}: {i['headline']}" for i in top4) + f"\nSources for every fact, in the full edition: https://resistancedaily.github.io/archive/{data['date']}.html"
-    return focus_cards() + f"""
+    return f"""
 <section aria-labelledby="h-act"><div class="sec-h"><h2 id="h-act">Act today</h2><span>Whatever your politics</span></div><div class="acts">{acts}</div></section>
 <details><summary>Copy for WhatsApp</summary><pre id="share-text">{E(share)}</pre><button id="copy" type="button">Copy text</button></details>
 <details><summary>How we report</summary><ul>
@@ -393,6 +393,8 @@ def design_ledger():
     rows = []
     for r, desc in RIGHTS:
         hits = [i for i in items if r in i["rights"]]
+        if not hits:
+            continue  # owner's declutter (4 Nov 2026): skip empty rights rows
         own = sorted((i for i in hits if i["rights"][0] == r), key=lambda i: not i.get("photo"))
         xref = [i for i in hits if i["rights"][0] != r]
         meter = "".join(f'<i class="bg-{i["sev"]}"></i>' for i in hits) or '<i style="background:var(--chip)"></i>'

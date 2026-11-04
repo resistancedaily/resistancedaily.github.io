@@ -113,8 +113,18 @@ log_path = os.path.join(root, "archive", "editions.json")
 log = json.load(open(log_path)) if os.path.exists(log_path) else {}
 log[date] = {"design": design, "summary": desc}
 json.dump(log, open(log_path, "w"), ensure_ascii=False, indent=1)
+def top_line(d, v):
+    """One line per day (owner's declutter, 4 Nov 2026): the edition's most serious headline."""
+    try:
+        x = json.load(open(os.path.join(root, "data", f"{d}.json")))
+        h = sorted(x["items"], key=lambda i: (not i.get("lead"), {"red": 0, "orange": 1, "grey": 2}[i["sev"]]))[0]
+        return f'{h.get("short", h["place"])}: {h["headline"]}'
+    except Exception:
+        return v["summary"]
+
+
 rows = "".join(
-    f'<li><a href="{d}.html"><b>{datetime.date.fromisoformat(d).strftime("%a %d %b %Y")}</b></a> <span class="t">{names.get(v["design"], v["design"])}</span><p>{html.escape(v["summary"])}</p></li>'
+    f'<li><a href="{d}.html"><b>{datetime.date.fromisoformat(d).strftime("%a %d %b")}</b></a><p>{html.escape(top_line(d, v))}</p></li>'
     for d, v in sorted(log.items(), reverse=True))
 open(os.path.join(root, "archive", "index.html"), "w").write(f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -127,11 +137,14 @@ body{{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 system-ui,-a
 h1{{font:800 44px "Arial Narrow",Arial,sans-serif;text-transform:uppercase;margin:0 0 4px}}
 a{{color:inherit;text-decoration-color:var(--accent)}}
 ul{{list-style:none;padding:0;display:grid;gap:8px}}
-li{{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}}
+ul{{gap:0!important;background:var(--paper);border:1px solid var(--rule);border-radius:6px}}
+li{{padding:9px 14px;border-top:1px solid var(--rule);display:flex;gap:12px;align-items:baseline;min-width:0}}
+li:first-child{{border-top:0}}
+li a{{white-space:nowrap;flex:none}}
 .t{{font:500 11px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);margin-left:8px}}
-li p{{margin:4px 0 0;color:var(--muted);font-size:14px}}
+li p{{margin:0;color:var(--muted);font-size:14px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}}
 </style></head><body><div class="wrap">
-<h1>Past editions</h1><p><a href="../">← Home</a> · <a href="../today/">Today's edition</a> · Every edition is kept here permanently.</p>
+<h1>Past editions</h1><p><a href="../">← Home</a> · <a href="../today/">Today's edition</a></p>
 <ul>{rows}</ul>
 <p style="color:var(--muted);font-size:13px">Contact or send a tip: resistancedaily.in@gmail.com</p>
 </div></body></html>
