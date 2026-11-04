@@ -565,7 +565,7 @@ def focus(slug, out, update=False):
     for k, p in enumerate(ph[1:], 2):
         slides.append(f'''<div class="s pslide"><div class="pimg full"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
 <div style="position:absolute;inset:0 0 auto 0;height:240px;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0))"></div>
-<div class="in" style="height:auto;padding-bottom:0">{top("Focus · " + f["title"], k, N)}</div></div>
+<div class="in" style="height:auto;padding-bottom:0">{top("Focus · " + f.get("short", f["title"]), k, N)}</div></div>
 <div class="pcap"><span class="kick" style="font-size:22px">{E(label(p))}</span><p>{E(p["caption"])}</p><span class="cr">{E(credit(p))}</span></div></div>''')
     figs = "".join(f'<div class="fig"><b>{E(x["fig"])}</b><span>{E(x["figcap"])}</span></div>' for x in f.get("figs", [])[:4])
     srcs = sorted({x["src"][0] for x in f.get("figs", [])})
@@ -576,7 +576,7 @@ def focus(slug, out, update=False):
     slides.append(f'''<div class="s light" style="padding:0"><div class="full" style="position:relative;height:380px;flex:none"><img src="{E(src_url(kp))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(kp.get("pos", "center"))}">
 <div style="position:absolute;inset:0 0 auto 0;height:220px;background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,0))"></div><div class="in" style="position:relative;height:auto;padding:90px 84px 0;color:#fff">{top("Focus · Key numbers", len(ph) + 1, N)}</div>
 <span style="position:absolute;left:84px;bottom:18px;font:500 18px 'IBM Plex Mono';color:#fff;background:rgba(0,0,0,.55);padding:6px 12px;line-height:1.45">{E(label(kp))} · {E(credit(kp))}</span></div>
-<div style="padding:40px 84px 64px;display:flex;flex-direction:column;flex:1"><div class="D" style="font-size:80px">{E(f["title"])}</div>
+<div style="padding:40px 84px 64px;display:flex;flex-direction:column;flex:1"><div class="D" style="font-size:80px">{E(f.get("short", f["title"]))}</div>
 <div class="figs" style="margin-top:34px">{figs}</div><div class="srcs">Sources: {E(" · ".join(srcs))}</div></div></div>''')
     ig = f.get("instagram", {})
     # Last slide (owner's rule): one short line on the official position ("instagram": {"official_short"}), not the
