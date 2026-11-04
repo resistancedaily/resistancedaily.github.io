@@ -1,0 +1,134 @@
+{
+ "updated": "2026-11-04",
+ "items": [
+  {
+   "id": "sc-bonded-labour-aid",
+   "date": "2026-11-02",
+   "kind": "Courts",
+   "rights": [
+    "Land & livelihood",
+    "Due process"
+   ],
+   "place": "Supreme Court, New Delhi",
+   "fig": "7 days",
+   "figcap": "deadline for aid",
+   "headline": "Rescued bonded labourers must get aid within a week",
+   "text": "The Supreme Court said rescued bonded labourers should ordinarily get Rs 20,000 immediate aid within seven days of their release certificate, and that pending criminal cases are no reason to withhold it.",
+   "slide": "Supreme Court deadline for rescued bonded labourers' aid",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/bonded-labourers-must-get-rehabilitation-assistance-within-7-days-of-release-certificate-supreme-court-557028"
+    ]
+   ],
+   "slide_head": "Aid within 7 days"
+  },
+  {
+   "id": "pulwama-psa-quashed",
+   "date": "2026-10-30",
+   "kind": "Courts",
+   "rights": [
+    "Due process"
+   ],
+   "place": "Pulwama, Jammu and Kashmir",
+   "fig": "15 mo",
+   "figcap": "detained, then freed",
+   "headline": "Pulwama man's 15-month detention quashed",
+   "text": "The J&K High Court quashed the Public Safety Act detention of a Pulwama man held since July 2025, saying alleged use of an encrypted app was no adequate basis for detention.",
+   "slide": "J&K High Court quashes a Pulwama man's PSA detention",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+    ]
+   ],
+   "photo": {
+    "src": "images/focus/kashmir/srinagar-old-city-2016.webp",
+    "alt": "A narrow alley between tall brick houses with wooden windows and tangled wires overhead; a woman in a headscarf stands in the shade.",
+    "caption": "An alley in Srinagar's old city in 2016. The Public Safety Act is the main preventive detention law in Jammu and Kashmir.",
+    "credit": "Adam Jones / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_City_Alleyway_-_Srinagar_-_Jammu_%26_Kashmir_-_India_(26837611965).jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "resized"
+   },
+   "link": [
+    "Kashmir Focus",
+    "focus/kashmir.html"
+   ],
+   "slide_head": "Freed after 15 months"
+  },
+  {
+   "id": "karnataka-lawyers-pil",
+   "date": "2026-11-03",
+   "kind": "Courts",
+   "rights": [
+    "Life & safety"
+   ],
+   "place": "High Court of Karnataka, Bengaluru",
+   "fig": "2",
+   "figcap": "murders the court will examine",
+   "headline": "High Court takes up killings of lawyers",
+   "text": "Karnataka's High Court opened a public-interest case on violence against lawyers, including two murders in October, and asked the state how it handles lawyers' complaints against police.",
+   "slide": "Karnataka High Court opens a case on lawyers' killings",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-initiates-suo-motu-pil-on-violence-against-advocates/article71661622.ece"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "slide_head": "Lawyers' killings in court"
+  },
+  {
+   "id": "madhubani-officer-suspended",
+   "date": "2026-11-03",
+   "kind": "Accountability",
+   "rights": [
+    "Life & safety"
+   ],
+   "place": "Madhubani district, Bihar",
+   "fig": "1 day",
+   "figcap": "to suspension and a murder case",
+   "headline": "Officer who fired on villagers suspended, murder case filed",
+   "text": "Bihar police suspended an officer who fired on villagers in Madhubani, killing one, and registered a murder case the same day. He has not been arrested.",
+   "slide": "Bihar officer who fired on villagers faces a murder case",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/bihar-asi-opens-fire-after-villagers-corner-him-at-womans-house-one-killed-three-injured-10948815/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-04/madhubani-station.webp",
+    "alt": "A railway platform whose walls are covered in colourful Mithila paintings, with red chairs and a few people.",
+    "caption": "Madhubani railway station, Bihar, decorated with Mithila paintings, in 2021.",
+    "credit": "Sntshkumar750 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madhubani_paintings_(Madhubani_Railway_Station).jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "resized"
+   },
+   "link": [
+    "Accountability Watch",
+    "accountability/#madhubani-asi-firing"
+   ],
+   "slide_head": "Suspended within a day"
+  }
+ ]
+}

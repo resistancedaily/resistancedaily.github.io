@@ -96,13 +96,13 @@ os.makedirs(os.path.join(root, "archive"), exist_ok=True)
 os.makedirs(os.path.join(root, "build"), exist_ok=True)
 # Today's full edition lives at /today/; the home page (index.html) is built by tools/home.py below.
 os.makedirs(os.path.join(root, "today"), exist_ok=True)
-tod = body.replace('href="archive/"', 'href="../archive/"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
+tod = body.replace('href="archive/"', 'href="../archive/"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/').replace('href="hope/', 'href="../hope/')
 open(os.path.join(root, "today", "index.html"), "w").write(wrap(tod, f"{SITE}archive/{date}.html"))
-arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/')
+arch = body.replace('href="archive/"', 'href="./"').replace('src="images/', 'src="../images/').replace('href="focus/', 'href="../focus/').replace('href="hope/', 'href="../hope/')
 open(os.path.join(root, "archive", f"{date}.html"), "w").write(wrap(arch, f"{SITE}archive/{date}.html"))
 # The backup page keeps images/ paths relative: publish those files with the artifact (see the list printed below).
 open(os.path.join(root, "build", "artifact.html"), "w").write(body.replace('href="archive/"', f'href="{SITE}archive/"')
-    .replace('href="focus/', f'href="{SITE}focus/'))
+    .replace('href="focus/', f'href="{SITE}focus/').replace('href="hope/', f'href="{SITE}hope/'))
 imgs = sorted(set(re.findall(r'src="(images/[^"]+)"', body)))
 if imgs:
     print("artifact files:", json.dumps({i: i for i in imgs}))

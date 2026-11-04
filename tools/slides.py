@@ -400,13 +400,53 @@ def cover(dt, sp, by, N):
 <div style="margin-top:auto;border-top:2px solid {"#d9dcd8" if sunday else "#333840"};padding-top:20px;{mono};color:#9ba1aa">{foot}{tag}</div></div>'''
 
 
+# "Need hope?" (owner's request, 4 Nov 2026): a green sticker on every daily cover points to the last slide, which
+# lists the latest items from data/hope.json (tools/hope.py). Sticker positions keep it beside the date and inside the
+# middle 860px (x 110-970) that the profile grid shows.
+STICKER_AT = {"photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
+              "signal": (765, 175, 200), "mosaic": (760, 330), "ring": (735, 120), "circles": (735, 60)}  # (left, top[, size])
+GREEN_L = "#e4f2e9"
+
+
+def hope_items(dt, days=14, n=3):
+    p = os.path.join(root, "data", "hope.json")
+    if not os.path.exists(p):
+        return []
+    items = [i for i in json.load(open(p))["items"] if 0 <= (dt - datetime.date.fromisoformat(i["date"])).days < days]
+    return sorted(items, key=lambda i: i["date"], reverse=True)[:n]
+
+
+def sticker(style):
+    x, y, *z = STICKER_AT.get(style, (735, 160))
+    z = z[0] if z else 230
+    return (f'<div style="position:absolute;left:{x}px;top:{y}px;width:{z}px;height:{z}px;border-radius:50%;background:{GR};color:#fff;'
+            f'display:grid;place-content:center;text-align:center;box-shadow:0 0 0 8px rgba(255,255,255,.92);transform:rotate(-8deg);z-index:5">'
+            f'<b class="D" style="font-size:{round(z * .226)}px;line-height:.9">Need<br>hope?</b>'
+            f'<span style="font:500 {round(z * .083)}px \'IBM Plex Mono\';text-transform:uppercase;letter-spacing:.05em;margin-top:8px">Last slide →</span></div>')
+
+
+def hope_slide(items, N):
+    rows = "".join(f'<div style="border-left:8px solid {GR};padding:6px 0 6px 26px"><b class="D" style="display:block;font-size:46px;line-height:1">{E(i.get("slide_head") or i["fig"])}</b>'
+                   f'<span style="display:block;font-size:27px;color:#3d4a42;margin-top:6px;line-height:1.3">{E(i["slide"])}</span></div>' for i in items)
+    srcs = " · ".join(dict.fromkeys(n for i in items for n, _ in i["src"]))
+    return f'''<div class="s" style="background:{GREEN_L};color:{INK}"><div class="top" style="color:{GR}"><span>Need hope?</span><span style="color:#5b616b">{N} / {N}</span></div>
+<div class="D" style="font-size:150px;line-height:.86;margin-top:60px">Signs of<br><span style="color:{GR}">hope</span></div>
+<p style="font-size:30px;color:#3d4a42;margin-top:20px">Rights upheld lately. Every fact sourced.</p>
+<div style="margin-top:50px;display:grid;gap:26px">{rows}</div>
+<div style="margin-top:auto;border-top:2px solid #b7d6c2;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#3d4a42;text-transform:uppercase;letter-spacing:.05em">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
+
+
 def daily(date, out):
     d = json.load(open(os.path.join(root, "data", f"{date}.json")))
     sp = json.load(open(os.path.join(root, "data", f"{date}.slides.json")))
     by = {i["n"]: i for i in d["items"]}
     dt = datetime.date.fromisoformat(date)
-    N = 6
-    slides = [cover(dt, sp, by, N)]
+    hope = hope_items(dt)
+    N = 7 if hope else 6
+    c = cover(dt, sp, by, N)
+    if hope:  # the sticker sits inside the cover's outer box (its last closing tag)
+        c = c[:c.rstrip().rfind("</div>")] + sticker(cover_style(dt, sp)) + "</div>"
+    slides = [c]
     for k, st in enumerate(sp["stories"], 2):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
         p = pic(st, by)
@@ -425,9 +465,11 @@ def daily(date, out):
 <div class="body"><div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
 <div class="srcs">Sources: {E(st["src"])}</div></div></div>''')
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in d["acts"])
-    slides.append(f'''<div class="s dark">{top("Act today", N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
+    slides.append(f'''<div class="s dark">{top("Act today", N - 1 if hope else N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
 <div class="D" style="font-size:64px;color:{AC};margin-top:10px">Whatever your politics</div><div style="margin-top:30px">{acts}</div>
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 24px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Full edition: link in bio</div></div>''')
+    if hope:
+        slides.append(hope_slide(hope, N))
     for p in render(slides, out, date):
         print(p)
     # Per-slide captions (owner's style: only what the slide doesn't show). Slide 1 uses the post caption
@@ -439,6 +481,9 @@ def daily(date, out):
         it = by.get(st.get("n"), {})
         caps.append(st.get("caption") or it.get("text", ""))  # "caption" for slides not tied to an item (Sunday cases)
     caps.append("")
+    if hope:  # the hope slide: "hope_caption" in DATE.slides.json, or a short pointer to the page
+        caps.append(sp.get("hope_caption") or "Not every story this week was bad news: courts, communities and neighbours are holding the line. "
+                    "Every card on our Signs of hope page has its source: link in bio.\nSource: " + " · ".join(dict.fromkeys(n for i in hope for n, _ in i["src"])))
     write_captions(out, caps)
     facebook_daily(d, out)
     social_daily(d, out)

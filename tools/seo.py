@@ -94,6 +94,9 @@ def write_sitemap(root):
     acc = os.path.join(root, "data", "accountability.json")
     if os.path.exists(acc) and os.path.exists(os.path.join(root, "accountability", "index.html")):
         urls.append((SITE + "accountability/", json.load(open(acc))["updated"]))
+    hope = os.path.join(root, "data", "hope.json")
+    if os.path.exists(hope) and os.path.exists(os.path.join(root, "hope", "index.html")):
+        urls.append((SITE + "hope/", json.load(open(hope))["updated"]))
     urls += [(f"{SITE}archive/{d}.html", d) for d in reversed(eds)]
     rows = "".join(f"<url><loc>{u}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls)
     open(os.path.join(root, "sitemap.xml"), "w").write(

@@ -88,6 +88,7 @@ p{margin:0}
 .mast .tag{color:var(--muted);max-width:62ch}
 .mast .meta{font-family:var(--mono);font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 16px}
 .mast .meta b{color:var(--accent);font-weight:500;text-transform:uppercase;letter-spacing:.06em}
+.mast .meta a.hope{color:#fff;background:var(--green);border-radius:999px;padding:1px 10px;text-decoration:none;text-transform:uppercase;letter-spacing:.06em}
 .key{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted);align-items:center}
 .key b{color:var(--ink);font-weight:600;margin-right:4px}
 .key>span{white-space:nowrap}
@@ -295,7 +296,7 @@ def head(subtitle_tag):
   <div class="bar" aria-hidden="true"></div>
   <h1>Resistance Daily</h1>
   <p class="tag">Where people's rights were at risk in the last 24 hours. Non-partisan, and every fact links to its source.</p>
-  <div class="meta"><span>{E(data['date_long'])}</span><span>Covers {E(data['window'])}</span><span>2-minute read</span><b>{E(subtitle_tag)}</b></div>
+  <div class="meta"><span>{E(data['date_long'])}</span><span>Covers {E(data['window'])}</span><span>2-minute read</span><b>{E(subtitle_tag)}</b><a class="hope" href="hope/">Need hope?</a></div>
 </header>{focus_strip()}"""
 
 def focus_strip():

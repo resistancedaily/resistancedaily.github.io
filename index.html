@@ -26,6 +26,11 @@ p{margin:0}
 .mast .tag{color:var(--muted);max-width:60ch;font-size:16px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips a{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:6px 12px}
+.chips a.hope{background:var(--green);border-color:var(--green);color:#fff}
+.hopec{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:8px;background:color-mix(in srgb,var(--green) 12%,var(--paper));border:1px solid color-mix(in srgb,var(--green) 35%,var(--rule));border-left:5px solid var(--green);text-decoration:none;color:inherit}
+.hopec b{font:800 48px/.9 var(--display);color:var(--green)}
+.hopec strong{display:block;font:800 22px/1 var(--display);text-transform:uppercase}
+.hopec span span{font-size:13.5px;color:var(--muted)}
 section{display:grid;gap:12px}
 .sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule);padding-bottom:6px}
 .sec-h h2{font-size:34px;font-weight:800}
@@ -64,11 +69,12 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 </style></head><body><div class="wrap">
 <header class="mast"><div class="bar" aria-hidden="true"></div><h1>Resistance Daily</h1>
 <p class="tag">Human rights in India and the world, daily. Non-partisan. Every fact sourced.</p>
-<nav class="chips" aria-label="Follow Resistance Daily"><a href="https://www.instagram.com/resistance.daily/">Instagram</a><a href="https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A">WhatsApp</a><a href="https://x.com/ResistDaily_in">X</a><a href="https://www.facebook.com/resistancedaily.in">Facebook</a></nav></header>
+<nav class="chips" aria-label="Follow Resistance Daily"><a class="hope" href="hope/">Need hope?</a><a href="https://www.instagram.com/resistance.daily/">Instagram</a><a href="https://whatsapp.com/channel/0029VbDijNkEVccEwHzXq62A">WhatsApp</a><a href="https://x.com/ResistDaily_in">X</a><a href="https://www.facebook.com/resistancedaily.in">Facebook</a></nav></header>
 
 <section aria-labelledby="h-today"><div class="sec-h"><h2 id="h-today">Today</h2><a href="today/">Full edition →</a></div>
 <div class="today"><span class="when">Wed 04 Nov 2026</span><ul><li><i class="dot red"></i><span><b>Madhubani</b> · Bihar police officer fires on villagers, one dead</span></li><li><i class="dot red"></i><span><b>North Darfur</b> · Drone kills two travellers in North Darfur</span></li><li><i class="dot red"></i><span><b>Zaporizhzhia</b> · Bombs hit Ukrainian aid centre, 33 dead</span></li><li><i class="dot red"></i><span><b>Gaza</b> · Girl killed in drone strike on Gaza tent</span></li></ul>
-<a class="go" href="today/">Read today's edition →</a></div></section>
+<a class="go" href="today/">Read today's edition →</a></div>
+<a class="hopec" href="hope/"><b>4</b><span><strong>Need hope?</strong><span>4 rights upheld this week →</span></span></a></section>
 
 <section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All 8 →</a></div>
 <div class="focs"><a class="fcard" href="focus/kashmir.html"><img src="images/focus/kashmir/srinagar-old-city-2016.webp" alt="" loading="lazy" decoding="async">

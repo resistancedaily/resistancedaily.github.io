@@ -62,6 +62,12 @@ if acc:
     acc_states = len({c["state"] for c in acc_open if c.get("region", "india") == "india"})
     acc_countries = len({c["state"] for c in acc_open if c.get("region") == "world"})
 
+# Signs of hope (tools/hope.py, owner's request 4 Nov 2026): a green "Need hope?" chip and a card under Today.
+hope = None
+if os.path.exists(os.path.join(root, "data", "hope.json")) and os.path.exists(os.path.join(root, "hope", "index.html")):
+    import hope as hopemod
+    hope = hopemod.counts(hopemod.load(), dt)
+
 def ed_line(k):
     try:
         x = load(f"data/{k}.json")
@@ -107,6 +113,11 @@ p{margin:0}
 .mast .tag{color:var(--muted);max-width:60ch;font-size:16px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 .chips a{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1px solid var(--rule);background:var(--paper);border-radius:999px;padding:6px 12px}
+.chips a.hope{background:var(--green);border-color:var(--green);color:#fff}
+.hopec{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:8px;background:color-mix(in srgb,var(--green) 12%,var(--paper));border:1px solid color-mix(in srgb,var(--green) 35%,var(--rule));border-left:5px solid var(--green);text-decoration:none;color:inherit}
+.hopec b{font:800 48px/.9 var(--display);color:var(--green)}
+.hopec strong{display:block;font:800 22px/1 var(--display);text-transform:uppercase}
+.hopec span span{font-size:13.5px;color:var(--muted)}
 section{display:grid;gap:12px}
 .sec-h{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--rule);padding-bottom:6px}
 .sec-h h2{font-size:34px;font-weight:800}
@@ -157,11 +168,12 @@ page = f"""<!doctype html>
 <style>{CSS}</style></head><body><div class="wrap">
 <header class="mast"><div class="bar" aria-hidden="true"></div><h1>Resistance Daily</h1>
 <p class="tag">Human rights in India and the world, daily. Non-partisan. Every fact sourced.</p>
-<nav class="chips" aria-label="Follow Resistance Daily">{chips}</nav></header>
+<nav class="chips" aria-label="Follow Resistance Daily">{'<a class="hope" href="hope/">Need hope?</a>' if hope else ''}{chips}</nav></header>
 
 <section aria-labelledby="h-today"><div class="sec-h"><h2 id="h-today">Today</h2><a href="{full}">Full edition →</a></div>
 <div class="today"><span class="when">{dt.strftime("%a %d %b %Y")}</span><ul>{today}</ul>
-<a class="go" href="{full}">Read today's edition →</a></div></section>
+<a class="go" href="{full}">Read today's edition →</a></div>
+{f'<a class="hopec" href="hope/"><b>{hope[0]}</b><span><strong>Need hope?</strong><span>{hope[0]} right{"s" if hope[0] != 1 else ""} upheld {hope[1]} →</span></span></a>' if hope else ''}</section>
 
 <section aria-labelledby="h-focus"><div class="sec-h"><h2 id="h-focus">In focus</h2><a href="focus/">All {len(focus)} →</a></div>
 <div class="focs">{cards}</div></section>

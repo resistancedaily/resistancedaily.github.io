@@ -205,6 +205,27 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
   https://resistancedaily.github.io/accountability/ ; deliver it with the other files.
 - Report in the notification: "Accountability Watch: <N> open cases (<M> with no arrest), <K> updated today".
 
+## STEP 4c. Signs of hope (owner's request, 4 Nov 2026; every day)
+Readers asked for hope as well as harm. Page: https://resistancedaily.github.io/hope/ (data/hope.json → `python3 tools/hope.py`,
+which also rebuilds the home page and sitemap). See the header of tools/hope.py for the schema. The home page shows a green
+"Need hope?" chip and card, each edition has a "Need hope?" link, and the daily carousel ends on a "Signs of hope" slide.
+- WHAT GETS IN: rights upheld, not sides won. Kinds: Courts (a detention quashed, bail, a right affirmed, an eviction
+  stayed), Accountability (an officer suspended, charged or convicted, compensation paid), Releases (someone freed,
+  including from "Still waiting"), People helping people (community kitchens, rescue volunteers, legal aid, rebuilding),
+  Communities that won (a project withdrawn after consultation, a ban lifted, land rights recognised). Judge the outcome
+  for people's rights, whoever governs or whoever lost; never frame it as a win against a party, company or government.
+- SAME STANDARDS: every fact sourced (SOURCE MUST MATCH CLAIM), the official position kept, BREVITY limits (text ≤ 35
+  words). HOPE IS NOT SPIN: never overstate; say what is still open ("he has not been arrested", "the state may appeal").
+  A police case filed is not a charge; a stay is not a final ruling.
+- DAILY: while researching STEP 2, add 1–3 items from the window (an edition item may also be a hope item). Also add an
+  item when an Accountability Watch case reaches an arrest, chargesheet or verdict, or a "Still waiting" person is
+  released. Give each a "slide_head" (≤ 26 characters) and "slide" (≤ 60 characters) for the Instagram slide, a photo
+  (STEP 3 rules) when there is one, and "link" to its Focus or Accountability Watch card when it has one. Look actively for
+  People helping people and Communities that won stories (ground outlets: Down To Earth, Mongabay India, Ground Report,
+  The Better India only when the facts are also in a credible outlet), not only court news. If nothing qualifies, add
+  nothing: never pad. Set "updated" and run `python3 tools/hope.py` every day before publishing.
+- Report in the notification: "Signs of hope: <N> added today, <M> this week".
+
 ## STEP 5. Publish the edition
 - Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
   item's text is one or two short plain sentences (at most 35 words, see BREVITY;
@@ -228,7 +249,7 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
   as `files` so the photos load.
 
 ## STEP 6. Instagram carousel
-Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
+Keep the ORIGINAL text-led style. 7 slides, 1080×1350 (6 when data/hope.json has nothing from the past 14 days).
 - Fonts: Barlow Condensed 800, IBM Plex Sans 400/600, IBM Plex Mono 500 (tools/slides.py fetches them with npm pack).
 - Colours: BG #f3f4f2, INK #15181d, ACCENT #d9661a, RED #b3261e, GREEN #1d7a4c. Padding 90/84. Mono uppercase label
   top-left, "n / N" top-right.
@@ -254,15 +275,21 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   and the photo credit under the sources), or, when there is no photo, the big number on a grey panel. On Sundays, show Still Waiting cases instead.
 - Slide 6 (dark): "Act today", "Whatever your politics", and the 4 actions with green left borders. Footer:
   "Non-partisan · Every fact sourced · Full edition: link in bio".
+- NEED HOPE (owner's request, 4 Nov 2026): slide 7 (light green) is "Signs of hope": the 3 newest items from
+  data/hope.json ("slide_head" in bold, "slide" under it, their sources in the footer, "More signs of hope: link in bio").
+  Every cover carries a green "Need hope? · Last slide →" sticker beside the date (option A, approved by the owner).
+  tools/slides.py adds both automatically when there are hope items; check both on the contact sheet. Slide 7's caption
+  is "hope_caption" in DATE.slides.json (1–2 sentences on what was upheld, then "Source: …"), or a default pointer.
 - Write data/DATE.slides.json ("cover": 4 [place, headline] rows; "stories": 4 entries with n, label, fig, figlab, place,
   head, bullets, src) and run `python3 tools/slides.py daily DATE OUT`. It applies this style, adds each story's photo
   when the item has one (photos under 900px wide keep the text layout), saves JPEGs at quality 82 and writes
   OUT/contact.png. Check the contact sheet. Chromium is preinstalled; don't run "playwright install".
 - caption.txt: a date line; a numbered summary (≤ 4 items); "Non-partisan. Every fact sourced. Full edition:
   resistancedaily.github.io (link in bio)."; sources; 6–10 neutral hashtags.
-- alt-text.txt: one entry per slide, in order (Slide 1 … Slide 6), each 1–2 plain sentences (about 150–250 characters).
-  Say what the slide shows: for slide 1, the date and the 4 headlines; for slides 2–5, the big number and its label, the
-  person or place, and the key fact, with the official position if the slide has one; for slide 6, the 4 actions. Use
+- alt-text.txt: one entry per slide, in order (Slide 1 … Slide 7), each 1–2 plain sentences (about 150–250 characters).
+  Say what the slide shows: for slide 1, the date, the 4 headlines and the "Need hope?" sticker; for slides 2–5, the big
+  number and its label, the person or place, and the key fact, with the official position if the slide has one; for
+  slide 6, the 4 actions; for slide 7, the three signs of hope. Use
   only facts that are on the slide. No hashtags, emoji or "image of".
 - Instagram takes one caption per slide. Write caption.txt into OUT before running slides.py: it becomes slide 1's
   caption, and the tool writes OUT/slide-captions.txt with a caption for every slide (each story slide gets the
@@ -318,7 +345,8 @@ Keep the ORIGINAL text-led style. 6 slides, 1080×1350.
   euros"). Use only facts printed on that slide, keep "reportedly" and other qualifiers, stay neutral, and end on the
   link-in-bio line (no pause after it). Cut detail rather than speed up; the caption carries the rest.
   Daily carousels: one line per story, linked by short continuations so it flows as one bulletin ("First, Sudan." ·
-  "Next, Gaza." · "In Arunachal, …" · "And Karnataka: …"), each naming the place, then the key fact. Focus and update carousels (owner's rule): narrate them as one
+  "Next, Gaza." · "In Arunachal, …" · "And Karnataka: …"), each naming the place, then the key fact. Slide 6 (Act today) gets a short line, and slide 7 (Signs of hope) names one thing that went right, then the
+  link-in-bio line (no pause after it). Focus and update carousels (owner's rule): narrate them as one
   story, not as a list of headlines, so a viewer gets the gist of what is happening. Open with what happened (for
   an update, the new development), then why it matters, then the wider picture, and close with the official
   position and the link-in-bio line. Lines still follow the slide order and the 5-second pace, and each line should
