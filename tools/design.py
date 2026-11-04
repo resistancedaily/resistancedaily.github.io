@@ -39,8 +39,12 @@ def photo(i, cls="ph"):
     if not p:
         return ""
     pos = f' style="object-position:{E(p["pos"])}"' if p.get("pos") else ""
-    return (f'<figure class="{cls}"><img src="{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
-            f'<figcaption><b>{photo_label(p)}</b>{E(p["caption"])} <span class="cr">{photo_credit(p)}</span></figcaption></figure>')
+    # Owner's request (4 Nov 2026): the photo stays clean. A small "File photo · YEAR" tag sits on the image; the caption
+    # and full credit open from the (i) button, so they no longer pull attention from the story.
+    return (f'<figure class="{cls}"><div class="pw"><img src="{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async"{pos}>'
+            f'<span class="ptag">{photo_label(p)}</span></div>'
+            f'<details class="pinfo"><summary aria-label="About this photo">i</summary>'
+            f'<figcaption>{E(p["caption"])} <span class="cr">{photo_credit(p)}</span></figcaption></details></figure>')
 
 def rights(i):
     return " · ".join(i["rights"])
@@ -146,6 +150,15 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .ph figcaption{font-size:12px;line-height:1.4;color:var(--muted)}
 .ph figcaption b{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-right:6px}
 .ph .cr{display:block;font-size:11px}
+.ph{position:relative}
+.pw{position:relative;min-width:0}
+.ptag{position:absolute;left:8px;bottom:8px;font:500 10px/1 var(--mono);text-transform:uppercase;letter-spacing:.06em;color:#fff;background:rgba(0,0,0,.62);padding:5px 7px;border-radius:3px}
+.pinfo{background:none;border:0;border-radius:0;padding:0}
+.pinfo summary{position:absolute;right:8px;top:8px;width:26px;height:26px;border-radius:50%;background:rgba(0,0,0,.62);color:#fff;font:600 14px/26px var(--body);text-align:center;list-style:none;cursor:pointer;font-style:italic}
+.pinfo summary::-webkit-details-marker{display:none}
+.pinfo[open] summary{background:var(--ink)}
+.pinfo figcaption{padding:6px 0 0}
+details.pinfo[open] summary{margin:0}
 .more{font-weight:600;color:var(--ink);white-space:nowrap}
 .pics{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
 .pic{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px;display:grid;gap:6px;align-content:start;min-width:0}
@@ -215,15 +228,16 @@ DESIGN_CSS = {
 .st.red{border-top-color:var(--red)} .st.orange{border-top-color:var(--orange)}
 .st>.ph{gap:0}
 .st>.ph img{border-radius:0}
-.st>.ph figcaption{padding:6px 12px 0}
+.st>.ph figcaption{padding:8px 12px 0}
 .st .figp{aspect-ratio:16/9;background:var(--chip);display:grid;place-content:center;justify-items:center;gap:4px;padding:8px;text-align:center}
 .st .figp b{font:800 64px/0.9 var(--display)}
 .st .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.st .tx{padding:10px 12px 12px;display:grid;gap:5px;align-content:start}
-.st .where{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;font-weight:600;font-size:14px}
-.st .where .fig{font:800 22px var(--display);margin-left:auto;white-space:nowrap}
-.st h4{font:800 22px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
-.st p{font-size:14px}
+.st .tx{padding:12px 14px 14px;display:grid;gap:8px;align-content:start}
+.st .tx>.fig{font:800 34px/0.9 var(--display);display:flex;align-items:baseline;gap:8px}
+.st .tx>.fig .right{font-size:11px}
+.st h4{font:800 24px/1 var(--display);text-transform:uppercase;margin:0;text-wrap:balance}
+.st p{font-size:15px;line-height:1.45}
+.st .src .where{font-weight:600;color:var(--ink)}
 .st .also{font:500 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
 .xref{padding:0 14px 12px;font-size:13px;color:var(--muted)}
 .xref a{font-weight:600;color:var(--ink)}
@@ -372,10 +386,10 @@ def design_ledger():
     def card(i):
         p = i.get("photo")
         top = photo(i) if p else f'<div class="figp"><b class="c-{i["sev"]}">{E(i["fig"])}</b><span>{E(i["figcap"])}</span></div>'
+        # Owner's request (4 Nov 2026): one clear order per card: key number, headline, one line, then place and sources.
         fig = f'<span class="fig c-{i["sev"]}">{E(i["fig"])} <span class="right">{E(i["figcap"])}</span></span>' if p else ""
-        also = f'<span class="also">Also: {E(" · ".join(i["rights"][1:]))}</span>' if len(i["rights"]) > 1 else ""
-        return (f'<li id="i{i["n"]}" class="st {i["sev"]}">{top}<div class="tx"><span class="where">{E(i["place"])}{fig}</span>'
-                f'<h4>{E(i["headline"])}</h4><p>{E(i["text"])}</p>{also}<span class="src">{src(i)}</span></div></li>')
+        return (f'<li id="i{i["n"]}" class="st {i["sev"]}">{top}<div class="tx">{fig}'
+                f'<h4>{E(i["headline"])}</h4><p>{E(i["text"])}</p><span class="src"><span class="where">{E(i.get("short", i["place"]))}</span> · {src(i)}</span></div></li>')
     rows = []
     for r, desc in RIGHTS:
         hits = [i for i in items if r in i["rights"]]
