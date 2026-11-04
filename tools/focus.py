@@ -36,16 +36,18 @@ data/focus/SLUG.json:
 """
 import sys, os, json, html, datetime, glob
 import seo
+import rdsite as S
 
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://resistancedaily.github.io/"
 
 CSS = """
-:root{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--accent:#d9661a;--red:#b3261e;--chip:#eceee9;
---display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--accent:#f08a3c;--red:#ef6b62;--chip:#22262c;color-scheme:dark}
+/* Threads redesign (Nov 2026): the Focus layouts keep their structure, on the Organic tokens (assets/organic.css,
+   assets/rd.css handle fonts, dark mode and the frame). No red: key numbers are in the text colour. */
+:root{--bg:var(--color-bg);--paper:var(--color-surface);--ink:var(--color-text);--muted:var(--color-neutral-700);--rule:var(--color-divider);
+--accent:var(--color-accent-700);--red:var(--color-text);--chip:var(--color-neutral-200);--land:var(--color-neutral-300);
+--display:var(--font-heading);--body:var(--font-body);--mono:var(--font-body)}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
 .wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:26px}
 a{color:inherit;text-decoration-color:var(--accent);text-underline-offset:2px}
@@ -171,21 +173,42 @@ footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padd
 .older[open] summary{margin-bottom:22px}
 @media (max-width:520px){.tl li{grid-template-columns:52px minmax(0,1fr);gap:18px}.tl li:before{left:68px}.tl time{font-size:18px}.older summary{margin-left:70px}}
 .figp span{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted);max-width:28ch}
+/* ── Organic overrides ── */
+.rd-wrap{max-width:1040px}
+h1,h2{text-transform:none;line-height:1.08;letter-spacing:-.015em}
+header h1{font-size:48px;line-height:1.04}
+.dek{font-size:18px;color:var(--color-neutral-800);max-width:62ch}
+.kicker{font:600 12.5px var(--font-body);letter-spacing:.08em}
+.sec-h{border-bottom:0;padding-bottom:0}.sec-h h2{font-size:28px}
+.pw img,.chap img,figure img{border-radius:28px}
+.cover .pw img{border-radius:50% 50% 32px 32px/40% 40% 32px 32px;aspect-ratio:16/10}
+.pw img{filter:saturate(.6) contrast(.85) brightness(1.1) opacity(.94)}
+.ptag{font:600 10.5px/1 var(--font-body);border-radius:999px;padding:6px 10px;left:14px;bottom:14px;background:color-mix(in srgb,#2e2b25 70%,transparent)}
+.fig{background:var(--color-surface);border:0;border-radius:28px;padding:18px 20px}
+.fig b{font:400 40px/1 var(--font-heading);color:var(--color-text)}
+.fig span{font:400 13px var(--font-body);text-transform:none;letter-spacing:0}
+.sum div{background:var(--color-surface);border:0;border-radius:28px;padding:18px 20px}
+.sum b,.official b,.viz .t,.tl .tfig span{font:600 12px var(--font-body);letter-spacing:.06em}
+.blk{border-top:1px solid var(--color-divider)}
+.blk h3{font:400 22px/1.25 var(--font-heading)}
+.viz,.figp{background:var(--color-surface);border:0;border-radius:28px}
+.figp b,.viz .big,.tl .tfig b{font-family:var(--font-heading);font-weight:400;color:var(--color-text)}
+.bar i{background:var(--color-accent);border-radius:999px}
+.bar i span{font:400 20px var(--font-heading)}
+.dots i{border-color:var(--color-neutral-300)}.dots i.on{background:var(--color-accent);border-color:var(--color-accent)}
+.official{background:var(--color-surface);border:0;border-radius:28px;padding:20px 24px;max-width:none}
+.tl time{font:400 20px/1 var(--font-heading);color:var(--color-neutral-700)}
+.tl li.latest time{color:var(--color-accent-700)}
+.tl li.latest .ev:before{border-color:var(--color-accent);background:var(--color-accent)}
+.tl .badge{background:var(--color-accent-100);color:var(--color-accent-800);border-radius:999px;font:600 11px var(--font-body)}
+.older summary{background:var(--color-surface);border:0;border-radius:999px}
+.pin.red circle{fill:var(--color-accent)} .pin.grey circle{fill:var(--color-neutral-600)}
+.pin text.pl{stroke:var(--color-surface)}
+.rd-latest{background:var(--color-surface);border-radius:28px;padding:20px 24px;display:flex;flex-direction:column;gap:8px}
+.rd-latest .rd-hd h2{font-size:22px}
+.more-f h2{font-size:22px}
+@media (max-width:720px){header h1{font-size:32px}.dek{font-size:16px}.rd-latest{padding:16px 18px}}
 """
-
-HEAD = """<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{title}</title><meta name="description" content="{desc}"><meta property="og:title" content="{title}"><meta property="og:description" content="{desc}">
-{og_image}<meta property="og:type" content="article"><link rel="canonical" href="{canonical}">{extra}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
-<style>{css}</style></head><body><div class="wrap">"""
-
-FOOT = """<footer><span>Non-partisan. Every fact links to its source. Photos are freely licensed; "file photo" means an older picture of the place.</span>
-<span>{follow} · Tips and photos: <a href="mailto:resistancedaily.in@gmail.com?subject=Photo%20for%20Resistance%20Daily">resistancedaily.in@gmail.com</a></span></footer>
-</div></body></html>
-"""
-
 
 def links(pairs):
     return " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in pairs)
@@ -371,32 +394,54 @@ def page(f, all_f=()):
     others = [o for o in all_f if o["slug"] != f["slug"]]
     more = ('<section class="more-f"><h2>Other Focus stories</h2><ul>' + "".join(
         f'<li><a href="{E(o["slug"])}.html">{E(o.get("short") or o["title"])}</a></li>' for o in others[:3]) + '</ul></section>') if others else ""
-    return HEAD.format(title=E(f"{head} · Resistance Daily"), desc=E(f["dek"]), og_image=og, extra=extra,
-                       canonical=url, css=CSS) + f"""
-<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="./">All Focus stories</a><i class="sep"> · </i><a href="../archive/">Past editions</a></span></div>
-<header style="display:grid;gap:10px"><span class="kicker">{E(f['kicker'])}</span><h1>{E(f['title'])}</h1>{'' if f.get("summary") else f'<p class="dek">{E(f["dek"])}</p>'}
-{new or f'<div class="meta"><span>Updated {upd}</span></div>'}</header>
+    latest = latest_block(f)
+    kick = "In focus · " + f["kicker"].split("·", 1)[-1].strip() if "·" in f["kicker"] else f["kicker"]
+    return S.head(f"{head} · Resistance Daily", f["dek"], "../", url, og + extra, css=CSS) + S.nav("../") + f"""
+<header style="display:grid;gap:10px"><span class="kicker">{E(kick)}</span><h1>{E(f['title'])}</h1><p class="dek">{E(f["dek"])}</p>
+<div class="meta"><span>Updated {upd}</span></div></header>
+{latest or new}
 {summary}
 {body(f, figs, story, official)}
 {f'<p class="src">In the daily edition: {eds}</p>' if eds else ''}
 {more}
-<a class="allf big" href="./"><span>More in-depth stories, every fact sourced</span><b>See all Focus stories →</b></a>
-""" + FOOT.format(follow=seo.FOLLOW)
+<a class="allf big" href="./"><span>More in-depth stories, every fact sourced</span><b>See all threads →</b></a>
+""" + S.footer("../")
+
+
+def latest_block(f):
+    """'Latest in this thread': the 3 newest updates of the matching thread, plus Follow (replaces the what's-new strip)."""
+    import threads as T
+    t = next((t for t in T.registry() if t.get("focus") == f["slug"]), None)
+    if not t:
+        return ""
+    ups = T.all_updates().get(t["slug"], [])
+    if not ups:
+        return ""
+    return (f'<section class="rd-latest" aria-labelledby="h-latest"><div class="rd-hd"><h2 id="h-latest">Latest in this thread</h2>'
+            f'<a href="../threads/{t["slug"]}.html">Every update →</a></div>{T.timeline_html(ups, S.editions()[-1], "../", 3)}'
+            f'<div class="rd-row"><button class="btn btn-primary" data-rd-follow="{E(t["slug"])}">Follow this thread</button></div></section>')
 
 
 def index(all_f):
-    def kf(f):
-        x = (f.get("figs") or [{}])[0]
-        return f'<span class="kf"><b>{E(x["fig"])}</b> {E(x["figcap"])}</span>' if x.get("fig") else ""
-    cards = "".join(f'''<li><a class="card" href="{E(f["slug"])}.html"><img src="{E(rel(f["photos"][0]["src"], "../"))}" alt="" loading="lazy">
-<div><h2>{E(f.get("short", f["title"]))}</h2>{kf(f)}</div></a></li>''' for f in all_f)
-    return HEAD.format(title="Focus · Resistance Daily", desc="In-depth stories on places and issues, with a source for every fact.",
-                       og_image="", extra=f'<meta property="og:url" content="{SITE}focus/"><meta property="og:site_name" content="Resistance Daily">',
-                       canonical=f"{SITE}focus/", css=CSS) + f"""
-<div class="top"><a href="../"><b>Resistance Daily</b></a><span><a href="../archive/">Past editions</a></span></div>
-<h1 style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Focus stories</h1>
-<ul class="list">{cards}</ul>
-""" + FOOT.format(follow=seo.FOLLOW)
+    """'All threads' (focus/index.html): every registry thread; focus threads show their photo in the ring."""
+    import threads as T
+    fs = {f["slug"]: f for f in all_f}
+    cards = []
+    infocus = '<span class="tag tag-neutral">In focus</span>'
+    ups = T.all_updates()
+    for t in T.registry():
+        f = fs.get(t.get("focus"))
+        href = (f'{t["focus"]}.html' if f else f'../{t["page"]}' if t.get("page") else f'../threads/{t["slug"]}.html')
+        ph = f["photos"][0] if f and f.get("photos") else T.photo_of(t, ups.get(t["slug"], []))
+        ring = (f'<img class="washed" src="{E(rel(ph["src"], "../"))}" alt="" loading="lazy">' if ph else "<i></i>")
+        st = T.stat(t)
+        cards.append(f'<a class="rd-thread{"" if ph else " is-quiet"}" href="{href}"><span class="rd-ring">{ring}</span><span class="rd-tx">'
+                     f'<span class="rd-tx-top"><h3>{E(t["name"])}</h3>{infocus if f else ""}</span>'
+                     f'<p>{E(st or "Every update, newest first")}</p></span></a>')
+    return (S.head("All threads · Resistance Daily", "Long-running stories followed day by day, with a source for every fact.", "../", f"{SITE}focus/", css=CSS)
+            + S.nav("../") + f'''<header style="display:grid;gap:10px"><span class="kicker">Threads</span><h1>All threads</h1>
+<p class="dek">Long-running stories, including the In focus pieces, Accountability Watch and Still waiting.</p></header>
+<div class="rd-grid">{"".join(cards)}</div>''' + S.footer("../"))
 
 
 if __name__ == "__main__":

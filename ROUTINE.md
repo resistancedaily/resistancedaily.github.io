@@ -20,30 +20,38 @@ Work in the repo checkout. tools/ and data/cases.json in the repo are the source
 it from the Drive copies (read them with the Google Drive tools). Run `npm install` in tools/ and
 `python3 -m pip install -q playwright pillow "opencv-python-headless<5"`.
 
-## DESIGN ROTATION by IST weekday
-Mon = map · Tue = numbers · Wed = ledger · Thu = front · Fri = clock · Sat = map · Sun = tracker ("Still waiting", weekly).
-- map: write items.json (n, lon, lat, sev, label = short place name; use left / pos:"br" / dx / dy so labels don't
-  overlap), then run `node tools/maps.js items.json > data/DATE.maps.json && python3 tools/thin.py data/DATE.maps.json`.
-- clock: fill events[] with real IST times where reported; use "Fri"/"Sat" when the time is unknown.
-- front: set lead:true on the most serious story.
-- tracker (Sunday): use data/cases.json. VERIFY every case: open each source and confirm it names the person and states
-  the "since" date, the law or charge, and the current status; replace any source that doesn't, and give a case several
-  sources as a list of [name, url] pairs when one article doesn't cover every claim. Search for news from the past week on
-  each person and update the status. Each status should include the official or government position where one is
-  reported. Add new long detentions found this week. Remove anyone released and mention the release in the WhatsApp text.
-  Choose cases by severity and by how much they need attention, not to balance numbers. Include Indian cases that matter,
-  and keep looking worldwide: long detentions anywhere are equally important. Save the updated list back to
-  data/cases.json and include it as "cases" in data.json.
-- TODAY ON THE MAP + RIGHTS COLOURS (owner's request, 1 Nov 2026), every design: give every item "lon" and "lat" (the
-  place in "place"; for a country-wide story, its capital or the main city named). publish.py then builds
-  data/DATE.items.json and data/DATE.maps.json itself and shows India and world maps at the top, whose numbered pins
-  jump to each story; on map days keep passing data/DATE.maps.json as before. Pins in the same city overlap: add
-  "map": {"dx", "dy"} (about ±13) to spread them, "label": "" on all but one, and "left": true / "pos": "br" to move a
-  label. Check the strip in the screenshots. Rights show as coloured chips automatically; use the usual right names
-  (Life & safety, Assembly, Expression, Press freedom, Due process, Land & livelihood, Civilian harm).
-  No national flags: several places we cover are disputed (Gaza and the West Bank, Kashmir, Tibet, Abyei), and our
-  maps show land only, with no political borders.
-Never hand-edit the generated layout or add charts.
+## THE SITE: THREADS (owner's redesign, Nov 2026; replaces the weekday layouts)
+The web edition has ONE layout every day, built by tools/home.py (spec: Claude Design handoff, "Threads that play"):
+the home page IS today's edition (index.html; today/ and archive/DATE.html are the same page). Top of the page =
+today: thread cards (long-running stories that moved today, each with one line of what changed and a player that plays
+the updates), "Also today" (one-off stories), Rights upheld, Today on the map. Below "When you have more time": All
+threads, Past editions, Act today, How we report, and "All stories this day" (every item in full with photo, sources and
+its #iN anchor: the complete sourced record). Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
+Detention); never render red. Keep "sev" in the data: it still orders threads and colours map pins.
+- THREADS: data/threads.json is the registry ({slug, name, focus?, page?, stat?, stat_from?}). An item's thread is
+  "thread" if set, else its "focus" slug, else "accountability" when "Accountability Watch" is in its rights, else none
+  (a one-off, shown in "Also today"). Set "thread": "<slug>" on every item that continues a registered thread (e.g.
+  "manipur", "jantar-mantar"). When a story clearly becomes ongoing (covered on 3+ days in a fortnight), add a registry
+  entry with a neutral 2–3 word name and, if you have it, a sourced one-line "stat". Timelines are derived from the
+  editions: never store them. tools/threads.py builds threads/SLUG.html for every entry (publish.py runs it).
+- RIGHT UPHELD: set "upheld": true on an item where a right was upheld (court relief, a release, an accountability
+  step such as a suspension or charge). It gets the sage "Right upheld" tag. (A data/hope.json item may instead carry
+  "edition": "DATE#N" naming the edition item.) Never mark harm as upheld because a later step happened: the Madhubani
+  shooting stays "Lives lost"; the officer's suspension is its own upheld item. Each edition should have at least one
+  upheld item in the visible threads when one exists in the window.
+- MAP: give every item "lon" and "lat" (the place in "place"; for a country-wide story, its capital or the main city
+  named). publish.py builds data/DATE.items.json and data/DATE.maps.json itself (pins open from "Today on the map").
+  Pins in one city overlap: add "map": {"dx", "dy"} (about ±13), "label": "" on all but one, "left": true / "pos": "br"
+  to move a label. No national flags: several places we cover are disputed, and our maps show land only.
+- STILL WAITING (every Sunday): use data/cases.json. VERIFY every case: open each source and confirm it names the person
+  and states the "since" date, the law or charge, and the current status; replace any source that doesn't, and give a
+  case several sources as [name, url] pairs when one article doesn't cover every claim. Search for news from the past
+  week on each person and update the status, with the official or government position where reported. Add new long
+  detentions found this week; remove anyone released (mention it in the WhatsApp text and add it to Signs of hope).
+  Choose cases by severity and need for attention, not to balance numbers, in India and worldwide. Save
+  data/cases.json; publish.py rebuilds still-waiting/index.html from it on every edition.
+- publish.py still takes a DESIGN word (log it as the weekday's old name or "threads"); it no longer changes the page.
+Never hand-edit the generated pages or add charts to them.
 
 ## EDITORIAL STANDARDS (most important)
 - Frame everything as rights, not politics: life and safety, assembly, expression, press freedom, due process and
@@ -213,8 +221,9 @@ which also rebuilds the home page and sitemap). See the header of tools/accounta
 
 ## STEP 4c. Signs of hope (owner's request, 4 Nov 2026; every day)
 Readers asked for hope as well as harm. Page: https://resistancedaily.github.io/hope/ (data/hope.json → `python3 tools/hope.py`,
-which also rebuilds the home page and sitemap). See the header of tools/hope.py for the schema. The home page shows a green
-"Need hope?" chip and card, each edition has a "Need hope?" link, and the daily carousel ends on a "Signs of hope" slide.
+which also rebuilds the home page and sitemap). See the header of tools/hope.py for the schema. The home page shows a sage
+"Rights upheld" card with the week's count and links to the page (titled "Rights upheld"); the daily carousel ends on a
+"Signs of hope" slide.
 - WHAT GETS IN: rights upheld, not sides won. Kinds: Courts (a detention quashed, bail, a right affirmed, an eviction
   stayed), Accountability (an officer suspended, charged or convicted, compensation paid), Releases (someone freed,
   including from "Still waiting"), People helping people (community kitchens, rescue volunteers, legal aid, rebuilding),
@@ -233,18 +242,19 @@ which also rebuilds the home page and sitemap). See the header of tools/hope.py 
 - Report in the notification: "Signs of hope: <N> added today, <M> this week".
 
 ## STEP 5. Publish the edition
-- Write data/DATE.json following the schema in "Data example (data.json).txt" and the header of tools/design.py. Each
+- Write data/DATE.json following the schema in "Data example (data.json).txt" (plus "thread", "upheld", "lon"/"lat",
+  see THE SITE: THREADS). Each
   item's text is one or two short plain sentences (at most 35 words, see BREVITY;
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
-- Run `python3 tools/publish.py DESIGN DATE data/DATE.json [data/DATE.maps.json]`. This writes today/index.html
-  (the full edition, always at /today/), archive/DATE.html, archive/index.html and build/artifact.html, and rebuilds
-  the home page index.html with tools/home.py (Today's top headlines, In focus, Still waiting, Past editions, Follow;
-  focus.py rebuilds it too). Never hand-edit index.html: it comes from the data. It and prints any items still missing a photo. It
-  (and tools/focus.py) also writes sitemap.xml and robots.txt, search data (schema.org NewsArticle) and a 1200x630
-  link-preview image (images/DATE/share.jpg, images/focus/SLUG/share.jpg) via tools/seo.py. Commit them all.
-- Check once with Playwright screenshots of index.html (home), today/index.html (and focus/SLUG.html if a Focus was made) at 860px and 390px for
-  overlaps, clipping, horizontal scroll and photos that fail to load. Fix any problem through the data or map nudges,
+- Run `python3 tools/publish.py threads DATE data/DATE.json`. It writes index.html (home = today), today/index.html,
+  archive/DATE.html, archive/index.html, threads/SLUG.html, still-waiting/index.html and build/artifact.html (CSS and JS
+  inlined for the backup page), plus sitemap.xml, robots.txt, search data (schema.org) and the 1200x630 link-preview
+  image images/DATE/share.jpg, and prints any items still missing a photo. Never hand-edit index.html: it comes from the
+  data. Earlier archive pages keep their old layouts; don't rebuild them. Commit them all.
+- Check once with Playwright screenshots of index.html (home; also open the player with "Play today" and the map
+  dialog) and focus/SLUG.html if a Focus was made, at 1280px and 390px, for overlaps, clipping, horizontal scroll and
+  photos that fail to load. Fonts load from Google Fonts; wait for them before the screenshot. Fix any problem through the data or map nudges,
   then rebuild.
 - Then: `git add -A && git commit -m "Edition DATE (DESIGN)" && git push origin main`. Commit as
   "Resistance Daily <resistancedaily.in@gmail.com>". If the push is refused, don't retry: note it for the notification
@@ -255,33 +265,22 @@ which also rebuilds the home page and sitemap). See the header of tools/hope.py 
   as `files` so the photos load.
 
 ## STEP 6. Instagram carousel
-Keep the ORIGINAL text-led style. 7 slides, 1080×1350 (6 when data/hope.json has nothing from the past 14 days).
-- Fonts: Barlow Condensed 800, IBM Plex Sans 400/600, IBM Plex Mono 500 (tools/slides.py fetches them with npm pack).
-- Colours: BG #f3f4f2, INK #15181d, ACCENT #d9661a, RED #b3261e, GREEN #1d7a4c. Padding 90/84. Mono uppercase label
-  top-left, "n / N" top-right.
-- Slide 1 (cover): keep every element inside the middle 860px (x 110–970) so the 3:4 profile-grid crop never cuts text.
-  Date as the largest element, the tagline "What happened to people's rights in the last 24 hours. Every fact sourced.",
-  then 4 rows of place name above a one-line headline (max ~45 characters). Footer: "Swipe → · Sources: link in bio".
-  OWNER'S REQUEST, 23–29 Oct 2026: use the "mosaic" cover every day, Sunday included (four story photos edge to edge,
-  the date in an orange circle where they meet). OWNER'S REQUEST, 30 Oct–5 Nov 2026: use the "photo" cover every day,
-  Sunday included. tools/slides.py applies both via COVER_PERIODS; after 5 Nov the rotation below resumes.
-  SUNDAY COVER (owner's rule, 1 Nov 2026): on Sunday, keep the SAME LAYOUT as the current week's cover (the active
-  COVER_PERIODS style), only in white: light panel, red place names and the red "+ Still waiting" tag. tools/slides.py
-  does this automatically (cover_style(): photo → "photo-sunday", night → "sunday"; mosaic keeps its layout). The
-  layout must match even without a photo: "photo-sunday" then keeps the photo area as a plain dark block. Don't fall
-  back to a different layout on Sunday. When no period is active, Sunday uses the rotation's "sunday" cover.
-  The cover style rotates by IST weekday (tools/slides.py picks it; set "cover_style" in DATE.slides.json to override):
-  Mon photo · Tue paper · Wed signal · Thu night · Fri photo · Sat paper · Sun sunday. photo = the first story photo
-  (≥900px) across the top with the date on it and the rows on dark below, with the photo's file-photo year and
-  author in the footer (falls back to night if no story has a big enough photo); paper = light newspaper front with
-  heavy rules and red numbers 01–04; signal = orange background, ink date, white place names; night = dark with
-  orange place names; sunday = light with red place names and a red "+ Still waiting" tag.
-- Slides 2–5 (light): one story each, led by a big red number with a grey label, then 2–3 short bullets and a
-  "Sources: …" line. Every story slide has the same shape: the top area holds the item's photo (with a "File photo · YEAR" tag
-  and the photo credit under the sources), or, when there is no photo, the big number on a grey panel. On Sundays, show Still Waiting cases instead.
-- Slide 6 (dark): "Act today", "Whatever your politics", and the 4 actions with green left borders. Footer:
+Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/hope.json has nothing from the past 14 days).
+- Fonts: Caprasimo (headings) and Figtree (body); tools/slides.py fetches them with npm pack. Ground #f5ead8, text
+  #201e1d, accent #c67139 (accent text #8c491a), sage #e1eecc with #272e1b text for upheld stories and the hope slide.
+  Photos are washed (saturate .6, contrast .85, brightness 1.1). No red anywhere. Keep face-blurring and credit rules.
+- Slide 1 (cover, "threads" from 5 Nov; slides.py picks it): "Where things stand today", the date as the largest
+  element, the first story's washed arch photo, then 4 rows of place name above a one-line headline (max ~45
+  characters). Keep every element inside the middle 860px (x 110–970) so the 3:4 grid crop never cuts text. Footer:
+  "Swipe → · Sources: link in bio" plus the photo's label and author. ("cover_style" in DATE.slides.json still
+  overrides; older styles remain for past dates.)
+- Slides 2–5 (cream, or sage when the item is upheld): kicker = the item's thread name (or the slide label for a
+  one-off), "n / N"; the washed arch photo with its "File photo · YEAR" pill (or, with no photo, the key figure in the
+  arch); the word tag (Lives lost / Right upheld / Assembly / Speech / Detention) and the place; the headline; 2–3 short
+  bullets; "Sources: …" and the photo credit. On Sundays, show Still waiting cases instead (label as kicker).
+- Slide 6 (dark): "Act today", "Whatever your politics", and the 4 actions with sage left borders. Footer:
   "Non-partisan · Every fact sourced · Full edition: link in bio".
-- NEED HOPE (owner's request, 4 Nov 2026): slide 7 (light green) is "Signs of hope": the 3 newest items from
+- NEED HOPE (owner's request, 4 Nov 2026): slide 7 (sage) is "Signs of hope": the 3 newest items from
   data/hope.json ("slide_head" in bold, "slide" under it, their sources in the footer, "More signs of hope: link in bio").
   Every cover carries a green "Need hope? · Last slide →" sticker beside the date (option A, approved by the owner).
   tools/slides.py adds both automatically when there are hope items; check both on the contact sheet. Slide 7's caption

@@ -273,7 +273,7 @@
    "takeaway": "The smoke has reached five more countries. Singapore has served legal notices on 10 Indonesian firms.",
    "visual": {
     "type": "map",
-    "cap": "Red: fire areas named in the reporting. Grey: countries the smoke has reached.",
+    "cap": "Orange: fire areas named in the reporting. Grey: countries the smoke has reached.",
     "src": [
      [
       "Guardian",

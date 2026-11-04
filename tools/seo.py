@@ -97,6 +97,8 @@ def write_sitemap(root):
     hope = os.path.join(root, "data", "hope.json")
     if os.path.exists(hope) and os.path.exists(os.path.join(root, "hope", "index.html")):
         urls.append((SITE + "hope/", json.load(open(hope))["updated"]))
+    if os.path.exists(os.path.join(root, "still-waiting", "index.html")):
+        urls.append((SITE + "still-waiting/", json.load(open(os.path.join(root, "data", "cases.json")))["asof"]))
     tf = os.path.join(root, "data", "threads.json")
     if os.path.exists(tf) and eds:
         for t in json.load(open(tf))["threads"]:

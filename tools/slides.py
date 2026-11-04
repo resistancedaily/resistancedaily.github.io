@@ -24,23 +24,32 @@ import sys, os, re, json, glob, html, subprocess, datetime
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS = os.path.join(root, "build", "fonts")
-PKGS = ["@fontsource/barlow-condensed@5.0.13", "@fontsource/ibm-plex-sans@5.0.20", "@fontsource/ibm-plex-mono@5.0.13"]
-BG, INK, AC, RED, GR = "#f3f4f2", "#15181d", "#d9661a", "#b3261e", "#1d7a4c"
+# Threads redesign (Nov 2026): Caprasimo (headings) and Figtree (body). The old family names used across the slide
+# templates are mapped onto them, so every slide type (covers, stories, focus, hope) takes the new type at once.
+PKGS = ["@fontsource/caprasimo@5.2.7", "@fontsource/figtree@5.2.10"]
+BG, INK, AC, RED, GR = "#f5ead8", "#201e1d", "#c67139", "#201e1d", "#7a8a5e"   # no red: RED is the text colour
+AC_T = "#8c491a"            # accent text on the cream ground
+SAGE, SAGE_T = "#e1eecc", "#272e1b"
+WASH = "filter:saturate(.6) contrast(.85) brightness(1.1) opacity(.94)"
 
 
 def fonts():
-    if not glob.glob(os.path.join(FONTS, "*", "package", "files")):
+    have = lambda pkg: glob.glob(os.path.join(FONTS, f"fontsource-{pkg}-*", "package", "files"))
+    if not all(have(p.split("/")[1].split("@")[0]) for p in PKGS):
         os.makedirs(FONTS, exist_ok=True)
         subprocess.run(["npm", "pack", "-q", *PKGS], cwd=FONTS, check=True, capture_output=True)
         for t in glob.glob(os.path.join(FONTS, "*.tgz")):
             d = t[:-4]; os.makedirs(d, exist_ok=True)
             subprocess.run(["tar", "xzf", t, "-C", d], check=True)
 
-    def ff(fam, pkg, w):
-        path = glob.glob(os.path.join(FONTS, f"fontsource-{pkg}-*", "package", "files", f"{pkg}-latin-{w}-normal.woff2"))[0]
-        return f"@font-face{{font-family:'{fam}';font-weight:{w};src:url('file://{path}') format('woff2')}}"
-    return "".join([ff("Barlow Condensed", "barlow-condensed", 800), ff("IBM Plex Sans", "ibm-plex-sans", 400),
-                    ff("IBM Plex Sans", "ibm-plex-sans", 600), ff("IBM Plex Mono", "ibm-plex-mono", 500)])
+    def ff(fam, pkg, w, as_w=None):
+        path = sorted(glob.glob(os.path.join(FONTS, f"fontsource-{pkg}-*", "package", "files", f"{pkg}-latin-{w}-normal.woff2")))[-1]
+        return f"@font-face{{font-family:'{fam}';font-weight:{as_w or w};src:url('file://{path}') format('woff2')}}"
+    return "".join([ff("Caprasimo", "caprasimo", 400), ff("Figtree", "figtree", 400), ff("Figtree", "figtree", 600),
+                    ff("Figtree", "figtree", 700),
+                    # old names -> new faces
+                    ff("Barlow Condensed", "caprasimo", 400, 800), ff("IBM Plex Sans", "figtree", 400),
+                    ff("IBM Plex Sans", "figtree", 600), ff("IBM Plex Mono", "figtree", 600, 500)])
 
 
 CSS = f"""
@@ -98,6 +107,31 @@ li:before{{content:'';position:absolute;left:0;top:16px;width:12px;height:12px;b
 .fig{{border-top:8px solid {RED};background:#fff;padding:26px 28px;display:grid;gap:10px;align-content:start}}
 .fig b{{font:800 104px 'Barlow Condensed';line-height:.9;color:{RED}}}
 .fig span{{font:500 24px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.04em;color:#5b616b}}
+/* ── Threads redesign overrides ── */
+.D,h2,.place,.act b,.fig b{{text-transform:none;letter-spacing:-.01em;line-height:1.02}}
+.top{{color:#645c50}} .lab,.srcs{{color:#645c50}}
+.big{{color:{INK}}}
+li:before{{background:{AC};border-radius:50%}}
+img{{{WASH}}}
+.act{{border-left-color:{GR}}} .act span{{color:#dcd3c4}}
+.fig{{border-top:0;background:#ebddc5;border-radius:32px}}
+.chip,.kick.on{{border-radius:999px}}
+/* story slide: kicker row, arch photo, tag pill, headline */
+.st{{padding:70px 84px 70px}}
+.st .k{{display:flex;justify-content:space-between;font:600 24px 'Figtree';text-transform:uppercase;letter-spacing:.08em;color:{AC_T}}}
+.st .k span+span{{color:#645c50}}
+.st .arch{{position:relative;height:500px;margin-top:30px;border-radius:250px 250px 40px 40px;overflow:hidden;background:#ebddc5;flex:none}}
+.st .arch img{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
+.st .arch .ptag{{position:absolute;left:28px;bottom:24px;font:600 20px 'Figtree';text-transform:uppercase;letter-spacing:.05em;background:rgba(46,43,37,.72);color:#f9f4ed;padding:8px 16px;border-radius:999px}}
+.st .arch.fp{{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}}
+.st .arch.fp b{{font:400 200px/1 'Caprasimo'}} .st .arch.fp span{{font:600 28px 'Figtree';color:#645c50;margin-top:10px}}
+.st .tags{{display:flex;gap:12px;align-items:center;margin-top:34px;font-size:26px;color:#645c50}}
+.st .tag{{font:600 24px 'Figtree';padding:8px 20px;border-radius:999px;background:#f9f4ed;color:#474238}}
+.st .tag.acc{{background:#ffe1d0;color:#643312}} .st .tag.up{{background:#f0fae1;color:#3d472b}}
+.st h2{{font:400 64px/1.08 'Caprasimo';margin-top:18px;text-transform:none}}
+.st ul{{margin-top:22px;gap:12px}} .st li{{font-size:29px}}
+.st .srcs{{font:400 21px 'Figtree';color:#645c50}}
+.st.up{{background:{SAGE};color:{SAGE_T}}} .st.up .k{{color:#3d472b}} .st.up .arch{{background:#ccdbb2}}
 """
 
 
@@ -249,7 +283,8 @@ def render(slides, out, prefix):
 COVER_ROTATION = ["photo", "paper", "signal", "night", "photo", "paper", "sunday"]  # Mon..Sun
 # Owner's requests: the mosaic cover every day 23–29 Oct, then the photo cover every day 30 Oct–5 Nov,
 # then back to the rotation.
-COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic"), ("2026-10-30", "2026-11-05", "photo")]
+COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic"), ("2026-10-30", "2026-11-04", "photo"),
+                 ("2026-11-05", "2099-12-31", "threads")]   # Threads redesign: one calm cover every day from 5 Nov
 TAGLINE = "What happened to people's rights in the last 24 hours. Every fact sourced."
 
 
@@ -293,6 +328,22 @@ def cover(dt, sp, by, N):
         cs = [f'{k + 1}: {ph["credit"].split(" / ")[0]}, {ph["licence"]}, {ph["year"]}' for k, (ph, _) in enumerate(pics) if ph]
         return f'File photos · {" · ".join(cs)}' if cs else ""
 
+    if style == "threads":
+        # "Where things stand today · Wed 4 Nov": cream ground, washed arch photo of the first story, 4 place rows.
+        p = next((pic(st, by) for st in sp["stories"] if pic(st, by) and big_enough(pic(st, by), 600)), None)
+        dd = dt.strftime("%a %d %b").replace(" 0", " ")
+        rows = "".join(f'<div style="border-top:2px solid rgba(32,30,29,.16);padding:16px 0 14px"><div style="font:600 24px Figtree;text-transform:uppercase;'
+                       f'letter-spacing:.06em;color:{AC_T}">{E(pl)}</div><div style="font:400 38px/1.15 Caprasimo;margin-top:6px">{E(h)}</div></div>'
+                       for pl, h in sp["cover"])
+        arch = (f'<div style="position:relative;height:330px;margin-top:26px;border-radius:165px 165px 36px 36px;overflow:hidden;flex:none">'
+                f'<img src="{E(src_url(p))}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:{E(p.get("pos", "center"))}"></div>') if p else ""
+        cred = f' · {E(label(p))} · {E(p["credit"].split(" / ")[0])}' if p else ""
+        return f'''<div class="s light" style="padding:80px 110px 70px">
+<div class="top">{brand(INK)}<span>1 / {N}</span></div>
+<div style="font:600 26px Figtree;text-transform:uppercase;letter-spacing:.08em;color:{AC_T};margin-top:40px">Where things stand today</div>
+<div style="font:400 120px/1 Caprasimo;margin-top:8px">{E(dd)}</div>{arch}
+<div style="margin-top:20px">{rows}</div>
+<div style="margin-top:auto;padding-top:18px;font:600 21px Figtree;color:#645c50;text-transform:uppercase;letter-spacing:.05em">{foot}{cred}</div></div>'''
     if style == "circles":
         # Four round photo windows in a 2x2 grid under the date; place and headline beneath each circle.
         cells = "".join(f'<div style="display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px">{disc(k, 220)}'
@@ -403,9 +454,9 @@ def cover(dt, sp, by, N):
 # "Need hope?" (owner's request, 4 Nov 2026): a green sticker on every daily cover points to the last slide, which
 # lists the latest items from data/hope.json (tools/hope.py). Sticker positions keep it beside the date and inside the
 # middle 860px (x 110-970) that the profile grid shows.
-STICKER_AT = {"photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
+STICKER_AT = {"threads": (800, 520, 190), "photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
               "signal": (765, 175, 200), "mosaic": (760, 330), "ring": (735, 120), "circles": (735, 60)}  # (left, top[, size])
-GREEN_L = "#e4f2e9"
+GREEN_L = SAGE
 
 
 def hope_items(dt, days=14, n=3):
@@ -427,13 +478,13 @@ def sticker(style):
 
 def hope_slide(items, N):
     rows = "".join(f'<div style="border-left:8px solid {GR};padding:6px 0 6px 26px"><b class="D" style="display:block;font-size:46px;line-height:1">{E(i.get("slide_head") or i["fig"])}</b>'
-                   f'<span style="display:block;font-size:27px;color:#3d4a42;margin-top:6px;line-height:1.3">{E(i["slide"])}</span></div>' for i in items)
+                   f'<span style="display:block;font-size:27px;color:#3d472b;margin-top:6px;line-height:1.3">{E(i["slide"])}</span></div>' for i in items)
     srcs = " · ".join(dict.fromkeys(n for i in items for n, _ in i["src"]))
-    return f'''<div class="s" style="background:{GREEN_L};color:{INK}"><div class="top" style="color:{GR}"><span>Need hope?</span><span style="color:#5b616b">{N} / {N}</span></div>
+    return f'''<div class="s" style="background:{GREEN_L};color:{SAGE_T}"><div class="top" style="color:{GR}"><span>Need hope?</span><span style="color:#5b616b">{N} / {N}</span></div>
 <div class="D" style="font-size:150px;line-height:.86;margin-top:60px">Signs of<br><span style="color:{GR}">hope</span></div>
-<p style="font-size:30px;color:#3d4a42;margin-top:20px">Rights upheld lately. Every fact sourced.</p>
+<p style="font-size:30px;color:#3d472b;margin-top:20px">Rights upheld lately. Every fact sourced.</p>
 <div style="margin-top:50px;display:grid;gap:26px">{rows}</div>
-<div style="margin-top:auto;border-top:2px solid #b7d6c2;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#3d4a42;text-transform:uppercase;letter-spacing:.05em">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
+<div style="margin-top:auto;border-top:2px solid #b7d6c2;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#3d472b;text-transform:uppercase;letter-spacing:.05em">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
 
 
 def daily(date, out):
@@ -453,17 +504,25 @@ def daily(date, out):
         if p and not big_enough(p):
             print(f"note: photo for item {st['n']} is too small for a slide; showing its key figure instead", file=sys.stderr)
             p = None
-        if p:
-            slides.append(f'''<div class="s light ph"><div class="img"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
-<div class="top"><span>{E(st["label"])}</span><span>{k} / {N}</span></div><span class="chip">{E(label(p))}</span></div>
-<div class="body"><div class="row"><div class="big">{E(st["fig"])}</div><div class="lab">{E(st["figlab"])}</div></div>
-<div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
-<div class="srcs">Sources: {E(st["src"])}<br>{E(credit(p))}</div></div></div>''')
-        else:
-            slides.append(f'''<div class="s light ph"><div class="img figp">
-<div class="top"><span>{E(st["label"])}</span><span>{k} / {N}</span></div><div class="big">{E(st["fig"])}</div><div class="lab">{E(st["figlab"])}</div></div>
-<div class="body"><div class="place">{E(st["place"])}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
-<div class="srcs">Sources: {E(st["src"])}</div></div></div>''')
+        it = by.get(st.get("n"), {})
+        # Threads redesign: kicker = the item's thread name (else the slide label), a washed arch photo (or the key
+        # figure), the calm word tag, the headline, bullets and sources. Upheld items sit on the sage ground.
+        tname, tg, up = st["label"], None, False
+        if it:
+            sys.path.insert(0, os.path.join(root, "tools"))
+            import threads as T
+            regs = {t["slug"]: t for t in T.registry()}
+            s_ = T.thread_of(it)
+            tname = regs[s_]["name"] if s_ in regs else st["label"].split("·")[0].strip()
+            tg = T.tag(it, date)
+            up = T.upheld(it, date)
+        cls = {"tag tag-accent-2": "tag up", "tag tag-accent": "tag acc"}.get(tg[1], "tag") if tg else "tag"
+        tags = (f'<span class="{cls}">{E(tg[0])}</span>' if tg else "") + f'<span>{E(st["place"])}</span>'
+        arch = (f'<div class="arch"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}"><span class="ptag">{E(label(p))}</span></div>'
+                if p else f'<div class="arch fp"><b>{E(st["fig"])}</b><span>{E(st["figlab"])}</span></div>')
+        slides.append(f'''<div class="s st{" up" if up else " light"}"><div class="k"><span>{E(tname)}</span><span>{k} / {N}</span></div>
+{arch}<div class="tags">{tags}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
+<div class="srcs">Sources: {E(st["src"])}{"<br>" + E(credit(p)) if p else ""}</div></div>''')
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in d["acts"])
     slides.append(f'''<div class="s dark">{top("Act today", N - 1 if hope else N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
 <div class="D" style="font-size:64px;color:{AC};margin-top:10px">Whatever your politics</div><div style="margin-top:30px">{acts}</div>

@@ -21,6 +21,7 @@ item; never overstate; say what is still unresolved. The page lists items newest
 """
 import sys, os, json, html, datetime, subprocess
 import seo
+import rdsite as S
 
 E = html.escape
 root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -47,18 +48,19 @@ def recent(data, n=3):
 
 
 def card(i):
+    """Sage card (Threads redesign): tag, date, headline, paragraph, sources, photo credit, thread link."""
     p = i.get("photo")
-    top = (f'<img src="../{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async">' if p else
-           f'<div class="fp"><b>{E(i["fig"])}</b><span>{E(i["figcap"])}</span></div>')
-    d = datetime.date.fromisoformat(i["date"]).strftime("%d %b")
+    top = (f'<img class="washed" src="../{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async">' if p else "")
+    d = datetime.date.fromisoformat(i["date"]).strftime("%d %b").lstrip("0")
     src = " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in i["src"])
+    part = ""
     if i.get("link"):
-        src += f' · <a class="more" href="../{E(i["link"][1])}">{E(i["link"][0])} →</a>'
+        part = f'<a class="rd-more" href="../{E(i["link"][1])}">Part of {E(i["link"][0])} →</a>'
     cr = (f'<span class="cr">{"File photo · " + E(p["year"]) if p.get("kind") != "event" else "Photo from the event"}: '
           f'<a href="{E(p["page"])}">{E(p["credit"])}</a>, <a href="{E(p["licence_url"])}">{E(p["licence"])}</a></span>') if p else ""
-    return (f'<article class="c" id="{E(i["id"])}" data-k="{E(i["kind"])}">{top}<div class="t">'
-            f'<span class="k">{E(i["kind"])} · {E(" · ".join(i["rights"]))} · {d}</span><h3>{E(i["headline"])}</h3>'
-            f'<p>{E(i["text"])}</p><span class="src"><b class="where">{E(i["place"].split(",")[0])}</b> · {src}</span>{cr}</div></article>')
+    return (f'<article class="hc" id="{E(i["id"])}" data-k="{E(i["kind"])}">{top}<div class="t">'
+            f'<div class="rd-row" style="gap:8px"><span class="tag tag-accent-2">Right upheld</span><span class="hk">{E(i["kind"])} · {d}</span></div>'
+            f'<h3>{E(i["headline"])}</h3><p>{E(i["text"])}</p><span class="src"><b>{E(i["place"].split(",")[0])}</b> · {src}</span>{part}{cr}</div></article>')
 
 
 def build(today):
@@ -72,80 +74,48 @@ def build(today):
     url = SITE + "hope/"
     ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": url,
           "dateModified": data["updated"], "publisher": {"@type": "NewsMediaOrganization", "name": "Resistance Daily", "url": SITE}}
+    month = sum(1 for i in items if 0 <= (today - datetime.date.fromisoformat(i["date"])).days < 31)
+    week = sum(1 for i in items if 0 <= (today - datetime.date.fromisoformat(i["date"])).days < 7)
     CSS = """
-:root{--bg:#f3f4f2;--paper:#fff;--ink:#15181d;--muted:#5b616b;--rule:#d9dcd8;--green:#1d7a4c;--gl:#e4f2e9;--chip:#eceee9;
---display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;--body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--green:#3fb07a;--gl:#18291f;--chip:#22262c;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#111317;--paper:#181b20;--ink:#eceae5;--muted:#9ba1aa;--rule:#2b2f36;--green:#3fb07a;--gl:#18291f;--chip:#22262c;color-scheme:dark}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 var(--body)}
-.wrap{max-width:900px;margin:0 auto;padding:20px max(16px,env(safe-area-inset-left,0px)) 48px;display:grid;gap:22px}
-a{color:inherit;text-decoration-color:var(--green);text-underline-offset:2px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--green);outline-offset:2px}
-p{margin:0}
-.top-nav{display:flex;justify-content:space-between;gap:12px;font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;border-bottom:3px solid var(--ink);padding-bottom:10px}
-.top-nav b{font-weight:500}
-h1{font:800 clamp(44px,9vw,72px)/.92 var(--display);text-transform:uppercase;margin:0}
-h1 span{color:var(--green)}
-.lede{color:var(--muted);max-width:60ch;margin-top:8px;font-size:16px}
-.hero{background:var(--paper);border:1px solid var(--rule);border-top:6px solid var(--green);border-radius:8px;padding:18px;display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:center}
-.hero b{font:800 96px/.85 var(--display);color:var(--green);grid-row:span 2}
-.hero .cap{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
-.hero p{font-size:16px}
-.filters{display:flex;gap:6px;flex-wrap:wrap}
-.filters button{font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.04em;padding:7px 11px;border-radius:999px;background:var(--paper);color:var(--ink);border:1px solid var(--rule);cursor:pointer}
-.filters button[aria-pressed="true"]{background:var(--green);color:#fff;border-color:var(--green)}
-.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr));gap:12px}
-.c{background:var(--paper);border:1px solid var(--rule);border-radius:8px;overflow:hidden;display:grid;align-content:start;scroll-margin-top:16px}
-.c[hidden]{display:none}
-.c img,.c .fp{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;background:var(--chip)}
-.c .fp{background:var(--gl);display:grid;place-content:center;text-align:center;gap:4px}
-.fp b{font:800 64px/.9 var(--display);color:var(--green);text-transform:uppercase}.fp span{font:500 11px var(--mono);text-transform:uppercase;color:var(--muted)}
-.c .t{padding:12px 14px;display:grid;gap:6px}
-.k{font:600 10.5px var(--mono);text-transform:uppercase;letter-spacing:.05em;color:var(--green)}
-.c h3{font:600 19px/1.25 var(--body);text-transform:none;margin:0;text-wrap:balance}
-.c p{font-size:14px}
-.where{font-weight:600;color:var(--ink)}
-.src{font-size:12px;color:var(--muted)}.more{font-weight:600;color:var(--ink)}
-.cr{font-size:11px;color:var(--muted)}
-.back{display:flex;gap:10px;flex-wrap:wrap}
-.back a{font-weight:600;font-size:14px;padding:10px 14px;border-radius:6px;background:var(--ink);color:var(--bg);text-decoration:none}
-details{background:var(--paper);border:1px solid var(--rule);border-radius:6px;padding:10px 14px}
-summary{font-weight:600;cursor:pointer}
-details ul{margin:8px 0 0;padding-left:18px;display:grid;gap:4px;font-size:14px}
-footer{font-size:12.5px;color:var(--muted);border-top:1px solid var(--rule);padding-top:12px;display:grid;gap:4px}
+.hhero{margin:-28px calc(50% - 50vw) 0;padding:44px calc(50vw - 50% + 64px) 40px;background:var(--color-accent-2-200);color:var(--color-accent-2-900);border-radius:0 0 48px 48px}
+.hhero h1{font-size:52px;margin:6px 0 6px;color:inherit}
+.hhero .rd-kicker{color:var(--color-accent-2-800)}
+.hhero p{margin:0;font-size:17px}
+.hhero .n{font-family:var(--font-heading);font-size:22px;margin-top:10px;display:block}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{font:600 13px var(--font-body);padding:8px 14px;border-radius:999px;background:var(--color-accent-2-100);color:var(--color-accent-2-900);border:0;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--color-accent-2);color:#fff}
+.hcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.hc{background:var(--color-accent-2-100);color:var(--color-accent-2-900);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:16px}
+.hc[hidden]{display:none}
+.hc img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hc .t{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px}
+.hc h3{font-size:22px;line-height:1.2;margin:0;color:inherit}
+.hc p{margin:0;font-size:15px}
+.hk{font-size:12.5px;color:var(--color-accent-2-800)}
+.hc .src{font-size:13px}.hc a{color:var(--color-accent-2-900)}
+.hc .cr{font-size:11.5px;opacity:.85}
+.rd-how ul a{color:inherit}
+@media (max-width:720px){.hhero{margin-top:-22px;padding:30px calc(50vw - 50% + 18px) 28px;border-radius:0 0 32px 32px}.hhero h1{font-size:34px}}
 """
-    page = f"""<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>{E(title)} · Resistance Daily</title>
-<meta name="description" content="{E(desc)}">
-<meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:type" content="website">
-<meta property="og:url" content="{url}"><meta property="og:site_name" content="Resistance Daily"><meta name="twitter:card" content="summary">
-<link rel="canonical" href="{url}">
-{seo.jsonld(ld)}
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
-<style>{CSS}</style></head><body><div class="wrap">
-<nav class="top-nav"><a href="../"><b>Resistance Daily</b></a><span><a href="../today/">Today</a> · <a href="../focus/">Focus</a></span></nav>
-<header><h1>Signs of <span>hope</span></h1>
-<p class="lede">Where rights were upheld: court rulings, accountability, releases, and people helping each other. Same rule as every page: every fact is sourced.</p></header>
-<div class="hero"><b>{n}</b><span class="cap">rights upheld {E(period)}</span><p>Courts, accountability and people who held their ground. Updated {datetime.date.fromisoformat(data["updated"]).strftime("%d %b %Y")}.</p></div>
+    extra = (f'<meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">'
+             + seo.jsonld(ld))
+    page = (S.head(f"{title} · Resistance Daily", desc, "../", url, extra, css=CSS) + S.nav("../") + f"""
+<header class="hhero"><span class="rd-kicker">Signs of hope</span><h1>Rights upheld</h1>
+<p>Where rights were upheld: court rulings, accountability, releases, and people helping each other. Every fact sourced.</p>
+<span class="n">{week} this week · {month} this month</span></header>
 <div class="filters" role="group" aria-label="Filter by kind">{"".join(f'<button type="button" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
-<section class="cards" aria-label="Signs of hope">{"".join(card(i) for i in items)}</section>
-<div class="back"><a href="../today/">Back to today's edition</a></div>
-<details><summary>How we choose</summary><ul>
+<section class="hcards" aria-label="Rights upheld">{"".join(card(i) for i in items)}</section>
+<details class="rd-how"><summary>How we choose</summary><ul>
 <li>Rights upheld, not sides won: we judge the outcome for people's rights, whoever governs.</li>
 <li>Every fact links to its source, and the official position stays in.</li>
 <li>Hope is not spin: we never overstate, and we say what is still unresolved (for example, "he has not been arrested").</li>
 <li>Know of people helping each other, or a community that won its fight? Write to <a href="mailto:resistancedaily.in@gmail.com">resistancedaily.in@gmail.com</a>.</li></ul></details>
-<footer><span>{seo.FOLLOW}</span></footer>
-</div>
 <script>
 (function(){{document.querySelectorAll('.filters button').forEach(function(b){{b.addEventListener('click',function(){{
 document.querySelectorAll('.filters button').forEach(function(x){{x.setAttribute('aria-pressed',x===b)}});
-var k=b.dataset.k;document.querySelectorAll('.c').forEach(function(c){{c.hidden=!(k==='All'||c.dataset.k===k)}});}})}});}})();
-</script></body></html>
-"""
+var k=b.dataset.k;document.querySelectorAll('.hc').forEach(function(c){{c.hidden=!(k==='All'||c.dataset.k===k)}});}})}});}})();
+</script>""" + S.footer("../"))
     os.makedirs(os.path.join(root, "hope"), exist_ok=True)
     open(os.path.join(root, "hope", "index.html"), "w").write(page)
     return n, period, len(items)

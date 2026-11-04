@@ -31,7 +31,7 @@ def load(p):
     return json.load(open(os.path.join(root, p)))
 
 
-def head(title, desc, prefix, canonical, extra="", noindex=False):
+def head(title, desc, prefix, canonical, extra="", noindex=False, css=""):
     """Document start up to <body>. `extra`: og:image, JSON-LD and other tags."""
     return f"""<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -39,7 +39,7 @@ def head(title, desc, prefix, canonical, extra="", noindex=False):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:site_name" content="Resistance Daily">
 <link rel="canonical" href="{canonical}"><link rel="icon" href="{ICON}">{extra}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{prefix}assets/organic.css"><link rel="stylesheet" href="{prefix}assets/rd.css">
+<link rel="stylesheet" href="{prefix}assets/organic.css"><link rel="stylesheet" href="{prefix}assets/rd.css">{f"<style>{css}</style>" if css else ""}
 </head><body><div class="rd-wrap">"""
 
 
