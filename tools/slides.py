@@ -467,6 +467,22 @@ def hope_items(dt, days=14, n=3):
     return sorted(items, key=lambda i: i["date"], reverse=True)[:n]
 
 
+def focus_hope(slug, n=3):
+    """Signs of hope for a Focus carousel: items linked to this Focus ("link" -> focus/SLUG.html) first, then the
+    latest ones from the past 14 days, up to n."""
+    p = os.path.join(root, "data", "hope.json")
+    if not os.path.exists(p):
+        return []
+    items = json.load(open(p))["items"]
+    mine = sorted([i for i in items if (i.get("link") or ["", ""])[1].endswith(f"focus/{slug}.html")], key=lambda i: i["date"], reverse=True)
+    rest = [i for i in hope_items(ist_today(), n=n + len(mine)) if i not in mine]
+    return (mine + rest)[:n]
+
+
+def ist_today():
+    return (datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)).date()
+
+
 def sticker(style):
     x, y, *z = STICKER_AT.get(style, (735, 160))
     z = z[0] if z else 230
@@ -555,13 +571,17 @@ def focus(slug, out, update=False):
         sys.exit("--update needs a \"whats_new\" entry in the Focus JSON")
     when = datetime.date.fromisoformat(wn["date"]).strftime("%d %b") if wn else ""
     ph = f["photos"][:7]
-    N = len(ph) + 2
+    hope = focus_hope(slug)  # "Need hope?" (owner's rule): Focus carousels end on Signs of hope too
+    N = len(ph) + 2 + (1 if hope else 0)
+    END = len(ph) + 2  # the "Read the full story" slide
     first = ph[0]
     slides = [f'''<div class="s full"><img src="{E(src_url(first))}" alt="" style="object-position:{E(first.get("pos", "center"))}"><div class="shade"></div>
 <div class="in"><div class="top"><span style="display:flex;align-items:center;gap:14px;color:#fff"><i style="display:inline-block;width:44px;height:8px;background:{AC}"></i>Resistance Daily · Focus</span><span>1 / {N}</span></div>
 <div style="margin-top:auto;display:grid;gap:20px">{f'<span class="kick on" style="background:{RED};color:#fff">Update · {E(when)}</span>' if wn else ''}<span class="kick on">{E(f["kicker"].replace("Focus · ", ""))}</span>
-<div class="D" style="font-size:132px">{E(f["title"])}</div><p style="font-size:34px;line-height:1.35;color:#e8e8e8">{E(wn["text"] if wn else f["dek"])}</p>
+<div class="D" style="font-size:132px">{E(f.get("short", f["title"]))}</div><p style="font-size:34px;line-height:1.35;color:#e8e8e8">{E(wn["text"] if wn else f["dek"])}</p>
 <div style="font:500 22px 'IBM Plex Mono';color:#cfcfcf;text-transform:uppercase;letter-spacing:.06em;border-top:2px solid rgba(255,255,255,.3);padding-top:18px">Swipe for photos → · {E(label(first))} · {E(credit(first))}</div></div></div></div>''']
+    if hope:  # the sticker sits inside the cover's outer box, top right, clear of the title at the bottom
+        slides[0] = slides[0][:slides[0].rstrip().rfind("</div>")] + sticker("night") + "</div>"
     for k, p in enumerate(ph[1:], 2):
         slides.append(f'''<div class="s pslide"><div class="pimg full"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}">
 <div style="position:absolute;inset:0 0 auto 0;height:240px;background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0))"></div>
@@ -584,12 +604,14 @@ def focus(slug, out, update=False):
     off = ig.get("official_short") or f.get("official", {}).get("text", "").split(". ")[0].rstrip(".") + "."
     if not ig.get("official_short") and f.get("official"):
         print('note: add "instagram": {"official_short": "..."} (one sentence) for the last slide', file=sys.stderr)
-    slides.append(f'''<div class="s full"><img src="{E(src_url(ep))}" alt="" style="object-position:{E(ep.get("pos", "center"))};filter:brightness(.55)"><div class="shade"></div><div class="in">{top("Focus · Full story", N, N)}<div class="D" style="font-size:120px;margin-top:60px">Read the full story</div>
+    slides.append(f'''<div class="s full"><img src="{E(src_url(ep))}" alt="" style="object-position:{E(ep.get("pos", "center"))};filter:brightness(.55)"><div class="shade"></div><div class="in">{top("Focus · Full story", END, N)}<div class="D" style="font-size:120px;margin-top:60px">Read the full story</div>
 <p style="font-size:34px;line-height:1.4;color:#d0d3d8;margin-top:34px">The full story, with a source for every fact, is on our website.</p>
 <div style="margin-top:40px;border-left:8px solid {GR};padding:10px 0 10px 26px"><b style="font:800 46px 'Barlow Condensed';text-transform:uppercase;display:block">Link in bio</b>
 <span style="font:500 26px 'IBM Plex Mono';color:#9ba1aa">resistancedaily.github.io/focus/{E(slug)}</span></div>
 {f'<p style="font-size:32px;line-height:1.4;color:#b8bcc2;margin-top:44px"><b style="font:500 22px IBM Plex Mono;text-transform:uppercase;letter-spacing:.06em;color:#9ba1aa;display:block;margin-bottom:8px">Official position</b>{E(off)}</p>' if off else ''}
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced<br><span style="text-transform:none">{E(label(ep))} · {E(credit(ep))}</span></div></div></div>''')
+    if hope:
+        slides.append(hope_slide(hope, N))
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
     # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
@@ -617,10 +639,18 @@ def focus(slug, out, update=False):
     caps.append("\n\n".join(x["text"] + ("" if {n for n, u in x["src"]} <= shown else "\n" + srcs_of(x["src"]))
                               for x in per[-1]))
     caps.append(srcs_of(f["official"]["src"]) if off else "")
+    hope_cap = (ig.get("hope_caption") or "Not every story is bad news: courts, communities and neighbours are holding the line. "
+                "Every card on our Signs of hope page has its source: link in bio.\nSource: "
+                + " · ".join(dict.fromkeys(n for i in hope for n, _ in i["src"]))) if hope else None
+    if hope:
+        caps.append(hope_cap)
     if ig.get("slide_captions"):  # owner's rule: short hand-written captions, one per slide, win when given
-        if len(ig["slide_captions"]) != N:
+        sc = list(ig["slide_captions"])
+        if hope and len(sc) == END:  # captions written for the slides before Signs of hope: add its caption
+            sc.append(hope_cap)
+        if len(sc) != N:
             sys.exit(f'"slide_captions" has {len(ig["slide_captions"])} entries; this carousel has {N} slides')
-        caps = list(ig["slide_captions"])
+        caps = sc
     else:
         print('note: no "instagram": {"slide_captions"}; using the long story paragraphs as captions', file=sys.stderr)
     open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
@@ -629,7 +659,10 @@ def focus(slug, out, update=False):
     alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
     alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
-    alts.append(f"Slide {N}: Read the full story at resistancedaily.github.io/focus/{slug}, link in bio." + (f" Official position: {off}" if off else ""))
+    alts.append(f"Slide {END}: Read the full story at resistancedaily.github.io/focus/{slug}, link in bio." + (f" Official position: {off}" if off else ""))
+    if hope:
+        alts[0] += " A green sticker reads: Need hope? Last slide."
+        alts.append(f"Slide {N}: Signs of hope. " + "; ".join(f"{i.get('slide_head') or i['fig']}: {i['slide']}" for i in hope) + ".")
     open(os.path.join(out, "alt-text.txt"), "w").write("\n\n".join(alts) + "\n")
 
 

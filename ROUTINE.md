@@ -285,6 +285,10 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   Every cover carries a green "Need hope? · Last slide →" sticker beside the date (option A, approved by the owner).
   tools/slides.py adds both automatically when there are hope items; check both on the contact sheet. Slide 7's caption
   is "hope_caption" in DATE.slides.json (1–2 sentences on what was upheld, then "Source: …"), or a default pointer.
+  Focus carousels end the same way (owner's request, 4 Nov 2026): tools/slides.py focus adds the sticker and a last
+  "Signs of hope" slide, preferring hope items whose "link" points to that Focus, then the latest ones. Give the Focus
+  "instagram": {"hope_caption"} (what was upheld, then "Source: …"); hand-written "slide_captions" cover the slides
+  before it. Focus covers show the "short" title so the sticker never covers it.
 - Write data/DATE.slides.json ("cover": 4 [place, headline] rows; "stories": 4 entries with n, label, fig, figlab, place,
   head, bullets, src) and run `python3 tools/slides.py daily DATE OUT`. It applies this style, adds each story's photo
   when the item has one (photos under 900px wide keep the text layout), saves JPEGs at quality 82 and writes
