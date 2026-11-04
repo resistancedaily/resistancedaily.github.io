@@ -19,12 +19,15 @@ CSS = """
 .swg{font-size:24px;margin:10px 0 0}
 .swc{background:var(--color-surface);border-radius:28px;padding:20px 24px;display:grid;grid-template-columns:1fr auto;gap:6px 24px;align-items:start}
 .swc h3{font-size:20px;margin:0;line-height:1.2}
-.swc .n{grid-row:span 3;text-align:right;font-family:var(--font-heading);font-size:32px;line-height:1;color:var(--color-text)}
+.swc .n{grid-row:span 3;text-align:right;font-family:var(--font-heading);font-size:32px;line-height:1;color:var(--color-text);max-width:220px}
 .swc .n small{display:block;font-family:var(--font-body);font-size:12.5px;color:var(--color-neutral-700);margin-top:4px}
 .swc .w{font-size:13.5px;color:var(--color-neutral-700)}
 .swc p{margin:0;font-size:15px;grid-column:1/-1}
 .swc .rd-src{grid-column:1/-1}
-@media (max-width:720px){.swh h1{font-size:30px}.swc{padding:16px 18px}.swc .n{font-size:26px}}
+@media (max-width:720px){.swh h1{font-size:30px}
+.swc{padding:16px 18px;grid-template-columns:1fr;gap:6px}
+.swc .n{grid-row:auto;text-align:left;max-width:none;font-size:26px;display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.swc .n small{display:inline;margin:0}}
 """
 
 
