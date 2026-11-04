@@ -172,7 +172,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
 <section class="rd-sec"><div class="rd-hd"><h2 class="rd-h">Past editions</h2><a href="{prefix}archive/">All →</a></div><ul class="rd-past">{past}</ul></section></div>
 <section class="rd-sec"><h2 class="rd-h">Act today <span class="rd-sub">· whatever your politics</span></h2><div class="rd-acts">{acts}</div></section>
 <details class="rd-stories" id="stories"><summary><b>All stories this day</b><span class="rd-sub"> · {len(items)}, each with its sources</span>
-<span class="rd-show">Show</span></summary>{stories}</details>
+</summary>{stories}<button type="button" class="btn btn-secondary rd-collapse" data-rd-collapse>Hide all stories &minus;</button></details>
 <details class="rd-how" id="how"><summary>How we report</summary><ul>{S.HOW}</ul></details>
 {map_dialog}
 <script type="application/json" id="rd-threads">{esc_json(pdata)}</script>"""

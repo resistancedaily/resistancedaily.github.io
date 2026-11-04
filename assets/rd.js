@@ -28,6 +28,11 @@
     if (d && !d.open) { d.open = true; el.scrollIntoView(); }
   }
   window.addEventListener('hashchange', openStory); openStory();
+  // "Hide all stories −" at the end of the long list: close it and return to its header.
+  document.querySelectorAll('[data-rd-collapse]').forEach(b => b.addEventListener('click', () => {
+    const d = b.closest('details'); if (!d) return; d.open = false; d.scrollIntoView({ block: 'start' });
+    if (/^#i\d+$/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search);
+  }));
 
   // Map dialog.
   const mapd = document.querySelector('dialog.rd-mapd');

@@ -150,8 +150,10 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
 .rd-stories { background: var(--color-surface); border-radius: 28px; padding: 18px 24px; }
 .rd-stories > summary { display: flex; align-items: baseline; gap: 6px; }
 .rd-stories > summary b { font-family: var(--font-heading); font-weight: 400; font-size: 20px; }
-.rd-stories > summary .rd-show { margin-left: auto; font-family: var(--font-heading); font-size: 14px; color: var(--color-accent-700); }
-.rd-stories[open] .rd-show { display: none; }
+.rd-stories > summary::after { content: "+"; margin-left: auto; flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--color-neutral-100);
+  display: grid; place-items: center; font-family: var(--font-body); font-size: 18px; align-self: center; }
+.rd-stories[open] > summary::after { content: "−"; }
+.rd-collapse { display: flex; margin: 16px auto 4px; }
 .rd-story { display: grid; grid-template-columns: 220px 1fr; gap: 20px; padding: 18px 0; border-top: 1px solid var(--color-divider); scroll-margin-top: 16px; }
 .rd-story:first-of-type { margin-top: 12px; }
 .rd-story:target { background: color-mix(in srgb, var(--color-accent) 10%, transparent); border-radius: 18px; }
