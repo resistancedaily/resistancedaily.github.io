@@ -87,6 +87,8 @@ ai = (S.head("Past editions · Resistance Daily", "Every Resistance Daily editio
 open(os.path.join(root, "archive", "index.html"), "w").write(ai)
 
 T.build_all()
+import following
+following.build(date)
 import stillwaiting
 stillwaiting.build()
 seo.write_sitemap(root)

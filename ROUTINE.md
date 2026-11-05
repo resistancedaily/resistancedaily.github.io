@@ -29,7 +29,10 @@ the world map zooms to the day's pins), Rights upheld. Below "When you have more
 today, a link to "All stories today" and How we report. The map carries a legend (orange = Lives lost, grey = other stories). The full stories (every item with photo, sources and its #iN
 anchor: the complete sourced record) are on their own page, stories/DATE.html (owner's request, 5 Nov 2026: tap a
 story, read it, press Back and land where you were); "Also today" rows and map pins link there. The inlined backup page
-keeps them folded on the page. Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
+keeps them folded on the page. FOLLOWING (owner's request, 5 Nov 2026): the "Following · N" pill links to following/, built
+by tools/following.py (publish.py runs it): the reader's followed threads (stored only on their device), newest news first,
+quiet ones greyed with their last date, tap to play; with none followed, thread chips to follow in one tap. All threads
+cards on the home page carry a small +/✓ follow toggle. Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
 Detention); never render red. Keep "sev" in the data: it still orders threads and colours map pins.
 - THREADS: data/threads.json is the registry ({slug, name, focus?, page?, stat?, stat_from?}). An item's thread is
   "thread" if set, else its "focus" slug, else "accountability" when "Accountability Watch" is in its rights, else none

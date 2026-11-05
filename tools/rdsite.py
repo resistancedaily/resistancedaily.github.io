@@ -52,7 +52,7 @@ def head(title, desc, prefix, canonical, extra="", noindex=False, css=""):
 def nav(prefix):
     return f"""<nav class="rd-nav" aria-label="Site"><a class="rd-brand" href="{prefix or './'}">Resistance Daily</a>
 <span class="rd-links"><a href="{prefix}focus/">Threads</a><a href="{prefix}hope/">Rights upheld</a><a href="{prefix}archive/">Archive</a><a href="{prefix}#how">How we report</a></span>
-<span class="tag tag-neutral rd-fol">Following · <span data-rd-follow-count>0</span></span></nav>"""
+<a class="tag tag-neutral rd-fol" href="{prefix}following/">Following · <span data-rd-follow-count>0</span></a></nav>"""
 
 
 def footer(prefix):

@@ -16,7 +16,7 @@
 
   // Follow buttons on thread / focus / accountability pages (work without the player).
   document.querySelectorAll('[data-rd-follow]').forEach(b => {
-    const s = b.dataset.rdFollow, lab = () => { b.textContent = follow.has(s) ? 'Following' : 'Follow this thread'; b.setAttribute('aria-pressed', follow.has(s)); };
+    const s = b.dataset.rdFollow, lab = () => { b.textContent = follow.has(s) ? (b.dataset.on || 'Following') : (b.dataset.off || 'Follow this thread'); b.setAttribute('aria-pressed', follow.has(s)); };
     lab(); b.addEventListener('click', () => { follow.has(s) ? follow.delete(s) : follow.add(s); saveFollow(); lab(); paintCount(); });
   });
   paintCount();
@@ -81,7 +81,7 @@
       const done = seen[s] === DATA.date, mv = isNew(s), n = t.updates.filter(u => u.isNew).length;
       el.classList.toggle('is-seen', done && mv);
       el.classList.toggle('is-following', follow.has(s));
-      if (!mv) el.hidden = true;                        // only threads that moved today (the ones in Play today) show
+      if (!mv && el.closest('[data-rd-thread-grid]')) el.hidden = true;                        // only threads that moved today (the ones in Play today) show
       el.querySelectorAll('.rd-state').forEach(st => { st.textContent = !mv ? 'Quiet' : done ? 'Seen' : `${n} new`; });
     });
     paintCount();

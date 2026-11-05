@@ -115,7 +115,8 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
                        f'{prefix}focus/{t["focus"]}.html' if t.get("focus") and os.path.exists(os.path.join(root, "focus", f'{t["focus"]}.html'))
                        else T.link(t, prefix))
     pills = "".join(f'<a href="{tlink(t)}">{E(t["name"])}</a>' for t in reg)
-    tcards = [f'<a class="rd-tcard" href="{tlink(t)}"><b>{E(t["name"])}</b><span>{E(T.stat(t) or "Every update, newest first")}</span></a>' for t in reg]
+    tcards = [f'<div class="rd-tcw"><a class="rd-tcard" href="{tlink(t)}"><b>{E(t["name"])}</b><span>{E(T.stat(t) or "Every update, newest first")}</span></a>'
+              f'<button type="button" class="rd-tf" data-rd-follow="{E(t["slug"])}" data-on="✓" data-off="+" aria-label="Follow {E(t["name"])}">+</button></div>' for t in reg]
     allth = (f'<div class="rd-all">{"".join(tcards[:6])}</div>'
              + f'<div class="rd-pills">{pills}</div>')
     eds = [e for e in S.editions() if e < date][-4:][::-1]
