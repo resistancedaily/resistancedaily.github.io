@@ -28,6 +28,16 @@
     if (d && !d.open) { d.open = true; el.scrollIntoView(); }
   }
   window.addEventListener('hashchange', openStory); openStory();
+  // "How we report" in the top menu opens the fold, not just scrolls to it (owner's request, 5 Nov 2026).
+  function openHow(scroll) {
+    const d = document.getElementById('how'); if (!d || d.tagName !== 'DETAILS') return false;
+    d.open = true; if (scroll) d.scrollIntoView({ behavior: 'smooth', block: 'start' }); return true;
+  }
+  if (location.hash === '#how') openHow(true);
+  window.addEventListener('hashchange', () => { if (location.hash === '#how') openHow(true); });
+  document.querySelectorAll('a[href$="#how"]').forEach(a => a.addEventListener('click', e => {
+    if (new URL(a.href).pathname === location.pathname && openHow(true)) { e.preventDefault(); history.replaceState(null, '', '#how'); }
+  }));
   // "Hide all stories −" at the end of the long list: close it and return to its header.
   document.querySelectorAll('[data-rd-collapse]').forEach(b => b.addEventListener('click', () => {
     const d = b.closest('details'); if (!d) return; d.open = false; d.scrollIntoView({ block: 'start' });
