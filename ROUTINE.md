@@ -93,6 +93,9 @@ Never hand-edit the generated pages or add charts to them.
   button; story detail, official versions and step notes sit behind a "Details" fold. No fact is dropped, it is folded.
   Focus pages show 2 key numbers, only the latest timeline update (older ones folded) and 3 official-position points
   (the rest folded). Don't add new visible text blocks to any page without the owner's approval.
+  Home page (owner's rule, 5 Nov 2026): don't spoon-feed. No counts or explainer lines beside section titles (Also
+  today, All threads, All stories today), Act today shows headings only (tap to open), "You're caught up." stands alone.
+  Let readers be curious and click.
 
 ## STEP 1. Yesterday
 Read the backup page (Artifact tool, action "read") or the latest data/*.json in the repo to see what yesterday covered.

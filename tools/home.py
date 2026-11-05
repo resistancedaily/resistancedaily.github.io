@@ -79,8 +79,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     # Also today: one-off stories (rows open the full story).
     also_rows = "".join(f'<li><b>{E(i.get("short", i["place"]))}</b><a href="{sref}#i{i["n"]}">{E(i["headline"])}</a></li>'
                         for i in sorted(oneoffs, key=lambda i: item_rank(i, date)))
-    also = (f'<details class="rd-also"><summary><b>Also today</b><span class="rd-sub"><span class="rd-sub-d"> · {len(oneoffs)} '
-            f'stor{"y" if len(oneoffs) == 1 else "ies"} outside a thread</span><span class="rd-k-m"> · {len(oneoffs)}</span></span>'
+    also = (f'<details class="rd-also"><summary><b>Also today</b>'
             f'<span class="rd-show"><span class="rd-show-t">Show</span><span class="rd-hide">Hide</span></span></summary>'
             f'<ul>{also_rows}</ul></details>') if oneoffs else ""
 
@@ -118,12 +117,11 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     pills = "".join(f'<a href="{tlink(t)}">{E(t["name"])}</a>' for t in reg)
     tcards = [f'<a class="rd-tcard" href="{tlink(t)}"><b>{E(t["name"])}</b><span>{E(T.stat(t) or "Every update, newest first")}</span></a>' for t in reg]
     allth = (f'<div class="rd-all">{"".join(tcards[:6])}</div>'
-             + (f'<details class="rd-allmore"><summary class="rd-sub" style="font-family:var(--font-heading);color:var(--color-accent-700)">'
-                f'<span class="a">All {len(reg)} threads ↓</span><span class="b">Fewer ↑</span></summary><div class="rd-all">{"".join(tcards[6:])}</div></details>' if len(tcards) > 6 else "")
              + f'<div class="rd-pills">{pills}</div>')
     eds = [e for e in S.editions() if e < date][-4:][::-1]
     past = "".join(f'<li><a href="{prefix}archive/{e}.html"><b>{E(S.nice(e))}</b><span>{E(S.top_line(e))}</span></a></li>' for e in eds)
-    acts = "".join(f'<div class="rd-act"><b>{E(a)}</b><span>{E(b)}</span></div>' for a, b in d.get("acts", []))
+    # Owner's request (5 Nov 2026): headings only; tap a box to see what to do.
+    acts = "".join(f'<details class="rd-act"><summary><b>{E(a)}</b></summary><span>{E(b)}</span></details>' for a, b in d.get("acts", []))
 
     # All stories this day: the full sourced record (anchors #iN).
     def story(i):
@@ -144,7 +142,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
         stories_block = (f'<details class="rd-stories" id="stories"><summary><b>{SL}</b><span class="rd-sub"> · {len(items)}, each with its sources</span>'
                          f'</summary>{stories}<button type="button" class="btn btn-secondary rd-collapse" data-rd-collapse>Hide all stories &minus;</button></details>')
     else:
-        stories_block = (f'<a class="rd-storylink" href="{sref}"><b>{SL}</b><span class="rd-sub"> · {len(items)}, each with its photo and sources</span>'
+        stories_block = (f'<a class="rd-storylink" href="{sref}"><b>{SL}</b>'
                          f'<span class="rd-go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>')
         build_stories(date, d, stories, kind, regs)
 
@@ -175,15 +173,15 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
 <header class="rd-hero"><div><span class="rd-kicker"><span class="rd-k-d">{E(kicker_d)}</span><span class="rd-k-m">{E(kicker_m)}</span></span>
 <h1>Where things stand today</h1><p>Human rights in India and the world. Non-partisan. Every fact sourced.</p></div>
 {f'<button class="btn btn-primary rd-play" data-rd-play-all>▶&nbsp; Play today · {mins} min</button>' if moved else ''}</header>
-<div class="rd-caught" data-rd-caught-up hidden><b>You're caught up.</b> {upheld_count_line(dt)}</div>
+<div class="rd-caught" data-rd-caught-up hidden><b>You're caught up.</b></div>
 <div class="rd-grid" data-rd-thread-grid>{grid}</div>
 {also}
 {two}
 <div class="rd-divider">When you have more time</div>
 <div class="rd-more2"><section class="rd-sec"><div class="rd-hd"><h2 class="rd-h">All threads</h2><a href="{prefix}focus/">All {len(reg)} →</a></div>
-<p class="rd-sub" style="margin:0">Long-running stories, including the In focus pieces, Accountability Watch and Still waiting.</p>{allth}</section>
+{allth}</section>
 <section class="rd-sec"><div class="rd-hd"><h2 class="rd-h">Past editions</h2><a href="{prefix}archive/">All →</a></div><ul class="rd-past">{past}</ul></section></div>
-<section class="rd-sec"><h2 class="rd-h">Act today <span class="rd-sub">· whatever your politics</span></h2><div class="rd-acts">{acts}</div></section>
+<section class="rd-sec"><h2 class="rd-h">Act today</h2><div class="rd-acts">{acts}</div></section>
 {stories_block}
 <details class="rd-how" id="how"><summary>How we report</summary><ul>{S.HOW}</ul></details>
 <script type="application/json" id="rd-threads">{esc_json(pdata)}</script>"""
