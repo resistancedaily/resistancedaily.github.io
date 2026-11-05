@@ -1,0 +1,83 @@
+{
+ "cover": [
+  [
+   "Kordofan & Blue Nile, Sudan",
+   "Drone strikes kill at least 14 civilians"
+  ],
+  [
+   "Hong Kong",
+   "Joshua Wong jailed for 10 more years"
+  ],
+  [
+   "Noney, Manipur",
+   "Gunfight between armed groups kills 3–4"
+  ],
+  [
+   "Supreme Court, Delhi",
+   "Man jailed weeks after bail is freed"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "14+",
+   "figlab": "civilians killed",
+   "place": "Kordofan and Blue Nile, Sudan",
+   "head": "Drones hit homes and a market",
+   "bullets": [
+    "Eight killed in Um Dibo, West Kordofan, on Monday evening.",
+    "A drone hit a fuel station in El Abbasiya Tagali market; at least four dead.",
+    "A Blue Nile group blames the RSF; no RSF response was reported."
+   ],
+   "src": "Dabanga",
+   "caption": "A mother of three was among those killed in Ed Damazin, local groups say, as drones also knock out power and water. No RSF response was reported.\nSource: Dabanga"
+  },
+  {
+   "n": 7,
+   "label": "World · Expression",
+   "fig": "10 yrs",
+   "figlab": "sentence",
+   "place": "Hong Kong",
+   "head": "Joshua Wong sentenced again",
+   "bullets": [
+    "Convicted of conspiring to collude with foreign forces under the security law.",
+    "In custody since November 2020; he was due for release early next year.",
+    "Authorities say the law maintains stability; HRW calls the charges baseless."
+   ],
+   "src": "BBC · HRW",
+   "caption": "Once the teenage face of Hong Kong's protests, Wong, now 30, could stay in prison until 2036, HRW says. Authorities say the law keeps the city stable.\nSource: BBC"
+  },
+  {
+   "n": 1,
+   "label": "Manipur",
+   "fig": "3–4",
+   "figlab": "killed",
+   "place": "Noney district, Manipur",
+   "head": "Gunfight between Naga groups",
+   "bullets": [
+    "Firing began around 3.30 am in Taodaijang village on Wednesday.",
+    "Reports put the dead at three or four; several were injured.",
+    "Gunfire kept security forces from reaching the area at first, an official said."
+   ],
+   "src": "EastMojo · Scroll",
+   "caption": "In Taodaijang, gunfire between rival armed groups went on for hours from 3.30 am. Three of the dead were aged 20 to 25, EastMojo reports.\nSource: EastMojo"
+  },
+  {
+   "n": 2,
+   "label": "Accountability Watch",
+   "fig": "5+ wks",
+   "figlab": "jailed after bail",
+   "place": "Supreme Court, New Delhi",
+   "head": "Freed after bail was ignored",
+   "bullets": [
+    "The court granted the man bail on 28 September; he was still in jail.",
+    "Judges called it \"very disturbing\" and ordered his release.",
+    "Uttar Pradesh must say by 3 December why he should not be compensated."
+   ],
+   "src": "LiveLaw",
+   "caption": "Bail on paper did not open the cell door for weeks. The court now asks Uttar Pradesh why he should not be paid compensation; no state explanation was reported.\nSource: LiveLaw"
+  }
+ ],
+ "hope_caption": "This week a Bihar officer who fired on villagers was suspended within a day, and two courts stepped in on lawyers' safety and an ignored bail order.\nSource: Indian Express, The Hindu, LiveLaw"
+}
