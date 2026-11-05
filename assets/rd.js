@@ -27,6 +27,21 @@
     const el = document.querySelector(location.hash); const d = el && el.closest('details');
     if (d && !d.open) { d.open = true; el.scrollIntoView(); }
   }
+  // Refresh starts at the top of the page (owner's request, 5 Nov 2026); Back/Forward return readers to where they were;
+  // a link to one story (#iN) still lands on that story. Scroll is handled here, not by the browser.
+  try {
+    const key = 'rd.y:' + location.pathname;
+    const nav = performance.getEntriesByType('navigation')[0], type = nav ? nav.type : 'navigate';
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    window.addEventListener('pagehide', () => { try { sessionStorage.setItem(key, String(scrollY)); } catch (e) {} });
+    let y = null;
+    if (type === 'back_forward') { const v = sessionStorage.getItem(key); if (v !== null) y = +v; }
+    else if (!location.hash || type === 'reload') {
+      if (location.hash && !/^#i\d+$/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search);
+      if (!/^#i\d+$/.test(location.hash)) y = 0;
+    }
+    if (y !== null) { const go = () => window.scrollTo(0, y); go(); window.addEventListener('load', () => { go(); setTimeout(go, 50); }); }
+  } catch (e) {}
   window.addEventListener('hashchange', openStory); openStory();
   // "How we report" in the top menu opens the fold, not just scrolls to it (owner's request, 5 Nov 2026).
   function openHow(scroll) {
