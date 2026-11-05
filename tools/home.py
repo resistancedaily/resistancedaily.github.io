@@ -189,9 +189,9 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     if inline:
         css = open(os.path.join(root, "assets", "organic.css")).read() + open(os.path.join(root, "assets", "rd.css")).read()
         js = open(os.path.join(root, "assets", "rd.js")).read()
-        html_ = (html_.replace(f'<link rel="stylesheet" href="{prefix}assets/organic.css"><link rel="stylesheet" href="{prefix}assets/rd.css">',
+        html_ = (html_.replace(f'<link rel="stylesheet" href="{prefix}assets/organic.css?v={S.ver("organic.css")}"><link rel="stylesheet" href="{prefix}assets/rd.css?v={S.ver("rd.css")}">',
                                f"<style>{css}</style>")
-                 .replace(f'<script src="{prefix}assets/rd.js" defer></script>', f"<script>{js}</script>"))
+                 .replace(f'<script src="{prefix}assets/rd.js?v={S.ver("rd.js")}" defer></script>', f"<script>{js}</script>"))
     os.makedirs(os.path.dirname(os.path.join(root, out)) or root, exist_ok=True)
     open(os.path.join(root, out), "w").write(html_)
     return html_

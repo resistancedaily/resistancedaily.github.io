@@ -27,6 +27,12 @@ HOW = """<li>Rights, not parties: life and safety, assembly, expression, press f
 <li>Follows and the stories you have seen are stored only on your device. No accounts, no tracking.</li>"""
 
 
+
+def ver(name):
+    """Short content hash for asset URLs, so phones fetch new CSS/JS as soon as it changes (no stale cached styles)."""
+    import hashlib
+    return hashlib.md5(open(os.path.join(root, "assets", name), "rb").read()).hexdigest()[:8]
+
 def load(p):
     return json.load(open(os.path.join(root, p)))
 
@@ -39,7 +45,7 @@ def head(title, desc, prefix, canonical, extra="", noindex=False, css=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:site_name" content="Resistance Daily">
 <link rel="canonical" href="{canonical}"><link rel="icon" href="{ICON}">{extra}
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="{prefix}assets/organic.css"><link rel="stylesheet" href="{prefix}assets/rd.css">{f"<style>{css}</style>" if css else ""}
+<link rel="stylesheet" href="{prefix}assets/organic.css?v={ver("organic.css")}"><link rel="stylesheet" href="{prefix}assets/rd.css?v={ver("rd.css")}">{f"<style>{css}</style>" if css else ""}
 </head><body><div class="rd-wrap">"""
 
 
@@ -57,7 +63,7 @@ def footer(prefix):
 <p class="rd-foot-small">Non-partisan. Every fact sourced. <a href="{prefix}archive/">Past editions</a></p></div>
 <div class="rd-socials">{socials}</div></div></footer>
 <div id="rd-player" class="rd-player" hidden role="dialog" aria-modal="true" aria-labelledby="rd-p-name"></div>
-<script src="{prefix}assets/rd.js" defer></script>
+<script src="{prefix}assets/rd.js?v={ver("rd.js")}" defer></script>
 </body></html>
 """
 
