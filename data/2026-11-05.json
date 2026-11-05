@@ -363,7 +363,10 @@
     "year": "2011",
     "changes": "resized, faces of children blurred"
    },
-   "n": 9
+   "n": 9,
+   "map": {
+    "left": true
+   }
   },
   {
    "region": "world",

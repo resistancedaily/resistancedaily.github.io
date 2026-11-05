@@ -70,7 +70,8 @@
    "lon": -2.42,
    "lat": 13.58,
    "sev": "red",
-   "label": "Yatenga"
+   "label": "Yatenga",
+   "left": true
   },
   {
    "n": 10,

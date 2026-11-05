@@ -24,9 +24,12 @@ it from the Drive copies (read them with the Google Drive tools). Run `npm insta
 The web edition has ONE layout every day, built by tools/home.py (spec: Claude Design handoff, "Threads that play"):
 the home page IS today's edition (index.html; today/ and archive/DATE.html are the same page). Top of the page =
 today: thread cards (long-running stories that moved today, each with one line of what changed and a player that plays
-the updates), "Also today" (one-off stories), Rights upheld, Today on the map. Below "When you have more time": All
-threads, Past editions, Act today, How we report, and "All stories this day" (every item in full with photo, sources and
-its #iN anchor: the complete sourced record). Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
+the updates), "Also today" (one-off stories), Today on the map (always open on the page, owner's request 5 Nov 2026;
+the world map zooms to the day's pins), Rights upheld. Below "When you have more time": All threads, Past editions, Act
+today, a link to "All stories this day" and How we report. The full stories (every item with photo, sources and its #iN
+anchor: the complete sourced record) are on their own page, stories/DATE.html (owner's request, 5 Nov 2026: tap a
+story, read it, press Back and land where you were); "Also today" rows and map pins link there. The inlined backup page
+keeps them folded on the page. Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
 Detention); never render red. Keep "sev" in the data: it still orders threads and colours map pins.
 - THREADS: data/threads.json is the registry ({slug, name, focus?, page?, stat?, stat_from?}). An item's thread is
   "thread" if set, else its "focus" slug, else "accountability" when "Accountability Watch" is in its rights, else none
@@ -248,7 +251,7 @@ which also rebuilds the home page and sitemap). See the header of tools/hope.py 
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word
   figcap. Include 4 compact acts (real organisations and channels only).
 - Run `python3 tools/publish.py threads DATE data/DATE.json`. It writes index.html (home = today), today/index.html,
-  archive/DATE.html, archive/index.html, threads/SLUG.html, still-waiting/index.html and build/artifact.html (CSS and JS
+  archive/DATE.html, stories/DATE.html, archive/index.html, threads/SLUG.html, still-waiting/index.html and build/artifact.html (CSS and JS
   inlined for the backup page), plus sitemap.xml, robots.txt, search data (schema.org) and the 1200x630 link-preview
   image images/DATE/share.jpg, and prints any items still missing a photo. Never hand-edit index.html: it comes from the
   data. Earlier archive pages keep their old layouts; don't rebuild them. Commit them all.

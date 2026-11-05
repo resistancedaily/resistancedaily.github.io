@@ -77,11 +77,12 @@ def build(today):
     month = sum(1 for i in items if 0 <= (today - datetime.date.fromisoformat(i["date"])).days < 31)
     week = sum(1 for i in items if 0 <= (today - datetime.date.fromisoformat(i["date"])).days < 7)
     CSS = """
-.hhero{margin:-28px calc(50% - 50vw) 0;padding:44px calc(50vw - 50% + 64px) 40px;background:var(--color-accent-2-200);color:var(--color-accent-2-900);border-radius:0 0 48px 48px}
+.hhero{padding:34px 40px 32px;background:var(--color-accent-2-200);color:var(--color-accent-2-900);border-radius:32px}
 .hhero h1{font-size:52px;margin:6px 0 6px;color:inherit}
 .hhero .rd-kicker{color:var(--color-accent-2-800)}
 .hhero p{margin:0;font-size:17px}
-.hhero .n{font-family:var(--font-heading);font-size:22px;margin-top:10px;display:block}
+.hhero .n{font-family:var(--font-heading);font-size:22px;margin-top:14px;display:block}
+.hc .tag-accent-2{background:var(--color-accent-2-200)}
 .filters{display:flex;gap:8px;flex-wrap:wrap}
 .filters button{font:600 13px var(--font-body);padding:8px 14px;border-radius:999px;background:var(--color-accent-2-100);color:var(--color-accent-2-900);border:0;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--color-accent-2);color:#fff}
@@ -96,7 +97,7 @@ def build(today):
 .hc .src{font-size:13px}.hc a{color:var(--color-accent-2-900)}
 .hc .cr{font-size:11.5px;opacity:.85}
 .rd-how ul a{color:inherit}
-@media (max-width:720px){.hhero{margin-top:-22px;padding:30px calc(50vw - 50% + 18px) 28px;border-radius:0 0 32px 32px}.hhero h1{font-size:34px}}
+@media (max-width:720px){.hhero{padding:22px 20px 22px;border-radius:28px}.hhero h1{font-size:34px}.hhero p{font-size:15px}.hhero .n{font-size:19px}}
 """
     extra = (f'<meta property="og:type" content="website"><meta property="og:url" content="{url}"><meta name="twitter:card" content="summary">'
              + seo.jsonld(ld))
