@@ -48,19 +48,23 @@ def recent(data, n=3):
 
 
 def card(i):
-    """Sage card (Threads redesign): tag, date, headline, paragraph, sources, photo credit, thread link."""
+    """Sage card, decluttered (owner's request, 5 Nov 2026): photo (credit behind the (i) button) or the key number in its
+    place, kind · date, headline, a quiet "place · source" line; the story and its thread link sit under "Details"."""
     p = i.get("photo")
-    top = (f'<img class="washed" src="../{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async">' if p else "")
     d = datetime.date.fromisoformat(i["date"]).strftime("%d %b").lstrip("0")
     src = " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in i["src"])
-    part = ""
-    if i.get("link"):
-        part = f'<a class="rd-more" href="../{E(i["link"][1])}">Part of {E(i["link"][0])} →</a>'
-    cr = (f'<span class="cr">{"File photo · " + E(p["year"]) if p.get("kind") != "event" else "Photo from the event"}: '
-          f'<a href="{E(p["page"])}">{E(p["credit"])}</a>, <a href="{E(p["licence_url"])}">{E(p["licence"])}</a></span>') if p else ""
-    return (f'<article class="hc" id="{E(i["id"])}" data-k="{E(i["kind"])}">{top}<div class="t">'
-            f'<div class="rd-row" style="gap:8px"><span class="tag tag-accent-2">Right upheld</span><span class="hk">{E(i["kind"])} · {d}</span></div>'
-            f'<h3>{E(i["headline"])}</h3><p>{E(i["text"])}</p><span class="src"><b>{E(i["place"].split(",")[0])}</b> · {src}</span>{part}{cr}</div></article>')
+    if p:
+        lab = ("File photo · " + E(p["year"])) if p.get("kind") != "event" else "Photo from the event"
+        media = (f'<figure class="hm"><img class="washed" src="../{E(p["src"])}" alt="{E(p["alt"])}" loading="lazy" decoding="async">'
+                 f'<details class="rd-info"><summary aria-label="About this photo">i</summary><figcaption>{lab}. {E(p.get("caption", ""))} '
+                 f'Photo: <a href="{E(p["page"])}">{E(p["credit"])}</a>, <a href="{E(p["licence_url"])}">{E(p["licence"])}</a></figcaption></details></figure>')
+    else:
+        media = f'<div class="hm hfig"><b>{E(i.get("fig", ""))}</b><span>{E(i.get("figcap", ""))}</span></div>'
+    part = f'<a class="rd-more" href="../{E(i["link"][1])}">Part of {E(i["link"][0])} →</a>' if i.get("link") else ""
+    return (f'<article class="hc" id="{E(i["id"])}" data-k="{E(i["kind"])}">{media}<div class="t">'
+            f'<span class="hk">{E(i["kind"])} · {d}</span><h3>{E(i["headline"])}</h3>'
+            f'<span class="src">{E(i["place"].split(",")[0])} · {src}</span>'
+            f'<details class="hd"><summary>Details</summary><p>{E(i["text"])}</p>{part}</details></div></article>')
 
 
 def build(today):
@@ -86,15 +90,20 @@ def build(today):
 .filters{display:flex;gap:8px;flex-wrap:wrap}
 .filters button{font:600 13px var(--font-body);padding:8px 14px;border-radius:999px;background:var(--color-accent-2-100);color:var(--color-accent-2-900);border:0;cursor:pointer}
 .filters button[aria-pressed="true"]{background:var(--color-accent-2);color:#fff}
-.hcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.hcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:16px;align-items:start}
 .hc{background:var(--color-accent-2-100);color:var(--color-accent-2-900);border-radius:28px;overflow:hidden;display:flex;flex-direction:column;scroll-margin-top:16px}
 .hc[hidden]{display:none}
-.hc img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.hm{position:relative;margin:0;line-height:0;aspect-ratio:16/9;overflow:hidden;min-height:0}.hm img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hm .rd-info{z-index:1}
+.hm .rd-info,.hm .rd-info figcaption{line-height:1.35}
+.hfig{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;background:var(--color-accent-2-200);line-height:1.1;text-align:center;padding:0 20px}
+.hfig b{font-family:var(--font-heading);font-weight:400;font-size:54px}.hfig span{font-size:14px}
+.hd>summary{font-weight:600;font-size:13.5px;color:var(--color-accent-2-800)}.hd>summary::before{content:'+ '}.hd[open]>summary::before{content:'− '}
+.hd p{margin:8px 0 6px}
 .hc .t{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px}
-.hc h3{font-size:22px;line-height:1.2;margin:0;color:inherit}
+.hc h3{font-family:var(--font-body);font-weight:600;font-size:18px;line-height:1.3;margin:0;color:inherit;letter-spacing:0}
 .hc p{margin:0;font-size:15px}
 .hk{font-size:12.5px;color:var(--color-accent-2-800)}
-.hc .src{font-size:13px}.hc a{color:var(--color-accent-2-900)}
+.hc .src{font-size:13px;opacity:.85}.hc a{color:var(--color-accent-2-900)}
 .hc .cr{font-size:11.5px;opacity:.85}
 .rd-how ul a{color:inherit}
 @media (max-width:720px){.hhero{padding:22px 20px 22px;border-radius:28px}.hhero h1{font-size:34px}.hhero p{font-size:15px}.hhero .n{font-size:19px}}
@@ -103,7 +112,6 @@ def build(today):
              + seo.jsonld(ld))
     page = (S.head(f"{title} · Resistance Daily", desc, "../", url, extra, css=CSS) + S.nav("../") + f"""
 <header class="hhero"><span class="rd-kicker">Signs of hope</span><h1>Rights upheld</h1>
-<p>Where rights were upheld: court rulings, accountability, releases, and people helping each other. Every fact sourced.</p>
 <span class="n">{week} this week · {month} this month</span></header>
 <div class="filters" role="group" aria-label="Filter by kind">{"".join(f'<button type="button" aria-pressed="{str(k == "All").lower()}" data-k="{E(k)}">{E(k)}</button>' for k in kinds)}</div>
 <section class="hcards" aria-label="Rights upheld">{"".join(card(i) for i in items)}</section>
