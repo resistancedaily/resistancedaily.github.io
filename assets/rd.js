@@ -56,7 +56,7 @@
       const done = seen[s] === DATA.date, mv = isNew(s), n = t.updates.filter(u => u.isNew).length;
       el.classList.toggle('is-seen', done && mv);
       el.classList.toggle('is-following', follow.has(s));
-      if (!mv) el.hidden = !follow.has(s);              // quiet threads show only when followed
+      if (!mv) el.hidden = true;                        // only threads that moved today (the ones in Play today) show
       el.querySelectorAll('.rd-state').forEach(st => { st.textContent = !mv ? 'Quiet' : done ? 'Seen' : `${n} new`; });
     });
     paintCount();
@@ -66,10 +66,15 @@
     if (cu && moved().length && moved().every(s => seen[s] === DATA.date)) cu.hidden = false;
   }
 
-  function render() {
+  function render(keep) {
     const t = DATA.threads[cur], u = t.updates[step];
-    const shown = playAll ? t.updates.filter(x => x.isNew) : t.updates;
-    const segs = shown.map((_, i) => `<i class="${i <= step ? 'on' : ''}"></i>`).join('');
+    // Play today: one bar segment per story across every thread that moved (like a stories reel); one thread: its updates.
+    let total = t.updates.length, at = step;
+    if (playAll) {
+      const mv = moved(), n = x => DATA.threads[x].updates.filter(y => y.isNew).length;
+      total = mv.reduce((a, x) => a + n(x), 0); at = mv.slice(0, mv.indexOf(cur)).reduce((a, x) => a + n(x), 0) + step;
+    }
+    const segs = Array.from({ length: total }, (_, i) => `<i class="${i < at ? 'on' : i === at ? 'cur' : ''}"><b></b></i>`).join('');
     const src = (u.src || []).map(([n, url]) => `<a href="${esc(url)}">${esc(n)}</a>`).join(' · ');
     const fol = follow.has(cur) ? 'Following' : 'Follow';
     player.innerHTML = `
@@ -89,11 +94,38 @@
             ${src ? `<span class="rd-p-src">Source: ${src}</span>` : ''}
             ${t.stat ? `<span class="rd-p-stat">${esc(t.stat)}</span>` : ''}
             ${t.focusUrl ? `<a class="rd-p-focus" href="${esc(t.focusUrl)}">${esc(t.focusLabel || 'Read the full story')} →</a>` : `<a class="rd-p-focus" href="${esc(t.page)}">Every update in this thread →</a>`}
-            <div class="rd-p-nav"><button class="btn btn-ghost" data-act="prev"${step ? '' : ' disabled'}>← Back</button>
+            <div class="rd-p-nav"><button class="btn btn-ghost" data-act="prev"${step || (playAll && moved().indexOf(cur) > 0) ? '' : ' disabled'}>← Back</button>
               <button class="btn btn-secondary rd-p-fm" data-act="follow">${fol}</button>
               <button class="btn btn-primary" data-act="next">Next →</button></div>
           </div></div></div>`;
+    if (!keep) startTimer();
   }
+
+  // Stories-style autoplay (owner's request, 5 Nov 2026): each update shows for a few seconds (longer for longer
+  // text), the current segment fills, then the player moves on by itself and closes after the last one.
+  // Hold the card (or switch tabs) to pause; tap Next / Back, swipe or use the arrow keys to skip.
+  let timer = null, t0 = 0, spent = 0, dur = 0, paused = false;
+  function stopTimer() { if (timer) cancelAnimationFrame(timer); timer = null; }
+  function startTimer() {
+    stopTimer();
+    const u = DATA.threads[cur].updates[step];
+    const words = ((u.t || '') + ' ' + (u.text || '')).split(/\s+/).length;
+    dur = Math.min(12000, Math.max(5000, 3000 + words * 230)); spent = 0; t0 = performance.now(); paused = false;
+    const tick = now => {
+      if (!cur) return;
+      const el = player.querySelector('.rd-p-segs i.cur b');
+      const p = paused ? spent : spent + (now - t0);
+      if (el) el.style.transform = `scaleX(${Math.min(1, p / dur)})`;
+      if (p >= dur) { timer = null; return next(); }
+      timer = requestAnimationFrame(tick);
+    };
+    timer = requestAnimationFrame(tick);
+  }
+  function pause() { if (!paused && cur) { spent += performance.now() - t0; paused = true; } }
+  function resume() { if (paused && cur) { t0 = performance.now(); paused = false; } }
+  player.addEventListener('pointerdown', e => { if (!e.target.closest('button, a, summary')) pause(); });
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => player.addEventListener(ev, resume));
+  document.addEventListener('visibilitychange', () => { document.hidden ? pause() : resume(); });
 
   function open(slug, all) {
     if (!DATA.threads[slug] || !DATA.threads[slug].updates.length) return;
@@ -104,6 +136,7 @@
   }
   function markSeen(slug) { seen[slug] = DATA.date; write(K.seen, seen); }
   function close(done) {
+    stopTimer();
     if (cur) markSeen(cur);
     player.hidden = true; player.innerHTML = ''; cur = null;
     document.documentElement.classList.remove('rd-noscroll');
@@ -120,13 +153,17 @@
     if (playAll && mv[i + 1]) { cur = mv[i + 1]; step = 0; render(); return player.querySelector('[data-act="next"]').focus(); }
     close(playAll || mv.every(s => seen[s] === DATA.date));
   }
-  function prev() { if (step > 0) { step--; render(); } }
+  function prev() {
+    if (step > 0) { step--; return render(); }
+    const mv = moved(), i = mv.indexOf(cur);                 // Play today: Back from a thread's first update goes to the previous thread
+    if (playAll && i > 0) { cur = mv[i - 1]; step = 0; render(); }
+  }
 
   player.addEventListener('click', e => {
     if (e.target === player) return close(false);           // backdrop
     const a = e.target.closest('[data-act]'); if (!a) return;
     ({ next, prev, close: () => close(false),
-       follow: () => { follow.has(cur) ? follow.delete(cur) : follow.add(cur); saveFollow(); render(); paintCards(); } })[a.dataset.act]();
+       follow: () => { follow.has(cur) ? follow.delete(cur) : follow.add(cur); saveFollow(); render(true); paintCards(); } })[a.dataset.act]();
   });
   document.addEventListener('keydown', e => {
     if (player.hidden) return;

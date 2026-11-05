@@ -173,7 +173,10 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
   border-radius: 40px; padding: 26px 34px 30px; box-shadow: var(--shadow-lg); animation: rdIn .18s ease-out; display: flex; flex-direction: column; }
 @keyframes rdIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .rd-p-segs { display: flex; gap: 6px; margin-bottom: 18px; }
-.rd-p-segs i { flex: 1; height: 5px; border-radius: 999px; background: color-mix(in srgb, #f9f4ed 35%, transparent); }
+.rd-p-segs i { flex: 1; height: 5px; border-radius: 999px; background: color-mix(in srgb, #f9f4ed 35%, transparent); position: relative; overflow: hidden; }
+.rd-p-segs i b { position: absolute; inset: 0; background: #f9f4ed; transform: scaleX(0); transform-origin: left; }
+.rd-p-segs i.on b { transform: scaleX(1); }
+.rd-player { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
 .rd-p-segs i.on { background: #f9f4ed; }
 .rd-p-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 22px; }
 .rd-p-head h2 { font-size: 24px; margin: 0; color: #f9f4ed; }

@@ -70,7 +70,8 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
                 f'<span class="tag tag-neutral">Quiet</span><span class="rd-state rd-state-m">Quiet</span></span>'
                 f'<p>No new report today</p><span class="rd-state">Quiet</span></span></a>')
 
-    grid = "".join(card(s, True) for s in moved) + "".join(card(s, False) for s in quiet)
+    # Only threads that moved today (the ones Play today plays) get a card (owner's request, 5 Nov 2026).
+    grid = "".join(card(s, True) for s in moved)
 
     # Full stories live on their own page, stories/DATE.html (owner's request, 5 Nov 2026: tap a story, read it, press
     # Back and land where you were). The inlined backup artifact is one file, so it keeps them on the page (#iN).
@@ -80,7 +81,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
                         for i in sorted(oneoffs, key=lambda i: item_rank(i, date)))
     also = (f'<details class="rd-also"><summary><b>Also today</b><span class="rd-sub"><span class="rd-sub-d"> · {len(oneoffs)} '
             f'stor{"y" if len(oneoffs) == 1 else "ies"} outside a thread</span><span class="rd-k-m"> · {len(oneoffs)}</span></span>'
-            f'<span class="rd-show"><span class="rd-show-t">Show all {len(oneoffs)}</span><span class="rd-hide">Hide</span></span></summary>'
+            f'<span class="rd-show"><span class="rd-show-t">Show</span><span class="rd-hide">Hide</span></span></summary>'
             f'<ul>{also_rows}</ul></details>') if oneoffs else ""
 
     # Rights upheld (data/hope.json via hope.py) + today's upheld item.
