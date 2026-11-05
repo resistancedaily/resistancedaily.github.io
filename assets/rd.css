@@ -332,3 +332,8 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
   .rd-mapw { overflow-x: auto; border-radius: 20px; -webkit-overflow-scrolling: touch; }
   .rd-mapw .map { min-width: 500px; }
 }
+.rd-legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 0; font-size: 13.5px; color: var(--color-neutral-800); }
+.rd-legend span { display: inline-flex; align-items: center; gap: 7px; }
+.rd-legend .lg { width: 14px; height: 14px; border-radius: 50%; background: var(--color-neutral-600); box-shadow: 0 0 0 2px var(--color-surface); }
+.rd-legend .lg-red { background: var(--color-accent); }
+.rd-go svg { display: block; }

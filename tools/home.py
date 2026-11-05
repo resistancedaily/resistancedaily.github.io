@@ -106,6 +106,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
         # Owner's request (5 Nov 2026): the map is always open on the page, not behind a button.
         map_html = (f'<section class="rd-sec rd-mapsec" aria-label="Today on the map"><div class="rd-hd"><h2 class="rd-h">Today on the map</h2></div>'
                     f'<p class="rd-sub" style="margin:0">{place_line}. Tap a number to read that story.</p>'
+                    f'<p class="rd-legend"><span><i class="lg lg-red"></i>Lives lost</span><span><i class="lg"></i>Other stories</span></p>'
                     f'<div class="rd-mapd rd-mapin"><div class="rd-mapd-g"><div>{fix(maps.get("india", ""))}</div><div class="rd-mapw">{fix(zoom_world(maps.get("world", "")))}</div></div></div></section>')
     two = map_html + upheld_html
 
@@ -137,12 +138,13 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
                 f'<span>{E(i["place"])}</span></div><h3>{E(i["headline"])}</h3><p>{E(i.get("text", ""))}</p>'
                 f'<span class="rd-src">{S.src_links(i.get("src", []))}{foc}{th}</span></div></article>')
     stories = "".join(story(i) for i in sorted(items, key=lambda i: i["n"]))
+    SL = ("All stories today" if kind in ("home", "today") else "All stories this day")
     if inline:
-        stories_block = (f'<details class="rd-stories" id="stories"><summary><b>All stories this day</b><span class="rd-sub"> · {len(items)}, each with its sources</span>'
+        stories_block = (f'<details class="rd-stories" id="stories"><summary><b>{SL}</b><span class="rd-sub"> · {len(items)}, each with its sources</span>'
                          f'</summary>{stories}<button type="button" class="btn btn-secondary rd-collapse" data-rd-collapse>Hide all stories &minus;</button></details>')
     else:
-        stories_block = (f'<a class="rd-storylink" href="{sref}"><b>All stories this day</b><span class="rd-sub"> · {len(items)}, each with its photo and sources</span>'
-                         f'<span class="rd-go" aria-hidden="true">→</span></a>')
+        stories_block = (f'<a class="rd-storylink" href="{sref}"><b>{SL}</b><span class="rd-sub"> · {len(items)}, each with its photo and sources</span>'
+                         f'<span class="rd-go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></a>')
         build_stories(date, d, stories, kind, regs)
 
     pdata = {"date": date, "order": moved + quiet, "threads": T.player_data(date, prefix, ups)}
@@ -238,7 +240,7 @@ def build_stories(date, d, _unused, kind, regs):
     back = (f'<a class="rd-back" href="{ed}" data-rd-back>← Back to the edition</a>')
     page = (S.head(title, desc, prefix, url, '<meta property="og:type" content="article">') + S.nav(prefix)
             + f'<header class="rd-stories-h">{back}<span class="rd-kicker">{E(S.nice(date))} · covers {E(d.get("window", ""))}</span>'
-            + f'<h1>All stories this day</h1><p class="rd-sub" style="margin:0">{len(items)} stories, each with its photo, the official position and its sources.</p></header>'
+            + f'<h1>All stories · {E(S.nice(date))}</h1><p class="rd-sub" style="margin:0">{len(items)} stories, each with its photo, the official position and its sources.</p></header>'
             + f'<section class="rd-stories rd-stories-page">{body_s}</section><p>{back}</p>'
             + """<script>document.querySelectorAll('[data-rd-back]').forEach(function(a){a.addEventListener('click',function(e){
 try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){e.preventDefault();history.back();}}catch(x){}});});</script>"""

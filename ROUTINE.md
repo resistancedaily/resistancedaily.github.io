@@ -26,7 +26,7 @@ the home page IS today's edition (index.html; today/ and archive/DATE.html are t
 today: thread cards (long-running stories that moved today, each with one line of what changed and a player that plays
 the updates), "Also today" (one-off stories), Today on the map (always open on the page, owner's request 5 Nov 2026;
 the world map zooms to the day's pins), Rights upheld. Below "When you have more time": All threads, Past editions, Act
-today, a link to "All stories this day" and How we report. The full stories (every item with photo, sources and its #iN
+today, a link to "All stories today" and How we report. The map carries a legend (orange = Lives lost, grey = other stories). The full stories (every item with photo, sources and its #iN
 anchor: the complete sourced record) are on their own page, stories/DATE.html (owner's request, 5 Nov 2026: tap a
 story, read it, press Back and land where you were); "Also today" rows and map pins link there. The inlined backup page
 keeps them folded on the page. Tags are calm words (Lives lost, Right upheld, Assembly, Speech,
