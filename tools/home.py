@@ -149,8 +149,9 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
         build_stories(date, d, stories, kind, regs)
 
     pdata = {"date": date, "order": moved + quiet, "threads": T.player_data(date, prefix, ups)}
-    kicker_d = f'{S.nice(date)} · covers {d.get("window", "")}'
-    kicker_m = f'{S.nice(date)} · {len(moved)} thread{"s" if len(moved) != 1 else ""} moved'
+    # Owner's request (5 Nov 2026): the kicker is only the day and date, on every screen size.
+    kicker_d = S.nice(date)
+    kicker_m = S.nice(date)
     page_title = ("Resistance Daily · Human rights, every fact sourced" if kind == "home" else f'Resistance Daily · {d["date_long"]}')
     top3 = sorted(items, key=lambda i: item_rank(i, date))[:3]
     desc = S.DESC if kind == "home" else "; ".join(f'{i.get("short", i["place"])}: {i["headline"]}' for i in top3)
