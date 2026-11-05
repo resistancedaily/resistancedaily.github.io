@@ -359,3 +359,21 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
   display: grid; place-items: center; font-size: 16px; line-height: 1; }
 .rd-act[open] > summary::after { content: "−"; }
 .rd-act > span { display: block; margin-top: 8px; }
+
+/* Player on phones: less on screen (owner's request, 5 Nov 2026). Headline + date; the story, official position and
+   sources sit under "Details" (opening it pauses autoplay). */
+.rd-p-mob { display: none; }
+@media (max-width: 720px) {
+  .rd-p-desk { display: none !important; }
+  .rd-p-mob { display: block; color: #eee7db; }
+  .rd-p-mob > summary { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; font-size: 14px; color: #ffc6a5; }
+  .rd-p-mob > summary::before { content: "+"; }
+  .rd-p-mob[open] > summary::before { content: "−"; }
+  .rd-p-mob p { margin: 10px 0 8px; font-size: 14.5px; line-height: 1.5; }
+  .rd-p-photo img { height: 200px; border-radius: 100px 100px 24px 24px; }
+  .rd-p-text { gap: 10px; }
+  .rd-p-body { grid-template-rows: auto 1fr; }
+  .rd-p-text h3 { font-size: 24px; }
+  .rd-p-stat { display: none; }
+  .rd-p-focus { font-size: 14px; }
+}

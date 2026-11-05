@@ -113,10 +113,10 @@
             <span class="rd-p-ptag">${esc(t.photoTag)}</span>
             <details><summary aria-label="About this photo">i</summary><figcaption>Photo: <a href="${esc(t.creditUrl)}">${esc(t.credit)}</a></figcaption></details></figure>` : ''}
           <div class="rd-p-text">
-            <div class="rd-p-tags"><span class="tag tag-neutral">${esc(u.d)}</span>${u.isNew ? '<span class="tag tag-accent">New today</span>' : ''}${u.upheld ? '<span class="tag tag-accent-2">Right upheld</span>' : ''}</div>
+            <div class="rd-p-tags"><span class="tag tag-neutral">${esc(u.d)}</span>${u.isNew ? '<span class="tag tag-accent rd-p-desk">New today</span>' : ''}${u.upheld ? '<span class="tag tag-accent-2">Right upheld</span>' : ''}</div>
             <h3>${esc(u.t)}</h3>
-            ${u.text ? `<p>${esc(u.text)}</p>` : ''}
-            ${src ? `<span class="rd-p-src">Source: ${src}</span>` : ''}
+            ${u.text ? `<p class="rd-p-desk">${esc(u.text)}</p><details class="rd-p-mob"><summary>Details</summary><p>${esc(u.text)}</p>${src ? `<span class="rd-p-src">Source: ${src}</span>` : ''}</details>` : ''}
+            ${src ? `<span class="rd-p-src rd-p-desk">Source: ${src}</span>` : ''}
             ${t.stat ? `<span class="rd-p-stat">${esc(t.stat)}</span>` : ''}
             ${t.focusUrl ? `<a class="rd-p-focus" href="${esc(t.focusUrl)}">${esc(t.focusLabel || 'Read the full story')} →</a>` : `<a class="rd-p-focus" href="${esc(t.page)}">Every update in this thread →</a>`}
             <div class="rd-p-nav"><button class="btn btn-ghost" data-act="prev"${step || (playAll && moved().indexOf(cur) > 0) ? '' : ' disabled'}>← Back</button>
@@ -134,7 +134,8 @@
   function startTimer() {
     stopTimer();
     const u = DATA.threads[cur].updates[step];
-    const words = ((u.t || '') + ' ' + (u.text || '')).split(/\s+/).length;
+    const phone = window.matchMedia && matchMedia('(max-width: 720px)').matches;   // phones show the headline only
+    const words = ((u.t || '') + ' ' + (phone ? '' : (u.text || ''))).split(/\s+/).length;
     dur = Math.min(12000, Math.max(5000, 3000 + words * 230)); spent = 0; t0 = performance.now(); paused = false;
     const tick = now => {
       if (!cur) return;
@@ -150,6 +151,7 @@
   function resume() { if (paused && cur) { t0 = performance.now(); paused = false; } }
   player.addEventListener('pointerdown', e => { if (!e.target.closest('button, a, summary')) pause(); });
   ['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => player.addEventListener(ev, resume));
+  player.addEventListener('toggle', e => { if (e.target.matches && e.target.matches('.rd-p-mob')) (e.target.open ? pause : resume)(); }, true);
   document.addEventListener('visibilitychange', () => { document.hidden ? pause() : resume(); });
 
   function open(slug, all) {
