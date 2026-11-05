@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "figures": [
   {
    "fig": "170",
@@ -565,6 +565,47 @@
     ]
    ],
    "checked": "2026-11-03"
+  },
+  {
+   "id": "up-held-after-bail",
+   "region": "india",
+   "kind": "Custody",
+   "state": "Uttar Pradesh",
+   "place": "Baghpat case, heard at the Supreme Court, New Delhi",
+   "date": "2026-09-28",
+   "power": "State prison and police authorities",
+   "head": "Man kept in jail weeks after Supreme Court bail",
+   "text": "The Supreme Court granted a Baghpat man bail on 28 September, but he was still in jail in November. The court called it \"very disturbing\" and ordered his immediate release.",
+   "official": "No explanation from the Uttar Pradesh government was reported; the court asked the state to show cause why he should not be compensated.",
+   "steps": [
+    {
+     "step": "Court show-cause notice",
+     "status": "done",
+     "date": "2026-11-03",
+     "note": "LiveLaw"
+    },
+    {
+     "step": "Release",
+     "status": "unknown",
+     "note": "ordered immediately; not yet reported"
+    },
+    {
+     "step": "State's reply",
+     "status": "open",
+     "note": "hearing on 3 Dec 2026"
+    },
+    {
+     "step": "Compensation decision",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/disturbing-supreme-court-rebukes-up-govt-for-detaining-man-for-15-months-after-bail-asks-why-compensation-be-not-ordered-557341"
+    ]
+   ],
+   "checked": "2026-11-05"
   }
  ]
 }

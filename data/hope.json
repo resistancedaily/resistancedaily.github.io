@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -129,6 +129,77 @@
     "accountability/#madhubani-asi-firing"
    ],
    "slide_head": "Suspended within a day"
+  },
+  {
+   "date": "2026-11-03",
+   "fig": "5+ wks",
+   "figcap": "jailed after bail",
+   "headline": "Court orders release of man held after bail",
+   "id": "sc-up-release-after-bail",
+   "kind": "Courts",
+   "place": "Supreme Court, New Delhi",
+   "rights": [
+    "Due process"
+   ],
+   "slide_head": "Freed, compensation asked",
+   "slide": "Supreme Court orders release of a man jailed after bail",
+   "text": "The Supreme Court ordered the immediate release of a man held weeks after it granted bail, and asked Uttar Pradesh why he should not be compensated. The state has until 3 December to reply.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/disturbing-supreme-court-rebukes-up-govt-for-detaining-man-for-15-months-after-bail-asks-why-compensation-be-not-ordered-557341"
+    ]
+   ],
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ],
+   "edition": "2026-11-05#2",
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "date": "2026-10-28",
+   "fig": "1",
+   "figcap": "case quashed",
+   "headline": "Case over a misspoken slogan quashed",
+   "id": "karnataka-slogan-case-quashed",
+   "kind": "Courts",
+   "place": "High Court of Karnataka, Bengaluru",
+   "rights": [
+    "Expression"
+   ],
+   "slide_head": "Slip of tongue, no crime",
+   "slide": "Karnataka court quashes case over a 2022 rally slogan",
+   "text": "Karnataka's High Court quashed a case over a slogan shouted at a 2022 Mandya rally, saying continuing it would abuse the legal process and no unrest was shown.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096884/karnataka-hc-quashes-case-against-man-who-shouted-pakistan-zindabad-at-bjp-rally-by-mistake"
+    ]
+   ],
+   "edition": "2026-11-05#5",
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   }
   }
  ]
 }

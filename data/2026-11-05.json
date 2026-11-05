@@ -1,0 +1,418 @@
+{
+ "date": "2026-11-05",
+ "date_long": "Thu 5 Nov 2026",
+ "date_short": "Thu 5 Nov",
+ "window": "Wed 09:00 → Thu 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-05",
+ "items": [
+  {
+   "region": "india",
+   "place": "Taodaijang village, Noney district, Manipur",
+   "short": "Noney",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "3–4",
+   "figcap": "killed",
+   "headline": "Gunfight between Naga armed groups kills 3–4",
+   "text": "Three to four suspected members of rival Naga armed groups were killed in a gunfight in Noney district early Wednesday, officials and residents say; reports differ on the toll and several were injured.",
+   "src": [
+    [
+     "EastMojo",
+     "https://eastmojo.com/manipur/2026/11/04/manipur-three-killed-in-factional-clash-in-noney/"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096885/manipur-four-killed-in-gunfight-between-rival-nagas-armed-groups"
+    ]
+   ],
+   "lon": 93.62,
+   "lat": 24.86,
+   "thread": "manipur",
+   "photo": {
+    "src": "images/2026-11-05/noney.webp",
+    "alt": "A green river valley between forested hills, with a small town of tin roofs along the river.",
+    "caption": "Noney town in its river valley, Manipur, in 2010.",
+    "credit": "Krushna Sundar / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Noney_Market_-_panoramio.jpg",
+    "kind": "file",
+    "year": "2010",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process",
+    "Accountability Watch"
+   ],
+   "sev": "orange",
+   "fig": "5+ wks",
+   "figcap": "jailed after bail",
+   "headline": "Supreme Court frees man held weeks after bail",
+   "text": "The Supreme Court ordered Uttar Pradesh to free a man still jailed weeks after it granted him bail on 28 September, and to show why he should not be compensated; no state explanation was reported.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/disturbing-supreme-court-rebukes-up-govt-for-detaining-man-for-15-months-after-bail-asks-why-compensation-be-not-ordered-557341"
+    ]
+   ],
+   "lon": 77.239,
+   "lat": 28.622,
+   "upheld": true,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Sree Sankaracharya University of Sanskrit, Kalady, Kerala",
+   "short": "Kalady",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "16",
+   "figcap": "students barred",
+   "headline": "Kerala court bars suspended protesting students from exams",
+   "text": "Kerala's High Court barred 16 students suspended after an August campus protest from exams, citing attendance rules and saying dharnas have \"no place\" on campuses; the students have moved the Supreme Court.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/dharna-hunger-strikes-have-no-space-in-constitutional-democracy-kerala-high-court-10950778/"
+    ],
+    [
+     "Maktoob",
+     "https://maktoobmedia.com/post?id=116855&slug=our-only-crime-was-a-drama-16-kerala-students-accuse-state-and-governor-of-witch-hunt-move-supreme-court-as-exams-begin-without-them"
+    ]
+   ],
+   "lon": 76.44,
+   "lat": 10.17,
+   "photo": {
+    "src": "images/2026-11-05/kalady.webp",
+    "alt": "A long white building with red tiled roofs and small towers behind palm trees and a green field.",
+    "caption": "The Sree Sankaracharya University of Sanskrit at Kalady, Kerala, in 2008.",
+    "credit": "Challiyan / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sanskrit_university_building_kalady.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "cropped"
+   },
+   "n": 3,
+   "map": {
+    "dy": 6,
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Yellapur, Uttara Kannada, Karnataka",
+   "short": "Yellapur",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "10,000+",
+   "figcap": "protesters",
+   "headline": "Thousands block highway against Karnataka river-link plan",
+   "text": "More than 10,000 people blocked the Hubballi–Karwar highway in Yellapur on Tuesday against the Bedthi–Aghanashini river-linking plan, ETV Bharat reported; no state or central government response was reported.",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/karnataka/karnataka-witnesses-major-protest-against-bedthi-aghanashini-river-linking"
+    ]
+   ],
+   "lon": 74.71,
+   "lat": 14.96,
+   "photo": {
+    "src": "images/2026-11-05/aghanashini.webp",
+    "alt": "A shallow river flowing over dark rocks between green bushes, with forested hills behind.",
+    "caption": "The Aghanashini river seen from Santhgal, Uttara Kannada, in 2014.",
+    "credit": "Hegdesudarshan / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:River_Aghanashini.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "resized"
+   },
+   "n": 4,
+   "map": {
+    "left": true,
+    "dy": -6
+   }
+  },
+  {
+   "region": "india",
+   "place": "High Court of Karnataka, Bengaluru",
+   "short": "Bengaluru",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "4 yrs",
+   "figcap": "since the rally",
+   "headline": "Karnataka court quashes case over rally slogan",
+   "text": "Karnataka's High Court quashed a case against a man who shouted a pro-Pakistan slogan at a 2022 Mandya rally, accepting it was a slip of the tongue; prosecutors had alleged intent to cause unrest.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096884/karnataka-hc-quashes-case-against-man-who-shouted-pakistan-zindabad-at-bjp-rally-by-mistake"
+    ]
+   ],
+   "lon": 77.592,
+   "lat": 12.98,
+   "upheld": true,
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "dx": 8
+   }
+  },
+  {
+   "region": "world",
+   "place": "West and South Kordofan and Blue Nile, Sudan",
+   "short": "Kordofan",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "14+",
+   "figcap": "civilians killed",
+   "headline": "Drone strikes kill at least 14 civilians",
+   "text": "Drone strikes killed at least 14 civilians in West and South Kordofan and Blue Nile on Monday and Tuesday, residents told Radio Dabanga; a Blue Nile group blames the RSF, which had no reported response.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-attacks-kill-civilians-and-cripple-sudans-power-infrastructure-un-warns-of-growing-humanitarian-toll"
+    ]
+   ],
+   "lon": 31.3,
+   "lat": 12.17,
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street view in Damazin, capital of Blue Nile state, in 2019. Drone strikes hit several neighbourhoods on Tuesday.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "High Court, Hong Kong",
+   "short": "Hong Kong",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "10 yrs",
+   "figcap": "sentence",
+   "headline": "Joshua Wong jailed for 10 more years",
+   "text": "A Hong Kong court sentenced democracy activist Joshua Wong, 30, to 10 years for conspiring to collude with foreign forces; authorities say the security law keeps stability, while HRW calls the charges baseless.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.com/news/articles/cwp9g3rlp8jlo"
+    ],
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/05/hong-kong-joshua-wong-gets-nearly-10-more-years-in-prison"
+    ]
+   ],
+   "lon": 114.163,
+   "lat": 22.279,
+   "photo": {
+    "src": "images/2026-11-05/hk-high-court.webp",
+    "alt": "A white concrete court building signed 'The High Court' at the foot of tall glass towers, beside a road.",
+    "caption": "The High Court Building in Admiralty, Hong Kong, in April 2026.",
+    "credit": "LN9267 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hong_Kong_High_Court_14-04-2026.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "resized"
+   },
+   "n": 7,
+   "map": {
+    "dx": 6,
+    "pos": "br"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Rafah, Gaza",
+   "short": "Rafah",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "Tents",
+   "figcap": "hit by gunfire",
+   "headline": "Gunfire hits tents at Rafah displacement site",
+   "text": "Gunfire hit tents at a displacement site in northern Rafah on Tuesday, reportedly injuring people and forcing an aid group to leave, OCHA said; no Israeli military comment was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168740"
+    ]
+   ],
+   "lon": 34.25,
+   "lat": 31.29,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Ouahigouya district, Yatenga province, Burkina Faso",
+   "short": "Yatenga",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "27",
+   "figcap": "civilians killed",
+   "headline": "Armed group killed 27 civilians, HRW finds",
+   "text": "The Al-Qaeda-linked group JNIM killed at least 27 civilians in two September attacks in Yatenga province, HRW said on Wednesday; JNIM told HRW the victims were members of government-allied militias.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/04/burkina-faso-islamist-armed-group-targets-civilians"
+    ]
+   ],
+   "lon": -2.42,
+   "lat": 13.58,
+   "photo": {
+    "src": "images/2026-11-05/ouahigouya.webp",
+    "alt": "A wide red dirt street lined with trees and market stalls, with people walking and a man on a motorbike.",
+    "caption": "A market street in Ouahigouya, Burkina Faso, in 2011.",
+    "credit": "Fernando Hidalgo Marchione / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ouahigouya_street-2.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized, faces of children blurred"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Fatullah, Narayanganj, Bangladesh",
+   "short": "Narayanganj",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "Dozens",
+   "figcap": "injured",
+   "headline": "Police tear-gas striking garment workers",
+   "text": "Police fired tear gas and stun grenades at garment workers demanding higher pay on Wednesday, with dozens injured in Fatullah, media report; officials say a new wage board's pay scale starts in January.",
+   "src": [
+    [
+     "Business Standard (wire)",
+     "https://www.business-standard.com/world-news/bangladesh-garment-factories-close-as-workers-clash-with-police-in-protests-126110500082_1.html"
+    ]
+   ],
+   "lon": 90.5,
+   "lat": 23.63,
+   "photo": {
+    "src": "images/2026-11-03/ashulia.webp",
+    "alt": "A brick embankment road beside wide floodwater under a cloudy sky, with a food cart and a few people.",
+    "caption": "An embankment road in Ashulia, near Dhaka, in 2007. About 100 factories there remain shut.",
+    "credit": "Shahnoor Habib Munmun / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ashulia_Dhaka_Bangladesh_1.JPG",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 10,
+   "map": {
+    "left": true
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since April 2023 Sudan's war has killed at least 59,000 people by one count. Drone strikes killed at least 14 civilians in Kordofan and Blue Nile on 2–3 November.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

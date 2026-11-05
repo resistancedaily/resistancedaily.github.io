@@ -1,0 +1,84 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 93.62,
+   "lat": 24.86,
+   "sev": "red",
+   "label": "Noney"
+  },
+  {
+   "n": 2,
+   "lon": 77.239,
+   "lat": 28.622,
+   "sev": "orange",
+   "label": "Delhi"
+  },
+  {
+   "n": 3,
+   "lon": 76.44,
+   "lat": 10.17,
+   "sev": "orange",
+   "label": "Kalady",
+   "dy": 6,
+   "left": true
+  },
+  {
+   "n": 4,
+   "lon": 74.71,
+   "lat": 14.96,
+   "sev": "orange",
+   "label": "Yellapur",
+   "left": true,
+   "dy": -6
+  },
+  {
+   "n": 5,
+   "lon": 77.592,
+   "lat": 12.98,
+   "sev": "orange",
+   "label": "Bengaluru",
+   "dx": 8
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 31.3,
+   "lat": 12.17,
+   "sev": "red",
+   "label": "Kordofan"
+  },
+  {
+   "n": 7,
+   "lon": 114.163,
+   "lat": 22.279,
+   "sev": "orange",
+   "label": "Hong Kong",
+   "dx": 6,
+   "pos": "br"
+  },
+  {
+   "n": 8,
+   "lon": 34.25,
+   "lat": 31.29,
+   "sev": "orange",
+   "label": "Rafah"
+  },
+  {
+   "n": 9,
+   "lon": -2.42,
+   "lat": 13.58,
+   "sev": "red",
+   "label": "Yatenga"
+  },
+  {
+   "n": 10,
+   "lon": 90.5,
+   "lat": 23.63,
+   "sev": "orange",
+   "label": "Narayanganj",
+   "left": true
+  }
+ ]
+}

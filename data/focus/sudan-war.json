@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-03",
+ "updated": "2026-11-05",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -319,6 +319,16 @@
      "https://cpj.org/2026/11/sudan-amends-anti-state-law-to-target-online-and-media-publishing/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-03",
+   "text": "Drone strikes killed at least 14 civilians on 2–3 November, residents and local sources told Radio Dabanga: eight in Um Dibo, El Sunut locality, West Kordofan, on Monday evening; at least four, with more than 10 injured, when a drone hit a fuel station in El Abbasiya Tagali market, South Kordofan, on Tuesday; and a woman and a young man in Ed Damazin, Blue Nile, on Tuesday evening. The Blue Nile Civil Society Initiative blamed the RSF and its ally, the SPLM-North, for the Ed Damazin strikes; the state governor condemned them. No RSF response was reported. The Arab League said strikes it attributed to the RSF on power stations could amount to a war crime.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-attacks-kill-civilians-and-cripple-sudans-power-infrastructure-un-warns-of-growing-humanitarian-toll"
+    ]
+   ]
   }
  ],
  "official": {
@@ -363,7 +373,7 @@
    "The RSF and its allies have formed a parallel government in areas they hold.",
    "The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
    "Neither the RSF nor the army responded to Al Jazeera on the sexual-violence findings; both have previously denied such abuses.",
-   "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. The army did not answer CPJ on the media law."
+   "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. No RSF response was reported on the 2–3 November strikes."
   ]
  },
  "editions": [
@@ -378,7 +388,8 @@
   "2026-10-31",
   "2026-11-01",
   "2026-11-02",
-  "2026-11-03"
+  "2026-11-03",
+  "2026-11-05"
  ],
  "instagram": {
   "caption": "",
@@ -395,8 +406,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-03",
-  "text": "Drones hit three more substations on 2 Nov, cutting power in Kassala and Merowe; 16 stations hit in a week. CPJ urged repeal of a law change it says exposes journalists to death sentences."
+  "date": "2026-11-05",
+  "text": "Drone strikes killed at least 14 civilians in West and South Kordofan and Blue Nile on 2–3 Nov, residents told Radio Dabanga. A Blue Nile group blames the RSF; no RSF response was reported."
  },
  "summary": [
   {
