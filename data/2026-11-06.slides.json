@@ -1,0 +1,83 @@
+{
+ "cover": [
+  [
+   "Gaza",
+   "Israeli fire kills four, including a child"
+  ],
+  [
+   "Siang, Arunachal",
+   "Dam opponents refuse talks until detainees freed"
+  ],
+  [
+   "Raj Ghat, Delhi",
+   "Police remove Ankita Bhandari's parents"
+  ],
+  [
+   "France",
+   "Up to 1.6m march; 448 detained"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 9,
+   "label": "World · Life & safety",
+   "fig": "4",
+   "figlab": "killed",
+   "place": "Deir el-Balah, Bureij and Khan Younis, Gaza",
+   "head": "A child among the dead",
+   "bullets": [
+    "A drone hit a tent west of az-Zawayda at dawn, medics say.",
+    "A child was killed by Israeli fire in Bureij camp.",
+    "No Israeli military comment was reported."
+   ],
+   "src": "Al Jazeera",
+   "caption": "Since the October 2025 ceasefire, Gaza's health ministry counts 1,602 people killed. No Israeli military comment on Thursday's deaths was reported.\nSource: Al Jazeera"
+  },
+  {
+   "n": 1,
+   "label": "The Siang dam",
+   "fig": "69",
+   "figlab": "arrested",
+   "place": "Pasighat and Geku, Arunachal Pradesh",
+   "head": "No talks while they are held",
+   "bullets": [
+    "A farmers' forum turned down the chief minister's talks offer for 5–7 November.",
+    "It wants detainees freed and armed forces withdrawn first.",
+    "A foot march from Geku to Itanagar is under way; no government reply was reported."
+   ],
+   "src": "Arunachal Times · Scroll",
+   "caption": "Villages along the Siang fear an 11,000 MW dam would submerge their land. Their forum says it will talk only once those detained are freed.\nSource: Arunachal Times"
+  },
+  {
+   "n": 2,
+   "label": "Protest in Delhi",
+   "fig": "~2 hrs",
+   "figlab": "held in van",
+   "place": "Raj Ghat, New Delhi",
+   "head": "Parents removed from Raj Ghat",
+   "bullets": [
+    "Police detained Ankita Bhandari's parents late Wednesday; her father says they were dragged.",
+    "Police cite a prohibitory order and a planned indefinite sit-in.",
+    "They say they took her unwell mother to hospital."
+   ],
+   "src": "ThePrint · Sabrang India",
+   "caption": "Her father says they were held about two hours without water. Police deny tracking the couple's phones.\nSource: ThePrint"
+  },
+  {
+   "n": 11,
+   "label": "World · Assembly",
+   "fig": "448",
+   "figlab": "detained",
+   "place": "Paris, Lyon and across France",
+   "head": "A day of strikes over pay",
+   "bullets": [
+    "575,000 marched by the Interior Ministry's count; 1.6 million by the CGT union's.",
+    "Police used tear gas in Lyon and at a Paris high school.",
+    "The government defended police and said any abuses would be investigated."
+   ],
+   "src": "franceinfo · AFP",
+   "caption": "Unions called the day for higher wages. The ministry says 53 officers were injured; no count of injured protesters was reported.\nSource: franceinfo"
+  }
+ ],
+ "hope_caption": "Two Indian courts stood up for people in custody: the 24-hour clock to see a magistrate starts at detention, and an FIR was ordered against an officer over altered arrest papers.\nSource: LiveLaw"
+}
