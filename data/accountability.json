@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "figures": [
   {
    "fig": "170",
@@ -606,6 +606,47 @@
     ]
    ],
    "checked": "2026-11-05"
+  },
+  {
+   "id": "farrukhabad-arrest-papers",
+   "region": "india",
+   "kind": "Custody",
+   "state": "Uttar Pradesh",
+   "place": "Farrukhabad, Uttar Pradesh (Allahabad High Court)",
+   "date": "2026-09-13",
+   "power": "Police",
+   "head": "Court finds arrest grounds were added afterwards",
+   "text": "Mohd Yaseen says he was taken into custody on 13 September; the Allahabad High Court found the investigating officer later inserted grounds into his arrest papers, declared the arrest unlawful and freed him.",
+   "official": "The state told the court the reasons for arrest were prepared separately, supplied on 14 September and signed by him. No police statement on the FIR order was reported.",
+   "steps": [
+    {
+     "step": "Arrest declared unlawful",
+     "status": "done",
+     "date": "2026-11-05"
+    },
+    {
+     "step": "FIR ordered",
+     "status": "done",
+     "date": "2026-11-05",
+     "note": "SP Farrukhabad, 7 days"
+    },
+    {
+     "step": "FIR registered",
+     "status": "open"
+    },
+    {
+     "step": "Next hearing",
+     "status": "open",
+     "note": "16 Nov"
+    }
+   ],
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hc-io-inserted-arrest-reasons-fir-unlawful-arrest-557542"
+    ]
+   ],
+   "checked": "2026-11-06"
   }
  ]
 }

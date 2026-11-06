@@ -1,0 +1,488 @@
+{
+ "date": "2026-11-06",
+ "date_long": "Fri 6 Nov 2026",
+ "date_short": "Fri 6 Nov",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-06",
+ "items": [
+  {
+   "region": "india",
+   "place": "Pasighat, East Siang, and Geku, Upper Siang, Arunachal Pradesh",
+   "short": "Siang",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "69",
+   "figcap": "arrested",
+   "headline": "Siang dam opponents refuse talks until detainees freed",
+   "text": "A farmers' forum rejected the chief minister's offer of talks on 5–7 November until detainees are freed and armed forces withdrawn; a foot march heads to Itanagar. No government reply was reported.",
+   "src": [
+    [
+     "Arunachal Times",
+     "https://www.arunachaltimes.in/article/siff-rejects-govt-s-invitation-for-talks-seeks-release-of-detainees-withdrawal-of-armed-forces"
+    ],
+    [
+     "Arunachal Times",
+     "https://www.arunachaltimes.in/article/adi-galo-welfare-society-takes-out-march-against-sump"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
+    ]
+   ],
+   "lon": 95.33,
+   "lat": 28.07,
+   "focus": "siang",
+   "thread": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, where the farmers' forum is based, in 2023.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Raj Ghat, New Delhi",
+   "short": "Raj Ghat",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "~2 hrs",
+   "figcap": "held in van",
+   "headline": "Police remove Ankita Bhandari's parents from Raj Ghat",
+   "text": "Police detained the parents of Ankita Bhandari, killed in 2022, at Raj Ghat late Wednesday; her father says they were dragged. Police cite a prohibitory order against a planned indefinite sit-in.",
+   "src": [
+    [
+     "ThePrint",
+     "https://theprint.in/india/ankita-bhandaris-parents-detained-dragged-driven-around-no-help-to-unwell-wife-says-father/3091078/"
+    ],
+    [
+     "Sabrang India",
+     "https://sabrangindia.in/delhi-police-ankita-bhandaris-parents-detained-dragged-driven-around-no-help-to-unwell-wife-says-father/"
+    ]
+   ],
+   "lon": 77.249,
+   "lat": 28.641,
+   "thread": "jantar-mantar",
+   "photo": {
+    "src": "images/2026-11-06/raj-ghat.webp",
+    "alt": "A black marble platform decorated with orange marigold rings and an eternal flame lamp, in a walled garden with trees.",
+    "caption": "The Raj Ghat memorial to Mahatma Gandhi in New Delhi, in 2022.",
+    "credit": "Mbigul / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raj_Ghat_%E2%80%93_Memorial_of_Mahatma_Gandhi.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "resized"
+   },
+   "n": 2,
+   "map": {
+    "dx": -4,
+    "dy": -20,
+    "label": "Delhi",
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Delhi High Court, New Delhi",
+   "short": "Delhi HC",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "40",
+   "figcap": "links flagged",
+   "headline": "Rights groups challenge police bid to remove accounts",
+   "text": "Two digital rights groups asked the Delhi High Court to quash reports purportedly from Delhi Police asking X to remove their accounts; police have neither confirmed nor withdrawn them, the groups say.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096907/digital-rights-groups-iff-sflc-move-hc-against-delhi-police-asking-x-to-remove-their-accounts"
+    ]
+   ],
+   "lon": 77.239,
+   "lat": 28.611,
+   "focus": "who-decides",
+   "thread": "who-decides",
+   "n": 3,
+   "map": {
+    "dx": 16,
+    "dy": -10,
+    "label": ""
+   }
+  },
+  {
+   "region": "india",
+   "place": "Allahabad High Court · Farrukhabad, Uttar Pradesh",
+   "short": "Farrukhabad",
+   "rights": [
+    "Due process & detention",
+    "Accountability Watch"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "7 days",
+   "figcap": "to file FIR",
+   "headline": "Court orders FIR against officer over arrest papers",
+   "text": "The Allahabad High Court found an investigating officer later added arrest grounds to Mohd Yaseen's papers, freed him and ordered an FIR against the officer. The state said the grounds were supplied and signed.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hc-io-inserted-arrest-reasons-fir-unlawful-arrest-557542"
+    ]
+   ],
+   "lon": 79.58,
+   "lat": 27.39,
+   "thread": "accountability",
+   "photo": {
+    "src": "images/2026-11-06/allahabad-high-court.webp",
+    "alt": "A large cream stone court building with a pediment, red-tiled roofs and an Indian flag, behind lawns and potted plants.",
+    "caption": "The Allahabad High Court building in Prayagraj, in 2009.",
+    "credit": "Vroomtrapit / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Allahabad_high_court.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 4,
+   "map": {
+    "dx": 18,
+    "dy": 16,
+    "label": "Farrukhabad",
+    "pos": "br"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Supreme Court",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "24 hrs",
+   "figcap": "from detention",
+   "headline": "24-hour clock starts at detention, court rules",
+   "text": "The Supreme Court ruled the 24-hour limit to bring someone before a magistrate runs from detention, not formal arrest, and freed four Tripura drug-case accused held about 21 hours first. No state reply was reported.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/supreme-court/24-hour-period-for-production-before-magistrate-runs-from-time-of-detention-not-from-formal-arrest-supreme-court-557409"
+    ],
+    [
+     "Kashmir Observer",
+     "https://kashmirobserver.net/2026/11/05/sc-24-hour-arrest-deadline-begins-from-detention-not-formal-arrest/"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.622,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   },
+   "n": 5,
+   "map": {
+    "dx": -20,
+    "dy": 4,
+    "label": ""
+   }
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Delhi riots case",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "fig": "47",
+   "figcap": "witnesses unheard",
+   "headline": "Umar Khalid, Sharjeel Imam seek Supreme Court bail",
+   "text": "Umar Khalid and Sharjeel Imam appealed against the Delhi High Court's 30 September bail denial; Imam says none of 47 protected witnesses has been examined. Police allege a larger conspiracy behind the 2020 violence.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096906/umar-khalid-sharjeel-imam-move-sc-seeking-bail-in-delhi-riots-conspiracy-case"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.622,
+   "thread": "still-waiting",
+   "n": 6,
+   "map": {
+    "dx": -4,
+    "dy": 18,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Ombada, Khartoum State, Sudan",
+   "short": "Khartoum",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "3 wks",
+   "figcap": "teachers' strike",
+   "headline": "Security summons two striking teachers in Khartoum",
+   "text": "Security services summoned two teachers in Ombada over alleged incitement of a strike now in its third week, the Sudanese Teachers Committee said; no statement from the authorities was reported.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/11/05/security-summons-two-striking-teachers-in-khartoum/"
+    ]
+   ],
+   "lon": 32.42,
+   "lat": 15.65,
+   "focus": "sudan-war",
+   "thread": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-03/khartoum.webp",
+    "alt": "A donkey cart beside a dusty street with a painted wall and a white building behind.",
+    "caption": "A street in Khartoum, Sudan's capital, in 2013.",
+    "credit": "Shmyg / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Khartoum_Street.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Canberra, Australia · Sudan",
+   "short": "Sanctions",
+   "rights": [
+    "Accountability",
+    "Civilian harm"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "4",
+   "figcap": "leaders sanctioned",
+   "headline": "Australia sanctions Sudan's army and RSF leaders",
+   "text": "Australia imposed sanctions and travel bans on army chief al-Burhan, RSF leader Dagalo and two others, citing attacks on civilians, torture and killings; no response from those named was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/australia-sanctions-four-sudanese-figures-over-human-rights-abuses"
+    ]
+   ],
+   "lon": 149.13,
+   "lat": -35.28,
+   "focus": "sudan-war",
+   "thread": "sudan-war",
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Deir el-Balah, Bureij and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed",
+   "headline": "Israeli fire kills four in Gaza, including child",
+   "text": "Israeli drone strikes and fire killed at least four Palestinians, including a child in Bureij camp, medical sources said on Thursday; no Israeli military comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/5/four-people-including-a-child-killed-in-israeli-attacks-on-gaza"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, in 2025. Thursday's drone strike hit a tent west of az-Zawayda in the same governorate.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Biddu, northwest of Jerusalem, occupied West Bank",
+   "short": "Biddu",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "100+",
+   "figcap": "displaced",
+   "headline": "Five homes demolished in Biddu",
+   "text": "Israeli forces demolished five homes in Biddu, displacing more than 100 Palestinians, Al Jazeera reported on Thursday; residents said they had tried to stop it in court. No Israeli reason was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/video/newsfeed/2026/11/5/aje-onl-nf_israeli-demolitions-displace-palestinians-in-biddu-051126"
+    ]
+   ],
+   "lon": 35.13,
+   "lat": 31.83,
+   "photo": {
+    "src": "images/2026-11-06/biddu.webp",
+    "alt": "Terraced hillsides with olive trees under a cloudy sky, with a village of white buildings along the ridge.",
+    "caption": "Biddu and its terraced hills, in 2012.",
+    "credit": "KlausFoehl / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Biddu_view01_2012-03-17.jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized"
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Paris, Lyon and cities across France",
+   "short": "France",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "448",
+   "figcap": "detained",
+   "headline": "Hundreds of thousands march in France; 448 detained",
+   "text": "Between 575,000 (Interior Ministry) and 1.6 million (CGT) marched for higher wages; police used tear gas in Lyon and Paris and detained 448. The government defended police and said any abuses would be investigated.",
+   "src": [
+    [
+     "franceinfo",
+     "https://www.franceinfo.fr/economie/greve/greve/pres-de-1-6-million-de-personnes-ont-defile-en-france-lors-de-la-mobilisation-du-5-novembre-selon-la-cgt-575-000-selon-le-ministere-de-l-interieur_8269868.html"
+    ],
+    [
+     "Times of Israel (AFP)",
+     "https://timesofisrael.com/police-clash-with-protesters-in-frances-lyon-amid-fresh-unrest"
+    ]
+   ],
+   "lon": 2.352,
+   "lat": 48.857,
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, a usual rally point, in 2026.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   },
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Sacramento, California, United States",
+   "short": "California",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "548",
+   "figcap": "death sentences commuted",
+   "headline": "California commutes all 548 death sentences",
+   "text": "Governor Newsom commuted all 548 California death sentences to life without parole, saying state killing is \"incompatible with California's values\"; about two-thirds need state Supreme Court review first.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/california-governor-commutes-sentences-of-more-than-500-people-on-death-row"
+    ]
+   ],
+   "lon": -121.49,
+   "lat": 38.58,
+   "photo": {
+    "src": "images/2026-11-06/san-quentin.webp",
+    "alt": "A long cream-coloured prison complex on the shore of a bay, with green hills and houses behind.",
+    "caption": "San Quentin State Prison, Marin County, California, in 2017.",
+    "credit": "Frank Schulenburg / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:San_Quentin_State_Prison.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "A farmers' forum refuses the chief minister's talks offer until detainees are freed; police say 69 were arrested after arson on 23 October.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}

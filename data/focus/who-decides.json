@@ -3,7 +3,7 @@
  "kicker": "Focus · India and the world",
  "title": "Who decides what you see online",
  "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
- "updated": "2026-10-20",
+ "updated": "2026-11-06",
  "rights": [
   "Expression",
   "Assembly"
@@ -254,10 +254,26 @@
     "type": "photo",
     "i": 6
    }
+  },
+  {
+   "date": "2026-11-05",
+   "text": "On 5 November the Internet Freedom Foundation and the Software Freedom Law Centre asked the Delhi High Court to quash reports purportedly sent by Delhi Police to X. A 30 October report listed their posts as defaming the RSS; a 2 November report listed 40 links from 37 posts and sought removal of the IFF, SFLC and GeoBlockedIndia accounts, plus posts by 16 others. The groups say police have neither confirmed nor withdrawn the reports; several RSS office-bearers said the notice was not authentic.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096907/digital-rights-groups-iff-sflc-move-hc-against-delhi-police-asking-x-to-remove-their-accounts"
+    ]
+   ],
+   "takeaway": "Two rights groups asked a court to quash police requests that X remove their accounts.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "40",
+   "figcap": "links listed in one report"
   }
  ],
  "official": {
-  "text": "The IT ministry's advisory says such posts, without context or amplified by recommendations, \"may contribute to public confusion, apprehension and disturbance of public order\", and that any action must respect lawful expression. The ministry and Meta did not respond to requests for comment.",
+  "text": "The IT ministry's advisory says such posts, without context or amplified by recommendations, \"may contribute to public confusion, apprehension and disturbance of public order\", and that any action must respect lawful expression. The ministry and Meta did not respond to requests for comment. Delhi Police have neither confirmed nor withdrawn the late-October reports to X about the IFF and SFLC accounts, the groups say; several RSS office-bearers said the notice was not authentic.",
   "src": [
    [
     "Hindustan Times",
@@ -266,16 +282,22 @@
    [
     "ThePrint",
     "https://theprint.in/tech/in-advisory-to-meta-on-10-oct-meity-asked-it-to-flag-misleading-claims-over-imposition-of-emergency/3076015/"
+   ],
+   [
+    "Scroll",
+    "https://scroll.in/latest/1096907/digital-rights-groups-iff-sflc-move-hc-against-delhi-police-asking-x-to-remove-their-accounts"
    ]
   ],
   "points": [
    "The IT ministry's advisory says such posts, without context or amplified by recommendations, “may contribute to public confusion, apprehension and disturbance of public order”.",
    "It says any action must respect lawful expression.",
-   "The ministry and Meta did not respond to requests for comment."
+   "The ministry and Meta did not respond to requests for comment.",
+   "Delhi Police have neither confirmed nor withdrawn the reports to X about the IFF and SFLC accounts, the groups say; several RSS office-bearers said the notice was not authentic."
   ]
  },
  "editions": [
-  "2026-10-20"
+  "2026-10-20",
+  "2026-11-06"
  ],
  "instagram": {
   "hashtags": [
@@ -330,5 +352,9 @@
    ]
   }
  ],
- "short": "Who decides online"
+ "short": "Who decides online",
+ "whats_new": {
+  "date": "2026-11-06",
+  "text": "Two digital rights groups asked the Delhi High Court to quash reports purportedly from Delhi Police asking X to remove their accounts; police have neither confirmed nor withdrawn them."
+ }
 }

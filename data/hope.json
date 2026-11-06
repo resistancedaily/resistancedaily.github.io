@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -200,6 +200,102 @@
     "year": "2019",
     "changes": "resized"
    }
+  },
+  {
+   "date": "2026-11-05",
+   "fig": "24 hrs",
+   "figcap": "from detention",
+   "headline": "Detention clock starts when liberty is taken",
+   "id": "sc-24-hour-detention",
+   "kind": "Courts",
+   "place": "Supreme Court, New Delhi",
+   "rights": [
+    "Due process & detention"
+   ],
+   "slide_head": "The clock starts at once",
+   "slide": "Supreme Court: 24-hour limit runs from detention",
+   "text": "The Supreme Court ruled the 24-hour limit to bring a detained person before a magistrate runs from detention, not formal arrest, and freed four men in a Tripura drug case. The case against them continues.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/supreme-court/24-hour-period-for-production-before-magistrate-runs-from-time-of-detention-not-from-formal-arrest-supreme-court-557409"
+    ],
+    [
+     "Kashmir Observer",
+     "https://kashmirobserver.net/2026/11/05/sc-24-hour-arrest-deadline-begins-from-detention-not-formal-arrest/"
+    ]
+   ],
+   "edition": "2026-11-06#5",
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "date": "2026-11-05",
+   "fig": "1",
+   "figcap": "FIR ordered",
+   "headline": "Man freed; officer to face FIR over papers",
+   "id": "allahabad-arrest-papers-fir",
+   "kind": "Accountability",
+   "place": "Allahabad High Court · Farrukhabad, Uttar Pradesh",
+   "rights": [
+    "Due process & detention"
+   ],
+   "slide_head": "Freed; officer faces FIR",
+   "slide": "Court finds arrest grounds were added afterwards",
+   "text": "The Allahabad High Court freed Mohd Yaseen, finding grounds were added to his arrest papers later, and ordered an FIR against the officer. The state says the grounds were supplied; no FIR is reported yet.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hc-io-inserted-arrest-reasons-fir-unlawful-arrest-557542"
+    ]
+   ],
+   "edition": "2026-11-06#4",
+   "photo": {
+    "src": "images/2026-11-06/allahabad-high-court.webp",
+    "alt": "A large cream stone court building with a pediment, red-tiled roofs and an Indian flag, behind lawns and potted plants.",
+    "caption": "The Allahabad High Court building in Prayagraj, in 2009.",
+    "credit": "Vroomtrapit / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Allahabad_high_court.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ]
+  },
+  {
+   "date": "2026-11-05",
+   "fig": "₹1 lakh",
+   "figcap": "compensation",
+   "headline": "Worker beaten by police gets compensation",
+   "id": "varkala-worker-compensation",
+   "kind": "Accountability",
+   "place": "Varkala, Thiruvananthapuram, Kerala",
+   "rights": [
+    "Life & safety"
+   ],
+   "slide_head": "Paid by the officer",
+   "slide": "Kerala pays ₹1 lakh to worker hit by a police officer",
+   "text": "After a rights commission order, Kerala paid ₹1 lakh to construction worker Suresh, assaulted by a Varkala sub-inspector in 2022; the officer has repaid it. He says Suresh was arrested over illegal soil digging.",
+   "src": [
+    [
+     "South First",
+     "https://thesouthfirst.com/keralam/keralam-sanctions-%e2%82%b91-lakh-compensation-for-construction-worker-assaulted-by-varkala-sub-inspector/"
+    ]
+   ]
   }
  ]
 }
