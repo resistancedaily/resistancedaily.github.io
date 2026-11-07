@@ -3,7 +3,7 @@
  "kicker": "Focus · India and the world",
  "title": "Who decides what you see online",
  "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "rights": [
   "Expression",
   "Assembly"
@@ -270,6 +270,22 @@
    },
    "fig": "40",
    "figcap": "links listed in one report"
+  },
+  {
+   "date": "2026-11-06",
+   "text": "On 6 November X told the Delhi High Court that the notices seeking removal of the IFF and SFLC accounts came from an imposter, not Delhi Police, after an internal investigation; it said it had complained to the police and the accounts would not be taken down. The court disposed of the petition. Delhi Police did not answer Scroll's questions on record.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096918/imposter-not-delhi-police-sent-notices-to-take-down-iff-slfc-accounts-x-tells-hc"
+    ]
+   ],
+   "takeaway": "X says the police takedown notices were sent by an imposter; the accounts stay up.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "0",
+   "figcap": "accounts removed"
   }
  ],
  "official": {
@@ -292,12 +308,13 @@
    "The IT ministry's advisory says such posts, without context or amplified by recommendations, “may contribute to public confusion, apprehension and disturbance of public order”.",
    "It says any action must respect lawful expression.",
    "The ministry and Meta did not respond to requests for comment.",
-   "Delhi Police have neither confirmed nor withdrawn the reports to X about the IFF and SFLC accounts, the groups say; several RSS office-bearers said the notice was not authentic."
+   "X told the Delhi High Court on 6 November that the takedown notices came from an imposter, not Delhi Police, and that it had complained to police; Delhi Police did not respond on record."
   ]
  },
  "editions": [
   "2026-10-20",
-  "2026-11-06"
+  "2026-11-06",
+  "2026-11-07"
  ],
  "instagram": {
   "hashtags": [
@@ -354,7 +371,7 @@
  ],
  "short": "Who decides online",
  "whats_new": {
-  "date": "2026-11-06",
-  "text": "Two digital rights groups asked the Delhi High Court to quash reports purportedly from Delhi Police asking X to remove their accounts; police have neither confirmed nor withdrawn them."
+  "date": "2026-11-07",
+  "text": "X told the Delhi High Court on 6 Nov an imposter, not Delhi Police, sent the notices to remove the IFF and SFLC accounts; the accounts stay and the case was closed. Police did not comment on record."
  }
 }

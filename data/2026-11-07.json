@@ -1,0 +1,440 @@
+{
+ "date": "2026-11-07",
+ "date_long": "Sat 7 Nov 2026",
+ "date_short": "Sat 7 Nov",
+ "window": "Fri 09:00 → Sat 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-07",
+ "items": [
+  {
+   "region": "india",
+   "place": "Gauhati High Court · Kaziranga, Golaghat, Assam",
+   "short": "Kaziranga",
+   "rights": [
+    "Due process & detention",
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "115+ days",
+   "figcap": "detained",
+   "headline": "Court quashes NSA detention of Kaziranga activist",
+   "text": "The Gauhati High Court quashed land-rights activist Pranab Doley's NSA detention, saying it rested on \"stale\" cases. Assam had cited foreign visits and funds; no government reply to the ruling was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/pranab-doley-activist-detention-nsa-high-court-kaziranga-luxury-hotel-project-protest-10953340/"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096915/gauhati-hc-quashes-nsa-detention-of-activist-pranab-doley"
+    ]
+   ],
+   "lon": 93.6,
+   "lat": 26.64,
+   "photo": {
+    "src": "images/2026-11-01/kaziranga.webp",
+    "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",
+    "caption": "Grassland in Kaziranga National Park, Assam, near the hotel site Doley protested against, in 2023.",
+    "credit": "Shyamal / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaziranga_habitat_20231221_084943.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 1,
+   "map": {
+    "dx": 4,
+    "dy": -14
+   }
+  },
+  {
+   "region": "india",
+   "place": "Jama Masjid, Srinagar, Jammu and Kashmir",
+   "short": "Srinagar",
+   "rights": [
+    "Expression",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "6 days",
+   "figcap": "house detention",
+   "headline": "Mirwaiz kept home, barred from Friday sermon",
+   "text": "Mirwaiz Umar Farooq said he was under house detention for a sixth day and barred from leading Friday prayers, after a sermon on political prisoners. No police or official statement was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/jammu-and-kashmir/disallowed-friday-prayers-under-house-detention-for-6thday-mirwaiz/article71675173.ece"
+    ]
+   ],
+   "lon": 74.81,
+   "lat": 34.1,
+   "focus": "kashmir",
+   "thread": "kashmir",
+   "photo": {
+    "src": "images/2026-11-07/srinagar-jama-masjid.webp",
+    "alt": "A large brick mosque with a tiered wooden spire behind a lawn, flower beds and a tree trunk.",
+    "caption": "Jama Masjid in Srinagar's old city, where the Mirwaiz usually gives the Friday sermon, in 2014.",
+    "credit": "Mike Prince / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jama_Masjid,_Srinagar_(14363005587).jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Delhi High Court, New Delhi",
+   "short": "Delhi HC",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "Fake",
+   "figcap": "police notices, X says",
+   "headline": "X says 'imposter' sent account takedown notices",
+   "text": "X told the Delhi High Court an imposter, not Delhi Police, sent notices to remove IFF and SFLC accounts; the accounts stay and the case was closed. Police did not comment on record.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096918/imposter-not-delhi-police-sent-notices-to-take-down-iff-slfc-accounts-x-tells-hc"
+    ]
+   ],
+   "lon": 77.239,
+   "lat": 28.611,
+   "focus": "who-decides",
+   "thread": "who-decides",
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Kangpokpi district, Manipur",
+   "short": "Kangpokpi",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "4 days",
+   "figcap": "shutdown",
+   "headline": "Kangpokpi shutdown over killing of two Kuki men",
+   "text": "A Kuki-Zo body's shutdown over the killing of two Kuki civilians closed Kangpokpi for a fourth day and was extended 48 hours. Police say extra forces are deployed; no state reply was reported.",
+   "src": [
+    [
+     "Sentinel Assam (IANS)",
+     "https://www.sentinelassam.com/north-east-india-news/manipur/manipur-shutdown-over-kuki-youths-killing-paralyzes-kangpokpi-district"
+    ]
+   ],
+   "lon": 93.97,
+   "lat": 25.15,
+   "thread": "manipur",
+   "n": 4,
+   "map": {
+    "dx": 6,
+    "dy": 12,
+    "pos": "br"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Sherpur, near Maner, Patna, Bihar",
+   "short": "Patna",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "3",
+   "figcap": "killed by police",
+   "headline": "Police kill three wanted men near Patna",
+   "text": "A Bihar STF and Patna Police team shot dead three men wanted over an October shooting, in Sherpur village. Police say they fired in self-defence after being shot at.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/bihar-police-encounter-sherpur-three-wanted-men-killed-10953777/"
+    ]
+   ],
+   "lon": 84.95,
+   "lat": 25.62,
+   "n": 5,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Gurlapur, Belagavi, Karnataka",
+   "short": "Belagavi",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "₹3,600",
+   "figcap": "per tonne",
+   "headline": "Belagavi cane farmers suspend, not end, protest",
+   "text": "Sugarcane farmers suspended their agitation after factories offered ₹3,600 a tonne and profit-sharing, but still seek ₹5,500 and a state incentive. No state government reply was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/protest-suspended-not-withdrawn-say-krrs-leaders/article71674812.ece"
+    ]
+   ],
+   "lon": 74.98,
+   "lat": 16.35,
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "al-Hadara market, al-Waziiya, Taiz, Yemen",
+   "short": "Taiz",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "30+",
+   "figcap": "killed, Houthi count",
+   "headline": "Strikes on Yemen market kill dozens",
+   "text": "Strikes on a Taiz market killed at least 30 civilians, Houthi health officials said, blaming Saudi air strikes; government forces blamed Houthi missiles. The Saudi-led coalition did not respond.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/yemeni-govt-forces-houthis-trade-blame-for-deadly-strikes-on-taiz-market"
+    ]
+   ],
+   "lon": 43.55,
+   "lat": 13.37,
+   "photo": {
+    "src": "images/2026-10-24/taiz-city.webp",
+    "alt": "A hillside city of pale buildings and minarets below hazy mountains.",
+    "caption": "Taiz city, seen from a hillside, in 2013. The market hit on Friday is in al-Waziiya district, in Taiz governorate.",
+    "credit": "Rod Waddington / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:City_of_Taiz,_Yemen.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   },
+   "n": 7,
+   "map": {
+    "dx": 4,
+    "dy": 0
+   }
+  },
+  {
+   "region": "world",
+   "place": "Cantine, Beni territory, North Kivu, DR Congo",
+   "short": "North Kivu",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "33",
+   "figcap": "killed",
+   "headline": "Village raid kills 33 in Ebola-hit Congo",
+   "text": "Attackers killed 33 people and burned a health post in Cantine, local civil society said; 180 patients, including Ebola cases, fled. Local authorities blame the ADF armed group.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/armed-men-kill-at-least-33-in-village-in-ebola-hit-eastern-drc"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168757"
+    ]
+   ],
+   "lon": 29.03,
+   "lat": 0.5,
+   "photo": {
+    "src": "images/2026-11-07/beni-road.webp",
+    "alt": "A wide red-earth main road lined with low shops, power poles and motorbikes; a woman in a patterned dress walks in the foreground.",
+    "caption": "The main road through Beni, North Kivu, about 50 km east of Cantine, in 2007.",
+    "credit": "Razdagger / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Route_principale_de_Beni.jpg",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Khartoum and across Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Civilian harm",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "15.4M",
+   "figcap": "need shelter",
+   "headline": "UN: Sudan's shelter aid warehouses are empty",
+   "text": "UNHCR and IOM said 15.4 million Sudanese need emergency shelter but funds cover about 10%; 936,000 have been helped. \"Our warehouses are completely empty,\" IOM's Sudan chief said.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/millions-fleeing-sudans-war-risk-losing-shelter-as-funds-run-low-un-warns"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168753"
+    ]
+   ],
+   "lon": 32.53,
+   "lat": 15.59,
+   "focus": "sudan-war",
+   "thread": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-19/darfur-camp.webp",
+    "alt": "Makeshift shelters of sticks, cloth and plastic on dry red ground under a blue sky.",
+    "caption": "Makeshift shelters at a transit camp near Nyala, South Darfur, in 2005.",
+    "credit": "USAID / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "cropped"
+   },
+   "n": 9,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "High Court, Dar es Salaam, Tanzania",
+   "short": "Tanzania",
+   "rights": [
+    "Expression",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "4 yrs",
+   "figcap": "jail",
+   "headline": "Tanzania jails opposition leader Lissu for incitement",
+   "text": "A court cleared Tundu Lissu of treason but jailed him four years for incitement over his slogan \"No Reforms, No Election\". He calls it political; Amnesty called it a \"travesty of justice\".",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/ckp8g4pm0y4lo"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/tanzania-court-jails-opposition-leader-for-incitement-lifts-treason-charge"
+    ]
+   ],
+   "lon": 39.28,
+   "lat": -6.82,
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Macau, China",
+   "short": "Macau",
+   "rights": [
+    "Expression",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "12.5 yrs",
+   "figcap": "jail",
+   "headline": "Macau jails ex-lawmaker in first security case",
+   "text": "Ex-lawmaker Au Kam San, 69, got 12½ years for subversion after a closed-door trial. Prosecutors said he worked with \"external hostile organisations\"; his wife called it \"groundless persecution\".",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cmdx33v9vvr2o"
+    ]
+   ],
+   "lon": 113.54,
+   "lat": 22.19,
+   "photo": {
+    "src": "images/2026-11-07/macau-senado.webp",
+    "alt": "A pedestrian square paved in wavy black and white stones, lined with pastel colonial buildings and shoppers.",
+    "caption": "Senado Square in central Macau, in 2010.",
+    "credit": "Rob Young / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Senado_Square,_Macau_(5235016236).jpg",
+    "kind": "file",
+    "year": "2010",
+    "changes": "cropped"
+   },
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Ibrahimi Mosque, Hebron, occupied West Bank",
+   "short": "Hebron",
+   "rights": [
+    "Expression",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "~30 hrs",
+   "figcap": "closed to Palestinians",
+   "headline": "Hebron's Ibrahimi Mosque closed to Palestinian worshippers",
+   "text": "Israeli forces barred Palestinian worshippers and staff from the mosque from Friday afternoon to Saturday night for a Jewish observance. Forces said they expected about 20,000 visitors and deployed hundreds of personnel.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/israel-closes-hebrons-ibrahimi-mosque-to-palestinians-for-jewish-holiday"
+    ]
+   ],
+   "lon": 35.11,
+   "lat": 31.52,
+   "photo": {
+    "src": "images/2026-11-07/hebron-ibrahimi.webp",
+    "alt": "Stone rooftops in the foreground and, behind them, a walled building with two minarets on a hillside of houses.",
+    "caption": "The Ibrahimi Mosque, seen from rooftops in Hebron's Old City, in 2015.",
+    "credit": "Madosophy Ahmad / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ibrahimi_mosque_-Hebron.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "who-decides",
+   "kicker": "Focus · India and the world",
+   "title": "Who decides what you see online",
+   "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
+   "src": "images/focus/who-decides/meta-sign-2022.webp",
+   "alt": "A large white sign with the blue Meta infinity logo, reading Meta, 1 Hacker Way, in front of trees.",
+   "photos": 7
+  }
+ ]
+}

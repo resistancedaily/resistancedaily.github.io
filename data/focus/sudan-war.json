@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-05",
+ "updated": "2026-11-07",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -329,6 +329,20 @@
      "https://www.dabangasudan.org/en/all-news/article/drone-attacks-kill-civilians-and-cripple-sudans-power-infrastructure-un-warns-of-growing-humanitarian-toll"
     ]
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "text": "On 6 November the UN refugee agency and the International Organization for Migration said 15.4 million people in Sudan urgently need emergency shelter, but funding lets agencies prioritise only about 10% of them; 936,000 have received help so far. \"Our warehouses are completely empty now,\" IOM's Sudan chief Mohamed Refaat said.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/6/millions-fleeing-sudans-war-risk-losing-shelter-as-funds-run-low-un-warns"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168753"
+    ]
+   ]
   }
  ],
  "official": {
@@ -389,7 +403,8 @@
   "2026-11-01",
   "2026-11-02",
   "2026-11-03",
-  "2026-11-05"
+  "2026-11-05",
+  "2026-11-07"
  ],
  "instagram": {
   "caption": "",
@@ -406,8 +421,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-05",
-  "text": "Drone strikes killed at least 14 civilians in West and South Kordofan and Blue Nile on 2–3 Nov, residents told Radio Dabanga. A Blue Nile group blames the RSF; no RSF response was reported."
+  "date": "2026-11-07",
+  "text": "UNHCR and IOM said on 6 Nov that 15.4 million Sudanese need emergency shelter but funds cover about 10%; IOM said its warehouses are empty."
  },
  "summary": [
   {

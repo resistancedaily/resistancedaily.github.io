@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -296,6 +296,44 @@
      "https://thesouthfirst.com/keralam/keralam-sanctions-%e2%82%b91-lakh-compensation-for-construction-worker-assaulted-by-varkala-sub-inspector/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-06",
+   "fig": "115+ days",
+   "figcap": "detained",
+   "headline": "Court quashes NSA detention of Kaziranga activist",
+   "id": "doley-nsa-quashed",
+   "kind": "Courts",
+   "place": "Gauhati High Court · Kaziranga, Golaghat, Assam",
+   "rights": [
+    "Due process & detention"
+   ],
+   "slide_head": "NSA detention quashed",
+   "slide": "Court: Doley held on \"stale\" cases; set to be freed",
+   "text": "The Gauhati High Court quashed Pranab Doley's NSA detention after 115+ days, finding it rested on \"stale\" cases; he was set to be released. Assam had cited foreign visits and funds; three cases remain live.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/pranab-doley-activist-detention-nsa-high-court-kaziranga-luxury-hotel-project-protest-10953340/"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1096915/gauhati-hc-quashes-nsa-detention-of-activist-pranab-doley"
+    ]
+   ],
+   "edition": "2026-11-07#1",
+   "photo": {
+    "src": "images/2026-11-01/kaziranga.webp",
+    "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",
+    "caption": "Grassland in Kaziranga National Park, Assam, near the hotel site Doley protested against, in 2023.",
+    "credit": "Shyamal / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaziranga_habitat_20231221_084943.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   }
   }
  ]
 }
