@@ -1,0 +1,83 @@
+{
+ "cover": [
+  [
+   "North Kivu, DR Congo",
+   "Village raid kills 33; Ebola patients flee"
+  ],
+  [
+   "Taiz, Yemen",
+   "Strikes on a market kill at least 30"
+  ],
+  [
+   "Kaziranga, Assam",
+   "Court quashes activist's NSA detention"
+  ],
+  [
+   "Srinagar, Kashmir",
+   "Mirwaiz kept home, barred from sermon"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 8,
+   "label": "World · Life & safety",
+   "fig": "33",
+   "figlab": "killed",
+   "place": "Cantine, Beni territory, North Kivu",
+   "head": "Raid on an Ebola-hit village",
+   "bullets": [
+    "Attackers burned more than 50 houses and a health post, local civil society says.",
+    "180 hospital patients fled, including suspected and confirmed Ebola cases.",
+    "Local authorities blame the ADF armed group."
+   ],
+   "src": "Al Jazeera (AP, Reuters) · UN News",
+   "caption": "The UN warns the violence is disrupting the Ebola response: people under monitoring have fled, making the outbreak harder to contain.\nSource: UN News"
+  },
+  {
+   "n": 7,
+   "label": "World · Civilian harm",
+   "fig": "30+",
+   "figlab": "killed",
+   "place": "al-Hadara market, Taiz, Yemen",
+   "head": "A market hit; both sides blame the other",
+   "bullets": [
+    "Houthi health officials say Saudi air strikes killed at least 30 civilians.",
+    "Yemen's government forces blame Houthi ballistic missiles.",
+    "The Saudi-led coalition has not responded."
+   ],
+   "src": "Al Jazeera",
+   "caption": "Friday's attack hit al-Hadara market in al-Waziiya district, where fighting has been going on. Neither side's account could be independently verified.\nSource: Al Jazeera"
+  },
+  {
+   "n": 1,
+   "label": "Right upheld",
+   "fig": "115+",
+   "figlab": "days detained",
+   "place": "Gauhati High Court · Kaziranga, Assam",
+   "head": "Activist's NSA detention quashed",
+   "bullets": [
+    "Pranab Doley was held after protesting a hotel project near Kaziranga.",
+    "The court said the order rested on \"stale\" cases and vague claims.",
+    "Assam had cited foreign visits and funds; no reply to the ruling was reported."
+   ],
+   "src": "Indian Express · Scroll",
+   "caption": "A land-rights activist jailed under a preventive-detention law after a protest is set to be freed. The court said foreign trips alone don't justify detention.\nSource: Indian Express"
+  },
+  {
+   "n": 2,
+   "label": "Kashmir detentions",
+   "fig": "6",
+   "figlab": "days at home",
+   "place": "Srinagar, Jammu and Kashmir",
+   "head": "No Friday sermon for the Mirwaiz",
+   "bullets": [
+    "Mirwaiz Umar Farooq says police barricades have kept him home for a week.",
+    "He was not allowed to lead Friday prayers at Jama Masjid.",
+    "No police statement was reported."
+   ],
+   "src": "The Hindu",
+   "caption": "His spokesman links it to last week's sermon on political prisoners and civil liberties. The Mirwaiz calls the curbs \"arbitrary\".\nSource: The Hindu"
+  }
+ ],
+ "hope_caption": "A court in Assam quashed a land-rights activist's preventive detention after more than 115 days; he was set to be released.\nSource: Indian Express"
+}
