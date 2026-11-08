@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-08",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -322,6 +322,90 @@
     ]
    ],
    "edition": "2026-11-07#1",
+   "photo": {
+    "src": "images/2026-11-01/kaziranga.webp",
+    "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",
+    "caption": "Grassland in Kaziranga National Park, Assam, near the hotel site Doley protested against, in 2023.",
+    "credit": "Shyamal / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaziranga_habitat_20231221_084943.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "fig": "4",
+   "figcap": "villagers freed",
+   "headline": "Four Siang dam protesters freed",
+   "id": "siang-four-freed",
+   "kind": "Releases",
+   "place": "Jully Central Jail, Itanagar · Geku, Upper Siang, Arunachal Pradesh",
+   "rights": [
+    "Due process & detention"
+   ],
+   "slide_head": "Home after 29 days",
+   "slide": "Four Siang villagers freed; six others still held",
+   "text": "Four Geku villagers held since 9 October under Arunachal's anti-terror law were freed as a state \"goodwill gesture\" before talks. Six others remain detained, and their cases have not been withdrawn.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
+    ],
+    [
+     "ThePrint Hindi (PTI-Bhasha)",
+     "https://hindi.theprint.in/india/four-protesters-arrested-for-opposing-a-proposed-dam-project-in-arunachal-pradesh-released/1055797/"
+    ]
+   ],
+   "edition": "2026-11-08#1",
+   "link": [
+    "Siang dam Focus",
+    "focus/siang.html"
+   ],
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, downstream of Upper Siang where the four villagers live, in 2023.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "date": "2026-11-06",
+   "fig": "118",
+   "figcap": "days in custody",
+   "headline": "Pranab Doley walks out of jail",
+   "id": "doley-released",
+   "kind": "Releases",
+   "place": "Golaghat district jail · Kaziranga, Assam",
+   "rights": [
+    "Due process & detention"
+   ],
+   "slide_head": "Doley is home",
+   "slide": "Kaziranga activist freed after 118 days in custody",
+   "text": "Land-rights activist Pranab Doley left Golaghat jail on 6 November after the High Court quashed his NSA detention. Three cases against him remain live; no Assam government response was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/pranab-doley-released-golaghat-jail-gauhati-high-court-quashes-nsa-detention-kaziranga-hotel-protests-10954755/"
+    ],
+    [
+     "Pratidin Time",
+     "https://pratidintime.com/latest-assam-news-breaking-news-assam/falsehood-can-never-win-says-pranab-doley-after-118-days-in-jail-12790057"
+    ],
+    [
+     "Indian Express (6 Nov)",
+     "https://indianexpress.com/article/india/pranab-doley-activist-detention-nsa-high-court-kaziranga-luxury-hotel-project-protest-10953340/"
+    ]
+   ],
+   "edition": "2026-11-08#2",
    "photo": {
     "src": "images/2026-11-01/kaziranga.webp",
     "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",

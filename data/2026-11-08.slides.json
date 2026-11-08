@@ -1,0 +1,118 @@
+{
+ "cover": [
+  [
+   "Delhi",
+   "Umar Khalid: 6 years, no trial"
+  ],
+  [
+   "Iran",
+   "Student, 23, faces death sentence"
+  ],
+  [
+   "Uttar Pradesh",
+   "Journalist held under NSA, 205 days"
+  ],
+  [
+   "Tunisia",
+   "Journalist gets four more years"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 101,
+   "label": "Still waiting · India · Due process",
+   "fig": "2,247",
+   "figlab": "days held",
+   "place": "Delhi",
+   "head": "Umar Khalid",
+   "bullets": [
+    "Held under UAPA since 13 Sep 2020; trial not begun.",
+    "Delhi HC refused bail a third time on 30 Sep; he has moved the Supreme Court.",
+    "Delhi Police call fresh bail pleas premature."
+   ],
+   "src": "Bar & Bench · UNI · Siasat",
+   "caption": "He and Sharjeel Imam have taken their bail pleas to the Supreme Court, saying the trial has not begun. Source: UNI",
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, where Umar Khalid has now sought bail, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "n": 102,
+   "label": "Still waiting · World · Expression",
+   "fig": "278",
+   "figlab": "days held",
+   "place": "Mashhad, Iran",
+   "head": "Najmeh Amini",
+   "bullets": [
+    "Student, 23, held since 3 Feb 2026.",
+    "Sentenced to death for blasphemy over social media posts, plus 12.5 years.",
+    "No official statement reported."
+   ],
+   "src": "Center for Human Rights in Iran · Hengaw",
+   "caption": "Rights groups report she is held in Mashhad's Vakilabad prison. Source: Center for Human Rights in Iran"
+  },
+  {
+   "n": 103,
+   "label": "Still waiting · India · Press",
+   "fig": "205",
+   "figlab": "days held",
+   "place": "Noida / Lucknow, Uttar Pradesh",
+   "head": "Satyam Verma",
+   "bullets": [
+    "Journalist held since 17 Apr 2026; NSA order 12 May.",
+    "Got bail in one case on 15 Sep but stays held under the NSA.",
+    "UP Police allege a major role in protest violence."
+   ],
+   "src": "LiveLaw · The Quint",
+   "caption": "The High Court reserved its verdict on his NSA challenge on 8 Oct; no judgment has been reported. Source: LiveLaw",
+   "photo": {
+    "src": "images/2026-11-06/allahabad-high-court.webp",
+    "alt": "A large cream stone court building with a pediment, red-tiled roofs and an Indian flag, behind lawns and potted plants.",
+    "caption": "The Allahabad High Court in Prayagraj, which reserved its verdict on Verma's NSA challenge on 8 Oct, in 2009.",
+    "credit": "Vroomtrapit / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Allahabad_high_court.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 104,
+   "label": "Still waiting · World · Press",
+   "fig": "198",
+   "figlab": "days held",
+   "place": "Tunis, Tunisia",
+   "head": "Zied el-Heni",
+   "bullets": [
+    "Journalist held since 24 Apr 2026, serving one year.",
+    "Given four more years on terrorism-related charges on 27 Oct.",
+    "17 groups urged his release; no official response reported."
+   ],
+   "src": "CPJ · Africanews (AFP)",
+   "caption": "The new sentence relates to his report on a leaked audio recording. Source: Africanews (AFP)",
+   "photo": {
+    "src": "images/2026-11-08/tunis.webp",
+    "alt": "A wide paved promenade lined with clipped trees, with people walking and yellow taxis at the side.",
+    "caption": "Avenue Habib Bourguiba in central Tunis, in 2015.",
+    "credit": "Bahbouhe / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Avenue_Habib_Bourguiba_(Tunis).jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   }
+  }
+ ],
+ "hope_caption": "Four Siang villagers held under Arunachal's anti-terror law were freed after 29 days, and Kaziranga activist Pranab Doley left jail after 118 days; six Siang protesters remain held. Source: ThePrint (PTI) · Indian Express"
+}

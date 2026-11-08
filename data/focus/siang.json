@@ -2,8 +2,8 @@
  "slug": "siang",
  "kicker": "Focus · Upper Siang, Arunachal Pradesh",
  "title": "The fight over the Siang dam",
- "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Police say 69 people were arrested after arson on 23 October; protesters now refuse talks until detainees are freed.",
- "updated": "2026-11-06",
+ "dek": "Villages along the Siang oppose an 11,000 MW dam that would submerge 27 villages. Four villagers held since 9 October were freed on 7 November; six others remain detained.",
+ "updated": "2026-11-08",
  "rights": [
   "Land",
   "Assembly",
@@ -70,10 +70,10 @@
   },
   {
    "fig": "4",
-   "figcap": "held under APUAPA since 9 Oct",
+   "figcap": "freed 7 Nov after 29 days",
    "src": [
-    "Arunachal Times",
-    "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+    "ThePrint (PTI)",
+    "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
    ]
   },
   {
@@ -317,10 +317,20 @@
      "https://www.arunachaltimes.in/article/adi-galo-welfare-society-takes-out-march-against-sump"
     ]
    ]
+  },
+  {
+   "date": "2026-11-07",
+   "text": "On 7 November the four Geku villagers held since 9 October under the state's anti-terror law, Adum Tayom, Omak Paron, Okut Paloh and Oson Paron, were released from Jully Central Jail near Itanagar, officials said. The state had agreed a day earlier to free them as a goodwill gesture in reply to the farmers' forum's demands, and approved reinstating suspended village heads. It said withdrawing FIRs must follow due legal process and that pulling out central forces would be discussed at talks with the chief minister. Six others remain in detention, PTI reported.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "The detention orders cite violence, arson and public safety. Police say protesters at Dite-Dime threw stones and defied prohibitory orders; on 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property. Chief Minister Pema Khandu offered talks (\"The government's doors are always open\") and says the dam is mainly meant to store water in view of China's planned dam upstream. On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue. No police comment on the hunger strike was reported. On 29 October the state government said current work is only technical and environmental surveys for a feasibility report; the chief minister says the government will protect national interests while respecting Siang Valley residents' rights. No Delhi Police response to the 31 October allegations was reported. On 2 November Chief Minister Pema Khandu said: \"We are not talking about dam construction at this stage\", adding that decisions would come only with people's consent; internet services in parts of Upper Siang were suspended \"to curb the spread of misinformation\". On 3 November the chief minister's office invited the Siang Indigenous Farmers' Forum to talks in Itanagar on 5–7 November; no government response to the forum's refusal was reported.",
+  "text": "The detention orders cite violence, arson and public safety. Police say protesters at Dite-Dime threw stones and defied prohibitory orders; on 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property. Chief Minister Pema Khandu offered talks (\"The government's doors are always open\") and says the dam is mainly meant to store water in view of China's planned dam upstream. On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue. No police comment on the hunger strike was reported. On 29 October the state government said current work is only technical and environmental surveys for a feasibility report; the chief minister says the government will protect national interests while respecting Siang Valley residents' rights. No Delhi Police response to the 31 October allegations was reported. On 2 November Chief Minister Pema Khandu said: \"We are not talking about dam construction at this stage\", adding that decisions would come only with people's consent; internet services in parts of Upper Siang were suspended \"to curb the spread of misinformation\". On 3 November the chief minister's office invited the Siang Indigenous Farmers' Forum to talks in Itanagar on 5–7 November; no government response to the forum's refusal was reported. On 6 November the state agreed to release the four detained villagers as a goodwill gesture, said withdrawing FIRs must follow due legal process, and invited the forum to talks with the chief minister.",
   "src": [
    [
     "Arunachal Times",
@@ -373,6 +383,10 @@
    [
     "Arunachal Times",
     "https://www.arunachaltimes.in/article/siff-rejects-govt-s-invitation-for-talks-seeks-release-of-detainees-withdrawal-of-armed-forces"
+   ],
+   [
+    "ThePrint (PTI)",
+    "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
    ]
   ],
   "points": [
@@ -380,7 +394,8 @@
    "On 27 October the police inspector-general said those arrested face charges of rioting, burning vehicles and damaging property.",
    "Chief Minister Pema Khandu has offered talks (“The government's doors are always open”) and says the dam is mainly meant to store water in view of China's planned dam upstream.",
    "On 28 October minister Ojing Tasing said the project needs people's trust and called for transparency and dialogue.",
-   "On 29 October the state government said current work is only surveys for a feasibility report; on 2 November the chief minister said: \"We are not talking about dam construction at this stage.\" On 3 November his office invited the farmers' forum to talks on 5–7 November.",
+   "On 2 November the chief minister said: \"We are not talking about dam construction at this stage.\" On 6 November the state agreed to free the four villagers as a \"goodwill gesture\" and invited the forum to talks.",
+   "The state says withdrawing FIRs must follow due legal process, and that pulling out central forces will be discussed at the talks.",
    "Internet in parts of Upper Siang was suspended on 2 November \"to curb the spread of misinformation\"; no police comment on the Delhi allegations was reported."
   ]
  },
@@ -399,7 +414,8 @@
   "2026-10-31",
   "2026-11-01",
   "2026-11-03",
-  "2026-11-06"
+  "2026-11-06",
+  "2026-11-08"
  ],
  "instagram": {
   "caption": "Villages along the Siang river in Arunachal Pradesh oppose the Siang Upper Multipurpose Project, an 11,000 MW hydropower plant that Mongabay India reports would submerge 27 villages.\n\nOn 9 October four Geku villagers were detained under the state's anti-terror law, and gatherings were banned. On 22 October opponents held a 24-hour sit-in in Pasighat; five more activists were reportedly taken into custody.\n\nOn 23 October police fired tear gas during a bandh and four to five women were hospitalised. That night an NHPC office, a police station and vehicles in Pasighat were reportedly set on fire. Protesters want 10 arrested activists freed. On 24 October five youths were detained, gatherings were barred in Pasighat, and lawyer Ebo Mili and other activists surrendered to police.\n\nOfficial position: the detention orders cite violence and public safety; police say protesters threw stones and defied orders; the chief minister says the government's doors are always open; the state says the dam is meant to store water in view of China's planned dam upstream.",
@@ -414,10 +430,10 @@
    "#ResistanceDaily"
   ]
  },
- "seo_title": "Siang dam protests, Arunachal: arrests, shutdown and internet cut",
+ "seo_title": "Siang dam protests, Arunachal: detentions, releases, talks offer",
  "whats_new": {
-  "date": "2026-11-06",
-  "text": "A farmers' forum rejected the chief minister's offer of talks on 5–7 Nov until detainees are freed and armed forces withdrawn; a foot march to Itanagar is under way. No government reply was reported."
+  "date": "2026-11-07",
+  "text": "Four Geku villagers held under the state anti-terror law since 9 Oct were freed on 7 Nov as a state \"goodwill gesture\"; six others remain detained, PTI reported. The state invited talks."
  },
  "summary": [
   {
@@ -436,29 +452,25 @@
   },
   {
    "label": "Why it matters",
-   "text": "Police say 69 people have been arrested under the state's anti-terror law, and four villagers have been held since 9 October.",
+   "text": "Police say 69 were arrested under the state anti-terror law; four villagers were freed on 7 November, six remain held.",
    "src": [
     [
      "Scroll",
      "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
     ],
     [
-     "Arunachal Times",
-     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
+     "ThePrint (PTI)",
+     "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
     ]
    ]
   },
   {
    "label": "What's next",
-   "text": "A farmers' forum refuses the chief minister's talks offer until detainees are freed; a foot march heads for Itanagar.",
+   "text": "The state invited the farmers' forum to talks with the chief minister; a foot march heads for Itanagar.",
    "src": [
     [
-     "Arunachal Times",
-     "https://www.arunachaltimes.in/article/siff-rejects-govt-s-invitation-for-talks-seeks-release-of-detainees-withdrawal-of-armed-forces"
-    ],
-    [
-     "Arunachal Times",
-     "https://www.arunachaltimes.in/article/adi-galo-welfare-society-takes-out-march-against-sump"
+     "ThePrint (PTI)",
+     "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
     ]
    ]
   }

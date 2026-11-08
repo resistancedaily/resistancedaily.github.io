@@ -1,6 +1,6 @@
 {
  "note": "Still Waiting case list, carried forward weekly. Verify each case every Sunday against sources that name the person and state each fact. Choose cases by severity and need for attention, not to balance India against World: include Indian cases that matter, and keep the world in view, since cases elsewhere are equally important.",
- "asof": "2026-11-01",
+ "asof": "2026-11-08",
  "cases": [
   {
    "region": "india",
@@ -8,10 +8,18 @@
    "where": "Delhi",
    "since": "2020-09-13",
    "law": "UAPA",
-   "status": "Delhi High Court rejected his bail for the third time on 30 Sep 2026; trial not begun. Prosecution said he cannot seek bail again before Jan 2027",
+   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, its third; trial not begun. Delhi Police have called his fresh bail pleas premature under the Supreme Court's one-year bar",
    "src": [
     [
-     "Bar & Bench",
+     "Siasat (5 Nov)",
+     "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
+    ],
+    [
+     "UNI (5 Nov)",
+     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
+    ],
+    [
+     "Bar & Bench (30 Sep)",
      "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
     ],
     [
@@ -30,27 +38,23 @@
    "where": "Delhi",
    "since": "2020-01-28",
    "law": "UAPA, sedition and other charges",
-   "status": "Bail rejected by Delhi High Court 30 Sep 2026. A 7-day interim bail ended 10 Oct; a court found a media-contact breach but did not cancel it. Police called it misuse of liberty",
+   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, saying no prosecution witness has yet been examined. No official response to the new plea reported",
    "src": [
     [
-     "USCIRF",
-     "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
+     "Siasat (5 Nov)",
+     "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
+    ],
+    [
+     "UNI (5 Nov)",
+     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
     ],
     [
      "Bar & Bench (30 Sep)",
      "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
     ],
     [
-     "Millat Times",
-     "https://millattimes.com/sharjeel-imam-walks-out-of-tihar-on-seven-day-interim-bail/"
-    ],
-    [
-     "LiveLaw",
-     "https://www.livelaw.in/news-updates/sharjeel-imam-flouted-conditions-imposed-while-granting-interim-bail-delhi-court-554070"
-    ],
-    [
-     "Bar & Bench (10 Oct)",
-     "https://www.barandbench.com/amp/story/news/litigation/delhi-court-says-sharjeel-imam-violated-interim-bail-condition-by-interacting-with-media"
+     "USCIRF",
+     "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
     ],
     [
      "The Week",
@@ -64,18 +68,14 @@
    "where": "Noida",
    "since": "2026-04-11",
    "law": "11 FIRs over Noida wage protest",
-   "status": "No bail in 2 of 11 cases. Her bail order notes she was not at the site of the violence; police chargesheet calls her a key conspirator",
+   "status": "Still jailed; no bail in 2 of 11 cases. A bail order notes she was not at the site of the violence; a police chargesheet calls her a key conspirator. No new developments reported this week",
    "src": [
     [
      "Reporters' Collective",
      "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
     ],
     [
-     "CIVICUS Monitor",
-     "https://monitor.civicus.org/explore/india-thousands-detained-in-crackdown-on-mass-protests-against-electoral-roll-manipulation-while-activists-and-journalists-are-criminalised/"
-    ],
-    [
-     "Scroll",
+     "Scroll (22 Sep)",
      "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest"
     ]
    ]
@@ -86,63 +86,15 @@
    "where": "Noida / Lucknow, UP",
    "since": "2026-04-17",
    "law": "NSA (order 12 May 2026) plus Noida protest FIRs",
-   "status": "Journalist still held under NSA despite bail in one case on 15 Sep. Allahabad High Court reserved its verdict on his NSA challenge on 8 Oct; state's arguments not reported",
+   "status": "Journalist still held under NSA despite bail in one case on 15 Sep. Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment reported by 8 Nov. UP Police allege a major role in protest violence",
    "src": [
     [
-     "LiveLaw",
+     "LiveLaw (8 Oct)",
      "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-high-court-reserves-journalist-satyam-verma-habeas-plea-nsa-detention-noida-protest-553689"
     ],
     [
      "The Quint",
      "https://www.thequint.com/news/breaking-news/allahabad-high-court-bail-satyam-verma-noida-case"
-    ]
-   ]
-  },
-  {
-   "region": "india",
-   "name": "Pranab Doley",
-   "where": "Kaziranga, Assam",
-   "since": "2026-07-12",
-   "law": "NSA (detention order 30 Jul 2026)",
-   "status": "Held under NSA after getting bail. Gauhati High Court reserved its verdict on his challenge on 14 Oct. Govt cites public order; Assam Police did not answer press questions",
-   "src": [
-    [
-     "Assam Tribune",
-     "https://assamtribune.com/assam/gauhati-hc-issues-notice-to-centre-assam-govt-over-pranab-doleys-nsa-detention-1616278"
-    ],
-    [
-     "The Wire",
-     "https://m.thewire.in/article/rights/charged-with-the-nsa-for-protesting-a-luxury-hotel-project-on-indigenous-land-pranab-doley-completes-111-days-in-detention"
-    ]
-   ]
-  },
-  {
-   "region": "india",
-   "name": "Siang dam protesters (4)",
-   "where": "Upper Siang, Arunachal",
-   "since": "2026-10-09",
-   "law": "Arunachal Pradesh UAPA, 2014",
-   "status": "Four Geku villagers still held. After the 23 Oct arson in Pasighat, police say 69 people were arrested under the same law. CM has offered talks",
-   "src": [
-    [
-     "Mongabay India",
-     "https://india.mongabay.com/short-article/2026/10/assembly-ban-imposed-in-upper-siang-protesters-detained-under-uapa/"
-    ],
-    [
-     "Arunachal Times",
-     "https://arunachaltimes.in/article/sump-protests-13-get-relief-four-languish-under-apuapa"
-    ],
-    [
-     "Scroll",
-     "https://scroll.in/latest/1096673/sixty-nine-arrested-under-arunachal-anti-terror-law-after-protests-against-dam-project-turn-violent"
-    ],
-    [
-     "Outlook",
-     "https://www.outlookindia.com/national/siang-dam-protest-turns-violent-govt-offices-police-vehicles-set-ablaze-in-arunachal-pradesh"
-    ],
-    [
-     "ThePrint",
-     "https://theprint.in/feature/arunachal-women-leading-protests-siang-valley-dam-survey/3086926/"
     ]
    ]
   },
@@ -170,7 +122,7 @@
    "where": "Bahrain",
    "since": "2011-04-09",
    "law": "Life sentence (2011)",
-   "status": "Human rights defender in Jau Prison; rights groups urged France's president to press for his release before his 20 Oct visit. No Bahraini government response reported",
+   "status": "Human rights defender serving life in Jau Prison; 31 rights groups urged France's president to press for his release during his 19–21 Oct Gulf tour. No Bahraini government response reported",
    "src": [
     [
      "Tom Lantos HR Commission",
@@ -192,7 +144,7 @@
    "where": "Türkiye",
    "since": "2017-10-18",
    "law": "Aggravated life sentence",
-   "status": "Istanbul court refused release and retrial (13 Oct) despite a European Court of Human Rights ruling; government says courts are independent and the case is not political",
+   "status": "Istanbul court refused release and retrial (reported 14 Oct) despite a binding European Court of Human Rights ruling; government denies the case is political and says courts are independent",
    "src": [
     [
      "Amnesty UK",
@@ -232,8 +184,12 @@
    "where": "Myanmar",
    "since": "2021-02-01",
    "law": "18-year sentence after coup",
-   "status": "Under house arrest in Naypyidaw; spoke to her son by phone on 22 Oct, the first time in five years. Government rejects calls for release",
+   "status": "Under house arrest in Naypyidaw; her son reported on 22 Oct his first phone call with her in more than five years. Government rejects calls for her release",
    "src": [
+    [
+     "Reuters via Dawn (1 Feb 2021)",
+     "https://www.dawn.com/news/1604849"
+    ],
     [
      "AP via Daily Pioneer",
      "https://dailypioneer.com/amp/story/world/suu-kyi-speaks-to-son-for-first-time-in-5-years"
@@ -254,7 +210,7 @@
    "where": "Azerbaijan",
    "since": "2024-04-18",
    "law": "Smuggling, money laundering, tax evasion, forgery charges",
-   "status": "Meclis.info founder; prosecutors sought 12 years (20 Oct), verdict expected 3 Nov. Authorities say outlets broke foreign-grant rules",
+   "status": "Meclis.info founder; prosecutors sought 12 years (20 Oct); next hearing set for 3 Nov, outcome not yet reported. Authorities say outlets broke foreign-grant rules and deny his torture claims",
    "src": [
     [
      "CPJ",
@@ -263,6 +219,10 @@
     [
      "CPJ (2024 arrest)",
      "https://cpj.org/2024/04/azerbaijan-arrests-13th-journalist-over-alleged-international-donor-funding/"
+    ],
+    [
+     "Caucasian Knot",
+     "https://www.eng.kavkaz-uzel.eu/articles/79565"
     ]
    ]
   },
@@ -272,7 +232,7 @@
    "where": "Gaza → Israeli custody",
    "since": "2024-12-27",
    "law": "Unlawful Combatants Law; no charge, no trial",
-   "status": "Hospital director; lawyer reports abuse in custody. Israel alleges Hamas links, which family and lawyers deny",
+   "status": "Hospital director held without charge; Supreme Court upheld detention in June and his lawyer reported beatings in July. Israel alleges Hamas links, which family and lawyers deny",
    "src": [
     [
      "Amnesty International",
@@ -283,8 +243,8 @@
      "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
     ],
     [
-     "CIVICUS",
-     "https://www.civicus.org/index.php/media-resources/news/8868-release-dr-hussam-abu-safiya-and-13-other-doctors-held-without-charge"
+     "Arab News",
+     "https://www.arabnews.com/node/2638965/amp"
     ]
    ]
   },
@@ -296,7 +256,7 @@
    "count": "6,500+",
    "countcap": "held in El Geneina, doctors say",
    "law": "Armed group detention",
-   "status": "Amnesty reports torture, forced labour and ransom-for-release in El Fasher; doctors report food shortages and deaths in El Geneina. RSF did not respond",
+   "status": "Amnesty reports torture, forced labour and ransom-for-release in El Fasher; doctors report food shortages and rising deaths in El Geneina. RSF did not respond to Amnesty",
    "src": [
     [
      "Amnesty International",
@@ -309,10 +269,6 @@
     [
      "Anadolu via Yeni Şafak",
      "https://en.yenisafak.com/world/sudan-doctors-network-warns-6500-rsf-detainees-face-dire-conditions-3724488"
-    ],
-    [
-     "Al Jazeera",
-     "https://www.aljazeera.com/news/2025/10/26/battle-for-sudans-el-fasher-intensifies-as-rsf-claims-seizing-army-hq"
     ]
    ]
   },
@@ -322,7 +278,7 @@
    "where": "Iran",
    "since": "2026-02-03",
    "law": "Death sentence for blasphemy; 12.5 years on security charges",
-   "status": "23-year-old student held in Mashhad Central Prison, sentenced to death over social media posts. No official statement reported",
+   "status": "23-year-old student held in Mashhad Central (Vakilabad) Prison, sentenced to death over social media posts. No official statement reported",
    "src": [
     [
      "Center for Human Rights in Iran",
@@ -389,6 +345,32 @@
     [
      "Amnesty International France",
      "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Zied el-Heni",
+   "where": "Tunisia",
+   "since": "2026-04-24",
+   "law": "Telecommunications Code art. 86 (1 year); four terrorism-related charges (4 years)",
+   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. No official response reported",
+   "src": [
+    [
+     "CPJ (profile)",
+     "https://cpj.org/data/people/zied-el-heni/"
+    ],
+    [
+     "CPJ (joint statement)",
+     "https://cpj.org/2026/11/cpj-partners-tunisian-authorities-must-release-journalist-zied-el-heni/"
+    ],
+    [
+     "Africanews (AFP)",
+     "https://www.africanews.com/2026/10/29/tunisian-journalist-sentenced-to-four-years-in-jail-on-terrorism-charges/"
+    ],
+    [
+     "The New Arab",
+     "https://www.newarab.com/news/amnesty-calls-release-imprisoned-tunisian-journalist"
     ]
    ]
   }

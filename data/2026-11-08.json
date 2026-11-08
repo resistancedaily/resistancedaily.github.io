@@ -1,0 +1,759 @@
+{
+ "date": "2026-11-08",
+ "date_long": "Sun 8 Nov 2026",
+ "date_short": "Sun 8 Nov",
+ "window": "Sat 09:00 → Sun 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Need to talk?",
+   "Tele-MANAS 14416 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-08",
+ "items": [
+  {
+   "region": "india",
+   "place": "Jully Central Jail, Itanagar · Geku, Upper Siang, Arunachal Pradesh",
+   "short": "Siang",
+   "rights": [
+    "Due process & detention",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "4",
+   "figcap": "villagers freed",
+   "headline": "Four Siang dam protesters freed after 29 days",
+   "text": "Four Geku villagers held under Arunachal's anti-terror law since 9 October were freed as a state \"goodwill gesture\" before talks. Six others remain detained; the state says FIR withdrawals must follow legal process.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/four-siang-dam-protesters-released-in-arunachal-after-nearly-month-in-detention/3093201/"
+    ],
+    [
+     "ThePrint Hindi (PTI-Bhasha)",
+     "https://hindi.theprint.in/india/four-protesters-arrested-for-opposing-a-proposed-dam-project-in-arunachal-pradesh-released/1055797/"
+    ]
+   ],
+   "lon": 93.6,
+   "lat": 27.1,
+   "focus": "siang",
+   "thread": "siang",
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, downstream of Upper Siang where the four villagers live, in 2023.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 1,
+   "map": {
+    "dx": 2,
+    "dy": -18
+   }
+  },
+  {
+   "region": "india",
+   "place": "Golaghat district jail · Kaziranga, Assam",
+   "short": "Golaghat",
+   "rights": [
+    "Due process & detention",
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "118",
+   "figcap": "days in custody",
+   "headline": "Kaziranga activist Pranab Doley walks free",
+   "text": "Land-rights activist Pranab Doley left Golaghat jail on Friday evening after the High Court quashed his NSA detention. He called the NSA's use arbitrary; no Assam government response was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/pranab-doley-released-golaghat-jail-gauhati-high-court-quashes-nsa-detention-kaziranga-hotel-protests-10954755/"
+    ],
+    [
+     "Pratidin Time",
+     "https://pratidintime.com/latest-assam-news-breaking-news-assam/falsehood-can-never-win-says-pranab-doley-after-118-days-in-jail-12790057"
+    ]
+   ],
+   "lon": 93.96,
+   "lat": 26.52,
+   "photo": {
+    "src": "images/2026-11-01/kaziranga.webp",
+    "alt": "Tall grass in the foreground and a lone tree on flat grassland under a blue sky.",
+    "caption": "Grassland in Kaziranga National Park, Assam, near the hotel site Doley protested against, in 2023.",
+    "credit": "Shyamal / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kaziranga_habitat_20231221_084943.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 2,
+   "map": {
+    "dx": 12,
+    "dy": 2
+   }
+  },
+  {
+   "region": "india",
+   "place": "Gali Sheesh Mahal, Chawri Bazar, Old Delhi",
+   "short": "Old Delhi",
+   "rights": [
+    "Life & safety",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "6",
+   "figcap": "workers killed",
+   "headline": "Six workers die in Old Delhi building collapse",
+   "text": "Six workers from Bihar died when an unauthorised building under construction collapsed in Chawri Bazar. Police arrested the owner on Saturday and three contractors on Friday on culpable homicide charges.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Delhi/chawri-bazar-building-collapse-death-toll-rescue-operations-update-november-7-2026/article71677330.ece"
+    ]
+   ],
+   "lon": 77.227,
+   "lat": 28.649,
+   "photo": {
+    "src": "images/2026-11-08/chawri-bazar.webp",
+    "alt": "A crowded market street lined with old buildings and tangled wires, with cycle rickshaws and porters, and a red-stone mosque dome at the far end.",
+    "caption": "Chawri Bazar road in Old Delhi, with the Jama Masjid at the end, in 2005.",
+    "credit": "Finck Roderick / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chawri_Bazar_Road_-_panoramio.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Sribhumi (Karimganj) district, Assam",
+   "short": "Sribhumi",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "28",
+   "figcap": "expelled",
+   "headline": "Assam says police expelled 28 alleged Bangladeshis",
+   "text": "Assam's chief minister said Sribhumi police detected and expelled 28 people they describe as Bangladeshis living illegally. The report names no court or tribunal process; no Bangladeshi response was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/a-total-of-28-illegal-immigrants-apprehended-expelled-assam-cm-himanta-biswa-sarma/article71678023.ece"
+    ]
+   ],
+   "lon": 92.36,
+   "lat": 24.87,
+   "photo": {
+    "src": "images/2026-11-08/karimganj.webp",
+    "alt": "A wet main road with a cycle rickshaw, auto-rickshaw, roadside stalls and billboards under a grey sky.",
+    "caption": "Karimganj–Silchar Road near Karimganj bus station, in the district now called Sribhumi, in 2019.",
+    "credit": "Rohit Goswami / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karimganj_Silchar_Road,_near_Karimganj_Bus_Station.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 4,
+   "map": {
+    "dx": -6,
+    "dy": 13,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "al-Shariya village, Sanaa province, Yemen",
+   "short": "Sanaa",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "27+",
+   "figcap": "killed, Houthi count",
+   "headline": "Strikes on village near Sanaa kill 27",
+   "text": "Strikes on al-Shariya village north of Sanaa killed at least 27 people, mostly women and children, Houthi health officials said, blaming the Saudi-led coalition. Saudi Arabia and Yemen's government have not commented.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/7/yemeni-govt-forces-report-advances-as-houthis-say-deadly-strikes-hit-sanaa"
+    ]
+   ],
+   "lon": 44.21,
+   "lat": 15.45,
+   "photo": {
+    "src": "images/2026-11-08/sanaa.webp",
+    "alt": "A narrow lane between tall brick tower houses with decorated windows, a parked motorbike and a water tank.",
+    "caption": "A lane in Sanaa's old city in 2013. Saturday's strikes hit al-Shariya village, north of the capital.",
+    "credit": "Rod Waddington / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Streets_of_Sanaa,_Yemen_(10732822016).jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "dx": 4,
+    "dy": -8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Deir el-Balah, Gaza City and Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "70,000",
+   "figcap": "tents flooded",
+   "headline": "First winter storm floods Gaza's tent camps",
+   "text": "The season's first storm flooded about 70,000 tents of displaced families, Gaza's media office said; aid groups blame Israeli limits on shelter materials. No Israeli response was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza, in 2025.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Paris, Lyon and cities across France",
+   "short": "France",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "146k–250k",
+   "figcap": "protesters",
+   "headline": "Cost-of-living protests sweep France again",
+   "text": "About 146,000 people protested across France, the interior ministry said; unions said 250,000. Police fired tear gas in Paris and Lyon and say 200 people attacked officers during an arrest.",
+   "src": [
+    [
+     "Al Jazeera (AFP)",
+     "https://www.aljazeera.com/news/2026/11/7/more-than-140000-rally-as-new-protests-against-rising-costs-sweep-france"
+    ]
+   ],
+   "lon": 2.35,
+   "lat": 48.86,
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, a usual rally point, in 2026.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Damazin, Blue Nile, Sudan",
+   "short": "Blue Nile",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "3",
+   "figcap": "localities fought over",
+   "headline": "Fear grows in Damazin as fighting spreads",
+   "text": "Damazin residents reported power, water and grain-mill cuts and families fleeing as fighting spread in Blue Nile; one resident said the city was calm. No army or RSF statement was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/fear-grows-in-damazin-as-clashes-intensify-in-blue-nile"
+    ]
+   ],
+   "lon": 34.36,
+   "lat": 11.79,
+   "focus": "sudan-war",
+   "thread": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street view in Damazin, capital of Blue Nile, in 2019.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 8,
+   "map": {
+    "dx": -4,
+    "dy": 8,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "La Restinga, El Hierro, Canary Islands, Spain",
+   "short": "El Hierro",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "grey",
+   "fig": "3,300+",
+   "figcap": "arrivals since 1 Nov",
+   "headline": "Canary island declares emergency over boat arrivals",
+   "text": "El Hierro declared an emergency and asked Madrid for help after more than 3,300 people arrived on about 30 boats since 1 November. No central government reply was reported.",
+   "src": [
+    [
+     "Al Jazeera (AFP/Reuters)",
+     "https://www.aljazeera.com/news/2026/11/8/canary-islands-el-hierro-declares-emergency-amid-migrant-refugee-influx"
+    ]
+   ],
+   "lon": -17.98,
+   "lat": 27.64,
+   "photo": {
+    "src": "images/2026-11-08/la-restinga.webp",
+    "alt": "A small harbour with a dark pebble beach, black lava rocks, sailing masts and a breakwater under a bright sky.",
+    "caption": "The fishing harbour at La Restinga, El Hierro, where most boats land, in 2005.",
+    "credit": "Mª. C. Mingorance Rodríguez / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Puerto_de_La_Restinga.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Puerto_de_La_Restinga.JPG",
+    "kind": "file",
+    "year": "2005",
+    "changes": "resized"
+   },
+   "n": 9
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Upper Siang, Arunachal Pradesh",
+   "title": "The fight over the Siang dam",
+   "dek": "Four villagers held since 9 October were freed on 7 November as a state \"goodwill gesture\"; six others remain detained.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ],
+ "cases": [
+  {
+   "region": "india",
+   "name": "Umar Khalid",
+   "where": "Delhi",
+   "since": "2020-09-13",
+   "law": "UAPA",
+   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, its third; trial not begun. Delhi Police have called his fresh bail pleas premature under the Supreme Court's one-year bar",
+   "src": [
+    [
+     "Siasat (5 Nov)",
+     "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
+    ],
+    [
+     "UNI (5 Nov)",
+     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
+    ],
+    [
+     "Bar & Bench (30 Sep)",
+     "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
+    ],
+    [
+     "Citizens for Justice and Peace",
+     "https://cjp.org.in/six-years-without-a-trial-the-umar-khalid-case-and-indias-criminal-justice-system/"
+    ],
+    [
+     "The Week (PTI)",
+     "https://www.theweek.in/wire-updates/national/2024/09/14/lgd8-dl-court-khalid.html"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Sharjeel Imam",
+   "where": "Delhi",
+   "since": "2020-01-28",
+   "law": "UAPA, sedition and other charges",
+   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, saying no prosecution witness has yet been examined. No official response to the new plea reported",
+   "src": [
+    [
+     "Siasat (5 Nov)",
+     "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
+    ],
+    [
+     "UNI (5 Nov)",
+     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
+    ],
+    [
+     "Bar & Bench (30 Sep)",
+     "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
+    ],
+    [
+     "USCIRF",
+     "https://www.uscirf.gov/religious-prisoners-conscience/forb-victims-database/sharjeel-imam"
+    ],
+    [
+     "The Week",
+     "https://www.theweek.in/news/india/2020/01/28/sharjeel-imam-jnu-student-accused-of-sedition-arrested-in-jehanabad.amp.html"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Srishti Gupta",
+   "where": "Noida",
+   "since": "2026-04-11",
+   "law": "11 FIRs over Noida wage protest",
+   "status": "Still jailed; no bail in 2 of 11 cases. A bail order notes she was not at the site of the violence; a police chargesheet calls her a key conspirator. No new developments reported this week",
+   "src": [
+    [
+     "Reporters' Collective",
+     "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
+    ],
+    [
+     "Scroll (22 Sep)",
+     "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Satyam Verma",
+   "where": "Noida / Lucknow, UP",
+   "since": "2026-04-17",
+   "law": "NSA (order 12 May 2026) plus Noida protest FIRs",
+   "status": "Journalist still held under NSA despite bail in one case on 15 Sep. Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment reported by 8 Nov. UP Police allege a major role in protest violence",
+   "src": [
+    [
+     "LiveLaw (8 Oct)",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-high-court-reserves-journalist-satyam-verma-habeas-plea-nsa-detention-noida-protest-553689"
+    ],
+    [
+     "The Quint",
+     "https://www.thequint.com/news/breaking-news/allahabad-high-court-bail-satyam-verma-noida-case"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dawit Isaak",
+   "where": "Eritrea",
+   "since": "2001-09-23",
+   "law": "No charge, no trial",
+   "status": "Journalist held incommunicado 25 years; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release",
+   "src": [
+    [
+     "RSF",
+     "https://rsf.org/en/silence-no-longer-option-133-journalists-around-world-mobilise-dawit-isaak-and-his-colleagues"
+    ],
+    [
+     "CPJ",
+     "https://cpj.org/data/people/dawit-isaak/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Abdulhadi Al-Khawaja",
+   "where": "Bahrain",
+   "since": "2011-04-09",
+   "law": "Life sentence (2011)",
+   "status": "Human rights defender serving life in Jau Prison; 31 rights groups urged France's president to press for his release during his 19–21 Oct Gulf tour. No Bahraini government response reported",
+   "src": [
+    [
+     "Tom Lantos HR Commission",
+     "https://humanrightscommission.house.gov/DFP/Countries/Bahrain/Abdulhadi-al-Khawaja"
+    ],
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/10/16/president-macrons-visit-to-bahrain-amid-an-escalating-human-rights-crackdown"
+    ],
+    [
+     "ADHRB",
+     "https://www.adhrb.org/2026/01/fourteen-years-of-silence-bahrain-must-release-abdulhadi-al-khawaja/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Osman Kavala",
+   "where": "Türkiye",
+   "since": "2017-10-18",
+   "law": "Aggravated life sentence",
+   "status": "Istanbul court refused release and retrial (reported 14 Oct) despite a binding European Court of Human Rights ruling; government denies the case is political and says courts are independent",
+   "src": [
+    [
+     "Amnesty UK",
+     "https://www.amnesty.org.uk/knowledge-hub/all-resources/turkey-charges-against-osman-kavala-must-be-dropped/"
+    ],
+    [
+     "Turkish Minute",
+     "https://www.turkishminute.com/2026/10/14/turkish-court-rejects-kavalas-release-and-retrial-despite-ecthr-ruling/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Jimmy Lai",
+   "where": "Hong Kong",
+   "since": "2020-12-31",
+   "law": "National security law (collusion, sedition)",
+   "status": "Serving 20 years, aged 78. UK urged his release (22 Oct); Hong Kong rejected this, saying he was not tried for his political views",
+   "src": [
+    [
+     "Hong Kong Free Press",
+     "https://hongkongfp.com/2026/02/09/breaking-jimmy-lai-jailed-for-20-years-in-hong-kong-after-nat-security-conviction/"
+    ],
+    [
+     "UK Government (six-monthly report)",
+     "https://www.gov.uk/government/publications/six-monthly-report-on-hong-kong-january-to-june-2026/six-monthly-report-on-hong-kong-1-january-to-30-june-2026"
+    ],
+    [
+     "HKSAR Government",
+     "https://www.info.gov.hk/gia/general/202610/23/P2026102300030.htm"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Aung San Suu Kyi",
+   "where": "Myanmar",
+   "since": "2021-02-01",
+   "law": "18-year sentence after coup",
+   "status": "Under house arrest in Naypyidaw; her son reported on 22 Oct his first phone call with her in more than five years. Government rejects calls for her release",
+   "src": [
+    [
+     "Reuters via Dawn (1 Feb 2021)",
+     "https://www.dawn.com/news/1604849"
+    ],
+    [
+     "AP via Daily Pioneer",
+     "https://dailypioneer.com/amp/story/world/suu-kyi-speaks-to-son-for-first-time-in-5-years"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/20/myanmars-detained-ex-leader-suu-kyi-receives-package-from-king-charles-iii"
+    ],
+    [
+     "AFP via The Standard",
+     "https://www.thestandard.com.hk/world/article/346233/Son-of-Myanmars-Suu-Kyi-says-had-first-call-in-five-years"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Imran Aliyev",
+   "where": "Azerbaijan",
+   "since": "2024-04-18",
+   "law": "Smuggling, money laundering, tax evasion, forgery charges",
+   "status": "Meclis.info founder; prosecutors sought 12 years (20 Oct); next hearing set for 3 Nov, outcome not yet reported. Authorities say outlets broke foreign-grant rules and deny his torture claims",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/10/azerbaijan-prosecutors-seek-prison-terms-of-up-12-years-for-meclis-info-journalists/amp/"
+    ],
+    [
+     "CPJ (2024 arrest)",
+     "https://cpj.org/2024/04/azerbaijan-arrests-13th-journalist-over-alleged-international-donor-funding/"
+    ],
+    [
+     "Caucasian Knot",
+     "https://www.eng.kavkaz-uzel.eu/articles/79565"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Dr Hussam Abu Safiya",
+   "where": "Gaza → Israeli custody",
+   "since": "2024-12-27",
+   "law": "Unlawful Combatants Law; no charge, no trial",
+   "status": "Hospital director held without charge; Supreme Court upheld detention in June and his lawyer reported beatings in July. Israel alleges Hamas links, which family and lawyers deny",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/07/israel-opt-fears-mounting-for-arbitrarily-detained-palestinian-doctor-hussam-abu-safiya-amidst-reports-his-life-is-in-grave-danger/"
+    ],
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
+    ],
+    [
+     "Arab News",
+     "https://www.arabnews.com/node/2638965/amp"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Detainees held by the RSF",
+   "where": "Darfur (El Fasher, El Geneina), Sudan",
+   "since": "2025-10-26",
+   "count": "6,500+",
+   "countcap": "held in El Geneina, doctors say",
+   "law": "Armed group detention",
+   "status": "Amnesty reports torture, forced labour and ransom-for-release in El Fasher; doctors report food shortages and rising deaths in El Geneina. RSF did not respond to Amnesty",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/sudan-el-fasher-civilians-suffer-unlawful-killings-detention-and-torture-one-year-after-citys-capture-by-the-rsf-new-testimony/"
+    ],
+    [
+     "Dabanga",
+     "https://dabangasudan.org/en/all-news/article/atrocities-persist-in-el-fasher-one-year-after-rsf-takeover"
+    ],
+    [
+     "Anadolu via Yeni Şafak",
+     "https://en.yenisafak.com/world/sudan-doctors-network-warns-6500-rsf-detainees-face-dire-conditions-3724488"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Najmeh Amini",
+   "where": "Iran",
+   "since": "2026-02-03",
+   "law": "Death sentence for blasphemy; 12.5 years on security charges",
+   "status": "23-year-old student held in Mashhad Central (Vakilabad) Prison, sentenced to death over social media posts. No official statement reported",
+   "src": [
+    [
+     "Center for Human Rights in Iran",
+     "https://iranhumanrights.org/2026/10/iranian-student-sentenced-to-death-over-social-media-post/"
+    ],
+    [
+     "Hengaw",
+     "https://hengaw.org/en/content/article-42934"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Imaan Mazari-Hazir and Hadi Ali Chattha",
+   "where": "Pakistan",
+   "since": "2026-01-23",
+   "law": "Anti-Terrorism Act; earlier 17 years under electronic crimes law (PECA)",
+   "status": "Human rights lawyers sentenced to 10 years on 29 Oct after trial inside Adiala prison. Law minister says the judiciary is independent",
+   "src": [
+    [
+     "Al Jazeera (AFP/Reuters)",
+     "https://www.aljazeera.com/news/2026/10/29/pakistan-rights-activist-imaan-mazari-and-husband-jailed-for-10-years"
+    ],
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/pakistan-rights-lawyers-receive-10-year-sentences"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/10/pakistan-terrorism-conviction-of-human-rights-lawyers-an-indictment-of-justice-system/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Artin Ghazanfari",
+   "where": "Iran",
+   "since": "2026-01-19",
+   "law": "26 years incl. 'media activities' under espionage-penalties law",
+   "status": "Baha'i photojournalist with heart failure; judge reportedly refused hospital transfer. Sentence told to him on 26 Oct. Iran did not respond to CPJ",
+   "src": [
+    [
+     "CPJ",
+     "https://cpj.org/2026/10/iran-sentences-journalists-under-espionage-law/"
+    ],
+    [
+     "Iran International",
+     "https://www.iranintl.com/en/202610288721"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Mountaga Tall",
+   "where": "Mali",
+   "since": "2026-05-02",
+   "law": "Enforced disappearance; no charge disclosed",
+   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Authorities have not acknowledged holding either",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/critic-of-malis-junta-forcibly-disappeared-six-months-on"
+    ],
+    [
+     "Amnesty International France",
+     "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Zied el-Heni",
+   "where": "Tunisia",
+   "since": "2026-04-24",
+   "law": "Telecommunications Code art. 86 (1 year); four terrorism-related charges (4 years)",
+   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. No official response reported",
+   "src": [
+    [
+     "CPJ (profile)",
+     "https://cpj.org/data/people/zied-el-heni/"
+    ],
+    [
+     "CPJ (joint statement)",
+     "https://cpj.org/2026/11/cpj-partners-tunisian-authorities-must-release-journalist-zied-el-heni/"
+    ],
+    [
+     "Africanews (AFP)",
+     "https://www.africanews.com/2026/10/29/tunisian-journalist-sentenced-to-four-years-in-jail-on-terrorism-charges/"
+    ],
+    [
+     "The New Arab",
+     "https://www.newarab.com/news/amnesty-calls-release-imprisoned-tunisian-journalist"
+    ]
+   ]
+  }
+ ]
+}
