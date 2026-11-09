@@ -363,7 +363,8 @@
     "year": "2025",
     "changes": "cropped"
    },
-   "n": 9
+   "n": 9,
+   "thread": "palestine"
   },
   {
    "region": "world",
@@ -397,7 +398,8 @@
     "year": "2012",
     "changes": "resized"
    },
-   "n": 10
+   "n": 10,
+   "thread": "palestine"
   },
   {
    "region": "world",

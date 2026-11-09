@@ -208,7 +208,8 @@
     "kind": "file",
     "year": "2025",
     "changes": "cropped"
-   }
+   },
+   "thread": "palestine"
   },
   {
    "n": 7,
@@ -233,7 +234,8 @@
      "The New Arab",
      "https://www.newarab.com/news/nearly-5000-palestinians-displaced-israels-hebron-siege"
     ]
-   ]
+   ],
+   "thread": "palestine"
   },
   {
    "n": 8,

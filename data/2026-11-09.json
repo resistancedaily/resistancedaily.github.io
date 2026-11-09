@@ -213,7 +213,9 @@
     "kind": "file",
     "year": "2025"
    },
-   "n": 6
+   "n": 6,
+   "thread": "palestine",
+   "focus": "palestine"
   },
   {
    "region": "world",
@@ -306,7 +308,9 @@
     "year": "2015",
     "changes": "resized"
    },
-   "n": 9
+   "n": 9,
+   "thread": "palestine",
+   "focus": "palestine"
   },
   {
    "region": "world",
@@ -345,13 +349,13 @@
  ],
  "focus": [
   {
-   "slug": "sudan-war",
-   "kicker": "Focus · Sudan",
-   "title": "Sudan's long war",
-   "dek": "Since April 2023 Sudan's war has killed at least 59,000 people by one count. On 8 November the army detained ICC suspect Ahmed Haroun.",
-   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
-   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
-   "photos": 4
+   "slug": "palestine",
+   "kicker": "Focus · Gaza and the occupied West Bank",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "Rain collapsed a sandbank onto tents in Deir el-Balah, killing five, including four children, health officials said. Israel says 91,000 tents have entered; aid groups blame its limits.",
+   "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+   "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+   "photos": 6
   }
  ]
 }

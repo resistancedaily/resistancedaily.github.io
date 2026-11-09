@@ -1,17 +1,74 @@
 {
  "_comment": "data/threads.json — the thread registry. One entry per long-running story. Updates are NOT stored here: the build scans every data/YYYY-MM-DD.json and collects items whose thread (explicit \"thread\" field, else \"focus\" slug, else the Accountability Watch rule) equals the slug.",
  "threads": [
-  {"slug": "sudan-war", "name": "Sudan's war", "focus": "sudan-war", "stat": "59,000+ killed, ACLED count (estimates up to 150,000)"},
-  {"slug": "kashmir", "name": "Kashmir detentions", "focus": "kashmir", "stat": "Khurram Parvez held 4 yrs 8 mo before his bail was upheld"},
-  {"slug": "accountability", "name": "Accountability Watch", "page": "accountability/", "stat_from": "data/accountability.json"},
-  {"slug": "still-waiting", "name": "Jailed for speaking out", "page": "still-waiting/", "stat_from": "data/cases.json"},
-  {"slug": "jantar-mantar", "name": "Protest in Delhi", "stat": "Road holds about 1,500 people, police say"},
-  {"slug": "manipur", "name": "Manipur"},
-  {"slug": "siang", "name": "The Siang dam", "focus": "siang"},
-  {"slug": "congo-mines", "name": "Congo's mines", "focus": "congo-mines"},
-  {"slug": "tibet", "name": "Tibet", "focus": "tibet"},
-  {"slug": "brazil-election", "name": "Brazil election", "focus": "brazil-election"},
-  {"slug": "indonesia-haze", "name": "Indonesia haze", "focus": "indonesia-haze"},
-  {"slug": "who-decides", "name": "Who decides what you see online", "focus": "who-decides"}
+  {
+   "slug": "sudan-war",
+   "name": "Sudan's war",
+   "focus": "sudan-war",
+   "stat": "59,000+ killed, ACLED count (estimates up to 150,000)"
+  },
+  {
+   "slug": "palestine",
+   "name": "Palestine",
+   "focus": "palestine",
+   "stat": "74,640 killed in Gaza since Oct 2023, Gaza health ministry"
+  },
+  {
+   "slug": "kashmir",
+   "name": "Kashmir detentions",
+   "focus": "kashmir",
+   "stat": "Khurram Parvez held 4 yrs 8 mo before his bail was upheld"
+  },
+  {
+   "slug": "accountability",
+   "name": "Accountability Watch",
+   "page": "accountability/",
+   "stat_from": "data/accountability.json"
+  },
+  {
+   "slug": "still-waiting",
+   "name": "Jailed for speaking out",
+   "page": "still-waiting/",
+   "stat_from": "data/cases.json"
+  },
+  {
+   "slug": "jantar-mantar",
+   "name": "Protest in Delhi",
+   "stat": "Road holds about 1,500 people, police say"
+  },
+  {
+   "slug": "manipur",
+   "name": "Manipur"
+  },
+  {
+   "slug": "siang",
+   "name": "The Siang dam",
+   "focus": "siang"
+  },
+  {
+   "slug": "congo-mines",
+   "name": "Congo's mines",
+   "focus": "congo-mines"
+  },
+  {
+   "slug": "tibet",
+   "name": "Tibet",
+   "focus": "tibet"
+  },
+  {
+   "slug": "brazil-election",
+   "name": "Brazil election",
+   "focus": "brazil-election"
+  },
+  {
+   "slug": "indonesia-haze",
+   "name": "Indonesia haze",
+   "focus": "indonesia-haze"
+  },
+  {
+   "slug": "who-decides",
+   "name": "Who decides what you see online",
+   "focus": "who-decides"
+  }
  ]
 }

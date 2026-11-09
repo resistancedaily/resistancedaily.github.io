@@ -1,0 +1,432 @@
+{
+ "slug": "palestine",
+ "kicker": "Focus · Palestine: Gaza and the occupied West Bank",
+ "title": "Palestine: Gaza and the West Bank",
+ "short": "Gaza & West Bank",
+ "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
+ "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts more than 1,500 killed since the truce; storms flood tent camps, and West Bank settler attacks hit a record.",
+ "updated": "2026-11-09",
+ "published": "2026-11-09",
+ "rights": [
+  "Life & safety",
+  "Civilian harm",
+  "Due process & detention",
+  "Land & livelihood"
+ ],
+ "photos": [
+  {
+   "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+   "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+   "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza, in 2025.",
+   "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+   "licence": "CC BY-SA 3.0 IGO",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+   "kind": "file",
+   "year": "2025"
+  },
+  {
+   "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+   "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+   "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025.",
+   "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+   "kind": "file",
+   "year": "2025",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/2026-10-20/olive-harvest-hebron.webp",
+   "alt": "A gloved hand picking purple olives from a branch.",
+   "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank. Settler attacks on pickers hit a record in October 2026.",
+   "credit": "M sh شراونة محمد / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+   "kind": "file",
+   "year": "2020",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/2026-10-24/hebron-checkpoint.webp",
+   "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+   "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, years before the October 2026 operation.",
+   "credit": "Makbula Nassar / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+   "kind": "file",
+   "year": "2015",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/2026-10-30/umm-al-kheir.webp",
+   "alt": "Piles of stone rubble in front of sheds and water tanks on a dry hillside, with rows of houses on the slope behind.",
+   "caption": "Umm al-Kheir in the South Hebron Hills in 2012: the rubble of a demolished home, with the Karmel settlement behind.",
+   "credit": "Friends123 / Wikimedia Commons",
+   "licence": "CC0",
+   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Umm_al-Kheir.1.JPG",
+   "kind": "file",
+   "year": "2012",
+   "changes": "cropped"
+  },
+  {
+   "src": "images/2026-11-07/hebron-ibrahimi.webp",
+   "alt": "Stone rooftops in the foreground and, behind them, a walled building with two minarets on a hillside of houses.",
+   "caption": "The Ibrahimi Mosque, seen from rooftops in Hebron's Old City, in 2015.",
+   "credit": "Madosophy Ahmad / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ibrahimi_mosque_-Hebron.jpg",
+   "kind": "file",
+   "year": "2015",
+   "changes": "cropped"
+  }
+ ],
+ "figs": [
+  {
+   "fig": "1,593",
+   "figcap": "killed since the Oct 2025 ceasefire, Gaza health ministry (to 2 Nov)",
+   "src": [
+    "Al Jazeera",
+    "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+   ]
+  },
+  {
+   "fig": "74,640",
+   "figcap": "killed since Oct 2023, Gaza health ministry",
+   "src": [
+    "APA (Gaza health ministry)",
+    "https://en.apa.az/asia/gazas-death-toll-since-october-2023-rises-to-74640-health-ministry-534721"
+   ]
+  },
+  {
+   "fig": "397",
+   "figcap": "settler attacks in 26 days of October, an OCHA record",
+   "src": [
+    "Al Jazeera",
+    "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+   ]
+  },
+  {
+   "fig": "70,000",
+   "figcap": "tents flooded in the first winter storm",
+   "src": [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
+   ]
+  }
+ ],
+ "summary": [
+  {
+   "label": "What's happening",
+   "text": "Despite an October 2025 ceasefire, Israeli strikes and fire still kill Palestinians in Gaza almost daily, health officials say.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    ]
+   ]
+  },
+  {
+   "label": "Why it matters",
+   "text": "About 950,000 displaced Gazans live in tents at flood risk; West Bank settler attacks hit a record in October.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168685"
+    ],
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    ]
+   ]
+  },
+  {
+   "label": "What's next",
+   "text": "Israel says reconstruction materials stay out until Hamas disarms; aid groups say shelter supplies are blocked as winter starts.",
+   "src": [
+    [
+     "Jerusalem Post",
+     "https://www.jpost.com/middle-east/article-914223"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
+    ]
+   ]
+  }
+ ],
+ "story": [
+  {
+   "text": "The war began when Hamas-led militants attacked southern Israel on 7 October 2023, killing some 1,200 people, mostly civilians, and taking 251 hostages. In Israel's offensive that followed, Gaza's health ministry says 74,640 Palestinians have been killed. The ministry, part of the Hamas-run government, does not separate civilians from combatants; the UN and many independent experts consider its figures the most reliable estimate.",
+   "src": [
+    [
+     "AP via PBS",
+     "https://www.pbs.org/newshour/world/living-hostages-and-palestinian-prisoners-released-as-part-of-gaza-ceasefire"
+    ],
+    [
+     "APA (Gaza health ministry)",
+     "https://en.apa.az/asia/gazas-death-toll-since-october-2023-rises-to-74640-health-ministry-534721"
+    ]
+   ],
+   "takeaway": "Two years of war killed about 1,200 people in Israel and, by Gaza's count, over 74,000 in Gaza.",
+   "visual": {
+    "type": "photo",
+    "i": 1
+   }
+  },
+  {
+   "text": "A ceasefire began in October 2025. On 13 October 2025 all 20 living hostages were freed and Israel released more than 1,900 Palestinian prisoners. Killings in Gaza have continued: by 2 November 2026 the health ministry counted 1,593 people killed since the truce. Israel says many of those killed were Hamas fighters, often without giving evidence, Al Jazeera reports.",
+   "src": [
+    [
+     "AP via PBS",
+     "https://www.pbs.org/newshour/world/living-hostages-and-palestinian-prisoners-released-as-part-of-gaza-ceasefire"
+    ],
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    ]
+   ],
+   "fig": "1,593",
+   "figcap": "killed since the ceasefire",
+   "takeaway": "The ceasefire freed the hostages, but deaths in Gaza continue.",
+   "visual": {
+    "type": "fig"
+   }
+  },
+  {
+   "text": "Most of Gaza's people are displaced. The UN says about 950,000 live in sites at medium to high risk of flooding, entering a fourth winter in tents. The first storm of the season, on 7 November, flooded about 70,000 tents, Gaza's media office said. Aid groups blame Israeli limits on shelter materials; Israel rejects accusations that it restricts aid.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168685"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
+    ],
+    [
+     "Arab News",
+     "https://www.arabnews.com/middle-east/no-one-asks-about-us-70000-gaza-tents-flooded-in-12-hours-3010550"
+    ]
+   ],
+   "takeaway": "Nearly a million people face winter in tents.",
+   "visual": {
+    "type": "fig"
+   },
+   "fig": "950,000",
+   "figcap": "in tent sites at flood risk, UN says"
+  },
+  {
+   "text": "In the occupied West Bank, OCHA documented 397 settler attacks causing casualties or damage in the first 26 days of October, the highest monthly figure since it began counting in 2006. Many hit the olive harvest. After masked settlers attacked European diplomats in Taybeh, police arrested 10 suspects; a court later released nine of them to house arrest.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    ],
+    [
+     "AP via PBS",
+     "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/10/22/israel-frees-suspects-in-two-settler-attacks-as-west-bank-pogroms-intensify"
+    ]
+   ],
+   "takeaway": "Settler attacks reached a record during the olive harvest.",
+   "visual": {
+    "type": "photo",
+    "i": 2
+   }
+  },
+  {
+   "text": "After two Israeli soldiers were killed near Hebron on 23 October, Israel locked down the West Bank and began an operation in the city. About 5,000 people were displaced, Al Jazeera reported; Israel's defence minister said residents could not return until operations ended. The UN rights chief called it collective punishment and warned of \"serious concerns of ethnic cleansing\".",
+   "src": [
+    [
+     "AP via KATV",
+     "https://katv.com/news/nation-world/israeli-forces-lock-down-hebron-displace-up-to-2200-after-attack-kills-2-soldiers"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/video/newsfeed/2026/11/1/thousands-displaced-from-hebron-as-israel-carries-on-siege"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168672"
+    ]
+   ],
+   "takeaway": "Hebron's operation displaced thousands of Palestinians.",
+   "visual": {
+    "type": "photo",
+    "i": 3
+   }
+  },
+  {
+   "date": "2026-10-23",
+   "text": "Two Israeli soldiers and two Palestinian gunmen were killed in an attack near Hebron. Israel ordered a full lockdown of the West Bank; Hebron's mayor said about 2,200 people were forced from their homes, while Israel's defence minister put it at about 2,000.",
+   "src": [
+    [
+     "AP via KATV",
+     "https://katv.com/news/nation-world/israeli-forces-lock-down-hebron-displace-up-to-2200-after-attack-kills-2-soldiers"
+    ]
+   ]
+  },
+  {
+   "date": "2026-10-26",
+   "text": "UN High Commissioner for Human Rights Volker Türk said more than 3,000 Palestinians had been forced from their homes in Hebron, called it collective punishment and warned of \"serious concerns of ethnic cleansing\". No Israeli response to his statement was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/10/1168672"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-02",
+   "text": "Gaza's health ministry put the toll since the ceasefire at 1,593. Hospitals said strikes on 1 November killed eight people, including five police officers in al-Mawasi; Israel's military said it struck military operatives.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    ],
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cmqln14rrzxvo"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "text": "The first winter storm flooded about 70,000 tents across Gaza, the Gaza media office said, with walls collapsing and people injured. The civil defence agency received about 1,500 distress calls in 10 hours. Aid groups blamed Israeli restrictions on shelter materials.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/7/rains-flood-thousands-of-tents-in-gaza"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "text": "Israel released Palestinian journalist Abed Abou Shhadeh after five days in detention without charge on suspicion of \"contact with a foreign agent\". His lawyers at Adalah said police had no evidence; no official comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "text": "Heavy rain collapsed a sandbank onto tents in Deir el-Balah, killing five people, four of them children, local health authorities said. Israeli security officials said 91,000 tents and tarps and 9,000 truckloads of clothes and blankets had entered for winter, and that reconstruction equipment and mobile homes would stay out while Hamas refuses to disarm.",
+   "src": [
+    [
+     "Al Jazeera (Anadolu)",
+     "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter"
+    ],
+    [
+     "Jerusalem Post",
+     "https://www.jpost.com/middle-east/article-914223"
+    ]
+   ]
+  }
+ ],
+ "official": {
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported.",
+  "src": [
+   [
+    "Arab News (AFP)",
+    "https://www.arabnews.com/middle-east/gaza-health-officials-say-israeli-strikes-kill-5-3008739"
+   ],
+   [
+    "Al Jazeera",
+    "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+   ],
+   [
+    "Jerusalem Post",
+    "https://www.jpost.com/middle-east/article-914223"
+   ],
+   [
+    "Arab News",
+    "https://www.arabnews.com/middle-east/no-one-asks-about-us-70000-gaza-tents-flooded-in-12-hours-3010550"
+   ],
+   [
+    "The New Arab (AFP)",
+    "https://www.newarab.com/news/israeli-forces-displace-hebron-families-after-deadly-attack"
+   ],
+   [
+    "AP via KATV",
+    "https://katv.com/news/nation-world/israeli-forces-lock-down-hebron-displace-up-to-2200-after-attack-kills-2-soldiers"
+   ],
+   [
+    "AP via PBS",
+    "https://www.pbs.org/newshour/world/masked-settlers-attack-european-diplomats-in-the-occupied-west-bank"
+   ],
+   [
+    "UN News",
+    "https://news.un.org/en/story/2026/10/1168672"
+   ]
+  ],
+  "points": [
+   "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details or evidence.",
+   "Israel rejects accusations that it restricts aid; security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered.",
+   "Reconstruction equipment and mobile homes will stay out while Hamas refuses to disarm, Israeli security officials say.",
+   "In Hebron the military says it is dismantling \"terrorist infrastructure\"; the defence minister said residents cannot return until operations end.",
+   "The military called the settler attack on diplomats in Taybeh \"severe\"; police arrested 10 suspects.",
+   "No Israeli response to the UN rights chief's ethnic-cleansing warning was reported."
+  ]
+ },
+ "editions": [
+  "2026-10-17",
+  "2026-10-18",
+  "2026-10-19",
+  "2026-10-20",
+  "2026-10-21",
+  "2026-10-23",
+  "2026-10-24",
+  "2026-10-25",
+  "2026-10-26",
+  "2026-10-27",
+  "2026-10-28",
+  "2026-10-29",
+  "2026-10-30",
+  "2026-10-31",
+  "2026-11-01",
+  "2026-11-02",
+  "2026-11-03",
+  "2026-11-04",
+  "2026-11-05",
+  "2026-11-06",
+  "2026-11-07",
+  "2026-11-08",
+  "2026-11-09"
+ ],
+ "whats_new": {
+  "date": "2026-11-08",
+  "text": "Rain collapsed a sandbank onto tents in Deir el-Balah, killing five, including four children, health officials said. Israel says 91,000 tents have entered; aid groups blame its limits."
+ },
+ "instagram": {
+  "hashtags": [
+   "#Palestine",
+   "#Gaza",
+   "#WestBank",
+   "#HumanRights",
+   "#ResistanceDaily"
+  ],
+  "slide_captions": [
+   "Focus · Gaza & West Bank\nA ceasefire began in October 2025, yet Gaza's health ministry counts more than 1,500 people killed since it began. Swipe for their story.\nFull story, with a source for every fact: link in bio.\n#Palestine #Gaza #WestBank #HumanRights #ResistanceDaily",
+   "Two years of war left neighbourhoods like Sheikh Radwan in ruins; the war began with the 7 October 2023 attack that killed some 1,200 people in Israel. Source: AP",
+   "In the West Bank, the UN counted 397 settler attacks in 26 days of October, many on olive pickers, the most since it began counting in 2006. Source: Al Jazeera (OCHA)",
+   "After two Israeli soldiers were killed near Hebron on 23 October, an Israeli operation displaced about 5,000 people, Al Jazeera reported. Source: Al Jazeera",
+   "Home demolitions continue across the West Bank: on 5 November, five homes in Biddu were torn down, displacing more than 100 people. Source: Al Jazeera",
+   "Hebron's Ibrahimi Mosque was closed to Palestinian worshippers for about 30 hours on 6–7 November for a Jewish observance. Source: Al Jazeera",
+   "Gaza enters a fourth winter in tents: the first storm flooded about 70,000, and a sandbank collapse killed five, including four children. Source: Al Jazeera",
+   "Israel says it does not restrict aid and that rebuilding materials stay out until Hamas disarms.\nFull story: link in bio. Source: Jerusalem Post"
+  ],
+  "official_short": "Israel says it does not restrict aid, that its strikes target Hamas fighters, and that rebuilding materials stay out until Hamas disarms.",
+  "hope_caption": "Palestinian journalist Abed Abou Shhadeh was released after five days in Israeli detention without charge; his lawyers said police had no evidence. Source: Al Jazeera"
+ }
+}

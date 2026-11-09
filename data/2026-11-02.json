@@ -233,7 +233,8 @@
     "dx": -12,
     "dy": 10
    },
-   "n": 6
+   "n": 6,
+   "thread": "palestine"
   },
   {
    "region": "world",
@@ -280,7 +281,8 @@
     "dx": 12,
     "dy": -12
    },
-   "n": 7
+   "n": 7,
+   "thread": "palestine"
   },
   {
    "region": "world",
