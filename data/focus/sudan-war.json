@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -353,6 +353,24 @@
      "https://www.radiotamazuj.org/en/news/article/fear-grows-in-damazin-as-clashes-intensify-in-blue-nile"
     ]
    ]
+  },
+  {
+   "date": "2026-11-08",
+   "text": "On 8 November Sudan's military detained Ahmed Haroun, chairman of the former ruling National Congress Party, who is wanted by the International Criminal Court over alleged crimes against humanity and war crimes in Darfur, two defence lawyers told AP; they said he was held in Kassala and his whereabouts were unknown, while a party official told Radio Tamazuj he was held by military intelligence in Khartoum. Held since 2019, he walked out of prison after it was attacked during the war, AP reports; the military had declined to hand him to the ICC, and he denies the charges. The Emergency Lawyers group has called for his handover. There was no immediate comment from the army or the ICC.",
+   "src": [
+    [
+     "AP via ABC News",
+     "https://abcnews.com/International/wireStory/sudans-military-detains-international-criminal-court-fugitive-haroun-137956175"
+    ],
+    [
+     "Arab News (Reuters)",
+     "https://www.arabnews.com/middle-east/sudan-detains-chairman-of-former-ruling-party-ahmed-haroun-two-party-officials-say-3010516"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-army-detains-former-ruling-party-leader-ahmed-haroun"
+    ]
+   ]
   }
  ],
  "official": {
@@ -415,7 +433,8 @@
   "2026-11-03",
   "2026-11-05",
   "2026-11-07",
-  "2026-11-08"
+  "2026-11-08",
+  "2026-11-09"
  ],
  "instagram": {
   "caption": "",
@@ -432,8 +451,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-07",
-  "text": "Damazin residents report power, water and mill cuts and some families fleeing as fighting nears in Blue Nile; one resident says the city is calm. No official statement was reported."
+  "date": "2026-11-09",
+  "text": "Sudan's military detained Ahmed Haroun, wanted by the ICC over alleged Darfur crimes, on 8 November, his lawyers and party said; reports differ on where. No army or ICC comment was reported."
  },
  "summary": [
   {

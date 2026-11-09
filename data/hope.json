@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08",
+ "updated": "2026-11-09",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -418,6 +418,62 @@
     "year": "2023",
     "changes": "resized"
    }
+  },
+  {
+   "id": "abou-shhadeh-released",
+   "date": "2026-11-08",
+   "kind": "Releases",
+   "rights": [
+    "Press freedom",
+    "Due process & detention"
+   ],
+   "place": "Jaffa, Israel",
+   "fig": "5",
+   "figcap": "days, no charge",
+   "headline": "Journalist freed after five days without charge",
+   "text": "Israel released Palestinian journalist Abed Abou Shhadeh after five days' detention without charge. His lawyers say the suspicion rested on a public podcast conversation; no official comment was reported.",
+   "slide_head": "Journalist freed",
+   "slide": "Abed Abou Shhadeh released after 5 days, no charge filed",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-09/jaffa.webp",
+    "alt": "A tall sandstone clock tower with a green spire beside a cream building with balconies, under a blue sky.",
+    "caption": "The clock tower in Jaffa, where Abou Shhadeh lives, in 2015.",
+    "credit": "Andrew Shiva / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ISR-2015-Jaffa-Clock_tower-cropped.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   }
+  },
+  {
+   "id": "jayanagar-legal-aid",
+   "date": "2026-11-08",
+   "kind": "People helping people",
+   "rights": [
+    "Livelihood",
+    "Due process"
+   ],
+   "place": "Jayanagar, Bengaluru",
+   "fig": "5",
+   "figcap": "legal aid camps",
+   "headline": "Law students run legal aid camps in Bengaluru slums",
+   "text": "Alliance School of Law and the NGO MAARGA held five legal aid camps near Jayanagar and published residents' problems with pensions, ration cards and certificates. Whether officials will act is not yet reported.",
+   "slide_head": "Legal aid at the doorstep",
+   "slide": "5 camps help Bengaluru slum residents claim entitlements",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/bangalore/jayanagar-slum-residents-pension-raion-sanitation-10955674/"
+    ]
+   ]
   }
  ]
 }

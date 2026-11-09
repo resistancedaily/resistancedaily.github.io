@@ -1,0 +1,357 @@
+{
+ "date": "2026-11-09",
+ "date_long": "Mon 9 Nov 2026",
+ "date_short": "Mon 9 Nov",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Report child labour",
+   "Childline 1098 · free, 24×7"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-09",
+ "items": [
+  {
+   "region": "india",
+   "place": "Jantar Mantar, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "15",
+   "figcap": "requests refused",
+   "headline": "No protest request accepted since Jantar Mantar closed",
+   "text": "None of 15 protest applications filed at Parliament Street police station since 5 September was accepted, a police officer said. Groups say moving to the alternative grounds police named proved far from easy.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/delhi/jantar-mantar-naga-students-union-delhi-protests-10955069/"
+    ]
+   ],
+   "lon": 77.2167,
+   "lat": 28.6271,
+   "thread": "jantar-mantar",
+   "photo": {
+    "src": "images/2026-10-20/jantar-mantar.webp",
+    "alt": "A tall red and beige stone instrument with arched openings, on a lawn.",
+    "caption": "The Jantar Mantar observatory in New Delhi; the road beside it was the capital's main protest site until police denotified it on 9 October. Photo from 2017.",
+    "credit": "Bibek Raj Pandeya / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jantarmantar_Monument_Delhi.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "cropped"
+   },
+   "n": 1,
+   "map": {
+    "dx": 6,
+    "dy": 9
+   }
+  },
+  {
+   "region": "india",
+   "place": "Tengakhat, Dibrugarh district, Assam",
+   "short": "Dibrugarh",
+   "rights": [
+    "Life & safety",
+    "Labour"
+   ],
+   "sev": "orange",
+   "fig": "4",
+   "figcap": "workers dead",
+   "headline": "Oil India fire toll rises to four workers",
+   "text": "A fourth contract worker died on Sunday after a 6 November blast and fire at an Oil India tank farm; three are critical. Oil India suspended four site staff pending a high-level inquiry.",
+   "src": [
+    [
+     "The Hindu (PTI)",
+     "https://www.thehindu.com/news/national/assam/assam-oil-facility-fire-death-toll-rises-to-four-as-another-injured-dies-four-suspended/article71681016.ece"
+    ]
+   ],
+   "lon": 95.0,
+   "lat": 27.4,
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Jayanagar, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Livelihood",
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "fig": "5",
+   "figcap": "legal aid camps",
+   "headline": "Bengaluru slum residents report blocked pensions, papers",
+   "text": "Legal aid camps near Jayanagar found widows' pensions cancelled and certificates refused; some residents alleged police demand ₹3,000–4,000 to settle minor disputes. No police response was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/bangalore/jayanagar-slum-residents-pension-raion-sanitation-10955674/"
+    ]
+   ],
+   "lon": 77.5838,
+   "lat": 12.925,
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Mansa, Punjab",
+   "short": "Mansa",
+   "rights": [
+    "Life & safety",
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "26",
+   "figcap": "days to cremation",
+   "headline": "Slain anti-drug activist cremated after family protest",
+   "text": "Parvinder Singh Jhota, shot dead on 13 October while on Facebook Live, was cremated after his family ended a 22-day protest. The state gave the case to the CBI and suspended three officials.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/punjab/body-of-punjab-anti-drug-activist-jhota-brought-to-mansa-for-last-rites/article71680708.ece"
+    ]
+   ],
+   "lon": 75.39,
+   "lat": 29.99,
+   "n": 4,
+   "map": {
+    "dx": -8,
+    "dy": -10
+   },
+   "left": true
+  },
+  {
+   "region": "world",
+   "place": "Kassala / Khartoum, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Due process & detention",
+    "Accountability"
+   ],
+   "sev": "grey",
+   "fig": "ICC",
+   "figcap": "warrant",
+   "headline": "Sudan's army detains ICC suspect Ahmed Haroun",
+   "text": "Sudan's military detained Ahmed Haroun, wanted by the ICC over alleged Darfur crimes, his lawyers and party said; reports differ on where. No army statement was reported; it refused past ICC handovers.",
+   "src": [
+    [
+     "AP via ABC News",
+     "https://abcnews.com/International/wireStory/sudans-military-detains-international-criminal-court-fugitive-haroun-137956175"
+    ],
+    [
+     "Arab News (Reuters)",
+     "https://www.arabnews.com/middle-east/sudan-detains-chairman-of-former-ruling-party-ahmed-haroun-two-party-officials-say-3010516"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-army-detains-former-ruling-party-leader-ahmed-haroun"
+    ]
+   ],
+   "lon": 36.4,
+   "lat": 15.45,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-03/kassala.webp",
+    "alt": "Rooftops and a street with parked cars in a town, with tall granite domes of mountains behind.",
+    "caption": "The centre of Kassala, eastern Sudan, where his lawyers say he was detained, with the Taka Mountains behind, in 2008.",
+    "credit": "Bertramz / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kassala_center_Totil.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Deir el-Balah, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "5",
+   "figcap": "killed, 4 children",
+   "headline": "Sandbank collapse in Gaza storm kills five",
+   "text": "Heavy rain collapsed a sandbank onto tents in Deir el-Balah, killing five including four children, local health authorities said. Save the Children blamed Israeli limits on shelter supplies; no Israeli response was reported.",
+   "src": [
+    [
+     "Al Jazeera (Anadolu)",
+     "https://www.aljazeera.com/news/2026/11/8/floods-in-gaza-leave-tens-of-thousands-without-shelter"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza, in 2025.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Off the Lompoul dunes, Kébémer, Senegal",
+   "short": "Senegal",
+   "rights": [
+    "Life & safety",
+    "Migration"
+   ],
+   "sev": "red",
+   "fig": "34",
+   "figcap": "dead",
+   "headline": "Migrant boat sinks off Senegal, killing 34",
+   "text": "A pirogue carrying migrants capsized off northwestern Senegal on Saturday, killing at least 34, the state press agency said. The interior ministry said one person was rescued and searches continue.",
+   "src": [
+    [
+     "Al Jazeera (AFP, Reuters)",
+     "https://www.aljazeera.com/news/2026/11/8/at-least-21-dead-as-small-boat-sinks-off-senegal"
+    ]
+   ],
+   "lon": -16.45,
+   "lat": 15.45,
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Amsterdam, Netherlands",
+   "short": "Amsterdam",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "200k+",
+   "figcap": "marchers",
+   "headline": "Over 200,000 march in Amsterdam over Gaza",
+   "text": "More than 200,000 people marched in Amsterdam's 'Red Line' protest seeking curbs on trade and arms sales to Israel, organisers including Amnesty Netherlands said. No police count was reported.",
+   "src": [
+    [
+     "Al Jazeera (AP)",
+     "https://www.aljazeera.com/news/2026/11/8/hundreds-of-thousands-protesters-storm-amsterdam"
+    ]
+   ],
+   "lon": 4.89,
+   "lat": 52.37,
+   "photo": {
+    "src": "images/2026-11-09/amsterdam-dam.webp",
+    "alt": "Pale stone sculptures of human figures around a tall stone column, in front of a beige office building.",
+    "caption": "The National Monument on Dam Square in central Amsterdam, in 2009.",
+    "credit": "Txllxt TxllxT / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Amsterdam_-_Dam_-_View_on_Nationaal_Monument_1956_John_R%C3%A4decker_(Sculptor).jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Jaffa / Petah Tikva, Israel",
+   "short": "Israel",
+   "rights": [
+    "Press freedom",
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "5",
+   "figcap": "days, no charge",
+   "headline": "Palestinian journalist freed after five days uncharged",
+   "text": "Israel released journalist Abed Abou Shhadeh after five days' detention without charge on suspicion of \"contact with a foreign agent\". His lawyers at Adalah said police had no evidence; no official comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/8/israeli-forces-release-palestinian-journalist-abou-shhadeh"
+    ]
+   ],
+   "lon": 34.75,
+   "lat": 32.05,
+   "photo": {
+    "src": "images/2026-11-09/jaffa.webp",
+    "alt": "A tall sandstone clock tower with a green spire beside a cream building with balconies, under a blue sky.",
+    "caption": "The clock tower in Jaffa, where Abou Shhadeh lives, in 2015.",
+    "credit": "Andrew Shiva / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ISR-2015-Jaffa-Clock_tower-cropped.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Dnipropetrovsk and Kharkiv regions, Ukraine",
+   "short": "Ukraine",
+   "rights": [
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "850k",
+   "figcap": "without power",
+   "headline": "Russian strikes cut power to 850,000 Ukrainians",
+   "text": "Overnight Russian strikes on energy sites left over 600,000 people in Dnipropetrovsk region and 250,000 in Kharkiv region without power, Ukrainian officials and the provider DTEK said. No Russian comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/8/russian-strikes-on-ukraine-leave-hundreds-of-thousands-without-electricity"
+    ]
+   ],
+   "lon": 35.05,
+   "lat": 48.46,
+   "photo": {
+    "src": "images/2026-10-30/dnipro-station.webp",
+    "alt": "A blue and white passenger train stands at a covered platform in front of a large stone station building with the city's name on its roof.",
+    "caption": "Dnipro's main railway station; Dnipro is among the areas that lost power. Photo from 2021.",
+    "credit": "Toss12 / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dnipro_railway_station._Platforms.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped"
+   },
+   "n": 10
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Since April 2023 Sudan's war has killed at least 59,000 people by one count. On 8 November the army detained ICC suspect Ahmed Haroun.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

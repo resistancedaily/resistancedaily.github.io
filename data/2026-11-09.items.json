@@ -1,0 +1,80 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.2167,
+   "lat": 28.6271,
+   "sev": "orange",
+   "label": "Delhi",
+   "dx": 6,
+   "dy": 9
+  },
+  {
+   "n": 2,
+   "lon": 95.0,
+   "lat": 27.4,
+   "sev": "orange",
+   "label": "Dibrugarh"
+  },
+  {
+   "n": 3,
+   "lon": 77.5838,
+   "lat": 12.925,
+   "sev": "grey",
+   "label": "Bengaluru"
+  },
+  {
+   "n": 4,
+   "lon": 75.39,
+   "lat": 29.99,
+   "sev": "grey",
+   "label": "Mansa",
+   "dx": -8,
+   "dy": -10
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 36.4,
+   "lat": 15.45,
+   "sev": "grey",
+   "label": "Sudan"
+  },
+  {
+   "n": 6,
+   "lon": 34.35,
+   "lat": 31.42,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 7,
+   "lon": -16.45,
+   "lat": 15.45,
+   "sev": "red",
+   "label": "Senegal"
+  },
+  {
+   "n": 8,
+   "lon": 4.89,
+   "lat": 52.37,
+   "sev": "grey",
+   "label": "Amsterdam"
+  },
+  {
+   "n": 9,
+   "lon": 34.75,
+   "lat": 32.05,
+   "sev": "grey",
+   "label": "Israel"
+  },
+  {
+   "n": 10,
+   "lon": 35.05,
+   "lat": 48.46,
+   "sev": "orange",
+   "label": "Ukraine"
+  }
+ ]
+}

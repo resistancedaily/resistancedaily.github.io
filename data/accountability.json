@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-09",
  "figures": [
   {
    "fig": "170",
@@ -81,6 +81,14 @@
    "src": [
     "The Hindu",
     "https://www.thehindu.com/news/national/tamil-nadu/after-theni-jailbreak-tamil-nadu-cm-vijay-constitutes-high-level-committee-to-strengthen-prison-security/article71656855.ece"
+   ]
+  },
+  "Delhi": {
+   "cm": "Rekha Gupta",
+   "party": "BJP (Delhi Police reports to the Union Home Ministry)",
+   "src": [
+    "LiveLaw",
+    "https://www.livelaw.in/news-updates/delhi-court-rejects-plea-seeking-fir-against-cm-rekha-gupta-for-remarks-comparing-govt-officials-to-lord-hanuman-557643"
    ]
   }
  },
@@ -328,7 +336,7 @@
      "https://www.newindianexpress.com/india/2026/Oct/13/dalit-woman-assaulted-stopped-from-fetching-water-from-well-in-ranchi-five-booked"
     ]
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-09"
   },
   {
    "id": "kalady-custody",
@@ -647,6 +655,44 @@
     ]
    ],
    "checked": "2026-11-06"
+  },
+  {
+   "id": "shaheen-bagh-domestic-worker",
+   "kind": "Workers",
+   "state": "Delhi",
+   "place": "Shaheen Bagh, South-East Delhi",
+   "date": "2026-11-04",
+   "power": "Employer",
+   "head": "Girl, 16, rescued from home where she worked",
+   "text": "A 16-year-old domestic worker says her employer made her work about 20 hours a day, withheld food and burnt her with a hot iron. Bachpan Bachao Andolan's complaint led to her rescue on 3–4 November.",
+   "official": "Police registered a case under the Juvenile Justice Act and the child labour law on 4 November and say the employer has been arrested and sent to judicial custody.",
+   "steps": [
+    {
+     "step": "FIR registered",
+     "status": "done",
+     "date": "2026-11-04"
+    },
+    {
+     "step": "Arrest",
+     "status": "done",
+     "note": "employer, reported 7 Nov"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/delhi/domestic-help-girl-burnt-hot-rod-kept-hungry-rescued-shaheen-bagh-10955199/"
+    ]
+   ],
+   "checked": "2026-11-09"
   }
  ]
 }
