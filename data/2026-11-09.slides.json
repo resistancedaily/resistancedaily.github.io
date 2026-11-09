@@ -1,0 +1,27 @@
+{
+ "cover": [
+  ["Kébémer, Senegal", "Migrant boat sinks; at least 34 dead"],
+  ["Deir el-Balah, Gaza", "Storm collapses sandbank on tents; 5 dead"],
+  ["Sudan", "Army detains ICC suspect Ahmed Haroun"],
+  ["New Delhi", "No protest request accepted in 2 months"]
+ ],
+ "hope_caption": "Israel released Palestinian journalist Abed Abou Shhadeh after five days' detention without charge; his lawyers say the suspicion rested on a public podcast conversation.\nSource: Al Jazeera",
+ "stories": [
+  {"n": 7, "label": "World · Life & safety", "fig": "34", "figlab": "dead", "place": "Off Lompoul, Kébémer, Senegal", "head": "A migrant boat capsizes",
+   "bullets": ["The pirogue sank off northwestern Senegal on Saturday.", "Senegal's interior ministry says one person was rescued.", "635 people died on the route to the Canaries in five months, a rights group says."],
+   "src": "Al Jazeera (AFP, Reuters)",
+   "caption": "Most of the dead came from two districts of Kébémer, local press reports. Boats from West Africa head for Spain's Canary Islands.\nSource: Al Jazeera"},
+  {"n": 6, "label": "World · Civilian harm", "fig": "5", "figlab": "killed, 4 children", "place": "Deir el-Balah, Gaza", "head": "Rain brings down a sandbank on tents",
+   "bullets": ["Local health authorities say four of the five dead were children.", "Storms flooded about 70,000 tents, Gaza's media office says.", "Save the Children blames Israeli limits on shelter; no Israeli response reported."],
+   "src": "Al Jazeera (Anadolu)",
+   "caption": "Civil Defence says 300,000 tents are needed and it took over 1,500 emergency calls during the storm.\nSource: Al Jazeera"},
+  {"n": 5, "label": "World · Due process", "fig": "ICC", "figlab": "warrant over Darfur", "place": "Kassala / Khartoum, Sudan", "head": "Army detains Ahmed Haroun",
+   "bullets": ["Wanted by the ICC over alleged Darfur crimes; he denies the charges.", "His lawyers and party confirmed the detention; reports differ on where.", "No army comment; the military refused past ICC handovers."],
+   "src": "AP · Reuters · Radio Tamazuj",
+   "caption": "Rights lawyers have urged the army to hand him to the ICC. He had walked out of prison during the war.\nSource: AP"},
+  {"n": 1, "label": "India · Assembly", "fig": "15", "figlab": "requests, none accepted", "place": "Jantar Mantar, New Delhi", "head": "Nowhere to protest in Delhi",
+   "bullets": ["None of 15 protest applications since 5 Sep was accepted, a police officer says.", "Police named Burari, Ramlila and CBD grounds as alternatives.", "Groups say getting permission there has proved hard."],
+   "src": "Indian Express",
+   "caption": "A student union's protest on Manipur never happened after Jantar Mantar was taken off the list on 9 October.\nSource: Indian Express"}
+ ]
+}
