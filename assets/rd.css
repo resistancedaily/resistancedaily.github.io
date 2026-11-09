@@ -71,6 +71,9 @@ details > summary::-webkit-details-marker { display: none; }
 .rd-tx-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
 .rd-tx h3 { font-size: 19px; margin: 0; line-height: 1.15; }
 .rd-tx p { margin: 0; font-size: 15px; line-height: 1.4; }
+/* Side-by-side cards line up (owner's note, 9 Nov 2026): the headline always takes two lines' height (longer ones are
+   cut with "…"), so titles, headlines and "1 new" sit at the same height in both cards. */
+.rd-grid .rd-tx p { min-height: 2.8em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .rd-state { font-size: 12.5px; color: var(--color-neutral-700); }
 .rd-state-m { display: none; }
 
@@ -207,6 +210,22 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
 .rd-p-focus { font-weight: 600; text-decoration: none; }
 .rd-p-focus:hover { text-decoration: underline; }
 .rd-p-nav { display: flex; gap: 10px; margin-top: auto; padding-top: 14px; }
+/* Stories controls (9 Nov 2026): tap right = next, left third = back, hold = pause. No text selection or long-press
+   menu while holding; quiet ‹ › hints at the card's edges on hover; a small "Paused" badge after Space. */
+.rd-p-card { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; cursor: pointer; }
+.rd-p-card a, .rd-p-card button, .rd-p-card summary { cursor: pointer; }
+.rd-p-card .rd-p-src, .rd-p-card details p { -webkit-user-select: text; user-select: text; cursor: auto; }
+.rd-p-card:focus { outline: none; }
+.rd-p-card:focus-visible { outline: 3px solid #ffc6a5; outline-offset: 3px; }
+.rd-p-zone { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center;
+  font-size: 26px; line-height: 1; color: #f9f4ed; background: color-mix(in srgb, #f9f4ed 14%, transparent); border: 0; padding: 0 0 3px; font-family: inherit; opacity: 0; transition: opacity .15s; }
+.rd-p-zone:hover { background: color-mix(in srgb, #f9f4ed 26%, transparent); }
+.rd-p-zone:focus-visible { opacity: 1; outline: 3px solid #ffc6a5; }
+.rd-p-zl { left: -56px; } .rd-p-zr { right: -56px; }
+@media (hover: hover) { .rd-p-card:hover .rd-p-zone, .rd-p-zone:hover { opacity: 1; } }
+.rd-p-pz { display: none; position: absolute; top: 40px; left: 50%; transform: translateX(-50%); font-size: 12px; letter-spacing: .06em; text-transform: uppercase;
+  background: #f9f4ed; color: #201e1d; border-radius: 999px; padding: 4px 12px; pointer-events: none; }
+.rd-p-card.is-paused .rd-p-pz { display: block; }
 .rd-p-nav .btn-ghost { color: #ffc6a5; }
 .rd-p-nav .btn-primary { min-width: 140px; }
 
@@ -245,6 +264,7 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
   .rd-ring { width: 66px; height: 66px; border-width: 3px; padding: 3px; }
   .rd-tx h3 { font-size: 16px; }
   .rd-tx p { font-size: 13.5px; }
+  .rd-grid .rd-tx p { min-height: 0; }
   .rd-tx-top .tag { display: none; }
   .rd-state-m { display: inline; } .rd-tx > .rd-state { display: none; }
   .rd-also { padding: 14px 18px; }
@@ -278,7 +298,8 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
   .rd-p-text h3 { font-size: 23px; }
   .rd-p-text p { font-size: 14px; }
   .rd-p-nav .rd-p-fm { display: inline-flex; }
-  .rd-p-nav .btn-primary { flex: 1; }
+  .rd-p-zone { display: none; }
+  .rd-p-pz { top: 34px; }
   .rd-th-hero { grid-template-columns: 1fr; gap: 18px; }
   .rd-th-hero > figure { order: -1; }
   .rd-th-hero h1 { font-size: 30px; }

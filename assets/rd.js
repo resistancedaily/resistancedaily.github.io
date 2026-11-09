@@ -103,8 +103,10 @@
     const src = (u.src || []).map(([n, url]) => `<a href="${esc(url)}">${esc(n)}</a>`).join(' · ');
     const fol = follow.has(cur) ? 'Following' : 'Follow';
     player.innerHTML = `
-      <div class="rd-p-card">
+      <div class="rd-p-card${paused && userPaused ? ' is-paused' : ''}" tabindex="-1">
         <div class="rd-p-segs" aria-hidden="true">${segs}</div>
+        <button class="rd-p-zone rd-p-zl" data-act="prev" aria-label="Previous story">‹</button><button class="rd-p-zone rd-p-zr" data-act="next" aria-label="Next story">›</button>
+        <span class="rd-p-pz" aria-hidden="true">❚❚ Paused</span>
         <div class="rd-p-head"><h2 id="rd-p-name">${esc(t.name)}</h2>
           <div class="rd-p-actions"><button class="btn btn-secondary" data-act="follow" aria-pressed="${follow.has(cur)}">${fol}</button>
           <button class="rd-p-close" data-act="close" aria-label="Close">✕</button></div></div>
@@ -119,24 +121,24 @@
             ${src ? `<span class="rd-p-src rd-p-desk">Source: ${src}</span>` : ''}
             ${t.stat ? `<span class="rd-p-stat">${esc(t.stat)}</span>` : ''}
             ${t.focusUrl ? `<a class="rd-p-focus" href="${esc(t.focusUrl)}">${esc(t.focusLabel || 'Read the full story')} →</a>` : `<a class="rd-p-focus" href="${esc(t.page)}">Every update in this thread →</a>`}
-            <div class="rd-p-nav"><button class="btn btn-ghost" data-act="prev"${step || (playAll && moved().indexOf(cur) > 0) ? '' : ' disabled'}>← Back</button>
-              <button class="btn btn-secondary rd-p-fm" data-act="follow">${fol}</button>
-              <button class="btn btn-primary" data-act="next">Next →</button></div>
+            <div class="rd-p-nav"><button class="btn btn-secondary rd-p-fm" data-act="follow">${fol}</button></div>
           </div></div></div>`;
     if (!keep) startTimer();
   }
 
   // Stories-style autoplay (owner's request, 5 Nov 2026): each update shows for a few seconds (longer for longer
   // text), the current segment fills, then the player moves on by itself and closes after the last one.
-  // Hold the card (or switch tabs) to pause; tap Next / Back, swipe or use the arrow keys to skip.
-  let timer = null, t0 = 0, spent = 0, dur = 0, paused = false;
+  // Controls like Instagram stories (owner's request, 9 Nov 2026): tap or click the right side of the card for the next
+  // story, the left third to go back; press and hold anywhere to pause while reading, let go to carry on. Keyboard:
+  // → / ← to skip, Space to pause and resume, Esc to close. Swipes still work. Links and buttons keep working as usual.
+  let timer = null, t0 = 0, spent = 0, dur = 0, paused = false, userPaused = false;
   function stopTimer() { if (timer) cancelAnimationFrame(timer); timer = null; }
   function startTimer() {
     stopTimer();
     const u = DATA.threads[cur].updates[step];
     const phone = window.matchMedia && matchMedia('(max-width: 720px)').matches;   // phones show the headline only
     const words = ((u.t || '') + ' ' + (phone ? '' : (u.text || ''))).split(/\s+/).length;
-    dur = Math.min(12000, Math.max(5000, 3000 + words * 230)); spent = 0; t0 = performance.now(); paused = false;
+    dur = Math.min(12000, Math.max(5000, 3000 + words * 230)); spent = 0; t0 = performance.now(); paused = userPaused;
     const tick = now => {
       if (!cur) return;
       const el = player.querySelector('.rd-p-segs i.cur b');
@@ -148,9 +150,31 @@
     timer = requestAnimationFrame(tick);
   }
   function pause() { if (!paused && cur) { spent += performance.now() - t0; paused = true; } }
-  function resume() { if (paused && cur) { t0 = performance.now(); paused = false; } }
-  player.addEventListener('pointerdown', e => { if (!e.target.closest('button, a, summary')) pause(); });
-  ['pointerup', 'pointercancel', 'pointerleave'].forEach(ev => player.addEventListener(ev, resume));
+  function resume() { if (paused && cur && !userPaused) { t0 = performance.now(); paused = false; } }
+  function togglePause() {                                     // Space: a pause that stays until pressed again
+    userPaused = !userPaused; userPaused ? pause() : resume();
+    const c = player.querySelector('.rd-p-card'); if (c) c.classList.toggle('is-paused', userPaused);
+  }
+  const ACTIVE = 'button, a, summary, details[open], input, label';
+  let down = null, holdT = null, held = false;               // press: {x, y, card}; held = pause by press-and-hold
+  player.addEventListener('pointerdown', e => {
+    if (e.button || e.target.closest(ACTIVE)) return;
+    const card = e.target.closest('.rd-p-card'); if (!card) return;
+    down = { x: e.clientX, y: e.clientY }; held = false;
+    clearTimeout(holdT); holdT = setTimeout(() => { held = true; pause(); }, 220);
+  });
+  player.addEventListener('pointerup', e => {
+    clearTimeout(holdT);
+    if (!down) return;
+    const d = down; down = null;
+    if (held) { held = false; return resume(); }              // let go after a hold: carry on, don't skip
+    if (Math.abs(e.clientX - d.x) > 12 || Math.abs(e.clientY - d.y) > 12) return;   // a swipe or scroll, not a tap
+    const card = player.querySelector('.rd-p-card'); if (!card || (window.getSelection && String(getSelection()).length)) return;
+    const r = card.getBoundingClientRect();
+    (e.clientX - r.left < r.width / 3 ? prev : next)();
+  });
+  ['pointercancel', 'pointerleave'].forEach(ev => player.addEventListener(ev, () => { clearTimeout(holdT); down = null; if (held) { held = false; resume(); } }));
+  player.addEventListener('contextmenu', e => { if (e.target.closest('.rd-p-card') && !e.target.closest('a, img')) e.preventDefault(); });
   player.addEventListener('toggle', e => { if (e.target.matches && e.target.matches('.rd-p-mob')) (e.target.open ? pause : resume)(); }, true);
   document.addEventListener('visibilitychange', () => { document.hidden ? pause() : resume(); });
 
@@ -159,11 +183,11 @@
     lastFocus = document.activeElement; cur = slug; step = 0; playAll = !!all;
     player.hidden = false; document.documentElement.classList.add('rd-noscroll');
     history.replaceState(null, '', '#t=' + slug);
-    render(); player.querySelector('[data-act="next"]').focus();
+    userPaused = false; render(); player.querySelector('.rd-p-card').focus({ preventScroll: true });
   }
   function markSeen(slug) { seen[slug] = DATA.date; write(K.seen, seen); }
   function close(done) {
-    stopTimer();
+    stopTimer(); userPaused = false;
     if (cur) markSeen(cur);
     player.hidden = true; player.innerHTML = ''; cur = null;
     document.documentElement.classList.remove('rd-noscroll');
@@ -177,7 +201,7 @@
     if (step < t.updates.length - 1 && (!playAll || t.updates[step + 1].isNew)) { step++; return render(); }
     markSeen(cur);
     const mv = moved(), i = mv.indexOf(cur);
-    if (playAll && mv[i + 1]) { cur = mv[i + 1]; step = 0; render(); return player.querySelector('[data-act="next"]').focus(); }
+    if (playAll && mv[i + 1]) { cur = mv[i + 1]; step = 0; return render(); }
     close(playAll || mv.every(s => seen[s] === DATA.date));
   }
   function prev() {
@@ -195,6 +219,7 @@
   document.addEventListener('keydown', e => {
     if (player.hidden) return;
     if (e.key === 'ArrowRight') next(); else if (e.key === 'ArrowLeft') prev(); else if (e.key === 'Escape') close(false);
+    else if ((e.key === ' ' || e.key === 'Spacebar') && !e.target.closest('button, a, summary, input, textarea')) { e.preventDefault(); togglePause(); }
   });
   let x0 = null;                                              // swipe left / right
   player.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
