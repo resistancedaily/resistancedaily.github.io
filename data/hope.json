@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -472,6 +472,64 @@
     [
      "Indian Express",
      "https://indianexpress.com/article/cities/bangalore/jayanagar-slum-residents-pension-raion-sanitation-10955674/"
+    ]
+   ]
+  },
+  {
+   "id": "baramulla-uapa-acquittal",
+   "date": "2026-11-09",
+   "kind": "Courts",
+   "rights": [
+    "Due process & detention"
+   ],
+   "place": "Baramulla, Jammu and Kashmir",
+   "fig": "6 yrs",
+   "figcap": "in jail, acquitted",
+   "headline": "Two men acquitted after six years under UAPA",
+   "text": "A special court acquitted two Baramulla men jailed since 2020, finding police evidence of an arms recovery inconsistent. The six years cannot be returned; any appeal is not yet reported.",
+   "slide_head": "Acquitted after 6 years",
+   "slide": "Court finds police evidence unreliable in Baramulla",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-10/baramulla.webp",
+    "alt": "A long suspension footbridge with metal railings stretching into thick fog.",
+    "caption": "A suspension footbridge in Baramulla on a foggy morning, in 2023.",
+    "credit": "Ayaan07 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_foot_bridge_in_fog..jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "link": [
+    "Kashmir Focus",
+    "focus/kashmir.html"
+   ]
+  },
+  {
+   "id": "up-bailed-undertrials",
+   "date": "2026-11-09",
+   "kind": "Courts",
+   "rights": [
+    "Due process & detention"
+   ],
+   "place": "Uttar Pradesh",
+   "fig": "106",
+   "figcap": "bailed, still jailed",
+   "headline": "Court presses UP to free prisoners already granted bail",
+   "text": "The Supreme Court ordered UP to identify undertrials granted bail but jailed over surety conditions, saying release is the state's duty. 106 such prisoners were found in 20 districts; 55 remain unchecked.",
+   "slide_head": "Bail must mean release",
+   "slide": "SC orders UP to trace 'bailed but jailed' prisoners",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/supreme-court-directs-up-gov-to-identify-undertrials-granted-bail-but-havent-been-released-from-jail-in-75-districts-557933"
     ]
    ]
   }

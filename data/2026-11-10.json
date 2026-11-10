@@ -1,0 +1,446 @@
+{
+ "date": "2026-11-10",
+ "date_long": "Tue 10 Nov 2026",
+ "date_short": "Tue 10 Nov",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Free legal aid",
+   "Bail but no surety? Ask your District Legal Services Authority · 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "MSF · ICRC · UNICEF"
+  ]
+ ],
+ "asof": "2026-11-10",
+ "items": [
+  {
+   "region": "india",
+   "place": "Baramulla, Jammu and Kashmir",
+   "short": "Baramulla",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "6 yrs",
+   "figcap": "in jail, acquitted",
+   "headline": "Baramulla men acquitted after six years under UAPA",
+   "text": "A J&K special UAPA court acquitted two men held since 2020 over an alleged grenade recovery, calling the evidence inconsistent. Police had said arms were found at a highway checkpoint.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
+    ]
+   ],
+   "lon": 74.34,
+   "lat": 34.2,
+   "thread": "kashmir",
+   "focus": "kashmir",
+   "n": 1,
+   "photo": {
+    "src": "images/2026-11-10/baramulla.webp",
+    "alt": "A long suspension footbridge with metal railings stretching into thick fog.",
+    "caption": "A suspension footbridge in Baramulla on a foggy morning, in 2023.",
+    "credit": "Ayaan07 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_foot_bridge_in_fog..jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Uttar Pradesh",
+   "short": "Uttar Pradesh",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "106",
+   "figcap": "bailed, still jailed",
+   "headline": "UP told to trace bailed prisoners still jailed",
+   "text": "In 20 UP districts, 106 of 264 undertrials granted bail remain jailed over surety conditions. The Supreme Court ordered the state to identify such prisoners in 55 more districts and secure their release.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/supreme-court-directs-up-gov-to-identify-undertrials-granted-bail-but-havent-been-released-from-jail-in-75-districts-557933"
+    ]
+   ],
+   "lon": 80.95,
+   "lat": 26.85,
+   "n": 2,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, which issued the order, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Vasai-Virar and Mumbai region, Maharashtra",
+   "short": "Maharashtra",
+   "rights": [
+    "Religion & expression",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "9",
+   "figcap": "FIRs since April",
+   "headline": "Maharashtra churches cancel or limit children's Bible camps",
+   "text": "Some churches cancelled or limited Diwali Bible camps to Christian children after nine FIRs followed prayer-meeting disruptions and a new anti-conversion law. No police or government response was reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/maharashtra-anti-conversion-law-churches-bible-camps-diwali-10957007/"
+    ]
+   ],
+   "lon": 72.83,
+   "lat": 19.39,
+   "n": 3,
+   "photo": {
+    "src": "images/2026-11-10/vasai-church.webp",
+    "alt": "A tall cream church building with a cross on its gable, arched windows and steps up to a covered entrance.",
+    "caption": "St Gonsalo Garcia Church in Vasai, a town where five of the nine FIRs were filed; it is not among the churches named in the report. Photo from 2017.",
+    "credit": "Rohan Pinto / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Saint_Gonsalo_Garcia_Church,_Vasai.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Vote"
+   ],
+   "sev": "grey",
+   "fig": "27.6%",
+   "figcap": "voters deleted",
+   "headline": "Group flags high voter deletions in Karnataka seats",
+   "text": "A Muslim community body said 27.59% of voters were deleted in 10 Karnataka seats held by Muslim MLAs during the revision, against 19.45% statewide. No Election Commission response was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/bangalore/sir-krmo-flags-higher-voter-deletions-in-muslim-dominated-constituencies/article71683696.ece"
+    ]
+   ],
+   "lon": 77.5946,
+   "lat": 12.9716,
+   "n": 4,
+   "photo": {
+    "src": "images/2026-10-29/bengaluru-voters-queue.webp",
+    "alt": "Men, women and children stand in a queue on the veranda of an old school building used as a polling booth.",
+    "caption": "Voters queue at a polling booth in Bengaluru during the 2014 general election.",
+    "credit": "Press Information Bureau / Wikimedia Commons",
+    "licence": "GODL-India",
+    "licence_url": "https://data.gov.in/government-open-data-license-india",
+    "page": "https://commons.wikimedia.org/wiki/File:Voters_standing_in_a_queue_to_cast_their_votes,_at_a_polling_booth,_during_the_5th_Phase_of_General_Elections-2014,_in_Bangalore,_Karnataka_on_April_17,_2014.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "children's faces blurred"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Aliağa, İzmir, Turkey",
+   "short": "Turkey",
+   "rights": [
+    "Life & safety",
+    "Labour"
+   ],
+   "sev": "orange",
+   "fig": "17",
+   "figcap": "workers dead",
+   "headline": "Steel plant blast kills 17 workers in Turkey",
+   "text": "An explosion at the Habaş iron and steel plant in Aliağa killed at least 17 workers and injured 12, officials said. The governor said a crane collapsed during furnace maintenance.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cq2d6d5z9y5jo"
+    ]
+   ],
+   "lon": 26.97,
+   "lat": 38.8,
+   "n": 5,
+   "photo": {
+    "src": "images/2026-11-10/aliaga.webp",
+    "alt": "A hillside view over a coastal town and harbour, with industrial plants and chimneys on the far shore.",
+    "caption": "Aliağa on the Aegean coast north of İzmir, with its industrial zone behind, in 2007.",
+    "credit": "aokaratekin / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Aliağa_-_www.alto.org.tr_-_panoramio.jpg",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": -4,
+    "dy": -13
+   }
+  },
+  {
+   "region": "world",
+   "place": "Off Crete, Greece",
+   "short": "Crete",
+   "rights": [
+    "Life & safety",
+    "Migration"
+   ],
+   "sev": "red",
+   "fig": "13",
+   "figcap": "dead",
+   "headline": "Thirteen migrants die as boat sinks off Crete",
+   "text": "At least 13 people died when a migrant boat sank off Crete; the coastguard rescued 18, all Sudanese. Authorities said the boat had likely been at sea for days in strong winds.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c65ynyxrjdyeo"
+    ]
+   ],
+   "lon": 25.13,
+   "lat": 35.0,
+   "n": 6,
+   "photo": {
+    "src": "images/2026-11-10/heraklion.webp",
+    "alt": "A marina full of white yachts in front of the low buildings of a port city under a blue sky.",
+    "caption": "The port of Heraklion, Crete's main city, in 2019.",
+    "credit": "NiTenIchiRyu / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Port_of_Heraklion,_Crete,_Greece_01.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": -13,
+    "dy": 5,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Harare, Zimbabwe",
+   "short": "Harare",
+   "rights": [
+    "Housing",
+    "Livelihood"
+   ],
+   "sev": "orange",
+   "fig": "5,000+",
+   "figcap": "homes face demolition",
+   "headline": "Harare demolitions leave families who bought plots homeless",
+   "text": "Council records list over 5,000 Harare houses facing demolition under 37 court orders; residents say they bought plots through council processes. The council says it is enforcing planning rules.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/10/harare-demolitions-leave-families-homeless-after-years-of-building"
+    ]
+   ],
+   "lon": 31.05,
+   "lat": -17.83,
+   "n": 7,
+   "photo": {
+    "src": "images/2026-11-10/harare.webp",
+    "alt": "Dry grass and a railway line in the foreground, with the high-rise skyline of a city behind.",
+    "caption": "Harare's skyline seen from Chiremba Road, in 2020.",
+    "credit": "Itaisibanda / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:View_of_Harare_from_Chiremba_road.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Moscow, Russia",
+   "short": "Moscow",
+   "rights": [
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "30",
+   "figcap": "years of reporting",
+   "headline": "Russia's Novaya Gazeta closes after eviction",
+   "text": "Novaya Gazeta held its final editorial meeting on Monday and closed after being evicted from its offices. The Kremlin called the closure part of \"a standard rotational process\".",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/videos/cvrlylj9r11go"
+    ],
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/10/30/they-killed-us"
+    ]
+   ],
+   "lon": 37.62,
+   "lat": 55.75,
+   "n": 8,
+   "photo": {
+    "src": "images/2026-11-10/novaya.webp",
+    "alt": "The lit entrance of a pale office building at night, with a barrier and a person walking on the path.",
+    "caption": "Novaya Gazeta's office building on Potapovsky Lane, Moscow, on 30 October 2026, after the eviction began.",
+    "credit": "Акутагава / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Potapovsky_lane_3,_building_1._Novaya_gazeta_office_30-10-2026-1.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "resized"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Macao, China",
+   "short": "Macao",
+   "rights": [
+    "Expression",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "12.5",
+   "figcap": "years in prison",
+   "headline": "Macao ex-lawmaker Au Kam San jailed 12.5 years",
+   "text": "A Macao court sentenced democracy activist Au Kam San under the national security law after a closed trial. The court says he worked with hostile overseas groups; HRW calls the charges baseless.",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/11/09/macao-ex-lawmaker-gets-125-years-after-unfair-trial"
+    ]
+   ],
+   "lon": 113.54,
+   "lat": 22.19,
+   "n": 9,
+   "photo": {
+    "src": "images/2026-11-07/macau-senado.webp",
+    "alt": "A pedestrian square paved in wavy black and white stones, lined with pastel colonial buildings and shoppers.",
+    "caption": "Senado Square in central Macao, in 2010.",
+    "credit": "Rob Young / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Senado_Square,_Macau_(5235016236).jpg",
+    "kind": "file",
+    "year": "2010",
+    "changes": "cropped"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Deir el-Balah, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "grey",
+   "fig": "2",
+   "figcap": "still missing",
+   "headline": "Two still missing after Gaza tent landslide",
+   "text": "Two people remain missing after Sunday's sandbank collapse that killed five in Deir el-Balah. Save the Children says Israel has blocked caravans promised under the ceasefire; no Israeli response was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "thread": "palestine",
+   "focus": "palestine",
+   "n": 10,
+   "photo": {
+    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
+    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
+    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza, in 2025.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025"
+   },
+   "map": {
+    "dx": 10,
+    "dy": 3
+   }
+  },
+  {
+   "region": "world",
+   "place": "Kassala, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Due process & detention",
+    "Accountability"
+   ],
+   "sev": "grey",
+   "fig": "ICC",
+   "figcap": "suspect held by army",
+   "headline": "Lawyer: army should not hold ICC suspect Haroun",
+   "text": "Sudanese lawyer Muaz Hadra said police and courts, not the army, should hold Ahmed Haroun, who faces war-crimes charges at home and an ICC warrant. No army comment was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/harouns-appearance-puts-sudans-military-in-awkward-position-lawyer-says"
+    ]
+   ],
+   "lon": 36.4,
+   "lat": 15.45,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "n": 11,
+   "photo": {
+    "src": "images/2026-11-03/kassala.webp",
+    "alt": "Rooftops and a street with parked cars in a town, with tall granite domes of mountains behind.",
+    "caption": "The centre of Kassala, eastern Sudan, where his lawyers say he was detained, in 2008.",
+    "credit": "Bertramz / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kassala_center_Totil.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": 4,
+    "dy": 6
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "kashmir",
+   "kicker": "Focus · Jammu & Kashmir and Ladakh",
+   "title": "Preventive detention in Jammu & Kashmir: what the courts are finding",
+   "dek": "A Baramulla court acquitted two men after six years in jail under the UAPA, finding police evidence unreliable; the High Court keeps quashing PSA detentions. The administration cites \"established peace\".",
+   "src": "images/2026-11-10/baramulla.webp",
+   "alt": "A long suspension footbridge with metal railings stretching into thick fog.",
+   "photos": 4
+  }
+ ]
+}

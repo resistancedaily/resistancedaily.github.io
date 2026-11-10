@@ -5,7 +5,7 @@
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
  "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts more than 1,500 killed since the truce; storms flood tent camps, and West Bank settler attacks hit a record.",
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -332,6 +332,16 @@
      "https://www.jpost.com/middle-east/article-914223"
     ]
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "text": "A day after the Deir el-Balah landslide, two people were still missing, Al Jazeera reported. Save the Children said more than half a million children live in \"critical or catastrophic\" shelter conditions and that Israel has repeatedly blocked caravans the ceasefire promised; no Israeli response was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people"
+    ]
+   ]
   }
  ],
  "official": {
@@ -402,11 +412,12 @@
   "2026-11-06",
   "2026-11-07",
   "2026-11-08",
-  "2026-11-09"
+  "2026-11-09",
+  "2026-11-10"
  ],
  "whats_new": {
-  "date": "2026-11-08",
-  "text": "Rain collapsed a sandbank onto tents in Deir el-Balah, killing five, including four children, health officials said. Israel says 91,000 tents have entered; aid groups blame its limits."
+  "date": "2026-11-10",
+  "text": "Two people were still missing after the Deir el-Balah landslide. Save the Children says Israel has blocked caravans the ceasefire promised; no Israeli response was reported."
  },
  "instagram": {
   "hashtags": [

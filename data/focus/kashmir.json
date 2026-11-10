@@ -3,8 +3,8 @@
  "kicker": "Focus · Jammu & Kashmir and Ladakh",
  "title": "Preventive detention in Jammu & Kashmir: what the courts are finding",
  "seo_title": "Jammu & Kashmir PSA detentions quashed by High Court, 2026",
- "dek": "J&K's High Court keeps quashing Public Safety Act detentions over vague police reports; on 30 October it ruled an encrypted app no ground to detain. The administration cites \"established peace\".",
- "updated": "2026-11-07",
+ "dek": "A Baramulla court acquitted two men after six years in jail under the UAPA, finding police evidence unreliable; the High Court keeps quashing PSA detentions. The administration cites \"established peace\".",
+ "updated": "2026-11-10",
  "published": "2026-11-02",
  "rights": [
   "Due process",
@@ -79,11 +79,11 @@
    ]
   },
   {
-   "fig": "15 mo",
-   "figcap": "a Pulwama man was held under the PSA before the court freed him",
+   "fig": "6 yrs",
+   "figcap": "two Baramulla men held under UAPA before acquittal",
    "src": [
     "Indian Express",
-    "https://indianexpress.com/article/india/jammu-kashmir-high-court-quashes-public-safety-act-detention-encrypted-app-10949467/"
+    "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
    ]
   },
   {
@@ -112,11 +112,11 @@
   },
   {
    "label": "Why it matters",
-   "text": "Preventive detention skips an ordinary trial; activist Khurram Parvez was held nearly five years before the Supreme Court upheld his bail.",
+   "text": "Trials and preventive detention can take years: two Baramulla men spent six in jail before acquittal.",
    "src": [
     [
-     "The Wire",
-     "https://m.thewire.in/article/law/jk-high-court-questions-srinagar-dc-in-person-on-reckless-psa-detention"
+     "Indian Express",
+     "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
     ],
     [
      "LiveLaw",
@@ -296,10 +296,20 @@
      "https://www.thehindu.com/news/national/jammu-and-kashmir/disallowed-friday-prayers-under-house-detention-for-6thday-mirwaiz/article71675173.ece"
     ]
    ]
+  },
+  {
+   "date": "2026-11-09",
+   "text": "A special UAPA court in Baramulla acquitted Huzaif Firdous Bhat and Ajaz Ahmad Bhat, held since police arrested them at a highway checkpoint on 16 September 2020. Police said two grenades, 100 rounds and militant posters were found in their vehicle; the court found no independent witness and \"material inconsistencies\" in police testimony, and said a conviction would be unsafe.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Lieutenant Governor Manoj Sinha says a zero-tolerance policy has \"established peace\", that more than 780 militants have been killed since 2020, that local recruitment has ended and stone-pelting has been eradicated. The NIA challenged Khurram Parvez's bail in a case it describes as terror funding. The army censured a senior officer over the 2023 Poonch deaths; Indian security sources say the four killed at the Line of Control were militants. Police in Anantnag say law and order is normal. In the Pulwama case, the police dossier alleged contact with Jaish-e-Mohammad handlers. Ladakh's administration says Wangchuk's institute did not meet its lease conditions.",
+  "text": "Lieutenant Governor Manoj Sinha says a zero-tolerance policy has \"established peace\", that more than 780 militants have been killed since 2020, that local recruitment has ended and stone-pelting has been eradicated. The NIA challenged Khurram Parvez's bail in a case it describes as terror funding. The army censured a senior officer over the 2023 Poonch deaths; Indian security sources say the four killed at the Line of Control were militants. Police in Anantnag say law and order is normal. In the Pulwama case, the police dossier alleged contact with Jaish-e-Mohammad handlers. Ladakh's administration says Wangchuk's institute did not meet its lease conditions. In the Baramulla case, police said grenades and ammunition were recovered from the accused's vehicle.",
   "src": [
    [
     "Kashmir Observer",
@@ -328,6 +338,10 @@
    [
     "Indian Express",
     "https://indianexpress.com/article/india/ladakh-administration-issues-notice-sonam-wangchuk-hial-desert-flower-school-status-quo-phyang-land-cancellation-10949332/"
+   ],
+   [
+    "Indian Express",
+    "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
    ]
   ],
   "points": [
@@ -349,17 +363,27 @@
    "The NIA challenged Khurram Parvez's bail in what it calls a terror-funding case; the Supreme Court dismissed its plea.",
    "The army censured a senior officer over the 2023 Poonch custodial deaths; the Armed Forces Tribunal later struck the censure from his record.",
    "Indian security sources say the four men killed at the Line of Control on 12 October were infiltrating militants.",
-   "No police or official statement was reported on the Mirwaiz's house detention as of 6 November."
+   "No police or official statement was reported on the Mirwaiz's house detention as of 6 November.",
+   {
+    "text": "In the Baramulla UAPA case, police said two grenades and 100 rounds were found in the accused's vehicle in 2020.",
+    "src": [
+     [
+      "Indian Express",
+      "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
+     ]
+    ]
+   }
   ]
  },
  "whats_new": {
-  "date": "2026-11-07",
-  "text": "Mirwaiz Umar Farooq said on 6 Nov he was under house detention for a sixth day and barred from leading Friday prayers at Srinagar's Jama Masjid. No police statement was reported."
+  "date": "2026-11-10",
+  "text": "A Baramulla UAPA court acquitted two men jailed six years over an alleged grenade recovery, calling police evidence inconsistent. Police had said arms were found at a 2020 checkpoint."
  },
  "editions": [
   "2026-10-31",
   "2026-11-04",
-  "2026-11-07"
+  "2026-11-07",
+  "2026-11-10"
  ],
  "instagram": {
   "hashtags": [
