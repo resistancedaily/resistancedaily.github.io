@@ -102,6 +102,8 @@
     const segs = Array.from({ length: total }, (_, i) => `<i class="${i < at ? 'on' : i === at ? 'cur' : ''}"><b></b></i>`).join('');
     const src = (u.src || []).map(([n, url]) => `<a href="${esc(url)}">${esc(n)}</a>`).join(' · ');
     const fol = follow.has(cur) ? 'Following' : 'Follow';
+    const own = !!u.img, img = own ? u.img : t.img, ptag = own ? u.photoTag : t.photoTag;   // the update's own photo, else the thread's
+    const credit = own ? u.credit : t.credit, creditUrl = own ? u.creditUrl : t.creditUrl;
     player.innerHTML = `
       <div class="rd-p-card${paused && userPaused ? ' is-paused' : ''}" tabindex="-1">
         <div class="rd-p-segs" aria-hidden="true">${segs}</div>
@@ -110,10 +112,10 @@
         <div class="rd-p-head"><h2 id="rd-p-name">${esc(t.name)}</h2>
           <div class="rd-p-actions"><button class="btn btn-secondary" data-act="follow" aria-pressed="${follow.has(cur)}">${fol}</button>
           <button class="rd-p-close" data-act="close" aria-label="Close">✕</button></div></div>
-        <div class="rd-p-body${t.img ? '' : ' nophoto'}">
-          ${t.img ? `<figure class="rd-p-photo"><img class="washed" src="${esc(t.img)}" alt="">
-            <span class="rd-p-ptag">${esc(t.photoTag)}</span>
-            <details><summary aria-label="About this photo">i</summary><figcaption>Photo: <a href="${esc(t.creditUrl)}">${esc(t.credit)}</a></figcaption></details></figure>` : ''}
+        <div class="rd-p-body${img ? '' : ' nophoto'}">
+          ${img ? `<figure class="rd-p-photo"><img class="washed" src="${esc(img)}" alt="">
+            <span class="rd-p-ptag">${esc(ptag)}</span>
+            <details><summary aria-label="About this photo">i</summary><figcaption>Photo: <a href="${esc(creditUrl)}">${esc(credit)}</a></figcaption></details></figure>` : ''}
           <div class="rd-p-text">
             <div class="rd-p-tags"><span class="tag tag-neutral">${esc(u.d)}</span>${u.isNew ? '<span class="tag tag-accent rd-p-desk">New today</span>' : ''}${u.upheld ? '<span class="tag tag-accent-2">Right upheld</span>' : ''}</div>
             <h3>${esc(u.t)}</h3>

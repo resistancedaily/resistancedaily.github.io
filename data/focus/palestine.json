@@ -38,6 +38,54 @@
    "changes": "cropped"
   },
   {
+   "src": "images/focus/palestine/mawasi.webp",
+   "alt": "An aerial view of a vast camp of white and blue tents stretching over sandy ground towards the sea.",
+   "caption": "Al-Mawasi, where hundreds of thousands of displaced Palestinians live in tents, seen from the air in January 2025.",
+   "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+   "licence": "CC BY-SA 3.0 IGO",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Al-Mawasi_area_where_displaced_Palestinians_live_in_tents,_Gaza_Strip.jpg",
+   "kind": "file",
+   "year": "2025",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/palestine/tent.webp",
+   "alt": "A canvas tent with a mattress and plastic chairs in front, pitched among the concrete rubble of collapsed buildings.",
+   "caption": "A tent set up by a homeowner among the rubble of his house in Gaza, January 2025.",
+   "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+   "licence": "CC BY-SA 4.0",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_tent_set_up_by_the_homeowner_among_the_rubble_of_his_house_after_an_Israeli_airstrike_in_Gaza_war.jpg",
+   "kind": "file",
+   "year": "2025",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/palestine/school.webp",
+   "alt": "A two-storey blue and white school building with laundry and blankets hanging from every balcony, under a UN flag.",
+   "caption": "An UNRWA school in Deir el-Balah used as a shelter for displaced families, January 2025.",
+   "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+   "licence": "CC BY-SA 3.0 IGO",
+   "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:An_UNRWA_school_which_turned_into_a_shelter_in_Deir_el-Balah,_Gaza_Strip.jpg",
+   "kind": "file",
+   "year": "2025",
+   "changes": "resized"
+  },
+  {
+   "src": "images/focus/palestine/kerem.webp",
+   "alt": "Pallets of aid supplies on a wide paved yard with a lorry and container walls behind, under a cloudy sky.",
+   "caption": "Aid pallets and a lorry at the Kerem Shalom crossing into Gaza, November 2025.",
+   "credit": "Sgt. 1st Class Malcolm Cohens-Ashley, US Army / Wikimedia Commons",
+   "licence": "Public domain",
+   "licence_url": "https://commons.wikimedia.org/wiki/File:Humanitarian_Aid_at_the_Kerem_Shalom_Crossing_Point_(9389531).jpg",
+   "page": "https://commons.wikimedia.org/wiki/File:Humanitarian_Aid_at_the_Kerem_Shalom_Crossing_Point_(9389531).jpg",
+   "kind": "file",
+   "year": "2025",
+   "changes": "resized"
+  },
+  {
    "src": "images/2026-10-20/olive-harvest-hebron.webp",
    "alt": "A gloved hand picking purple olives from a branch.",
    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank. Settler attacks on pickers hit a record in October 2026.",
@@ -57,30 +105,6 @@
    "licence": "CC BY-SA 4.0",
    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
-   "kind": "file",
-   "year": "2015",
-   "changes": "cropped"
-  },
-  {
-   "src": "images/2026-10-30/umm-al-kheir.webp",
-   "alt": "Piles of stone rubble in front of sheds and water tanks on a dry hillside, with rows of houses on the slope behind.",
-   "caption": "Umm al-Kheir in the South Hebron Hills in 2012: the rubble of a demolished home, with the Karmel settlement behind.",
-   "credit": "Friends123 / Wikimedia Commons",
-   "licence": "CC0",
-   "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-   "page": "https://commons.wikimedia.org/wiki/File:Umm_al-Kheir.1.JPG",
-   "kind": "file",
-   "year": "2012",
-   "changes": "cropped"
-  },
-  {
-   "src": "images/2026-11-07/hebron-ibrahimi.webp",
-   "alt": "Stone rooftops in the foreground and, behind them, a walled building with two minarets on a hillside of houses.",
-   "caption": "The Ibrahimi Mosque, seen from rooftops in Hebron's Old City, in 2015.",
-   "credit": "Madosophy Ahmad / Wikimedia Commons",
-   "licence": "CC BY-SA 4.0",
-   "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
-   "page": "https://commons.wikimedia.org/wiki/File:Ibrahimi_mosque_-Hebron.jpg",
    "kind": "file",
    "year": "2015",
    "changes": "cropped"
@@ -195,7 +219,8 @@
    "figcap": "killed since the ceasefire",
    "takeaway": "The ceasefire freed the hostages, but deaths in Gaza continue.",
    "visual": {
-    "type": "fig"
+    "type": "photo",
+    "i": 3
    }
   },
   {
@@ -216,7 +241,8 @@
    ],
    "takeaway": "Nearly a million people face winter in tents.",
    "visual": {
-    "type": "fig"
+    "type": "photo",
+    "i": 2
    },
    "fig": "950,000",
    "figcap": "in tent sites at flood risk, UN says"
@@ -240,7 +266,7 @@
    "takeaway": "Settler attacks reached a record during the olive harvest.",
    "visual": {
     "type": "photo",
-    "i": 2
+    "i": 6
    }
   },
   {
@@ -262,7 +288,7 @@
    "takeaway": "Hebron's operation displaced thousands of Palestinians.",
    "visual": {
     "type": "photo",
-    "i": 3
+    "i": 7
    }
   },
   {

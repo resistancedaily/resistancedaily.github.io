@@ -126,6 +126,10 @@ organisers' count as a range.
 - Give every item that has a summary a photo; one-line briefs (front-page "Briefly", the Sunday news list) get none.
   First choice: a photo of the event itself. Otherwise a file photo of the place for context (e.g. Jantar Mantar for a
   Delhi protest story, the town or district for a local story). No photo is better than a misleading one.
+- VARY PHOTOS (owner's request, 10 Nov 2026): don't reuse one photo across a thread day after day. For an item in a
+  thread, pick the Focus or past photo that best fits its place (e.g. al-Mawasi aerial for an al-Mawasi strike) and avoid
+  one used in that thread in the last 3 editions; when the pool runs thin, find and check new freely licensed ones.
+  The player shows each update's own photo, and thread pages show an "In pictures" strip.
 - Sources in order: Wikimedia Commons (CC BY, CC BY-SA, CC0, public domain), UN/humanitarian agencies whose terms allow
   reuse with credit, government press photos, Creative Commons Flickr, reader photos sent to resistancedaily.in@gmail.com
   with permission. Never newspaper or agency photos without a licence, never AI images.

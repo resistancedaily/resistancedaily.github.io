@@ -226,15 +226,16 @@
     ]
    ],
    "photo": {
-    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
-    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
-    "caption": "Tents of displaced Palestinians flooded by heavy rain in Deir el-Balah, central Gaza, last winter.",
-    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
-    "licence": "CC BY-SA 3.0 IGO",
-    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "src": "images/focus/palestine/kerem.webp",
+    "alt": "Pallets of aid supplies on a wide paved yard with a lorry and container walls behind, under a cloudy sky.",
+    "caption": "Aid pallets and a lorry at the Kerem Shalom crossing, closed on Tuesday, in November 2025.",
+    "credit": "Sgt. 1st Class Malcolm Cohens-Ashley, US Army / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Humanitarian_Aid_at_the_Kerem_Shalom_Crossing_Point_(9389531).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Humanitarian_Aid_at_the_Kerem_Shalom_Crossing_Point_(9389531).jpg",
     "kind": "file",
-    "year": "2025"
+    "year": "2025",
+    "changes": "resized"
    },
    "thread": "palestine"
   },

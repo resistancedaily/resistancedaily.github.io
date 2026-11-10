@@ -266,16 +266,16 @@
    "lon": 34.35,
    "lat": 31.42,
    "photo": {
-    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
-    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
-    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, in 2025. One of Monday's deaths was east of Deir al-Balah.",
-    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
-    "licence": "CC BY-SA 3.0 IGO",
-    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "src": "images/focus/palestine/tent.webp",
+    "alt": "A canvas tent with a mattress and plastic chairs in front, pitched among the concrete rubble of collapsed buildings.",
+    "caption": "A tent among the rubble of a destroyed house in Gaza, January 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_tent_set_up_by_the_homeowner_among_the_rubble_of_his_house_after_an_Israeli_airstrike_in_Gaza_war.jpg",
     "kind": "file",
     "year": "2025",
-    "changes": "cropped"
+    "changes": "resized"
    },
    "n": 7,
    "thread": "palestine"

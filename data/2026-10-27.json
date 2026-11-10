@@ -197,15 +197,16 @@
     ]
    ],
    "photo": {
-    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
-    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
-    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, after heavy rain. Monday's strike hit a similar camp in al-Mawasi.",
+    "src": "images/focus/palestine/mawasi.webp",
+    "alt": "An aerial view of a vast camp of white and blue tents stretching over sandy ground towards the sea.",
+    "caption": "Al-Mawasi's tent camps, where Monday's strike hit, seen from the air in January 2025.",
     "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
     "licence": "CC BY-SA 3.0 IGO",
     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Al-Mawasi_area_where_displaced_Palestinians_live_in_tents,_Gaza_Strip.jpg",
     "kind": "file",
-    "year": "2025"
+    "year": "2025",
+    "changes": "resized"
    },
    "thread": "palestine"
   },

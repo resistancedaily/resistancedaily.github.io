@@ -352,16 +352,16 @@
    "lon": 34.35,
    "lat": 31.42,
    "photo": {
-    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
-    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
-    "caption": "Tents of displaced Palestinians in Deir el-Balah, central Gaza, in 2025. Thursday's drone strike hit a tent west of az-Zawayda in the same governorate.",
+    "src": "images/focus/palestine/school.webp",
+    "alt": "A two-storey blue and white school building with laundry and blankets hanging from every balcony, under a UN flag.",
+    "caption": "An UNRWA school in Deir el-Balah used as a shelter for displaced families, January 2025.",
     "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
     "licence": "CC BY-SA 3.0 IGO",
     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:An_UNRWA_school_which_turned_into_a_shelter_in_Deir_el-Balah,_Gaza_Strip.jpg",
     "kind": "file",
     "year": "2025",
-    "changes": "cropped"
+    "changes": "resized"
    },
    "n": 9,
    "thread": "palestine"
