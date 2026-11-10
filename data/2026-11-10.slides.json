@@ -1,0 +1,27 @@
+{
+ "cover": [
+  ["Off Crete, Greece", "Migrant boat sinks; at least 13 dead"],
+  ["Aliağa, Turkey", "Steel plant blast kills 17 workers"],
+  ["Moscow, Russia", "Novaya Gazeta closes after eviction"],
+  ["Baramulla, Kashmir", "Two men acquitted after 6 years in jail"]
+ ],
+ "hope_caption": "A Baramulla court acquitted two men jailed six years under the UAPA, calling police evidence unreliable; the Supreme Court told UP to trace prisoners kept in jail despite bail.\nSource: Indian Express · LiveLaw",
+ "stories": [
+  {"n": 6, "label": "World · Life & safety", "fig": "13", "figlab": "dead", "place": "Off Crete, Greece", "head": "A migrant boat sinks off Crete",
+   "bullets": ["The coastguard rescued 18 people, all Sudanese.", "The boat had likely been at sea for days in strong winds, authorities said.", "Over 22,000 of 86,400 sea arrivals this year landed in Crete."],
+   "src": "BBC",
+   "caption": "A container ship spotted the boat about 15 nautical miles off Crete; a toddler was among four survivors taken to hospital.\nSource: BBC"},
+  {"n": 5, "label": "World · Workers' safety", "fig": "17", "figlab": "workers dead", "place": "Aliağa, İzmir, Turkey", "head": "A steel plant explosion",
+   "bullets": ["12 more workers were injured at the Habaş plant, officials said.", "The governor says a crane collapsed during furnace maintenance.", "Some people were believed to be under the rubble."],
+   "src": "BBC",
+   "caption": "An independent labour safety group says workplace accidents remain a chronic problem in Turkey.\nSource: BBC"},
+  {"n": 8, "label": "World · Press freedom", "fig": "30", "figlab": "years of reporting", "place": "Moscow, Russia", "head": "Novaya Gazeta shuts down",
+   "bullets": ["The team held a final editorial meeting on Monday after eviction.", "It investigated corruption and rights abuses for 30 years.", "The Kremlin called it \"a standard rotational process\"."],
+   "src": "BBC · HRW",
+   "caption": "Human Rights Watch says the paper was told to vacate on 29 October and its donations system was disabled.\nSource: BBC · Human Rights Watch"},
+  {"n": 1, "label": "India · Due process", "fig": "6 yrs", "figlab": "in jail, then acquitted", "place": "Baramulla, Kashmir", "head": "Acquitted after six years",
+   "bullets": ["Held under the UAPA since a 2020 vehicle check.", "Police said grenades and ammunition were found.", "The court found no independent witness and inconsistent police testimony."],
+   "src": "Indian Express",
+   "caption": "The judge said it \"would be unsafe\" to base a conviction on the prosecution's evidence.\nSource: Indian Express"}
+ ]
+}
