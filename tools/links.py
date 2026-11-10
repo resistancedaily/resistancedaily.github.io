@@ -37,12 +37,13 @@ CSS = """
 .lk-soc{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .lk-soc a{display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:999px;border:1px solid var(--color-divider);text-decoration:none;color:var(--color-text);font-family:var(--font-heading);font-size:16px}
 .lk-soc a:hover{background:var(--color-neutral-200)}
-.lk-soc a{border:0;color:#fff;font-weight:400}
-.lk-soc a:hover{filter:brightness(.92);background-blend-mode:normal}
-.lk-soc a.wa{grid-column:1/-1;background:#25D366;color:#073b1c}
-.lk-soc a.ig{background:linear-gradient(45deg,#f58529,#dd2a7b 45%,#8134af 75%,#515bd4)}
-.lk-soc a.x{background:#000}
-.lk-soc a.fb{grid-column:1/-1;background:#1877F2}
+/* Follow buttons: soft brand tints with brand-dark text (owner's choice "A", 10 Nov 2026) */
+.lk-soc a{border:0;font-weight:400}
+.lk-soc a:hover{filter:brightness(.95)}
+.lk-soc a.wa{grid-column:1/-1;background:#d9ecdc;color:#1d5c34}
+.lk-soc a.ig{background:#f1dde4;color:#7a2b4f}
+.lk-soc a.x{background:#e2ddd5;color:#201e1d}
+.lk-soc a.fb{grid-column:1/-1;background:#dde5f1;color:#2a4d86}
 .lk-foot{text-align:center;font-size:13.5px;color:var(--color-neutral-700);margin:4px 0 20px}
 .lk-foot a{color:var(--color-accent-700)}
 """
