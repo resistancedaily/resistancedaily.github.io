@@ -56,6 +56,8 @@ Detention); never render red. Keep "sev" in the data: it still orders threads an
   detentions found this week; remove anyone released (mention it in the WhatsApp text and add it to Signs of hope).
   Choose cases by severity and need for attention, not to balance numbers, in India and worldwide. Save
   data/cases.json; publish.py rebuilds still-waiting/index.html from it on every edition.
+- LINKS PAGE (owner's request, 10 Nov 2026): https://resistancedaily.github.io/links/ is the Instagram bio link: today's
+  edition, today's Focus, the sections and the follow channels. tools/links.py builds it; publish.py runs it every day.
 - publish.py still takes a DESIGN word (log it as the weekday's old name or "threads"); it no longer changes the page.
 Never hand-edit the generated pages or add charts to them.
 
