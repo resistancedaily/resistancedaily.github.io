@@ -105,7 +105,7 @@
     const own = !!u.img, img = own ? u.img : t.img, ptag = own ? u.photoTag : t.photoTag;   // the update's own photo, else the thread's
     const credit = own ? u.credit : t.credit, creditUrl = own ? u.creditUrl : t.creditUrl;
     player.innerHTML = `
-      <div class="rd-p-card${paused && userPaused ? ' is-paused' : ''}" tabindex="-1">
+      <div class="rd-p-card${entering ? ' is-in' : ''}${paused && userPaused ? ' is-paused' : ''}" tabindex="-1">
         <div class="rd-p-segs" aria-hidden="true">${segs}</div>
         <button class="rd-p-zone rd-p-zl" data-act="prev" aria-label="Previous story">‹</button><button class="rd-p-zone rd-p-zr" data-act="next" aria-label="Next story">›</button>
         <span class="rd-p-pz" aria-hidden="true">❚❚ Paused</span>
@@ -125,6 +125,7 @@
             ${t.focusUrl ? `<a class="rd-p-focus" href="${esc(t.focusUrl)}">${esc(t.focusLabel || 'Read the full story')} →</a>` : `<a class="rd-p-focus" href="${esc(t.page)}">Every update in this thread →</a>`}
             <div class="rd-p-nav"><button class="btn btn-secondary rd-p-fm" data-act="follow">${fol}</button></div>
           </div></div></div>`;
+    entering = false;
     if (!keep) startTimer();
   }
 
@@ -133,7 +134,7 @@
   // Controls like Instagram stories (owner's request, 9 Nov 2026): tap or click the right side of the card for the next
   // story, the left third to go back; press and hold anywhere to pause while reading, let go to carry on. Keyboard:
   // → / ← to skip, Space to pause and resume, Esc to close. Swipes still work. Links and buttons keep working as usual.
-  let timer = null, t0 = 0, spent = 0, dur = 0, paused = false, userPaused = false;
+  let timer = null, t0 = 0, spent = 0, dur = 0, paused = false, userPaused = false, entering = false;
   function stopTimer() { if (timer) cancelAnimationFrame(timer); timer = null; }
   function startTimer() {
     stopTimer();
@@ -185,7 +186,10 @@
     lastFocus = document.activeElement; cur = slug; step = 0; playAll = !!all;
     player.hidden = false; document.documentElement.classList.add('rd-noscroll');
     history.replaceState(null, '', '#t=' + slug);
-    userPaused = false; render(); player.querySelector('.rd-p-card').focus({ preventScroll: true });
+    userPaused = false; entering = true;
+    // Load every photo the player may show now, so moving to the next story doesn't blink while an image loads.
+    Object.values(DATA.threads).forEach(x => [x.img, ...x.updates.map(y => y.img)].forEach(src => { if (src) new Image().src = src; }));
+    render(); player.querySelector('.rd-p-card').focus({ preventScroll: true });
   }
   function markSeen(slug) { seen[slug] = DATA.date; write(K.seen, seen); }
   function close(done) {
