@@ -91,6 +91,8 @@ import following
 following.build(date)
 import stillwaiting
 stillwaiting.build()
+import links
+links.build(date)
 seo.write_sitemap(root)
 subprocess.run([sys.executable, os.path.join(root, "tools", "home.py"), "index.html"], check=True, cwd=root)
 print("built", design, date)

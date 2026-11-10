@@ -143,7 +143,12 @@ def player_data(date, prefix, ups=None):
             "focusLabel": (f.get("short") or f["title"]) if f else (t["name"] if t.get("page") else ""),
             "updates": [{"d": x["d"], "t": x["t"], "text": x["text"] if x["date"] == date else "",
                          "src": x["src"] if x["date"] == date else [], "isNew": x["date"] == date,
-                         "upheld": x["upheld"]} for x in u]}
+                         "upheld": x["upheld"],
+                         # each update shows its own photo in the player (owner's request, 10 Nov 2026); else the thread's
+                         "img": S.rel(x["photo"]["src"], prefix) if x.get("photo") else "",
+                         "photoTag": S.photo_label(x["photo"]) if x.get("photo") else "",
+                         "credit": f'{x["photo"]["credit"]}, {x["photo"]["licence"]}' if x.get("photo") else "",
+                         "creditUrl": x["photo"].get("page", "") if x.get("photo") else ""} for x in u]}
     return th
 
 
@@ -164,6 +169,23 @@ def timeline_html(ups, latest, prefix, limit=None):
                    f'{para}'
                    f'<span class="rd-src">{S.src_links(u["src"])} · <a href="{prefix}archive/{u["date"]}.html#i{u["n"]}">Edition of {E(S.nice(u["date"]))}</a></span></div></li>')
     return f'<ol class="rd-tl">{"".join(out)}</ol>'
+
+
+def pictures(t, ups, prefix, skip=None, limit=8):
+    """'In pictures' strip for a thread page (owner's request, 10 Nov 2026): the Focus photos, then photos of recent
+    updates, each shown once, with its label and credit behind (i)."""
+    f = focus_data(t.get("focus")) if t.get("focus") else None
+    seen, out = {skip} if skip else set(), []
+    for ph in (f.get("photos", []) if f else []) + [u["photo"] for u in ups if u.get("photo")]:
+        if ph["src"] in seen:
+            continue
+        seen.add(ph["src"])
+        out.append(f'<figure class="rd-pic"><img class="washed" src="{E(S.rel(ph["src"], prefix))}" alt="{E(ph.get("alt", ""))}" loading="lazy" decoding="async">'
+                   f'<span class="rd-ptag">{E(S.photo_label(ph))}</span><details class="rd-info"><summary aria-label="About this photo">i</summary>'
+                   f'<figcaption>{E(ph.get("caption", ""))} {S.photo_credit(ph)}</figcaption></details></figure>')
+        if len(out) >= limit:
+            break
+    return f'<section class="rd-sec"><h2>In pictures</h2><div class="rd-pics">{"".join(out)}</div></section>' if len(out) >= 2 else ""
 
 
 def page(t, ups, latest):
@@ -190,6 +212,7 @@ def page(t, ups, latest):
     body = (f'<header class="rd-th-hero"><div><span class="rd-kicker">Thread</span><h1>{E(t["name"])}</h1>'
             f'{f"<p class=rd-stat>{E(st)}</p>" if st else ""}'
             f'<div class="rd-row"><button class="btn btn-primary" data-rd-follow="{E(t["slug"])}">Follow this thread</button>{more}</div></div>{photo}</header>'
+            f'{pictures(t, ups, prefix, skip=p["src"] if p else None)}'
             f'<section class="rd-sec"><h2>Every update</h2>'
             f'{timeline_html(ups, latest, prefix) if ups else "<p>No reports yet.</p>"}</section>')
     html_ = S.head(f'{t["name"]} · Resistance Daily', desc, prefix, url, extra) + S.nav(prefix) + body + S.footer(prefix)

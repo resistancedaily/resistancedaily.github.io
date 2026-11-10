@@ -173,7 +173,10 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
 .rd-noscroll { overflow: hidden; }
 .rd-player { position: fixed; inset: 0; z-index: 50; background: color-mix(in srgb, #2e2b25 82%, transparent); overflow-y: auto; }
 .rd-p-card { position: relative; width: min(980px, calc(100vw - 40px)); min-height: 620px; margin: 70px auto 40px; background: #201e1d; color: #f9f4ed;
-  border-radius: 40px; padding: 26px 34px 30px; box-shadow: var(--shadow-lg); animation: rdIn .18s ease-out; display: flex; flex-direction: column; }
+  border-radius: 40px; padding: 26px 34px 30px; box-shadow: var(--shadow-lg); display: flex; flex-direction: column; }
+/* Slide in only when the player opens, not on every story change (owner's note, 10 Nov 2026: tapping flashed). */
+.rd-p-card.is-in { animation: rdIn .18s ease-out; }
+.rd-player { -webkit-tap-highlight-color: transparent; }
 @keyframes rdIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .rd-p-segs { display: flex; gap: 6px; margin-bottom: 18px; }
 .rd-p-segs i { flex: 1; height: 5px; border-radius: 999px; background: color-mix(in srgb, #f9f4ed 35%, transparent); position: relative; overflow: hidden; }
@@ -426,3 +429,14 @@ a.rd-fol:hover { background: var(--color-neutral-300); }
 }
 .rd-new[hidden] { display: none !important; }
 @media (max-width: 720px) { .rd-frow .rd-tx-top .rd-new:not([hidden]) { display: inline-flex; } }
+
+/* Thread pages: "In pictures" strip (owner's request, 10 Nov 2026). Swipe sideways on phones. */
+.rd-pics { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(220px, 1fr); gap: 12px; overflow-x: auto; padding-bottom: 6px;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+.rd-pic { position: relative; margin: 0; line-height: 0; scroll-snap-align: start; }
+.rd-pic img { width: 100%; height: 200px; object-fit: cover; border-radius: 24px; }
+.rd-pic .rd-ptag { position: absolute; left: 10px; bottom: 10px; line-height: 1.3; font-size: 10.5px; text-transform: uppercase; letter-spacing: .05em;
+  background: color-mix(in srgb, #2e2b25 70%, transparent); color: #f9f4ed; border-radius: 999px; padding: 4px 9px; }
+.rd-pic .rd-info { line-height: 1.3; right: 10px; bottom: 10px; }
+.rd-pic .rd-info figcaption { width: 240px; }
+@media (max-width: 720px) { .rd-pics { grid-auto-columns: 72%; } .rd-pic img { height: 170px; } }

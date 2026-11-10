@@ -318,15 +318,16 @@
    "lon": 34.25,
    "lat": 31.29,
    "photo": {
-    "src": "images/2026-10-19/gaza-deir-el-balah-tents.webp",
-    "alt": "People in dark clothing stand among plastic-sheet tents in heavy rain on muddy ground.",
-    "caption": "Flooded tents of displaced Palestinians after heavy rain in Deir el-Balah, Gaza.",
+    "src": "images/focus/palestine/rafah.webp",
+    "alt": "Men walk past a heavily damaged mosque with a tall minaret and a water tank, between shattered buildings under a blue sky.",
+    "caption": "A damaged mosque near Tel al-Sultan camp, Rafah, in March 2025.",
     "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
     "licence": "CC BY-SA 3.0 IGO",
     "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
-    "page": "https://commons.wikimedia.org/wiki/File:Flooded_tents_of_displaced_Palestinians_due_to_heavy_rain_in_Deir_el-Balah,_Gaza_Strip.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Palestinians_live_in_an_area_destroyed_by_Israeli_airstrike_in_Rafah,_Gaza_Strip_3.jpg",
     "kind": "file",
-    "year": "2025"
+    "year": "2025",
+    "changes": "resized"
    },
    "n": 8,
    "thread": "palestine"
