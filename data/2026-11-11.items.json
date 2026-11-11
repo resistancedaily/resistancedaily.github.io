@@ -1,0 +1,103 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 93.97,
+   "lat": 25.15,
+   "sev": "orange",
+   "label": "Kangpokpi",
+   "dx": 8,
+   "dy": 0
+  },
+  {
+   "n": 2,
+   "lon": 76.1,
+   "lat": 12.05,
+   "sev": "orange",
+   "label": "Nagarahole"
+  },
+  {
+   "n": 3,
+   "lon": 87.43,
+   "lat": 25.3,
+   "sev": "orange",
+   "label": "Pirpainti",
+   "left": true
+  },
+  {
+   "n": 4,
+   "lon": 77.68,
+   "lat": 22.78,
+   "sev": "grey",
+   "label": "Budhni",
+   "left": true
+  },
+  {
+   "n": 5,
+   "lon": 77.21,
+   "lat": 28.63,
+   "sev": "grey",
+   "label": "Delhi"
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 30.22,
+   "lat": 13.18,
+   "sev": "red",
+   "label": "Sudan",
+   "dx": 0,
+   "dy": 12
+  },
+  {
+   "n": 7,
+   "lon": 34.46,
+   "lat": 31.5,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": 0,
+   "dy": -22
+  },
+  {
+   "n": 8,
+   "lon": 35.29,
+   "lat": 32.14,
+   "sev": "orange",
+   "label": "",
+   "dx": 22,
+   "dy": -2
+  },
+  {
+   "n": 9,
+   "lon": 94.85,
+   "lat": 22.43,
+   "sev": "red",
+   "label": "Sagaing"
+  },
+  {
+   "n": 10,
+   "lon": 31.24,
+   "lat": 30.04,
+   "sev": "orange",
+   "label": "Cairo",
+   "dx": -18,
+   "dy": 2,
+   "left": true
+  },
+  {
+   "n": 11,
+   "lon": 110.37,
+   "lat": -7.79,
+   "sev": "orange",
+   "label": "Yogyakarta"
+  },
+  {
+   "n": 12,
+   "lon": -61.51,
+   "lat": 10.66,
+   "sev": "grey",
+   "label": "Trinidad"
+  }
+ ]
+}

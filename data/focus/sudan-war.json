@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-09",
+ "updated": "2026-11-11",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -371,6 +371,16 @@
      "https://www.radiotamazuj.org/en/news/article/sudan-army-detains-former-ruling-party-leader-ahmed-haroun"
     ]
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "text": "On 10 November UNICEF spokesperson James Elder said two in three child casualties in Sudan this year were caused by armed drones, and that up to 15 power stations were hit in October, cutting water and other services. UNICEF said it could not determine who carried out the strikes on power stations; no army or RSF comment was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168771"
+    ]
+   ]
   }
  ],
  "official": {
@@ -434,7 +444,8 @@
   "2026-11-05",
   "2026-11-07",
   "2026-11-08",
-  "2026-11-09"
+  "2026-11-09",
+  "2026-11-11"
  ],
  "instagram": {
   "caption": "",
@@ -451,8 +462,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-09",
-  "text": "Sudan's military detained Ahmed Haroun, wanted by the ICC over alleged Darfur crimes, on 8 November, his lawyers and party said; reports differ on where. No army or ICC comment was reported."
+  "date": "2026-11-11",
+  "text": "UNICEF says two in three child casualties in Sudan this year were caused by armed drones, and up to 15 power stations were hit in October. It could not say who launched them; neither side commented."
  },
  "summary": [
   {

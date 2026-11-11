@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts more than 1,500 killed since the truce; storms flood tent camps, and West Bank settler attacks hit a record.",
- "updated": "2026-11-10",
+ "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts more than 1,600 killed since the truce; storms flood tent camps, and West Bank settler attacks hit a record.",
+ "updated": "2026-11-11",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -112,11 +112,11 @@
  ],
  "figs": [
   {
-   "fig": "1,593",
-   "figcap": "killed since the Oct 2025 ceasefire, Gaza health ministry (to 2 Nov)",
+   "fig": "1,600+",
+   "figcap": "killed since the Oct 2025 ceasefire, Gaza health ministry (to 10 Nov)",
    "src": [
     "Al Jazeera",
-    "https://aljazeera.com/news/2026/11/3/palestine-weekly-election-deadlock-meets-west-bank-sieges-gaza-killings"
+    "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son"
    ]
   },
   {
@@ -368,6 +368,24 @@
      "https://www.aljazeera.com/news/2026/11/9/gaza-authorities-slam-global-inaction-after-mudslide-kills-five-people"
     ]
    ]
+  },
+  {
+   "date": "2026-11-10",
+   "text": "On 10 November Israeli strikes and gunfire killed at least eight Palestinians in Gaza City and Khan Younis, including a 13-year-old boy and his father in a tent in Zeitoun, local health sources said; no Israeli military comment was reported. The health ministry counts more than 1,600 killed since the truce. In the West Bank, the owner of an industrial zone in Beita said more than 150 settlers stoned workers and burned machinery; the Israeli army said the same day it had cleared four outposts it called a source of repeated violence and detained three Israeli civilians.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son"
+    ],
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/news/israeli-settlers-torch-machinery-attack-palestinian-industrial-zone"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/idf-evacuates-4-west-bank-outposts-it-says-are-source-of-repeated-acts-of-violence-3-detained-for-rioting/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -439,11 +457,12 @@
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
-  "2026-11-10"
+  "2026-11-10",
+  "2026-11-11"
  ],
  "whats_new": {
-  "date": "2026-11-10",
-  "text": "Two people were still missing after the Deir el-Balah landslide. Save the Children says Israel has blocked caravans the ceasefire promised; no Israeli response was reported."
+  "date": "2026-11-11",
+  "text": "Strikes killed at least eight in Gaza on 10 Nov, including a father and son, health sources said; settlers burned machinery in Beita. The army cleared four outposts over violence; it did not comment on Gaza."
  },
  "instagram": {
   "hashtags": [

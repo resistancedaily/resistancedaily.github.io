@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10",
+ "updated": "2026-11-11",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -532,6 +532,33 @@
      "https://www.livelaw.in/top-stories/supreme-court-directs-up-gov-to-identify-undertrials-granted-bail-but-havent-been-released-from-jail-in-75-districts-557933"
     ]
    ]
+  },
+  {
+   "id": "trinidad-privy-council",
+   "date": "2026-11-10",
+   "kind": "Courts",
+   "rights": [
+    "Privacy",
+    "Due process"
+   ],
+   "place": "Trinidad and Tobago",
+   "fig": "2",
+   "figcap": "sections struck",
+   "headline": "Court strikes down Trinidad's same-sex conduct laws",
+   "text": "The Privy Council unanimously held two sections criminalising consensual same-sex conduct unconstitutional, in a case brought by Jason Jones. A final order on the law's wording is still to come.",
+   "slide_head": "Privacy upheld",
+   "slide": "Privy Council strikes down Trinidad same-sex conduct laws",
+   "src": [
+    [
+     "Jamaica Observer",
+     "https://www.jamaicaobserver.com/2026/11/10/privy-council-overturns-anti-gay-laws-trinidad/"
+    ],
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/10/trinidad-and-tobago-uk-court-overturns-same-sex-conduct-laws"
+    ]
+   ],
+   "edition": "2026-11-11#12"
   }
  ]
 }
