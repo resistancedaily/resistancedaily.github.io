@@ -160,7 +160,7 @@ organisers' count as a range.
 ## STEP 4. Focus (whenever there are enough photos; no weekly limit)
 - When 3–8 good photos exist for one place or issue (new or ongoing, India or world), write data/focus/SLUG.json (see
   tools/focus.py) with a short, fully sourced write-up, key numbers, the official position and an Instagram story text
-  ("instagram": {"hashtags": [...]}; the slide captions are built from "story"), then
+  ("instagram": {"hashtags": [up to 5], "caption"?}; see ONE CAPTION in STEP 6), then
   `python3 tools/focus.py SLUG`. Update an existing Focus instead of duplicating it. With "layout": "chapters", give
   every paragraph that has no photo of its own a sourced "fig" and "figcap"; it fills the photo's place, as on the slides.
 - Give every Focus a "short" title (2-4 plain words, e.g. "Sudan's war", "Kashmir detentions"): cards on the home page
@@ -298,42 +298,41 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
 - NEED HOPE (owner's request, 4 Nov 2026): slide 7 (sage) is "Signs of hope": the 3 newest items from
   data/hope.json ("slide_head" in bold, "slide" under it, their sources in the footer, "More signs of hope: link in bio").
   Every cover carries a green "Need hope? · Last slide →" sticker beside the date (option A, approved by the owner).
-  tools/slides.py adds both automatically when there are hope items; check both on the contact sheet. Slide 7's caption
-  is "hope_caption" in DATE.slides.json (1–2 sentences on what was upheld, then "Source: …"), or a default pointer.
+  tools/slides.py adds both automatically when there are hope items; check both on the contact sheet.
   Focus carousels end the same way (owner's request, 4 Nov 2026): tools/slides.py focus adds the sticker and a last
-  "Signs of hope" slide, preferring hope items whose "link" points to that Focus, then the latest ones. Give the Focus
-  "instagram": {"hope_caption"} (what was upheld, then "Source: …"); hand-written "slide_captions" cover the slides
-  before it. Focus covers show the "short" title so the sticker never covers it.
+  "Signs of hope" slide, preferring hope items whose "link" points to that Focus, then the latest ones. Focus covers
+  show the "short" title so the sticker never covers it.
 - Write data/DATE.slides.json ("cover": 4 [place, headline] rows; "stories": 4 entries with n, label, fig, figlab, place,
   head, bullets, src) and run `python3 tools/slides.py daily DATE OUT`. It applies this style, adds each story's photo
   when the item has one (photos under 900px wide keep the text layout), saves JPEGs at quality 82 and writes
   OUT/contact.png. Check the contact sheet. Chromium is preinstalled; don't run "playwright install".
-- caption.txt: a date line; a numbered summary (≤ 4 items); "Non-partisan. Every fact sourced. Full edition:
-  resistancedaily.github.io (link in bio)."; sources; 6–10 neutral hashtags.
+- ONE CAPTION (owner's rule, 11 Nov 2026; replaces per-slide captions): every carousel gets ONE short caption. The
+  slides carry the stories (number, headline, bullets, official position, sources); the caption only pushes readers to
+  the website. Never repeat the slides' text. Daily caption.txt, written into OUT before running slides.py:
+    "<Day DD Mon> · where things stand today"
+    one line naming the places, e.g. "Sudan's children, Gaza, Manipur and Karnataka: swipe for today's four stories
+    and a sign of hope."
+    "Full edition, with a source for every fact: resistancedaily.github.io (link in bio)."
+    "Sources: <the 4 stories' outlets, each once>"
+    exactly 5 neutral hashtags or fewer (INSTAGRAM ALLOWS AT MOST 5 HASHTAGS PER CAPTION).
+  slides.py checks it (2,200 characters, 5 hashtags) and warns; fix any warning. No per-slide captions, no
+  slide-captions.txt, no "caption" or "hope_caption" fields in DATE.slides.json.
 - alt-text.txt: one entry per slide, in order (Slide 1 … Slide 7), each 1–2 plain sentences (about 150–250 characters).
   Say what the slide shows: for slide 1, the date, the 4 headlines and the "Need hope?" sticker; for slides 2–5, the big
   number and its label, the person or place, and the key fact, with the official position if the slide has one; for
   slide 6, the 4 actions; for slide 7, the three signs of hope. Use
   only facts that are on the slide. No hashtags, emoji or "image of".
-- Instagram takes one caption per slide. Write caption.txt into OUT before running slides.py: it becomes slide 1's
-  caption, and the tool writes OUT/slide-captions.txt with a caption for every slide (each story slide gets the
-  story's short "caption" from DATE.slides.json; slide 6 none).
-- If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt, caption.txt (slide
-  1's caption) and slide-captions.txt from "instagram": {"slide_captions"} (see Caption style below), and the last
-  slide carries the one-line "official_short". Every caption must
-  stay under 2,200 characters; the tool warns if one is longer.
-- Caption style (owner's rule, 2 Nov 2026): Instagram is the teaser, the website is the depth. Captions are short
-  and tell a story: each gives a feel for what is happening to people's rights there, plus the one number that
-  shows why it is news, and pushes interested readers to the website. Every slide caption is 1–2 short sentences
-  (about 100–230 characters), then one short "Source: <outlet>" line; never a full paragraph, never a list of every
-  outlet. Never repeat text printed on the slide. Read in order, the captions tell the story in a few lines.
-  Focus: write them by hand as "instagram": {"slide_captions": [one per slide], "official_short": "..."} in
-  data/focus/SLUG.json (slides.py uses them; without them it falls back to the long paragraphs and warns). Slide 1 =
-  "Focus · <short title>", one line on what is happening, "Swipe for their story.", "Full story, with a source for
-  every fact: link in bio.", at most 5 hashtags. Last slide = the official position in one sentence and the
-  link-in-bio line. "official_short" is the one-sentence official position printed on the last slide; the full
-  paragraph stays on the website. Daily: give every story in DATE.slides.json a short "caption" (one or two
-  sentences with the official position in a few words, then "Source: …"); slide 6 = no caption.
+- If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt and the ONE
+  caption.txt: "instagram": {"caption"} when given, otherwise built from the data ("Focus · <short>", the "dek" or, for
+  an update, "whats_new", "Official position: <official_short>", the link-in-bio line, up to 5 outlets, the first 5
+  "hashtags"). The last slide carries the one-line "official_short".
+- Caption style (owner's rules, 2 and 11 Nov 2026): Instagram is the teaser, the website is the depth. The one caption
+  is short (about 300–600 characters before hashtags): what the post covers in one line and why to open the website.
+  Focus captions by hand (optional) as "instagram": {"caption": "...", "official_short": "..."}: "Focus · <short
+  title>", one or two lines on what is happening to people's rights there with the one number that shows why it is
+  news, the official position in one sentence, "Full story, with a source for every fact: link in bio.", "Sources: …"
+  (never every outlet), at most 5 hashtags. "official_short" is the one-sentence official position printed on the last
+  slide; the full paragraph stays on the website.
 - Slide credits and the last slide (owner's rule, 2 Nov 2026): on slides, a photo credit is only "Photo: <author> ·
   <licence family>" (plus "faces blurred" when true); full credits, licence versions and changes stay on the website.
   slides.py does this. A Focus's last slide shows only "Read the full story", the link and the one-line
@@ -383,14 +382,14 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   - Daily: "What happened to people's rights in the last 24 hours · <Day DD Mon YYYY>"; the four stories numbered, each
     one or two sentences with the official position (or that none was reported); "Non-partisan. Every fact sourced.
     Full edition with links: resistancedaily.github.io (link in bio)."; "Sources: …"; a photo line ("Photos:
-    Wikimedia Commons, freely licensed (file photos, credited in the full edition)."); the same 6–10 hashtags as the
-    carousel caption.
+    Wikimedia Commons, freely licensed (file photos, credited in the full edition)."); the same 5 hashtags as the
+    carousel caption (never more than 5).
   - Focus or update: "Focus · <title>" (plus " · Update DATE" for an update); a short paragraph telling the story or
     the new development, with the official position; one or two sentences of wider context; "Full story, with a
     source for every fact: link in bio."; "Sources: …"; a photo line (say if faces were blurred); at most 5 hashtags.
   - Same standards as every caption: neutral, every fact from a sourced item or Focus paragraph, qualifiers kept.
-- Sunday case slides are not tied to an item: give each story in DATE.slides.json a "caption" (one sourced fact not
-  printed on the slide), which becomes that slide's caption, and, so the slides match the rest of the week, a "photo"
+- Sunday case slides are not tied to an item: give each story in DATE.slides.json, so the slides match the rest of
+  the week, a "photo"
   (same fields as an item photo, chosen and checked under STEP 3: usually a file photo of the place, labelled with
   its year; never a photo of the detained person unless freely licensed and appropriate). The first case photo
   (≥900px) also fills the Sunday photo cover.
@@ -439,9 +438,8 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
     no opinions on the post or the outlet, neutral wording. Under posts about deaths, attacks or other tragedies, keep
     the comment to the facts: no promotional framing beyond the closing pointer.
-- Deliver the JPEGs, slide-captions.txt and alt-text.txt (and the Focus JPEGs, slide-captions.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
-  SendUserFile (status "proactive"). Do not send caption.txt: it is only the build input for slide 1 and the Drive copy, and
-  its text is already slide 1 in slide-captions.txt.
+- Deliver the JPEGs, caption.txt and alt-text.txt (and the Focus JPEGs, caption.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
+  SendUserFile (status "proactive"). caption.txt is the post's only caption.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
 
 ## STEP 7. Drive archive (second copy)

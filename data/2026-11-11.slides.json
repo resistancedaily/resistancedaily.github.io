@@ -1,27 +1,78 @@
 {
  "cover": [
-  ["Sudan", "Drones behind most child casualties: UNICEF"],
-  ["Gaza", "Father and son among eight killed"],
-  ["Kangpokpi, Manipur", "Woman loses leg in third blast in days"],
-  ["Nagarahole, Karnataka", "Contempt plea against 39 tribal families"]
+  [
+   "Sudan",
+   "Drones behind most child casualties: UNICEF"
+  ],
+  [
+   "Gaza",
+   "Father and son among eight killed"
+  ],
+  [
+   "Kangpokpi, Manipur",
+   "Woman loses leg in third blast in days"
+  ],
+  [
+   "Nagarahole, Karnataka",
+   "Contempt plea against 39 tribal families"
+  ]
  ],
- "hope_caption": "The Privy Council unanimously struck down two Trinidad and Tobago sections criminalising consensual same-sex conduct; a final order will follow.\nSource: Jamaica Observer · HRW",
  "stories": [
-  {"n": 6, "label": "World · Life & safety", "fig": "2 in 3", "figlab": "child casualties from drones", "place": "Sudan", "head": "Drones over Sudan's children",
-   "bullets": ["UNICEF: two in three child casualties this year came from armed drones.", "Up to 15 power stations were hit in October.", "UNICEF could not say who launched the strikes."],
-   "src": "UN News",
-   "caption": "Long-range drones are now the norm in Sudan's war, UNICEF says, hitting power and water supplies.\nSource: UN News"},
-  {"n": 7, "label": "World · Life & safety", "fig": "8", "figlab": "killed Tuesday", "place": "Gaza City & Khan Younis", "head": "Eight killed in a day in Gaza",
-   "bullets": ["A 13-year-old boy and his father were among them, health sources said.", "Over 1,600 killed since the truce, the health ministry says.", "No Israeli military comment was reported."],
-   "src": "Al Jazeera",
-   "caption": "The boy and his father were killed in a tent in Zeitoun, Gaza City, a year into the ceasefire.\nSource: Al Jazeera"},
-  {"n": 1, "label": "India · Life & safety", "fig": "3", "figlab": "blasts in 5 days", "place": "Kangpokpi, Manipur", "head": "A blast in a cattle field",
-   "bullets": ["A 41-year-old woman lost her left leg while grazing cattle.", "Villagers say it was the third blast in about five days.", "No police statement was reported."],
-   "src": "Northeast Live",
-   "caption": "Villagers in Bazaghari asked for a police case and a bomb disposal squad to clear the area.\nSource: Northeast Live"},
-  {"n": 2, "label": "India · Land & livelihood", "fig": "39", "figlab": "Jenu Kuruba families", "place": "Nagarahole, Karnataka", "head": "Contempt plea against tribal families",
-   "bullets": ["The state says the families set up camps in a tiger reserve.", "A 2025 High Court order told both sides to keep the status quo.", "A community group calls the move \"bureaucratic highhandedness\"."],
-   "src": "The Hindu",
-   "caption": "The families' forest rights claims were rejected; they challenged that in court, which ordered status quo in 2025.\nSource: The Hindu"}
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "2 in 3",
+   "figlab": "child casualties from drones",
+   "place": "Sudan",
+   "head": "Drones over Sudan's children",
+   "bullets": [
+    "UNICEF: two in three child casualties this year came from armed drones.",
+    "Up to 15 power stations were hit in October.",
+    "UNICEF could not say who launched the strikes."
+   ],
+   "src": "UN News"
+  },
+  {
+   "n": 7,
+   "label": "World · Life & safety",
+   "fig": "8",
+   "figlab": "killed Tuesday",
+   "place": "Gaza City & Khan Younis",
+   "head": "Eight killed in a day in Gaza",
+   "bullets": [
+    "A 13-year-old boy and his father were among them, health sources said.",
+    "Over 1,600 killed since the truce, the health ministry says.",
+    "No Israeli military comment was reported."
+   ],
+   "src": "Al Jazeera"
+  },
+  {
+   "n": 1,
+   "label": "India · Life & safety",
+   "fig": "3",
+   "figlab": "blasts in 5 days",
+   "place": "Kangpokpi, Manipur",
+   "head": "A blast in a cattle field",
+   "bullets": [
+    "A 41-year-old woman lost her left leg while grazing cattle.",
+    "Villagers say it was the third blast in about five days.",
+    "No police statement was reported."
+   ],
+   "src": "Northeast Live"
+  },
+  {
+   "n": 2,
+   "label": "India · Land & livelihood",
+   "fig": "39",
+   "figlab": "Jenu Kuruba families",
+   "place": "Nagarahole, Karnataka",
+   "head": "Contempt plea against tribal families",
+   "bullets": [
+    "The state says the families set up camps in a tiger reserve.",
+    "A 2025 High Court order told both sides to keep the status quo.",
+    "A community group calls the move \"bureaucratic highhandedness\"."
+   ],
+   "src": "The Hindu"
+  }
  ]
 }

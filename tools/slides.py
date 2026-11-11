@@ -15,8 +15,10 @@ data/DATE.slides.json (the text-led daily carousel; a story slide shows its item
   Sundays pick the current week's cover layout in white automatically (see cover_style()); set "cover_style" to override.
 
 Focus carousels: cover photo + title, one slide per further photo (up to 6), key numbers, then "full story" with credits.
-Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt, whatsapp.txt and x-post.txt (with direct links) and OUTDIR/slide-captions.txt (one caption per slide;
-Instagram carousels take a caption per photo). For focus also caption.txt (slide 1's caption) and alt-text.txt.
+Writes OUTDIR/*.jpg, OUTDIR/contact.png (contact sheet), OUTDIR/facebook-post.txt, whatsapp.txt and x-post.txt (with direct links).
+ONE caption per carousel (owner's rule, 11 Nov 2026): daily = OUTDIR/caption.txt, written by the routine first and
+checked here; focus = OUTDIR/caption.txt built from "instagram": {"caption"} or the Focus data. At most 5 hashtags.
+For focus also alt-text.txt.
 Fonts come from @fontsource packages (npm pack) into build/fonts on first run.
 """
 import sys, os, re, json, glob, html, subprocess, datetime
@@ -170,12 +172,19 @@ def big_enough(p, min_w=900):
     return Image.open(os.path.join(root, p["src"])).size[0] >= min_w
 
 
-def write_captions(out, caps):
-    for i, c in enumerate(caps, 1):
-        if len(c) > 2200:
-            print(f"WARNING: the caption for slide {i} is {len(c)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
-    open(os.path.join(out, "slide-captions.txt"), "w").write(
-        "\n\n".join(f"===== Slide {i} =====\n{c or '(no caption)'}" for i, c in enumerate(caps, 1)) + "\n")
+def write_caption(out, text):
+    """One caption per carousel (owner's rule, 11 Nov 2026): the slides carry the stories; the caption points readers
+    to the website. Writes OUTDIR/caption.txt and checks Instagram's limits (2,200 characters, 5 hashtags)."""
+    text = text.strip()
+    if len(text) > 2200:
+        print(f"WARNING: the caption is {len(text)} characters; Instagram allows 2,200. Shorten it.", file=sys.stderr)
+    tags = re.findall(r"(?<!\w)#\w+", text)
+    if len(tags) > 5:
+        print(f"WARNING: the caption has {len(tags)} hashtags; Instagram allows 5. Cut it to 5.", file=sys.stderr)
+    open(os.path.join(out, "caption.txt"), "w").write(text + "\n")
+    stale = os.path.join(out, "slide-captions.txt")
+    if os.path.exists(stale):
+        os.remove(stale)
 
 
 SITE = "https://resistancedaily.github.io/"
@@ -547,19 +556,13 @@ def daily(date, out):
         slides.append(hope_slide(hope, N))
     for p in render(slides, out, date):
         print(p)
-    # Per-slide captions (owner's style: only what the slide doesn't show). Slide 1 uses the post caption
-    # (OUTDIR/caption.txt, written by the routine); each story slide carries its item's full text (headline, bullets
-    # and sources are on the slide); slide 6 shows everything already, so it has no caption.
-    cp = os.path.join(out, "caption.txt")  # write caption.txt into OUTDIR first and it becomes slide 1's caption
-    caps = [open(cp).read().strip() if os.path.exists(cp) else "(Use caption.txt as the caption for slide 1.)"]
-    for st in sp["stories"]:
-        it = by.get(st.get("n"), {})
-        caps.append(st.get("caption") or it.get("text", ""))  # "caption" for slides not tied to an item (Sunday cases)
-    caps.append("")
-    if hope:  # the hope slide: "hope_caption" in DATE.slides.json, or a short pointer to the page
-        caps.append(sp.get("hope_caption") or "Not every story this week was bad news: courts, communities and neighbours are holding the line. "
-                    "Every card on our Signs of hope page has its source: link in bio.\nSource: " + " · ".join(dict.fromkeys(n for i in hope for n, _ in i["src"])))
-    write_captions(out, caps)
+    # One caption per carousel (owner's rule, 11 Nov 2026): the routine writes OUTDIR/caption.txt first; it is checked
+    # here (2,200 characters, at most 5 hashtags) and is the only caption for the post.
+    cp = os.path.join(out, "caption.txt")
+    if os.path.exists(cp):
+        write_caption(out, open(cp).read())
+    else:
+        print("WARNING: no caption.txt in OUTDIR; write the post caption there (ROUTINE.md, STEP 6).", file=sys.stderr)
     facebook_daily(d, out)
     social_daily(d, out)
 
@@ -614,47 +617,21 @@ def focus(slug, out, update=False):
         slides.append(hope_slide(hope, N))
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
-    # One caption per slide: the cover carries the post caption; each later slide carries part of the story, so the
-    # story reads in order as people swipe. Story paragraphs fill the photo slides, then the key-numbers slide.
-    # Owner's style: a caption carries only what its slide doesn't already show. Slide 1: "Focus · title", the swipe
-    # line, what the first photo shows, at most 5 hashtags. Photo slides: the story paragraph, then "Sources: …".
-    # Key-numbers slide: the story paragraph only (numbers and sources are on the slide). Last slide: the sources
-    # of the official position (the position and link are on the slide).
-    def srcs_of(pairs):
-        return "Sources: " + " · ".join(dict.fromkeys(n for n, u in pairs))  # each outlet named once
-    story = list(f["story"])
-    slots = len(ph) - 1 + 1  # photo slides 2..len(ph), then the key-numbers slide
-    per = [story[i:i + 1] for i in range(min(slots - 1, len(story)))]
-    per.append(story[slots - 1:] if len(story) >= slots else [])
-    per += [[] for _ in range(slots - len(per))]
-    caps = [(f"Focus update · {when} · {f['title']}\n\n" if wn else f"Focus · {f['title']}\n\n") + f"""Swipe: each slide's caption tells the next part of the story.
-
-{first['caption']}
-
-{' '.join(ig.get('hashtags', [])[:5])}"""]
-    for k, p in enumerate(ph[1:]):
-        body = "\n\n".join(f"{x['text']}\n{srcs_of(x['src'])}" for x in per[k])
-        caps.append(body)
-    shown = set(srcs)  # sources printed on the key-numbers slide
-    caps.append("\n\n".join(x["text"] + ("" if {n for n, u in x["src"]} <= shown else "\n" + srcs_of(x["src"]))
-                              for x in per[-1]))
-    caps.append(srcs_of(f["official"]["src"]) if off else "")
-    hope_cap = (ig.get("hope_caption") or "Not every story is bad news: courts, communities and neighbours are holding the line. "
-                "Every card on our Signs of hope page has its source: link in bio.\nSource: "
-                + " · ".join(dict.fromkeys(n for i in hope for n, _ in i["src"]))) if hope else None
-    if hope:
-        caps.append(hope_cap)
-    if ig.get("slide_captions"):  # owner's rule: short hand-written captions, one per slide, win when given
-        sc = list(ig["slide_captions"])
-        if hope and len(sc) == END:  # captions written for the slides before Signs of hope: add its caption
-            sc.append(hope_cap)
-        if len(sc) != N:
-            sys.exit(f'"slide_captions" has {len(ig["slide_captions"])} entries; this carousel has {N} slides')
-        caps = sc
+    # One caption per carousel (owner's rule, 11 Nov 2026): "instagram": {"caption"} when written by hand, otherwise
+    # built here: the title line, what is happening (or what changed), the official position in one sentence, the
+    # link-in-bio line, the sources and at most 5 hashtags.
+    if ig.get("caption"):
+        cap = ig["caption"]
     else:
-        print('note: no "instagram": {"slide_captions"}; using the long story paragraphs as captions', file=sys.stderr)
-    open(os.path.join(out, "caption.txt"), "w").write(caps[0] + "\n")
-    write_captions(out, caps)
+        lead = wn["text"] if wn else f.get("dek", "")
+        pos = ig.get("official_short") or ""
+        names = list(dict.fromkeys(n for x in f["story"] for n, _ in x["src"]))
+        outlets = " · ".join(names[:5]) + (" and others" if len(names) > 5 else "")  # never every outlet
+        cap = ((f"Focus update · {when} · {f.get('short') or f['title']}" if wn else f"Focus · {f.get('short') or f['title']}")
+               + f"\n\n{lead}" + (f"\n\nOfficial position: {pos}" if pos else "")
+               + "\n\nFull story, with a source for every fact: link in bio."
+               + f"\nSources: {outlets}" + f"\n\n{' '.join(ig.get('hashtags', [])[:5])}")
+    write_caption(out, cap)
     facebook_focus(f, out, wn)
     alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")]
     alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
