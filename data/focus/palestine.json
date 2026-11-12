@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts more than 1,600 killed since the truce; storms flood tent camps, and West Bank settler attacks hit a record.",
- "updated": "2026-11-11",
+ "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts 1,622 killed since the truce; storms flood tent camps, and the UN says winter aid is being delayed.",
+ "updated": "2026-11-12",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -112,11 +112,11 @@
  ],
  "figs": [
   {
-   "fig": "1,600+",
-   "figcap": "killed since the Oct 2025 ceasefire, Gaza health ministry (to 10 Nov)",
+   "fig": "1,622",
+   "figcap": "killed since the Oct 2025 ceasefire (to 12 Nov)",
    "src": [
     "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/10/israeli-attacks-kill-at-least-six-in-gaza-including-father-and-son"
+    "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
    ]
   },
   {
@@ -386,6 +386,20 @@
      "https://www.timesofisrael.com/liveblog_entry/idf-evacuates-4-west-bank-outposts-it-says-are-source-of-repeated-acts-of-violence-3-detained-for-rioting/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "text": "Over 11 and 12 November Israeli strikes and gunfire killed at least nine Palestinians across Gaza, including at least four in an air strike at the Nasser Medical Complex in Khan Younis early on 12 November, Gaza Civil Defence said, and two brothers in a tent in Sheikh Radwan; no Israeli military comment was reported. Al Jazeera puts the toll since the truce at 1,622. On 11 November UN relief chief Tom Fletcher said governments delaying winter aid until a new Israeli government forms was \"not an acceptable excuse\" and urged: \"Open all the crossings, not just one.\"",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168788"
+    ]
+   ]
   }
  ],
  "official": {
@@ -458,11 +472,12 @@
   "2026-11-08",
   "2026-11-09",
   "2026-11-10",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "whats_new": {
-  "date": "2026-11-11",
-  "text": "Strikes killed at least eight in Gaza on 10 Nov, including a father and son, health sources said; settlers burned machinery in Beita. The army cleared four outposts over violence; it did not comment on Gaza."
+  "date": "2026-11-12",
+  "text": "At least nine were killed across Gaza on 11-12 Nov, four in a strike at Nasser Medical Complex, civil defence said. The UN's Fletcher urged all crossings opened for winter aid. No Israeli comment."
  },
  "instagram": {
   "hashtags": [

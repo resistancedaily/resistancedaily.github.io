@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -559,6 +559,28 @@
     ]
    ],
    "edition": "2026-11-11#12"
+  },
+  {
+   "id": "sikkim-consultation-fir",
+   "date": "2026-11-11",
+   "kind": "Courts",
+   "rights": [
+    "Expression"
+   ],
+   "place": "Gangtok, Sikkim",
+   "fig": "1",
+   "figcap": "FIR quashed",
+   "headline": "Court: inviting public debate is not enmity",
+   "text": "The Sikkim High Court quashed an FIR and chargesheet over an invitation to a public consultation on Darjeeling-Sikkim unification, holding it did not promote enmity. The state may still appeal.",
+   "slide_head": "Debate is not a crime",
+   "slide": "Sikkim HC quashes FIR over a public consultation invite",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/sikkim-high-court/sikkim-high-court-quashes-fir-gorkha-seva-sena-members-darjeeling-sikkim-unification-consultation-558092"
+    ]
+   ],
+   "edition": "2026-11-12#4"
   }
  ]
 }

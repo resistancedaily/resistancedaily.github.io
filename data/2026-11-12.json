@@ -1,0 +1,462 @@
+{
+ "date": "2026-11-12",
+ "date_long": "Thu 12 Nov 2026",
+ "date_short": "Thu 12 Nov",
+ "window": "Wed 09:00 → Thu 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Check your name",
+   "Verify you are on the voter roll at voters.eci.gov.in"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Support aid",
+   "UNICEF · WFP · MSF"
+  ]
+ ],
+ "asof": "2026-11-12",
+ "items": [
+  {
+   "region": "india",
+   "place": "New Delhi · Allahabad and Rajasthan High Courts",
+   "short": "New Delhi",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "129",
+   "figcap": "sites blocked",
+   "headline": "Websites blocked on forged court orders",
+   "text": "The telecom department ordered 129 websites blocked on two forged High Court orders, Reuters reported. The Allahabad High Court's complaint led to a police FIR; the department did not respond.",
+   "src": [
+    [
+     "Scroll (Reuters)",
+     "https://scroll.in/latest/1097032/centre-ordered-website-takedowns-based-on-fake-hc-orders-reports-reuters"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/fake-allahabad-high-court-order-95-websites-blocked-fir-558162"
+    ]
+   ],
+   "lon": 77.21,
+   "lat": 28.61,
+   "photo": {
+    "src": "images/2026-11-06/allahabad-high-court.webp",
+    "alt": "A large cream stone court building with a pediment, red-tiled roofs and an Indian flag, behind lawns and potted plants.",
+    "caption": "The Allahabad High Court in Prayagraj, in 2009; a forged order in its name was used to block websites.",
+    "credit": "Vroomtrapit / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Allahabad_high_court.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": -10,
+    "dy": 6,
+    "label": "Delhi",
+    "left": true
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Indian embassy, Oslo · Bharat Summit, Hyderabad",
+   "short": "Oslo",
+   "rights": [
+    "Press freedom",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "10 min",
+   "figcap": "before departure",
+   "headline": "Norwegian journalist's India visa cancelled",
+   "text": "Dagsavisen journalist Helle Lyng Svendsen says India's Oslo embassy cancelled her visa minutes before she left to speak on press freedom in Hyderabad. The ministries and embassy had not commented.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097034/norwegian-journalist-alleges-embassy-stopped-her-from-travelling-to-india-cancelled-visa"
+    ]
+   ],
+   "lon": 78.47,
+   "lat": 17.38,
+   "photo": {
+    "src": "images/2026-11-12/oslo.webp",
+    "alt": "A white modernist building with a garage, a small lawn and an Indian flag on a pole by the entrance.",
+    "caption": "The Embassy of India in Oslo, Norway, in 2015.",
+    "credit": "Jan-Tore Egge / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Niels_Juels_gate_30.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   },
+   "n": 2,
+   "map": {
+    "label": "Hyderabad"
+   }
+  },
+  {
+   "region": "india",
+   "place": "Karawal Nagar, Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "312",
+   "figcap": "Delhi AQI",
+   "headline": "Activists say police held them before smog protest",
+   "text": "A workers' party says Delhi Police put several activists under house arrest to stop a peaceful protest over pollution on Wednesday. No police response was reported.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097022/delhi-activists-put-under-house-arrest-ahead-of-pollution-protest-alleges-workers-party"
+    ]
+   ],
+   "lon": 77.29,
+   "lat": 28.73,
+   "thread": "jantar-mantar",
+   "photo": {
+    "src": "images/2026-11-12/delhi-smog.webp",
+    "alt": "Auto-rickshaws, cycle-rickshaws and cars on a road under thick grey smog, with trees fading into the haze.",
+    "caption": "Smog over Chelmsford Road, New Delhi, on 31 December 2017.",
+    "credit": "Sumita Roy Dutta / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Low_visibility_due_to_Smog_in_entry_of_Chelmsford_Road_New_Delhi_31st_Dec_2017_9AM_DSCN8819_1.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": 10,
+    "dy": -8,
+    "label": ""
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Sikkim High Court, Gangtok",
+   "short": "Gangtok",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "1",
+   "figcap": "FIR quashed",
+   "headline": "Court: inviting public debate is not enmity",
+   "text": "The Sikkim High Court quashed an FIR and chargesheet over an invitation to a public consultation on Darjeeling-Sikkim unification, holding it did not promote enmity. It called the logo use \"mischievous\".",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/sikkim-high-court/sikkim-high-court-quashes-fir-gorkha-seva-sena-members-darjeeling-sikkim-unification-consultation-558092"
+    ]
+   ],
+   "lon": 88.61,
+   "lat": 27.33,
+   "photo": {
+    "src": "images/2026-11-12/gangtok.webp",
+    "alt": "A dense hillside town of colourful multi-storey buildings along a winding road, seen from above, with forested hills behind.",
+    "caption": "Gangtok, Sikkim's capital, seen from the ropeway in 2018.",
+    "credit": "Subhrajyoti07 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:View_of_Gangtok_city_from_Ropeway.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "Karnataka (Bengaluru)",
+   "short": "Karnataka",
+   "rights": [
+    "Vote",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "22.7%",
+   "figcap": "Muslim voters removed",
+   "headline": "Group flags Muslim voter deletions in Karnataka",
+   "text": "A Muslim community body says 22.7% of Muslim voters were deleted in 64 seats during the roll revision, against 20.2% of others, citing an analysis of booth data. No Election Commission response was reported.",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/karnataka/karnataka-muslim-group-flags-alleged-disproportionate-deletion-of-muslim-voters-during-sir"
+    ]
+   ],
+   "lon": 77.59,
+   "lat": 12.97,
+   "photo": {
+    "src": "images/2026-10-29/bengaluru-voters-queue.webp",
+    "alt": "Men, women and children stand in a queue on the veranda of an old school building used as a polling booth.",
+    "caption": "Voters queue at a polling booth in Bengaluru during the 2014 general election.",
+    "credit": "Press Information Bureau / Wikimedia Commons",
+    "licence": "GODL-India",
+    "licence_url": "https://data.gov.in/government-open-data-license-india",
+    "page": "https://commons.wikimedia.org/wiki/File:Voters_standing_in_a_queue_to_cast_their_votes,_at_a_polling_booth,_during_the_5th_Phase_of_General_Elections-2014,_in_Bangalore,_Karnataka_on_April_17,_2014.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "children's faces blurred"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Khan Younis and Gaza City, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "9",
+   "figcap": "killed",
+   "headline": "Strike hits Gaza medical complex; nine killed",
+   "text": "At least nine were killed across Gaza, four in a strike at Khan Younis's Nasser Medical Complex, civil defence said, and two brothers in a Sheikh Radwan tent. No Israeli military comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
+    ]
+   ],
+   "lon": 34.3,
+   "lat": 31.35,
+   "thread": "palestine",
+   "focus": "palestine",
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in Gaza City's Sheikh Radwan district in 2025. Wednesday's strikes hit Rafah and Khan Younis.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "map": {
+    "dx": -12,
+    "dy": 8,
+    "left": true
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Shelter"
+   ],
+   "sev": "orange",
+   "fig": "106,000",
+   "figcap": "hit by rain",
+   "headline": "UN: 'No more delay' on Gaza winter aid",
+   "text": "UN relief chief Tom Fletcher said waiting for a new Israeli government is \"not an acceptable excuse\" to delay winter aid; UNICEF says rain hit 106,000 people. Tents need Israeli permits, the UN says.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168788"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
+    ]
+   ],
+   "lon": 34.46,
+   "lat": 31.5,
+   "thread": "palestine",
+   "focus": "palestine",
+   "photo": {
+    "src": "images/focus/palestine/tent.webp",
+    "alt": "A canvas tent with a mattress and plastic chairs in front, pitched among the concrete rubble of collapsed buildings.",
+    "caption": "A tent set up by a homeowner among the rubble of his house in Gaza, January 2025.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_tent_set_up_by_the_homeowner_among_the_rubble_of_his_house_after_an_Israeli_airstrike_in_Gaza_war.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "map": {
+    "dx": 8,
+    "dy": -2,
+    "label": ""
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Sudan (all 18 states)",
+   "short": "Sudan",
+   "rights": [
+    "Land & livelihood",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "68%",
+   "figcap": "lack livelihoods",
+   "headline": "UN survey: most Sudanese households lack livelihoods",
+   "text": "An IOM survey of 23,736 households found 68% have unmet livelihood needs, 83% among displaced families, and 98% face rising prices. Three South Kordofan localities could not be surveyed.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/un-one-in-three-sudanese-households-have-lost-their-livelihoods"
+    ]
+   ],
+   "lon": 32.53,
+   "lat": 15.5,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-28/nyala-market.webp",
+    "alt": "A street with a Sudapost sign over a gateway, small shops, parked cars and a few people walking on a sandy road.",
+    "caption": "A market street in Nyala, South Darfur, in 2012, before the war.",
+    "credit": "Leovdvxxx / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyala_market_street_and_post_office_2012_P1010331_608_kb.jpg",
+    "kind": "file",
+    "year": "2012"
+   },
+   "map": {
+    "dx": -8,
+    "dy": 0,
+    "left": true
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "grey",
+   "fig": "71",
+   "figcap": "aid workers killed",
+   "headline": "OCHA: 71 aid workers killed in Sudan, 2025",
+   "text": "At least 71 aid workers were killed and 28 injured in Sudan in 2025, OCHA's annual report says; more than 180 health facilities lost funding.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/ocha-reports-71-aid-workers-killed-in-sudan-as-humanitarian-funding-crisis-deepens"
+    ]
+   ],
+   "lon": 32.53,
+   "lat": 15.5,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-10-19/darfur-camp.webp",
+    "alt": "Makeshift shelters of sticks, cloth and plastic on dry red ground under a blue sky.",
+    "caption": "Makeshift shelters at Intifada transit camp near Nyala, South Darfur.",
+    "credit": "USAID / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Darfur_IDPs_1_camp.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "cropped"
+   },
+   "map": {
+    "dx": 10,
+    "dy": 8,
+    "label": ""
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Myanmar",
+   "short": "Myanmar",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "2,300",
+   "figcap": "died in custody",
+   "headline": "HRW: 2,300 reported deaths in junta custody",
+   "text": "More than 32,000 people have been arrested for opposing military rule and at least 2,300 reportedly died in custody, HRW says before the ASEAN summit. No junta response was reported.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/11/asean-increase-pressure-on-myanmar-junta-to-end-abuses"
+    ]
+   ],
+   "lon": 96.13,
+   "lat": 19.75,
+   "photo": {
+    "src": "images/2026-11-12/insein.webp",
+    "alt": "A closed iron gate between white pillars, with signboards on either side, a parked car and trees behind.",
+    "caption": "The main gate of Insein Prison, Yangon, in 2013.",
+    "credit": "Phyo WP / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Insein_Prison.JPG",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Lebanon",
+   "short": "Lebanon",
+   "rights": [
+    "Life & safety",
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "fig": "1m+",
+   "figcap": "face food shortages",
+   "headline": "Lebanon: over a million face food shortages",
+   "text": "More than one million people, nearly a quarter of Lebanon, face acute food shortages, FAO, WFP and the agriculture ministry said, rising to 1.15 million by mid-2027.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/11/one-million-people-in-lebanon-facing-acute-food-insecurity-un-says"
+    ]
+   ],
+   "lon": 35.5,
+   "lat": 33.89,
+   "n": 11,
+   "map": {
+    "dx": 0,
+    "dy": -12
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "palestine",
+   "kicker": "Focus · Palestine",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts 1,622 killed since the truce; storms flood tent camps, and the UN says winter aid is being delayed.",
+   "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+   "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+   "photos": 8
+  }
+ ]
+}

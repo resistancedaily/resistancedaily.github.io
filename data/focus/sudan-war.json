@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -381,6 +381,20 @@
      "https://news.un.org/en/story/2026/11/1168771"
     ]
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "text": "A UN survey of 23,736 households in all 18 states, published by IOM on 9 November, found 68% have unmet livelihood needs, rising to 83% among displaced families, and 98% reported rising prices. OCHA's annual report, reported on 11 November, says at least 71 aid workers were killed and 28 injured in Sudan in 2025.",
+   "src": [
+    [
+     "Dabanga (IOM)",
+     "https://www.dabangasudan.org/en/all-news/article/un-one-in-three-sudanese-households-have-lost-their-livelihoods"
+    ],
+    [
+     "Dabanga (OCHA)",
+     "https://www.dabangasudan.org/en/all-news/article/ocha-reports-71-aid-workers-killed-in-sudan-as-humanitarian-funding-crisis-deepens"
+    ]
+   ]
   }
  ],
  "official": {
@@ -445,7 +459,8 @@
   "2026-11-07",
   "2026-11-08",
   "2026-11-09",
-  "2026-11-11"
+  "2026-11-11",
+  "2026-11-12"
  ],
  "instagram": {
   "caption": "",
@@ -462,8 +477,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-11",
-  "text": "UNICEF says two in three child casualties in Sudan this year were caused by armed drones, and up to 15 power stations were hit in October. It could not say who launched them; neither side commented."
+  "date": "2026-11-12",
+  "text": "A UN survey of 23,736 households found 68% have unmet livelihood needs (83% of displaced families); OCHA says 71 aid workers were killed in Sudan in 2025."
  },
  "summary": [
   {

@@ -1,0 +1,100 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.21,
+   "lat": 28.61,
+   "sev": "orange",
+   "label": "Delhi",
+   "dx": -10,
+   "dy": 6,
+   "left": true
+  },
+  {
+   "n": 2,
+   "lon": 78.47,
+   "lat": 17.38,
+   "sev": "orange",
+   "label": "Hyderabad"
+  },
+  {
+   "n": 3,
+   "lon": 77.29,
+   "lat": 28.73,
+   "sev": "grey",
+   "label": "",
+   "dx": 10,
+   "dy": -8
+  },
+  {
+   "n": 4,
+   "lon": 88.61,
+   "lat": 27.33,
+   "sev": "grey",
+   "label": "Gangtok"
+  },
+  {
+   "n": 5,
+   "lon": 77.59,
+   "lat": 12.97,
+   "sev": "grey",
+   "label": "Karnataka"
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 34.3,
+   "lat": 31.35,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": -12,
+   "dy": 8,
+   "left": true
+  },
+  {
+   "n": 7,
+   "lon": 34.46,
+   "lat": 31.5,
+   "sev": "orange",
+   "label": "",
+   "dx": 8,
+   "dy": -2
+  },
+  {
+   "n": 8,
+   "lon": 32.53,
+   "lat": 15.5,
+   "sev": "orange",
+   "label": "Sudan",
+   "dx": -8,
+   "dy": 0,
+   "left": true
+  },
+  {
+   "n": 9,
+   "lon": 32.53,
+   "lat": 15.5,
+   "sev": "grey",
+   "label": "",
+   "dx": 10,
+   "dy": 8
+  },
+  {
+   "n": 10,
+   "lon": 96.13,
+   "lat": 19.75,
+   "sev": "orange",
+   "label": "Myanmar"
+  },
+  {
+   "n": 11,
+   "lon": 35.5,
+   "lat": 33.89,
+   "sev": "grey",
+   "label": "Lebanon",
+   "dx": 0,
+   "dy": -12
+  }
+ ]
+}
