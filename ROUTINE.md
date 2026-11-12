@@ -73,6 +73,25 @@ Never hand-edit the generated pages or add charts to them.
   Tamazuj), then credible mainstream and international ones (The Hindu, Indian Express, Deccan Herald, LiveLaw, PTI,
   Reuters, AP, BBC, Al Jazeera, Guardian, UN News, Amnesty, HRW, CIVICUS).
 - Weight stories by severity and by how under-reported they are, not by political profile.
+- SOURCE SPREAD (owner's rule, 12 Nov 2026): no single outlet may supply more than 15% of a week's source links, or
+  more than 2 items' sources in one edition. A wire story republished by another outlet counts against the outlet whose
+  page we link. When an outlet is over, cite the same fact from another credible outlet or from the primary document
+  (court order, UN or agency statement, official release, the NGO's own report) instead or as well; prefer the outlet
+  that did the original reporting over one that summarises it. Check the week's shares on preview/coverage/
+  (`python3 tools/preview.py`) before STEP 5 and say in the notification if any outlet is still over the cap.
+- LOCAL-LANGUAGE LINKS (owner's rule, 12 Nov 2026): for every item, look for a report of the same event in the language
+  of the place where it happened (Kannada for Karnataka, Hindi, Tamil, Bengali, Assamese and so on across India;
+  Arabic for Sudan and Gaza, Norwegian for Norway, etc.) and add it to the item as "local": [[lang, outlet, url]], with
+  the ISO language code (see LANG in tools/rdsite.py; add a missing language there). Search in that language and
+  script, using the names, place and numbers from the story. Open the article and confirm it reports the same event on
+  the same dates and does not contradict our text; read it through translation if needed. Use credible outlets only
+  (e.g. Prajavani, Vartha Bharati, Dainik Bhaskar, Anandabazar Patrika, Mathrubhumi, Dinamani, Siasat, Dabanga
+  Arabic, the national broadcaster or a main daily abroad); never a party organ, an aggregator or a social post. A
+  local link is extra coverage, not a replacement: every fact in our text still needs a source under SOURCE MUST MATCH
+  CLAIM, which may be the local article itself when it is the best source. If it adds a fact or an official response
+  the English sources lack, use it as a source in "src" too, named with its language ("Prajavani (Kannada)"). At most
+  2 local links per item. If none is found, add nothing: never link a loosely related article. Aim for local links
+  on at least half the items; report "Local-language links: <N> of <M> items" in the notification.
 - SOURCE MUST MATCH CLAIM: Every link must go to a specific article or official page that names the person or event AND
   states the exact fact it supports (date, number, law, court decision, status). Do not cite a homepage, a country
   overview or a long roundup when the fact sits in a linked article; cite that article instead. Before using a source,
@@ -257,7 +276,7 @@ which also rebuilds the home page and sitemap). See the header of tools/hope.py 
 - Report in the notification: "Signs of hope: <N> added today, <M> this week".
 
 ## STEP 5. Publish the edition
-- Write data/DATE.json following the schema in "Data example (data.json).txt" (plus "thread", "upheld", "lon"/"lat",
+- Write data/DATE.json following the schema in "Data example (data.json).txt" (plus "thread", "upheld", "local", "lon"/"lat",
   see THE SITE: THREADS). Each
   item's text is one or two short plain sentences (at most 35 words, see BREVITY;
   official position included), the headline is ≤ 8 neutral words, and fig is one key figure with a 1–2 word

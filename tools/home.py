@@ -136,7 +136,7 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
                if i.get("focus") and os.path.exists(os.path.join(root, "focus", f'{i["focus"]}.html')) else "")
         return (f'<article class="rd-story{"" if p else " nophoto"}" id="i{i["n"]}">{fig}<div><div class="rd-meta"><span class="{cls}">{E(tg)}</span>'
                 f'<span>{E(i["place"])}</span></div><h3>{E(i["headline"])}</h3><p>{E(i.get("text", ""))}</p>'
-                f'<span class="rd-src">{S.src_links(i.get("src", []))}{foc}{th}</span></div></article>')
+                f'<span class="rd-src">{S.src_links(i.get("src", []))}{S.local_links(i)}{foc}{th}</span></div></article>')
     stories = "".join(story(i) for i in sorted(items, key=lambda i: i["n"]))
     SL = ("All stories today" if kind in ("home", "today") else "All stories this day")
     if inline:
@@ -232,7 +232,7 @@ def build_stories(date, d, _unused, kind, regs):
                if i.get("focus") and os.path.exists(os.path.join(root, "focus", f'{i["focus"]}.html')) else "")
         return (f'<article class="rd-story{"" if p else " nophoto"}" id="i{i["n"]}">{fig}<div><div class="rd-meta"><span class="{cls}">{E(tg)}</span>'
                 f'<span>{E(i["place"])}</span></div><h3>{E(i["headline"])}</h3><p>{E(i.get("text", ""))}</p>'
-                f'<span class="rd-src">{S.src_links(i.get("src", []))}{foc}{th}</span></div></article>')
+                f'<span class="rd-src">{S.src_links(i.get("src", []))}{S.local_links(i)}{foc}{th}</span></div></article>')
     body_s = "".join(story(i) for i in sorted(items, key=lambda i: i["n"]))
     ed = f"{prefix}archive/{date}.html"
     url = f"{S.SITE}stories/{date}.html"

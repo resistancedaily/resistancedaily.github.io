@@ -91,6 +91,22 @@ def src_links(pairs):
     return " · ".join(f'<a href="{E(u)}">{E(n)}</a>' for n, u in pairs)
 
 
+# Local-language coverage (owner's request, 12 Nov 2026): an item may carry "local": [[lang, outlet, url], ...], reports
+# of the same event in the language of the place it happened. Shown after the sources as "ಕನ್ನಡ: Vartha Bharati".
+LANG = {"hi": "हिन्दी", "kn": "ಕನ್ನಡ", "ta": "தமிழ்", "te": "తెలుగు", "ml": "മലയാളം", "bn": "বাংলা", "mr": "मराठी", "gu": "ગુજરાતી",
+        "pa": "ਪੰਜਾਬੀ", "or": "ଓଡ଼ିଆ", "as": "অসমীয়া", "ur": "اردو", "ne": "नेपाली", "mni": "ꯃꯤꯇꯩꯂꯣꯟ", "ks": "کٲشُر",
+        "ar": "العربية", "fa": "فارسی", "he": "עברית", "tr": "Türkçe", "fr": "Français", "es": "Español", "pt": "Português",
+        "de": "Deutsch", "nl": "Nederlands", "no": "Norsk", "sv": "Svenska", "ru": "Русский", "uk": "Українська",
+        "zh": "中文", "ja": "日本語", "ko": "한국어", "my": "မြန်မာ", "th": "ไทย", "id": "Bahasa Indonesia", "sw": "Kiswahili",
+        "am": "አማርኛ", "si": "සිංහල", "ps": "پښتو"}
+
+
+def local_links(item):
+    """' · ಕನ್ನಡ: <a>Outlet</a>' for each entry of item["local"]; empty when there is none."""
+    return "".join(f' · <span lang="{E(l)}">{E(LANG.get(l, l))}</span>: <a href="{E(u)}" hreflang="{E(l)}">{E(n)}</a>'
+                   for l, n, u in item.get("local", []))
+
+
 def photo_label(p):
     return "Photo from the event" if p.get("kind") == "event" else f"File photo · {p.get('year', '')}"
 

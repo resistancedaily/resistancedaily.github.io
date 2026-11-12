@@ -16,11 +16,8 @@ move out of `preview/` into the live site.
 - Tag every item with "groups": [...] from: workers, women, dalit-adivasi, religious-minorities, students, migrants,
   journalists, farmers-land, children, disability, prisoners. Tag by who is affected, as the source describes them.
 
-## SOURCE SPREAD (add to the sourcing bullet)
-- No single outlet may supply more than 15% of a week's source links. When one is over, find the same fact in another
-  credible outlet or a primary document (court order, UN statement, official release) and cite that instead or as well.
-- Each week cite at least three Indian-language outlets (read through translation; quote the fact, link the original),
-  e.g. Prajavani, Vartha Bharati, Dainik Bhaskar, Anandabazar Patrika, Mathrubhumi, Dinamani, Siasat (Urdu).
+## SOURCE SPREAD
+Moved into ROUTINE.md on 12 Nov 2026 (owner approved), together with LOCAL-LANGUAGE LINKS. Now in force.
 
 ## LANGUAGES (new step after STEP 5)
 - Write data/i18n/DATE.hi.json and DATE.kn.json: {"items": {"N": [place, headline, text]}} for every item, plus the
