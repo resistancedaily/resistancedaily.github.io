@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Gaza",
+   "Strike hits Nasser Medical Complex; nine killed"
+  ],
+  [
+   "Sudan",
+   "UN: 68% of households lack livelihoods"
+  ],
+  [
+   "New Delhi",
+   "129 websites blocked on forged court orders"
+  ],
+  [
+   "Myanmar",
+   "HRW: 2,300 reported deaths in custody"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "9",
+   "figlab": "killed across Gaza",
+   "place": "Khan Younis & Gaza City",
+   "head": "A strike at a medical complex",
+   "bullets": [
+    "Four were killed in a strike at Nasser Medical Complex, civil defence said.",
+    "Two brothers died in a tent in Sheikh Radwan.",
+    "No Israeli military comment was reported."
+   ],
+   "src": "Al Jazeera"
+  },
+  {
+   "n": 8,
+   "label": "World · Livelihood",
+   "fig": "68%",
+   "figlab": "households lack livelihoods",
+   "place": "Sudan",
+   "head": "A war that empties pockets",
+   "bullets": [
+    "A UN survey of 23,736 households in all 18 states.",
+    "83% of displaced families have unmet livelihood needs.",
+    "98% report rising prices."
+   ],
+   "src": "Dabanga (IOM)"
+  },
+  {
+   "n": 1,
+   "label": "India · Expression",
+   "fig": "129",
+   "figlab": "websites blocked",
+   "place": "New Delhi",
+   "head": "Blocked on forged court orders",
+   "bullets": [
+    "The telecom department relied on two forged High Court orders, Reuters reported.",
+    "Police registered an FIR after the Allahabad High Court complained.",
+    "The department did not respond to Reuters."
+   ],
+   "src": "Scroll (Reuters) · LiveLaw"
+  },
+  {
+   "n": 10,
+   "label": "World · Detention",
+   "fig": "2,300",
+   "figlab": "reported deaths in custody",
+   "place": "Myanmar",
+   "head": "Held for opposing military rule",
+   "bullets": [
+    "More than 32,000 arrested for opposing military rule, HRW says.",
+    "At least 2,300 reportedly died in custody.",
+    "No junta response was reported."
+   ],
+   "src": "HRW"
+  }
+ ]
+}
