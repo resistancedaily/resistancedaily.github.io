@@ -1,0 +1,420 @@
+{
+ "date": "2026-11-13",
+ "date_long": "Fri 13 Nov 2026",
+ "date_short": "Fri 13 Nov",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-13",
+ "items": [
+  {
+   "region": "india",
+   "place": "Leh, Ladakh",
+   "short": "Leh",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "20+",
+   "figcap": "armed guards, he says",
+   "headline": "Wangchuk says he is under house arrest",
+   "text": "Activist Sonam Wangchuk says about 20 armed personnel keep him home in Leh after he opposed holding council polls on 4 December. Police said he was advised to stay home under election prohibitory orders.",
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/sonam-wangchuk-alleges-house-arrest-challenges-winter-polls"
+    ],
+    [
+     "ETV Bharat",
+     "https://www.etvbharat.com/en/bharat/wangchuk-alleges-house-arrest-in-ladakh-says-armed-guards-deployed-around-house-enn26111207955"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 34.16,
+   "photo": {
+    "src": "images/2026-10-23/leh-town.webp",
+    "alt": "A town of low buildings and bare poplar trees in a dry valley, with snow-capped mountains behind.",
+    "caption": "Leh town, Ladakh, seen from above in 2015.",
+    "credit": "bibek / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bird%27s_eye_view_of_Leh_town,_Ladakh,_India_(2015).jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   },
+   "n": 1,
+   "map": {
+    "dx": 6,
+    "dy": -10
+   }
+  },
+  {
+   "region": "india",
+   "place": "Chenab valley forests, Kishtwar, Jammu and Kashmir",
+   "short": "Kishtwar",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "officers killed",
+   "headline": "Two special police officers found shot dead",
+   "text": "Special police officers Rashpal Kumar, 45, and Bobby Chand, 57, were found dead with bullet wounds in Kishtwar's forests a day after going missing; their rifles were reportedly gone. Police confirmed the recovery.",
+   "src": [
+    [
+     "Scroll (PTI)",
+     "https://scroll.in/latest/1097042/j-k-two-police-officers-found-dead-in-kishtwar"
+    ]
+   ],
+   "lon": 75.77,
+   "lat": 33.31,
+   "photo": {
+    "src": "images/2026-11-13/kishtwar.webp",
+    "alt": "A wide snow-covered ground with small figures, a line of bare trees and town buildings, below snowy mountains.",
+    "caption": "Chowgan ground in Kishtwar town after snowfall, in 2018.",
+    "credit": "Pradeep Parihar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chowgan_ground_in_Kishtwar,_Jammu,_India.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 2,
+   "map": {
+    "dx": -8,
+    "dy": 8,
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Allahabad High Court (Lucknow bench), Uttar Pradesh",
+   "short": "Lucknow",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "8 months",
+   "figcap": "probe stalled",
+   "headline": "Court: UP police probes left 'hanging fire'",
+   "text": "The Allahabad High Court said stalled police probes appear statewide, citing a Sultanpur murder case pending eight months, and sought the home department's remedy within three weeks. The state said investigation continues.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-hc-up-police-investigation-delays-acs-home-558272"
+    ]
+   ],
+   "lon": 80.95,
+   "lat": 26.85,
+   "photo": {
+    "src": "images/2026-11-13/lucknow.webp",
+    "alt": "A red sandstone court building with domed towers, white trim and a sign in Hindi, behind trees.",
+    "caption": "The Allahabad High Court's Lucknow bench in 2013.",
+    "credit": "Ramesh Lalwani / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:High_Court_Lucknow.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Madras High Court, Chennai",
+   "short": "Chennai",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "2",
+   "figcap": "IAS officers",
+   "headline": "Prosecution of two IAS officers sanctioned",
+   "text": "The Centre sanctioned prosecuting two IAS officers in a road-tender case, the Madras High Court heard; officials blamed the delay on bulky files. The judge said things 'move fast for poor people'.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madras-high-court/madras-high-court-tender-irregularities-case-sanction-given-prosecute-ias-officers-558269"
+    ]
+   ],
+   "lon": 80.29,
+   "lat": 13.09,
+   "photo": {
+    "src": "images/2026-11-13/madras.webp",
+    "alt": "A red Indo-Saracenic building with two tall domed towers and an arched entrance, with cars and auto-rickshaws in front.",
+    "caption": "The Madras High Court in Chennai in January 2026.",
+    "credit": "Yercaud-elango / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madras_High_Court-2-North_fort_road-chennai-India.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Nasser Hospital, Khan Younis, Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "6",
+   "figcap": "killed at hospital",
+   "headline": "Hospital strike kills six; baby dies of cold",
+   "text": "A strike on Khan Younis's Nasser Hospital killed six, including a surgeon and a boy of 13, medics said; Israel's military said it targeted a Hamas commander. A nine-month-old died of hypothermia in a tent.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/middle-east/20261112-israel-kills-six-in-gaza-hospital-strike-as-9-month-old-baby-freezes-to-death"
+    ]
+   ],
+   "lon": 34.3,
+   "lat": 31.34,
+   "thread": "palestine",
+   "focus": "palestine",
+   "photo": {
+    "src": "images/2026-11-13/khanyounis.webp",
+    "alt": "A wide field of rubble and collapsed buildings under a low sun, with a few people walking through.",
+    "caption": "Ruins in Khan Younis in December 2024.",
+    "credit": "Felton Davis / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:24-12-07_03_Khan_Younis_Ruins.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "dx": -9,
+    "dy": 9,
+    "label": ""
+   }
+  },
+  {
+   "region": "world",
+   "place": "Atara, north of Ramallah, West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "5",
+   "figcap": "injured",
+   "headline": "Settlers wound five after army clears outposts",
+   "text": "Settlers wounded five Palestinians in Atara, one seriously, Yesh Din said, after troops removed two nearby outposts. The army said 'Israeli rioters' barricaded themselves inside structures and were dispersed.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/israeli-settlers-injure-five-palestinians-after-army-dismantles-outposts-3011500"
+    ]
+   ],
+   "lon": 35.19,
+   "lat": 32.0,
+   "thread": "palestine",
+   "photo": {
+    "src": "images/2026-11-13/atara.webp",
+    "alt": "An old domed stone shrine behind low stone walls and trees, under a blue sky.",
+    "caption": "The Sheikh al-Qatrawani shrine near Atara, in 2021.",
+    "credit": "Marwan hamad / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Atara_Village.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "resized"
+   },
+   "n": 6,
+   "map": {
+    "dx": 6,
+    "dy": -7,
+    "label": "Gaza · West Bank"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Sudan (Tawila, North Darfur; Kosti)",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety",
+    "Livelihood"
+   ],
+   "sev": "orange",
+   "fig": "900,000",
+   "figcap": "lost food aid",
+   "headline": "WFP: 900,000 lose food aid in Sudan",
+   "text": "Funding cuts shrank WFP's reach in Sudan from over 4 million people in August to just over 3 million, its new chief said on a first visit; it needs $520 million through April.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168793"
+    ]
+   ],
+   "lon": 24.9,
+   "lat": 13.5,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-13/tawila.webp",
+    "alt": "Women and children set up shelters of cloth and sticks on open sandy ground, with rocky hills behind.",
+    "caption": "Newly displaced people from El Fasher set up shelter in Tawila, North Darfur, in October 2025.",
+    "credit": "Mohamed Elgoni (UNOCHA) / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tawila_refugees_setting_up_shelter.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "children's faces blurred"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Haiti (Port-au-Prince and Kenscoff)",
+   "short": "Haiti",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "1,167",
+   "figcap": "killed Jul–Sep",
+   "headline": "UN: 1,167 killed in Haiti in three months",
+   "text": "A UN report counts at least 1,167 killed in Haiti, July to September. Gangs caused over 45% of incidents; over half the killings came in security operations against gangs. No government response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168789"
+    ]
+   ],
+   "lon": -72.34,
+   "lat": 18.54,
+   "photo": {
+    "src": "images/2026-11-13/haiti.webp",
+    "alt": "A busy street with crowds walking past stalls of clothes and goods, shop signs and low buildings.",
+    "caption": "A street in Port-au-Prince in 2012.",
+    "credit": "Alex Proimos / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Port_Au_Prince,_Haiti_(7664274188).jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized, a face blurred"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Madrid, Barcelona and across Spain",
+   "short": "Spain",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "75",
+   "figcap": "arrested",
+   "headline": "Spain housing strike: 75 held, rubber bullets fired",
+   "text": "Police reported at least 75 arrests and 1,044 incidents in Wednesday's housing general strike, firing rubber bullets in Madrid and foam rounds in Barcelona amid barricades and burning bins; marches drew thousands.",
+   "src": [
+    [
+     "El Español (Spanish)",
+     "https://www.elespanol.com/espana/20261112/huelga-acaba-disturbios-cargas-policiales-barcelona-madrid-agresion-militantes-pp-baracaldo/1003744455023_0.html"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "El Español",
+     "https://www.elespanol.com/espana/20261112/huelga-acaba-disturbios-cargas-policiales-barcelona-madrid-agresion-militantes-pp-baracaldo/1003744455023_0.html"
+    ]
+   ],
+   "lon": -3.7,
+   "lat": 40.42,
+   "photo": {
+    "src": "images/2026-11-13/madrid.webp",
+    "alt": "Marchers at night hold a long white banner reading 'Bloque Crítico por la huelga general'.",
+    "caption": "A general-strike march in Madrid on 14 November 2012, Spain's last general strike before this one.",
+    "credit": "Israel Hergón / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Huelga_general_del_14_de_noviembre_de_2012_en_Madrid_(2).jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized, faces blurred"
+   },
+   "n": 9,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Yogyakarta, Indonesia",
+   "short": "Yogyakarta",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "157",
+   "figcap": "detained",
+   "headline": "HRW seeks inquiry into Yogyakarta protest force",
+   "text": "HRW urged an impartial inquiry into rubber bullets, tear gas and beatings at Yogyakarta protests on 10 November; police held 157 and freed 154, and say protesters threw rocks and firebombs.",
+   "src": [
+    [
+     "HRW",
+     "https://www.hrw.org/news/2026/11/12/indonesia-alleged-excessive-force-against-protesters"
+    ]
+   ],
+   "lon": 110.38,
+   "lat": -7.77,
+   "photo": {
+    "src": "images/2026-11-13/ugm.webp",
+    "alt": "A large cream university building with long rows of windows, behind lawns and pine trees.",
+    "caption": "Gadjah Mada University's central building in Yogyakarta, in 2020; HRW says police entered the campus.",
+    "credit": "Risanprasetyo/Febri Ady Prasetyo / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gedung_Pusat_Universitas_Gadjah_Mada_(1).jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 10
+  }
+ ],
+ "focus": [
+  {
+   "slug": "palestine",
+   "kicker": "Focus · Palestine",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "A strike on Nasser Hospital killed six, medics said, and a baby died of cold in a tent; Gaza's health ministry counts over 1,600 killed since the October 2025 ceasefire.",
+   "src": "images/2026-11-13/khanyounis.webp",
+   "alt": "A wide field of rubble and collapsed buildings under a low sun, with a few people walking through.",
+   "photos": 8
+  }
+ ]
+}

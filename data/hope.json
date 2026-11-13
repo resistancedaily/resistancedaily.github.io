@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -581,6 +581,28 @@
     ]
    ],
    "edition": "2026-11-12#4"
+  },
+  {
+   "id": "madras-ias-sanction",
+   "date": "2026-11-12",
+   "kind": "Accountability",
+   "rights": [
+    "Due process"
+   ],
+   "place": "Chennai, Tamil Nadu",
+   "fig": "2",
+   "figcap": "IAS officers",
+   "headline": "Prosecution of two IAS officers sanctioned",
+   "text": "The Centre sanctioned prosecuting two IAS officers in a road-tender corruption case after Madras High Court pressure. The court will monitor the probe; no charges have been framed yet and the accused can contest them.",
+   "slide_head": "Officials face prosecution",
+   "slide": "Centre sanctions case against two IAS officers in Chennai",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madras-high-court/madras-high-court-tender-irregularities-case-sanction-given-prosecute-ias-officers-558269"
+    ]
+   ],
+   "edition": "2026-11-13#4"
   }
  ]
 }

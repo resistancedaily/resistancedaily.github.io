@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "A year into the October 2025 ceasefire, Gaza's health ministry counts 1,622 killed since the truce; storms flood tent camps, and the UN says winter aid is being delayed.",
- "updated": "2026-11-12",
+ "dek": "A strike on Nasser Hospital killed six, medics said, and a baby died of cold in a tent; Gaza's health ministry counts over 1,600 killed since the October 2025 ceasefire.",
+ "updated": "2026-11-13",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -400,10 +400,28 @@
      "https://news.un.org/en/story/2026/11/1168788"
     ]
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "text": "Medics said the overnight strike on Nasser Hospital in Khan Younis, which hit its surgical department, killed at least six people, up from four first reported, including surgeon Dr Rezik Abushira and a 13-year-old boy, and wounded about 20 (UN News says 27). The WHO said a medical worker, patients and their companions were among the dead. Israel's military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants hid in the hospital; Hamas denied using it. UN coordinator Ramiz Alakbarov said he was \"deeply alarmed\". The same day nine-month-old Kinan Raqiq died of hypothermia in his family's tent in Khan Younis, a doctor told AFP. In the West Bank village of Atara, settlers wounded five Palestinians, one seriously, Yesh Din said, after troops removed two outposts; the army said \"Israeli rioters\" were dispersed.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/middle-east/20261112-israel-kills-six-in-gaza-hospital-strike-as-9-month-old-baby-freezes-to-death"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168796"
+    ],
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/israeli-settlers-injure-five-palestinians-after-army-dismantles-outposts-3011500"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported.",
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital.",
   "src": [
    [
     "Arab News (AFP)",
@@ -436,15 +454,19 @@
    [
     "UN News",
     "https://news.un.org/en/story/2026/10/1168672"
+   ],
+   [
+    "France 24 (AFP)",
+    "https://www.france24.com/en/middle-east/20261112-israel-kills-six-in-gaza-hospital-strike-as-9-month-old-baby-freezes-to-death"
    ]
   ],
   "points": [
    "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details or evidence.",
+   "On the 12 November Nasser Hospital strike, the military said it targeted Hamas's Khan Younis Brigade commander and alleged militants hid inside; Hamas denied it.",
    "Israel rejects accusations that it restricts aid; security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered.",
    "Reconstruction equipment and mobile homes will stay out while Hamas refuses to disarm, Israeli security officials say.",
    "In Hebron the military says it is dismantling \"terrorist infrastructure\"; the defence minister said residents cannot return until operations end.",
-   "The military called the settler attack on diplomats in Taybeh \"severe\"; police arrested 10 suspects.",
-   "No Israeli response to the UN rights chief's ethnic-cleansing warning was reported."
+   "The military called the settler attack on diplomats in Taybeh \"severe\"; police arrested 10 suspects."
   ]
  },
  "editions": [
@@ -473,11 +495,12 @@
   "2026-11-09",
   "2026-11-10",
   "2026-11-11",
-  "2026-11-12"
+  "2026-11-12",
+  "2026-11-13"
  ],
  "whats_new": {
-  "date": "2026-11-12",
-  "text": "At least nine were killed across Gaza on 11-12 Nov, four in a strike at Nasser Medical Complex, civil defence said. The UN's Fletcher urged all crossings opened for winter aid. No Israeli comment."
+  "date": "2026-11-13",
+  "text": "A strike on Nasser Hospital killed six, incl. a surgeon and a boy of 13, medics said; Israel says it targeted a Hamas commander. A baby, 9 months, died of cold in a tent."
  },
  "instagram": {
   "hashtags": [

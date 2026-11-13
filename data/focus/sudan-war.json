@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -395,6 +395,16 @@
      "https://www.dabangasudan.org/en/all-news/article/ocha-reports-71-aid-workers-killed-in-sudan-as-humanitarian-funding-crisis-deepens"
     ]
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "text": "On his first field mission, WFP's new executive director Luke Lindberg said funding cuts have shrunk the agency's reach in Sudan from more than 4 million people in August, including 880,000 in areas at risk of famine, to just over 3 million; an estimated 900,000 vulnerable people have lost food aid. WFP needs $520 million to feed 5.4 million people through April 2027. He visited Daba Nayra camp in Tawila and Goz El Salam camp in Kosti.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168793"
+    ]
+   ]
   }
  ],
  "official": {
@@ -460,7 +470,8 @@
   "2026-11-08",
   "2026-11-09",
   "2026-11-11",
-  "2026-11-12"
+  "2026-11-12",
+  "2026-11-13"
  ],
  "instagram": {
   "caption": "",
@@ -477,8 +488,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-12",
-  "text": "A UN survey of 23,736 households found 68% have unmet livelihood needs (83% of displaced families); OCHA says 71 aid workers were killed in Sudan in 2025."
+  "date": "2026-11-13",
+  "text": "WFP says funding cuts have cut 900,000 people off food aid in Sudan; it reached over 4 million in August, just over 3 million now, and needs $520 million through April."
  },
  "summary": [
   {

@@ -1,0 +1,86 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.58,
+   "lat": 34.16,
+   "sev": "orange",
+   "label": "Leh",
+   "dx": 6,
+   "dy": -10
+  },
+  {
+   "n": 2,
+   "lon": 75.77,
+   "lat": 33.31,
+   "sev": "red",
+   "label": "Kishtwar",
+   "dx": -8,
+   "dy": 8,
+   "left": true
+  },
+  {
+   "n": 3,
+   "lon": 80.95,
+   "lat": 26.85,
+   "sev": "grey",
+   "label": "Lucknow"
+  },
+  {
+   "n": 4,
+   "lon": 80.29,
+   "lat": 13.09,
+   "sev": "grey",
+   "label": "Chennai"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 34.3,
+   "lat": 31.34,
+   "sev": "red",
+   "label": "",
+   "dx": -9,
+   "dy": 9
+  },
+  {
+   "n": 6,
+   "lon": 35.19,
+   "lat": 32.0,
+   "sev": "orange",
+   "label": "Gaza · West Bank",
+   "dx": 6,
+   "dy": -7
+  },
+  {
+   "n": 7,
+   "lon": 24.9,
+   "lat": 13.5,
+   "sev": "orange",
+   "label": "Sudan"
+  },
+  {
+   "n": 8,
+   "lon": -72.34,
+   "lat": 18.54,
+   "sev": "red",
+   "label": "Haiti"
+  },
+  {
+   "n": 9,
+   "lon": -3.7,
+   "lat": 40.42,
+   "sev": "orange",
+   "label": "Spain",
+   "left": true
+  },
+  {
+   "n": 10,
+   "lon": 110.38,
+   "lat": -7.77,
+   "sev": "grey",
+   "label": "Yogyakarta"
+  }
+ ]
+}
