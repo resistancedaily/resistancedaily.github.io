@@ -376,8 +376,25 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
 - FACEBOOK (owner's rule): do not send facebook-post.txt. The owner shares each Instagram post to Facebook from
   Instagram, which builds the Facebook post from the slides and captions. slides.py still writes the file; leave it
   in the output folder unsent.
-- REEL NARRATION (owner's rule): the owner turns each carousel into a Reel at about 5 seconds per slide and narrates
-  it slowly and calmly. For every carousel made (daily, Focus, update carousel), write narration.txt in its output
+- REELS AND REACH TWICE A WEEK (owner's rule, 13 Nov 2026; replaces the daily reels and daily reach drafts): the owner
+  posts reels and reach comments by hand and can't do it daily, so the routine makes them only on two REEL DAYS a
+  week, by the IST weekday: WEDNESDAY and SUNDAY. On every other day, write no narration.txt, reel-caption.txt or
+  reach.txt (carousels, captions, alt text, Stories, X and WhatsApp posts are still made every day), and the
+  notification says "Reels and reach: next on <Wed/Sun>".
+  - Wednesday reel: narration.txt and reel-caption.txt for that day's daily carousel, plus any Focus or update
+    carousel made that day (rules below).
+  - Sunday reel = WEEK IN REVIEW, instead of a reel of Sunday's own carousel. Pick the week's 4 most important
+    stories from the editions Monday to Sunday (by severity and how under-reported they are, as in EDITORIAL
+    STANDARDS; at most 2 from one thread; at least one from India and one from the world when the week has them),
+    each one that has a story slide in its day's daily carousel. In Sunday's daily output folder write week-reel/
+    with: reel-slides.txt (the slides to use, in order, by file name, e.g. "2026-11-13-slide2.jpg": Sunday's cover,
+    the 4 chosen story slides, then Sunday's "Signs of hope" slide; 6 slides); narration.txt (same rules as the
+    daily narration, opening "This week in rights …", one line per story naming its day and place, and ending on
+    the link-in-bio line); reel-caption.txt (see REEL CAPTION). Use only facts printed on those slides or in their
+    sourced items, and say if a story has moved since (e.g. a later death toll) only when today's sources show it.
+  - Reach comments: one batch of about 8–10 drafts on each reel day (see REACH COMMENTS).
+- REEL NARRATION (owner's rule): the owner turns a carousel into a Reel at about 5 seconds per slide and narrates
+  it slowly and calmly. On reel days, for each carousel that gets a reel (see above), write narration.txt in its output
   folder: one line per slide, "Slide N (5s): <line>", with a total time at the top ("6 slides · about 30 seconds").
   Each line is about 9-11 words (about 4.5 seconds read slowly), then " …" marking a short pause before the next
   slide (owner's rule, 29 Oct 2026: longer lines felt rushed, 6-8 words felt too thin). Each story line says the
@@ -396,8 +413,12 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   Same length and pauses as daily lines (about 9-11 words, " …" after each but the last), and each line picks up
   from the one before so it sounds like one story, not a list: e.g. "It followed…", "Reports say…", "Now…".
 - REEL CAPTION (owner's rule): a Reel takes one caption, not one per slide, and viewers can't read the slides'
-  sources in 5 seconds. For every carousel made, also write reel-caption.txt in its output folder, under 2,200
-  characters:
+  sources in 5 seconds. On reel days, for each carousel that gets a reel, also write reel-caption.txt in its output
+  folder, under 2,200 characters:
+  - Week in review (Sunday): "Rights this week · <DD–DD Mon YYYY>"; the four stories numbered, each with its day,
+    one or two sentences and the official position (or that none was reported); "Non-partisan. Every fact sourced.
+    Every edition with links: resistancedaily.github.io/archive/ (link in bio)."; "Sources: …"; the photo line; at
+    most 5 hashtags.
   - Daily: "What happened to people's rights in the last 24 hours · <Day DD Mon YYYY>"; the four stories numbered, each
     one or two sentences with the official position (or that none was reported); "Non-partisan. Every fact sourced.
     Full edition with links: resistancedaily.github.io (link in bio)."; "Sources: …"; a photo line ("Photos:
@@ -417,21 +438,24 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   the owner's accounts, and never automate posting: Instagram and YouTube treat automated or repeated promotional
   comments as spam and can restrict the account.
   - ALL PLATFORMS (owner's rule, 1 Nov 2026): spread the drafts across every platform we post on, Instagram,
-    Facebook and X, plus YouTube, not just one. Each day aim for a mix (for example one Instagram, one Facebook or X,
-    one YouTube) and rotate so no platform is skipped for long.
+    Facebook and X, plus YouTube, not just one. Each batch has a mix (at least one each of Instagram, Facebook, X and
+    YouTube when posts exist) and rotates so no platform is skipped for long.
+  - WHEN (owner's rule, 13 Nov 2026): reach drafts are written only on reel days (Wednesday and Sunday, IST). Each
+    batch covers the stories since the previous reel day (about 3–4 days of editions and Focus updates), not just
+    that day's.
   - WHAT TO COMMENT ON (owner's rule, 1 Nov 2026): not only Focus stories. In priority order: (1) Focus stories
-    that are actively developing (e.g. Siang, Sudan), preferring the Focus updated today; (2) any story in today's
-    edition; (3) ongoing "Still waiting" cases. Find posts or videos by
+    that are actively developing (e.g. Siang, Sudan), preferring the Focus updated most recently; (2) any story in
+    the editions since the previous reel day; (3) ongoing "Still waiting" cases. Find posts or videos by
     credible outlets or organisations (e.g. BBC News India, The Hindu, Scroll, Down To Earth, Al Jazeera, UN News,
     Amnesty, HRW) on those stories. Skip partisan accounts, politicians' and parties' accounts, and posts about
     unrelated topics. RECENCY (owner's rule, 1 Nov 2026): prefer posts from the last 48 hours, but older posts that
     are still relevant are welcome (people keep finding and reading them), especially for ongoing stories; list
     recent ones first and give each post's age.
-  - HOW MANY: about 6–10 drafts a day in total across Instagram, Facebook, X and YouTube, listed in priority order
-    so the owner can stop wherever they like. To stay clear of spam filters: at most 2 comments a day under any one
-    outlet's posts, every comment written fresh with a fact the post doesn't already give, and a note at the top of
-    reach.txt to spread posting through the day rather than all at once. Don't pick the same outlet's account two
-    days running for the same story unless the story moved.
+  - HOW MANY: about 8–10 drafts per batch in total across Instagram, Facebook, X and YouTube, listed in priority
+    order so the owner can stop wherever they like. To stay clear of spam filters: at most 2 comments per batch under
+    any one outlet's posts, every comment written fresh with a fact the post doesn't already give, and a note at the
+    top of reach.txt to spread posting over the next day or two rather than all at once. Don't pick the same
+    outlet's account in two batches running for the same story unless the story moved.
   - YouTube (and any page that opens without logging in): give the exact URL and open it to confirm it is about
     that story.
   - Instagram, Facebook and X show posts only to logged-in users, and the routine must never log in. For these,
@@ -445,11 +469,11 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
     shows a robot check to this server, so don't scrape it. An X post's date can be read from its status ID:
     UTC time = ((ID >> 22) + 1288834974657) ms since 1970. Use it to give each post's age and put recent posts first. Instagram and Facebook
     are indexed less, so when nothing turns up, fall back to the outlet's article and "Look for: …" as above.
-  - Write reach.txt in that day's Focus output folder (or the daily folder if no Focus changed): for each post, the
+  - On reel days, write reach.txt in the daily output folder: for each post, the
     platform, the outlet, the URL (or what to look for), then a comment of 1–2 short sentences that adds ONE sourced
-    fact from our Focus page or today's edition that the post doesn't already give (with its date, and qualifiers
+    fact from our Focus page or the story's edition that the post doesn't already give (with its date, and qualifiers
     kept), then a pointer to the page. Link: a Focus story links to its Focus page
-    (https://resistancedaily.github.io/focus/SLUG.html); any other story links to that day's edition at its stable
+    (https://resistancedaily.github.io/focus/SLUG.html); any other story links to its own day's edition at its stable
     address (https://resistancedaily.github.io/archive/DATE.html), never /today/, which changes daily. Endings by
     platform: Instagram (links in comments aren't clickable) ends with "Daily updates, every fact sourced: Resistance
     Daily (link in bio)"; Facebook, YouTube and other sites end with the link; X replies must fit in 280 characters
@@ -457,7 +481,7 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   - Write every comment fresh, never a template, and match it to the post: no hashtags, no emoji, no "follow us",
     no opinions on the post or the outlet, neutral wording. Under posts about deaths, attacks or other tragedies, keep
     the comment to the facts: no promotional framing beyond the closing pointer.
-- Deliver the JPEGs, caption.txt and alt-text.txt (and the Focus JPEGs, caption.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the narration.txt and reel-caption.txt for each carousel, the x-post.txt and whatsapp.txt files, and reach.txt) with
+- Deliver the JPEGs, caption.txt and alt-text.txt (and the Focus JPEGs, caption.txt and alt-text.txt, plus story.txt and old-caption-line.txt when made, the x-post.txt and whatsapp.txt files, and on reel days the narration.txt and reel-caption.txt files, the Sunday week-reel/ folder and reach.txt) with
   SendUserFile (status "proactive"). caption.txt is the post's only caption.
   Upload alt-text.txt to Drive as "DATE Instagram alt text.txt".
 
@@ -470,4 +494,5 @@ caption.txt" and "DATE Instagram slides source.html". Don't upload JPEGs.
 Send a PushNotification inside <routine_summary> tags. Lead with the single most important rights development, then 5–8
 short neutral lines, then: "Today's design: <name>. Photos: <N> of <M> items. Focus: <title or none>. Site:
 resistancedaily.github.io (pushed / NOT pushed: reason). Backup page updated; Instagram slides + caption in today's run;
-reach comments: <N> drafted in reach.txt; archived to Drive." If any step fails, still notify and say what failed.
+reels and reach: <on a reel day: "reel for <daily / week in review / Focus>; <N> reach comments in reach.txt"; otherwise
+"next on <Wed/Sun>">; archived to Drive." If any step fails, still notify and say what failed.
