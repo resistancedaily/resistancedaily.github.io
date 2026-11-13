@@ -1,0 +1,26 @@
+{
+ "cover": [
+  ["Gaza", "Hospital strike kills six; baby dies of cold"],
+  ["Haiti", "UN: 1,167 killed in three months"],
+  ["Leh, Ladakh", "Wangchuk says he is under house arrest"],
+  ["Sudan", "WFP: 900,000 lose food aid"]
+ ],
+ "stories": [
+  {"n": 5, "label": "World · Life & safety", "fig": "6", "figlab": "killed at Nasser Hospital", "place": "Khan Younis, Gaza",
+   "head": "A strike on a hospital",
+   "bullets": ["Medics say a surgeon and a 13-year-old boy were among the dead.", "Israel's military says it targeted a Hamas commander.", "A nine-month-old died of hypothermia in a tent."],
+   "src": "France 24 (AFP)"},
+  {"n": 8, "label": "World · Life & safety", "fig": "1,167", "figlab": "killed, July to September", "place": "Haiti",
+   "head": "Three months of killings",
+   "bullets": ["Gangs caused over 45% of incidents, a UN report says.", "Over half the killings came in security operations against gangs.", "No government response was reported."],
+   "src": "UN News"},
+  {"n": 1, "label": "India · Assembly", "fig": "20+", "figlab": "armed guards, he says", "place": "Leh, Ladakh",
+   "head": "Kept at home before a protest",
+   "bullets": ["Sonam Wangchuk opposes holding council polls on 4 December.", "He says no written order was served on him.", "Police say he was advised to stay home under election orders."],
+   "src": "The Wire · ETV Bharat"},
+  {"n": 7, "label": "World · Livelihood", "fig": "900,000", "figlab": "lost food aid", "place": "Sudan",
+   "head": "Less food as funds run dry",
+   "bullets": ["WFP reached over 4 million people in August.", "Just over 3 million now, after funding cuts.", "It needs $520 million through April."],
+   "src": "UN News"}
+ ]
+}
