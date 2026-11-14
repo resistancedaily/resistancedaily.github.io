@@ -1,0 +1,26 @@
+{
+ "cover": [
+  ["Ukhrul, Manipur", "Four Naga civilians shot dead"],
+  ["Blue Nile, Sudan", "Drone strike toll rises to 16"],
+  ["Ituri, DR Congo", "Raids blamed on ADF kill dozens"],
+  ["Lakhimpur, Assam", "Homes of 132 families demolished"]
+ ],
+ "stories": [
+  {"n": 1, "label": "India · Life & safety", "fig": "4", "figlab": "civilians killed", "place": "Ukhrul, Manipur",
+   "head": "An ambush on the Ukhrul road",
+   "bullets": ["Gunmen fired on two vehicles near New Haven.", "Two of the four dead were women.", "Police say the attackers are unidentified."],
+   "src": "Scroll · NorthEast Now"},
+  {"n": 6, "label": "World · Life & safety", "fig": "16", "figlab": "killed, up from nine", "place": "Blue Nile, Sudan",
+   "head": "A drone strike on the displaced",
+   "bullets": ["It hit people fleeing towards Damazin on Tuesday.", "Six were wounded; some are still missing.", "The governor blames the RSF, which has not commented."],
+   "src": "Sudan Tribune · Radio Tamazuj"},
+  {"n": 9, "label": "World · Life & safety", "fig": "35–49", "figlab": "civilians killed", "place": "Mambasa, DR Congo",
+   "head": "Raids on Ituri villages",
+   "bullets": ["Attacks on 10–12 November are blamed on the ADF.", "14 people are missing, local officials say.", "Officials say military operations are under way."],
+   "src": "Radio Okapi · Xinhua"},
+  {"n": 2, "label": "India · Land & livelihood", "fig": "132", "figlab": "families lose homes", "place": "Lakhimpur, Assam",
+   "head": "Homes cleared on grazing land",
+   "bullets": ["Residents displaced by 1983 riots say they were settled there.", "Residents allege they were singled out.", "Officials say illegal building on such land won't be tolerated."],
+   "src": "Scroll · Time8"}
+ ]
+}
