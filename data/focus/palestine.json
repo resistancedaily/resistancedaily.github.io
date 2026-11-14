@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "A strike on Nasser Hospital killed six, medics said, and a baby died of cold in a tent; Gaza's health ministry counts over 1,600 killed since the October 2025 ceasefire.",
- "updated": "2026-11-13",
+ "dek": "Friday strikes killed five to six in Gaza, medics said; demolitions displaced 150 West Bank Palestinians in a week, OCHA says. Gaza's health ministry counts 1,600+ killed since the ceasefire.",
+ "updated": "2026-11-14",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -418,6 +418,24 @@
      "https://www.arabnews.com/middle-east/israeli-settlers-injure-five-palestinians-after-army-dismantles-outposts-3011500"
     ]
    ]
+  },
+  {
+   "date": "2026-11-13",
+   "text": "Israeli strikes and shelling on Friday 13 November killed five to six Palestinians across Gaza and injured about 20, medics said, including a strike in Deir al-Balah; a 14-year-old boy was among the dead. A man wounded in the Nasser Hospital strike also died. No Israeli military comment on Friday's strikes was reported. In the West Bank, OCHA said Israeli authorities demolished, or made owners demolish, 78 Palestinian structures on 3–9 November for lacking Israeli permits, displacing 150 people including 61 children, and recorded 52 settler attacks.",
+   "src": [
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/six-palestinians-killed-israeli-attacks-across-gaza"
+    ],
+    [
+     "Al-Araby Al-Jadeed (Arabic)",
+     "https://www.alaraby.co.uk/politics/5-%D8%B4%D9%87%D8%AF%D8%A7%D8%A1-%D8%A8%D9%87%D8%AC%D9%85%D8%A7%D8%AA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AA%D9%81%D8%B1%D9%82%D8%A9-%D9%85%D9%86-%D8%BA%D8%B2%D8%A9"
+    ],
+    [
+     "OCHA oPt",
+     "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
+    ]
+   ]
   }
  ],
  "official": {
@@ -496,11 +514,12 @@
   "2026-11-10",
   "2026-11-11",
   "2026-11-12",
-  "2026-11-13"
+  "2026-11-13",
+  "2026-11-14"
  ],
  "whats_new": {
-  "date": "2026-11-13",
-  "text": "A strike on Nasser Hospital killed six, incl. a surgeon and a boy of 13, medics said; Israel says it targeted a Hamas commander. A baby, 9 months, died of cold in a tent."
+  "date": "2026-11-14",
+  "text": "Strikes on Friday killed five to six in Gaza, medics said, incl. a boy of 14; no Israeli comment reported. OCHA: 78 West Bank structures demolished in a week, 150 displaced."
  },
  "instagram": {
   "hashtags": [

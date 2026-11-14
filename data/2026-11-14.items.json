@@ -1,0 +1,105 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 94.36,
+   "lat": 25.1,
+   "sev": "red",
+   "label": "Ukhrul"
+  },
+  {
+   "n": 2,
+   "lon": 94.1,
+   "lat": 27.24,
+   "sev": "orange",
+   "label": "Lakhimpur"
+  },
+  {
+   "n": 3,
+   "lon": 77.58,
+   "lat": 34.16,
+   "sev": "orange",
+   "label": "Leh"
+  },
+  {
+   "n": 4,
+   "lon": 77.64,
+   "lat": 12.78,
+   "sev": "grey",
+   "label": "Anekal"
+  },
+  {
+   "n": 5,
+   "lon": 91.28,
+   "lat": 23.83,
+   "sev": "grey",
+   "label": "Tripura"
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 34.2,
+   "lat": 10.8,
+   "sev": "red",
+   "label": "Blue Nile",
+   "dx": 6,
+   "dy": 2,
+   "pos": "br"
+  },
+  {
+   "n": 7,
+   "lon": 34.35,
+   "lat": 31.42,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": -10,
+   "dy": 6,
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": 35.17,
+   "lat": 31.84,
+   "sev": "orange",
+   "label": "West Bank",
+   "dx": 14,
+   "dy": -2
+  },
+  {
+   "n": 9,
+   "lon": 29.05,
+   "lat": 1.36,
+   "sev": "red",
+   "label": "Mambasa",
+   "dx": -8,
+   "dy": 10,
+   "left": true
+  },
+  {
+   "n": 10,
+   "lon": 93.19,
+   "lat": 20.59,
+   "sev": "red",
+   "label": "Mrauk-U",
+   "dx": 12,
+   "dy": 10
+  },
+  {
+   "n": 11,
+   "lon": -73.57,
+   "lat": 45.5,
+   "sev": "orange",
+   "label": "Montreal"
+  },
+  {
+   "n": 12,
+   "lon": 44.79,
+   "lat": 41.72,
+   "sev": "grey",
+   "label": "Tbilisi",
+   "dx": 4,
+   "dy": -16
+  }
+ ]
+}

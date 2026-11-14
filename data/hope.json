@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -603,6 +603,54 @@
     ]
    ],
    "edition": "2026-11-13#4"
+  },
+  {
+   "id": "tripura-inmate-compensation",
+   "date": "2026-11-13",
+   "kind": "Accountability",
+   "rights": [
+    "Due process"
+   ],
+   "place": "Agartala, Tripura",
+   "fig": "₹4 lakh",
+   "figcap": "compensation",
+   "headline": "Court upholds payout over inmate's suicide",
+   "text": "Tripura High Court ruled the rights commission's order binding: ₹4 lakh compensation and action against officials over a 2024 inmate suicide. The state, citing an inquiry clearing staff, has a month to comply.",
+   "slide_head": "Rights panel order upheld",
+   "slide": "Tripura court orders payout over inmate's death in jail",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/tripura-high-court/tripura-high-court-human-rights-commission-compensation-recommendations-binding-state-558403"
+    ]
+   ],
+   "edition": "2026-11-14#5",
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ]
+  },
+  {
+   "id": "tbilisi-riot-police-jailed",
+   "date": "2026-11-12",
+   "kind": "Accountability",
+   "rights": [
+    "Assembly"
+   ],
+   "place": "Tbilisi, Georgia",
+   "fig": "5 yrs",
+   "figcap": "each",
+   "headline": "Two riot police jailed for assaulting protester",
+   "text": "A Tbilisi court jailed two riot police officers for five years each for assaulting protester Zviad Maisashvili at 2024 pro-EU rallies, and barred them from posts for three years. No ministry comment was reported.",
+   "slide_head": "Police held to account",
+   "slide": "Georgian court jails two riot officers for beating protester",
+   "src": [
+    [
+     "Georgia Today",
+     "https://georgiatoday.ge/two-riot-police-officers-sentenced-to-five-years-in-prison-for-physically-assaulting-activist-zviad-maisashvili"
+    ]
+   ],
+   "edition": "2026-11-14#12"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-14",
  "figures": [
   {
    "fig": "170",
@@ -89,6 +89,14 @@
    "src": [
     "LiveLaw",
     "https://www.livelaw.in/news-updates/delhi-court-rejects-plea-seeking-fir-against-cm-rekha-gupta-for-remarks-comparing-govt-officials-to-lord-hanuman-557643"
+   ]
+  },
+  "Tripura": {
+   "cm": "Manik Saha",
+   "party": "BJP",
+   "src": [
+    "India Today NE",
+    "https://www.indiatodayne.in/amp/tripura/story/tripura-saw-major-gains-in-health-education-sectors-over-past-four-years-cm-manik-saha-1393026-2026-05-17"
    ]
   }
  },
@@ -693,6 +701,45 @@
     ]
    ],
    "checked": "2026-11-09"
+  },
+  {
+   "id": "tripura-jail-suicide",
+   "kind": "Custody",
+   "state": "Tripura",
+   "place": "Kendriya Sansodhanagar (central jail), Bishalgarh, Tripura",
+   "date": "2024-10-23",
+   "power": "Prison staff",
+   "head": "Inmate dies after being singled out for degrading work",
+   "text": "An inmate was found hanging on 23 October 2024 after, the state human rights commission found, he alone was made to clean waste from the prison dog and a warder failed to supervise him. The commission recommended ₹4 lakh compensation and departmental action.",
+   "official": "The state challenged the order, citing a magisterial inquiry that found a suicide and no fault by jail staff. Tripura High Court rejected this and gave the state a month to comply (LiveLaw, 13 November 2026).",
+   "steps": [
+    {
+     "step": "Rights commission finding",
+     "status": "done",
+     "note": "₹4 lakh, action against officials"
+    },
+    {
+     "step": "High Court upholds order",
+     "status": "done",
+     "date": "2026-11-13",
+     "note": "one month to comply"
+    },
+    {
+     "step": "Compensation paid",
+     "status": "open"
+    },
+    {
+     "step": "Departmental action",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/tripura-high-court/tripura-high-court-human-rights-commission-compensation-recommendations-binding-state-558403"
+    ]
+   ],
+   "checked": "2026-11-14"
   }
  ]
 }
