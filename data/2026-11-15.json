@@ -1,0 +1,575 @@
+{
+ "date": "2026-11-15",
+ "date_long": "Sun 15 Nov 2026",
+ "date_short": "Sun 15 Nov",
+ "window": "Sat 09:00 → Sun 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-15",
+ "items": [
+  {
+   "region": "india",
+   "place": "Chekkanurani police station, Madurai district, Tamil Nadu",
+   "short": "Madurai",
+   "rights": [
+    "Life & safety",
+    "Due process & detention",
+    "Accountability Watch"
+   ],
+   "sev": "red",
+   "fig": "1",
+   "figcap": "death in station",
+   "headline": "Lorry driver dies inside Madurai police station",
+   "text": "R Balakrishnan, 42, held overnight over missing cardamom, was found hanging in Chekkanurani station's toilet on 14 Nov. Police say suicide; his family alleges foul play. Three police were suspended; CB-CID will investigate.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/south/tamil-nadu/tvk-government-madurai-custodial-death-262952"
+    ],
+    [
+     "ETV Bharat",
+     "https://www.etvbharat.com/en/bharat/man-brought-for-questioning-in-cardamom-theft-case-dies-in-police-station-at-madurai-enn26111402368"
+    ]
+   ],
+   "local": [
+    [
+     "ta",
+     "Daily Thanthi",
+     "https://www.dailythanthi.com/amp/story/news/tamilnadu/lorry-drivers-suicide-at-chekkanurani-police-station-case-transferred-to-cb-cid"
+    ],
+    [
+     "ta",
+     "Minnambalam",
+     "https://minnambalam.com/madurai-chekkanurani-police-station-mysterious-death-police-suspended"
+    ]
+   ],
+   "lon": 77.95,
+   "lat": 9.93,
+   "photo": {
+    "src": "images/2026-11-15/madurai.webp",
+    "alt": "A city of low buildings and trees with four tall carved temple towers rising above the rooftops.",
+    "caption": "Madurai, with the towers of the Meenakshi temple, in 2006. File photo of the city.",
+    "credit": "Bernard Gagnon / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madurai,_India.jpg",
+    "kind": "file",
+    "year": "2006",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Akhran-Amapora and nearby villages, Kulgam district, Jammu and Kashmir",
+   "short": "Kulgam",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "~500",
+   "figcap": "held or questioned",
+   "headline": "About 500 held or questioned in Kulgam",
+   "text": "After an 11 Nov attack injured three CRPF personnel, forces have questioned or detained about 500 people in Kulgam; several were jailed under preventive laws. Police say they target militant support networks.",
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/security/hundreds-questioned-and-detained-casos-in-kulgam-kashmir-revive-memories-of-the-1990s"
+    ],
+    [
+     "Northlines",
+     "https://thenorthlines.com/kulgam-crpf-attack-over-500-questioned-20-detained/"
+    ]
+   ],
+   "lon": 75.02,
+   "lat": 33.64,
+   "thread": "kashmir",
+   "focus": "kashmir",
+   "photo": {
+    "src": "images/2026-11-15/kulgam.webp",
+    "alt": "A wide stony riverbed with a shallow stream, wooded hills and a yellow-and-blue bridge railing in front.",
+    "caption": "The Vishaw river near Nihama, Kulgam district, in 2024. File photo of the district.",
+    "credit": "TheAutumnal / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vishaw_River,_Nihama,_Kulgam.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "cropped"
+   },
+   "n": 2,
+   "map": {
+    "dx": -10,
+    "dy": 0,
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Ukhrul district and Imphal, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "3 days",
+   "figcap": "ultimatum",
+   "headline": "Ukhrul families refuse bodies, seek NIA probe",
+   "text": "Families of the four Tangkhul Naga civilians killed near New Haven refuse to claim the bodies until an NIA probe; a Naga body set a three-day ultimatum. The Chief Minister ordered continued combing operations.",
+   "src": [
+    [
+     "Assam Tribune",
+     "https://assamtribune.com/north-east/ukhrul-ambush-tangkhul-naga-long-seeks-nia-probe-families-refuse-to-claim-bodies-1622829"
+    ],
+    [
+     "Northeast Now",
+     "https://nenow.in/north-east-news/manipur/manipur-cm-khemchand-chairs-emergency-security-review-after-five-civilians-killed-in-separate-attacks.html"
+    ]
+   ],
+   "lon": 93.94,
+   "lat": 24.81,
+   "thread": "manipur",
+   "photo": {
+    "src": "images/2026-11-15/imphal.webp",
+    "alt": "A wide city of lit streets and buildings at dusk, with hills and a cloudy sky behind.",
+    "caption": "Imphal, Manipur's capital, at dusk in 2019. File photo of the city.",
+    "credit": "DeepanjanGhosh / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Imphal_At_Dusk.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "NDS Memorial Park, Leh, Ladakh",
+   "short": "Leh",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "24 hrs",
+   "figcap": "hunger strike",
+   "headline": "Leh activists hold 24-hour hunger strike",
+   "text": "About 40 Leh Apex Body activists fasted 24 hours on 14 Nov, seeking the report on the September 2025 police firing and deferral of 4 Dec council polls. The Centre reportedly offered talks 5–10 Dec.",
+   "src": [
+    [
+     "The News Now",
+     "https://www.thenewsnow.co.in/self-immolation-threat-by-slain-kargil-war-veterans-son-puts-leh-violence-report-in-spotlight/"
+    ],
+    [
+     "The Tribune",
+     "https://www.tribuneindia.com/news/j-k/centre-reaches-out-to-ladakh-leaders-as-leh-apex-body-set-to-launch-hunger-strike-on-nov-14/"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 34.16,
+   "thread": "ladakh",
+   "photo": {
+    "src": "images/2026-11-15/leh-bazaar.webp",
+    "alt": "A paved shopping street lined with two- and three-storey shops under prayer flags, with a bare brown mountain behind.",
+    "caption": "Main Bazaar Road in Leh, Ladakh, in 2018. File photo of the town.",
+    "credit": "Ingo Mehling / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Leh_-_Main_Bazaar_Road.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 4,
+   "map": {
+    "dx": 10,
+    "dy": 0
+   }
+  },
+  {
+   "region": "india",
+   "place": "Wazirabad, North Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "1",
+   "figcap": "arrest",
+   "headline": "Man arrested over Yamuna dead-fish video",
+   "text": "Delhi Police arrested a man over a 12 Nov video of dead fish at Wazirabad, on an irrigation department complaint alleging misinformation; he was bailed from the station. The fish deaths' cause is unconfirmed.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/fish-deaths-in-yamuna-delhi-police-registers-fir-alleging-mischief-misinformation-man-held/3099050/"
+    ],
+    [
+     "The Tribune",
+     "https://www.tribuneindia.com/news/delhi/fish-deaths-in-yamuna-delhi-police-register-fir-alleging-mischief-misinformation/"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "ThePrint Hindi (Bhasha)",
+     "https://hindi.theprint.in/india/delhi-police-registers-fir-in-case-of-dead-fish-found-in-yamuna-one-person-arrested/1059002/"
+    ],
+    [
+     "hi",
+     "Amar Ujala",
+     "https://www.amarujala.com/delhi/fir-registered-in-connection-with-the-discovery-of-dead-fish-in-the-yamuna-ashram-news-c-340-1-del1004-163315-2026-11-14"
+    ]
+   ],
+   "lon": 77.23,
+   "lat": 28.71,
+   "map": {
+    "dx": 0,
+    "dy": -13
+   },
+   "photo": {
+    "src": "images/2026-11-15/yamuna-bridge.webp",
+    "alt": "A long rusting steel truss bridge running over a river among trees, with a dirt path in front.",
+    "caption": "The Old Yamuna Bridge in Delhi, downstream of Wazirabad, in 2023. File photo of the river.",
+    "credit": "Goutam1962 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_Yamuna_Bridge_Delhi_02.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court of India, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "fig": "Form 6",
+   "figcap": "re-enrol",
+   "upheld": true,
+   "headline": "EC: dropped voters can re-enrol without prosecution",
+   "text": "The Election Commission told the Supreme Court that voters left off SIR draft rolls can apply again on Form 6 without facing prosecution, if not enrolled elsewhere. The court has not ruled.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/no-prosecution-for-previously-enrolled-voters-filing-form-6-ec-to-sc/3099044/"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.62,
+   "map": {
+    "dx": 0,
+    "dy": 13,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, which is hearing the electoral-roll case, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Al-Nuhud, West Kordofan, Sudan",
+   "short": "Al-Nuhud",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "10",
+   "figcap": "killed",
+   "headline": "Relief group says RSF killed 10 in Al-Nuhud",
+   "text": "A local emergency room says RSF fighters have killed 10 unarmed civilians in Al-Nuhud, West Kordofan, since Thursday, amid looting and a full telecoms blackout. The RSF has not commented.",
+   "src": [
+    [
+     "Anadolu Agency",
+     "https://aa.com.tr/en/africa/rsf-killed-10-civilians-in-west-kordofan-city-sudanese-relief-group-says/4125288"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al-Araby Al-Jadeed",
+     "https://www.alaraby.com/news/%D8%A7%D9%86%D9%81%D9%84%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%AF-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%82%D8%AA%D9%84-10-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%86%D9%87%D8%A8-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9"
+    ],
+    [
+     "ar",
+     "Tag Press",
+     "https://www.tagpress.net/186407/%D9%85%D9%82%D8%AA%D9%84-10-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D8%A8%D8%B1%D8%B5%D8%A7%D8%B5-%D8%A7%D9%84%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%B3%D8%B1%D9%8A%D8%B9-%D9%81%D9%8A-%D8%A7%D9%84%D9%86/"
+    ]
+   ],
+   "lon": 28.43,
+   "lat": 12.7,
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-15/al-nuhud.webp",
+    "alt": "A cream building with tall columns and a yellow Arabic sign, with a crowd of men standing outside.",
+    "caption": "The court complex in Al-Nuhud, West Kordofan, in 2013. File photo of the town.",
+    "credit": "محسن الفكي / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%AF.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Byar La displacement camp, Ponnagyun, Rakhine State, Myanmar",
+   "short": "Rakhine",
+   "rights": [
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "8–12",
+   "figcap": "killed",
+   "headline": "Air strike on Rakhine camp kills up to 12",
+   "text": "Rescuers say a military air strike on Byar La displacement camp, Ponnagyun, on Friday killed 12, a five-year-old among them, and injured 18; early reports said eight. The military could not be reached.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.pk/world/myanmar-airstrike-on-displaced-persons-camp-kills-12-witnesses-3007034"
+    ],
+    [
+     "TRT World",
+     "https://www.trtworld.com/article/36b69c7d0bcc"
+    ]
+   ],
+   "local": [
+    [
+     "my",
+     "Ludu Nwe Oo",
+     "https://www.ludunwayoo.com/news-mm/2026/11/14/173403/"
+    ]
+   ],
+   "lon": 92.95,
+   "lat": 20.33,
+   "photo": {
+    "src": "images/2026-11-15/ponnagyun.webp",
+    "alt": "A wooden suspension bridge with red railings leading towards a wooded hill topped by a golden pagoda and a tall lift tower.",
+    "caption": "The Urittaung pagoda seen from the river bridge in Ponnagyun, Rakhine, in 2020. File photo of the town.",
+    "credit": "Khinshwesan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%E1%80%A6%E1%80%B8%E1%80%9B%E1%80%AC%E1%80%87%E1%80%BA%E1%80%90%E1%80%B1%E1%80%AC%E1%80%BA_%E1%80%85%E1%80%B1%E1%80%90%E1%80%AE_%E1%80%99%E1%80%BC%E1%80%85%E1%80%BA%E1%80%80%E1%80%B0%E1%80%B8%E1%80%80%E1%80%BC%E1%80%AD%E1%80%AF%E1%80%B8%E1%80%90%E1%80%B6%E1%80%90%E1%80%AC%E1%80%B8%E1%80%99%E1%80%BE_%E1%80%99%E1%80%BC%E1%80%84%E1%80%BA%E1%80%80%E1%80%BD%E1%80%84%E1%80%BA%E1%80%B8.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Lifembe, Walese Vonkutu, Irumu territory, Ituri, DR Congo",
+   "short": "Irumu",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "3",
+   "figcap": "killed",
+   "headline": "Soldier accused of killing three in Irumu village",
+   "text": "Civil society says an army soldier shot dead a woman, a farmer and a child under five in Lifembe, Irumu, on 11 Nov, and asks military justice to arrest him. The army has not commented.",
+   "src": [
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/14/actualite/securite/apres-deception-amoureuse-un-militaire-fusille-trois-personnes-irumu"
+    ]
+   ],
+   "lon": 29.88,
+   "lat": 1.45,
+   "photo": {
+    "src": "images/2026-11-15/irumu.webp",
+    "alt": "Red-roofed houses, fields and dirt roads seen from a small plane over green hills.",
+    "caption": "Houses in Irumu territory, Ituri, seen from the air in 2023. File photo of the territory.",
+    "credit": "Alfani Franck / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vue_A%C3%A9rienne_du_Territoire_d%27Irumu_(Ituri)_01.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Jabaliya, northern Gaza",
+   "short": "Jabaliya",
+   "rights": [
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "killed",
+   "headline": "Drone strike kills two in Jabaliya",
+   "text": "Shifa Hospital says an Israeli drone killed two Palestinians walking in Jabaliya on Saturday. Israel's military says it struck two Hamas militants. Gaza's health ministry counts 1,600+ killed since the ceasefire.",
+   "src": [
+    [
+     "AP via WSLS",
+     "https://www.wsls.com/news/2026/11/14/israeli-drone-strike-kills-2-palestinians-in-gaza-and-other-mideast-news/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Maspero (MENA)",
+     "https://www.maspero.eg/arab-and-world/2026/11/14/1005475/%D8%B4%D9%87%D9%8A%D8%AF%D8%A7%D9%86-%D9%88%D9%85%D8%B5%D8%A7%D8%A8%D9%88%D9%86-%D8%AC%D8%B1%D8%A7%D8%A1-%D9%82%D8%B5%D9%81-%D8%A7%D9%84%D8%A7%D8%AD%D8%AA%D9%84%D8%A7%D9%84-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A-%D8%B4%D9%85%D8%A7%D9%84-%D9%85%D8%AF%D9%8A%D9%86%D8%A9-%D8%BA%D8%B2%D8%A9"
+    ]
+   ],
+   "lon": 34.48,
+   "lat": 31.53,
+   "thread": "palestine",
+   "focus": "palestine",
+   "map": {
+    "dx": -13,
+    "dy": 0,
+    "label": "Gaza",
+    "left": true
+   },
+   "photo": {
+    "src": "images/2026-11-15/jabalia.webp",
+    "alt": "Flattened concrete buildings and heaps of rubble under a blue sky, with damaged tower blocks behind.",
+    "caption": "Destroyed buildings in Jabaliya camp, northern Gaza, in October 2024.",
+    "credit": "Hussein Jaber / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "page": "https://commons.wikimedia.org/wiki/File:Destruction_caused_by_Israeli_bombing_of_Jabalia_camp,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Wadi Seif, Beit Fajjar, south of Bethlehem, West Bank",
+   "short": "Beit Fajjar",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "5",
+   "figcap": "injured",
+   "headline": "Settlers injure five olive pickers near Beit Fajjar",
+   "text": "WAFA says Israeli settlers attacked olive harvesters in Wadi Seif, near Beit Fajjar, on Saturday evening, moderately injuring five and smashing vehicles. Israel's military has not commented.",
+   "src": [
+    [
+     "WAFA",
+     "https://english.wafa.ps/Pages/Details/176925"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "An-Najah News",
+     "https://nn.najah.edu/news/Palestine/2026/11/14/574619/"
+    ]
+   ],
+   "lon": 35.16,
+   "lat": 31.62,
+   "thread": "palestine",
+   "focus": "palestine",
+   "map": {
+    "dx": 13,
+    "dy": 0,
+    "label": "West Bank"
+   },
+   "photo": {
+    "src": "images/2026-10-20/olive-harvest-hebron.webp",
+    "alt": "A gloved hand picking purple olives from a branch.",
+    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank, in 2020. File photo, not of Wadi Seif.",
+    "credit": "M sh شراونة محمد / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped"
+   },
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Paris, Lyon and cities across France",
+   "short": "France",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "106k–200k",
+   "figcap": "marched",
+   "headline": "France protests: 219 arrested on fifth Saturday",
+   "text": "106,000 (interior ministry) to 200,000 (youth unions) marched across France on Saturday; police made 219 arrests by 6pm and fired tear gas in Lyon. The ministry says 10 officers were lightly hurt.",
+   "src": [
+    [
+     "France 24",
+     "https://www.france24.com/en/france/20261114-live-france-mobilises-in-fifth-wave-of-student-protests"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "ICI (France Bleu)",
+     "https://www.ici.fr/infos/societe/mobilisation-du-14-novembre-suivez-l-acte-v-des-manifestations-contre-la-vie-chere-et-pour-la-jeunesse-5378889"
+    ]
+   ],
+   "lon": 2.35,
+   "lat": 48.86,
+   "photo": {
+    "src": "images/2026-10-20/paris-republique.webp",
+    "alt": "A bronze statue of a woman holding an olive branch on a tall stone monument, against a blue sky.",
+    "caption": "The Monument to the Republic at Place de la République, Paris, a usual rally point, in 2026.",
+    "credit": "Romainbehar / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Paris_3e_-_Place_de_la_R%C3%A9publique_-_Monument_%C3%A0_la_R%C3%A9publique_01.jpg",
+    "kind": "file",
+    "year": "2026",
+    "changes": "cropped"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "A local emergency room says RSF fighters have killed 10 civilians in Al-Nuhud, West Kordofan, since Thursday; the RSF has not commented.",
+   "src": "images/2026-11-15/al-nuhud.webp",
+   "alt": "A cream building with tall columns and a yellow Arabic sign, with a crowd of men standing outside.",
+   "photos": 4
+  }
+ ]
+}

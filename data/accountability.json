@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "figures": [
   {
    "fig": "170",
@@ -740,6 +740,61 @@
     ]
    ],
    "checked": "2026-11-14"
+  },
+  {
+   "id": "madurai-custody",
+   "kind": "Custody",
+   "state": "Tamil Nadu",
+   "place": "Chekkanurani police station, Madurai district, Tamil Nadu",
+   "date": "2026-11-14",
+   "power": "Police",
+   "head": "Lorry driver dies inside a police station",
+   "text": "R Balakrishnan, 42, a lorry driver held overnight for questioning over missing cardamom, was found hanging in the station toilet on 14 November. His family rejects the police account and alleges he was beaten.",
+   "official": "Police say he died by suicide; the IG says CCTV is being examined. An inspector and two head constables were suspended and the DGP moved the case to the CB-CID.",
+   "steps": [
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "date": "2026-11-14",
+     "note": "inspector and two head constables"
+    },
+    {
+     "step": "CB-CID probe",
+     "status": "done",
+     "date": "2026-11-14"
+    },
+    {
+     "step": "FIR against police",
+     "status": "unknown"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/south/tamil-nadu/tvk-government-madurai-custodial-death-262952"
+    ],
+    [
+     "ETV Bharat",
+     "https://www.etvbharat.com/en/bharat/man-brought-for-questioning-in-cardamom-theft-case-dies-in-police-station-at-madurai-enn26111402368"
+    ],
+    [
+     "Daily Thanthi (Tamil)",
+     "https://www.dailythanthi.com/amp/story/news/tamilnadu/lorry-drivers-suicide-at-chekkanurani-police-station-case-transferred-to-cb-cid"
+    ]
+   ],
+   "checked": "2026-11-15"
   }
  ]
 }

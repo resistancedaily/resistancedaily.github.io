@@ -5,7 +5,7 @@
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
  "dek": "Friday strikes killed five to six in Gaza, medics said; demolitions displaced 150 West Bank Palestinians in a week, OCHA says. Gaza's health ministry counts 1,600+ killed since the ceasefire.",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -436,6 +436,20 @@
      "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026"
     ]
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "text": "On Saturday 14 November an Israeli drone killed two Palestinians walking in Jabaliya, Shifa Hospital said; Israel's military said it struck two Hamas militants. Gaza's health ministry counts at least 1,600 killed since the ceasefire. In the West Bank, WAFA said settlers attacked olive harvesters in Wadi Seif near Beit Fajjar that evening, moderately injuring five and smashing vehicles; no Israeli military comment was reported.",
+   "src": [
+    [
+     "AP via WSLS",
+     "https://www.wsls.com/news/2026/11/14/israeli-drone-strike-kills-2-palestinians-in-gaza-and-other-mideast-news/"
+    ],
+    [
+     "WAFA",
+     "https://english.wafa.ps/Pages/Details/176925"
+    ]
+   ]
   }
  ],
  "official": {
@@ -515,11 +529,12 @@
   "2026-11-11",
   "2026-11-12",
   "2026-11-13",
-  "2026-11-14"
+  "2026-11-14",
+  "2026-11-15"
  ],
  "whats_new": {
-  "date": "2026-11-14",
-  "text": "Strikes on Friday killed five to six in Gaza, medics said, incl. a boy of 14; no Israeli comment reported. OCHA: 78 West Bank structures demolished in a week, 150 displaced."
+  "date": "2026-11-15",
+  "text": "A drone strike killed two in Jabaliya, Shifa Hospital says; Israel says it hit two Hamas militants. Settlers injured five olive pickers near Beit Fajjar, WAFA says."
  },
  "instagram": {
   "hashtags": [

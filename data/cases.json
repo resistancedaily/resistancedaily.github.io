@@ -1,6 +1,6 @@
 {
  "note": "Still Waiting case list, carried forward weekly. Verify each case every Sunday against sources that name the person and state each fact. Choose cases by severity and need for attention, not to balance India against World: include Indian cases that matter, and keep the world in view, since cases elsewhere are equally important.",
- "asof": "2026-11-08",
+ "asof": "2026-11-15",
  "cases": [
   {
    "region": "india",
@@ -8,8 +8,12 @@
    "where": "Delhi",
    "since": "2020-09-13",
    "law": "UAPA",
-   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, its third; trial not begun. Delhi Police have called his fresh bail pleas premature under the Supreme Court's one-year bar",
+   "status": "Supreme Court bail plea filed 5 Nov against Delhi HC's 30 Sep refusal, its third; not yet heard. Trial not begun. Delhi Police call his fresh bail pleas premature under the Supreme Court's one-year bar",
    "src": [
+    [
+     "LiveLaw (5 Nov)",
+     "https://www.livelaw.in/top-stories/umar-khalid-moves-supreme-court-seeking-bail-in-delhi-riots-uapa-case-cites-near-expiry-of-one-year-embargo-557521"
+    ],
     [
      "Siasat (5 Nov)",
      "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
@@ -38,7 +42,7 @@
    "where": "Delhi",
    "since": "2020-01-28",
    "law": "UAPA, sedition and other charges",
-   "status": "Moved Supreme Court for bail (reported 5 Nov) against Delhi HC's 30 Sep refusal, saying no prosecution witness has yet been examined. No official response to the new plea reported",
+   "status": "Supreme Court bail plea filed 5 Nov says no prosecution witness examined yet; not yet heard. On 14 Nov India's US ambassador said USCIRF, which says he is held for religious-freedom advocacy, has 'no locus standi'",
    "src": [
     [
      "Siasat (5 Nov)",
@@ -51,6 +55,10 @@
     [
      "Bar & Bench (30 Sep)",
      "https://www.barandbench.com/news/litigation/delhi-high-court-denies-bail-to-umar-khalid-and-sharjeel-imam-in-delhi-riots-conspiracy-case"
+    ],
+    [
+     "Asianet Newsable (14 Nov)",
+     "https://newsable.asianetnews.com/world/envoy-kwatra-slams-uscirf-over-remarks-on-jailed-activist-sharjeel-imam-articleshow-swfi1gz"
     ],
     [
      "USCIRF",
@@ -68,7 +76,7 @@
    "where": "Noida",
    "since": "2026-04-11",
    "law": "11 FIRs over Noida wage protest",
-   "status": "Still jailed; no bail in 2 of 11 cases. A bail order notes she was not at the site of the violence; a police chargesheet calls her a key conspirator. No new developments reported this week",
+   "status": "Artist still jailed; Scroll reported no bail in 2 of her 11 cases (22 Sep). A police chargesheet calls her a 'key conspirator'. No new developments reported 8–15 Nov",
    "src": [
     [
      "Reporters' Collective",
@@ -77,6 +85,10 @@
     [
      "Scroll (22 Sep)",
      "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest"
+    ],
+    [
+     "The Wire (12 Jun)",
+     "https://m.thewire.in/article/rights/visiting-srishti-gupta-an-artist-in-prison-for-supporting-a-workers-protest/amp"
     ]
    ]
   },
@@ -86,7 +98,7 @@
    "where": "Noida / Lucknow, UP",
    "since": "2026-04-17",
    "law": "NSA (order 12 May 2026) plus Noida protest FIRs",
-   "status": "Journalist still held under NSA despite bail in one case on 15 Sep. Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment reported by 8 Nov. UP Police allege a major role in protest violence",
+   "status": "Journalist held under NSA despite bail in one case (15 Sep). Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment reported by 15 Nov. UP Police allege a major role in protest violence",
    "src": [
     [
      "LiveLaw (8 Oct)",
@@ -104,7 +116,7 @@
    "where": "Eritrea",
    "since": "2001-09-23",
    "law": "No charge, no trial",
-   "status": "Journalist held incommunicado 25 years; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release",
+   "status": "Journalist held incommunicado 25 years without charge or trial; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release. No new developments reported 8–15 Nov",
    "src": [
     [
      "RSF",
@@ -122,7 +134,7 @@
    "where": "Bahrain",
    "since": "2011-04-09",
    "law": "Life sentence (2011)",
-   "status": "Human rights defender serving life in Jau Prison; 31 rights groups urged France's president to press for his release during his 19–21 Oct Gulf tour. No Bahraini government response reported",
+   "status": "Rights defender, 65, serving life in Jau Prison; family reports heart problems and glaucoma. 31 groups urged France's president in October to press for his release. No Bahraini government response reported",
    "src": [
     [
      "Tom Lantos HR Commission",
@@ -131,6 +143,10 @@
     [
      "HRW",
      "https://www.hrw.org/news/2026/10/16/president-macrons-visit-to-bahrain-amid-an-escalating-human-rights-crackdown"
+    ],
+    [
+     "Altinget via Hostage Aid (26 Oct)",
+     "https://hostageaid.org/free-al-khawaja-campaign-as-the-eu-moves-closer-to-bahrain-we-must-not-forget-danish-prisoner-of-conscience/"
     ],
     [
      "ADHRB",
@@ -144,14 +160,18 @@
    "where": "Türkiye",
    "since": "2017-10-18",
    "law": "Aggravated life sentence",
-   "status": "Istanbul court refused release and retrial (reported 14 Oct) despite a binding European Court of Human Rights ruling; government denies the case is political and says courts are independent",
+   "status": "An Istanbul appeals court again refused his release and retrial (reported 14 Nov), despite a binding European Court of Human Rights ruling. Government denies the case is political and says courts are independent",
    "src": [
     [
      "Amnesty UK",
      "https://www.amnesty.org.uk/knowledge-hub/all-resources/turkey-charges-against-osman-kavala-must-be-dropped/"
     ],
     [
-     "Turkish Minute",
+     "Turkish Minute (14 Nov)",
+     "https://turkishminute.com/2026/11/14/turkish-court-rejects-kavala-appeal-despite-european-release-order/"
+    ],
+    [
+     "Turkish Minute (14 Oct)",
      "https://www.turkishminute.com/2026/10/14/turkish-court-rejects-kavalas-release-and-retrial-despite-ecthr-ruling/"
     ]
    ]
@@ -162,7 +182,7 @@
    "where": "Hong Kong",
    "since": "2020-12-31",
    "law": "National security law (collusion, sedition)",
-   "status": "Serving 20 years, aged 78. UK urged his release (22 Oct); Hong Kong rejected this, saying he was not tried for his political views",
+   "status": "Serving 20 years, aged 78. Trump said this week Xi has not agreed to free him, citing Beijing's 'hatred' for Lai. Hong Kong says he was not tried for his political views",
    "src": [
     [
      "Hong Kong Free Press",
@@ -175,6 +195,10 @@
     [
      "HKSAR Government",
      "https://www.info.gov.hk/gia/general/202610/23/P2026102300030.htm"
+    ],
+    [
+     "Hong Kong Free Press (13 Nov)",
+     "https://hongkongfp.com/2026/11/13/trump-says-china-bears-hatred-for-hong-kongs-jimmy-lai-casting-doubt-on-his-release/"
     ]
    ]
   },
@@ -183,8 +207,8 @@
    "name": "Aung San Suu Kyi",
    "where": "Myanmar",
    "since": "2021-02-01",
-   "law": "18-year sentence after coup",
-   "status": "Under house arrest in Naypyidaw; her son reported on 22 Oct his first phone call with her in more than five years. Government rejects calls for her release",
+   "law": "Coup-era convictions; term cut to about 18 years (AP)",
+   "status": "Under house arrest in Naypyitaw since April; her son reported his first phone call with her in five years on 22 Oct. Government rejects calls for her release. No new developments reported 8–15 Nov",
    "src": [
     [
      "Reuters via Dawn (1 Feb 2021)",
@@ -201,6 +225,10 @@
     [
      "AFP via The Standard",
      "https://www.thestandard.com.hk/world/article/346233/Son-of-Myanmars-Suu-Kyi-says-had-first-call-in-five-years"
+    ],
+    [
+     "AP via News4Jax (30 Apr)",
+     "https://www.news4jax.com/news/world/2026/04/30/myanmar-reduces-ousted-leader-suu-kyis-prison-term-in-new-amnesty/"
     ]
    ]
   },
@@ -209,20 +237,20 @@
    "name": "Imran Aliyev",
    "where": "Azerbaijan",
    "since": "2024-04-18",
-   "law": "Smuggling, money laundering, tax evasion, forgery charges",
-   "status": "Meclis.info founder; prosecutors sought 12 years (20 Oct); next hearing set for 3 Nov, outcome not yet reported. Authorities say outlets broke foreign-grant rules and deny his torture claims",
+   "law": "Smuggling, money laundering, tax evasion, illegal entrepreneurship, forgery (10 years)",
+   "status": "Meclis.info founder sentenced to 10 years by Baku Grave Crimes Court on 12 Nov; his lawyer says no credible evidence was presented and will appeal. Authorities deny prosecutions are political",
    "src": [
     [
-     "CPJ",
-     "https://cpj.org/2026/10/azerbaijan-prosecutors-seek-prison-terms-of-up-12-years-for-meclis-info-journalists/amp/"
+     "Caucasian Knot (13 Nov)",
+     "https://www.eng.kavkaz-uzel.eu/articles/80183"
+    ],
+    [
+     "OC Media",
+     "https://oc-media.org/two-more-azerbaijani-journalists-receive-long-prison-sentences-as-crackdown-continues/"
     ],
     [
      "CPJ (2024 arrest)",
      "https://cpj.org/2024/04/azerbaijan-arrests-13th-journalist-over-alleged-international-donor-funding/"
-    ],
-    [
-     "Caucasian Knot",
-     "https://www.eng.kavkaz-uzel.eu/articles/79565"
     ]
    ]
   },
@@ -232,8 +260,12 @@
    "where": "Gaza → Israeli custody",
    "since": "2024-12-27",
    "law": "Unlawful Combatants Law; no charge, no trial",
-   "status": "Hospital director held without charge; Supreme Court upheld detention in June and his lawyer reported beatings in July. Israel alleges Hamas links, which family and lawyers deny",
+   "status": "Hospital director held without charge. Israeli courts refused to free 14 detained doctors and denied him an independent medical exam (reported 11 Nov). Israel alleges Hamas links, which his family denies",
    "src": [
+    [
+     "The New Arab (11 Nov)",
+     "https://www.newarab.com/news/israel-refuses-release-14-gaza-doctors-including-abu-safiya"
+    ],
     [
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2026/07/israel-opt-fears-mounting-for-arbitrarily-detained-palestinian-doctor-hussam-abu-safiya-amidst-reports-his-life-is-in-grave-danger/"
@@ -256,7 +288,7 @@
    "count": "6,500+",
    "countcap": "held in El Geneina, doctors say",
    "law": "Armed group detention",
-   "status": "Amnesty reports torture, forced labour and ransom-for-release in El Fasher; doctors report food shortages and rising deaths in El Geneina. RSF did not respond to Amnesty",
+   "status": "Doctors report food shortages and rising deaths in El Geneina; Amnesty documents torture, forced labour and ransom in El Fasher. RSF reportedly seized a defector's family in South Darfur (13 Nov). RSF has not responded",
    "src": [
     [
      "Amnesty International",
@@ -269,6 +301,10 @@
     [
      "Anadolu via Yeni Şafak",
      "https://en.yenisafak.com/world/sudan-doctors-network-warns-6500-rsf-detainees-face-dire-conditions-3724488"
+    ],
+    [
+     "Darfur24 (13 Nov)",
+     "https://darfur24.com/en/2026/11/13/rsf-detains-defected-commanders-family-in-darfur/"
     ]
    ]
   },
@@ -276,10 +312,14 @@
    "region": "world",
    "name": "Najmeh Amini",
    "where": "Iran",
-   "since": "2026-02-03",
+   "since": "2026-01-31",
    "law": "Death sentence for blasphemy; 12.5 years on security charges",
-   "status": "23-year-old student held in Mashhad Central (Vakilabad) Prison, sentenced to death over social media posts. No official statement reported",
+   "status": "23-year-old student on death row in Mashhad's Vakilabad Prison over social media posts; her appeal is pending at the Supreme Court (HRANA, 10 Nov). No official statement reported",
    "src": [
+    [
+     "HRANA (10 Nov)",
+     "https://www.en-hrana.org/najmeh-amini-remains-on-death-row-at-vakilabad-prison-as-supreme-court-decision-pending/"
+    ],
     [
      "Center for Human Rights in Iran",
      "https://iranhumanrights.org/2026/10/iranian-student-sentenced-to-death-over-social-media-post/"
@@ -296,7 +336,7 @@
    "where": "Pakistan",
    "since": "2026-01-23",
    "law": "Anti-Terrorism Act; earlier 17 years under electronic crimes law (PECA)",
-   "status": "Human rights lawyers sentenced to 10 years on 29 Oct after trial inside Adiala prison. Law minister says the judiciary is independent",
+   "status": "Rights lawyers jailed since 23 Jan. Supreme Court suspended their PECA terms (17 Sep), but a 10-year anti-terror sentence followed a trial inside Adiala prison; appeal reported 7 Nov. Law minister says judiciary is independent",
    "src": [
     [
      "Al Jazeera (AFP/Reuters)",
@@ -309,6 +349,10 @@
     [
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2026/10/pakistan-terrorism-conviction-of-human-rights-lawyers-an-indictment-of-justice-system/"
+    ],
+    [
+     "The Nation (7 Nov)",
+     "https://www.nation.com.pk/07-Nov-2026/imaan-hadi-challenge-sentences-ihc"
     ]
    ]
   },
@@ -318,7 +362,7 @@
    "where": "Iran",
    "since": "2026-01-19",
    "law": "26 years incl. 'media activities' under espionage-penalties law",
-   "status": "Baha'i photojournalist with heart failure; judge reportedly refused hospital transfer. Sentence told to him on 26 Oct. Iran did not respond to CPJ",
+   "status": "Baha'i photojournalist with heart failure; judge reportedly refused the hospital transfer prison doctors advised. Sentence told to him on 26 Oct. Iran did not respond to CPJ. No new developments reported 8–15 Nov",
    "src": [
     [
      "CPJ",
@@ -336,7 +380,7 @@
    "where": "Mali",
    "since": "2026-05-02",
    "law": "Enforced disappearance; no charge disclosed",
-   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Authorities have not acknowledged holding either",
+   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Amnesty renewed calls (4 Nov) for proof they are alive. Authorities have not acknowledged holding either",
    "src": [
     [
      "Human Rights Watch",
@@ -345,6 +389,10 @@
     [
      "Amnesty International France",
      "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
+    ],
+    [
+     "Channel Africa (4 Nov)",
+     "https://www.channelafrica.co.za/channelafrica/news/mali-pressured-to-reveal-fate-of-missing-opposition-leader-son/"
     ]
    ]
   },
@@ -354,7 +402,7 @@
    "where": "Tunisia",
    "since": "2026-04-24",
    "law": "Telecommunications Code art. 86 (1 year); four terrorism-related charges (4 years)",
-   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. No official response reported",
+   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. No official response or new developments reported 8–15 Nov",
    "src": [
     [
      "CPJ (profile)",
@@ -371,6 +419,54 @@
     [
      "The New Arab",
      "https://www.newarab.com/news/amnesty-calls-release-imprisoned-tunisian-journalist"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Idris Khattak",
+   "where": "Pakistan",
+   "since": "2019-11-13",
+   "law": "Official Secrets Act; 14 years by military court (2021)",
+   "status": "Rights defender seized near Swabi; military admitted holding him in June 2020. Rights groups (13 Nov) say his diabetes goes untreated and his life is at risk. Military says he passed information to foreign intelligence",
+   "src": [
+    [
+     "Freedom House (joint statement, 13 Nov)",
+     "https://freedomhouse.org/article/pakistan-human-rights-organizations-call-release-political-prisoner-idris-khattak"
+    ],
+    [
+     "Dawn (2021)",
+     "https://www.dawn.com/news/1662018"
+    ],
+    [
+     "Human Rights Watch (2021)",
+     "https://www.hrw.org/news/2021/12/06/pakistan-sentences-rights-defender-14-years-prison"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Joshua Wong",
+   "where": "Hong Kong",
+   "since": "2020-11-23",
+   "law": "National security law: conspiracy to collude with foreign forces (10 years)",
+   "status": "Democracy activist, jailed since 2020, given 10 more years on 5 Nov, keeping him in prison until 2036. Chief Executive John Lee welcomed the sentence; ten governments criticised it",
+   "src": [
+    [
+     "Human Rights Watch (5 Nov)",
+     "https://www.hrw.org/news/2026/11/05/hong-kong-joshua-wong-gets-nearly-10-more-years-in-prison"
+    ],
+    [
+     "Hong Kong Free Press (6 Nov)",
+     "https://hongkongfp.com/2026/11/06/joshua-wong-sentencing-local-govt-police-officials-hail-10-year-jail-term-amid-condemnation-from-foreign-govts-ngos/"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/11/hong-kong-cruel-joshua-wong-sentence-a-grim-reminder-of-citys-disdain-for-human-rights/"
+    ],
+    [
+     "Hong Kong Free Press (23 Nov 2020)",
+     "https://hongkongfp.com/2020/11/23/breaking-3-hong-kong-activists-incl-joshua-wong-remanded-in-custody-over-2019-demo-sentencing-next-wed/"
     ]
    ]
   }

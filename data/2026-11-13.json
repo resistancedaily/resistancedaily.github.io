@@ -64,7 +64,8 @@
    "map": {
     "dx": 6,
     "dy": -10
-   }
+   },
+   "thread": "ladakh"
   },
   {
    "region": "india",

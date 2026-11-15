@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -651,6 +651,53 @@
     ]
    ],
    "edition": "2026-11-14#12"
+  },
+  {
+   "id": "madurai-police-suspended",
+   "date": "2026-11-14",
+   "kind": "Accountability",
+   "rights": [
+    "Due process"
+   ],
+   "place": "Madurai, Tamil Nadu",
+   "fig": "3",
+   "figcap": "suspended",
+   "headline": "Police suspended after death in Madurai station",
+   "text": "Within hours of a lorry driver's death in Chekkanurani station, an inspector and two head constables were suspended and the case moved to the CB-CID. No arrest; police say suicide, his family alleges assault.",
+   "slide_head": "Officers suspended",
+   "slide": "CB-CID to probe driver's death in a Madurai police station",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/south/tamil-nadu/tvk-government-madurai-custodial-death-262952"
+    ]
+   ],
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ]
+  },
+  {
+   "id": "ec-form6-no-prosecution",
+   "date": "2026-11-14",
+   "kind": "Courts",
+   "rights": [
+    "Due process"
+   ],
+   "place": "New Delhi",
+   "fig": "Form 6",
+   "figcap": "re-enrol",
+   "headline": "EC: dropped voters can re-enrol without prosecution",
+   "text": "The Election Commission told the Supreme Court that voters left off SIR draft rolls can re-apply on Form 6 without prosecution, if not enrolled elsewhere. The court has not ruled.",
+   "slide_head": "Voters can re-enrol",
+   "slide": "EC tells court: no prosecution for re-applying on Form 6",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/no-prosecution-for-previously-enrolled-voters-filing-form-6-ec-to-sc/3099044/"
+    ]
+   ],
+   "edition": "2026-11-15#6"
   }
  ]
 }

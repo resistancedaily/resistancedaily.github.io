@@ -1,0 +1,104 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.95,
+   "lat": 9.93,
+   "sev": "red",
+   "label": "Madurai"
+  },
+  {
+   "n": 2,
+   "lon": 75.02,
+   "lat": 33.64,
+   "sev": "orange",
+   "label": "Kulgam",
+   "dx": -10,
+   "dy": 0,
+   "left": true
+  },
+  {
+   "n": 3,
+   "lon": 93.94,
+   "lat": 24.81,
+   "sev": "orange",
+   "label": "Manipur"
+  },
+  {
+   "n": 4,
+   "lon": 77.58,
+   "lat": 34.16,
+   "sev": "grey",
+   "label": "Leh",
+   "dx": 10,
+   "dy": 0
+  },
+  {
+   "n": 5,
+   "lon": 77.23,
+   "lat": 28.71,
+   "sev": "grey",
+   "label": "Delhi",
+   "dx": 0,
+   "dy": -13
+  },
+  {
+   "n": 6,
+   "lon": 77.24,
+   "lat": 28.62,
+   "sev": "grey",
+   "label": "",
+   "dx": 0,
+   "dy": 13
+  }
+ ],
+ "world": [
+  {
+   "n": 7,
+   "lon": 28.43,
+   "lat": 12.7,
+   "sev": "red",
+   "label": "Al-Nuhud"
+  },
+  {
+   "n": 8,
+   "lon": 92.95,
+   "lat": 20.33,
+   "sev": "red",
+   "label": "Rakhine"
+  },
+  {
+   "n": 9,
+   "lon": 29.88,
+   "lat": 1.45,
+   "sev": "red",
+   "label": "Irumu"
+  },
+  {
+   "n": 10,
+   "lon": 34.48,
+   "lat": 31.53,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": -13,
+   "dy": 0,
+   "left": true
+  },
+  {
+   "n": 11,
+   "lon": 35.16,
+   "lat": 31.62,
+   "sev": "orange",
+   "label": "West Bank",
+   "dx": 13,
+   "dy": 0
+  },
+  {
+   "n": 12,
+   "lon": 2.35,
+   "lat": 48.86,
+   "sev": "orange",
+   "label": "France"
+  }
+ ]
+}

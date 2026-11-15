@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-14",
+ "updated": "2026-11-15",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -419,6 +419,20 @@
      "https://sudantribune.net/article/321182"
     ]
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "text": "Dar Hamar Emergency Room, a local relief group, said on 14 November that RSF fighters on motorcycles had killed 10 unarmed civilians in Al-Nuhud, West Kordofan, since Thursday, amid looting and a complete communications blackout including Starlink. The army had taken Al-Khuway, about 100 km away, the day before. The RSF made no immediate comment.",
+   "src": [
+    [
+     "Anadolu Agency",
+     "https://aa.com.tr/en/africa/rsf-killed-10-civilians-in-west-kordofan-city-sudanese-relief-group-says/4125288"
+    ],
+    [
+     "Al-Araby Al-Jadeed (Arabic)",
+     "https://www.alaraby.com/news/%D8%A7%D9%86%D9%81%D9%84%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%AF-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%82%D8%AA%D9%84-10-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%86%D9%87%D8%A8-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9"
+    ]
+   ]
   }
  ],
  "official": {
@@ -486,7 +500,8 @@
   "2026-11-11",
   "2026-11-12",
   "2026-11-13",
-  "2026-11-14"
+  "2026-11-14",
+  "2026-11-15"
  ],
  "instagram": {
   "caption": "",
@@ -503,8 +518,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-14",
-  "text": "Kurmuk's governor says Tuesday's drone strike on displaced people in Blue Nile killed 16, up from nine, with six wounded and some missing. He blames the RSF, which has not commented."
+  "date": "2026-11-15",
+  "text": "A local relief group says RSF fighters have killed 10 civilians in Al-Nuhud, West Kordofan, since Thursday, amid looting and a telecoms blackout. The RSF has not commented."
  },
  "summary": [
   {

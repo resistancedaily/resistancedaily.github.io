@@ -4,7 +4,7 @@
  "title": "Preventive detention in Jammu & Kashmir: what the courts are finding",
  "seo_title": "Jammu & Kashmir PSA detentions quashed by High Court, 2026",
  "dek": "A Baramulla court acquitted two men after six years in jail under the UAPA, finding police evidence unreliable; the High Court keeps quashing PSA detentions. The administration cites \"established peace\".",
- "updated": "2026-11-10",
+ "updated": "2026-11-15",
  "published": "2026-11-02",
  "rights": [
   "Due process",
@@ -306,6 +306,20 @@
      "https://indianexpress.com/article/india/jk-youths-six-years-jail-unreliable-evidence-10956378/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "text": "After an 11 November attack on a CRPF checkpoint at Akhran, Kulgam, injured three personnel, forces detained about 500 people during a four-day cordon and search, The Wire reported on 14 November; several were moved to District Jail Mattan under preventive laws. Another report says over 500 were questioned and about 20 held for interrogation, with no formal arrests. Police say they are targeting the 'terror ecosystem' and have seized devices and material.",
+   "src": [
+    [
+     "The Wire",
+     "https://m.thewire.in/article/security/hundreds-questioned-and-detained-casos-in-kulgam-kashmir-revive-memories-of-the-1990s"
+    ],
+    [
+     "Northlines",
+     "https://thenorthlines.com/kulgam-crpf-attack-over-500-questioned-20-detained/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -376,14 +390,15 @@
   ]
  },
  "whats_new": {
-  "date": "2026-11-10",
-  "text": "A Baramulla UAPA court acquitted two men jailed six years over an alleged grenade recovery, calling police evidence inconsistent. Police had said arms were found at a 2020 checkpoint."
+  "date": "2026-11-15",
+  "text": "After an 11 Nov attack injured three CRPF personnel, forces questioned or detained about 500 people in Kulgam; several were jailed under preventive laws. Police cite a 'terror ecosystem'."
  },
  "editions": [
   "2026-10-31",
   "2026-11-04",
   "2026-11-07",
-  "2026-11-10"
+  "2026-11-10",
+  "2026-11-15"
  ],
  "instagram": {
   "hashtags": [
