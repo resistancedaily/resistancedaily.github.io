@@ -1,0 +1,113 @@
+{
+ "cover": [
+  [
+   "Azerbaijan",
+   "Meclis.info founder jailed for 10 years"
+  ],
+  [
+   "Türkiye",
+   "Kavala: release refused again"
+  ],
+  [
+   "Delhi",
+   "Sharjeel Imam: no witness examined yet"
+  ],
+  [
+   "Gaza",
+   "Hospital director held 688 days, no charge"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 101,
+   "label": "Still waiting · World · Press",
+   "fig": "941",
+   "figlab": "days held",
+   "place": "Baku, Azerbaijan",
+   "head": "Imran Aliyev",
+   "bullets": [
+    "Founder of parliament-watch site Meclis.info, held since 18 Apr 2024.",
+    "Sentenced to 10 years on 12 Nov on smuggling and financial charges.",
+    "His lawyer says no credible evidence was shown; he will appeal."
+   ],
+   "src": "Caucasian Knot · OC Media",
+   "photo": {
+    "src": "images/2026-11-15/baku.webp",
+    "alt": "A lit stone colonnade beside an open courtyard of ruins and arches at night, with old buildings behind.",
+    "caption": "Baku's Old City at night, in 2016. File photo of the city where he was sentenced.",
+    "credit": "Diego Delso / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Centro_hist%C3%B3rico,_Baku,_Azerbaiy%C3%A1n,_2016-09-26,_DD_221-223_HDR.jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 102,
+   "label": "Still waiting · World · Assembly",
+   "fig": "3,315",
+   "figlab": "days held",
+   "place": "Istanbul, Türkiye",
+   "head": "Osman Kavala",
+   "bullets": [
+    "Civil society figure held since 18 Oct 2017; serving life.",
+    "Appeals court again refused release and retrial (reported 14 Nov).",
+    "Europe's rights court ordered release; Ankara denies the case is political."
+   ],
+   "src": "Turkish Minute · Amnesty UK",
+   "photo": {
+    "src": "images/2026-11-15/istanbul-courthouse.webp",
+    "alt": "A large curved glass and stone office building beside a wide road under a blue sky.",
+    "caption": "Istanbul's Çağlayan courthouse in 2017. File photo of the city's main courthouse.",
+    "credit": "CeeGee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:PalaceOfJusticeIstanbul_(1).jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 103,
+   "label": "Still waiting · India · Due process",
+   "fig": "2,483",
+   "figlab": "days held",
+   "place": "Delhi",
+   "head": "Sharjeel Imam",
+   "bullets": [
+    "Held since 28 Jan 2020 under UAPA and other charges.",
+    "Supreme Court bail plea says no witness examined yet; not yet heard.",
+    "India's US envoy says USCIRF has 'no locus standi' on his case."
+   ],
+   "src": "Siasat · Asianet Newsable",
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, where Sharjeel Imam's bail plea is pending, in 2019.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   }
+  },
+  {
+   "n": 104,
+   "label": "Still waiting · World · Due process",
+   "fig": "688",
+   "figlab": "days, no charge",
+   "place": "Gaza → Israeli custody",
+   "head": "Dr Hussam Abu Safiya",
+   "bullets": [
+    "Gaza hospital director held since 27 Dec 2024 without charge.",
+    "Israeli courts refused to free 14 detained doctors (reported 11 Nov).",
+    "Israel alleges Hamas links; his family denies them."
+   ],
+   "src": "The New Arab · Amnesty"
+  }
+ ]
+}
