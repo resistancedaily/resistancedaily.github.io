@@ -143,7 +143,8 @@ img{{{WASH}}}
 .nb{{padding:80px 90px 70px;font-family:Inter}}
 .nb.paper{{background:{NB_PAPER};color:{NB_INK}}} .nb.ink{{background:{NB_INK};color:{NB_PAPER}}} .nb.up{{background:{SAGE};color:{SAGE_T}}}
 .nb .k{{display:flex;justify-content:space-between;font:700 22px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}}
-.nb.paper{{--mu:#6b6b6b}} .nb.ink{{--mu:#a8a8a8}} .nb.up{{--mu:#56633f}}
+.nb.paper{{--mu:#6b6b6b;--bg:{NB_PAPER};--fg:{NB_INK}}} .nb.ink{{--mu:#a8a8a8;--bg:{NB_INK};--fg:{NB_PAPER}}} .nb.up{{--mu:#56633f;--bg:{SAGE};--fg:{SAGE_T}}}
+.nb .k{{align-items:center}}
 .nb .num{{font-family:Fraunces;font-weight:800;line-height:.9;letter-spacing:-.04em;margin-top:64px}}
 .nb .cap{{font:600 40px/1.2 Inter;margin-top:16px;color:var(--mu);max-width:860px}}
 .nb .rule{{height:4px;width:120px;background:currentColor;margin:46px 0 30px}}
@@ -369,14 +370,17 @@ def cover(dt, sp, by, N):
     if style == "numbers":
         # "Today in four numbers": the date, then one row per story: its key figure, place and headline.
         dd = dt.strftime("%a %d %b").replace(" 0", " ")
-        rows = "".join(f'<div style="display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:center;border-top:3px solid {NB_INK};padding:24px 0">'
+        rows = "".join(f'<div style="display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:center;border-top:3px solid {NB_INK};padding:18px 0">'
                        f'<div style="font:800 {fig_px(st.get("fig", ""), 110, 300)}px/1 Fraunces;letter-spacing:-.03em">{E(st.get("fig", ""))}</div>'
                        f'<div><div style="font:700 21px Inter;letter-spacing:.1em;text-transform:uppercase;color:#6b6b6b">{E(pl)}</div>'
                        f'<div style="font:600 32px/1.2 Inter;margin-top:6px">{E(h)}</div></div></div>'
                        for st, (pl, h) in zip(sp["stories"], sp["cover"]))
         return f'''<div class="s" style="background:{NB_PAPER};color:{NB_INK};padding:80px 110px 70px">
-<div style="font:700 22px Inter;letter-spacing:.12em;text-transform:uppercase">Resistance Daily · {E(dd)}</div>
-<div style="font:800 104px/1 Fraunces;margin:30px 0 40px;letter-spacing:-.02em">Today in<br>four numbers</div>{rows}
+<div style="font:700 22px Inter;letter-spacing:.12em;text-transform:uppercase">Resistance Daily</div>
+<div style="display:inline-flex;flex-direction:column;align-self:flex-start;background:{NB_INK};color:{NB_PAPER};border-radius:30px;padding:20px 38px 28px;margin-top:24px">
+<span style="font:700 28px Inter;letter-spacing:.14em;text-transform:uppercase;color:#cfcfcf">{E(dt.strftime("%A"))}</span>
+<span style="font:800 180px/.95 Fraunces;letter-spacing:-.03em;margin-top:4px">{E(dt.strftime("%d %b").lstrip("0"))}</span></div>
+<div style="font:800 64px/1 Fraunces;margin:34px 0 22px;letter-spacing:-.02em">Today in four numbers</div>{rows}
 <div style="margin-top:auto;padding-top:18px;font:600 20px Inter;color:#6b6b6b;text-transform:uppercase;letter-spacing:.08em">Swipe → · Sources: link in bio</div></div>'''
     if style == "threads":
         # "Where things stand today · Wed 4 Nov": cream ground, washed arch photo of the first story, 4 place rows.
@@ -504,7 +508,7 @@ def cover(dt, sp, by, N):
 # "Need hope?" (owner's request, 4 Nov 2026): a green sticker on every daily cover points to the last slide, which
 # lists the latest items from data/hope.json (tools/hope.py). Sticker positions keep it beside the date and inside the
 # middle 860px (x 110-970) that the profile grid shows.
-STICKER_AT = {"numbers": (790, 70, 180), "threads": (800, 520, 190), "photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
+STICKER_AT = {"numbers": (800, 130, 170), "threads": (800, 520, 190), "photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
               "signal": (765, 175, 200), "mosaic": (760, 330), "ring": (735, 120), "circles": (735, 60)}  # (left, top[, size])
 GREEN_L = SAGE
 
@@ -553,7 +557,7 @@ def hope_slide(items, N):
 <div style="margin-top:auto;border-top:2px solid #b7d6c2;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#3d472b;text-transform:uppercase;letter-spacing:.05em">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
 
 
-def nb_story(st, p, tname, tg, up, k, N):
+def nb_story(st, p, tname, tg, up, k, N, day=""):
     """Big-number story slide (owner's choice, 16 Nov 2026): kicker, the key figure as large as it fits, what it
     counts, the word tag and place, the headline, the bullets (the last, the official position, in bold), the photo as
     a small circle with its file-photo label, then sources and the short credit. Slides alternate ink and paper;
@@ -564,7 +568,8 @@ def nb_story(st, p, tname, tg, up, k, N):
             if p else "")
     wide = "" if p else ' style="max-width:860px"'
     tag = f"<b>{E(tg[0])}</b>" if tg else ""
-    return f'''<div class="s nb {ground}"><div class="k"><span>{E(tname)}</span><span>{k} / {N}</span></div>
+    when = f'<b style="background:var(--fg);color:var(--bg);border-radius:999px;padding:6px 18px;margin-right:16px;font-size:26px">{E(day)}</b>' if day else ""
+    return f'''<div class="s nb {ground}"><div class="k"><span>{E(tname)}</span><span>{when}{k} / {N}</span></div>
 <div class="num" style="font-size:{fig_px(st["fig"], 320, 880)}px">{E(st["fig"])}</div><div class="cap">{E(st["figlab"])}</div>
 <div class="rule"></div><div class="pl">{tag}{E(st["place"])}</div><h2{wide}>{E(st["head"])}</h2><ul{wide}>{b}</ul>{circ}
 <div class="srcs">Sources: {E(st["src"])}{"<br>" + E(credit(p)) if p else ""}</div></div>'''
@@ -620,7 +625,7 @@ def daily(date, out):
             tg = T.tag(it, date)
             up = T.upheld(it, date)
         if style == "numbers":
-            slides.append(nb_story(st, p, tname, tg, up, k, N))
+            slides.append(nb_story(st, p, tname, tg, up, k, N, dt.strftime("%d %b").lstrip("0")))
             continue
         cls = {"tag tag-accent-2": "tag up", "tag tag-accent": "tag acc"}.get(tg[1], "tag") if tg else "tag"
         tags = (f'<span class="{cls}">{E(tg[0])}</span>' if tg else "") + f'<span>{E(st["place"])}</span>'

@@ -305,11 +305,12 @@ circle. Older styles stay in tools/slides.py for past dates; "cover_style" in DA
 - Fonts: Fraunces (headings and figures) and Inter (text); tools/slides.py fetches them with npm pack. Grounds alternate
   paper #fffdf7 and ink #111111; sage #e1eecc with #272e1b text for upheld stories and the hope slide. Photos keep the
   wash. No red anywhere. Keep face-blurring and credit rules.
-- Slide 1 (cover, "numbers"): "Resistance Daily · <Day DD Mon>", "Today in four numbers", then 4 rows: the story's key
-  figure, its place and a one-line headline (max ~45 characters). Everything stays inside x 110–970 (the 3:4 grid
+- Slide 1 (cover, "numbers"): "Resistance Daily", then THE DATE AS THE LARGEST ELEMENT (owner's request, 16 Nov 2026):
+  the weekday above "16 Nov" in a solid ink block, the "Need hope?" sticker beside it; then "Today in four numbers" and
+  4 rows: the story's key figure, its place and a one-line headline (max ~45 characters). Everything stays inside x 110–970 (the 3:4 grid
   crop). Footer: "Swipe → · Sources: link in bio".
 - Slides 2–5 (ink on even slides, paper on odd, sage when the item is upheld): kicker = the item's thread name (or the
-  slide label's first part), "n / N"; the key figure as large as fits on one line; "figlab" under it (what the number
+  slide label's first part), with a solid date pill ("16 Nov") before "n / N" so a slide shared alone still shows its day; the key figure as large as fits on one line; "figlab" under it (what the number
   counts, a few words); the word tag (Lives lost / Right upheld / Assembly / Speech / Detention) and the place; the
   headline; 2–3 short bullets, the LAST one the official position (it prints in bold); the photo as a circle with its
   "File photo · YEAR" label; "Sources: …" and the short photo credit. On Sundays, show Still waiting cases instead.
