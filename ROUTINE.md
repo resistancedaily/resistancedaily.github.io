@@ -342,11 +342,10 @@ circle. Older styles stay in tools/slides.py for past dates; "cover_style" in DA
     exactly 5 neutral hashtags or fewer (INSTAGRAM ALLOWS AT MOST 5 HASHTAGS PER CAPTION).
   slides.py checks it (2,200 characters, 5 hashtags) and warns; fix any warning. No per-slide captions, no
   slide-captions.txt, no "caption" or "hope_caption" fields in DATE.slides.json.
-- alt-text.txt: one entry per slide, in order (Slide 1 … Slide 7), each 1–2 plain sentences (about 150–250 characters).
-  Say what the slide shows: for slide 1, the date, the 4 figures with their headlines and the "Need hope?" sticker; for slides 2–5, the big
-  number and its label, the person or place, and the key fact, with the official position if the slide has one; for
-  slide 6, the 4 actions; for slide 7, the three signs of hope. Use
-  only facts that are on the slide. No hashtags, emoji or "image of".
+- alt-text.txt (owner's choice, 16 Nov 2026: COVER ONLY, to keep posting quick): ONE entry, for slide 1, in 2–3 plain
+  sentences (about 250–400 characters): the date, the 4 figures with their places and headlines, the "Need hope?"
+  sticker, and end with "Full edition with sources: link in bio." The owner pastes it on the cover only; the other
+  slides get none. Use only facts that are on the slides. No hashtags, emoji or "image of".
 - If a Focus was made: `python3 tools/slides.py focus SLUG OUT`. It writes the JPEGs, alt-text.txt and the ONE
   caption.txt: "instagram": {"caption"} when given, otherwise built from the data ("Focus · <short>", the "dek" or, for
   an update, "whats_new", "Official position: <official_short>", the link-in-bio line, up to 5 outlets, the first 5

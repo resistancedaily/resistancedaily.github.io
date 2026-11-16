@@ -725,13 +725,9 @@ def focus(slug, out, update=False):
                + f"\nSources: {outlets}" + f"\n\n{' '.join(ig.get('hashtags', [])[:5])}")
     write_caption(out, cap)
     facebook_focus(f, out, wn)
-    alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")]
-    alts += [f"Slide {k}: {p['alt']} {p['caption']}" for k, p in enumerate(ph[1:], 2)]
-    alts.append(f"Slide {len(ph) + 1}: Key numbers. " + "; ".join(f"{x['fig']} {x['figcap']}" for x in f.get("figs", [])[:4]) + ".")
-    alts.append(f"Slide {END}: Read the full story at resistancedaily.github.io/focus/{slug}, link in bio." + (f" Official position: {off}" if off else ""))
-    if hope:
-        alts[0] += " A green sticker reads: Need hope? Last slide."
-        alts.append(f"Slide {N}: Signs of hope. " + "; ".join(f"{i.get('slide_head') or i['fig']}: {i['slide']}" for i in hope) + ".")
+    # Alt text for the cover only (owner's choice, 16 Nov 2026): one entry the owner pastes on slide 1.
+    alts = [f"Slide 1: {first['alt']} " + (f"Update, {when}. Title: {f['title']}. {wn['text']}" if wn else f"Title: {f['title']}. {f['dek']}")
+            + (" A green sticker reads: Need hope? Last slide." if hope else "") + " Full story with sources: link in bio."]
     open(os.path.join(out, "alt-text.txt"), "w").write("\n\n".join(alts) + "\n")
 
 
