@@ -5,7 +5,7 @@
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
  "dek": "Friday strikes killed five to six in Gaza, medics said; demolitions displaced 150 West Bank Palestinians in a week, OCHA says. Gaza's health ministry counts 1,600+ killed since the ceasefire.",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -450,10 +450,24 @@
      "https://english.wafa.ps/Pages/Details/176925"
     ]
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "text": "Israeli troops detained AFP video contributor Mohammad Ateeq, 34, in a 1:30am raid on his home in Burqin, near Jenin, his wife said. The Israeli military said he is suspected of ties to Hamas. AFP called for evidence to be presented or for his release.",
+   "src": [
+    [
+     "AFP via The Edition",
+     "https://edition.mv/world/55808"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/idf-arrests-afp-contributor-in-west-bank-says-hes-suspected-of-hamas-ties/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital.",
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas.",
   "src": [
    [
     "Arab News (AFP)",
@@ -490,6 +504,10 @@
    [
     "France 24 (AFP)",
     "https://www.france24.com/en/middle-east/20261112-israel-kills-six-in-gaza-hospital-strike-as-9-month-old-baby-freezes-to-death"
+   ],
+   [
+    "Times of Israel",
+    "https://www.timesofisrael.com/liveblog_entry/idf-arrests-afp-contributor-in-west-bank-says-hes-suspected-of-hamas-ties/"
    ]
   ],
   "points": [
@@ -498,7 +516,8 @@
    "Israel rejects accusations that it restricts aid; security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered.",
    "Reconstruction equipment and mobile homes will stay out while Hamas refuses to disarm, Israeli security officials say.",
    "In Hebron the military says it is dismantling \"terrorist infrastructure\"; the defence minister said residents cannot return until operations end.",
-   "The military called the settler attack on diplomats in Taybeh \"severe\"; police arrested 10 suspects."
+   "The military called the settler attack on diplomats in Taybeh \"severe\"; police arrested 10 suspects.",
+   "The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas."
   ]
  },
  "editions": [
@@ -530,11 +549,12 @@
   "2026-11-12",
   "2026-11-13",
   "2026-11-14",
-  "2026-11-15"
+  "2026-11-15",
+  "2026-11-16"
  ],
  "whats_new": {
-  "date": "2026-11-15",
-  "text": "A drone strike killed two in Jabaliya, Shifa Hospital says; Israel says it hit two Hamas militants. Settlers injured five olive pickers near Beit Fajjar, WAFA says."
+  "date": "2026-11-16",
+  "text": "Israeli troops detained AFP contributor Mohammad Ateeq near Jenin on 15 Nov. The military says he is suspected of Hamas ties; AFP asks for evidence or his release."
  },
  "instagram": {
   "hashtags": [

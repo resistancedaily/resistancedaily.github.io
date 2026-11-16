@@ -1,0 +1,97 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 87.79,
+   "lat": 23.69,
+   "sev": "red",
+   "label": "Birbhum",
+   "dx": -8,
+   "dy": 4,
+   "left": true
+  },
+  {
+   "n": 2,
+   "lon": 76.95,
+   "lat": 27.79,
+   "sev": "red",
+   "label": "Nuh"
+  },
+  {
+   "n": 3,
+   "lon": 77.95,
+   "lat": 9.93,
+   "sev": "orange",
+   "label": "Madurai"
+  },
+  {
+   "n": 4,
+   "lon": 93.94,
+   "lat": 24.81,
+   "sev": "orange",
+   "label": "Manipur",
+   "dx": 6,
+   "dy": -4
+  },
+  {
+   "n": 5,
+   "lon": 74.65,
+   "lat": 34.42,
+   "sev": "grey",
+   "label": "Bandipora"
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 30.22,
+   "lat": 13.18,
+   "sev": "red",
+   "label": "El Obeid",
+   "dx": -12,
+   "dy": 6,
+   "left": true
+  },
+  {
+   "n": 7,
+   "lon": 32.21,
+   "lat": 51.52,
+   "sev": "red",
+   "label": "Ukraine"
+  },
+  {
+   "n": 8,
+   "lon": 121.04,
+   "lat": 14.41,
+   "sev": "orange",
+   "label": "Manila"
+  },
+  {
+   "n": 9,
+   "lon": 35.26,
+   "lat": 32.46,
+   "sev": "orange",
+   "label": "Jenin",
+   "dx": 0,
+   "dy": 10
+  },
+  {
+   "n": 10,
+   "lon": 32.53,
+   "lat": 15.5,
+   "sev": "orange",
+   "label": "Sudan",
+   "dx": 10,
+   "dy": -8
+  },
+  {
+   "n": 11,
+   "lon": 35.08,
+   "lat": 32.93,
+   "sev": "grey",
+   "label": "Acre",
+   "dx": 0,
+   "dy": -10
+  }
+ ]
+}

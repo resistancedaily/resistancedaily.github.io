@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "figures": [
   {
    "fig": "170",
@@ -97,6 +97,14 @@
    "src": [
     "India Today NE",
     "https://www.indiatodayne.in/amp/tripura/story/tripura-saw-major-gains-in-health-education-sectors-over-past-four-years-cm-manik-saha-1393026-2026-05-17"
+   ]
+  },
+  "Haryana": {
+   "cm": "Nayab Singh Saini",
+   "party": "BJP",
+   "src": [
+    "NewKerala (IANS), 11 Nov 2026",
+    "https://www.newkerala.com/news/a/complete-development-projects-within-timeline-haryana-cm-directs-180.htm"
    ]
   }
  },
@@ -750,7 +758,7 @@
    "power": "Police",
    "head": "Lorry driver dies inside a police station",
    "text": "R Balakrishnan, 42, a lorry driver held overnight for questioning over missing cardamom, was found hanging in the station toilet on 14 November. His family rejects the police account and alleges he was beaten.",
-   "official": "Police say he died by suicide; the IG says CCTV is being examined. An inspector and two head constables were suspended and the DGP moved the case to the CB-CID.",
+   "official": "Police say he died by suicide and released a CCTV clip; the family calls it selective. Three police were suspended; the CB-CID has summoned them and a judicial magistrate held an inquiry.",
    "steps": [
     {
      "step": "Officers suspended",
@@ -762,6 +770,18 @@
      "step": "CB-CID probe",
      "status": "done",
      "date": "2026-11-14"
+    },
+    {
+     "step": "Magistrate inquiry",
+     "status": "done",
+     "date": "2026-11-15",
+     "note": "judicial magistrate at the station"
+    },
+    {
+     "step": "Police summoned",
+     "status": "done",
+     "date": "2026-11-15",
+     "note": "CB-CID summoned the three suspended police"
     },
     {
      "step": "FIR against police",
@@ -792,9 +812,62 @@
     [
      "Daily Thanthi (Tamil)",
      "https://www.dailythanthi.com/amp/story/news/tamilnadu/lorry-drivers-suicide-at-chekkanurani-police-station-case-transferred-to-cb-cid"
+    ],
+    [
+     "DT Next",
+     "https://www.dtnext.in/news/tamilnadu/kin-seek-probe-into-insurance-fraud-allegation-cb-cid-slaps-summons-on-cops"
+    ],
+    [
+     "Deccan Chronicle (PTI)",
+     "https://www.deccanchronicle.com/southern-states/kerala/cb-cid-begins-probe-into-lorry-drivers-death-at-madurai-police-station-2004608"
     ]
    ],
-   "checked": "2026-11-15"
+   "checked": "2026-11-16"
+  },
+  {
+   "id": "nuh-encounter",
+   "kind": "Police force",
+   "state": "Haryana",
+   "place": "Firozpur Jhirka area, Nuh district, Haryana",
+   "date": "2026-11-15",
+   "power": "Police",
+   "head": "Two cattle-smuggling suspects killed in police shootout",
+   "text": "Sabir and Gabbar were killed and a third man was hospitalised after a pre-dawn shootout with a police crime unit near Firozpur Jhirka. Maktoob says it could not verify the police account of a gunfight.",
+   "official": "Police say the men fired first and an officer was injured; a senior officer says a magisterial inquiry has begun.",
+   "steps": [
+    {
+     "step": "Magisterial inquiry",
+     "status": "done",
+     "date": "2026-11-15"
+    },
+    {
+     "step": "FIR on the deaths",
+     "status": "unknown"
+    },
+    {
+     "step": "Inquiry report",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097090/haryana-two-persons-suspected-of-cattle-smuggling-killed-in-alleged-gunfight-with-police"
+    ],
+    [
+     "The Tribune",
+     "https://www.tribuneindia.com/news/haryana/2-cattle-smugglers-killed-in-encounter-with-nuh-police-1-injured"
+    ],
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116944"
+    ]
+   ],
+   "checked": "2026-11-16"
   }
  ]
 }

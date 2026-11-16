@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -698,6 +698,44 @@
     ]
    ],
    "edition": "2026-11-15#6"
+  },
+  {
+   "id": "acre-officer-questioned",
+   "date": "2026-11-15",
+   "kind": "Accountability",
+   "rights": [
+    "Life & safety"
+   ],
+   "place": "Acre, Israel",
+   "fig": "5 days",
+   "figcap": "house arrest",
+   "headline": "Watchdog questions officer over Acre shooting",
+   "text": "Israel's police watchdog questioned an off-duty Border Police officer who shot and seriously wounded a driver; he is under five days' house arrest. The probe continues; he has not been charged.",
+   "slide_head": "Officer questioned",
+   "slide": "Watchdog acts after a driver is shot in Acre, Israel",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/police-watchdog-says-it-interrogated-officer-for-allegedly-shooting-seriously-wounding-man-in-acre/"
+    ],
+    [
+     "Walla (Hebrew)",
+     "https://www.walla.co.il/news/law/383961452"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-16/acre-old-city.webp",
+    "alt": "A narrow stone alley in an old town, with a man holding a bicycle, a woman walking and a stairway behind.",
+    "caption": "A street in Acre's Old City in 2011. File photo of the city. A child's face is blurred.",
+    "credit": "Adam Jones / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_City_Street_Scene_-_Akko_(Acre)_-_Israel_-_01_(5693197091).jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized, faces blurred"
+   },
+   "edition": "2026-11-16#11"
   }
  ]
 }

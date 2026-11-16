@@ -1,0 +1,566 @@
+{
+ "date": "2026-11-16",
+ "date_long": "Mon 16 Nov 2026",
+ "date_short": "Mon 16 Nov",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-16",
+ "items": [
+  {
+   "region": "india",
+   "place": "Uchkaran area, Nanoor, Birbhum district, West Bengal",
+   "short": "Birbhum",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "red",
+   "fig": "5th",
+   "figcap": "such death since May",
+   "headline": "Man in custody shot dead by Bengal police",
+   "text": "Ratan Sheikh, arrested over the 13 Nov shooting of a constable, was killed in police firing on 15 Nov. Police say he fired at them while recovering a weapon. No probe into the death reported.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097095/bengal-man-accused-of-shooting-constable-killed-in-gunfight-fifth-death-since-bjp-came-to-power"
+    ],
+    [
+     "The Week",
+     "https://www.theweek.in/news/india/2026/11/15/west-bengal-police-encounter-ratan-sheikh-shot.html"
+    ]
+   ],
+   "local": [
+    [
+     "bn",
+     "Bartaman Patrika",
+     "https://bartamanpatrika.com/news/another-encounter-the-fifth-in-six-monthsthis-time-in-nanur-near-santiniketanratan-sheikh-has-been-killed-following-an-incident-in-which-police-were-fired-upon"
+    ]
+   ],
+   "lon": 87.79,
+   "lat": 23.69,
+   "photo": {
+    "src": "images/2026-11-16/birbhum-paikar.webp",
+    "alt": "A small-town road lined with shops, parked motorbikes and an electric rickshaw under a hazy sky.",
+    "caption": "Paikar, a village market in Birbhum district, in January 2025. File photo of the district.",
+    "credit": "Pinakpani / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Paikar_village_in_Birbhum_district_01.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 1,
+   "map": {
+    "dx": -8,
+    "dy": 4,
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Firozpur Jhirka area, Nuh district, Haryana",
+   "short": "Nuh",
+   "rights": [
+    "Life & safety",
+    "Due process & detention",
+    "Accountability Watch"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "killed",
+   "headline": "Two killed in Nuh police shootout",
+   "text": "Sabir and Gabbar, suspected of cattle smuggling, died in a pre-dawn police shootout on 15 Nov; a third man is in hospital. Police say the men fired first; a magisterial inquiry has begun.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097090/haryana-two-persons-suspected-of-cattle-smuggling-killed-in-alleged-gunfight-with-police"
+    ],
+    [
+     "The Tribune",
+     "https://www.tribuneindia.com/news/haryana/2-cattle-smugglers-killed-in-encounter-with-nuh-police-1-injured"
+    ],
+    [
+     "Maktoob Media",
+     "https://maktoobmedia.com/post?id=116944"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Amar Ujala",
+     "https://www.amarujala.com/delhi-ncr/nuh/encounter-between-police-and-cow-smugglers-in-nuh-haryana-2026-11-15"
+    ]
+   ],
+   "lon": 76.95,
+   "lat": 27.79,
+   "photo": {
+    "src": "images/2026-11-16/nuh-tauru.webp",
+    "alt": "Open scrubland with dirt tracks seen from a rocky hill, with a town and trees in the haze beyond.",
+    "caption": "Tauru, in Nuh district, seen from the Aravalli hills in 2014. File photo of the district.",
+    "credit": "ChalkOne / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tauru_Landscape.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Chekkanurani police station, Madurai district, Tamil Nadu",
+   "short": "Madurai",
+   "rights": [
+    "Life & safety",
+    "Due process & detention",
+    "Accountability Watch"
+   ],
+   "sev": "orange",
+   "fig": "3",
+   "figcap": "police summoned",
+   "headline": "CB-CID summons police over Madurai station death",
+   "text": "The CB-CID summoned the three suspended police over R Balakrishnan's death, and a magistrate held an inquiry at the station on 15 Nov. Police say suicide and released CCTV; the family alleges custodial killing.",
+   "src": [
+    [
+     "DT Next",
+     "https://www.dtnext.in/news/tamilnadu/kin-seek-probe-into-insurance-fraud-allegation-cb-cid-slaps-summons-on-cops"
+    ],
+    [
+     "Deccan Chronicle (PTI)",
+     "https://www.deccanchronicle.com/southern-states/kerala/cb-cid-begins-probe-into-lorry-drivers-death-at-madurai-police-station-2004608"
+    ]
+   ],
+   "local": [
+    [
+     "ta",
+     "Maalaimalar",
+     "https://www.maalaimalar.com/news/tamilnadu/chekkanurani-custodial-death-cb-cid-summons-3-police-personnel"
+    ]
+   ],
+   "lon": 77.95,
+   "lat": 9.93,
+   "photo": {
+    "src": "images/2026-11-16/madurai-temple.webp",
+    "alt": "A painted temple ceiling in red, blue and gold above carved stone pillars with lion figures.",
+    "caption": "A temple ceiling and carved pillars in Madurai, in 2011. File photo of the city.",
+    "credit": "Emmanuel DYAN / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madurai,_Tamil_Nadu,_India_(8198824909).jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Imphal and statewide, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "thread": "manipur",
+   "fig": "24 hrs",
+   "figcap": "shutdown",
+   "headline": "Statewide shutdown called over Naga killings",
+   "text": "A Manipur committee called a 24-hour statewide shutdown from Sunday midnight, demanding arrests within three days over the four Naga civilians killed near New Haven. No official response reported.",
+   "src": [
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/manipur/manipur-npcm-announces-24-hour-statewide-shutdown-over-killing-of-four-naga-civilians.html"
+    ],
+    [
+     "The Sangai Express",
+     "https://www.thesangaiexpress.com/Encyc/2026/11/15/by-our-staff-reporter-imphal-nov-15-denouncing-the-atrocities-committed-by-kuki-terrorists-the-native-peoples-.html"
+    ]
+   ],
+   "lon": 93.94,
+   "lat": 24.81,
+   "photo": {
+    "src": "images/2026-11-16/imphal-ima-market.webp",
+    "alt": "Women vendors sit at stalls of vegetables and fish in a covered market, seen from above, as shoppers walk by.",
+    "caption": "Ima Keithel, Imphal's women-run market, in 2013. File photo of the city.",
+    "credit": "PP Yoonus / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ima_Market,_imphal.jpeg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 4,
+   "map": {
+    "dx": 6,
+    "dy": -4
+   }
+  },
+  {
+   "region": "india",
+   "place": "Bandipora, Bandipora district, Jammu and Kashmir",
+   "short": "Bandipora",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "grey",
+   "thread": "kashmir",
+   "focus": "kashmir",
+   "fig": "1",
+   "figcap": "arrest",
+   "headline": "Page operator arrested over Kulgam attack post",
+   "text": "Bandipora police arrested the operator of a local Facebook page for allegedly posting false claims that three CRPF personnel died in the 11 Nov Kulgam attack. Police say the post could cause panic.",
+   "src": [
+    [
+     "Kashmir Observer",
+     "https://kashmirobserver.net/2026/11/15/one-arrested-for-spreading-false-info-about-nov-11-kulgam-attack/"
+    ],
+    [
+     "Kashmir Reader",
+     "https://kashmirreader.com/2026/11/16/man-arrested-for-spreading-misleading-claims-about-crpf-casualties/"
+    ]
+   ],
+   "lon": 74.65,
+   "lat": 34.42,
+   "photo": {
+    "src": "images/2026-11-16/wular-lake.webp",
+    "alt": "A lake covered in lily pads and flowers, with green hills and mountains under clouds behind.",
+    "caption": "Wular Lake in Bandipora district, in 2020. File photo of the district.",
+    "credit": "Imran Rasool Dar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wular_Lake_1.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "El Obeid, North Kordofan, Sudan",
+   "short": "El Obeid",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "fig": "1–2",
+   "figcap": "killed",
+   "headline": "El Obeid celebratory gunfire kills up to two",
+   "text": "Gunfire, some from anti-aircraft weapons, celebrating false reports that the army took Al-Nuhud killed one or two people and injured 25 to 45+. Accounts differ on who fired; no official statement reported.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/north-kordofan-capital-el-obeid-one-dead-45-injured-amid-indiscriminate-gunfire"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/15/%D9%85%D9%82%D8%AA%D9%84-%D8%B7%D8%A7%D9%84%D8%A8%D8%A9-%D9%88%D8%B7%D9%81%D9%84%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D8%A8/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Radio Dabanga Arabic",
+     "https://www.dabangasudan.org/ar/all-news/article/%D9%82%D8%AA%D9%8A%D9%84-%D9%88%D8%A3%D9%83%D8%AB%D8%B1-%D9%85%D9%86-45-%D8%AC%D8%B1%D9%8A%D8%AD%D8%A7%D9%8B-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D8%B9%D8%B4"
+    ]
+   ],
+   "lon": 30.22,
+   "lat": 13.18,
+   "photo": {
+    "src": "images/2026-11-16/el-obeid-road.webp",
+    "alt": "A wide road with street lights under a dark blue sky, a coach approaching and a man walking on the verge.",
+    "caption": "A main road in El Obeid, North Kordofan, in 2020. File photo of the city.",
+    "credit": "Matab Hamed / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Transportation_in_Al-Ubayyid.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 6,
+   "map": {
+    "dx": -12,
+    "dy": 6,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Chernihiv, Odesa and other regions, Ukraine",
+   "short": "Ukraine",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "killed",
+   "headline": "Strikes kill four, injure 69 across Ukraine",
+   "text": "Ukrainian authorities say strikes over one day killed four, two at an energy site in Mena, and injured 69. They report 132 drones; 41,000 Odesa families lost power. No Russian comment reported.",
+   "src": [
+    [
+     "Kyiv Independent",
+     "https://kyivindependent.com/russia-launches-mass-attack-on-odesa-oblast-as-strikes-kill-4-injure-69-across-ukraine-over-past-day/"
+    ],
+    [
+     "LB.ua (Ukrainian)",
+     "https://lb.ua/society/2026/11/15/781204_rosiyski_okupanti_atakuvali.html"
+    ]
+   ],
+   "local": [
+    [
+     "uk",
+     "LB.ua",
+     "https://lb.ua/society/2026/11/15/781204_rosiyski_okupanti_atakuvali.html"
+    ]
+   ],
+   "lon": 32.21,
+   "lat": 51.52,
+   "photo": {
+    "src": "images/2026-11-16/chernihiv-power-plant.webp",
+    "alt": "Two tall striped chimneys, one giving off white smoke, above a long industrial building in the haze.",
+    "caption": "Chernihiv's combined heat and power plant in 2005. File photo of the region's energy grid.",
+    "credit": "Incnis Mrsi / Wikimedia Commons",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chernihiv_TEC,_2005.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Muntinlupa and Liwasang Bonifacio, Metro Manila, Philippines",
+   "short": "Manila",
+   "rights": [
+    "Assembly",
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "209–300",
+   "figcap": "detained",
+   "headline": "Hundreds of marchers detained as ASEAN summit opens",
+   "text": "Police held 209 to about 300 marchers in Muntinlupa (police and organiser counts) and several in Manila, where 12 were hurt. Police say the rallies lacked permits; a journalists' union reports 22 media workers harassed.",
+   "src": [
+    [
+     "Philippine Star",
+     "https://www.philstar.com/nation/2026/11/16/2570352/209-protesters-munti-nabbed"
+    ],
+    [
+     "Daily Tribune",
+     "https://tribune.net.ph/2026/11/15/chaos-erupt-in-manila-on-asean-summit-opening-day-arrests-injuries-reported"
+    ]
+   ],
+   "local": [
+    [
+     "tl",
+     "Bombo Radyo Cauayan",
+     "https://cauayan.bomboradyo.com/mahigit-200-raliyista-arestado-sa-protesta-sa-muntinlupa-spd-magsasampa-ng-kaso/"
+    ]
+   ],
+   "lon": 121.04,
+   "lat": 14.41,
+   "photo": {
+    "src": "images/2026-11-16/manila-liwasang-bonifacio.webp",
+    "alt": "A wet city street beside a white monument plaza and trees, with a large 'Welcome to ASEAN Community' banner.",
+    "caption": "Liwasang Bonifacio plaza in Manila, with an ASEAN banner, in 2017. File photo of the protest site.",
+    "credit": "Judgefloro / Wikimedia Commons",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:09577jfLawton,_Liwasang_Bonifacio,_Santa_Cruz,_Manilafvf_03.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Burqin, near Jenin, occupied West Bank",
+   "short": "Jenin",
+   "rights": [
+    "Press freedom",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "thread": "palestine",
+   "focus": "palestine",
+   "fig": "1",
+   "figcap": "journalist held",
+   "headline": "AFP video journalist detained near Jenin",
+   "text": "Israeli troops detained AFP contributor Mohammad Ateeq in a 1:30am raid on 15 Nov, his wife says. The military says he is suspected of Hamas ties; AFP asks for evidence or his release.",
+   "src": [
+    [
+     "AFP via The Edition",
+     "https://edition.mv/world/55808"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/idf-arrests-afp-contributor-in-west-bank-says-hes-suspected-of-hamas-ties/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al-Quds",
+     "https://alquds.com/ar/posts/273737-occupation-arrests-journalist-mohammad-atiq-jenin"
+    ],
+    [
+     "ar",
+     "Al Jazeera Arabic",
+     "https://aljazeera.net/news/2026/11/15/%D8%A5%D8%B5%D8%A7%D8%A8%D8%A7%D8%AA-%D9%88%D8%A7%D8%B9%D8%AA%D9%82%D8%A7%D9%84%D8%A7%D8%AA-%D8%A8%D8%A7%D9%84%D8%B6%D9%81%D8%A9-%D9%88%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-2"
+    ]
+   ],
+   "lon": 35.26,
+   "lat": 32.46,
+   "map": {
+    "dx": 0,
+    "dy": 10
+   },
+   "photo": {
+    "src": "images/2026-11-16/burqin-church.webp",
+    "alt": "A small stone church with a bell tower behind a paved courtyard with potted plants and pine trees.",
+    "caption": "The Church of St George in Burqin, near Jenin, in 2019. File photo of the village.",
+    "credit": "Sylwia Ufnalska / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Burqin_Church-1.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Khartoum and other states, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "fig": "18+",
+   "figcap": "grid attacks",
+   "headline": "Drone attacks on power grid darken Sudan's cities",
+   "text": "At least 18 attacks hit power infrastructure in nine-plus states from 20 Oct to 2 Nov. The UN's Denise Brown says dialysis stopped and women give birth without light. No side has claimed them.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/features/2026/11/15/drone-strikes-on-power-stations-plunges-sudans-cities-into-darkness"
+    ],
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-attacks-deepen-suffering-of-women-and-children-sudan-activists-warn"
+    ]
+   ],
+   "lon": 32.53,
+   "lat": 15.5,
+   "photo": {
+    "src": "images/focus/sudan-war/al-jaili-refinery-smoke-2025.webp",
+    "alt": "A satellite view of brown desert and the green line of the Nile, with a long dark plume of smoke drifting south.",
+    "caption": "A satellite image from January 2025 shows smoke from a fire at the Al-Jaili oil refinery, north of Khartoum. File image.",
+    "credit": "NASA Earth Observatory (MODIS, Aqua) / Wikimedia Commons",
+    "licence": "Public domain (NASA)",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Refinery_Fire_in_Sudan_(MODIS_2025-01-26).jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Refinery_Fire_in_Sudan_(MODIS_2025-01-26).jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 10,
+   "map": {
+    "dx": 10,
+    "dy": -8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Acre (Akko), northern Israel",
+   "short": "Acre",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "5 days",
+   "figcap": "house arrest",
+   "headline": "Officer questioned over Acre driver shooting",
+   "text": "Israel's police watchdog questioned an off-duty Border Police officer who shot and seriously wounded a driver on 14 Nov; he was put under five days' house arrest. Police say the driver endangered pedestrians.",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/police-watchdog-says-it-interrogated-officer-for-allegedly-shooting-seriously-wounding-man-in-acre/"
+    ],
+    [
+     "Walla (Hebrew)",
+     "https://www.walla.co.il/news/law/383961452"
+    ]
+   ],
+   "local": [
+    [
+     "he",
+     "Walla",
+     "https://www.walla.co.il/news/law/383961452"
+    ]
+   ],
+   "lon": 35.08,
+   "lat": 32.93,
+   "map": {
+    "dx": 0,
+    "dy": -10
+   },
+   "photo": {
+    "src": "images/2026-11-16/acre-old-city.webp",
+    "alt": "A narrow stone alley in an old town, with a man holding a bicycle, a woman walking and a stairway behind.",
+    "caption": "A street in Acre's Old City in 2011. File photo of the city. A child's face is blurred.",
+    "credit": "Adam Jones / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Old_City_Street_Scene_-_Akko_(Acre)_-_Israel_-_01_(5693197091).jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized, faces blurred"
+   },
+   "n": 11
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Celebratory gunfire in El Obeid killed one or two; at least 18 drone attacks hit Sudan's power grid in two weeks. No official statement reported.",
+   "src": "images/2026-11-16/el-obeid-road.webp",
+   "alt": "A wide road with street lights under a dark blue sky, a coach approaching and a man walking on the verge.",
+   "photos": 4
+  }
+ ]
+}

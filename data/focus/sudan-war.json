@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-15",
+ "updated": "2026-11-16",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -433,6 +433,34 @@
      "https://www.alaraby.com/news/%D8%A7%D9%86%D9%81%D9%84%D8%A7%D8%AA-%D8%A3%D9%85%D9%86%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D9%88%D8%AF-%D8%A7%D9%84%D8%B3%D9%88%D8%AF%D8%A7%D9%86%D9%8A%D8%A9-%D9%85%D9%82%D8%AA%D9%84-10-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%88%D8%B9%D9%85%D9%84%D9%8A%D8%A7%D8%AA-%D9%86%D9%87%D8%A8-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9"
     ]
    ]
+  },
+  {
+   "date": "2026-11-14",
+   "text": "In El Obeid, North Kordofan, gunfire, some of it from anti-aircraft weapons, fired to celebrate false reports that the army had taken Al-Nuhud killed one person and injured more than 45, Radio Dabanga reported. Darfur24 said a university student and a girl died, more than 25 were hurt and regular soldiers fired. No army or police statement was reported.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/north-kordofan-capital-el-obeid-one-dead-45-injured-amid-indiscriminate-gunfire"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/15/%D9%85%D9%82%D8%AA%D9%84-%D8%B7%D8%A7%D9%84%D8%A8%D8%A9-%D9%88%D8%B7%D9%81%D9%84%D8%A9-%D8%AC%D8%B1%D8%A7%D8%A1-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D9%86%D8%A7%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A3%D8%A8/"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-15",
+   "text": "Al Jazeera reported at least 18 attacks on electricity infrastructure in nine or more states between 20 October and 2 November. UN humanitarian coordinator Denise Brown said women give birth without lights and dialysis stops; she said she does not know where the drones are launched from. No side has claimed the attacks.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/features/2026/11/15/drone-strikes-on-power-stations-plunges-sudans-cities-into-darkness"
+    ],
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-attacks-deepen-suffering-of-women-and-children-sudan-activists-warn"
+    ]
+   ]
   }
  ],
  "official": {
@@ -501,7 +529,8 @@
   "2026-11-12",
   "2026-11-13",
   "2026-11-14",
-  "2026-11-15"
+  "2026-11-15",
+  "2026-11-16"
  ],
  "instagram": {
   "caption": "",
@@ -518,8 +547,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-15",
-  "text": "A local relief group says RSF fighters have killed 10 civilians in Al-Nuhud, West Kordofan, since Thursday, amid looting and a telecoms blackout. The RSF has not commented."
+  "date": "2026-11-16",
+  "text": "Celebratory gunfire in El Obeid over false reports of Al-Nuhud's capture killed one or two and injured 25 to 45+. At least 18 drone attacks hit Sudan's power grid in two weeks. No official statement reported."
  },
  "summary": [
   {
