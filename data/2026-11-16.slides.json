@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Birbhum, West Bengal",
+   "Man in custody shot dead by police"
+  ],
+  [
+   "El Obeid, Sudan",
+   "Celebratory gunfire kills up to two"
+  ],
+  [
+   "Manila, Philippines",
+   "Hundreds of marchers detained"
+  ],
+  [
+   "Jenin, West Bank",
+   "AFP video journalist detained"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 1,
+   "label": "India · Life & safety",
+   "fig": "5th",
+   "figlab": "such death since May",
+   "place": "Birbhum, West Bengal",
+   "head": "A death in police custody",
+   "bullets": [
+    "Ratan Sheikh was arrested over a constable's shooting.",
+    "He was killed in police firing on 15 Nov.",
+    "Police say he fired at them; no probe reported."
+   ],
+   "src": "Scroll · The Week"
+  },
+  {
+   "n": 6,
+   "label": "Sudan's war",
+   "fig": "1–2",
+   "figlab": "killed",
+   "place": "El Obeid, Sudan",
+   "head": "Gunfire over a false report",
+   "bullets": [
+    "Shots celebrated a false report that the army took Al-Nuhud.",
+    "25 to 45+ people were injured, reports say.",
+    "Accounts differ on who fired; no official statement."
+   ],
+   "src": "Radio Dabanga · Darfur24"
+  },
+  {
+   "n": 8,
+   "label": "World · Assembly",
+   "fig": "209–300",
+   "figlab": "marchers detained",
+   "place": "Metro Manila, Philippines",
+   "head": "Arrests as ASEAN summit opens",
+   "bullets": [
+    "Range is the police and organiser counts.",
+    "12 were hurt in Manila; 22 media workers harassed, union says.",
+    "Police say the rallies had no permit."
+   ],
+   "src": "Philippine Star · Daily Tribune"
+  },
+  {
+   "n": 9,
+   "label": "Palestine",
+   "fig": "1",
+   "figlab": "journalist held",
+   "place": "Burqin, near Jenin",
+   "head": "An AFP contributor detained",
+   "bullets": [
+    "Troops took Mohammad Ateeq in a 1:30am raid, his wife says.",
+    "The military says he is suspected of Hamas ties.",
+    "AFP asks for evidence or his release."
+   ],
+   "src": "AFP · Times of Israel"
+  }
+ ]
+}
