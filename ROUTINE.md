@@ -299,21 +299,26 @@ which also rebuilds the home page and sitemap). See the header of tools/hope.py 
   as `files` so the photos load.
 
 ## STEP 6. Instagram carousel
-Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/hope.json has nothing from the past 14 days).
-- Fonts: Caprasimo (headings) and Figtree (body); tools/slides.py fetches them with npm pack. Ground #f5ead8, text
-  #201e1d, accent #c67139 (accent text #8c491a), sage #e1eecc with #272e1b text for upheld stories and the hope slide.
-  Photos are washed (saturate .6, contrast .85, brightness 1.1). No red anywhere. Keep face-blurring and credit rules.
-- Slide 1 (cover, "threads" from 5 Nov; slides.py picks it): "Where things stand today", the date as the largest
-  element, the first story's washed arch photo, then 4 rows of place name above a one-line headline (max ~45
-  characters). Keep every element inside the middle 860px (x 110–970) so the 3:4 grid crop never cuts text. Footer:
-  "Swipe → · Sources: link in bio" plus the photo's label and author. ("cover_style" in DATE.slides.json still
-  overrides; older styles remain for past dates.)
-- Slides 2–5 (cream, or sage when the item is upheld): kicker = the item's thread name (or the slide label for a
-  one-off), "n / N"; the washed arch photo with its "File photo · YEAR" pill (or, with no photo, the key figure in the
-  arch); the word tag (Lives lost / Right upheld / Assembly / Speech / Detention) and the place; the headline; 2–3 short
-  bullets; "Sources: …" and the photo credit. On Sundays, show Still waiting cases instead (label as kicker).
-- Slide 6 (dark): "Act today", "Whatever your politics", and the 4 actions with sage left borders. Footer:
-  "Non-partisan · Every fact sourced · Full edition: link in bio".
+BIG-NUMBER FORMAT (owner's choice, 16 Nov 2026; replaces the Threads style from that date). 7 slides, 1080×1350 (6
+when data/hope.json has nothing from the past 14 days). Each story is led by ONE huge key figure; the photo is a small
+circle. Older styles stay in tools/slides.py for past dates; "cover_style" in DATE.slides.json still overrides.
+- Fonts: Fraunces (headings and figures) and Inter (text); tools/slides.py fetches them with npm pack. Grounds alternate
+  paper #fffdf7 and ink #111111; sage #e1eecc with #272e1b text for upheld stories and the hope slide. Photos keep the
+  wash. No red anywhere. Keep face-blurring and credit rules.
+- Slide 1 (cover, "numbers"): "Resistance Daily · <Day DD Mon>", "Today in four numbers", then 4 rows: the story's key
+  figure, its place and a one-line headline (max ~45 characters). Everything stays inside x 110–970 (the 3:4 grid
+  crop). Footer: "Swipe → · Sources: link in bio".
+- Slides 2–5 (ink on even slides, paper on odd, sage when the item is upheld): kicker = the item's thread name (or the
+  slide label's first part), "n / N"; the key figure as large as fits on one line; "figlab" under it (what the number
+  counts, a few words); the word tag (Lives lost / Right upheld / Assembly / Speech / Detention) and the place; the
+  headline; 2–3 short bullets, the LAST one the official position (it prints in bold); the photo as a circle with its
+  "File photo · YEAR" label; "Sources: …" and the short photo credit. On Sundays, show Still waiting cases instead.
+- CHOOSE THE NUMBER WITH CARE: the figure is the slide. Pick the one sourced number that shows why the story matters
+  (deaths, people detained, days held, families evicted), give it a plain "figlab", and keep ranges where sources
+  differ ("209–300"). Avoid weak figures like a bare "1" when a stronger sourced number exists in the item; if none
+  exists, "1" with a clear figlab ("journalist held") is fine. Never round up or invent a figure for the slide.
+- Slide 6 (ink): "Act today", "Whatever your politics", and the 4 actions as ruled rows. Footer: "Non-partisan · Every
+  fact sourced · Full edition: link in bio".
 - NEED HOPE (owner's request, 4 Nov 2026): slide 7 (sage) is "Signs of hope": the 3 newest items from
   data/hope.json ("slide_head" in bold, "slide" under it, their sources in the footer, "More signs of hope: link in bio").
   Every cover carries a green "Need hope? · Last slide →" sticker beside the date (option A, approved by the owner).
@@ -328,7 +333,7 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
 - ONE CAPTION (owner's rule, 11 Nov 2026; replaces per-slide captions): every carousel gets ONE short caption. The
   slides carry the stories (number, headline, bullets, official position, sources); the caption only pushes readers to
   the website. Never repeat the slides' text. Daily caption.txt, written into OUT before running slides.py:
-    "<Day DD Mon> · where things stand today"
+    "<Day DD Mon> · today in four numbers"
     one line naming the places, e.g. "Sudan's children, Gaza, Manipur and Karnataka: swipe for today's four stories
     and a sign of hope."
     "Full edition, with a source for every fact: resistancedaily.github.io (link in bio)."
@@ -337,7 +342,7 @@ Threads style (owner's redesign, Nov 2026). 7 slides, 1080×1350 (6 when data/ho
   slides.py checks it (2,200 characters, 5 hashtags) and warns; fix any warning. No per-slide captions, no
   slide-captions.txt, no "caption" or "hope_caption" fields in DATE.slides.json.
 - alt-text.txt: one entry per slide, in order (Slide 1 … Slide 7), each 1–2 plain sentences (about 150–250 characters).
-  Say what the slide shows: for slide 1, the date, the 4 headlines and the "Need hope?" sticker; for slides 2–5, the big
+  Say what the slide shows: for slide 1, the date, the 4 figures with their headlines and the "Need hope?" sticker; for slides 2–5, the big
   number and its label, the person or place, and the key fact, with the official position if the slide has one; for
   slide 6, the 4 actions; for slide 7, the three signs of hope. Use
   only facts that are on the slide. No hashtags, emoji or "image of".

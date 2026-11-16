@@ -28,9 +28,10 @@ root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS = os.path.join(root, "build", "fonts")
 # Threads redesign (Nov 2026): Caprasimo (headings) and Figtree (body). The old family names used across the slide
 # templates are mapped onto them, so every slide type (covers, stories, focus, hope) takes the new type at once.
-PKGS = ["@fontsource/caprasimo@5.2.7", "@fontsource/figtree@5.2.10"]
+PKGS = ["@fontsource/fraunces@5.3.0", "@fontsource/inter@5.3.0"]
 BG, INK, AC, RED, GR = "#f5ead8", "#201e1d", "#c67139", "#201e1d", "#7a8a5e"   # no red: RED is the text colour
 AC_T = "#8c491a"            # accent text on the cream ground
+NB_PAPER, NB_INK = "#fffdf7", "#111111"   # big-number format (16 Nov 2026): paper and ink grounds
 SAGE, SAGE_T = "#e1eecc", "#272e1b"
 WASH = "filter:saturate(.6) contrast(.85) brightness(1.1) opacity(.94)"
 
@@ -47,11 +48,14 @@ def fonts():
     def ff(fam, pkg, w, as_w=None):
         path = sorted(glob.glob(os.path.join(FONTS, f"fontsource-{pkg}-*", "package", "files", f"{pkg}-latin-{w}-normal.woff2")))[-1]
         return f"@font-face{{font-family:'{fam}';font-weight:{as_w or w};src:url('file://{path}') format('woff2')}}"
-    return "".join([ff("Caprasimo", "caprasimo", 400), ff("Figtree", "figtree", 400), ff("Figtree", "figtree", 600),
-                    ff("Figtree", "figtree", 700),
-                    # old names -> new faces
-                    ff("Barlow Condensed", "caprasimo", 400, 800), ff("IBM Plex Sans", "figtree", 400),
-                    ff("IBM Plex Sans", "figtree", 600), ff("IBM Plex Mono", "figtree", 600, 500)])
+    # Big-number format (owner's choice, 16 Nov 2026): Fraunces for headings and numbers, Inter for text. The family
+    # names used by older templates (Caprasimo, Figtree, Barlow Condensed, IBM Plex) map onto the same two faces.
+    return "".join([ff("Fraunces", "fraunces", 700), ff("Fraunces", "fraunces", 800), ff("Inter", "inter", 400),
+                    ff("Inter", "inter", 600), ff("Inter", "inter", 700), ff("Inter", "inter", 800),
+                    ff("Caprasimo", "fraunces", 700, 400), ff("Figtree", "inter", 400), ff("Figtree", "inter", 600),
+                    ff("Figtree", "inter", 700),
+                    ff("Barlow Condensed", "fraunces", 800), ff("IBM Plex Sans", "inter", 400),
+                    ff("IBM Plex Sans", "inter", 600), ff("IBM Plex Mono", "inter", 600, 500)])
 
 
 CSS = f"""
@@ -134,6 +138,24 @@ img{{{WASH}}}
 .st ul{{margin-top:22px;gap:12px}} .st li{{font-size:29px}}
 .st .srcs{{font:400 21px 'Figtree';color:#645c50}}
 .st.up{{background:{SAGE};color:{SAGE_T}}} .st.up .k{{color:#3d472b}} .st.up .arch{{background:#ccdbb2}}
+/* ── Big-number format (owner's choice, 16 Nov 2026) ── one huge figure per story, slides alternate ink and paper,
+   upheld stories on sage, the photo as a small circle. */
+.nb{{padding:80px 90px 70px;font-family:Inter}}
+.nb.paper{{background:{NB_PAPER};color:{NB_INK}}} .nb.ink{{background:{NB_INK};color:{NB_PAPER}}} .nb.up{{background:{SAGE};color:{SAGE_T}}}
+.nb .k{{display:flex;justify-content:space-between;font:700 22px Inter;letter-spacing:.1em;text-transform:uppercase;color:var(--mu)}}
+.nb.paper{{--mu:#6b6b6b}} .nb.ink{{--mu:#a8a8a8}} .nb.up{{--mu:#56633f}}
+.nb .num{{font-family:Fraunces;font-weight:800;line-height:.9;letter-spacing:-.04em;margin-top:64px}}
+.nb .cap{{font:600 40px/1.2 Inter;margin-top:16px;color:var(--mu);max-width:860px}}
+.nb .rule{{height:4px;width:120px;background:currentColor;margin:46px 0 30px}}
+.nb .pl{{font:700 26px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--mu)}}
+.nb .pl b{{font-weight:700;color:inherit;border:2px solid currentColor;border-radius:999px;padding:3px 14px;margin-right:12px;letter-spacing:.04em}}
+.nb h2{{font:700 60px/1.08 Inter;margin-top:12px;max-width:620px;text-transform:none;letter-spacing:-.01em}}
+.nb ul{{margin-top:22px;gap:12px;max-width:600px}} .nb li{{font:400 29px/1.35 Inter;padding-left:26px}}
+.nb li:before{{background:currentColor;width:10px;height:10px;top:15px;border-radius:50%}} .nb li:last-child{{font-weight:700}}
+.nb .circ{{position:absolute;right:80px;bottom:150px;width:270px;text-align:center}}
+.nb .circ img{{width:270px;height:270px;border-radius:50%;object-fit:cover;border:8px solid currentColor;display:block}}
+.nb .circ span{{display:block;font:600 17px Inter;text-transform:uppercase;letter-spacing:.06em;color:var(--mu);margin-top:10px}}
+.nb .srcs{{font:400 19px/1.45 Inter;color:var(--mu);margin-top:auto}}
 """
 
 
@@ -293,7 +315,8 @@ COVER_ROTATION = ["photo", "paper", "signal", "night", "photo", "paper", "sunday
 # Owner's requests: the mosaic cover every day 23–29 Oct, then the photo cover every day 30 Oct–5 Nov,
 # then back to the rotation.
 COVER_PERIODS = [("2026-10-23", "2026-10-29", "mosaic"), ("2026-10-30", "2026-11-04", "photo"),
-                 ("2026-11-05", "2099-12-31", "threads")]   # Threads redesign: one calm cover every day from 5 Nov
+                 ("2026-11-05", "2026-11-15", "threads"),    # Threads redesign: one calm cover every day 5-15 Nov
+                 ("2026-11-16", "2099-12-31", "numbers")]    # Big-number format (owner's choice, 16 Nov 2026)
 TAGLINE = "What happened to people's rights in the last 24 hours. Every fact sourced."
 
 
@@ -309,6 +332,12 @@ def cover_style(dt, sp):
     if period:
         return SUNDAY_LIGHT.get(period, period) if dt.weekday() == 6 else period
     return COVER_ROTATION[dt.weekday()]
+
+
+def fig_px(fig, base, width):
+    """Font size for a key figure: base, or smaller so the figure stays on one line within width px (Fraunces 800
+    figures are about 0.62 em wide)."""
+    return min(base, int(width / (0.62 * max(1, len(fig)))))
 
 
 def cover(dt, sp, by, N):
@@ -337,6 +366,18 @@ def cover(dt, sp, by, N):
         cs = [f'{k + 1}: {ph["credit"].split(" / ")[0]}, {ph["licence"]}, {ph["year"]}' for k, (ph, _) in enumerate(pics) if ph]
         return f'File photos · {" · ".join(cs)}' if cs else ""
 
+    if style == "numbers":
+        # "Today in four numbers": the date, then one row per story: its key figure, place and headline.
+        dd = dt.strftime("%a %d %b").replace(" 0", " ")
+        rows = "".join(f'<div style="display:grid;grid-template-columns:320px 1fr;gap:28px;align-items:center;border-top:3px solid {NB_INK};padding:24px 0">'
+                       f'<div style="font:800 {fig_px(st.get("fig", ""), 110, 300)}px/1 Fraunces;letter-spacing:-.03em">{E(st.get("fig", ""))}</div>'
+                       f'<div><div style="font:700 21px Inter;letter-spacing:.1em;text-transform:uppercase;color:#6b6b6b">{E(pl)}</div>'
+                       f'<div style="font:600 32px/1.2 Inter;margin-top:6px">{E(h)}</div></div></div>'
+                       for st, (pl, h) in zip(sp["stories"], sp["cover"]))
+        return f'''<div class="s" style="background:{NB_PAPER};color:{NB_INK};padding:80px 110px 70px">
+<div style="font:700 22px Inter;letter-spacing:.12em;text-transform:uppercase">Resistance Daily · {E(dd)}</div>
+<div style="font:800 104px/1 Fraunces;margin:30px 0 40px;letter-spacing:-.02em">Today in<br>four numbers</div>{rows}
+<div style="margin-top:auto;padding-top:18px;font:600 20px Inter;color:#6b6b6b;text-transform:uppercase;letter-spacing:.08em">Swipe → · Sources: link in bio</div></div>'''
     if style == "threads":
         # "Where things stand today · Wed 4 Nov": cream ground, washed arch photo of the first story, 4 place rows.
         p = next((pic(st, by) for st in sp["stories"] if pic(st, by) and big_enough(pic(st, by), 600)), None)
@@ -463,7 +504,7 @@ def cover(dt, sp, by, N):
 # "Need hope?" (owner's request, 4 Nov 2026): a green sticker on every daily cover points to the last slide, which
 # lists the latest items from data/hope.json (tools/hope.py). Sticker positions keep it beside the date and inside the
 # middle 860px (x 110-970) that the profile grid shows.
-STICKER_AT = {"threads": (800, 520, 190), "photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
+STICKER_AT = {"numbers": (790, 70, 180), "threads": (800, 520, 190), "photo": (725, 330), "photo-sunday": (725, 330), "night": (735, 160), "sunday": (735, 160), "paper": (765, 262, 200),
               "signal": (765, 175, 200), "mosaic": (760, 330), "ring": (735, 120), "circles": (735, 60)}  # (left, top[, size])
 GREEN_L = SAGE
 
@@ -512,6 +553,42 @@ def hope_slide(items, N):
 <div style="margin-top:auto;border-top:2px solid #b7d6c2;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#3d472b;text-transform:uppercase;letter-spacing:.05em">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
 
 
+def nb_story(st, p, tname, tg, up, k, N):
+    """Big-number story slide (owner's choice, 16 Nov 2026): kicker, the key figure as large as it fits, what it
+    counts, the word tag and place, the headline, the bullets (the last, the official position, in bold), the photo as
+    a small circle with its file-photo label, then sources and the short credit. Slides alternate ink and paper;
+    upheld stories sit on sage."""
+    ground = "up" if up else ("ink" if k % 2 == 0 else "paper")
+    b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
+    circ = (f'<div class="circ"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}"><span>{E(label(p))}</span></div>'
+            if p else "")
+    wide = "" if p else ' style="max-width:860px"'
+    tag = f"<b>{E(tg[0])}</b>" if tg else ""
+    return f'''<div class="s nb {ground}"><div class="k"><span>{E(tname)}</span><span>{k} / {N}</span></div>
+<div class="num" style="font-size:{fig_px(st["fig"], 320, 880)}px">{E(st["fig"])}</div><div class="cap">{E(st["figlab"])}</div>
+<div class="rule"></div><div class="pl">{tag}{E(st["place"])}</div><h2{wide}>{E(st["head"])}</h2><ul{wide}>{b}</ul>{circ}
+<div class="srcs">Sources: {E(st["src"])}{"<br>" + E(credit(p)) if p else ""}</div></div>'''
+
+
+def nb_act(acts, n, N):
+    rows = "".join(f'<div style="border-top:3px solid {NB_PAPER};padding:22px 0"><b style="font:800 50px/1.05 Fraunces;display:block">{E(t)}</b>'
+                   f'<span style="font:400 28px/1.35 Inter;color:#cfcfcf;display:block;margin-top:6px">{E(s)}</span></div>' for t, s in acts)
+    return f'''<div class="s nb ink"><div class="k"><span>Act today</span><span>{n} / {N}</span></div>
+<div style="font:800 150px/.9 Fraunces;letter-spacing:-.03em;margin-top:60px">Act today</div>
+<div style="font:600 40px Inter;color:#a8a8a8;margin:16px 0 40px">Whatever your politics</div>{rows}
+<div class="srcs" style="text-transform:uppercase;letter-spacing:.06em;font-weight:600">Non-partisan · Every fact sourced · Full edition: link in bio</div></div>'''
+
+
+def nb_hope(items, N):
+    rows = "".join(f'<div style="border-top:3px solid {SAGE_T};padding:22px 0"><b style="font:800 46px/1.05 Fraunces;display:block">{E(i.get("slide_head") or i["fig"])}</b>'
+                   f'<span style="font:400 28px/1.35 Inter;display:block;margin-top:6px">{E(i["slide"])}</span></div>' for i in items)
+    srcs = " · ".join(dict.fromkeys(n for i in items for n, _ in i["src"]))
+    return f'''<div class="s nb up"><div class="k"><span>Need hope?</span><span>{N} / {N}</span></div>
+<div style="font:800 150px/.9 Fraunces;letter-spacing:-.03em;margin-top:60px">Signs of hope</div>
+<div style="font:600 36px Inter;color:#56633f;margin:16px 0 40px">Rights upheld lately. Every fact sourced.</div>{rows}
+<div class="srcs" style="text-transform:uppercase;letter-spacing:.06em;font-weight:600">More signs of hope: link in bio · Sources: {E(srcs)}</div></div>'''
+
+
 def daily(date, out):
     d = json.load(open(os.path.join(root, "data", f"{date}.json")))
     sp = json.load(open(os.path.join(root, "data", f"{date}.slides.json")))
@@ -523,10 +600,11 @@ def daily(date, out):
     if hope:  # the sticker sits inside the cover's outer box (its last closing tag)
         c = c[:c.rstrip().rfind("</div>")] + sticker(cover_style(dt, sp)) + "</div>"
     slides = [c]
+    style = cover_style(dt, sp)
     for k, st in enumerate(sp["stories"], 2):
         b = "".join(f"<li>{E(x)}</li>" for x in st["bullets"])
         p = pic(st, by)
-        if p and not big_enough(p):
+        if p and not big_enough(p, 400 if style == "numbers" else 900):   # a circle needs far fewer pixels
             print(f"note: photo for item {st['n']} is too small for a slide; showing its key figure instead", file=sys.stderr)
             p = None
         it = by.get(st.get("n"), {})
@@ -541,6 +619,9 @@ def daily(date, out):
             tname = regs[s_]["name"] if s_ in regs else st["label"].split("·")[0].strip()
             tg = T.tag(it, date)
             up = T.upheld(it, date)
+        if style == "numbers":
+            slides.append(nb_story(st, p, tname, tg, up, k, N))
+            continue
         cls = {"tag tag-accent-2": "tag up", "tag tag-accent": "tag acc"}.get(tg[1], "tag") if tg else "tag"
         tags = (f'<span class="{cls}">{E(tg[0])}</span>' if tg else "") + f'<span>{E(st["place"])}</span>'
         arch = (f'<div class="arch"><img src="{E(src_url(p))}" alt="" style="object-position:{E(p.get("pos", "center"))}"><span class="ptag">{E(label(p))}</span></div>'
@@ -549,11 +630,17 @@ def daily(date, out):
 {arch}<div class="tags">{tags}</div><h2>{E(st["head"])}</h2><ul>{b}</ul>
 <div class="srcs">Sources: {E(st["src"])}{"<br>" + E(credit(p)) if p else ""}</div></div>''')
     acts = "".join(f'<div class="act"><b>{E(t)}</b><span>{E(s)}</span></div>' for t, s in d["acts"])
-    slides.append(f'''<div class="s dark">{top("Act today", N - 1 if hope else N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
+    if style == "numbers":
+        slides.append(nb_act(d["acts"], N - 1 if hope else N, N))
+        if hope:
+            slides.append(nb_hope(hope, N))
+        acts = None
+    if acts is not None:
+      slides.append(f'''<div class="s dark">{top("Act today", N - 1 if hope else N, N)}<div class="D" style="font-size:150px;margin-top:60px">Act today</div>
 <div class="D" style="font-size:64px;color:{AC};margin-top:10px">Whatever your politics</div><div style="margin-top:30px">{acts}</div>
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 24px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced · Full edition: link in bio</div></div>''')
-    if hope:
-        slides.append(hope_slide(hope, N))
+      if hope:
+          slides.append(hope_slide(hope, N))
     for p in render(slides, out, date):
         print(p)
     # One caption per carousel (owner's rule, 11 Nov 2026): the routine writes OUTDIR/caption.txt first; it is checked
@@ -614,7 +701,7 @@ def focus(slug, out, update=False):
 {f'<p style="font-size:32px;line-height:1.4;color:#b8bcc2;margin-top:44px"><b style="font:500 22px IBM Plex Mono;text-transform:uppercase;letter-spacing:.06em;color:#9ba1aa;display:block;margin-bottom:8px">Official position</b>{E(off)}</p>' if off else ''}
 <div style="margin-top:auto;border-top:2px solid #333840;padding-top:20px;font:500 22px 'IBM Plex Mono';color:#9ba1aa;text-transform:uppercase;letter-spacing:.04em">Non-partisan · Every fact sourced<br><span style="text-transform:none">{E(label(ep))} · {E(credit(ep))}</span></div></div></div>''')
     if hope:
-        slides.append(hope_slide(hope, N))
+        slides.append(nb_hope(hope, N))   # big-number format's hope slide (16 Nov 2026)
     for p in render(slides, out, f"focus-{slug}"):
         print(p)
     # One caption per carousel (owner's rule, 11 Nov 2026): "instagram": {"caption"} when written by hand, otherwise
