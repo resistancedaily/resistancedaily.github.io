@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -736,6 +736,89 @@
     "changes": "resized, faces blurred"
    },
    "edition": "2026-11-16#11"
+  },
+  {
+   "id": "bengaluru-citizenship-hearing",
+   "date": "2026-11-16",
+   "kind": "Courts",
+   "rights": [
+    "Due process & detention"
+   ],
+   "place": "Bengaluru, Karnataka",
+   "fig": "8 mo",
+   "figcap": "since confinement order",
+   "headline": "Court orders fair hearing before any deportation",
+   "text": "The Karnataka High Court said Abdul Rahim, confined under a 5 March order, cannot be deported until his claim of Indian citizenship is fairly heard. Authorities call his papers fraudulent; nationality is not yet decided.",
+   "slide_head": "Hearing before deportation",
+   "slide": "Karnataka court: citizenship claim must be heard first",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-asks-authorities-to-determine-nationality-of-man-claiming-to-be-indian-before-deporting-him-to-bangladesh/article71708429.ece"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019. File photo.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "edition": "2026-11-17#4"
+  },
+  {
+   "id": "karnal-police-suspended",
+   "date": "2026-11-16",
+   "kind": "Accountability",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "place": "Karnal, Haryana",
+   "fig": "6",
+   "figcap": "police suspended",
+   "headline": "Six police suspended, booked over custody death",
+   "text": "Six Karnal police, including a CIA-2 in-charge, were suspended and booked for murder after Jitender Rana, 32, died in their custody, a DSP said. No arrests have been reported.",
+   "slide_head": "Six police suspended",
+   "slide": "Booked for murder after a death in custody in Karnal",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/haryana-karnal-jitender-rana-custodial-death-6-cops-suspended-10965950/"
+    ]
+   ],
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ],
+   "edition": "2026-11-17#2"
+  },
+  {
+   "id": "us-student-visa-caps-struck",
+   "date": "2026-11-16",
+   "kind": "Courts",
+   "rights": [
+    "Movement",
+    "Expression"
+   ],
+   "place": "Boston, United States",
+   "fig": "240",
+   "figcap": "day cap on journalists struck",
+   "headline": "US judge strikes down visa caps for students, journalists",
+   "text": "A Boston federal judge struck down a proposed rule capping foreign students' stays at four years and foreign journalists' at 240 days, calling it arbitrary and contrary to law. DHS proposed the rule in July.",
+   "slide_head": "Visa caps struck down",
+   "slide": "US court blocks limits on students' and journalists' stays",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/international/us-federal-court-strikes-down-fixed-terms-for-student-exchange-visas/article71710228.ece"
+    ]
+   ]
   }
  ]
 }

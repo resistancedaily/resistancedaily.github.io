@@ -1,0 +1,79 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 93.97,
+   "lat": 25.05,
+   "sev": "orange",
+   "label": "Manipur"
+  },
+  {
+   "n": 2,
+   "lon": 76.99,
+   "lat": 29.69,
+   "sev": "grey",
+   "label": "Karnal"
+  },
+  {
+   "n": 3,
+   "lon": 78.47,
+   "lat": 17.36,
+   "sev": "grey",
+   "label": "Hyderabad"
+  },
+  {
+   "n": 4,
+   "lon": 77.59,
+   "lat": 12.98,
+   "sev": "grey",
+   "label": "Bengaluru"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 29.25,
+   "lat": 12.35,
+   "sev": "red",
+   "label": "West Kordofan",
+   "dx": 0,
+   "dy": 0,
+   "left": true
+  },
+  {
+   "n": 6,
+   "lon": 35.53,
+   "lat": 47.7,
+   "sev": "red",
+   "label": "Zaporizhzhia"
+  },
+  {
+   "n": 7,
+   "lon": 50.58,
+   "lat": 26.22,
+   "sev": "orange",
+   "label": "Bahrain"
+  },
+  {
+   "n": 8,
+   "lon": 30.06,
+   "lat": -1.95,
+   "sev": "orange",
+   "label": "EU–Rwanda"
+  },
+  {
+   "n": 9,
+   "lon": 35.1,
+   "lat": 31.53,
+   "sev": "orange",
+   "label": "Palestine"
+  },
+  {
+   "n": 10,
+   "lon": 43.62,
+   "lat": 12.98,
+   "sev": "orange",
+   "label": "Yemen"
+  }
+ ]
+}

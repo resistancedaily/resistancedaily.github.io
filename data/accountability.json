@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "figures": [
   {
    "fig": "170",
@@ -758,7 +758,7 @@
    "power": "Police",
    "head": "Lorry driver dies inside a police station",
    "text": "R Balakrishnan, 42, a lorry driver held overnight for questioning over missing cardamom, was found hanging in the station toilet on 14 November. His family rejects the police account and alleges he was beaten.",
-   "official": "Police say he died by suicide and released a CCTV clip; the family calls it selective. Three police were suspended; the CB-CID has summoned them and a judicial magistrate held an inquiry.",
+   "official": "Police say he died by suicide and released a CCTV clip; the family calls it selective. Three police were suspended; the CB-CID registered a custodial death case without naming any accused and summoned the three, and a judicial magistrate held an inquiry. The post-mortem recorded a ligature mark and five haemorrhagic injuries on his back.",
    "steps": [
     {
      "step": "Officers suspended",
@@ -784,8 +784,10 @@
      "note": "CB-CID summoned the three suspended police"
     },
     {
-     "step": "FIR against police",
-     "status": "unknown"
+     "step": "Custodial death case",
+     "status": "done",
+     "date": "2026-11-16",
+     "note": "CB-CID case; no police named as accused yet"
     },
     {
      "step": "Arrest",
@@ -820,9 +822,13 @@
     [
      "Deccan Chronicle (PTI)",
      "https://www.deccanchronicle.com/southern-states/kerala/cb-cid-begins-probe-into-lorry-drivers-death-at-madurai-police-station-2004608"
+    ],
+    [
+     "The South First",
+     "https://thesouthfirst.com/tamilnadu/cb-cid-registers-custodial-death-case-over-balakrishnans-death-in-madurai/"
     ]
    ],
-   "checked": "2026-11-16"
+   "checked": "2026-11-17"
   },
   {
    "id": "nuh-encounter",
@@ -868,6 +874,58 @@
     ]
    ],
    "checked": "2026-11-16"
+  },
+  {
+   "id": "karnal-cia-custody",
+   "kind": "Custody",
+   "state": "Haryana",
+   "place": "Bijna village, Karnal district, Haryana",
+   "date": "2026-11-13",
+   "power": "Police",
+   "head": "Man dies in police custody; six police suspended",
+   "text": "Jitender Rana, 32, died in the custody of Karnal police's CIA-2 unit after officers took him from his home on the night of 13 November for questioning, his family says. The family alleges he was beaten and seeks a CBI probe.",
+   "official": "A DSP said six police, including the CIA-2 in-charge, were suspended and booked for murder and wrongful confinement; the administration accepted the family's demands on the forensic exam and probe. No police account of the death was reported.",
+   "steps": [
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "date": "2026-11-16",
+     "note": "six police"
+    },
+    {
+     "step": "FIR against police",
+     "status": "done",
+     "date": "2026-11-16",
+     "note": "murder, wrongful confinement"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/haryana-karnal-jitender-rana-custodial-death-6-cops-suspended-10965950/"
+    ],
+    [
+     "Amar Ujala (Hindi)",
+     "https://www.amarujala.com/haryana/karnal/youth-from-bijna-village-dies-in-cia-2-custody-in-karnal-family-alleges-physical-assault-2026-11-14"
+    ],
+    [
+     "Amar Ujala (Hindi)",
+     "https://www.amarujala.com/haryana/rohtak/death-of-a-youth-in-police-custody-in-karnal-family-members-remain-firm-on-their-demand-for-an-fir-2026-11-15"
+    ]
+   ],
+   "checked": "2026-11-17"
   }
  ]
 }

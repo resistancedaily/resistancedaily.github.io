@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-16",
+ "updated": "2026-11-17",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -461,10 +461,24 @@
      "https://www.dabangasudan.org/en/all-news/article/drone-attacks-deepen-suffering-of-women-and-children-sudan-activists-warn"
     ]
    ]
+  },
+  {
+   "date": "2026-11-15",
+   "text": "A strike on Abu Qalb in Abu Zabad locality, West Kordofan, killed at least 15 civilians, including four children on a football field, the Kordofan Human Rights Observatory said; the Emergency Lawyers group counted 13 women and children. The RSF-aligned Tasees alliance reported nine deaths. A spokesman for army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/four-children-among-15-civilians-killed-in-west-kordofan-drone-strike"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment.",
+  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment. On the Abu Qalb strike of 15 November, a spokesman for the army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan.",
   "src": [
    [
     "Al Jazeera",
@@ -497,15 +511,19 @@
    [
     "CPJ",
     "https://cpj.org/2026/11/sudan-amends-anti-state-law-to-target-online-and-media-publishing/"
+   ],
+   [
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group"
    ]
   ],
   "points": [
    "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan.",
-   "The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale.",
-   "The RSF and its allies have formed a parallel government in areas they hold.",
+   "The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale. The RSF and its allies have formed a parallel government in areas they hold.",
    "The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
    "Neither the RSF nor the army responded to Al Jazeera on the sexual-violence findings; both have previously denied such abuses.",
-   "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. No RSF response was reported on the 2–3 November strikes."
+   "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. No RSF response was reported on the 2–3 November strikes.",
+   "On the 15 November Abu Qalb strike, a spokesman for army-allied Special Operations Forces said his troops \"eliminated\" RSF positions in West Kordofan; the army made no statement on civilian deaths in the reports."
   ]
  },
  "editions": [
@@ -530,7 +548,8 @@
   "2026-11-13",
   "2026-11-14",
   "2026-11-15",
-  "2026-11-16"
+  "2026-11-16",
+  "2026-11-17"
  ],
  "instagram": {
   "caption": "",
@@ -547,8 +566,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-16",
-  "text": "Celebratory gunfire in El Obeid over false reports of Al-Nuhud's capture killed one or two and injured 25 to 45+. At least 18 drone attacks hit Sudan's power grid in two weeks. No official statement reported."
+  "date": "2026-11-17",
+  "text": "A strike on Abu Qalb, West Kordofan, on 15 Nov killed 13 to 15 civilians, including four children, rights groups say. An army-allied spokesman said his troops hit RSF positions."
  },
  "summary": [
   {

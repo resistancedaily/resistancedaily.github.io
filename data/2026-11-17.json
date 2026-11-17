@@ -1,0 +1,436 @@
+{
+ "date": "2026-11-17",
+ "date_long": "Tue 17 Nov 2026",
+ "date_short": "Tue 17 Nov",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-17",
+ "items": [
+  {
+   "region": "india",
+   "place": "Kangpokpi district and Imphal, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "thread": "manipur",
+   "fig": "187",
+   "figcap": "days to burial",
+   "headline": "Six Naga men buried after 187 days",
+   "text": "Families buried six Liangmai Naga men in Kangpokpi on 16 Nov, 187 days after their abduction, after official assurances of justice. Police fired tear gas at shutdown supporters in Imphal; no injuries reported.",
+   "src": [
+    [
+     "EastMojo",
+     "https://eastmojo.com/manipur/2026/11/16/manipur-after-187-days-families-receive-bodies-of-six-naga-men-for-burial/"
+    ],
+    [
+     "EastMojo",
+     "https://eastmojo.com/manipur/2026/11/16/manipur-six-naga-men-laid-to-rest-after-six-months/"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/manipur-strike-naga-civilians-killing-10965958/"
+    ]
+   ],
+   "lon": 93.97,
+   "lat": 25.05,
+   "photo": {
+    "src": "images/2026-11-11/kangpokpi.webp",
+    "alt": "Green paddy fields below forested hills under a cloudy sky.",
+    "caption": "Paddy fields and hills around Kalapahar, Kangpokpi district, in 2021. File photo of the district.",
+    "credit": "Sunil Chhetry / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Green_surrounding_hills_of_Kalapahar.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "cropped (watermark removed)"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Bijna village, Karnal district, Haryana",
+   "short": "Karnal",
+   "rights": [
+    "Life & safety",
+    "Due process & detention",
+    "Accountability Watch"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "6",
+   "figcap": "police suspended",
+   "headline": "Six police suspended over Karnal custody death",
+   "text": "Jitender Rana, 32, died in CIA-2 custody after police took him from home on 13 Nov, his family says. A DSP confirmed six police were suspended and booked for murder; no arrests reported.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/haryana-karnal-jitender-rana-custodial-death-6-cops-suspended-10965950/"
+    ],
+    [
+     "Amar Ujala (Hindi)",
+     "https://www.amarujala.com/haryana/karnal/youth-from-bijna-village-dies-in-cia-2-custody-in-karnal-family-alleges-physical-assault-2026-11-14"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Amar Ujala",
+     "https://www.amarujala.com/haryana/karnal/youth-from-bijna-village-dies-in-cia-2-custody-in-karnal-family-alleges-physical-assault-2026-11-14"
+    ]
+   ],
+   "lon": 76.99,
+   "lat": 29.69,
+   "photo": {
+    "src": "images/2026-11-17/karnal-road.webp",
+    "alt": "A road junction seen from above, with white cars at a crossing, traffic lights, trees and two men walking.",
+    "caption": "A road junction in Karnal, in 2020. File photo of the city.",
+    "credit": "Ultimateoutsider / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnal_road.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped, straightened"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Hyderabad and Adilabad district, Telangana",
+   "short": "Hyderabad",
+   "rights": [
+    "Expression",
+    "Assembly",
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "fig": "7 hrs",
+   "figcap": "held, no FIR",
+   "headline": "Student leaders held overnight before Israeli tech event",
+   "text": "Police detained two SIO student leaders in Hyderabad on 15 Nov, and an activist in Adilabad, before T-Hub hosted 20 Israeli firms. Police called it preventive arrest; the two were freed after about seven hours.",
+   "src": [
+    [
+     "The South First",
+     "https://thesouthfirst.com/telangana/hrf-condemns-detention-of-students-civil-rights-leaders-ahead-of-t-hubs-meet-with-israeli-firms/"
+    ],
+    [
+     "Clarion India",
+     "https://clarionindia.net/sio-apcr-activists-held-in-hyderabad-ahead-of-t-hub-event-with-israeli-firms/"
+    ]
+   ],
+   "lon": 78.47,
+   "lat": 17.36,
+   "photo": {
+    "src": "images/2026-11-17/hyderabad-old-city.webp",
+    "alt": "An old stone fountain at a junction, with a tall arched gateway and shopfronts on a street behind.",
+    "caption": "A street in Hyderabad's Old City leading to Charminar, in 2020. File photo of the area.",
+    "credit": "Ashok Vootla / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Road_leading_to_Charminar.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "8 mo",
+   "figcap": "since confinement order",
+   "headline": "Court: hear citizenship claim before any deportation",
+   "text": "The Karnataka High Court barred deporting Abdul Rahim, held at a Bengaluru centre under a 5 March order, until his claim of Indian citizenship is fairly heard. Authorities say his documents are fraudulent.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-asks-authorities-to-determine-nationality-of-man-claiming-to-be-indian-before-deporting-him-to-bangladesh/article71708429.ece"
+    ]
+   ],
+   "lon": 77.59,
+   "lat": 12.98,
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019. File photo.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Abu Qalb, Abu Zabad locality, West Kordofan, Sudan",
+   "short": "West Kordofan",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "fig": "13–15",
+   "figcap": "civilians killed",
+   "headline": "Strike on Abu Qalb kills up to 15",
+   "text": "A strike on Abu Qalb, West Kordofan, on 15 Nov killed 13 to 15 civilians, including four children, rights groups say. An army-allied spokesman said his forces hit RSF positions in the area.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/four-children-among-15-civilians-killed-in-west-kordofan-drone-strike"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group"
+    ]
+   ],
+   "lon": 29.25,
+   "lat": 12.35,
+   "map": {
+    "dx": 0,
+    "dy": 0,
+    "left": true
+   },
+   "photo": {
+    "src": "images/2026-11-17/west-kordofan-muglad.webp",
+    "alt": "A wide dirt street at sunset with low buildings, trees, a white pickup truck and a few people walking.",
+    "caption": "A street in Muglad, West Kordofan, in 2011. File photo of the state.",
+    "credit": "Julia Joerin / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Muglad_in_front_of_ICRC_office_2011.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Komyshuvakha, Zaporizhzhia region, Ukraine",
+   "short": "Zaporizhzhia",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "72",
+   "figcap": "killed",
+   "headline": "Komyshuvakha bombing toll rises to 72",
+   "text": "Search work has ended at the Komyshuvakha school-turned-aid centre, hit by aerial bombs on 2 Nov; 72 people died, Ukraine's interior minister said, up from 55. Russia says it targeted military units.",
+   "src": [
+    [
+     "Ukrinform",
+     "https://www.ukrinform.net/rubric-ato/4185328-search-and-rescue-operations-completed-in-komyshuvakha-death-toll-rises-to-72.html"
+    ],
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c65ynez5y599o"
+    ]
+   ],
+   "lon": 35.53,
+   "lat": 47.7,
+   "photo": {
+    "src": "images/2026-11-04/komyshuvakha.webp",
+    "alt": "A single-storey public building with a red roof and flags, behind a fence and a road.",
+    "caption": "The public services centre in Komyshuvakha, Zaporizhzhia region, in 2025. File photo.",
+    "credit": "Вадим Балачук / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:ЦНАП,_селище_Комишуваха.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Manama, Bahrain",
+   "short": "Bahrain",
+   "rights": [
+    "Expression",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "64",
+   "figcap": "life sentences",
+   "headline": "Bahrain court gives 64 Shias life terms",
+   "text": "A Bahraini court sentenced 64 Shias, 57 of them clerics, to life on terror charges on 16 Nov, and five others to 15 years, a rights group says. Authorities deny targeting citizens by religion.",
+   "src": [
+    [
+     "The Hindu (AFP)",
+     "https://www.thehindu.com/news/international/bahrain-sentences-64-shias-mostly-clerics-to-life-on-terror-charges-rights-group/article71707395.ece"
+    ]
+   ],
+   "lon": 50.58,
+   "lat": 26.22,
+   "photo": {
+    "src": "images/2026-11-17/manama.webp",
+    "alt": "Glass office towers behind a busy road lined with parked cars and a strip of grass.",
+    "caption": "Office towers in Manama, Bahrain, in 2020. File photo of the city.",
+    "credit": "Zairon / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Manama_Manama_Skyline_04.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Kigali, Rwanda (plan by five EU states)",
+   "short": "EU–Rwanda",
+   "rights": [
+    "Migration",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "100",
+   "figcap": "people in first pilot",
+   "headline": "Five EU states plan Rwanda deportation centre",
+   "text": "Germany, Austria, the Netherlands, Denmark and Greece plan to send rejected asylum seekers to Rwanda, about 100 at first, from next year. 47 groups urged them to drop it; Rwanda promises independent monitoring.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/16/five-eu-countries-announce-plan-to-send-rejected-asylum-seekers-to-rwanda"
+    ],
+    [
+     "The Guardian",
+     "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda"
+    ]
+   ],
+   "lon": 30.06,
+   "lat": -1.95,
+   "photo": {
+    "src": "images/2026-11-17/kigali-street.webp",
+    "alt": "A quiet paved road with a pavement, young trees and a grass verge, with factory buildings on a hill behind.",
+    "caption": "A street in an industrial area of Kigali, Rwanda, in 2024. File photo of the city.",
+    "credit": "Rachelboo2 / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kigali_street.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Gaza and the West Bank",
+   "short": "Palestine",
+   "rights": [
+    "Privacy",
+    "Movement"
+   ],
+   "sev": "orange",
+   "thread": "palestine",
+   "focus": "palestine",
+   "fig": "3.5M",
+   "figcap": "photos uploaded",
+   "headline": "Israeli military ran Palestinian photos through Amazon tool",
+   "text": "Israel's military uploaded 3.5 million photos to Amazon's cloud in early 2024 to use its facial recognition on Palestinians, leaked documents show, the Guardian reports. The military declined to comment; AWS cites customer privacy.",
+   "src": [
+    [
+     "The Guardian",
+     "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians"
+    ]
+   ],
+   "lon": 35.1,
+   "lat": 31.53,
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, in 2015. File photo; the Guardian report does not say where the photos were taken.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Kharaz refugee camp, Lahj governorate, Yemen",
+   "short": "Yemen",
+   "rights": [
+    "Life & safety",
+    "Migration"
+   ],
+   "sev": "orange",
+   "fig": "9,600",
+   "figcap": "refugees at risk",
+   "headline": "Fighting reaches Yemen's Kharaz refugee camp",
+   "text": "UNHCR says clashes have reached Kharaz camp in Lahj, putting some 9,600 refugees at risk, and hundreds of refugee families have fled the fighting. It urged all parties to respect the camp's civilian character.",
+   "src": [
+    [
+     "UNHCR via ReliefWeb",
+     "https://reliefweb.int/report/yemen/unhcr-concerned-reports-clashes-yemens-kharaz-refugee-camp"
+    ]
+   ],
+   "lon": 43.62,
+   "lat": 12.98,
+   "photo": {
+    "src": "images/2026-11-17/lahj-al-hawtah.webp",
+    "alt": "A white fountain ringed by columns and lamps in front of a tall old stone palace under a blue sky.",
+    "caption": "Al-Hawtah, the capital of Lahj governorate, in 2019. File photo of the governorate.",
+    "credit": "وافي العياضي / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Al-Hawtah_Lahj.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 10
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "A strike on Abu Qalb, West Kordofan, killed 13 to 15 civilians, including four children, rights groups say; an army-allied spokesman says his forces hit RSF positions.",
+   "src": "images/2026-11-17/west-kordofan-muglad.webp",
+   "alt": "A wide dirt street at sunset with low buildings, trees, a white pickup truck and a few people walking.",
+   "photos": 4
+  }
+ ]
+}
