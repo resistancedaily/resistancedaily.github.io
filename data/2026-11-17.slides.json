@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "West Kordofan, Sudan",
+   "Strike on Abu Qalb kills up to 15"
+  ],
+  [
+   "Kangpokpi, Manipur",
+   "Six Naga men buried after 187 days"
+  ],
+  [
+   "Komyshuvakha, Ukraine",
+   "Bombing toll rises to 72"
+  ],
+  [
+   "Karnal, Haryana",
+   "Six police suspended over custody death"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 5,
+   "label": "Sudan's war",
+   "fig": "13–15",
+   "figlab": "civilians killed",
+   "place": "Abu Qalb, West Kordofan",
+   "head": "A strike on a village",
+   "bullets": [
+    "Four children were killed on a football field, a rights group says.",
+    "Homes were destroyed; the RSF-aligned alliance counts nine dead.",
+    "An army-allied spokesman says his forces hit RSF positions."
+   ],
+   "src": "Radio Dabanga · Al Jazeera"
+  },
+  {
+   "n": 1,
+   "label": "Manipur",
+   "fig": "187",
+   "figlab": "days until burial",
+   "place": "Kangpokpi, Manipur",
+   "head": "Six Naga men laid to rest",
+   "bullets": [
+    "They were abducted on 13 May; bodies found on 10 June.",
+    "Police fired tear gas at shutdown supporters in Imphal; no injuries.",
+    "Families accepted the bodies after official assurances of justice."
+   ],
+   "src": "EastMojo · Indian Express"
+  },
+  {
+   "n": 6,
+   "label": "World · Life & safety",
+   "fig": "72",
+   "figlab": "people killed",
+   "place": "Komyshuvakha, Ukraine",
+   "head": "Search ends at a bombed aid centre",
+   "bullets": [
+    "Aerial bombs hit a school used for aid on 2 Nov.",
+    "Ukraine's interior minister says 72 died, up from 55.",
+    "Russia says it targeted military units."
+   ],
+   "src": "Ukrinform · BBC"
+  },
+  {
+   "n": 2,
+   "label": "Accountability Watch",
+   "fig": "6",
+   "figlab": "police suspended",
+   "place": "Karnal, Haryana",
+   "head": "Booked for murder after a custody death",
+   "bullets": [
+    "Jitender Rana, 32, died after police took him from home, family says.",
+    "Six police were booked for murder and wrongful confinement.",
+    "A DSP confirmed the suspensions; no arrests reported."
+   ],
+   "src": "Indian Express · Amar Ujala"
+  }
+ ]
+}
