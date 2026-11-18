@@ -3,7 +3,7 @@
  "kicker": "Focus · India and the world",
  "title": "Who decides what you see online",
  "dek": "This month India's IT ministry asked Meta to change what Facebook and Instagram recommend about protests, and posts covering them were blocked. Governments and the companies themselves have done this before.",
- "updated": "2026-11-07",
+ "updated": "2026-11-18",
  "rights": [
   "Expression",
   "Assembly"
@@ -286,6 +286,16 @@
    },
    "fig": "0",
    "figcap": "accounts removed"
+  },
+  {
+   "date": "2026-11-17",
+   "text": "Keralam's home minister told the Legislative Assembly that 15,627 social media posts or links were taken down in the first six months of the new state government, through removal requests sent on the Centre's Sahyog portal under the IT Act. Police received 4,201 complaints and began legal action in 3,472 cases. The government said the content was fabricated or manipulated, including morphed images of ministers.",
+   "src": [
+    [
+     "The South First",
+     "https://thesouthfirst.com/keralam/over-15600-social-media-posts-taken-down-in-six-months-of-udf-rule/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -314,7 +324,8 @@
  "editions": [
   "2026-10-20",
   "2026-11-06",
-  "2026-11-07"
+  "2026-11-07",
+  "2026-11-18"
  ],
  "instagram": {
   "hashtags": [
@@ -371,7 +382,7 @@
  ],
  "short": "Who decides online",
  "whats_new": {
-  "date": "2026-11-07",
-  "text": "X told the Delhi High Court on 6 Nov an imposter, not Delhi Police, sent the notices to remove the IFF and SFLC accounts; the accounts stay and the case was closed. Police did not comment on record."
+  "date": "2026-11-18",
+  "text": "Keralam's home minister told the Assembly 15,627 posts or links were taken down in six months via the Sahyog portal, with 3,472 cases. He said the content was fabricated or manipulated."
  }
 }

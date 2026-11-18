@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "Israel's military ran 3.5 million photos of Palestinians through Amazon's facial recognition, the Guardian reports. Gaza's health ministry counts 1,600+ killed since the ceasefire.",
- "updated": "2026-11-17",
+ "dek": "The Board of Peace warns Gaza's ceasefire may collapse, citing Israeli limits on winter supplies. Gaza's health ministry counts 1,600+ killed since the truce.",
+ "updated": "2026-11-18",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -474,6 +474,16 @@
      "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians"
     ]
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "text": "The US-backed Board of Peace told the UN Security Council that the October 2025 ceasefire may be near collapse without immediate steps. It said Israel's restrictions on supplies and equipment have hindered winter preparation, that Israel has blocked the interim technocratic administration, and that both Israel and Hamas have fallen well short of their commitments. No Israeli or Hamas response was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action"
+    ]
+   ]
   }
  ],
  "official": {
@@ -564,11 +574,12 @@
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
-  "2026-11-17"
+  "2026-11-17",
+  "2026-11-18"
  ],
  "whats_new": {
-  "date": "2026-11-17",
-  "text": "Israel's military uploaded 3.5 million photos to Amazon's cloud in 2024 to run facial recognition on Palestinians, the Guardian reports. The IDF declined to comment."
+  "date": "2026-11-18",
+  "text": "The Board of Peace told the UN Security Council Gaza's ceasefire may collapse, citing Israeli limits on winter supplies and both sides' unmet commitments. No Israeli or Hamas response was reported."
  },
  "instagram": {
   "hashtags": [

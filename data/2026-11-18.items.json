@@ -1,0 +1,69 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.21,
+   "lat": 28.63,
+   "sev": "grey",
+   "label": "Delhi"
+  },
+  {
+   "n": 2,
+   "lon": 76.95,
+   "lat": 8.5,
+   "sev": "grey",
+   "label": "Keralam"
+  },
+  {
+   "n": 3,
+   "lon": 81.85,
+   "lat": 25.45,
+   "sev": "grey",
+   "label": "Prayagraj"
+  }
+ ],
+ "world": [
+  {
+   "n": 4,
+   "lon": 30.22,
+   "lat": 13.18,
+   "sev": "red",
+   "label": "Sudan"
+  },
+  {
+   "n": 5,
+   "lon": 30.52,
+   "lat": 50.45,
+   "sev": "red",
+   "label": "Ukraine"
+  },
+  {
+   "n": 6,
+   "lon": -72.34,
+   "lat": 18.54,
+   "sev": "orange",
+   "label": "Haiti"
+  },
+  {
+   "n": 7,
+   "lon": 121.04,
+   "lat": 14.41,
+   "sev": "orange",
+   "label": "Manila"
+  },
+  {
+   "n": 8,
+   "lon": 34.35,
+   "lat": 31.42,
+   "sev": "orange",
+   "label": "Gaza"
+  },
+  {
+   "n": 9,
+   "lon": 2.35,
+   "lat": 48.86,
+   "sev": "grey",
+   "label": "France"
+  }
+ ]
+}

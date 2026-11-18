@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -475,6 +475,20 @@
      "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group"
     ]
    ]
+  },
+  {
+   "date": "2026-11-17",
+   "text": "The UN human rights office said it verified at least 2,230 civilian deaths in Sudan from January to October 2026, more than 1,630 of them in drone strikes; over two-thirds were in Kordofan and most of the rest in Darfur. It counted 29 RSF-attributed drone strikes on power and fuel sites in 11 states from 20 October to 4 November. Volker Türk said the violations may amount to war crimes and called on all parties to protect civilians. No army or RSF response was reported.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/un-2230-civilian-deaths-in-sudan-in-10-months-most-from-drone-strikes"
+    ],
+    [
+     "Radio Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d9%84%d8%a3%d9%85%d9%85-%d8%a7%d9%84%d9%85%d8%aa%d8%ad%d8%af%d8%a9-%d9%85%d9%82%d8%aa%d9%84-2230-%d9%85%d8%af%d9%86%d9%8a%d8%a7%d9%8b-%d8%ae%d9%84%d8%a7%d9%84-10-%d8%a3%d8%b4%d9%87%d8%b1"
+    ]
+   ]
   }
  ],
  "official": {
@@ -549,7 +563,8 @@
   "2026-11-14",
   "2026-11-15",
   "2026-11-16",
-  "2026-11-17"
+  "2026-11-17",
+  "2026-11-18"
  ],
  "instagram": {
   "caption": "",
@@ -566,8 +581,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-17",
-  "text": "A strike on Abu Qalb, West Kordofan, on 15 Nov killed 13 to 15 civilians, including four children, rights groups say. An army-allied spokesman said his troops hit RSF positions."
+  "date": "2026-11-18",
+  "text": "The UN rights office verified at least 2,230 civilian deaths in Sudan from January to October, over 1,630 by drones, mostly in Kordofan. No army or RSF response was reported."
  },
  "summary": [
   {

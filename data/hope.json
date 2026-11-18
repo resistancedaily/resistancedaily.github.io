@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17",
+ "updated": "2026-11-18",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -818,6 +818,52 @@
      "The Hindu",
      "https://www.thehindu.com/news/international/us-federal-court-strikes-down-fixed-terms-for-student-exchange-visas/article71710228.ece"
     ]
+   ]
+  },
+  {
+   "id": "azam-khan-interim-bail",
+   "date": "2026-11-17",
+   "kind": "Courts",
+   "rights": [
+    "Due process"
+   ],
+   "place": "Prayagraj, Uttar Pradesh",
+   "fig": "10 Dec",
+   "figcap": "bail until next hearing",
+   "headline": "Court bails man arrested at jail gate",
+   "text": "The Allahabad High Court gave Azam Khan interim bail, finding the ED did not give written grounds of arrest. It is interim, until 10 Dec; the ED says it followed procedure.",
+   "slide_head": "Bailed after gate arrest",
+   "slide": "Court: written grounds of arrest were not given",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/allahabad-high-court-grants-interim-bail-to-azam-khan-calls-ed-proceedings-motivated-and-malafide-558807"
+    ]
+   ]
+  },
+  {
+   "id": "omdurman-school-breakfasts",
+   "date": "2026-11-17",
+   "kind": "People helping people",
+   "rights": [
+    "Life & safety"
+   ],
+   "place": "Ambadda, Omdurman, Sudan",
+   "fig": "250",
+   "figcap": "orphaned pupils fed daily",
+   "headline": "Volunteers feed orphaned pupils breakfast in Omdurman",
+   "text": "Volunteers of the Fairuz charity serve a daily school breakfast to about 250 orphaned pupils in Omdurman, plus 50 girls at a new school, Radio Dabanga reports. Each meal costs about 2,000 pounds.",
+   "slide_head": "Breakfast for 250 orphans",
+   "slide": "Volunteers keep Omdurman pupils fed through the war",
+   "src": [
+    [
+     "Radio Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%b3%d9%86%d8%af%d9%88%d8%aa%d8%b4-%d9%8a%d8%b3%d8%a7%d9%88%d9%8a-%d8%ad%d9%8a%d8%a7%d8%a9-%d9%85%d8%a8%d8%a7%d8%af%d8%b1%d8%a9-%d8%b7%d9%88%d8%b9%d9%8a%d8%a9-%d8%aa%d8%b7%d8%b9%d9%85-%d9%85%d8%a6"
+    ]
+   ],
+   "link": [
+    "Sudan Focus",
+    "focus/sudan-war.html"
    ]
   }
  ]
