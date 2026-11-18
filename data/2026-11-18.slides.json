@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Sudan",
+   "UN: at least 2,230 civilians killed this year"
+  ],
+  [
+   "Ukraine",
+   "2026 deadliest year for civilians, UN says"
+  ],
+  [
+   "Manila, Philippines",
+   "Over 245 held at summit protests"
+  ],
+  [
+   "Keralam",
+   "15,627 posts taken down in six months"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 4,
+   "label": "Sudan's war",
+   "fig": "2,230+",
+   "figlab": "civilians killed, Jan–Oct",
+   "place": "Sudan",
+   "head": "A UN count of the year's dead",
+   "bullets": [
+    "More than 1,630 were killed by drone strikes.",
+    "Over two-thirds of verified deaths were in Kordofan.",
+    "No army or RSF response was reported."
+   ],
+   "src": "Radio Dabanga"
+  },
+  {
+   "n": 5,
+   "label": "World · Life & safety",
+   "fig": "372",
+   "figlab": "civilians killed in October",
+   "place": "Ukraine",
+   "head": "2026 is the deadliest year yet",
+   "bullets": [
+    "More civilians died in ten months than in all of 2025.",
+    "UN monitors say missiles and drones cause most casualties.",
+    "Russia says Ukrainian strikes killed civilians in occupied areas."
+   ],
+   "src": "UN News"
+  },
+  {
+   "n": 7,
+   "label": "World · Assembly",
+   "fig": "245+",
+   "figlab": "protesters detained",
+   "place": "Muntinlupa and Manila",
+   "head": "Arrests at the ASEAN summit",
+   "bullets": [
+    "About 6,000 joined protests during Trump's visit, HRW says.",
+    "Detainees were held three days without charge.",
+    "Police said the street protests were not authorised."
+   ],
+   "src": "Human Rights Watch · Philstar"
+  },
+  {
+   "n": 2,
+   "label": "Who decides what you see online",
+   "fig": "15,627",
+   "figlab": "posts taken down",
+   "place": "Keralam",
+   "head": "Six months of takedowns",
+   "bullets": [
+    "Requests went through the Centre's Sahyog portal.",
+    "Police began legal action in 3,472 cases.",
+    "The government says the posts were fabricated or manipulated."
+   ],
+   "src": "The South First"
+  }
+ ]
+}
