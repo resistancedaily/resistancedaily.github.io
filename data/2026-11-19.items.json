@@ -1,0 +1,89 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 94.1,
+   "lat": 27.24,
+   "sev": "orange",
+   "label": "Lakhimpur",
+   "dy": -6
+  },
+  {
+   "n": 2,
+   "lon": 77.58,
+   "lat": 12.98,
+   "sev": "grey",
+   "label": "Bengaluru"
+  },
+  {
+   "n": 3,
+   "lon": 93.94,
+   "lat": 24.81,
+   "sev": "orange",
+   "label": "Manipur",
+   "dy": 6
+  },
+  {
+   "n": 4,
+   "lon": 77.23,
+   "lat": 28.64,
+   "sev": "grey",
+   "label": "",
+   "dx": 0,
+   "dy": -30
+  },
+  {
+   "n": 5,
+   "lon": 77.24,
+   "lat": 28.61,
+   "sev": "grey",
+   "label": "",
+   "dx": 0,
+   "dy": 30
+  },
+  {
+   "n": 6,
+   "lon": 77.24,
+   "lat": 28.62,
+   "sev": "grey",
+   "label": "Delhi"
+  }
+ ],
+ "world": [
+  {
+   "n": 7,
+   "lon": 34.39,
+   "lat": 31.45,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 8,
+   "lon": 30.22,
+   "lat": 13.18,
+   "sev": "red",
+   "label": "Sudan"
+  },
+  {
+   "n": 9,
+   "lon": 44.02,
+   "lat": 13.58,
+   "sev": "red",
+   "label": "Yemen"
+  },
+  {
+   "n": 10,
+   "lon": 90.26,
+   "lat": 23.86,
+   "sev": "orange",
+   "label": "Bangladesh"
+  },
+  {
+   "n": 11,
+   "lon": -1.52,
+   "lat": 12.37,
+   "sev": "orange",
+   "label": "Burkina Faso"
+  }
+ ]
+}

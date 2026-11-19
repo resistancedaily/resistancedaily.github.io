@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -865,6 +865,62 @@
     "Sudan Focus",
     "focus/sudan-war.html"
    ]
+  },
+  {
+   "id": "delhi-hc-no-detention-bail",
+   "date": "2026-11-18",
+   "kind": "Courts",
+   "rights": [
+    "Due process & detention"
+   ],
+   "place": "New Delhi",
+   "fig": "1",
+   "figcap": "foreign national's bail case",
+   "headline": "No detention centres as a bail condition",
+   "text": "The Delhi High Court ruled that foreigners accused of visa overstay can't be held in detention centres as a bail condition. Bail doesn't legalise their stay, and the executive can still detain foreigners.",
+   "slide_head": "Bail means release",
+   "slide": "Delhi court bars detention centres as a bail condition",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/delhi-high-court/foreigners-accused-of-visa-overstay-cant-be-kept-in-detention-centres-as-bail-condition-till-completion-of-trial-delhi-high-court-558965"
+    ]
+   ],
+   "edition": "2026-11-19#5"
+  },
+  {
+   "id": "sc-highway-demolitions-due-process",
+   "date": "2026-11-18",
+   "kind": "Courts",
+   "rights": [
+    "Due process & detention",
+    "Housing"
+   ],
+   "place": "New Delhi",
+   "fig": "13 Apr",
+   "figcap": "order clarified",
+   "headline": "Supreme Court: no highway demolitions without due process",
+   "text": "The Supreme Court said its April order can't be used to demolish disputed roadside structures without notice and a hearing. Owners keep protection until High Courts decide; it covers only these cases.",
+   "slide_head": "Notice before bulldozers",
+   "slide": "Supreme Court: disputed highway homes need a hearing first",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/supreme-court/directions-for-removal-of-highway-encroachment-cant-be-used-to-demolish-structures-without-due-process-supreme-court-clarifies-order-559023"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019. File photo.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   },
+   "edition": "2026-11-19#6"
   }
  ]
 }

@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "Since 15 April 2023, fighting between Sudan's army and the paramilitary Rapid Support Forces has killed at least 59,000 people by one count, and possibly far more, and driven about 13 million from their homes. Both sides deny targeting civilians. The war now reaches into Abyei and South Sudan.",
- "updated": "2026-11-18",
+ "dek": "Sudan's army and the RSF have fought since April 2023, killing at least 59,000 by one count. Amnesty says RSF drones killed 37 civilians in El Obeid.",
+ "updated": "2026-11-19",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -489,10 +489,24 @@
      "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d9%84%d8%a3%d9%85%d9%85-%d8%a7%d9%84%d9%85%d8%aa%d8%ad%d8%af%d8%a9-%d9%85%d9%82%d8%aa%d9%84-2230-%d9%85%d8%af%d9%86%d9%8a%d8%a7%d9%8b-%d8%ae%d9%84%d8%a7%d9%84-10-%d8%a3%d8%b4%d9%87%d8%b1"
     ]
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "text": "Amnesty International said nine RSF drone strikes on El Obeid and its surroundings between June and August 2026 killed 37 civilians and injured 10, hitting homes, fuel stations, the power plant, the main market and moving vehicles; it found no military targets nearby and said the strikes must be investigated as war crimes. Replying to Amnesty on 24 October, the RSF denied responsibility, blamed the army and said it was considering an investigative committee.",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
+    ],
+    [
+     "Amnesty International (Arabic)",
+     "https://www.amnesty.org/ar/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment. On the Abu Qalb strike of 15 November, a spokesman for the army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan.",
+  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment. On the Abu Qalb strike of 15 November, a spokesman for the army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan. Replying to Amnesty International on 24 October, the RSF denied responsibility for nine drone strikes on El Obeid and blamed the army.",
   "src": [
    [
     "Al Jazeera",
@@ -529,15 +543,19 @@
    [
     "Al Jazeera",
     "https://www.aljazeera.com/news/2026/11/16/sudanese-army-air-attack-kills-13-in-western-sudan-rights-group"
+   ],
+   [
+    "Amnesty International",
+    "https://www.amnesty.org/en/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
    ]
   ],
   "points": [
    "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan.",
    "The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale. The RSF and its allies have formed a parallel government in areas they hold.",
    "The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
-   "Neither the RSF nor the army responded to Al Jazeera on the sexual-violence findings; both have previously denied such abuses.",
    "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. No RSF response was reported on the 2–3 November strikes.",
-   "On the 15 November Abu Qalb strike, a spokesman for army-allied Special Operations Forces said his troops \"eliminated\" RSF positions in West Kordofan; the army made no statement on civilian deaths in the reports."
+   "On the 15 November Abu Qalb strike, a spokesman for army-allied Special Operations Forces said his troops \"eliminated\" RSF positions in West Kordofan; the army made no statement on civilian deaths in the reports.",
+   "Replying to Amnesty on 24 October, the RSF denied carrying out the El Obeid drone strikes, blamed the army and said it was considering an investigative committee."
   ]
  },
  "editions": [
@@ -564,7 +582,8 @@
   "2026-11-15",
   "2026-11-16",
   "2026-11-17",
-  "2026-11-18"
+  "2026-11-18",
+  "2026-11-19"
  ],
  "instagram": {
   "caption": "",
@@ -581,8 +600,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-18",
-  "text": "The UN rights office verified at least 2,230 civilian deaths in Sudan from January to October, over 1,630 by drones, mostly in Kordofan. No army or RSF response was reported."
+  "date": "2026-11-19",
+  "text": "Amnesty says nine RSF drone strikes on El Obeid in June–August killed 37 civilians, with no military target nearby. The RSF denies responsibility and blames the army."
  },
  "summary": [
   {

@@ -1,0 +1,470 @@
+{
+ "date": "2026-11-19",
+ "date_long": "Thu 19 Nov 2026",
+ "date_short": "Thu 19 Nov",
+ "window": "Wed 09:00 → Thu 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-19",
+ "items": [
+  {
+   "region": "india",
+   "place": "Borbil, Lakhimpur, Assam",
+   "short": "Lakhimpur",
+   "rights": [
+    "Land & livelihood",
+    "Housing"
+   ],
+   "sev": "orange",
+   "fig": "42",
+   "figcap": "families' homes razed",
+   "headline": "Assam: 42 families' homes demolished in Lakhimpur",
+   "text": "Officials demolished 42 families' homes in Borbil, Lakhimpur, on 17 Nov, calling it encroached tribal-belt land; four families had court stays. Residents say they paid land revenue; officials say they gave 45 days' notice.",
+   "src": [
+    [
+     "Clarion India",
+     "https://clarionindia.net/42-muslim-families-uprooted-in-fresh-demolition-drive-in-assams-lakhimpur/"
+    ]
+   ],
+   "lon": 94.1,
+   "lat": 27.24,
+   "photo": {
+    "src": "images/2026-11-14/lakhimpur.webp",
+    "alt": "Green fields and tall trees beyond a small stream crossed by a bamboo footbridge, with a milestone in the foreground.",
+    "caption": "Village fields in Lakhimpur district, Assam, in 2019. File photo of the district, not of Borbil.",
+    "credit": "Joli / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_village_landscape_in_Lakhimpur_district,_Assam.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 1,
+   "map": {
+    "dy": -6
+   }
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "grey",
+   "fig": "₹15,000",
+   "figcap": "monthly pay sought",
+   "headline": "ASHA health workers camp at Freedom Park",
+   "text": "Thousands of ASHA health workers began an indefinite protest at Bengaluru's Freedom Park on 17 Nov, seeking ₹15,000 a month instead of ₹5,000 plus incentives. The health minister promised to raise it at Thursday's Cabinet.",
+   "src": [
+    [
+     "The South First",
+     "https://thesouthfirst.com/karnataka/once-bitten-twice-shy-karnataka-ashas-on-indefinite-stir-firm-on-rs-15000-honorarium-demand/"
+    ],
+    [
+     "Vartha Bharati (Kannada)",
+     "https://www.varthabharati.in/bangalore-city/demand-for-rs-15000-monthly-honorarium-asha-workers-stage-protest-in-bengaluru-2291480"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Vartha Bharati",
+     "https://www.varthabharati.in/bangalore-city/demand-for-rs-15000-monthly-honorarium-asha-workers-stage-protest-in-bengaluru-2291480"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 12.98,
+   "photo": {
+    "src": "images/2026-10-24/bengaluru-freedom-park.webp",
+    "alt": "Large green letters reading Freedom Park in English and Kannada on a blue wall, with trees below.",
+    "caption": "The entrance sign at Freedom Park, where a 2021 order confines most Bengaluru protests. Photo from 2009.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Imphal, Manipur",
+   "short": "Manipur",
+   "rights": [
+    "Life & safety",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "thread": "manipur",
+   "fig": "4",
+   "figcap": "civilians killed 13 Nov",
+   "headline": "Hundreds rally in Imphal after highway ambush",
+   "text": "Indigenous groups rallied at Imphal's Mao Market over the 13 Nov ambush on the Imphal–Ukhrul road that killed four civilians. The government has invited them for talks; families have not claimed the bodies.",
+   "src": [
+    [
+     "EastMojo",
+     "https://eastmojo.com/manipur/2026/11/18/manipur-indigenous-groups-hold-joint-protest-over-attacks-on-civilians/"
+    ]
+   ],
+   "lon": 93.94,
+   "lat": 24.81,
+   "photo": {
+    "src": "images/2026-10-19/ukhrul-town.webp",
+    "alt": "A hillside town of houses among green trees, with mountains and clouds behind.",
+    "caption": "Ukhrul town, Manipur, in 2011; the ambush was on the road between Imphal and Ukhrul. File photo.",
+    "credit": "Ac apam / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ukhrul_-South_View.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "cropped"
+   },
+   "n": 3,
+   "map": {
+    "dy": 6
+   }
+  },
+  {
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "thread": "jantar-mantar",
+   "fig": "27 Nov",
+   "figcap": "next hearing",
+   "headline": "Supreme Court hears traders' plea against Delhi protests",
+   "text": "The Supreme Court sought responses from protest organisers and the Union and Delhi governments on traders' plea that October's protests at Ramlila Ground and Connaught Place hurt business. It hears the case on 27 Nov.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097161/cec-protests-sc-seeks-congress-aap-cjp-response-on-traders-plea-alleging-business-losses"
+    ]
+   ],
+   "lon": 77.23,
+   "lat": 28.64,
+   "map": {
+    "dx": 0,
+    "dy": -30,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-11-08/chawri-bazar.webp",
+    "alt": "A crowded market street lined with old buildings and tangled wires, with cycle rickshaws and porters, and a red-stone mosque dome at the far end.",
+    "caption": "Chawri Bazar road, one of Old Delhi's wholesale markets near Ramlila Ground, in 2005. File photo.",
+    "credit": "Finck Roderick / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chawri_Bazar_Road_-_panoramio.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "1",
+   "figcap": "foreign national's bail case",
+   "headline": "Court bars detention centres as a bail condition",
+   "text": "Ruling on a Nigerian man's bail, the Delhi High Court said foreigners accused of visa overstay can't be held in detention centres as a bail condition. Detention stays an executive power. State's arguments unreported.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/delhi-high-court/foreigners-accused-of-visa-overstay-cant-be-kept-in-detention-centres-as-bail-condition-till-completion-of-trial-delhi-high-court-558965"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.61,
+   "map": {
+    "dx": 0,
+    "dy": 30,
+    "label": ""
+   },
+   "n": 5
+  },
+  {
+   "region": "india",
+   "place": "New Delhi (national highways)",
+   "short": "Supreme Court",
+   "rights": [
+    "Due process & detention",
+    "Housing"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "13 Apr",
+   "figcap": "order clarified",
+   "headline": "Supreme Court: highway demolitions need due process",
+   "text": "The Supreme Court said its 13 April highway-encroachment order cannot justify demolishing disputed structures without the law's notice and hearing. Authorities say the structures lie on highway land; owners may approach High Courts.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/supreme-court/directions-for-removal-of-highway-encroachment-cant-be-used-to-demolish-structures-without-due-process-supreme-court-clarifies-order-559023"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.62,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019. File photo.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019"
+   },
+   "n": 6,
+   "map": {
+    "label": "Delhi"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Nuseirat and Bureij, central Gaza",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "palestine",
+   "fig": "1,658",
+   "figcap": "killed since ceasefire",
+   "headline": "Israeli troops push past Gaza's Yellow Line",
+   "text": "Israeli tanks pushed past the Yellow Line near Nuseirat and Bureij on 18 Nov as families fled. Gaza's health ministry counts 1,658 killed since the ceasefire; Israel's army says it is removing a Hamas threat.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/18/what-does-israels-new-ground-offensive-mean-for-palestinians-in-gaza"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al Jazeera Arabic",
+     "https://www.aljazeera.net/news/2026/11/18/%D8%A3%D9%88%D9%84-%D8%AA%D9%88%D8%BA%D9%84-%D8%A8%D8%B1%D9%8A-%D9%88%D8%A7%D8%B3%D8%B9-%D9%85%D9%86%D8%B0-2025-%D9%85%D8%A7-%D8%AE%D8%B7%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B9%D9%85%D9%84%D9%8A%D8%A9"
+    ]
+   ],
+   "lon": 34.39,
+   "lat": 31.45,
+   "photo": {
+    "src": "images/2026-11-19/nuseirat-aerial.webp",
+    "alt": "An aerial view of a dense crowd filling a road junction between sandy ground, trees and a few buildings, with vehicles among the people.",
+    "caption": "Displaced Palestinians gather in northern Nuseirat waiting to return to their homes, in January 2025. File photo.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "page": "https://commons.wikimedia.org/wiki/File:An_aerial_photo_of_displaced_Palestinians_waiting_in_northern_Nuseirat_to_return_to_their_homes_in_Gaza.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "El Obeid, North Kordofan, Sudan",
+   "short": "Sudan",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "sudan-war",
+   "focus": "sudan-war",
+   "fig": "37",
+   "figcap": "civilians killed, Jun–Aug",
+   "headline": "Amnesty: RSF drones killed 37 in El Obeid",
+   "text": "Amnesty says nine RSF drone strikes on El Obeid in June–August killed 37 civilians, hitting homes, fuel stations and the market with no military target nearby. The RSF denies it and blames the army.",
+   "src": [
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Amnesty International",
+     "https://www.amnesty.org/ar/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
+    ]
+   ],
+   "lon": 30.22,
+   "lat": 13.18,
+   "photo": {
+    "src": "images/2026-11-11/el-obeid.webp",
+    "alt": "A wide view over a busy market with low roofs, vehicles and crowds.",
+    "caption": "The market in El Obeid, North Kordofan, in 2006; Amnesty says a strike hit near the main market in August. File photo.",
+    "credit": "Mohsin Elfaki (محسن الفكي) / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D8%A7%D9%84%D8%A3%D8%A8%D9%8A%D8%B61.jpg",
+    "kind": "file",
+    "year": "2006",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Taiz and Lahj, Yemen",
+   "short": "Yemen",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "64",
+   "figcap": "children killed since 3 Sept",
+   "headline": "UNICEF: 64 children killed in Yemen since September",
+   "text": "UNICEF says at least 64 children have been killed and 64 injured since Houthi–government fighting intensified on 3 Sept, much of it around Taiz and Lahj. No response from the warring parties was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168830"
+    ]
+   ],
+   "lon": 44.02,
+   "lat": 13.58,
+   "photo": {
+    "src": "images/2026-10-24/taiz-city.webp",
+    "alt": "A hillside city of pale buildings and minarets below hazy mountains.",
+    "caption": "Taiz city, seen from a hillside, in 2013. File photo.",
+    "credit": "Rod Waddington / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:City_of_Taiz,_Yemen.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Savar and Ashulia, near Dhaka, Bangladesh",
+   "short": "Bangladesh",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "orange",
+   "fig": "112",
+   "figcap": "factories shut",
+   "headline": "Police tear-gas garment workers near Dhaka",
+   "text": "Police fired tear gas, sound grenades and rubber bullets at garment workers seeking a 30,000-taka minimum wage (now 12,500) in Savar on 18 Nov; 112 factories shut. Police say protesters blocked a highway, threw stones.",
+   "src": [
+    [
+     "AP via KSAT",
+     "https://www.ksat.com/business/2026/11/18/police-in-bangladesh-clash-with-garment-workers-demanding-higher-minimum-wages/"
+    ],
+    [
+     "bdnews24 (Bangla)",
+     "https://bangla.bdnews24.com/samagrabangladesh/7qnf3ebkwz"
+    ]
+   ],
+   "local": [
+    [
+     "bn",
+     "bdnews24",
+     "https://bangla.bdnews24.com/samagrabangladesh/7qnf3ebkwz"
+    ]
+   ],
+   "lon": 90.26,
+   "lat": 23.86,
+   "photo": {
+    "src": "images/2026-11-03/ashulia.webp",
+    "alt": "A brick embankment road beside wide floodwater under a cloudy sky, with a food cart and a few people.",
+    "caption": "An embankment road in Ashulia, near Dhaka, in 2007. File photo of the industrial area.",
+    "credit": "Shahnoor Habib Munmun / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ashulia_Dhaka_Bangladesh_1.JPG",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Ouagadougou, Burkina Faso",
+   "short": "Burkina Faso",
+   "rights": [
+    "Expression",
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "45+",
+   "figcap": "people and groups charged",
+   "headline": "Burkina Faso opens terrorism cases against exiled critics",
+   "text": "Burkina Faso's prosecutor opened six terrorism cases against at least 45 people and entities, including exiled journalists and activists, and sought arrest warrants abroad, HRW reports. He says the cases concern terrorism offences.",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/11/18/burkina-faso-targets-critics-in-exile"
+    ]
+   ],
+   "lon": -1.52,
+   "lat": 12.37,
+   "photo": {
+    "src": "images/2026-11-05/ouahigouya.webp",
+    "alt": "A wide red dirt street lined with trees and market stalls, with people walking and a man on a motorbike.",
+    "caption": "A market street in Ouahigouya, Burkina Faso, in 2011. File photo of the country.",
+    "credit": "Fernando Hidalgo Marchione / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ouahigouya_street-2.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized, faces of children blurred"
+   },
+   "n": 11
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Amnesty says nine RSF drone strikes on El Obeid in June–August killed 37 civilians; the RSF denies responsibility and blames the army.",
+   "src": "images/2026-11-11/el-obeid.webp",
+   "alt": "A wide view over a busy market with low roofs, vehicles and crowds.",
+   "photos": 4
+  }
+ ]
+}
