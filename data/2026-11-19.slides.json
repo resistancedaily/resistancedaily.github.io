@@ -1,0 +1,66 @@
+{
+ "cover": [
+  ["El Obeid, Sudan", "Amnesty: RSF drones killed 37 civilians"],
+  ["Gaza", "Israeli troops push past the Yellow Line"],
+  ["Yemen", "UNICEF: 64 children killed since September"],
+  ["Lakhimpur, Assam", "42 families' homes demolished"]
+ ],
+ "stories": [
+  {
+   "n": 8,
+   "label": "Sudan's war",
+   "fig": "37",
+   "figlab": "civilians killed, Jun–Aug",
+   "place": "El Obeid, Sudan",
+   "head": "Nine drone strikes on one city",
+   "bullets": [
+    "Strikes hit homes, fuel stations and the main market.",
+    "Amnesty found no military target nearby.",
+    "The RSF denies it and blames the army."
+   ],
+   "src": "Amnesty International"
+  },
+  {
+   "n": 7,
+   "label": "Palestine",
+   "fig": "1,658",
+   "figlab": "killed since the ceasefire",
+   "place": "Nuseirat and Bureij, Gaza",
+   "head": "Tanks cross the Yellow Line",
+   "bullets": [
+    "Families fled as tanks advanced on 18 Nov.",
+    "The toll is the Gaza health ministry's count.",
+    "Israel's army says it is removing a Hamas threat."
+   ],
+   "src": "Al Jazeera"
+  },
+  {
+   "n": 9,
+   "label": "World · Life & safety",
+   "fig": "64",
+   "figlab": "children killed since 3 Sept",
+   "place": "Taiz and Lahj, Yemen",
+   "head": "Children caught in renewed war",
+   "bullets": [
+    "Another 64 children have been injured, UNICEF says.",
+    "Fighting is heaviest around Taiz and Lahj.",
+    "No response from the warring parties was reported."
+   ],
+   "src": "UN News"
+  },
+  {
+   "n": 1,
+   "label": "India · Land & livelihood",
+   "fig": "42",
+   "figlab": "families' homes razed",
+   "place": "Lakhimpur, Assam",
+   "head": "Homes cleared from tribal-belt land",
+   "bullets": [
+    "Four of the families had court stay orders.",
+    "Residents say they paid land revenue for years.",
+    "Officials call it encroachment and say they gave 45 days' notice."
+   ],
+   "src": "Clarion India"
+  }
+ ]
+}
