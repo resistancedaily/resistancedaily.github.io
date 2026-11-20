@@ -1,0 +1,604 @@
+{
+ "date": "2026-11-20",
+ "date_long": "Fri 20 Nov 2026",
+ "date_short": "Fri 20 Nov",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-20",
+ "items": [
+  {
+   "region": "india",
+   "place": "Girinagar, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "60–70%",
+   "figcap": "burns",
+   "headline": "Homeless ragpicker set on fire in Bengaluru dies",
+   "text": "Syed Haji, a homeless ragpicker of about 45, was tied up, doused with petrol and set alight in Bengaluru on 18 Nov, and died that evening. Police registered a murder case; no arrests are reported.",
+   "src": [
+    [
+     "The Pioneer",
+     "https://dailypioneer.com/india/45-year-old-ragpicker-set-on-fire-in-bengaluru-dies"
+    ],
+    [
+     "Maktoob",
+     "https://maktoobmedia.com/post?id=116977&slug=i-can-recognise-them-bengaluru-ragpickers-dying-statement-recounts-how-he-was-lured-and-set-on-fire"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "ETV Bharat Kannada",
+     "https://www.etvbharat.com/kn/state/a-ragpicker-died-in-the-hospital-after-miscreants-set-him-ablaze-in-bengaluru-kas26111901301"
+    ]
+   ],
+   "lon": 77.545,
+   "lat": 12.94,
+   "map": {
+    "dx": -18,
+    "dy": 4,
+    "label": ""
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "book ordered seized",
+   "headline": "Karnataka Cabinet orders book seized, author booked",
+   "text": "After Lingayat groups protested, Karnataka's Cabinet decided on 19 Nov to seize Ravi Hanj's book 'Basava Mantapa'. Police filed an FIR against him and publisher Vishweshwar Bhat. Hanj had apologised.",
+   "src": [
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/karnataka-govt-to-confiscate-copies-of-ravi-hanjs-book-basava-mantapa-to-initiate-legal-action-against-author-4224335"
+    ],
+    [
+     "Vartha Bharati",
+     "https://english.varthabharati.in/karnataka/fir-against-basava-mantapa-author-ravi-hanj-and-publisher-vishweshwar-bhat-in-bengaluru-2292165"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Prajavani",
+     "https://www.prajavani.net/news/karnataka-news/karnataka-cabinet-approves-seizing-basava-mantapa-book-ravi-hanji-4406197"
+    ]
+   ],
+   "lon": 77.59,
+   "lat": 12.98,
+   "map": {
+    "dx": 13,
+    "dy": -10
+   },
+   "photo": {
+    "src": "images/2026-11-20/vidhana-soudha.webp",
+    "alt": "A large domed granite government building with columns and an Indian flag, behind a fenced lawn under a cloudy sky.",
+    "caption": "Vidhana Soudha, seat of Karnataka's government in Bengaluru, in 2019. File photo.",
+    "credit": "Moheen Reeyad / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vidhana_Soudha,_front_(01).jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Bogeenadi, Lakhimpur, Assam",
+   "short": "Lakhimpur",
+   "rights": [
+    "Housing",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "20–30",
+   "figcap": "families moved again",
+   "headline": "Evicted Lakhimpur families cleared from riverbed",
+   "text": "Families evicted from Bogeenadi grazing land on 13 Nov were removed on 19 Nov from riverbed shelters they had moved to. The district commissioner said 25–30 families were asked to leave and could take belongings.",
+   "src": [
+    [
+     "Sentinel Assam",
+     "https://www.sentinelassam.com/breakingnews/lakhimpur-eviction-drive-clears-shelters-of-2530-families-along-bogeenadi-riverbed"
+    ],
+    [
+     "NE Now",
+     "https://nenow.in/north-east-news/assam/assam-lakhimpur-admin-removes-evicted-families-from-bogeenadi-riverbed.html"
+    ]
+   ],
+   "local": [
+    [
+     "as",
+     "ETV Bharat Assam",
+     "https://www.etvbharat.com/as/state/lakhimpur-district-administration-evicts-20-displaced-families-from-boginadi-ass26111905028"
+    ]
+   ],
+   "lon": 94.1,
+   "lat": 27.24,
+   "photo": {
+    "src": "images/2026-11-14/lakhimpur.webp",
+    "alt": "Green fields and tall trees beyond a small stream crossed by a bamboo footbridge, with a milestone in the foreground.",
+    "caption": "Village fields in Lakhimpur district, Assam, in 2019. File photo of the district, not of Bogeenadi.",
+    "credit": "Joli / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_village_landscape_in_Lakhimpur_district,_Assam.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "grey",
+   "fig": "₹15,000",
+   "figcap": "monthly pay sought",
+   "headline": "ASHA workers stay at Freedom Park",
+   "text": "CM D K Shivakumar told protesting ASHA workers their ₹15,000 demand would go to the Cabinet and winter session, citing financial limits, and promised pending dues. Workers say they'll stay until an order is issued.",
+   "src": [
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/karnataka-cm-assures-asha-workers-of-sympathetic-consideration-urges-them-to-end-protest/3103517"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "The Federal Karnataka",
+     "https://karnataka.thefederal.com/category/state/asha-workers-protest-dk-shivakumar-talks-fail-freedom-park-bengaluru-263453"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 12.97,
+   "map": {
+    "dx": 2,
+    "dy": 16,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-10-24/bengaluru-freedom-park.webp",
+    "alt": "Large green letters reading Freedom Park in English and Kannada on a blue wall, with trees below.",
+    "caption": "The entrance sign at Freedom Park, where a 2021 order confines most Bengaluru protests. Photo from 2009.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "Kukuda and Lanjiberna, Sundargarh, Odisha",
+   "short": "Sundargarh",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "2",
+   "figcap": "gram sabhas said no",
+   "headline": "Supreme Court quashes mining land grab without consent",
+   "text": "The Supreme Court on 18 Nov quashed Odisha's acquisition of Scheduled Area farmland for a Dalmia Cement mine, holding gram sabha consent mandatory; both had refused. Fresh proceedings are allowed if the law is followed.",
+   "src": [
+    [
+     "Bar & Bench",
+     "https://www.barandbench.com/news/litigation/supreme-court-quashes-odishas-2021-land-acquisition-for-dalmia-cement-mining-project"
+    ],
+    [
+     "Millennium Post",
+     "https://www.millenniumpost.in/big-stories/sc-quashes-land-acquisition-for-dalmia-cement-in-odisha-says-gram-sabha-consent-mandatory-683825"
+    ]
+   ],
+   "lon": 84.58,
+   "lat": 22.19,
+   "photo": {
+    "src": "images/2026-11-20/sundargarh.webp",
+    "alt": "A straight paved road under tall shady trees, with dry ground and a small building to one side.",
+    "caption": "A road in Sundargarh, Odisha, in 2013. File photo of the district.",
+    "credit": "Bikash Lakra / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sundargarh,_Odisha,_India_-_panoramio_(13).jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "The Hague, Netherlands (Rakhine, Myanmar)",
+   "short": "The Hague",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "9–6",
+   "figcap": "judges' vote",
+   "headline": "World Court: Myanmar committed Rohingya genocide",
+   "text": "The International Court of Justice ruled 9–6 on 19 Nov that Myanmar committed genocide against the Rohingya in 2017, when about 10,000 were killed. Myanmar has said its operations answered attacks on police posts.",
+   "src": [
+    [
+     "Radio Free Asia",
+     "https://www.rfa.org/english/myanmar/2026/11/19/rohingya-genocide-icj-ruling-myanmar/"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/11/historic-un-ruling-that-myanmar-committed-genocide-against-rohingya-is-rare-victory-for-survivors/"
+    ]
+   ],
+   "local": [
+    [
+     "my",
+     "RFA Burmese",
+     "https://www.rfa.org/burmese/news/2026/11/19/myanmar-military-icj-verdict-key-five-points-reactions/"
+    ]
+   ],
+   "lon": 4.3,
+   "lat": 52.08,
+   "photo": {
+    "src": "images/2026-11-20/peace-palace.webp",
+    "alt": "A red-brick palace with a tall clock tower and grey slate roofs, behind iron gates and a bed of flowers.",
+    "caption": "The Peace Palace in The Hague, seat of the International Court of Justice, in 2009. File photo.",
+    "credit": "Iamthestig / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Peace_Palace_The_Hague.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Al-Mazad, Nyala, South Darfur, Sudan",
+   "short": "Nyala",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "sudan-war",
+   "fig": "37",
+   "figcap": "killed, Tasis says",
+   "headline": "Drone strike on Nyala: 37 reported killed",
+   "text": "The RSF-led Tasis alliance says an army drone strike killed 37 civilians in Nyala's Al-Mazad district on 19 Nov. Army-affiliated sources say they hit an RSF camp and intelligence headquarters. Neither account is verified.",
+   "src": [
+    [
+     "Radio Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%aa%d8%a3%d8%b3%d9%8a%d8%b3-%d9%85%d9%82%d9%80%d8%aa%d9%84-37-%d9%85%d8%af%d9%86%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d9%82%d8%b5%d9%81-%d8%a8%d8%a7%d9%84%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%aa%d8%a3%d8%b3%d9%8a%d8%b3-%d9%85%d9%82%d9%80%d8%aa%d9%84-37-%d9%85%d8%af%d9%86%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d9%82%d8%b5%d9%81-%d8%a8%d8%a7%d9%84%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9"
+    ]
+   ],
+   "lon": 24.88,
+   "lat": 12.05,
+   "photo": {
+    "src": "images/2026-10-28/nyala-market.webp",
+    "alt": "A street with a Sudapost sign over a gateway, small shops, parked cars and a few people walking on a sandy road.",
+    "caption": "A market street in Nyala, South Darfur, in 2012, before the war. File photo of the city.",
+    "credit": "Leovdvxxx / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyala_market_street_and_post_office_2012_P1010331_608_kb.jpg",
+    "kind": "file",
+    "year": "2012"
+   },
+   "n": 7,
+   "focus": "sudan-war",
+   "map": {
+    "label": "Sudan",
+    "left": true,
+    "dx": -10,
+    "dy": -2
+   }
+  },
+  {
+   "region": "world",
+   "place": "Bajoun mine, Gadeer, South Kordofan, Sudan",
+   "short": "Gadeer",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "sudan-war",
+   "fig": "10+",
+   "figcap": "killed at a gold mine",
+   "headline": "Drone strike on Kordofan gold mine kills 10",
+   "text": "Witnesses say a drone fired four missiles at the Bajoun gold-mining site in South Kordofan on 18 Nov, killing at least 10 people. No party claimed it, and no army or RSF statement was reported.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/10-killed-as-drone-strafes-south-kordofan-gold-mine"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/ar/all-news/article/%d9%85%d9%82%d8%aa%d9%84-10-%d8%a3%d8%b4%d8%ae%d8%a7%d8%b5-%d9%81%d9%8a-%d9%82%d8%b5%d9%81-%d9%84%d9%85%d9%86%d8%ac%d9%85-%d8%a8%d8%a7%d8%ac%d9%88%d9%86-%d8%a8%d8%ac%d9%86%d9%88%d8%a8-%d9%83%d8%b1"
+    ]
+   ],
+   "lon": 31.3,
+   "lat": 11.9,
+   "n": 8,
+   "focus": "sudan-war",
+   "map": {
+    "label": "",
+    "dx": 12,
+    "dy": 8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Zeitoun, Gaza City",
+   "short": "Gaza",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "thread": "palestine",
+   "fig": "2–5",
+   "figcap": "killed on 19 Nov",
+   "headline": "Israeli fire kills two to five in Gaza",
+   "text": "Palestinian medical sources say Israeli drone and artillery fire killed two to five people across Gaza on 19 Nov, mostly in Gaza City's Zeitoun area. No Israeli military comment was reported.",
+   "src": [
+    [
+     "Shafaq News",
+     "https://shafaq.com/en/World/Israeli-strikes-leave-five-dead-across-Gaza"
+    ],
+    [
+     "WAFA (Arabic)",
+     "https://www.wafa.ps/news/2026/11/19/محدث-شهيدان-إثر-قصف-طائرات-الاحتلال-المسيرة"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "WAFA",
+     "https://www.wafa.ps/news/2026/11/19/محدث-شهيدان-إثر-قصف-طائرات-الاحتلال-المسيرة"
+    ]
+   ],
+   "lon": 34.45,
+   "lat": 31.49,
+   "map": {
+    "dx": 10,
+    "dy": 0,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025. File photo.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Dahi, near Afula, northern Israel",
+   "short": "Dahi",
+   "rights": [
+    "Religion & expression"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "mosque set on fire",
+   "headline": "Mosque in Arab village near Afula set alight",
+   "text": "A mosque in Dahi, an Arab village near Afula, was set on fire overnight on 19 Nov; Hebrew graffiti referred to revenge for a killed settler. Police opened an investigation; no suspects are named.",
+   "src": [
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/liveblog_entry/police-probing-northern-israel-mosque-fire-amid-suspicions-of-settler-linked-attack/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "WAFA",
+     "https://www.wafa.ps/news/2026/11/19/مستعمرون-يضرِمون-النار-في-مسجدٍ-بقرية-الدحي"
+    ]
+   ],
+   "lon": 35.37,
+   "lat": 32.62,
+   "map": {
+    "label": "",
+    "dx": -12,
+    "dy": -8
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Dhaka and districts, Bangladesh",
+   "short": "Dhaka",
+   "rights": [
+    "Due process & detention",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "565",
+   "figcap": "held in Dhaka, 24 hours",
+   "headline": "565 arrests in Dhaka during banned party's lockdown",
+   "text": "Dhaka police reported 565 arrests in 24 hours, 71 of them Awami League and Chhatra League members, as the banned party's 19 Nov lockdown brought arson and petrol bombs. No party response was reported.",
+   "src": [
+    [
+     "The Business Standard",
+     "https://www.tbsnews.net/bangladesh/violence-erupts-gopalganj-over-awami-league-lockdown-highway-blocked-madaripur-1607731"
+    ]
+   ],
+   "lon": 90.41,
+   "lat": 23.81,
+   "n": 11,
+   "map": {
+    "dx": -14,
+    "label": "",
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Bogotá and cities across Colombia",
+   "short": "Colombia",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "grey",
+   "fig": "55,000",
+   "figcap": "marchers (govt count)",
+   "headline": "Colombia strike: tear gas at Barranquilla march",
+   "text": "Unions marched across Colombia on 19 Nov against a tax reform; police fired tear gas at a march in Barranquilla. The government counted about 55,000 marchers and four arrests.",
+   "src": [
+    [
+     "El Tiempo (Spanish)",
+     "https://www.eltiempo.com/politica/gobierno/presidente-abelardo-de-la-espriella-se-pronuncio-sobre-movilizaciones-del-19-de-noviembre-y-entrego-balance-reporto-285-actividades-y-cuatro-capturas-3602596"
+    ],
+    [
+     "El Universal (Spanish)",
+     "https://www.eluniversal.com.co/regional/atlantico/2026/11/19/policia-lanzo-bombas-de-gases-lacrimogenos-a-la-marcha-que-se-realizaba-en-barranquilla/"
+    ],
+    [
+     "AFP via Arab News",
+     "https://www.arabnews.pk/world/colombia-holds-second-nationwide-protest-against-president-3007543"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "El Tiempo",
+     "https://www.eltiempo.com/politica/gobierno/presidente-abelardo-de-la-espriella-se-pronuncio-sobre-movilizaciones-del-19-de-noviembre-y-entrego-balance-reporto-285-actividades-y-cuatro-capturas-3602596"
+    ],
+    [
+     "es",
+     "El Universal",
+     "https://www.eluniversal.com.co/regional/atlantico/2026/11/19/policia-lanzo-bombas-de-gases-lacrimogenos-a-la-marcha-que-se-realizaba-en-barranquilla/"
+    ]
+   ],
+   "lon": -74.07,
+   "lat": 4.71,
+   "photo": {
+    "src": "images/2026-11-20/plaza-bolivar.webp",
+    "alt": "A wide paved square with a long colonnaded building behind barriers, scattered people and market umbrellas under a cloudy sky.",
+    "caption": "Plaza de Bolívar in Bogotá, Colombia, in 2024. File photo.",
+    "credit": "José Luiz / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Plaza_de_Bol%C3%ADvar_-_Bogot%C3%A1_-_Colombia_2024.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 12
+  },
+  {
+   "region": "world",
+   "place": "North Kivu, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "1,843",
+   "figcap": "victims in September",
+   "headline": "UN: rights abuses in DR Congo up 41%",
+   "text": "The UN Joint Human Rights Office recorded 1,843 victims of rights abuses in DR Congo in September, up over 41% from August, most in North Kivu. No government response was reported.",
+   "src": [
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/19/actualite/societe/rdc-1-843-victimes-de-violations-des-droits-humains-recensees-en"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "Radio Okapi",
+     "https://www.radiookapi.net/2026/11/19/actualite/societe/rdc-1-843-victimes-de-violations-des-droits-humains-recensees-en"
+    ]
+   ],
+   "lon": 29.22,
+   "lat": -1.68,
+   "photo": {
+    "src": "images/2026-11-07/beni-road.webp",
+    "alt": "A wide red-earth main road lined with low shops, power poles and motorbikes; a woman in a patterned dress walks in the foreground.",
+    "caption": "The main road through Beni, North Kivu, in 2007. File photo of the province.",
+    "credit": "Razdagger / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Route_principale_de_Beni.jpg",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 13,
+   "map": {
+    "dy": 14,
+    "left": true
+   }
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "The RSF-led Tasis alliance says an army drone killed 37 civilians in Nyala on 19 Nov; army-linked sources say it hit RSF sites. A mine strike in Kordofan killed 10.",
+   "src": "images/2026-10-28/nyala-market.webp",
+   "alt": "A market street in Nyala, South Darfur, in 2012.",
+   "photos": 4
+  }
+ ]
+}

@@ -5,7 +5,7 @@
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
  "dek": "The Board of Peace warns Gaza's ceasefire may collapse, citing Israeli limits on winter supplies. Gaza's health ministry counts 1,600+ killed since the truce.",
- "updated": "2026-11-18",
+ "updated": "2026-11-20",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -484,6 +484,20 @@
      "https://www.aljazeera.com/news/2026/11/18/board-of-peace-warns-gaza-ceasefire-faces-imminent-collapse-without-action"
     ]
    ]
+  },
+  {
+   "date": "2026-11-19",
+   "text": "Palestinian medical sources said Israeli drone and artillery fire killed between two and five people across Gaza, mostly in Gaza City's Zeitoun area; WAFA counted two, Shafaq News five, one of whom died of earlier wounds. No Israeli military comment on the deaths was reported.",
+   "src": [
+    [
+     "Shafaq News",
+     "https://shafaq.com/en/World/Israeli-strikes-leave-five-dead-across-Gaza"
+    ],
+    [
+     "WAFA (Arabic)",
+     "https://www.wafa.ps/news/2026/11/19/محدث-شهيدان-إثر-قصف-طائرات-الاحتلال-المسيرة"
+    ]
+   ]
   }
  ],
  "official": {
@@ -575,11 +589,12 @@
   "2026-11-15",
   "2026-11-16",
   "2026-11-17",
-  "2026-11-18"
+  "2026-11-18",
+  "2026-11-20"
  ],
  "whats_new": {
-  "date": "2026-11-18",
-  "text": "The Board of Peace told the UN Security Council Gaza's ceasefire may collapse, citing Israeli limits on winter supplies and both sides' unmet commitments. No Israeli or Hamas response was reported."
+  "date": "2026-11-20",
+  "text": "Palestinian medical sources say Israeli drone and artillery fire killed two to five people across Gaza on 19 Nov, mostly in Zeitoun. No Israeli military comment was reported."
  },
  "instagram": {
   "hashtags": [

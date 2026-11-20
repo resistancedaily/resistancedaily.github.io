@@ -1,0 +1,116 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.545,
+   "lat": 12.94,
+   "sev": "red",
+   "label": "",
+   "dx": -18,
+   "dy": 4
+  },
+  {
+   "n": 2,
+   "lon": 77.59,
+   "lat": 12.98,
+   "sev": "orange",
+   "label": "Bengaluru",
+   "dx": 13,
+   "dy": -10
+  },
+  {
+   "n": 3,
+   "lon": 94.1,
+   "lat": 27.24,
+   "sev": "orange",
+   "label": "Lakhimpur"
+  },
+  {
+   "n": 4,
+   "lon": 77.58,
+   "lat": 12.97,
+   "sev": "grey",
+   "label": "",
+   "dx": 2,
+   "dy": 16
+  },
+  {
+   "n": 5,
+   "lon": 84.58,
+   "lat": 22.19,
+   "sev": "grey",
+   "label": "Sundargarh"
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 4.3,
+   "lat": 52.08,
+   "sev": "grey",
+   "label": "The Hague"
+  },
+  {
+   "n": 7,
+   "lon": 24.88,
+   "lat": 12.05,
+   "sev": "red",
+   "label": "Sudan",
+   "left": true,
+   "dx": -10,
+   "dy": -2
+  },
+  {
+   "n": 8,
+   "lon": 31.3,
+   "lat": 11.9,
+   "sev": "red",
+   "label": "",
+   "dx": 12,
+   "dy": 8
+  },
+  {
+   "n": 9,
+   "lon": 34.45,
+   "lat": 31.49,
+   "sev": "red",
+   "label": "",
+   "dx": 10,
+   "dy": 0
+  },
+  {
+   "n": 10,
+   "lon": 35.37,
+   "lat": 32.62,
+   "sev": "orange",
+   "label": "",
+   "dx": -12,
+   "dy": -8
+  },
+  {
+   "n": 11,
+   "lon": 90.41,
+   "lat": 23.81,
+   "sev": "orange",
+   "label": "",
+   "dx": -14,
+   "left": true
+  },
+  {
+   "n": 12,
+   "lon": -74.07,
+   "lat": 4.71,
+   "sev": "grey",
+   "label": "Colombia"
+  },
+  {
+   "n": 13,
+   "lon": 29.22,
+   "lat": -1.68,
+   "sev": "orange",
+   "label": "DR Congo",
+   "dy": 14,
+   "left": true
+  }
+ ]
+}

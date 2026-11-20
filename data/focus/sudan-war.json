@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "Sudan's army and the RSF have fought since April 2023, killing at least 59,000 by one count. Amnesty says RSF drones killed 37 civilians in El Obeid.",
- "updated": "2026-11-19",
+ "dek": "The RSF-led Tasis alliance says an army drone killed 37 civilians in Nyala on 19 Nov; army-linked sources say it hit RSF sites. A mine strike in Kordofan killed 10.",
+ "updated": "2026-11-20",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -503,6 +503,26 @@
      "https://www.amnesty.org/ar/latest/news/2026/11/sudan-devastating-rsf-drone-strikes-on-civilians-in-el-obeid-should-be-investigated-as-war-crimes/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-18",
+   "text": "Witnesses said a drone fired four missiles at the Bajoun gold-mining site in Gadeer locality, South Kordofan, killing at least 10 people; it was the second strike on the site. No party claimed the strike, and no army or RSF statement was reported.",
+   "src": [
+    [
+     "Radio Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/10-killed-as-drone-strafes-south-kordofan-gold-mine"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-19",
+   "text": "The RSF-led Tasis alliance said an army drone strike killed 37 civilians and injured dozens in Nyala's Al-Mazad district, and called for an independent investigation. Army-affiliated field sources said the strike hit an RSF camp and an RSF intelligence headquarters. Neither account has been independently verified.",
+   "src": [
+    [
+     "Radio Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%aa%d8%a3%d8%b3%d9%8a%d8%b3-%d9%85%d9%82%d9%80%d8%aa%d9%84-37-%d9%85%d8%af%d9%86%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d9%82%d8%b5%d9%81-%d8%a8%d8%a7%d9%84%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9"
+    ]
+   ]
   }
  ],
  "official": {
@@ -583,7 +603,8 @@
   "2026-11-16",
   "2026-11-17",
   "2026-11-18",
-  "2026-11-19"
+  "2026-11-19",
+  "2026-11-20"
  ],
  "instagram": {
   "caption": "",
@@ -600,8 +621,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-19",
-  "text": "Amnesty says nine RSF drone strikes on El Obeid in June–August killed 37 civilians, with no military target nearby. The RSF denies responsibility and blames the army."
+  "date": "2026-11-20",
+  "text": "The RSF-led Tasis alliance says an army drone strike killed 37 civilians in Nyala; army-affiliated sources say it hit RSF sites. A drone strike on a South Kordofan gold mine killed at least 10."
  },
  "summary": [
   {

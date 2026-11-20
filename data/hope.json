@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19",
+ "updated": "2026-11-20",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -921,6 +921,82 @@
     "year": "2019"
    },
    "edition": "2026-11-19#6"
+  },
+  {
+   "id": "icj-rohingya-genocide",
+   "date": "2026-11-19",
+   "kind": "Courts",
+   "rights": [
+    "Life & safety"
+   ],
+   "place": "The Hague",
+   "fig": "9–6",
+   "figcap": "judges' vote",
+   "headline": "World Court finds Myanmar committed Rohingya genocide",
+   "text": "The International Court of Justice ruled 9–6 that Myanmar committed genocide against the Rohingya in 2017, when about 10,000 were killed. Myanmar has said its operations answered attacks on police posts.",
+   "slide_head": "Genocide ruling for Rohingya",
+   "slide": "World Court: Myanmar committed genocide in 2017",
+   "src": [
+    [
+     "Radio Free Asia",
+     "https://www.rfa.org/english/myanmar/2026/11/19/rohingya-genocide-icj-ruling-myanmar/"
+    ],
+    [
+     "Amnesty International",
+     "https://www.amnesty.org/en/latest/news/2026/11/historic-un-ruling-that-myanmar-committed-genocide-against-rohingya-is-rare-victory-for-survivors/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-20/peace-palace.webp",
+    "alt": "A red-brick palace with a tall clock tower and grey slate roofs, behind iron gates and a bed of flowers.",
+    "caption": "The Peace Palace in The Hague, seat of the International Court of Justice, in 2009. File photo.",
+    "credit": "Iamthestig / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Peace_Palace_The_Hague.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "edition": "2026-11-20#6"
+  },
+  {
+   "id": "sc-odisha-gram-sabha-consent",
+   "date": "2026-11-18",
+   "kind": "Communities that won",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "place": "Sundargarh, Odisha",
+   "fig": "2",
+   "figcap": "gram sabhas said no",
+   "headline": "Supreme Court: no mining land without gram sabha consent",
+   "text": "The Supreme Court quashed Odisha's acquisition of Scheduled Area farmland for a cement mine because both gram sabhas had refused consent. The state may start afresh if it follows the law.",
+   "slide_head": "Villages' 'no' upheld",
+   "slide": "Court quashes mine land taken without gram sabha consent",
+   "src": [
+    [
+     "Bar & Bench",
+     "https://www.barandbench.com/news/litigation/supreme-court-quashes-odishas-2021-land-acquisition-for-dalmia-cement-mining-project"
+    ],
+    [
+     "Millennium Post",
+     "https://www.millenniumpost.in/big-stories/sc-quashes-land-acquisition-for-dalmia-cement-in-odisha-says-gram-sabha-consent-mandatory-683825"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-20/sundargarh.webp",
+    "alt": "A straight paved road under tall shady trees, with dry ground and a small building to one side.",
+    "caption": "A road in Sundargarh, Odisha, in 2013. File photo of the district.",
+    "credit": "Bikash Lakra / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sundargarh,_Odisha,_India_-_panoramio_(13).jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "edition": "2026-11-20#5"
   }
  ]
 }
