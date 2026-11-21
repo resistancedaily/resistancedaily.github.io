@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-21",
  "figures": [
   {
    "fig": "170",
@@ -758,7 +758,7 @@
    "power": "Police",
    "head": "Lorry driver dies inside a police station",
    "text": "R Balakrishnan, 42, a lorry driver held overnight for questioning over missing cardamom, was found hanging in the station toilet on 14 November. His family rejects the police account and alleges he was beaten.",
-   "official": "Police say he died by suicide and released a CCTV clip; the family calls it selective. Three police were suspended; the CB-CID registered a custodial death case without naming any accused and summoned the three, and a judicial magistrate held an inquiry. The post-mortem recorded a ligature mark and five haemorrhagic injuries on his back.",
+   "official": "Police say he died by suicide and released a CCTV clip; the family calls it selective. The state opposed giving the family the footage; on 20 Nov the Madras High Court let them view it. Three police were suspended; the CB-CID registered a custodial death case without naming any accused and summoned the three, and a judicial magistrate held an inquiry. The post-mortem recorded a ligature mark and five haemorrhagic injuries on his back.",
    "steps": [
     {
      "step": "Officers suspended",
@@ -788,6 +788,12 @@
      "status": "done",
      "date": "2026-11-16",
      "note": "CB-CID case; no police named as accused yet"
+    },
+    {
+     "step": "Court orders CCTV shown",
+     "status": "done",
+     "date": "2026-11-20",
+     "note": "Madras HC: family to view footage of four stations on 23 Nov"
     },
     {
      "step": "Arrest",
@@ -826,9 +832,13 @@
     [
      "The South First",
      "https://thesouthfirst.com/tamilnadu/cb-cid-registers-custodial-death-case-over-balakrishnans-death-in-madurai/"
+    ],
+    [
+     "DT Next (HC order)",
+     "https://www.dtnext.in/news/tamilnadu/submit-to-kin-cctv-clips-of-4-stations-madras-high-court"
     ]
    ],
-   "checked": "2026-11-17"
+   "checked": "2026-11-21"
   },
   {
    "id": "nuh-encounter",

@@ -1,0 +1,75 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.98,
+   "lat": 9.93,
+   "sev": "orange",
+   "label": "Madurai"
+  },
+  {
+   "n": 2,
+   "lon": 79.08,
+   "lat": 21.15,
+   "sev": "grey",
+   "label": "Nagpur"
+  },
+  {
+   "n": 3,
+   "lon": 77.58,
+   "lat": 34.16,
+   "sev": "grey",
+   "label": "Leh"
+  },
+  {
+   "n": 4,
+   "lon": 72.83,
+   "lat": 19.01,
+   "sev": "grey",
+   "label": "Mumbai"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 29.95,
+   "lat": 10.85,
+   "sev": "red",
+   "label": "South Kordofan",
+   "left": true
+  },
+  {
+   "n": 6,
+   "lon": 34.4,
+   "lat": 31.43,
+   "sev": "red",
+   "label": "",
+   "dx": -12,
+   "dy": 10
+  },
+  {
+   "n": 7,
+   "lon": 35.2,
+   "lat": 31.9,
+   "sev": "orange",
+   "label": "West Bank",
+   "dx": 8,
+   "dy": -10,
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": -3.7,
+   "lat": 40.42,
+   "sev": "orange",
+   "label": "Spain"
+  },
+  {
+   "n": 9,
+   "lon": 2.337,
+   "lat": 48.848,
+   "sev": "grey",
+   "label": "Paris"
+  }
+ ]
+}

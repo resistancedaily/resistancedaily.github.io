@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "The Board of Peace warns Gaza's ceasefire may collapse, citing Israeli limits on winter supplies. Gaza's health ministry counts 1,600+ killed since the truce.",
- "updated": "2026-11-20",
+ "dek": "UN agencies counted 400+ settler attacks in this West Bank olive harvest, a record. Israeli strikes killed six to seven in central Gaza on 20 Nov.",
+ "updated": "2026-11-21",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -498,6 +498,30 @@
      "https://www.wafa.ps/news/2026/11/19/محدث-شهيدان-إثر-قصف-طائرات-الاحتلال-المسيرة"
     ]
    ]
+  },
+  {
+   "date": "2026-11-20",
+   "text": "Israeli strikes killed six people in central Gaza, four of them near Bureij camp, Gaza's civil defence said; Anadolu, citing medical sources, counted seven killed and at least 13 injured. Israel's military said it targeted \"multiple military operatives\".",
+   "src": [
+    [
+     "RTÉ (AFP)",
+     "https://www.rte.ie/news/middle-east/2026/1120/1600068-gaza-israel/"
+    ],
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/middle-east/7-palestinians-killed-at-least-13-injured-in-israeli-attacks-across-gaza-despite-ceasefire/4131821"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-20",
+   "text": "The UN-led Humanitarian Country Team said settlers carried out more than 400 attacks causing casualties or damage during this year's West Bank olive harvest, more than in any previous season, damaging over 4,000 trees and saplings. No Israeli response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168849"
+    ]
+   ]
   }
  ],
  "official": {
@@ -590,11 +614,12 @@
   "2026-11-16",
   "2026-11-17",
   "2026-11-18",
-  "2026-11-20"
+  "2026-11-20",
+  "2026-11-21"
  ],
  "whats_new": {
-  "date": "2026-11-20",
-  "text": "Palestinian medical sources say Israeli drone and artillery fire killed two to five people across Gaza on 19 Nov, mostly in Zeitoun. No Israeli military comment was reported."
+  "date": "2026-11-21",
+  "text": "UN agencies say settlers carried out 400+ attacks during this West Bank olive harvest, a record. Israeli strikes killed 6–7 in central Gaza on 20 Nov; Israel says it targeted militants."
  },
  "instagram": {
   "hashtags": [

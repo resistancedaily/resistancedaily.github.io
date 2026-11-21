@@ -1,0 +1,419 @@
+{
+ "date": "2026-11-21",
+ "date_long": "Sat 21 Nov 2026",
+ "date_short": "Sat 21 Nov",
+ "window": "Fri 09:00 → Sat 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-21",
+ "items": [
+  {
+   "region": "india",
+   "place": "Chekkanoorani, Madurai, Tamil Nadu",
+   "short": "Madurai",
+   "rights": [
+    "Due process",
+    "Accountability Watch"
+   ],
+   "sev": "orange",
+   "fig": "4",
+   "figcap": "stations' CCTV",
+   "headline": "Court lets custody death family view CCTV",
+   "text": "The Madras High Court on 20 Nov let lorry driver R Balakrishnan's family view CCTV from four police stations on 23 Nov. Police say he died by suicide in custody; the state opposed releasing footage.",
+   "src": [
+    [
+     "DT Next",
+     "https://www.dtnext.in/news/tamilnadu/submit-to-kin-cctv-clips-of-4-stations-madras-high-court"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Madurai/chekkanoorani-custodial-death-madurai-district-police-will-have-to-do-a-lot-of-answering/article71725434.ece"
+    ]
+   ],
+   "local": [
+    [
+     "ta",
+     "Maalaimalar",
+     "https://www.maalaimalar.com/news/tamilnadu/custodial-death-in-chekkanurani-madurai-bench-high-court-orders-that-cctv-footage-be-shown-to-the-family"
+    ]
+   ],
+   "lon": 77.98,
+   "lat": 9.93,
+   "photo": {
+    "src": "images/2026-11-15/madurai.webp",
+    "alt": "A city of low buildings and trees with four tall carved temple towers rising above the rooftops.",
+    "caption": "Madurai, with the towers of the Meenakshi temple, in 2006. File photo of the city.",
+    "credit": "Bernard Gagnon / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Madurai,_India.jpg",
+    "kind": "file",
+    "year": "2006",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Nagpur, Maharashtra",
+   "short": "Nagpur",
+   "rights": [
+    "Press freedom",
+    "Due process"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "560",
+   "figcap": "days in jail",
+   "headline": "Court drops UAPA charges against Kerala journalist",
+   "text": "A Nagpur court dropped UAPA charges against journalist Rejaz M Sheeba Sydeek, jailed 560 days over alleged Maoist links, but framed charges under BNS section 152. His bail hearing is on 3 Dec.",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/kerala/keralam-journo-rejaz-discharged-of-uapa-charges-by-nagpur-court-no-bail-yet"
+    ],
+    [
+     "Maktoob",
+     "https://maktoobmedia.com/post?id=116985&slug=after-18-months-in-jail-nagpur-court-drops-uapa-charges-against-kerala-journalist-rejaz-m-sheeba-sydeek"
+    ]
+   ],
+   "local": [
+    [
+     "ml",
+     "MediaOne",
+     "https://www.mediaoneonline.com/kerala/rijaz-m-siddique-uapa-charges-dropped-nagpur-court-bail-plea-344488"
+    ]
+   ],
+   "lon": 79.08,
+   "lat": 21.15,
+   "photo": {
+    "src": "images/2026-11-21/nagpur-district-court.webp",
+    "alt": "A tall pale-yellow office building behind trees and street lamps, with motorbikes and cars on the road in front.",
+    "caption": "The District Court building in Nagpur, in 2011. File photo.",
+    "credit": "Kailash Mohankar / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:District_Court_Building,_Nagpur._-_panoramio.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "cropped"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Leh, Ladakh",
+   "short": "Leh",
+   "thread": "ladakh",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "20–25",
+   "figcap": "personnel at his home, he said",
+   "headline": "Leh police lift guard at Wangchuk's home",
+   "text": "Leh police on 20 Nov withdrew personnel enforcing a prohibitory order on activist Sonam Wangchuk, who said 20–25 armed personnel had confined him since 11 Nov. Police say he was never under house arrest.",
+   "src": [
+    [
+     "Deccan Herald (PTI)",
+     "https://www.deccanherald.com/india/ladakh/police-withdraw-arrangements-complying-with-prohibitory-order-against-sonam-wangchuk-in-leh-4226064"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Amar Ujala",
+     "https://www.amarujala.com/jammu/security-personnel-removed-from-outside-sonam-wangchuk-home-leh-police-refute-claims-of-his-detention-2026-11-21"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 34.16,
+   "photo": {
+    "src": "images/2026-11-21/leh-street.webp",
+    "alt": "A street of shops under strings of prayer flags, with people walking and cars parked; a man in maroon robes in the foreground.",
+    "caption": "A street in Leh, Ladakh, in 2007. File photo of the town.",
+    "credit": "Vyacheslav Argenberg / Wikimedia Commons",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Leh,_Streets,_Ladakh,_India.jpg",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized, faces blurred"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Prabhadevi, Mumbai, Maharashtra",
+   "short": "Mumbai",
+   "rights": [
+    "Housing"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "101",
+   "figcap": "homes spared for now",
+   "headline": "Railway demolition of 101 Mumbai homes halted",
+   "text": "Western Railway halted demolition of 101 homes on its land near Prabhadevi station on 20 Nov after protests and state intervention. It will wait for a 26 Nov court hearing; rehabilitation is being planned.",
+   "src": [
+    [
+     "Mid-day",
+     "https://www.mid-day.com/mumbai/mumbai-news/article/mumbai-demolition-of-101-houses-near-prabhadevi-station-halted-after-ministerial-intervention-23660742"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/mumbai/mumbai-prabhadevi-chawl-demolition-drive-jcbs-fadnavis-shinde-intervene-10971277/"
+    ]
+   ],
+   "local": [
+    [
+     "mr",
+     "Asianet News Marathi",
+     "https://marathi.asianetnews.com/mumbai/mumbai-demolition-near-prabhadevi-station-halted-by-eknath-shinde-for-rehabilitation-plan/articleshow-p3c0myi"
+    ]
+   ],
+   "lon": 72.83,
+   "lat": 19.01,
+   "photo": {
+    "src": "images/2026-11-21/prabhadevi-station.webp",
+    "alt": "Railway tracks and a long platform with commuters, overhead wires and a footbridge, with tall towers behind.",
+    "caption": "Prabhadevi railway station, Mumbai, in 2025. File photo of the area.",
+    "credit": "Historical Trains / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prabhadevi_stn%CB%90_view_from_Southeast.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Kaja and Katcha, Buram, South Kordofan, Sudan",
+   "short": "South Kordofan",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "7",
+   "figcap": "killed, 3 children",
+   "headline": "Drone strikes kill seven in South Kordofan villages",
+   "text": "Drone strikes on two Buram villages on 19 Nov killed three children at a water pump and four farmers, Radio Tamazuj reported. Activists blamed the army; no army comment was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/7-civilians-slain-14-injured-in-south-kordofan-drone-attacks"
+    ]
+   ],
+   "lon": 29.95,
+   "lat": 10.85,
+   "focus": "sudan-war",
+   "photo": {
+    "src": "images/2026-11-21/kadugli.webp",
+    "alt": "An open dirt yard with storage containers, a truck and low buildings under a hazy sky.",
+    "caption": "A yard with storage buildings in Kadugli, capital of South Kordofan, in 2009. File photo of the state.",
+    "credit": "Michael Walsh / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ES-KO_WH,_Kadulgi,Sudan_-_panoramio.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   },
+   "n": 5,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Bureij, Deir al-Balah and Nuseirat, central Gaza",
+   "short": "Central Gaza",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "red",
+   "fig": "6–7",
+   "figcap": "killed",
+   "headline": "Strikes kill six to seven in central Gaza",
+   "text": "Israeli strikes on 20 Nov killed six people in central Gaza, four near Bureij camp, Gaza's civil defence said; Anadolu, citing medics, counted seven. Israel's military said it targeted \"multiple military operatives\".",
+   "src": [
+    [
+     "RTÉ (AFP)",
+     "https://www.rte.ie/news/middle-east/2026/1120/1600068-gaza-israel/"
+    ],
+    [
+     "Anadolu",
+     "https://www.aa.com.tr/en/middle-east/7-palestinians-killed-at-least-13-injured-in-israeli-attacks-across-gaza-despite-ceasefire/4131821"
+    ]
+   ],
+   "lon": 34.4,
+   "lat": 31.43,
+   "focus": "palestine",
+   "photo": {
+    "src": "images/2026-11-21/deir-al-balah.webp",
+    "alt": "Palm groves and green fields with low houses, and more buildings on the horizon.",
+    "caption": "Deir al-Balah, central Gaza, in 2008. File photo of the area.",
+    "credit": "شنكوتي / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Deir_al-Balah.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "cropped"
+   },
+   "n": 6,
+   "map": {
+    "dx": -12,
+    "dy": 10,
+    "label": ""
+   }
+  },
+  {
+   "region": "world",
+   "place": "West Bank",
+   "short": "West Bank",
+   "rights": [
+    "Land & livelihood",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "400+",
+   "figcap": "settler attacks",
+   "headline": "Record settler attacks during West Bank olive harvest",
+   "text": "UN agencies and aid groups said on 20 Nov that settlers carried out over 400 attacks during this olive harvest, more than any season before, damaging over 4,000 trees. No Israeli response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168849"
+    ]
+   ],
+   "lon": 35.2,
+   "lat": 31.9,
+   "focus": "palestine",
+   "photo": {
+    "src": "images/2026-10-20/olive-harvest-hebron.webp",
+    "alt": "A gloved hand picking purple olives from a branch.",
+    "caption": "Olive picking near Dura in the Hebron governorate, southern West Bank.",
+    "credit": "M sh شراونة محمد / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:%D9%82%D8%B7%D9%81_%D8%AB%D9%85%D8%A7%D8%B1_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "cropped"
+   },
+   "n": 7,
+   "map": {
+    "dx": 8,
+    "dy": -10,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Madrid and cities across Spain",
+   "short": "Spain",
+   "rights": [
+    "Assembly",
+    "Press freedom"
+   ],
+   "sev": "orange",
+   "fig": "36",
+   "figcap": "injured, Amnesty says",
+   "headline": "Amnesty: Spanish police used excessive force at strike",
+   "text": "Amnesty said police used batons, pepper spray and rubber bullets against protesters and journalists in the 11 Nov general strike, injuring 36. The Interior Ministry has curbed pepper spray; Madrid police opened an internal inquiry.",
+   "src": [
+    [
+     "The Independent (Reuters)",
+     "https://www.independent.co.uk/news/world/europe/spain-police-strike-amnesty-b3088696.html"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "Cadena SER",
+     "https://cadenaser.com/nacional/2026/11/20/amnistia-internacional-documenta-61-casos-de-uso-excesivo-de-la-fuerza-por-parte-de-policias-el-dia-de-la-huelga-general-cadena-ser/"
+    ]
+   ],
+   "lon": -3.7,
+   "lat": 40.42,
+   "photo": {
+    "src": "images/2026-11-13/madrid.webp",
+    "alt": "Marchers at night hold a long white banner reading 'Bloque Crítico por la huelga general'.",
+    "caption": "A general-strike march in Madrid on 14 November 2012, Spain's last general strike before this one.",
+    "credit": "Israel Hergón / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Huelga_general_del_14_de_noviembre_de_2012_en_Madrid_(2).jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized, faces blurred"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Paris, France",
+   "short": "Paris",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "205–110",
+   "figcap": "Senate vote",
+   "headline": "France passes law presuming police shootings lawful",
+   "text": "France's Senate gave final approval on 20 Nov to a law presuming officers who fire their weapons act lawfully. Critics say it will hinder victims' families; the government says it protects officers in dangerous conditions.",
+   "src": [
+    [
+     "Yahoo News (Reuters)",
+     "https://www.yahoo.com/news/world/articles/french-senate-approves-police-shootings-200253531.html"
+    ]
+   ],
+   "lon": 2.337,
+   "lat": 48.848,
+   "photo": {
+    "src": "images/2026-11-21/luxembourg-palace.webp",
+    "alt": "A long cream stone palace with a central dome and clock, behind a green lawn under a blue sky.",
+    "caption": "The Luxembourg Palace in Paris, seat of the French Senate, in 2014. File photo.",
+    "credit": "DXR / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Palais_du_Luxembourg,_South_View_140116_1.jpg",
+    "kind": "file",
+    "year": "2014",
+    "changes": "resized"
+   },
+   "n": 9
+  }
+ ],
+ "focus": [
+  {
+   "slug": "palestine",
+   "kicker": "Focus · Palestine",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "UN agencies counted 400+ settler attacks in this West Bank olive harvest, a record. Israeli strikes killed six to seven in central Gaza on 20 Nov.",
+   "src": "images/2026-10-20/olive-harvest-hebron.webp",
+   "alt": "A gloved hand picking purple olives from a branch.",
+   "photos": 8
+  }
+ ]
+}

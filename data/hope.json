@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20",
+ "updated": "2026-11-21",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -997,6 +997,83 @@
     "changes": "resized"
    },
    "edition": "2026-11-20#5"
+  },
+  {
+   "id": "nagpur-rejaz-uapa-dropped",
+   "date": "2026-11-20",
+   "kind": "Courts",
+   "rights": [
+    "Press freedom",
+    "Due process"
+   ],
+   "place": "Nagpur, Maharashtra",
+   "fig": "560",
+   "figcap": "days in jail",
+   "headline": "UAPA charges dropped against jailed Kerala journalist",
+   "text": "A Nagpur court dropped UAPA charges against journalist Rejaz M Sheeba Sydeek after 560 days in jail. He still faces BNS charges, including section 152, and stays jailed until bail is heard on 3 Dec.",
+   "slide_head": "UAPA charges dropped",
+   "slide": "Jailed journalist cleared of terror law charges; bail 3 Dec",
+   "src": [
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/kerala/keralam-journo-rejaz-discharged-of-uapa-charges-by-nagpur-court-no-bail-yet"
+    ],
+    [
+     "Maktoob",
+     "https://maktoobmedia.com/post?id=116985&slug=after-18-months-in-jail-nagpur-court-drops-uapa-charges-against-kerala-journalist-rejaz-m-sheeba-sydeek"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-21/nagpur-district-court.webp",
+    "alt": "A tall pale-yellow office building behind trees and street lamps, with motorbikes and cars on the road in front.",
+    "caption": "The District Court building in Nagpur, in 2011. File photo.",
+    "credit": "Kailash Mohankar / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:District_Court_Building,_Nagpur._-_panoramio.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "cropped"
+   },
+   "edition": "2026-11-21#2"
+  },
+  {
+   "id": "prabhadevi-demolition-halted",
+   "date": "2026-11-20",
+   "kind": "Communities that won",
+   "rights": [
+    "Housing"
+   ],
+   "place": "Prabhadevi, Mumbai",
+   "fig": "101",
+   "figcap": "homes spared for now",
+   "headline": "Demolition of 101 Mumbai homes halted after protests",
+   "text": "After residents protested, Western Railway halted demolition of 101 homes near Prabhadevi station and will wait for a 26 Nov court hearing. A rehabilitation plan is promised; the relief is temporary.",
+   "slide_head": "101 homes spared, for now",
+   "slide": "Mumbai railway demolition halted; rehabilitation plan due",
+   "src": [
+    [
+     "Mid-day",
+     "https://www.mid-day.com/mumbai/mumbai-news/article/mumbai-demolition-of-101-houses-near-prabhadevi-station-halted-after-ministerial-intervention-23660742"
+    ],
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/mumbai/mumbai-prabhadevi-chawl-demolition-drive-jcbs-fadnavis-shinde-intervene-10971277/"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-21/prabhadevi-station.webp",
+    "alt": "Railway tracks and a long platform with commuters, overhead wires and a footbridge, with tall towers behind.",
+    "caption": "Prabhadevi railway station, Mumbai, in 2025. File photo of the area.",
+    "credit": "Historical Trains / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prabhadevi_stn%CB%90_view_from_Southeast.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "edition": "2026-11-21#4"
   }
  ]
 }
