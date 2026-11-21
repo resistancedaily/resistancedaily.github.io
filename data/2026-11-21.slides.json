@@ -1,0 +1,66 @@
+{
+ "cover": [
+  ["South Kordofan, Sudan", "Drone strikes kill seven, three children"],
+  ["Central Gaza", "Israeli strikes kill six to seven"],
+  ["Nagpur", "UAPA charges dropped against journalist"],
+  ["Madurai", "Custody death: family to see CCTV"]
+ ],
+ "stories": [
+  {
+   "n": 5,
+   "label": "Sudan's war",
+   "fig": "7",
+   "figlab": "civilians killed",
+   "place": "Buram, South Kordofan",
+   "head": "Drone strikes on two villages",
+   "bullets": [
+    "Three children were killed at a water pump.",
+    "Four farmers were killed; 14 people were injured.",
+    "Activists blame the army; no army comment reported."
+   ],
+   "src": "Radio Tamazuj"
+  },
+  {
+   "n": 6,
+   "label": "Palestine",
+   "fig": "6–7",
+   "figlab": "killed in a day",
+   "place": "Central Gaza",
+   "head": "Strikes near Bureij and Deir al-Balah",
+   "bullets": [
+    "Four were killed near Bureij camp, civil defence says.",
+    "Anadolu, citing medics, counted seven dead.",
+    "Israel says it targeted military operatives."
+   ],
+   "src": "RTÉ (AFP) · Anadolu"
+  },
+  {
+   "n": 2,
+   "label": "India · Right upheld",
+   "fig": "560",
+   "figlab": "days in jail",
+   "place": "Nagpur, Maharashtra",
+   "head": "Terror-law charges dropped",
+   "bullets": [
+    "Journalist Rejaz Sydeek has been jailed since May 2025.",
+    "He still faces BNS charges, incl. section 152.",
+    "Police had alleged Maoist links; bail hearing 3 Dec."
+   ],
+   "src": "The News Minute · Maktoob"
+  },
+  {
+   "n": 1,
+   "label": "Accountability Watch",
+   "fig": "4",
+   "figlab": "police stations' CCTV",
+   "place": "Madurai, Tamil Nadu",
+   "head": "Custody death: family to see footage",
+   "bullets": [
+    "Lorry driver R Balakrishnan died in a station on 14 Nov.",
+    "High Court: family may view the footage on 23 Nov.",
+    "Police say suicide; the state opposed release."
+   ],
+   "src": "DT Next · The Hindu"
+  }
+ ]
+}
