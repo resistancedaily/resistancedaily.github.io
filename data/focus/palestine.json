@@ -5,7 +5,7 @@
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
  "dek": "UN agencies counted 400+ settler attacks in this West Bank olive harvest, a record. Israeli strikes killed six to seven in central Gaza on 20 Nov.",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -522,10 +522,24 @@
      "https://news.un.org/en/story/2026/11/1168849"
     ]
    ]
+  },
+  {
+   "date": "2026-11-21",
+   "text": "An Israeli drone strike in Gaza City's Tel al-Hawa killed three people in a van delivering food to displaced people, and a man was shot near Jabalia. The Israeli military said it hit Islamic Jihad operatives; World Central Kitchen said it had no link to the van.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/israeli-strike-in-gaza-city-kills-3-idf-says-it-hit-terrorists-masquerading-as-aid-workers/"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\".",
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\". On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers.",
   "src": [
    [
     "Arab News (AFP)",
@@ -578,7 +592,8 @@
    "Israel rejects accusations that it restricts aid; security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered. Reconstruction equipment and mobile homes will stay out while Hamas refuses to disarm, Israeli security officials say.",
    "In Hebron the military says it is dismantling \"terrorist infrastructure\"; the defence minister said residents cannot return until operations end.",
    "The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas.",
-   "The military said it \"does not intend to comment\" on services related to operational needs after the Guardian's report on facial recognition."
+   "The military said it \"does not intend to comment\" on services related to operational needs after the Guardian's report on facial recognition.",
+   "On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers."
   ]
  },
  "editions": [
@@ -615,11 +630,12 @@
   "2026-11-17",
   "2026-11-18",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-22"
  ],
  "whats_new": {
-  "date": "2026-11-21",
-  "text": "UN agencies say settlers carried out 400+ attacks during this West Bank olive harvest, a record. Israeli strikes killed 6–7 in central Gaza on 20 Nov; Israel says it targeted militants."
+  "date": "2026-11-22",
+  "text": "An Israeli drone strike killed three people in a food van in Gaza City on 21 Nov. The army said it hit Islamic Jihad operatives; World Central Kitchen denied any link to the van."
  },
  "instagram": {
   "hashtags": [

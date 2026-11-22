@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "figures": [
   {
    "fig": "170",
@@ -105,6 +105,14 @@
    "src": [
     "NewKerala (IANS), 11 Nov 2026",
     "https://www.newkerala.com/news/a/complete-development-projects-within-timeline-haryana-cm-directs-180.htm"
+   ]
+  },
+  "Assam": {
+   "cm": "Himanta Biswa Sarma",
+   "party": "BJP",
+   "src": [
+    "ThePrint, 12 May 2026",
+    "https://theprint.in/india/himanta-biswa-sarma-sworn-in-for-second-straight-term-as-assam-chief-minister/2928669/"
    ]
   }
  },
@@ -936,6 +944,109 @@
     ]
    ],
    "checked": "2026-11-17"
+  },
+  {
+   "id": "dhekiajuli-custody",
+   "kind": "Custody",
+   "state": "Assam",
+   "place": "Dhekiajuli police station, Sonitpur district, Assam",
+   "date": "2026-11-19",
+   "power": "Police",
+   "head": "Undertrial dies; protesters allege torture at police station",
+   "text": "Azaharul Islam, 26, arrested by Dhekiajuli police on 18 November, died on the night of 19 November while being taken from Tezpur Central Jail to hospital. Student unions and residents allege he was tortured at Dhekiajuli police station.",
+   "official": "Reports say he fell ill in custody; a post-mortem was ordered to establish the cause. The co-district SP said action would follow if an inquiry established the allegations; the station's officer-in-charge was placed under reserve close on 20 November and questioned. The torture allegation has not been independently established.",
+   "steps": [
+    {
+     "step": "Officer removed",
+     "status": "done",
+     "date": "2026-11-20",
+     "note": "OC placed under reserve close, being questioned"
+    },
+    {
+     "step": "Post-mortem",
+     "status": "unknown",
+     "note": "ordered; findings not reported"
+    },
+    {
+     "step": "Inquiry",
+     "status": "unknown"
+    },
+    {
+     "step": "FIR",
+     "status": "unknown"
+    },
+    {
+     "step": "Arrest",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Sentinel",
+     "https://www.sentinelassam.com/north-east-india-news/assam-news/assam-undertrials-death-sparks-protest-at-dhekiajuli-police-station"
+    ],
+    [
+     "The Sentinel (death report)",
+     "https://www.sentinelassam.com/north-east-india-news/assam-news/an-undertrial-prisoner-dies-while-being-taken-from-tezpur-central-jail-to-hospital"
+    ]
+   ],
+   "checked": "2026-11-22",
+   "region": "india"
+  },
+  {
+   "id": "croatia-zagreb-psychiatric-death",
+   "region": "world",
+   "kind": "Custody",
+   "state": "Croatia",
+   "place": "Sveti Ivan psychiatric clinic, Jankomir, Zagreb",
+   "date": "2026-10-21",
+   "power": "Hospital staff (state psychiatric clinic)",
+   "head": "Patient dies under restraint at Zagreb psychiatric clinic",
+   "text": "Kristian Josip Periš, 32, died during a restraint intervention after admission; leaked CCTV reportedly shows staff punching him and holding a pillow over his face. His family's lawyer alleges he was beaten and strangled.",
+   "official": "Prosecutors are investigating aggravated murder of a vulnerable person; eight staff detained; hospital director and board resigned; a health inspection found irregularities in restraint. No ministry statement in the sources.",
+   "steps": [
+    {
+     "step": "Investigation opened",
+     "status": "done",
+     "note": "aggravated murder (Reuters, AFP)"
+    },
+    {
+     "step": "Arrests",
+     "status": "done",
+     "note": "4 technicians in pretrial detention, 4 more staff detained (Index.hr, 21 Nov)"
+    },
+    {
+     "step": "Indictment",
+     "status": "open"
+    },
+    {
+     "step": "Verdict",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "AFP (via Yahoo News)",
+     "https://uk.news.yahoo.com/croatians-rally-patient-died-hospital-192925425.html"
+    ],
+    [
+     "Reuters (via Internazionale)",
+     "https://www.internazionale.it/ultime-notizie-reuters/2026/11/21/croatians-rally-in-zagreb-demanding-justice-over-psychiatric-hospital-death"
+    ],
+    [
+     "Index.hr (Croatian)",
+     "https://www.index.hr/vijesti/clanak/uzivo-pocela-komemoracija-perisu-njegova-sestra-mihaela-jedva-govori-kroz-suze/2859392.aspx"
+    ]
+   ],
+   "checked": "2026-11-22"
   }
  ]
 }

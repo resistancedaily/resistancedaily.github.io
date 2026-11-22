@@ -1,6 +1,6 @@
 {
  "note": "Still Waiting case list, carried forward weekly. Verify each case every Sunday against sources that name the person and state each fact. Choose cases by severity and need for attention, not to balance India against World: include Indian cases that matter, and keep the world in view, since cases elsewhere are equally important.",
- "asof": "2026-11-15",
+ "asof": "2026-11-22",
  "cases": [
   {
    "region": "india",
@@ -8,8 +8,12 @@
    "where": "Delhi",
    "since": "2020-09-13",
    "law": "UAPA",
-   "status": "Supreme Court bail plea filed 5 Nov against Delhi HC's 30 Sep refusal, its third; not yet heard. Trial not begun. Delhi Police call his fresh bail pleas premature under the Supreme Court's one-year bar",
+   "status": "Supreme Court bail plea filed 4 Nov against Delhi HC's 30 Sep refusal, its third; not yet listed. Trial not begun. Delhi Police call his pleas premature under the Supreme Court's one-year bar",
    "src": [
+    [
+     "IANS via Social News XYZ (5 Nov)",
+     "https://www.socialnews.xyz/2026/11/05/umar-khalid-sharjeel-imam-move-sc-against-delhi-hc-order-denying-bail/"
+    ],
     [
      "LiveLaw (5 Nov)",
      "https://www.livelaw.in/top-stories/umar-khalid-moves-supreme-court-seeking-bail-in-delhi-riots-uapa-case-cites-near-expiry-of-one-year-embargo-557521"
@@ -17,10 +21,6 @@
     [
      "Siasat (5 Nov)",
      "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
-    ],
-    [
-     "UNI (5 Nov)",
-     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
     ],
     [
      "Bar & Bench (30 Sep)",
@@ -42,15 +42,15 @@
    "where": "Delhi",
    "since": "2020-01-28",
    "law": "UAPA, sedition and other charges",
-   "status": "Supreme Court bail plea filed 5 Nov says no prosecution witness examined yet; not yet heard. On 14 Nov India's US ambassador said USCIRF, which says he is held for religious-freedom advocacy, has 'no locus standi'",
+   "status": "Supreme Court bail plea filed 4 Nov says no prosecution witness examined yet; not yet listed. On 14 Nov India's US ambassador said USCIRF, which says he is held for religious-freedom advocacy, has 'no locus standi'",
    "src": [
     [
      "Siasat (5 Nov)",
      "https://www.siasat.com/sharjeel-imam-moves-supreme-court-says-no-witness-examined-yet-3570290/"
     ],
     [
-     "UNI (5 Nov)",
-     "https://www.uniindia.com/national/law-sc-sharjeel-imam-umar-khalid/237273"
+     "IANS via Social News XYZ (5 Nov)",
+     "https://www.socialnews.xyz/2026/11/05/umar-khalid-sharjeel-imam-move-sc-against-delhi-hc-order-denying-bail/"
     ],
     [
      "Bar & Bench (30 Sep)",
@@ -76,15 +76,19 @@
    "where": "Noida",
    "since": "2026-04-11",
    "law": "11 FIRs over Noida wage protest",
-   "status": "Artist still jailed; Scroll reported no bail in 2 of her 11 cases (22 Sep). A police chargesheet calls her a 'key conspirator'. No new developments reported 8–15 Nov",
+   "status": "Artist still jailed; organisers told The Wire (17 Nov) she has no bail in 2 of her 11 cases. A police chargesheet calls her a 'key conspirator'; police deny planting evidence at her home",
    "src": [
     [
-     "Reporters' Collective",
-     "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
+     "The Wire (17 Nov)",
+     "https://m.thewire.in/article/rights/our-music-is-a-movement-noida-unrest-jailed-activists-concert"
     ],
     [
      "Scroll (22 Sep)",
      "https://scroll.in/article/1095904/srishtis-crime-is-empathy-who-is-the-young-artist-jailed-for-supporting-noida-workers-protest"
+    ],
+    [
+     "Reporters' Collective",
+     "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
     ],
     [
      "The Wire (12 Jun)",
@@ -98,15 +102,23 @@
    "where": "Noida / Lucknow, UP",
    "since": "2026-04-17",
    "law": "NSA (order 12 May 2026) plus Noida protest FIRs",
-   "status": "Journalist held under NSA despite bail in one case (15 Sep). Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment reported by 15 Nov. UP Police allege a major role in protest violence",
+   "status": "Journalist held under NSA despite bail in some of his cases. Allahabad HC reserved its verdict on his NSA challenge on 8 Oct; no judgment yet. UP Police allege a 'significant role' in protest violence",
    "src": [
     [
      "LiveLaw (8 Oct)",
      "https://www.livelaw.in/high-court/allahabad-high-court/allahabad-high-court-reserves-journalist-satyam-verma-habeas-plea-nsa-detention-noida-protest-553689"
     ],
     [
-     "The Quint",
+     "The Quint (15 Sep)",
      "https://www.thequint.com/news/breaking-news/allahabad-high-court-bail-satyam-verma-noida-case"
+    ],
+    [
+     "Reporters' Collective",
+     "https://www.reporters-collective.in/trc/agents-of-violence-in-noida"
+    ],
+    [
+     "The Wire (17 Nov)",
+     "https://m.thewire.in/article/rights/our-music-is-a-movement-noida-unrest-jailed-activists-concert"
     ]
    ]
   },
@@ -116,15 +128,19 @@
    "where": "Eritrea",
    "since": "2001-09-23",
    "law": "No charge, no trial",
-   "status": "Journalist held incommunicado 25 years without charge or trial; whereabouts and health unknown. Eritrea's president said in 2009 there would be no trial and no release. No new developments reported 8–15 Nov",
+   "status": "Held incommunicado 25 years without charge or trial; whereabouts and health unknown. 19 Nov marked 21 years since his last contact with family. Eritrea's president said in 2009 there would be no trial and no release",
    "src": [
-    [
-     "RSF",
-     "https://rsf.org/en/silence-no-longer-option-133-journalists-around-world-mobilise-dawit-isaak-and-his-colleagues"
-    ],
     [
      "CPJ",
      "https://cpj.org/data/people/dawit-isaak/"
+    ],
+    [
+     "RSF (22 Sep)",
+     "https://rsf.org/en/silence-no-longer-option-133-journalists-around-world-mobilise-dawit-isaak-and-his-colleagues"
+    ],
+    [
+     "RSF via Hostage Aid (19 Nov)",
+     "https://hostageaid.org/today-marks-21-years-since-we-received-a-sign-of-life-from-dawit-isaak/"
     ]
    ]
   },
@@ -160,7 +176,7 @@
    "where": "Türkiye",
    "since": "2017-10-18",
    "law": "Aggravated life sentence",
-   "status": "An Istanbul appeals court again refused his release and retrial (reported 14 Nov), despite a binding European Court of Human Rights ruling. Government denies the case is political and says courts are independent",
+   "status": "An Istanbul appeals court again refused his release and retrial (14 Nov), despite a binding European Court of Human Rights ruling. Government denies the case is political and says courts are independent",
    "src": [
     [
      "Amnesty UK",
@@ -182,7 +198,7 @@
    "where": "Hong Kong",
    "since": "2020-12-31",
    "law": "National security law (collusion, sedition)",
-   "status": "Serving 20 years, aged 78. Trump said this week Xi has not agreed to free him, citing Beijing's 'hatred' for Lai. Hong Kong says he was not tried for his political views",
+   "status": "Serving 20 years, aged 78. On 12 Nov Trump said Xi has not agreed to free him. Hong Kong says he was not tried for his political views and his medical care is adequate",
    "src": [
     [
      "Hong Kong Free Press",
@@ -208,7 +224,7 @@
    "where": "Myanmar",
    "since": "2021-02-01",
    "law": "Coup-era convictions; term cut to about 18 years (AP)",
-   "status": "Under house arrest in Naypyitaw since April; her son reported his first phone call with her in five years on 22 Oct. Government rejects calls for her release. No new developments reported 8–15 Nov",
+   "status": "Under house arrest in Naypyitaw since April; her son reported his first phone call with her in five years on 22 Oct. Government rejects calls for her release. No new developments reported 15–22 Nov",
    "src": [
     [
      "Reuters via Dawn (1 Feb 2021)",
@@ -238,15 +254,19 @@
    "where": "Azerbaijan",
    "since": "2024-04-18",
    "law": "Smuggling, money laundering, tax evasion, illegal entrepreneurship, forgery (10 years)",
-   "status": "Meclis.info founder sentenced to 10 years by Baku Grave Crimes Court on 12 Nov; his lawyer says no credible evidence was presented and will appeal. Authorities deny prosecutions are political",
+   "status": "Meclis.info founder sentenced to 10 years by Baku Grave Crimes Court on 12 Nov; his lawyer says no credible evidence was presented and will appeal. Authorities say foreign grants lacked state approval and deny his torture claims",
    "src": [
     [
      "Caucasian Knot (13 Nov)",
      "https://www.eng.kavkaz-uzel.eu/articles/80183"
     ],
     [
-     "OC Media",
-     "https://oc-media.org/two-more-azerbaijani-journalists-receive-long-prison-sentences-as-crackdown-continues/"
+     "CPJ (Nov)",
+     "https://cpj.org/2026/11/azerbaijan-jails-meclis-info-journalists-for-up-to-10-years-over-western-funding/"
+    ],
+    [
+     "HRW (17 Nov)",
+     "https://www.hrw.org/news/2026/11/17/azerbaijan-jails-parliamentary-watchdog-activists"
     ],
     [
      "CPJ (2024 arrest)",
@@ -260,8 +280,12 @@
    "where": "Gaza → Israeli custody",
    "since": "2024-12-27",
    "law": "Unlawful Combatants Law; no charge, no trial",
-   "status": "Hospital director held without charge. Israeli courts refused to free 14 detained doctors and denied him an independent medical exam (reported 11 Nov). Israel alleges Hamas links, which his family denies",
+   "status": "Hospital director held without charge. A Beersheba court extended his detention by six months on 18 Nov despite health concerns, saying he threatens Israel, his lawyer says. Israel alleges Hamas links, which his family denies",
    "src": [
+    [
+     "Anews (18 Nov)",
+     "https://www.anews.com.tr/middle-east/2026/11/18/israel-extends-detention-of-gaza-hospital-director-abu-safiya-by-6-months-without-charges"
+    ],
     [
      "The New Arab (11 Nov)",
      "https://www.newarab.com/news/israel-refuses-release-14-gaza-doctors-including-abu-safiya"
@@ -269,10 +293,6 @@
     [
      "Amnesty International",
      "https://www.amnesty.org/en/latest/news/2026/07/israel-opt-fears-mounting-for-arbitrarily-detained-palestinian-doctor-hussam-abu-safiya-amidst-reports-his-life-is-in-grave-danger/"
-    ],
-    [
-     "Anadolu",
-     "https://www.aa.com.tr/en/europe/detained-gaza-hospital-director-abu-safiya-nominated-for-european-parliament-human-rights-prize/4075072"
     ],
     [
      "Arab News",
@@ -288,7 +308,7 @@
    "count": "6,500+",
    "countcap": "held in El Geneina, doctors say",
    "law": "Armed group detention",
-   "status": "Doctors report food shortages and rising deaths in El Geneina; Amnesty documents torture, forced labour and ransom in El Fasher. RSF reportedly seized a defector's family in South Darfur (13 Nov). RSF has not responded",
+   "status": "Doctors report food shortages and rising deaths in El Geneina; Amnesty documents torture, forced labour and ransom in El Fasher. RSF reportedly seized a defector's family (13 Nov), alleging army collaboration. No other RSF response",
    "src": [
     [
      "Amnesty International",
@@ -299,8 +319,8 @@
      "https://dabangasudan.org/en/all-news/article/atrocities-persist-in-el-fasher-one-year-after-rsf-takeover"
     ],
     [
-     "Anadolu via Yeni Şafak",
-     "https://en.yenisafak.com/world/sudan-doctors-network-warns-6500-rsf-detainees-face-dire-conditions-3724488"
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sudan-doctors-warn-6500-people-held-by-rsf-face-risks"
     ],
     [
      "Darfur24 (13 Nov)",
@@ -314,7 +334,7 @@
    "where": "Iran",
    "since": "2026-01-31",
    "law": "Death sentence for blasphemy; 12.5 years on security charges",
-   "status": "23-year-old student on death row in Mashhad's Vakilabad Prison over social media posts; her appeal is pending at the Supreme Court (HRANA, 10 Nov). No official statement reported",
+   "status": "23-year-old student on death row in Mashhad's Vakilabad Prison over social media posts; her Supreme Court appeal is still pending (HRANA, 10 Nov). No official statement or new developments reported 15–22 Nov",
    "src": [
     [
      "HRANA (10 Nov)",
@@ -336,7 +356,7 @@
    "where": "Pakistan",
    "since": "2026-01-23",
    "law": "Anti-Terrorism Act; earlier 17 years under electronic crimes law (PECA)",
-   "status": "Rights lawyers jailed since 23 Jan. Supreme Court suspended their PECA terms (17 Sep), but a 10-year anti-terror sentence followed a trial inside Adiala prison; appeal reported 7 Nov. Law minister says judiciary is independent",
+   "status": "Rights lawyers jailed since 23 Jan. Supreme Court suspended their PECA terms (17 Sep), but a 10-year anti-terror sentence followed a trial in Adiala prison; appeal filed 7 Nov, unheard. Law minister says judiciary is independent",
    "src": [
     [
      "Al Jazeera (AFP/Reuters)",
@@ -362,15 +382,19 @@
    "where": "Iran",
    "since": "2026-01-19",
    "law": "26 years incl. 'media activities' under espionage-penalties law",
-   "status": "Baha'i photojournalist with heart failure; judge reportedly refused the hospital transfer prison doctors advised. Sentence told to him on 26 Oct. Iran did not respond to CPJ. No new developments reported 8–15 Nov",
+   "status": "Baha'i photojournalist with heart failure; judge reportedly refused the hospital transfer prison doctors advised. His appeal is reportedly limited to the Supreme Court (30 Oct). Iran did not respond to CPJ. No new developments reported 15–22 Nov",
    "src": [
     [
      "CPJ",
      "https://cpj.org/2026/10/iran-sentences-journalists-under-espionage-law/"
     ],
     [
-     "Iran International",
+     "Iran International (28 Oct)",
      "https://www.iranintl.com/en/202610288721"
+    ],
+    [
+     "Iran International (30 Oct)",
+     "https://www.iranintl.com/en/202610305124"
     ]
    ]
   },
@@ -380,15 +404,15 @@
    "where": "Mali",
    "since": "2026-05-02",
    "law": "Enforced disappearance; no charge disclosed",
-   "status": "Lawyer and junta critic abducted in Bamako; his son also vanished on 16 May. Amnesty renewed calls (4 Nov) for proof they are alive. Authorities have not acknowledged holding either",
+   "status": "Lawyer and junta critic abducted in Bamako; his son vanished on 16 May. Neither has been charged. Amnesty (3 Nov) says calls for clarification go unanswered; authorities have not acknowledged holding either. No news 15–22 Nov",
    "src": [
     [
      "Human Rights Watch",
      "https://www.hrw.org/news/2026/10/30/critic-of-malis-junta-forcibly-disappeared-six-months-on"
     ],
     [
-     "Amnesty International France",
-     "https://www.amnesty.fr/communiques/mali-les-autorites-doivent-immediatement-faire-la-lumiere-sur-le-sort-et-le-lieu-ou-se-trouve-lavocat-et-homme-politique-pro-democratie-mountaga-tall/"
+     "Amnesty International (3 Nov)",
+     "https://www.amnesty.org/en/latest/news/2026/11/mali-mountaga-son/"
     ],
     [
      "Channel Africa (4 Nov)",
@@ -402,7 +426,7 @@
    "where": "Tunisia",
    "since": "2026-04-24",
    "law": "Telecommunications Code art. 86 (1 year); four terrorism-related charges (4 years)",
-   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. No official response or new developments reported 8–15 Nov",
+   "status": "Journalist sentenced to four more years on 27 Oct over a leaked-audio report; 17 groups urged his release on 5 Nov. Government did not respond to CPJ; no new developments reported 15–22 Nov",
    "src": [
     [
      "CPJ (profile)",
@@ -428,7 +452,7 @@
    "where": "Pakistan",
    "since": "2019-11-13",
    "law": "Official Secrets Act; 14 years by military court (2021)",
-   "status": "Rights defender seized near Swabi; military admitted holding him in June 2020. Rights groups (13 Nov) say his diabetes goes untreated and his life is at risk. Military says he passed information to foreign intelligence",
+   "status": "Rights defender seized near Swabi; Defence Ministry admitted holding him in June 2020. 31 rights groups (13 Nov) say his diabetes goes untreated. Security sources said he passed information to foreign intelligence. No news 15–22 Nov",
    "src": [
     [
      "Freedom House (joint statement, 13 Nov)",
@@ -450,7 +474,7 @@
    "where": "Hong Kong",
    "since": "2020-11-23",
    "law": "National security law: conspiracy to collude with foreign forces (10 years)",
-   "status": "Democracy activist, jailed since 2020, given 10 more years on 5 Nov, keeping him in prison until 2036. Chief Executive John Lee welcomed the sentence; ten governments criticised it",
+   "status": "Democracy activist, jailed since 2020, given 10 more years on 5 Nov, keeping him in prison until late 2036. Chief Executive John Lee backed the sentence; UK, US, EU and Taiwan criticised it. No appeal reported",
    "src": [
     [
      "Human Rights Watch (5 Nov)",
@@ -465,8 +489,48 @@
      "https://www.amnesty.org/en/latest/news/2026/11/hong-kong-cruel-joshua-wong-sentence-a-grim-reminder-of-citys-disdain-for-human-rights/"
     ],
     [
-     "Hong Kong Free Press (23 Nov 2020)",
-     "https://hongkongfp.com/2020/11/23/breaking-3-hong-kong-activists-incl-joshua-wong-remanded-in-custody-over-2019-demo-sentencing-next-wed/"
+     "Al Jazeera (23 Nov 2020)",
+     "https://www.aljazeera.com/news/2020/11/23/joshua-wong"
+    ]
+   ]
+  },
+  {
+   "region": "india",
+   "name": "Rejaz M Sheeba Sydeek",
+   "where": "Nagpur, Maharashtra",
+   "since": "2025-05-07",
+   "law": "BNS ss. 152 and 353(1); UAPA ss. 38–39 dropped (20 Nov)",
+   "status": "Kerala journalist held 560 days. A Nagpur court dropped UAPA charges on 20 Nov but framed BNS charges incl. endangering sovereignty; bail not yet heard. ATS alleges Maoist links",
+   "src": [
+    [
+     "The News Minute (20 Nov)",
+     "https://www.thenewsminute.com/kerala/keralam-journo-rejaz-discharged-of-uapa-charges-by-nagpur-court-no-bail-yet"
+    ],
+    [
+     "Madhyamam (21 Nov)",
+     "https://madhyamamonline.com/india/uapa-charges-dropped-against-keralam-journalist-after-560-days-in-jail-1574392"
+    ]
+   ]
+  },
+  {
+   "region": "world",
+   "name": "Sai Zaw Thaike",
+   "where": "Myanmar",
+   "since": "2023-05-23",
+   "law": "Sedition (Penal Code s.124A); 20 years with hard labour by military tribunal",
+   "status": "Myanmar Now photojournalist seized covering Cyclone Mocha. Reportedly beaten in Insein Prison and denied kidney treatment. Given CPJ's press freedom award (19 Nov). Ministry of Information did not respond to CPJ",
+   "src": [
+    [
+     "CPJ (profile)",
+     "https://cpj.org/data/people/sai-zaw-thaike-sai-zaw/"
+    ],
+    [
+     "CPJ (2023 sentence)",
+     "https://cpj.org/2023/09/myanmar-now-photojournalist-sai-zaw-thaike-sentenced-to-20-years-in-prison-on-multiple-charges/"
+    ],
+    [
+     "DVB (19 Nov)",
+     "https://english.dvb.no/jailed-myanmar-journalist-to-be-honoured-with-2026-cpj-international-press-freedom-award/"
     ]
    ]
   }

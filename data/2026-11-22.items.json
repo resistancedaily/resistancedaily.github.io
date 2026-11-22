@@ -1,0 +1,74 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.577,
+   "lat": 12.977,
+   "sev": "grey",
+   "label": "Bengaluru"
+  },
+  {
+   "n": 2,
+   "lon": 77.2393,
+   "lat": 28.6223,
+   "sev": "grey",
+   "label": "Delhi"
+  },
+  {
+   "n": 3,
+   "lon": 95.326,
+   "lat": 28.066,
+   "sev": "grey",
+   "label": "Siang"
+  },
+  {
+   "n": 4,
+   "lon": 78.83,
+   "lat": 9.37,
+   "sev": "grey",
+   "label": "Ramanathapuram"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 33.62,
+   "lat": 13.55,
+   "sev": "grey",
+   "label": "Sennar"
+  },
+  {
+   "n": 6,
+   "lon": 34.44,
+   "lat": 31.5,
+   "sev": "orange",
+   "label": "Gaza"
+  },
+  {
+   "n": 7,
+   "lon": 2.35,
+   "lat": 48.86,
+   "sev": "grey",
+   "label": "France",
+   "dx": -10,
+   "dy": -4,
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": 15.98,
+   "lat": 45.81,
+   "sev": "orange",
+   "label": "Zagreb",
+   "dx": 10,
+   "dy": -8
+  },
+  {
+   "n": 9,
+   "lon": -122.31,
+   "lat": 47.45,
+   "sev": "grey",
+   "label": "Seattle"
+  }
+ ]
+}

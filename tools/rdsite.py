@@ -98,7 +98,7 @@ LANG = {"hi": "हिन्दी", "kn": "ಕನ್ನಡ", "ta": "தமிழ
         "ar": "العربية", "fa": "فارسی", "he": "עברית", "tr": "Türkçe", "fr": "Français", "es": "Español", "pt": "Português",
         "de": "Deutsch", "nl": "Nederlands", "no": "Norsk", "sv": "Svenska", "ru": "Русский", "uk": "Українська",
         "zh": "中文", "ja": "日本語", "ko": "한국어", "my": "မြန်မာ", "th": "ไทย", "id": "Bahasa Indonesia", "sw": "Kiswahili",
-        "am": "አማርኛ", "si": "සිංහල", "ps": "پښتو"}
+        "am": "አማርኛ", "hr": "Hrvatski", "si": "සිංහල", "ps": "پښتو"}
 
 
 def local_links(item):

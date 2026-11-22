@@ -1,0 +1,126 @@
+{
+ "cover": [
+  [
+   "Gaza → Israel",
+   "Doctor's detention extended, no charge"
+  ],
+  [
+   "Eritrea",
+   "Journalist: 21 years without contact"
+  ],
+  [
+   "Myanmar",
+   "Photojournalist serving 20 years"
+  ],
+  [
+   "Delhi",
+   "Umar Khalid: 6 years, no trial"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 101,
+   "label": "Still waiting · World · Due process",
+   "fig": "695",
+   "figlab": "days held, no charge",
+   "place": "Gaza → Israeli custody",
+   "head": "Dr Hussam Abu Safiya",
+   "bullets": [
+    "Gaza hospital director held since 27 Dec 2024.",
+    "A Beersheba court extended his detention six months on 18 Nov, his lawyer says.",
+    "Israel alleges Hamas links; his family denies them."
+   ],
+   "src": "Anews · The New Arab",
+   "photo": {
+    "src": "images/2026-11-22/beersheba-court.webp",
+    "alt": "A tall pale stone office building with a curved glass centre, behind palm trees and a busy road.",
+    "caption": "The courthouse in Beersheba, Israel, in 2009. File photo.",
+    "credit": "Daniel Baránek / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Beersheba,_Court_01.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 102,
+   "label": "Still waiting · World · Press",
+   "fig": "9,191",
+   "figlab": "days held, no charge",
+   "place": "Eritrea",
+   "head": "Dawit Isaak",
+   "bullets": [
+    "Journalist held incommunicado since 23 Sep 2001, never charged or tried.",
+    "19 Nov marked 21 years since his last contact with family.",
+    "Eritrea's president said in 2009 there would be no trial and no release."
+   ],
+   "src": "CPJ · RSF",
+   "photo": {
+    "src": "images/2026-11-22/asmara.webp",
+    "alt": "A busy street of low buildings with blue minibuses, parked cars and people walking, with a green hill behind.",
+    "caption": "A street in Asmara, Eritrea's capital, in 2007. File photo of the city.",
+    "credit": "Jacopo / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Asmara_street.jpg",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized, faces blurred"
+   }
+  },
+  {
+   "n": 103,
+   "label": "Still waiting · World · Press",
+   "fig": "1,279",
+   "figlab": "days held",
+   "place": "Yangon, Myanmar",
+   "head": "Sai Zaw Thaike",
+   "bullets": [
+    "Myanmar Now photojournalist seized on 23 May 2023 covering Cyclone Mocha.",
+    "Serving 20 years for sedition; reportedly denied kidney treatment.",
+    "Given CPJ's press freedom award on 19 Nov; the ministry did not respond to CPJ."
+   ],
+   "src": "CPJ · DVB",
+   "photo": {
+    "src": "images/2026-11-22/insein-prison.webp",
+    "alt": "A closed iron gate between white pillars with plaques, trees behind and a parked car beside it.",
+    "caption": "The main gate of Insein Prison, Yangon, in 2013. File photo.",
+    "credit": "Phyo WP / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Insein_Prison.JPG",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   }
+  },
+  {
+   "n": 104,
+   "label": "Still waiting · India · Due process",
+   "fig": "2,261",
+   "figlab": "days held, no trial",
+   "place": "Delhi",
+   "head": "Umar Khalid",
+   "bullets": [
+    "Held since 13 Sep 2020 under UAPA; trial not begun.",
+    "His third Supreme Court bail plea, filed 4 Nov, is not yet listed.",
+    "Delhi Police call his pleas premature under a one-year bar."
+   ],
+   "src": "IANS · Citizens for Justice and Peace",
+   "photo": {
+    "src": "images/2026-11-22/tihar-gate.webp",
+    "alt": "A closed blue and white iron gate under a blue canopy with a Hindi sign reading Central Jail Tihar.",
+    "caption": "The entry gate of Tihar Jail, Delhi, in 2024. File photo.",
+    "credit": "Zuck28 / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tihar_Jail,_Delhi.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   }
+  }
+ ]
+}

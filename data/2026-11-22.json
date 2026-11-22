@@ -1,0 +1,442 @@
+{
+ "date": "2026-11-22",
+ "date_long": "Sun 22 Nov 2026",
+ "date_short": "Sun 22 Nov",
+ "window": "Sat 09:00 → Sun 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-22",
+ "items": [
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "26 Nov",
+   "figcap": "Deadline set",
+   "headline": "Bengaluru campaign sets deadline on protest curbs",
+   "text": "Civil society groups released a PUCL-Karnataka report on Bengaluru's Freedom Park-only protest rule and plan civil disobedience on 28 Nov if it stays. Police chief R Hithendra said the government asked police to reconsider.",
+   "src": [
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/bengaluru/right-to-protest-campaign-gives-call-for-mass-civil-disobedience-on-november-28-4226929"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/bangalore/government-has-asked-us-to-reconsider-restricting-all-protests-to-freedom-park-says-bengalurus-new-chief-commissioner-of-police/article71728696.ece"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Varthabharati",
+     "https://www.varthabharati.in/bangalore-city/withdraw-2021-licensing-order-curtailing-the-right-to-protest-retired-justice-hn-nagamohan-das-urges-2292554"
+    ]
+   ],
+   "lon": 77.577,
+   "lat": 12.977,
+   "photo": {
+    "src": "images/2026-11-22/freedom-park-sign.webp",
+    "alt": "A tall blue wall with the words Freedom Park in green letters in Kannada and English, beside trees.",
+    "caption": "The entrance sign at Freedom Park, Bengaluru, in 2009. File photo.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi",
+   "short": "Delhi",
+   "thread": "jantar-mantar",
+   "rights": [
+    "Press freedom",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "11 Oct",
+   "figcap": "SC protection order",
+   "headline": "Women journalists' body rebuts Delhi Police in court",
+   "text": "Network of Women in Media told the Supreme Court on 21 November that Delhi Police's affidavit on October protest removals 'reads like a catalogue of admissions'. Police describe removals as verification or crowd control.",
+   "src": [
+    [
+     "Newslaundry",
+     "https://www.newslaundry.com/2026/11/21/catalogue-of-admissions-journalists-body-says-delhi-police-affidavit-admits-the-interference-it-denies"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/top-stories/police-cant-justify-restraint-of-journalists-by-merely-avoiding-words-arrest-or-detention-media-organisation-tells-supreme-court-559479"
+    ]
+   ],
+   "lon": 77.2393,
+   "lat": 28.6223,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019. File photo.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Itanagar and Siang valley, Arunachal Pradesh",
+   "short": "Siang",
+   "thread": "siang",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "27",
+   "figcap": "Villages affected (est.)",
+   "headline": "Shah offers talks on Siang dam; groups oppose",
+   "text": "Home Minister Amit Shah promised 'constructive' talks and protection of local culture over the Siang Upper Multipurpose Project. Adi council and farmers' forum, estimating 27 villages affected, demand no dam and suspended surveys.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097228/after-siang-dam-protests-amit-shah-says-centre-will-hold-constructive-talks-in-arunachal"
+    ],
+    [
+     "ThePrint Hindi (PTI-Bhasha)",
+     "https://hindi.theprint.in/india/shah-assures-talks-on-siang-dam-project-lauds-change-in-kashmir/1062334/"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "ThePrint Hindi (PTI-Bhasha)",
+     "https://hindi.theprint.in/india/shah-assures-talks-on-siang-dam-project-lauds-change-in-kashmir/1062334/"
+    ]
+   ],
+   "lon": 95.326,
+   "lat": 28.066,
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, Arunachal Pradesh, in 2023. File photo.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Ramanathapuram, Tamil Nadu",
+   "short": "Ramanathapuram",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "300+",
+   "figcap": "Fishers rallied",
+   "headline": "Fishers protest Uppur power plant on Fisheries Day",
+   "text": "Over 300 fishers rallied outside Ramanathapuram Collectorate on 21 November, demanding the Uppur thermal plant be dropped, traditional fishing zones mapped in the coastal plan, and encroachments cleared. No government response was reported.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/cities/Madurai/ramanathapuram-fisherfolk-demand-protected-fishing-zone-oppose-uppur-power-plant/article71728374.ece"
+    ]
+   ],
+   "lon": 78.83,
+   "lat": 9.37,
+   "photo": {
+    "src": "images/2026-11-22/keelakarai-boat.webp",
+    "alt": "A blue and white wooden fishing boat with a rigging frame, anchored on calm blue-green water.",
+    "caption": "A fishing boat off Keelakarai, Ramanathapuram district, in 2008. File photo.",
+    "credit": "Panoshaf / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fishing_Boat_-_Ramanathapuram.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Sennar and Blue Nile states, Sudan",
+   "short": "Sennar",
+   "thread": "sudan-war",
+   "rights": [
+    "Freedom of movement",
+    "Life and safety"
+   ],
+   "sev": "grey",
+   "fig": "10pm–4am",
+   "figcap": "Curfew",
+   "headline": "Sennar imposes curfew as Blue Nile fighting nears",
+   "text": "Sennar's governor ordered a 10pm–4am curfew, citing fears that Blue Nile fighting could spread, as RSF–SPLM-N forces reportedly advanced towards Damazin. Some residents have fled; authorities did not comment to Radio Tamazuj.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sennar-imposes-night-curfew-as-blue-nile-fighting-intensifies"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/panic-in-damazin-amid-military-operations-in-bau-geissan"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Ultra Sudan",
+     "https://ultrasudan.ultrasawt.com/%D9%88%D8%A7%D9%84%D9%8A-%D8%B3%D9%86%D8%A7%D8%B1-%D9%8A%D8%B5%D8%AF%D8%B1-%D8%A3%D9%85%D8%B1-%D8%B7%D9%88%D8%A7%D8%B1%D8%A6-%D8%A8%D8%AD%D8%B8%D8%B1-%D8%A7%D9%84%D8%AA%D8%AC%D9%88%D8%A7%D9%84-%D9%88%D8%AA%D9%82%D9%8A%D9%8A%D8%AF-%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D8%A8%D8%B6%D8%A7%D8%A6%D8%B9-%D9%84%D9%8A%D9%84%D9%8B%D8%A7/%D8%A7%D9%84%D9%81%D8%A7%D8%AA%D8%AD-%D9%85%D8%AD%D9%85%D8%AF/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1"
+    ]
+   ],
+   "lon": 33.62,
+   "lat": 13.55,
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street view in Damazin, capital of Blue Nile state, in 2019. File photo.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Tel al-Hawa, Gaza City, Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life and safety",
+    "Civilian harm",
+    "Humanitarian access"
+   ],
+   "sev": "orange",
+   "fig": "3",
+   "figcap": "Killed in van",
+   "headline": "Strike on food van kills three, Gaza City",
+   "text": "An Israeli drone strike killed three people in a van delivering food to the displaced; a man was shot near Jabalia. The army said it hit Islamic Jihad operatives; World Central Kitchen denied links.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/israeli-strike-in-gaza-city-kills-3-idf-says-it-hit-terrorists-masquerading-as-aid-workers/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "France 24 (Arabic)",
+     "https://www.france24.com/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D9%85%D8%B1%D8%A9/20261121-%D9%85%D9%82%D8%AA%D9%84-%D8%A3%D8%B1%D8%A8%D8%B9%D8%A9-%D8%A3%D8%B4%D8%AE%D8%A7%D8%B5-%D9%81%D9%8A-%D8%B6%D8%B1%D8%A8%D8%A7%D8%AA-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D8%B9%D9%84%D9%89-%D9%82%D8%B7%D8%A7%D8%B9-%D8%BA%D8%B2%D8%A9-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D8%B7%D8%A8%D9%8A%D8%A9-%D9%88%D8%A5%D8%B3%D8%B9%D8%A7%D9%81"
+    ]
+   ],
+   "lon": 34.44,
+   "lat": 31.5,
+   "photo": {
+    "src": "images/2026-10-26/islamic-university-gaza.webp",
+    "alt": "Multi-storey university buildings with arched windows above a leafy courtyard, with apartment towers behind.",
+    "caption": "The Islamic University of Gaza campus in Gaza City, in 2012, before the war. File photo.",
+    "credit": "Manar al Zraiy / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Luhaidan_Building_-_Islamic_University_of_Gaza-%D9%85%D8%A8%D9%86%D9%89_%D8%A7%D9%84%D9%84%D8%AD%D9%8A%D8%AF%D8%A7%D9%86_%D8%A8%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9_%D8%A7%D9%84%D8%A7%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9_%D9%81%D9%8A_%D8%BA%D8%B2%D8%A9.jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Paris, Lyon and other cities, France",
+   "short": "France",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "82,500–150,000",
+   "figcap": "Marchers",
+   "headline": "Sixth Saturday of French protests; 144 arrests",
+   "text": "Cost-of-living protests drew 82,500 people by the interior ministry's count, 150,000 by the CGT's. Police dispersed unauthorised marches in Lyon with tear gas; the ministry reported 144 arrests by 6pm and incidents in big cities.",
+   "src": [
+    [
+     "France 24",
+     "https://www.france24.com/en/france/20261121-live-france-braces-for-fresh-protests-as-social-unrest-enters-sixth-week"
+    ],
+    [
+     "franceinfo (French)",
+     "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "franceinfo",
+     "https://www.franceinfo.fr/societe/manifestations/direct-mobilisation-du-21-novembre-syndicats-et-gilets-jaunes-appellent-a-manifester-pour-la-jeunesse-et-contre-la-vie-chere-pour-le-sixieme-samedi-d-affilee_8293460.html"
+    ]
+   ],
+   "lon": 2.35,
+   "lat": 48.86,
+   "photo": {
+    "src": "images/2026-11-22/lyon-bellecour.webp",
+    "alt": "A wide open square of red gravel with a few people walking, an equestrian statue, and a basilica on a hill behind.",
+    "caption": "Place Bellecour in Lyon, in 2006. File photo of the city.",
+    "credit": "Claude / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lyon_PlaceBellecour.JPG",
+    "kind": "file",
+    "year": "2006",
+    "changes": "resized"
+   },
+   "n": 7,
+   "map": {
+    "dx": -10,
+    "dy": -4,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Zagreb and Rijeka, Croatia",
+   "short": "Zagreb",
+   "rights": [
+    "Life and safety",
+    "Health",
+    "Accountability",
+    "Accountability Watch"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "Staff detained",
+   "headline": "Thousands in Zagreb demand justice over patient's death",
+   "text": "Thousands rallied in Zagreb, about 1,000 in Rijeka, a month after patient Kristian Josip Periš died under restraint at a psychiatric clinic. Prosecutors are investigating aggravated murder; eight staff were detained; the hospital director resigned.",
+   "src": [
+    [
+     "AFP (via Yahoo News)",
+     "https://uk.news.yahoo.com/croatians-rally-patient-died-hospital-192925425.html"
+    ],
+    [
+     "Reuters (via Internazionale)",
+     "https://www.internazionale.it/ultime-notizie-reuters/2026/11/21/croatians-rally-in-zagreb-demanding-justice-over-psychiatric-hospital-death"
+    ]
+   ],
+   "local": [
+    [
+     "hr",
+     "Index.hr",
+     "https://www.index.hr/vijesti/clanak/uzivo-pocela-komemoracija-perisu-njegova-sestra-mihaela-jedva-govori-kroz-suze/2859392.aspx"
+    ]
+   ],
+   "lon": 15.98,
+   "lat": 45.81,
+   "photo": {
+    "src": "images/2026-11-22/zagreb-square.webp",
+    "alt": "A city square with a blue tram, an equestrian statue, people walking and a departures board under a grey sky.",
+    "caption": "Ban Jelačić Square in central Zagreb, in 2017. File photo of the city.",
+    "credit": "Naturpuur / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tram_Ban_Josip_Jelacic_Square_in_Zagreb,_Croatia.jpg",
+    "kind": "file",
+    "year": "2017",
+    "changes": "resized"
+   },
+   "n": 8,
+   "map": {
+    "dx": 10,
+    "dy": -8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Seattle-Tacoma International Airport, Washington, United States",
+   "short": "Seattle",
+   "rights": [
+    "Due process",
+    "Dignity"
+   ],
+   "sev": "grey",
+   "fig": "2",
+   "figcap": "Passengers detained",
+   "headline": "ICE detains two passengers at Seattle airport",
+   "text": "Masked ICE officers detained a father and daughter boarding a flight to Los Angeles. DHS says both overstayed visas and she threw hot coffee at officers; Washington's governor called ICE \"out of control\".",
+   "src": [
+    [
+     "CBS News",
+     "https://www.cbsnews.com/news/ice-arrest-alaska-airlines-flight-seattle/"
+    ],
+    [
+     "KUOW",
+     "https://www.kuow.org/immigration/2026-11-21/outraged-port-officials-react-after-ice-arrests-family-at-sea-tac-airport"
+    ]
+   ],
+   "lon": -122.31,
+   "lat": 47.45,
+   "photo": {
+    "src": "images/2026-11-22/seatac-north.webp",
+    "alt": "Several white and navy passenger jets parked at a terminal's gates, with a control tower on the right.",
+    "caption": "Seattle–Tacoma International Airport's North Satellite terminal, in 2018. File photo.",
+    "credit": "SounderBruce / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Alaska_Airlines_planes_at_Sea-Tac_North_Satellite_Terminal.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 9
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Siang",
+   "title": "The fight over the Siang dam",
+   "dek": "Villages along the Siang oppose a dam that would affect 27 villages. On 21 November the Home Minister promised talks; Adi groups still demand no dam.",
+   "src": "images/focus/siang/siang-river-2019.webp",
+   "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+   "photos": 4
+  }
+ ]
+}

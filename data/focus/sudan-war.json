@@ -3,7 +3,7 @@
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
  "dek": "Drone strikes on two Buram villages in South Kordofan killed seven civilians, three of them children, on 19 Nov; activists blamed the army.",
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -533,6 +533,20 @@
      "https://www.radiotamazuj.org/en/news/article/7-civilians-slain-14-injured-in-south-kordofan-drone-attacks"
     ]
    ]
+  },
+  {
+   "date": "2026-11-21",
+   "text": "Sennar state's governor ordered a 10pm–4am curfew, citing fears that fighting in neighbouring Blue Nile could spread, as RSF and SPLM-N forces reportedly advanced towards Damazin. Some residents have fled, Radio Tamazuj reported; the authorities did not comment to it.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/sennar-imposes-night-curfew-as-blue-nile-fighting-intensifies"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/panic-in-damazin-amid-military-operations-in-bau-geissan"
+    ]
+   ]
   }
  ],
  "official": {
@@ -615,7 +629,8 @@
   "2026-11-18",
   "2026-11-19",
   "2026-11-20",
-  "2026-11-21"
+  "2026-11-21",
+  "2026-11-22"
  ],
  "instagram": {
   "caption": "",
@@ -632,8 +647,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-21",
-  "text": "Drone strikes on two South Kordofan villages killed seven civilians, three of them children, on 19 Nov, Radio Tamazuj reported. Activists blamed the army; no army comment was reported."
+  "date": "2026-11-22",
+  "text": "Sennar's governor ordered a 10pm–4am curfew on 21 Nov, citing fears that Blue Nile fighting could spread, as RSF–SPLM-N forces reportedly advanced towards Damazin. Some residents fled."
  },
  "summary": [
   {
