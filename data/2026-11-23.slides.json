@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Khartoum, Sudan",
+   "Drones kill four, hit UN building"
+  ],
+  [
+   "Near Ramallah",
+   "Settlers torch 12 Palestinian cars"
+  ],
+  [
+   "Assam border",
+   "20 people stranded in no-man's land"
+  ],
+  [
+   "Karnataka",
+   "Author held at airport over book"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 5,
+   "label": "Sudan's war",
+   "fig": "4",
+   "figlab": "people killed",
+   "place": "Khartoum and Omdurman",
+   "head": "Drones hit homes and a UN building",
+   "bullets": [
+    "Three were killed in one Omdurman home on 22 Nov.",
+    "A UN building was damaged with staff inside.",
+    "No RSF comment; the UN called it 'unacceptable'."
+   ],
+   "src": "Al Jazeera · ABC News"
+  },
+  {
+   "n": 6,
+   "label": "Palestine",
+   "fig": "12",
+   "figlab": "vehicles torched",
+   "place": "Kafr Malik, West Bank",
+   "head": "Settlers attack villages near Ramallah",
+   "bullets": [
+    "Three villages hit before dawn on 22 Nov.",
+    "Graffiti read 'Revenge' and 'Death to Arabs'.",
+    "Israeli police opened an investigation; no arrests reported."
+   ],
+   "src": "France 24 · Al Jazeera"
+  },
+  {
+   "n": 3,
+   "label": "India · Due process",
+   "fig": "20",
+   "figlab": "people stranded",
+   "place": "Sribhumi, Assam border",
+   "head": "Left in no-man's land",
+   "bullets": [
+    "Women and children among the group, reports say.",
+    "Bangladesh's border guard says India's BSF tried to push them in.",
+    "BSF denied sending them, bdnews24 reported."
+   ],
+   "src": "Maktoob · The Daily Star · bdnews24"
+  },
+  {
+   "n": 1,
+   "label": "India · Speech",
+   "fig": "4",
+   "figlab": "FIRs over a book",
+   "place": "Kochi airport · Karnataka case",
+   "head": "Author Ravi Hanj taken into custody",
+   "bullets": [
+    "Held on 21 Nov under a lookout notice.",
+    "Karnataka's Cabinet ordered his book seized.",
+    "Police cite FIRs for promoting enmity; Hanj apologised."
+   ],
+   "src": "Onmanorama · The News Minute"
+  }
+ ]
+}
