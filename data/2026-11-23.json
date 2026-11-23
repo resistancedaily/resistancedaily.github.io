@@ -1,0 +1,374 @@
+{
+ "date": "2026-11-23",
+ "date_long": "Mon 23 Nov 2026",
+ "date_short": "Mon 23 Nov",
+ "window": "Sun 09:00 → Mon 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-23",
+ "items": [
+  {
+   "region": "india",
+   "place": "Kochi airport, Kerala (case filed in Karnataka)",
+   "short": "Kochi",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "4",
+   "figcap": "FIRs filed",
+   "headline": "Author of seized Basavanna book held at airport",
+   "text": "Karnataka Police took author Ravi Hanj into custody at Kochi airport on 21 Nov over his book 'Basava Mantapa', citing FIRs for promoting enmity. The Cabinet had ordered the book seized; Hanj apologised.",
+   "src": [
+    [
+     "Onmanorama",
+     "https://www.onmanorama.com/news/kerala/2026/11/21/kannada-writer-ravi-hanj-detained-at-kochi-airport-amid-row-over-his-book.html"
+    ],
+    [
+     "The News Minute",
+     "https://www.thenewsminute.com/karnataka/author-ravi-hanj-arrested-over-book-for-distorting-basavannas-teachings"
+    ]
+   ],
+   "lon": 76.391,
+   "lat": 10.152,
+   "photo": {
+    "src": "images/2026-11-23/cochin-airport.webp",
+    "alt": "A wide, empty concrete airport apron under a blue sky with clouds, with terminal buildings and lamp posts in the distance.",
+    "caption": "The apron at Cochin International Airport, Kochi, in 2024. File photo.",
+    "credit": "Ranjithsiji / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cochin_International_Airport_Terminal_DSC_0201.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "grey",
+   "fig": "₹15,000",
+   "figcap": "Monthly pay sought",
+   "headline": "ASHA workers' Freedom Park sit-in reaches day six",
+   "text": "ASHA health workers' sit-in at Freedom Park for a ₹15,000 monthly honorarium reached day six on 22 Nov; some were hospitalised. Chief Minister D K Shivakumar says the government is 'not rejecting' the demand.",
+   "src": [
+    [
+     "Vartha Bharati (Kannada)",
+     "https://www.varthabharati.in/state/asha-workers-overnight-dharna-continues-karunya-ram-several-groups-back-stir-2292892"
+    ],
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/karnataka-cm-assures-asha-workers-of-sympathetic-consideration-urges-them-to-end-protest/3103517/"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Vartha Bharati",
+     "https://www.varthabharati.in/state/asha-workers-overnight-dharna-continues-karunya-ram-several-groups-back-stir-2292892"
+    ]
+   ],
+   "lon": 77.577,
+   "lat": 12.977,
+   "photo": {
+    "src": "images/2026-11-23/freedom-park-path.webp",
+    "alt": "A paved path under green trees leading to low white and tiled-roof buildings.",
+    "caption": "A path inside Freedom Park, Bengaluru, a former jail now used as the city's protest site, in 2024. File photo.",
+    "credit": "Gpkp / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park,_Bengaluru_(2024)_23.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Sribhumi, Assam, at the Bangladesh border",
+   "short": "Assam border",
+   "rights": [
+    "Due process",
+    "Detention"
+   ],
+   "sev": "orange",
+   "fig": "20",
+   "figcap": "People stranded",
+   "headline": "20 people stranded at Assam–Bangladesh border",
+   "text": "About 20 people, including women and children, were stranded in no-man's land near Barlekha; Bangladesh's border guard says India's BSF tried to push them in. BSF denied sending them, bdnews24 reported.",
+   "src": [
+    [
+     "Maktoob",
+     "https://maktoobmedia.com/post?id=117000&slug=20-people-stranded-at-india-bangladesh-border-after-bgb-blocks-entry-allege-pushed-from-assam"
+    ],
+    [
+     "The Daily Star",
+     "https://www.thedailystar.net/news/news/bgb-foils-attempt-push-20-people-bangladesh-along-moulvibazar-border-4328831"
+    ],
+    [
+     "bdnews24 (Bengali)",
+     "https://bangla.bdnews24.com/samagrabangladesh/yi86w7iqoz"
+    ]
+   ],
+   "local": [
+    [
+     "bn",
+     "bdnews24",
+     "https://bangla.bdnews24.com/samagrabangladesh/yi86w7iqoz"
+    ]
+   ],
+   "lon": 92.25,
+   "lat": 24.62,
+   "photo": {
+    "src": "images/2026-11-08/karimganj.webp",
+    "alt": "A wet main road with a cycle rickshaw, auto-rickshaw, roadside stalls and billboards under a grey sky.",
+    "caption": "Karimganj–Silchar Road near Karimganj bus station, in the district now called Sribhumi, in 2019.",
+    "credit": "Rohit Goswami / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karimganj_Silchar_Road,_near_Karimganj_Bus_Station.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Chaderghat, Hyderabad, Telangana",
+   "short": "Hyderabad",
+   "rights": [
+    "Assembly",
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "4",
+   "figcap": "Detentions since 2025",
+   "headline": "Rights activist held during Telangana CM's visit",
+   "text": "Hyderabad police detained Human Rights Forum's Syed Bilal on 22 Nov before the Chief Minister's visit and freed him after. Police cite Intelligence Wing orders over past Musi-project protests; HRF calls it unconstitutional.",
+   "src": [
+    [
+     "Siasat",
+     "https://www.siasat.com/human-rights-forum-condemns-repeated-detention-of-hyderabad-activist-3584036/"
+    ]
+   ],
+   "lon": 78.486,
+   "lat": 17.38,
+   "photo": {
+    "src": "images/2026-11-23/musi-chaderghat.webp",
+    "alt": "The Musi river seen through a wire fence at sunrise, with a bridge and buildings in the distance.",
+    "caption": "The Musi river at Chaderghat, Hyderabad, in 2022. File photo.",
+    "credit": "adbh266 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Musi_river_at_chaderghat,_Hyderabad.jpg",
+    "kind": "file",
+    "year": "2022",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Khartoum and Omdurman, Sudan",
+   "short": "Khartoum",
+   "thread": "sudan-war",
+   "rights": [
+    "Life and safety"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "Killed",
+   "headline": "Drones kill four around Khartoum, hit UN building",
+   "text": "Drone strikes blamed on the RSF killed four people around Khartoum on 22 Nov and damaged a UN building with staff inside. The UN called it 'unacceptable'; no RSF comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum"
+    ],
+    [
+     "ABC News (Australia)",
+     "https://www.abc.net.au/news/2026-11-23/deadly-drone-strikes-in-khartoum-sudan-war/107415908"
+    ]
+   ],
+   "lon": 32.48,
+   "lat": 15.65,
+   "photo": {
+    "src": "images/2026-11-03/khartoum.webp",
+    "alt": "A donkey cart beside a dusty street with a painted wall and a white building behind.",
+    "caption": "A street in Khartoum, Sudan's capital, in 2013.",
+    "credit": "Shmyg / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Khartoum_Street.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Kafr Malik and nearby villages, Ramallah, West Bank",
+   "short": "West Bank",
+   "thread": "palestine",
+   "rights": [
+    "Life and safety",
+    "Property"
+   ],
+   "sev": "orange",
+   "fig": "12",
+   "figcap": "Vehicles torched",
+   "headline": "Settlers torch cars in villages near Ramallah",
+   "text": "Settlers set 12 Palestinian vehicles alight and sprayed 'Revenge' and 'Death to Arabs' in Kafr Malik and two nearby villages on 22 Nov. Israeli police opened an investigation; no arrests were reported.",
+   "src": [
+    [
+     "France 24",
+     "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank"
+    ],
+    [
+     "Al Jazeera via Yahoo News",
+     "https://www.yahoo.com/news/world/articles/israeli-settlers-attack-several-palestinian-121942302.html"
+    ]
+   ],
+   "lon": 35.3,
+   "lat": 31.98,
+   "photo": {
+    "src": "images/2026-11-23/kafr-malik-sign.webp",
+    "alt": "A roadside sign reading 'We ♥ Kafermalik' on a stone wall, with hills behind under a cloudy sky.",
+    "caption": "A welcome sign at Kafr Malik, near Ramallah, in 2024. File photo.",
+    "credit": "Yoram Shurek / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Welcome_sign_to_kafer_Malik.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 6,
+   "map": {
+    "dx": 6,
+    "dy": -8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Al-Mawasi, Khan Younis, Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life and safety"
+   ],
+   "sev": "red",
+   "fig": "2",
+   "figcap": "Died of wounds",
+   "headline": "Two die after Israeli strike in al-Mawasi",
+   "text": "Two Palestinians died of wounds from an Israeli strike in al-Mawasi, Khan Younis, early on 22 Nov, Nasser hospital said. Civil defence recovered 129 bodies from rubble in central Gaza. No Israeli comment was reported.",
+   "src": [
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza"
+    ]
+   ],
+   "lon": 34.28,
+   "lat": 31.36,
+   "photo": {
+    "src": "images/focus/palestine/mawasi.webp",
+    "alt": "An aerial view of a vast camp of white and blue tents stretching over sandy ground towards the sea.",
+    "caption": "Al-Mawasi, where hundreds of thousands of displaced Palestinians live in tents, seen from the air in January 2025.",
+    "credit": "Ashraf Amra / UNRWA, via Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:An_aerial_view_of_Al-Mawasi_area_where_displaced_Palestinians_live_in_tents,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "resized"
+   },
+   "n": 7,
+   "map": {
+    "dx": -8,
+    "dy": 13
+   },
+   "left": true
+  },
+  {
+   "region": "world",
+   "place": "Gazipur and Ashulia, near Dhaka, Bangladesh",
+   "short": "Bangladesh",
+   "rights": [
+    "Labour",
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "96",
+   "figcap": "Arrested",
+   "headline": "Tear gas at Bangladesh garment wage protest",
+   "text": "Police fired tear gas and sound grenades at garment workers seeking higher wages in Gazipur on 22 Nov, saying they threw bricks. 96 people, including five labour leaders, are held over earlier clashes.",
+   "src": [
+    [
+     "The Business Standard",
+     "https://www.tbsnews.net/bangladesh/garment-workers-stage-fresh-protest-gazipur-attempt-block-dhaka-mymensingh-highway"
+    ],
+    [
+     "The Daily Star",
+     "https://www.thedailystar.net/news/news/50-factories-savar-ashulia-declare-holidays-amid-wage-protests-4329371"
+    ]
+   ],
+   "lon": 90.4,
+   "lat": 24.1,
+   "photo": {
+    "src": "images/2026-11-03/ashulia.webp",
+    "alt": "A brick embankment road beside wide floodwater under a cloudy sky, with a food cart and a few people.",
+    "caption": "An embankment road in Ashulia, near Dhaka, in 2007. Ashulia is one of the industrial areas where workers protested.",
+    "credit": "Shahnoor Habib Munmun / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ashulia_Dhaka_Bangladesh_1.JPG",
+    "kind": "file",
+    "year": "2007",
+    "changes": "resized"
+   },
+   "n": 8
+  }
+ ],
+ "focus": [
+  {
+   "slug": "palestine",
+   "kicker": "Focus · Palestine",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "Settlers torched 12 Palestinian vehicles in villages near Ramallah on 22 Nov. In Gaza, two people died after a strike in al-Mawasi.",
+   "src": "images/2026-10-20/olive-harvest-hebron.webp",
+   "alt": "A gloved hand picking purple olives from a branch.",
+   "photos": 8
+  }
+ ]
+}

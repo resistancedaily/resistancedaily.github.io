@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "Drone strikes on two Buram villages in South Kordofan killed seven civilians, three of them children, on 19 Nov; activists blamed the army.",
- "updated": "2026-11-22",
+ "dek": "Drone strikes blamed on the RSF killed four people around Khartoum on 22 Nov and damaged a UN building with staff inside.",
+ "updated": "2026-11-23",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -547,10 +547,24 @@
      "https://www.radiotamazuj.org/en/news/article/panic-in-damazin-amid-military-operations-in-bau-geissan"
     ]
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Drone strikes blamed on the RSF killed four people in and around Khartoum, three of them in a home in northern Omdurman, and damaged a UN building while staff were inside. The UN humanitarian office called the danger to its staff 'unacceptable'. An army source claimed the drones came from Ethiopia, which has denied such claims; no RSF comment was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/22/rsf-drones-kill-four-in-khartoum"
+    ],
+    [
+     "ABC News (Australia)",
+     "https://www.abc.net.au/news/2026-11-23/deadly-drone-strikes-in-khartoum-sudan-war/107415908"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment. On the Abu Qalb strike of 15 November, a spokesman for the army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan. Replying to Amnesty International on 24 October, the RSF denied responsibility for nine drone strikes on El Obeid and blamed the army.",
+  "text": "Army chief Abdel Fattah al-Burhan rejects negotiations and says the “military option” will continue until the RSF is removed from Sudan. The RSF has repeatedly denied widespread killings in Darfur; its leader, Mohamed Hamdan Dagalo, has acknowledged abuses by his fighters but disputed their scale, and the RSF and its allies have formed a parallel government in areas they hold. The RSF did not respond to AP's request for comment on the UN's El Fasher findings. Asked about the Centre for Information Resilience's findings on sexual violence, neither the RSF nor the army responded to Al Jazeera; both have previously denied such abuses. Sudan's government accuses Ethiopia of involvement in drone attacks on infrastructure; Ethiopia had no immediate comment, and the RSF generally does not comment. The army did not respond to CPJ about the Article 51 amendment. On the Abu Qalb strike of 15 November, a spokesman for the army-allied Special Operations Forces said his troops had \"eliminated\" RSF positions in West Kordofan. Replying to Amnesty International on 24 October, the RSF denied responsibility for nine drone strikes on El Obeid and blamed the army. On the 22 November Khartoum drone strikes, a Sudanese army source said the drones were launched from Ethiopia; Ethiopia has denied allowing such attacks, and no RSF comment was reported.",
   "src": [
    [
     "Al Jazeera",
@@ -599,7 +613,8 @@
    "The RSF did not respond to AP's request for comment on the UN's El Fasher findings.",
    "The government accuses Ethiopia of involvement in attacks on infrastructure; the RSF generally does not comment and says it protects civilians. No RSF response was reported on the 2–3 November strikes.",
    "On the 15 November Abu Qalb strike, a spokesman for army-allied Special Operations Forces said his troops \"eliminated\" RSF positions in West Kordofan; the army made no statement on civilian deaths in the reports.",
-   "Replying to Amnesty on 24 October, the RSF denied carrying out the El Obeid drone strikes, blamed the army and said it was considering an investigative committee."
+   "Replying to Amnesty on 24 October, the RSF denied carrying out the El Obeid drone strikes, blamed the army and said it was considering an investigative committee.",
+   "On the 22 November Khartoum strikes, an army source said the drones came from Ethiopia, which denies it; no RSF comment was reported."
   ]
  },
  "editions": [
@@ -630,7 +645,8 @@
   "2026-11-19",
   "2026-11-20",
   "2026-11-21",
-  "2026-11-22"
+  "2026-11-22",
+  "2026-11-23"
  ],
  "instagram": {
   "caption": "",
@@ -647,8 +663,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-22",
-  "text": "Sennar's governor ordered a 10pm–4am curfew on 21 Nov, citing fears that Blue Nile fighting could spread, as RSF–SPLM-N forces reportedly advanced towards Damazin. Some residents fled."
+  "date": "2026-11-23",
+  "text": "Drone strikes blamed on the RSF killed four people around Khartoum on 22 Nov and damaged a UN building with staff inside, the UN said. No RSF comment was reported."
  },
  "summary": [
   {

@@ -1,0 +1,66 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 76.391,
+   "lat": 10.152,
+   "sev": "orange",
+   "label": "Kochi"
+  },
+  {
+   "n": 2,
+   "lon": 77.577,
+   "lat": 12.977,
+   "sev": "grey",
+   "label": "Bengaluru"
+  },
+  {
+   "n": 3,
+   "lon": 92.25,
+   "lat": 24.62,
+   "sev": "orange",
+   "label": "Assam border"
+  },
+  {
+   "n": 4,
+   "lon": 78.486,
+   "lat": 17.38,
+   "sev": "grey",
+   "label": "Hyderabad"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 32.48,
+   "lat": 15.65,
+   "sev": "red",
+   "label": "Khartoum"
+  },
+  {
+   "n": 6,
+   "lon": 35.3,
+   "lat": 31.98,
+   "sev": "orange",
+   "label": "West Bank",
+   "dx": 6,
+   "dy": -8
+  },
+  {
+   "n": 7,
+   "lon": 34.28,
+   "lat": 31.36,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": -8,
+   "dy": 13
+  },
+  {
+   "n": 8,
+   "lon": 90.4,
+   "lat": 24.1,
+   "sev": "orange",
+   "label": "Bangladesh"
+  }
+ ]
+}

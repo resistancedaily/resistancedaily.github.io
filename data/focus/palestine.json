@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "UN agencies counted 400+ settler attacks in this West Bank olive harvest, a record. Israeli strikes killed six to seven in central Gaza on 20 Nov.",
- "updated": "2026-11-22",
+ "dek": "Settlers torched 12 Palestinian vehicles in villages near Ramallah on 22 Nov. In Gaza, two people died after a strike in al-Mawasi.",
+ "updated": "2026-11-23",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -536,10 +536,38 @@
      "https://www.timesofisrael.com/israeli-strike-in-gaza-city-kills-3-idf-says-it-hit-terrorists-masquerading-as-aid-workers/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Two Palestinians died of wounds from an Israeli strike in al-Mawasi, Khan Younis, early on Sunday, Nasser Medical Complex said; civil defence crews recovered 129 bodies from buildings in central Gaza. No Israeli comment on the strike was reported.",
+   "src": [
+    [
+     "Middle East Eye",
+     "https://www.middleeasteye.net/live-blog/live-blog-update/two-palestinians-succumb-wounds-sustained-israeli-strike-gaza"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/22/displaced-palestinians-protest-as-israeli-air-strikes-continue-in-gaza"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-22",
+   "text": "In the West Bank, settlers set 12 Palestinian vehicles alight and sprayed 'Revenge' and 'Death to Arabs' in Kafr Malik, Deir Abu Mash'al and Deir as-Sudan near Ramallah. Israel's foreign minister condemned a 'handful of extremists'; police opened an investigation and no arrests were reported.",
+   "src": [
+    [
+     "France 24",
+     "https://www.france24.com/en/middle-east/20261122-israel-s-eisenkot-slams-jewish-terrorism-after-attacks-by-settlers-in-west-bank"
+    ],
+    [
+     "Al Jazeera via Yahoo News",
+     "https://www.yahoo.com/news/world/articles/israeli-settlers-attack-several-palestinian-121942302.html"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\". On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers.",
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\". On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers. On the 22 November settler attacks near Ramallah, Foreign Minister Gideon Saar condemned a \"handful of extremists\" and police opened an investigation; no Israeli comment on the al-Mawasi strike was reported.",
   "src": [
    [
     "Arab News (AFP)",
@@ -593,7 +621,8 @@
    "In Hebron the military says it is dismantling \"terrorist infrastructure\"; the defence minister said residents cannot return until operations end.",
    "The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas.",
    "The military said it \"does not intend to comment\" on services related to operational needs after the Guardian's report on facial recognition.",
-   "On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers."
+   "On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers.",
+   "On the 22 November settler arson near Ramallah, the foreign minister condemned a \"handful of extremists\"; police are investigating. No comment on the al-Mawasi strike was reported."
   ]
  },
  "editions": [
@@ -631,11 +660,12 @@
   "2026-11-18",
   "2026-11-20",
   "2026-11-21",
-  "2026-11-22"
+  "2026-11-22",
+  "2026-11-23"
  ],
  "whats_new": {
-  "date": "2026-11-22",
-  "text": "An Israeli drone strike killed three people in a food van in Gaza City on 21 Nov. The army said it hit Islamic Jihad operatives; World Central Kitchen denied any link to the van."
+  "date": "2026-11-23",
+  "text": "Settlers torched 12 Palestinian vehicles near Ramallah on 22 Nov; Israeli police opened an investigation. Two people died after an Israeli strike in Gaza's al-Mawasi."
  },
  "instagram": {
   "hashtags": [
