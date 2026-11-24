@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "West Kordofan, Sudan",
+   "Drone kills eight on way to market"
+  ],
+  [
+   "Jabalia, Gaza",
+   "Strike kills UN water worker"
+  ],
+  [
+   "Karnataka",
+   "Author cites ₹5 lakh bounty in court"
+  ],
+  [
+   "West Bengal",
+   "Deleted voters' appeals to be heard first"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 6,
+   "label": "Sudan's war",
+   "fig": "8",
+   "figlab": "civilians killed",
+   "place": "Near Armal, West Kordofan",
+   "head": "Drone hits a car bound for market",
+   "bullets": [
+    "Women were among those in the vehicle, local sources say.",
+    "Several others were injured.",
+    "Believed to be an army drone; no side claimed it."
+   ],
+   "src": "Darfur24"
+  },
+  {
+   "n": 5,
+   "label": "Palestine",
+   "fig": "35",
+   "figlab": "years he worked for UNRWA",
+   "place": "Jabalia camp, Gaza",
+   "head": "UN worker killed at a water well",
+   "bullets": [
+    "Adel al-Helo was killed on 23 Nov; three were wounded.",
+    "Two more died in a strike in Gaza City.",
+    "Israel's military said it was checking the report."
+   ],
+   "src": "Al-Monitor (Reuters) · Al-Quds"
+  },
+  {
+   "n": 1,
+   "label": "India · Speech",
+   "fig": "₹5 lakh",
+   "figlab": "bounty on an author",
+   "place": "Bengaluru and Athani, Karnataka",
+   "head": "Ravi Hanj asks court to quash FIR",
+   "bullets": [
+    "He says the bounty threatens his right to life.",
+    "The FIR is over his book 'Basava Mantapa'.",
+    "Police booked the bounty announcer; he apologised."
+   ],
+   "src": "ETV Bharat · Samyukta Karnataka · Siasat"
+  },
+  {
+   "n": 3,
+   "label": "India · Right upheld",
+   "fig": "22 lakh",
+   "figlab": "deletion appeals pending",
+   "place": "West Bengal · Supreme Court",
+   "head": "Deleted voters to be heard first",
+   "bullets": [
+    "Tribunals told to defer challenges to inclusions.",
+    "Election Commission asked to add tribunals.",
+    "The Solicitor General questioned bypassing High Courts."
+   ],
+   "src": "SC Observer · The Wire"
+  }
+ ]
+}
