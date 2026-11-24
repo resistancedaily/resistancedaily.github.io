@@ -1,0 +1,62 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.592,
+   "lat": 12.979,
+   "sev": "orange",
+   "label": "Karnataka",
+   "dx": 13,
+   "dy": -8
+  },
+  {
+   "n": 2,
+   "lon": 77.577,
+   "lat": 12.977,
+   "sev": "grey",
+   "label": "Bengaluru",
+   "dx": -13,
+   "dy": 8
+  },
+  {
+   "n": 3,
+   "lon": 77.24,
+   "lat": 28.622,
+   "sev": "grey",
+   "label": "Supreme Court",
+   "left": true
+  },
+  {
+   "n": 4,
+   "lon": 95.33,
+   "lat": 28.07,
+   "sev": "grey",
+   "label": "Siang"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 34.497,
+   "lat": 31.533,
+   "sev": "red",
+   "label": "Gaza",
+   "left": true
+  },
+  {
+   "n": 6,
+   "lon": 28.43,
+   "lat": 12.7,
+   "sev": "red",
+   "label": "West Kordofan",
+   "left": true
+  },
+  {
+   "n": 7,
+   "lon": 4.336,
+   "lat": 50.836,
+   "sev": "grey",
+   "label": "Brussels"
+  }
+ ]
+}

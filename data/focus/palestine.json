@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "Settlers torched 12 Palestinian vehicles in villages near Ramallah on 22 Nov. In Gaza, two people died after a strike in al-Mawasi.",
- "updated": "2026-11-23",
+ "dek": "An Israeli strike near a Jabalia water well killed a UNRWA worker on 23 Nov. Gaza's health ministry counts 1,671 killed since the October 2025 ceasefire.",
+ "updated": "2026-11-24",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -112,19 +112,19 @@
  ],
  "figs": [
   {
-   "fig": "1,622",
-   "figcap": "killed since the Oct 2025 ceasefire (to 12 Nov)",
+   "fig": "1,671",
+   "figcap": "killed since the Oct 2025 ceasefire (to 21 Nov)",
    "src": [
     "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/11/israeli-strikes-hit-tent-camp-as-five-killed-in-gaza"
+    "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
    ]
   },
   {
-   "fig": "74,640",
+   "fig": "74,736",
    "figcap": "killed since Oct 2023, Gaza health ministry",
    "src": [
-    "APA (Gaza health ministry)",
-    "https://en.apa.az/asia/gazas-death-toll-since-october-2023-rises-to-74640-health-ministry-534721"
+    "Al Jazeera",
+    "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
    ]
   },
   {
@@ -564,6 +564,20 @@
      "https://www.yahoo.com/news/world/articles/israeli-settlers-attack-several-palestinian-121942302.html"
     ]
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "text": "On 23 November an Israeli strike near a water well in Jabalia camp, northern Gaza, killed UNRWA worker Adel al-Helo, who had worked for the agency for 35 years, and wounded three others. UNRWA said its staff were doing their regular well duties; Israel's military said it was checking the report. A strike on a vehicle in western Gaza City killed two more people; the military did not immediately comment.",
+   "src": [
+    [
+     "Al-Monitor (Reuters)",
+     "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says"
+    ],
+    [
+     "Al-Quds (Arabic)",
+     "https://alquds.com/ar/posts/277341-unrwa-staff-martyred-israeli-strike-gaza"
+    ]
+   ]
   }
  ],
  "official": {
@@ -661,11 +675,12 @@
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ],
  "whats_new": {
-  "date": "2026-11-23",
-  "text": "Settlers torched 12 Palestinian vehicles near Ramallah on 22 Nov; Israeli police opened an investigation. Two people died after an Israeli strike in Gaza's al-Mawasi."
+  "date": "2026-11-24",
+  "text": "An Israeli strike near a water well in Jabalia killed UNRWA worker Adel al-Helo on 23 Nov and wounded three; two more died in Gaza City. Israel's military said it was checking."
  },
  "instagram": {
   "hashtags": [

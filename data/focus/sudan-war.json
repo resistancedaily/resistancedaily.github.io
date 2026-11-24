@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "Drone strikes blamed on the RSF killed four people around Khartoum on 22 Nov and damaged a UN building with staff inside.",
- "updated": "2026-11-23",
+ "dek": "A drone strike believed to be the army's killed at least eight civilians near Armal, West Kordofan, local sources said on 23 Nov. No side claimed it.",
+ "updated": "2026-11-24",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -561,6 +561,20 @@
      "https://www.abc.net.au/news/2026-11-23/deadly-drone-strikes-in-khartoum-sudan-war/107415908"
     ]
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Local sources told Darfur24 on 23 November that a drone strike on a civilian vehicle near Armal, in Al-Nahud locality of West Kordofan, killed at least eight people on their way to a weekly market, women among them, and injured several others. The drone was believed to belong to the army; no party to the conflict claimed the attack and no army comment was reported.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/11/23/drone-strike-kills-eight-civilians-in-west-kordofan/"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/23/%D9%85%D9%82%D8%AA%D9%84-8-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%BA%D8%B1%D8%A8-%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -646,7 +660,8 @@
   "2026-11-20",
   "2026-11-21",
   "2026-11-22",
-  "2026-11-23"
+  "2026-11-23",
+  "2026-11-24"
  ],
  "instagram": {
   "caption": "",
@@ -663,8 +678,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-23",
-  "text": "Drone strikes blamed on the RSF killed four people around Khartoum on 22 Nov and damaged a UN building with staff inside, the UN said. No RSF comment was reported."
+  "date": "2026-11-24",
+  "text": "A drone strike on a civilian vehicle near Armal, West Kordofan, killed at least eight people bound for a market, local sources said on 23 Nov. It is believed to be the army's; no side claimed it."
  },
  "summary": [
   {

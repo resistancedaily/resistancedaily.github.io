@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -1074,6 +1074,72 @@
     "changes": "resized"
    },
    "edition": "2026-11-21#4"
+  },
+  {
+   "id": "bengal-deleted-voters-first",
+   "date": "2026-11-23",
+   "kind": "Courts",
+   "rights": [
+    "Vote",
+    "Due process"
+   ],
+   "place": "West Bengal (Supreme Court, New Delhi)",
+   "fig": "22 lakh",
+   "figcap": "deletion appeals pending",
+   "headline": "Deleted Bengal voters' appeals to be heard first",
+   "text": "The Supreme Court told West Bengal's voter-roll tribunals to hear appeals by people deleted from the rolls first, and asked for more tribunals. About 22 lakh such appeals are pending; these are interim directions.",
+   "slide_head": "Deleted voters heard first",
+   "slide": "Court orders priority for 22 lakh pending Bengal appeals",
+   "src": [
+    [
+     "Supreme Court Observer",
+     "https://www.scobserver.in/reports/west-bengal-sir-deleted-voter-appeals-to-be-prioritised/"
+    ],
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/bengal-sir-prioritise-voters-excluded-from-rolls-defer-inclusions-sc-tells-appellate-tribunals"
+    ]
+   ],
+   "photo": {
+    "src": "images/2026-11-24/calcutta-high-court.webp",
+    "alt": "A red and cream Gothic-style court building with a central tower, a statue and gardens in front, under a cloudy sky.",
+    "caption": "The Calcutta High Court in Kolkata, in 2018. The Supreme Court asked the Election Commission to consult its Chief Justice on more voter-roll tribunals. File photo.",
+    "credit": "Pinakpani / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Building_of_Calcutta_High_Court_02.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "edition": "2026-11-24#3"
+  },
+  {
+   "id": "athani-bounty-case",
+   "date": "2026-11-23",
+   "kind": "Accountability",
+   "rights": [
+    "Expression",
+    "Life and safety"
+   ],
+   "place": "Athani, Belagavi, Karnataka",
+   "fig": "₹5 lakh",
+   "figcap": "bounty announced",
+   "headline": "Police book man who offered bounty on author",
+   "text": "Police registered a case against a local leader who announced a ₹5 lakh reward for killing author Ravi Hanj at an Athani protest; he apologised. A case is not a charge; no arrest was reported.",
+   "slide_head": "Bounty call booked",
+   "slide": "Police case over ₹5 lakh call to kill an author",
+   "src": [
+    [
+     "Samyukta Karnataka (Kannada)",
+     "https://samyuktakarnataka.in/news/karnataka/case-registered-against-prakash-mahajan-who-had-announced-a-reward-of-%E2%82%B95-lakh/"
+    ],
+    [
+     "Siasat (PTI)",
+     "https://www.siasat.com/lingayat-leader-announces-bounty-on-kannada-author-ravi-hanj-3583744/"
+    ]
+   ],
+   "edition": "2026-11-24#1"
   }
  ]
 }

@@ -1,0 +1,382 @@
+{
+ "date": "2026-11-24",
+ "date_long": "Tue 24 Nov 2026",
+ "date_short": "Tue 24 Nov",
+ "window": "Mon 09:00 → Tue 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-24",
+ "items": [
+  {
+   "region": "india",
+   "place": "Bengaluru and Athani, Karnataka",
+   "short": "Karnataka",
+   "rights": [
+    "Expression",
+    "Life and safety"
+   ],
+   "sev": "orange",
+   "fig": "₹5 lakh",
+   "figcap": "Bounty announced",
+   "headline": "Held author asks court to quash FIR",
+   "text": "Author Ravi Hanj asked the Karnataka High Court on 23 Nov to quash an FIR over his book, citing a ₹5 lakh bounty on his life. Police booked the man who announced it; he apologised.",
+   "src": [
+    [
+     "ETV Bharat (Kannada)",
+     "https://www.etvbharat.com/kn/state/basava-mantapa-book-controversy-author-ravi-hanj-approaches-high-court-seeking-quashing-of-fir-kas26112304773"
+    ],
+    [
+     "Samyukta Karnataka (Kannada)",
+     "https://samyuktakarnataka.in/news/karnataka/case-registered-against-prakash-mahajan-who-had-announced-a-reward-of-%E2%82%B95-lakh/"
+    ],
+    [
+     "Siasat (PTI)",
+     "https://www.siasat.com/lingayat-leader-announces-bounty-on-kannada-author-ravi-hanj-3583744/"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "ETV Bharat",
+     "https://www.etvbharat.com/kn/state/basava-mantapa-book-controversy-author-ravi-hanj-approaches-high-court-seeking-quashing-of-fir-kas26112304773"
+    ],
+    [
+     "kn",
+     "Samyukta Karnataka",
+     "https://samyuktakarnataka.in/news/karnataka/case-registered-against-prakash-mahajan-who-had-announced-a-reward-of-%E2%82%B95-lakh/"
+    ]
+   ],
+   "lon": 77.592,
+   "lat": 12.979,
+   "map": {
+    "dx": 13,
+    "dy": -8
+   },
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019. File photo.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Bengaluru",
+   "rights": [
+    "Assembly",
+    "Labour"
+   ],
+   "sev": "grey",
+   "fig": "17",
+   "figcap": "Hospitalised",
+   "headline": "ASHA sit-in hits day seven; 17 hospitalised",
+   "text": "On day seven of their Freedom Park sit-in for a ₹15,000 monthly honorarium, 17 ASHA workers had been hospitalised. The CM promised to take it to Cabinet; workers want a written order.",
+   "src": [
+    [
+     "TV9 Kannada (Kannada)",
+     "https://tv9kannada.com/karnataka/bengaluru/karnataka-asha-workers-protest-enters-day-7-17-hospitalised-in-one-week-1265556.html"
+    ],
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/asha-workers-continue-protest-oppn-targets-govt-over-failure-to-address-demands/3106875"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "TV9 Kannada",
+     "https://tv9kannada.com/karnataka/bengaluru/karnataka-asha-workers-protest-enters-day-7-17-hospitalised-in-one-week-1265556.html"
+    ]
+   ],
+   "lon": 77.577,
+   "lat": 12.977,
+   "map": {
+    "dx": -13,
+    "dy": 8
+   },
+   "label": "",
+   "photo": {
+    "src": "images/2026-10-24/bengaluru-freedom-park.webp",
+    "alt": "Large green letters reading Freedom Park in English and Kannada on a blue wall, with trees below.",
+    "caption": "The entrance sign at Freedom Park, Bengaluru, where the ASHA workers' sit-in is held. Photo from 2009.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "cropped"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court, New Delhi (West Bengal voter rolls)",
+   "short": "Supreme Court",
+   "rights": [
+    "Vote",
+    "Due process"
+   ],
+   "sev": "grey",
+   "upheld": true,
+   "fig": "22 lakh",
+   "figcap": "Appeals pending",
+   "headline": "Court: hear deleted Bengal voters' appeals first",
+   "text": "The Supreme Court told West Bengal's voter-roll tribunals on 23 Nov to hear deleted voters' appeals first; 22 lakh are pending, petitioners said. The Solicitor General questioned bypassing High Courts.",
+   "src": [
+    [
+     "Supreme Court Observer",
+     "https://www.scobserver.in/reports/west-bengal-sir-deleted-voter-appeals-to-be-prioritised/"
+    ],
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/bengal-sir-prioritise-voters-excluded-from-rolls-defer-inclusions-sc-tells-appellate-tribunals"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.622,
+   "photo": {
+    "src": "images/2026-11-24/calcutta-high-court.webp",
+    "alt": "A red and cream Gothic-style court building with a central tower, a statue and gardens in front, under a cloudy sky.",
+    "caption": "The Calcutta High Court in Kolkata, in 2018. The Supreme Court asked the Election Commission to consult its Chief Justice on more voter-roll tribunals. File photo.",
+    "credit": "Pinakpani / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Building_of_Calcutta_High_Court_02.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 3,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Siang valley, Arunachal Pradesh",
+   "short": "Siang",
+   "thread": "siang",
+   "focus": "siang",
+   "rights": [
+    "Land",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "75+",
+   "figcap": "Arrested or detained",
+   "headline": "Siang dam talks offer ends without breakthrough",
+   "text": "Groups rejected Amit Shah's talks and rehabilitation offer, demanding troops withdrawn and over 75 held protesters freed. Shah said the dam would be built only after consultation, not by force, an MP reported.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/states/north-east/arunachal-pradesh/amit-shah-arunachal-pradesh-siang-dam-263841"
+    ]
+   ],
+   "lon": 95.33,
+   "lat": 28.07,
+   "photo": {
+    "src": "images/focus/siang/siang-valley-2023.webp",
+    "alt": "A river valley between steep green hills, seen from a bridge.",
+    "caption": "The Siang valley in Arunachal Pradesh, seen from a bridge, in 2023. File photo.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:SiangRiverArunachal.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Jabalia camp, northern Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life and safety",
+    "Aid"
+   ],
+   "sev": "red",
+   "fig": "3",
+   "figcap": "Killed",
+   "headline": "Strike kills UN water worker in Jabalia",
+   "text": "An Israeli strike near a water well in Jabalia killed UNRWA worker Adel al-Helo, 35 years with the agency, on 23 Nov; two more died in Gaza City. Israel's military said it was checking.",
+   "src": [
+    [
+     "Al-Monitor (Reuters)",
+     "https://www.al-monitor.com/originals/2026/11/israeli-strike-kills-worker-un-palestinian-agency-gaza-agency-says"
+    ],
+    [
+     "Al-Quds (Arabic)",
+     "https://alquds.com/ar/posts/277341-unrwa-staff-martyred-israeli-strike-gaza"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al-Quds",
+     "https://alquds.com/ar/posts/277341-unrwa-staff-martyred-israeli-strike-gaza"
+    ]
+   ],
+   "lon": 34.497,
+   "lat": 31.533,
+   "photo": {
+    "src": "images/2026-11-15/jabalia.webp",
+    "alt": "Flattened concrete buildings and heaps of rubble under a blue sky, with damaged tower blocks behind.",
+    "caption": "Destroyed buildings in Jabaliya camp, northern Gaza, in October 2024. File photo.",
+    "credit": "Hussein Jaber / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "page": "https://commons.wikimedia.org/wiki/File:Destruction_caused_by_Israeli_bombing_of_Jabalia_camp,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Near Armal, Al-Nahud, West Kordofan, Sudan",
+   "short": "West Kordofan",
+   "thread": "sudan-war",
+   "rights": [
+    "Life and safety"
+   ],
+   "sev": "red",
+   "fig": "8",
+   "figcap": "Killed",
+   "headline": "Drone kills eight civilians in West Kordofan",
+   "text": "A drone strike on a civilian vehicle near Armal killed at least eight people heading to a market, local sources said on 23 Nov. It is believed to be the army's; no side claimed it.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/11/23/drone-strike-kills-eight-civilians-in-west-kordofan/"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/23/%D9%85%D9%82%D8%AA%D9%84-8-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%BA%D8%B1%D8%A8-%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Darfur24",
+     "https://darfur24.com/2026/11/23/%D9%85%D9%82%D8%AA%D9%84-8-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%BA%D8%B1%D8%A8-%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86/"
+    ]
+   ],
+   "lon": 28.43,
+   "lat": 12.7,
+   "photo": {
+    "src": "images/2026-11-17/west-kordofan-muglad.webp",
+    "alt": "A wide dirt street at sunset with low buildings, trees, a white pickup truck and a few people walking.",
+    "caption": "A street in Muglad, West Kordofan, in 2011. File photo of the state.",
+    "credit": "Julia Joerin / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Muglad_in_front_of_ICRC_office_2011.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   },
+   "n": 6,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Brussels, Belgium",
+   "short": "Brussels",
+   "rights": [
+    "Assembly",
+    "Press freedom"
+   ],
+   "sev": "grey",
+   "fig": "50,000–70,000",
+   "figcap": "Marchers",
+   "headline": "Eight arrested after Brussels austerity march",
+   "text": "Police counted 50,000 (unions: 70,000) at an anti-austerity march on 23 Nov. After clashes, police used tear gas and arrested eight; the AJP says an officer hit a photographer, no police reply reported.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://www.france24.com/en/live-news/20261123-new-belgium-protests-as-embattled-govt-sets-budget-deadline"
+    ],
+    [
+     "RTBF (French)",
+     "https://www.rtbf.be/article/manifestation-nationale-du-23-novembre-huit-arrestations-apres-les-incidents-a-la-gare-du-midi-a-bruxelles-11820031"
+    ],
+    [
+     "La DH (French)",
+     "https://www.dhnet.be/actu/belgique/2026/11/23/en-direct-manifestation-nationale-le-reseau-tec-perturbe-seulement-deux-lignes-de-metro-desservies-a-bruxelles-le-point-sur-la-situation-QIVWPRCF35BWJD2XKUVM24OAAM/"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "RTBF",
+     "https://www.rtbf.be/article/manifestation-nationale-du-23-novembre-huit-arrestations-apres-les-incidents-a-la-gare-du-midi-a-bruxelles-11820031"
+    ],
+    [
+     "fr",
+     "La DH",
+     "https://www.dhnet.be/actu/belgique/2026/11/23/en-direct-manifestation-nationale-le-reseau-tec-perturbe-seulement-deux-lignes-de-metro-desservies-a-bruxelles-le-point-sur-la-situation-QIVWPRCF35BWJD2XKUVM24OAAM/"
+    ]
+   ],
+   "lon": 4.336,
+   "lat": 50.836,
+   "photo": {
+    "src": "images/2026-11-24/brussels-midi.webp",
+    "alt": "The glass entrance of Brussels-Midi railway station under a long canopy, with a taxi in front and a few people on the pavement.",
+    "caption": "Brussels-Midi (Brussel-Zuid) station, near where clashes took place after the march, in 2021. File photo.",
+    "credit": "Japplemedia / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Station_Brussel-Zuid_Gebouw.jpg",
+    "kind": "file",
+    "year": "2021",
+    "changes": "resized"
+   },
+   "n": 7
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "A drone strike believed to be the army's killed at least eight civilians near Armal, West Kordofan, local sources said on 23 Nov. No side claimed it.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}
