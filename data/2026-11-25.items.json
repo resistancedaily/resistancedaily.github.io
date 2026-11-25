@@ -1,0 +1,69 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.103,
+   "lat": 28.556,
+   "sev": "orange",
+   "label": "Delhi"
+  },
+  {
+   "n": 2,
+   "lon": 87.56,
+   "lat": 24.23,
+   "sev": "orange",
+   "label": "Jharkhand"
+  },
+  {
+   "n": 3,
+   "lon": 82.32,
+   "lat": 19.14,
+   "sev": "orange",
+   "label": "Odisha"
+  },
+  {
+   "n": 4,
+   "lon": 77.58,
+   "lat": 12.978,
+   "sev": "grey",
+   "label": "Karnataka"
+  }
+ ],
+ "world": [
+  {
+   "n": 5,
+   "lon": 32.66,
+   "lat": 13.16,
+   "sev": "orange",
+   "label": "Sudan"
+  },
+  {
+   "n": 6,
+   "lon": 34.45,
+   "lat": 31.47,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 7,
+   "lon": 50.88,
+   "lat": 34.64,
+   "sev": "orange",
+   "label": "Iran"
+  },
+  {
+   "n": 8,
+   "lon": 30.25,
+   "lat": 1.56,
+   "sev": "red",
+   "label": "DR Congo"
+  },
+  {
+   "n": 9,
+   "lon": 44.02,
+   "lat": 13.58,
+   "sev": "orange",
+   "label": "Yemen"
+  }
+ ]
+}

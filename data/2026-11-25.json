@@ -1,0 +1,396 @@
+{
+ "date": "2026-11-25",
+ "date_long": "Wed 25 Nov 2026",
+ "date_short": "Wed 25 Nov",
+ "window": "Tue 09:00 → Wed 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-25",
+ "items": [
+  {
+   "region": "india",
+   "place": "Indira Gandhi International Airport, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Expression",
+    "Movement"
+   ],
+   "sev": "orange",
+   "fig": "7 days",
+   "figcap": "Notice deadline",
+   "headline": "Youth movement leader stopped from flying to UK",
+   "text": "Immigration stopped Saurav Das, invited to speak at Oxford and LSE, from flying to London on 23 Nov. An official cited a passport notice over mismatched birth details; Das denies any discrepancy.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/cjp-saurav-das-stopped-delhi-airport-passport-november-24-2026/article71737903.ece"
+    ],
+    [
+     "BBC News Hindi",
+     "https://www.bbc.com/hindi/articles/cmwy8627g50wo"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "BBC News Hindi",
+     "https://www.bbc.com/hindi/articles/cmwy8627g50wo"
+    ]
+   ],
+   "lon": 77.103,
+   "lat": 28.556,
+   "photo": {
+    "src": "images/2026-11-25/delhi-airport-t3.webp",
+    "alt": "A long glass-and-steel terminal building labelled Terminal 3 in English and Hindi, with palms and parked cars in front.",
+    "caption": "Terminal 3 at Delhi's Indira Gandhi International Airport, in 2023. File photo.",
+    "credit": "Ravi Dwivedi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Delhi_airport_terminal_3.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Badalpara-Kalyanpur, Shikaripara, Dumka district, Jharkhand",
+   "short": "Jharkhand",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "1,700 acres",
+   "figcap": "Coal block",
+   "headline": "Coal survey clash: villagers say no consent",
+   "text": "Villagers near Shikaripara say coal-block drilling began without Gram Sabha consent. On 22 Nov a survey firm's manager was held for hours; officials say 12 police were injured rescuing him. An FIR is filed.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/jharkhand-dumka-coal-block-clash-gm-held-hostage-policemen-injured-10976820/"
+    ]
+   ],
+   "lon": 87.56,
+   "lat": 24.23,
+   "photo": {
+    "src": "images/2026-11-25/shikaripara.webp",
+    "alt": "Cattle and goats graze on dry open ground ringed by palms and trees, with a tall palm trunk in the foreground.",
+    "caption": "Village land in Shikaripara block, Dumka district, in 2024. File photo of the area.",
+    "credit": "Mr. Kaka Babu / Wikimedia Commons",
+    "licence": "CC0 1.0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Shikaripara_village_area.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Patraguda village, Kotpad, Koraput district, Odisha",
+   "short": "Odisha",
+   "rights": [
+    "Religion & expression"
+   ],
+   "sev": "orange",
+   "fig": "7",
+   "figcap": "Villagers booked",
+   "headline": "Family church razed after vandalism complaint",
+   "text": "A day after a Christian family in Patraguda reported their prayer hall vandalised, it was demolished in officials' presence on 22 Nov. Officials say it stood on government land; the family says it was forced.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/family-church-vandalised-odisha-man-approaches-police-next-day-excavator-shows-up-10977215/"
+    ]
+   ],
+   "lon": 82.32,
+   "lat": 19.14,
+   "photo": {
+    "src": "images/2026-11-25/sunabeda-koraput.webp",
+    "alt": "Green hills, scrub and a red-earth gully under a cloudy sky, with a footpath in the foreground.",
+    "caption": "Countryside near Sunabeda, Koraput district, in 2023. File photo of the district.",
+    "credit": "Adityamadhav83 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rural_landscape_during_monsoon_near_Sunabeda.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "thread": "asha-karnataka",
+   "rights": [
+    "Labour",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "₹15,000",
+   "figcap": "Monthly pay sought",
+   "headline": "ASHA sit-in enters day eight despite CM's call",
+   "text": "ASHA workers seeking a ₹15,000 monthly honorarium stayed at Freedom Park on day eight. Chief Minister D.K. Shivakumar, by video call from Japan, urged them to end the stir and promised a solution.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-chief-minister-speaks-to-protesting-asha-workers-from-japan-urges-them-to-call-off-stir/article71737689.ece"
+    ],
+    [
+     "Prajavani (Kannada)",
+     "https://www.prajavani.net/district/bengaluru-city/asha-workers-protest-bengaluru-freedom-park-demands-4417566"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Prajavani",
+     "https://www.prajavani.net/district/bengaluru-city/asha-workers-protest-bengaluru-freedom-park-demands-4417566"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 12.978,
+   "photo": {
+    "src": "images/2026-11-22/freedom-park-sign.webp",
+    "alt": "A tall blue wall with the words Freedom Park in green letters in Kannada and English, beside trees.",
+    "caption": "The entrance sign at Freedom Park, Bengaluru, in 2009. File photo.",
+    "credit": "Diham / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park_Entrance.jpeg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "world",
+   "place": "Kosti, White Nile, and Er Rahad, North Kordofan, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Press freedom",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "Held",
+   "headline": "Journalist and lawyer held without stated charges",
+   "text": "Security cells detained journalist Khalid Jibril Ahmed in Kosti on 22 Nov and lawyer Mahmoud Jarad in Er Rahad about a week ago. An official cited unspecified charges for Ahmed; Jarad's whereabouts are unknown.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/11/24/white-nile-authorities-arrest-journalist-in-kosti/"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/24/%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%a3%d9%85%d9%86%d9%8a%d8%a9-%d8%aa%d8%b9%d8%aa%d9%82%d9%84-%d9%85%d8%ad%d8%a7%d9%85%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%87%d8%af/"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Darfur24",
+     "https://darfur24.com/2026/11/24/%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%a3%d9%85%d9%86%d9%8a%d8%a9-%d8%aa%d8%b9%d8%aa%d9%82%d9%84-%d9%85%d8%ad%d8%a7%d9%85%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%87%d8%af/"
+    ]
+   ],
+   "lon": 32.66,
+   "lat": 13.16,
+   "photo": {
+    "src": "images/2026-11-25/kosti-street.webp",
+    "alt": "A wide sandy street between low pastel-painted houses and shade trees, with one man walking in the distance.",
+    "caption": "A residential street in Kosti, White Nile state, in 2008. File photo.",
+    "credit": "Bertramz / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kosti_residential.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Wadi Gaza, al-Mawasi and Gaza City, Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "7",
+   "figcap": "Killed",
+   "headline": "Strikes kill seven in Gaza, including a boy",
+   "text": "Israeli strikes killed at least seven on 24 Nov, including a boy in Wadi Gaza and three police officers in al-Mawasi, medics said. Israel's military said it struck 'military operatives' and a Hamas security chief.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak"
+    ],
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o"
+    ]
+   ],
+   "lon": 34.45,
+   "lat": 31.47,
+   "photo": {
+    "src": "images/2026-10-23/gaza-sheikh-radwan.webp",
+    "alt": "A dirt road between collapsed and badly damaged multi-storey buildings and piles of rubble.",
+    "caption": "Destroyed buildings in the Sheikh Radwan district of Gaza City, February 2025. File photo.",
+    "credit": "Jaber Jehad Badwan / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Images_of_war_23-25_from_Gaza,_by_Jaber_Badwen,_IMG_5923.jpg",
+    "kind": "file",
+    "year": "2025",
+    "changes": "cropped"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Qom, Iran",
+   "short": "Iran",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "74",
+   "figcap": "Lashes each",
+   "headline": "UN calls flogging of Iranian singer 'abhorrent'",
+   "text": "Singer Parastoo Ahmadi and four team members were lashed 74 times in Qom on 23 Nov over a hijab-free online concert, their lawyer said. The UN rights chief called it abhorrent; no official response reported.",
+   "src": [
+    [
+     "France 24 (AFP)",
+     "https://sg.news.yahoo.com/un-slams-iran-flogs-singer-205357904.html"
+    ],
+    [
+     "Euronews",
+     "https://www.euronews.com/2026/11/23/iran-carries-out-flogging-of-singer-who-performed-without-hijab"
+    ]
+   ],
+   "lon": 50.88,
+   "lat": 34.64,
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Iga-Barrière and Bunia, Ituri, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "10",
+   "figcap": "Killed",
+   "headline": "Ebola responders trapped as Ituri fighting rages",
+   "text": "WHO staff and Ebola responders were trapped in an Ituri hospital by army–CRP fighting near Bunia that killed at least ten, three of them civilians. The CRP said on 24 Nov it was withdrawing.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168865"
+    ],
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/24/actualite/securite/ituri-au-moins-10-morts-dans-des-affrontements-entre-les-fardc-et-la"
+    ],
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/24/rebel-group-retreats-in-dr-congo-after-heavy-clashes-with-government-forces"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "Radio Okapi",
+     "https://www.radiookapi.net/2026/11/24/actualite/securite/ituri-au-moins-10-morts-dans-des-affrontements-entre-les-fardc-et-la"
+    ]
+   ],
+   "lon": 30.25,
+   "lat": 1.56,
+   "photo": {
+    "src": "images/2026-10-19/mambasa-road.webp",
+    "alt": "Men push bicycles loaded with large sacks along a red dirt road through thick forest.",
+    "caption": "Traders push loaded bicycles on the forest road between Epulu and Mambasa, Ituri.",
+    "credit": "Radio Okapi / Wikimedia Commons",
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Des_marchands_tolekistes_entre_Epulu_et_Mambasa,_2005.jpg",
+    "kind": "file",
+    "year": "2005",
+    "changes": ""
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Taiz, Yemen",
+   "short": "Yemen",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "350,000",
+   "figcap": "Children missed",
+   "headline": "Taiz children miss measles vaccine campaign",
+   "text": "About 350,000 children in encircled Taiz missed the measles and rubella campaign because shots could not be delivered safely, the UN said on 24 Nov. Over 364,000 Yemenis have been displaced since August.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168871"
+    ]
+   ],
+   "lon": 44.02,
+   "lat": 13.58,
+   "photo": {
+    "src": "images/2026-10-24/taiz-city.webp",
+    "alt": "A hillside city of pale buildings and minarets below hazy mountains.",
+    "caption": "Taiz city, seen from a hillside, in 2013. File photo.",
+    "credit": "Rod Waddington / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:City_of_Taiz,_Yemen.jpg",
+    "kind": "file",
+    "year": "2013",
+    "changes": "cropped"
+   },
+   "n": 9
+  }
+ ],
+ "focus": [
+  {
+   "slug": "palestine",
+   "kicker": "Focus · Palestine",
+   "title": "Palestine: Gaza and the West Bank",
+   "dek": "Israeli strikes killed at least seven people in Gaza on 24 Nov, medics said, as health officials issued an epidemic alert over a rise in meningitis.",
+   "src": "images/2026-10-20/olive-harvest-hebron.webp",
+   "alt": "A gloved hand picking purple olives from a branch.",
+   "photos": 8
+  }
+ ]
+}

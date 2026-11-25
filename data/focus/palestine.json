@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "An Israeli strike near a Jabalia water well killed a UNRWA worker on 23 Nov. Gaza's health ministry counts 1,671 killed since the October 2025 ceasefire.",
- "updated": "2026-11-24",
+ "dek": "Israeli strikes killed at least seven people in Gaza on 24 Nov, medics said. Health officials report meningitis cases eight times the usual monthly rate.",
+ "updated": "2026-11-25",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -120,11 +120,11 @@
    ]
   },
   {
-   "fig": "74,736",
+   "fig": "74,746",
    "figcap": "killed since Oct 2023, Gaza health ministry",
    "src": [
     "Al Jazeera",
-    "https://www.aljazeera.com/news/2026/11/21/at-least-four-palestinians-killed-in-israeli-attacks-on-gaza"
+    "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak"
    ]
   },
   {
@@ -578,6 +578,20 @@
      "https://alquds.com/ar/posts/277341-unrwa-staff-martyred-israeli-strike-gaza"
     ]
    ]
+  },
+  {
+   "date": "2026-11-24",
+   "text": "Israeli strikes killed at least seven Palestinians on 24 November, health officials and first responders said: three, including a boy, in Wadi Gaza; three police officers at a station in al-Mawasi, west of Khan Younis; and Hamas internal security chief Naeem Abu Nahel in western Gaza City. Israel's military said it struck 'military operatives'. Gaza's health ministry issued an epidemic alert: meningitis cases rose to 272 in October, about eight times the usual monthly rate.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/24/israeli-air-strikes-in-gaza-kill-7-as-doctors-warn-of-meningitis-outbreak"
+    ],
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o"
+    ]
+   ]
   }
  ],
  "official": {
@@ -676,11 +690,12 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ],
  "whats_new": {
-  "date": "2026-11-24",
-  "text": "An Israeli strike near a water well in Jabalia killed UNRWA worker Adel al-Helo on 23 Nov and wounded three; two more died in Gaza City. Israel's military said it was checking."
+  "date": "2026-11-25",
+  "text": "Israeli strikes killed at least seven in Gaza on 24 Nov, including a boy and three police officers, medics said; Israel said it hit 'military operatives'. Meningitis cases hit 272 in October."
  },
  "instagram": {
   "hashtags": [

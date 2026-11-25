@@ -11,7 +11,7 @@
    "slug": "palestine",
    "name": "Palestine",
    "focus": "palestine",
-   "stat": "74,640 killed in Gaza since Oct 2023, Gaza health ministry"
+   "stat": "74,746 killed in Gaza since Oct 2023, Gaza health ministry"
   },
   {
    "slug": "kashmir",
@@ -73,6 +73,11 @@
   {
    "slug": "ladakh",
    "name": "Ladakh protests"
+  },
+  {
+   "slug": "asha-karnataka",
+   "name": "ASHA workers' sit-in",
+   "stat": "₹15,000 monthly honorarium sought; sit-in since 17 Nov, The Hindu"
   }
  ]
 }

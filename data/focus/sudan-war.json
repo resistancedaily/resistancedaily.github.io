@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "A drone strike believed to be the army's killed at least eight civilians near Armal, West Kordofan, local sources said on 23 Nov. No side claimed it.",
- "updated": "2026-11-24",
+ "dek": "Security cells detained a journalist in Kosti and a lawyer in Er Rahad without disclosing charges, Darfur24 reported on 24 Nov.",
+ "updated": "2026-11-25",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -575,6 +575,20 @@
      "https://darfur24.com/2026/11/23/%D9%85%D9%82%D8%AA%D9%84-8-%D9%85%D8%AF%D9%86%D9%8A%D9%8A%D9%86-%D9%81%D9%8A-%D9%82%D8%B5%D9%81-%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%BA%D8%B1%D8%A8-%D9%83%D8%B1%D8%AF%D9%81%D8%A7%D9%86/"
     ]
    ]
+  },
+  {
+   "date": "2026-11-22",
+   "text": "Security authorities in White Nile state arrested journalist Khalid Jibril Ahmed, editor of the weekly Shaghaf, at his home in Kosti on 22 November and moved him to Rabak; a security cell member told Darfur24 he faced multiple charges but would not name them. In Er Rahad, North Kordofan, the security cell has held lawyer Mahmoud Jarad for about a week; a fellow lawyer said no charge has been filed and his family does not know where he is.",
+   "src": [
+    [
+     "Darfur24",
+     "https://darfur24.com/en/2026/11/24/white-nile-authorities-arrest-journalist-in-kosti/"
+    ],
+    [
+     "Darfur24 (Arabic)",
+     "https://darfur24.com/2026/11/24/%d8%a7%d9%84%d8%ae%d9%84%d9%8a%d8%a9-%d8%a7%d9%84%d8%a3%d9%85%d9%86%d9%8a%d8%a9-%d8%aa%d8%b9%d8%aa%d9%82%d9%84-%d9%85%d8%ad%d8%a7%d9%85%d9%8a%d8%a7%d9%8b-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%87%d8%af/"
+    ]
+   ]
   }
  ],
  "official": {
@@ -661,7 +675,8 @@
   "2026-11-21",
   "2026-11-22",
   "2026-11-23",
-  "2026-11-24"
+  "2026-11-24",
+  "2026-11-25"
  ],
  "instagram": {
   "caption": "",
@@ -678,8 +693,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-24",
-  "text": "A drone strike on a civilian vehicle near Armal, West Kordofan, killed at least eight people bound for a market, local sources said on 23 Nov. It is believed to be the army's; no side claimed it."
+  "date": "2026-11-25",
+  "text": "Security authorities arrested journalist Khalid Jibril Ahmed in Kosti on 22 Nov without giving reasons; lawyer Mahmoud Jarad has been held in Er Rahad for about a week with no charge filed, a colleague said."
  },
  "summary": [
   {

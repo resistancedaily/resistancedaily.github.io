@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "figures": [
   {
    "fig": "170",
@@ -422,8 +422,15 @@
      "note": "State Legal Services Authority"
     },
     {
+     "step": "Medical exams ordered",
+     "status": "done",
+     "date": "2026-11-03",
+     "note": "Madras High Court"
+    },
+    {
      "step": "Inquiry report",
-     "status": "open"
+     "status": "unknown",
+     "note": "Due 16 Nov; not reported"
     },
     {
      "step": "Action on staff",
@@ -438,9 +445,13 @@
     [
      "The Hindu",
      "https://www.thehindu.com/news/national/tamil-nadu/after-theni-jailbreak-tamil-nadu-cm-vijay-constitutes-high-level-committee-to-strengthen-prison-security/article71656855.ece"
+    ],
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madras-high-court/madras-high-court-theni-jail-break-medical-examination-ordered-alleged-police-torture-557219"
     ]
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-11-25"
   },
   {
    "id": "tn-prison-toilets",
