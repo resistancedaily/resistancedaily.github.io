@@ -1,0 +1,78 @@
+{
+ "cover": [
+  [
+   "Gaza",
+   "Strikes kill seven, including a boy"
+  ],
+  [
+   "Ituri, DR Congo",
+   "Ebola responders trapped by fighting"
+  ],
+  [
+   "Delhi",
+   "Youth leader stopped from flying to UK"
+  ],
+  [
+   "Koraput, Odisha",
+   "Family church razed after complaint"
+  ]
+ ],
+ "stories": [
+  {
+   "n": 6,
+   "label": "Palestine",
+   "fig": "7",
+   "figlab": "killed in a day, medics say",
+   "place": "Wadi Gaza, al-Mawasi and Gaza City",
+   "head": "Strikes kill a boy and three police",
+   "bullets": [
+    "A Hamas security chief was killed in Gaza City.",
+    "Meningitis cases hit 272 in October, eight times usual.",
+    "Israel's military said it struck 'military operatives'."
+   ],
+   "src": "Al Jazeera · BBC"
+  },
+  {
+   "n": 8,
+   "label": "DR Congo",
+   "fig": "10",
+   "figlab": "killed near Bunia, 3 of them civilians",
+   "place": "Ituri, DR Congo",
+   "head": "Ebola responders trapped by fighting",
+   "bullets": [
+    "WHO staff sheltered in a hospital maternity ward.",
+    "Residents fled towards Bunia; shops and markets shut.",
+    "The CRP armed group said on 24 Nov it was withdrawing."
+   ],
+   "src": "UN News · Radio Okapi · Al Jazeera"
+  },
+  {
+   "n": 1,
+   "label": "India · Movement",
+   "fig": "7",
+   "figlab": "days to answer a passport notice",
+   "place": "Delhi airport",
+   "head": "Youth leader stopped from flying to UK",
+   "bullets": [
+    "Saurav Das was invited to speak at Oxford and LSE.",
+    "He says he saw the notice only at immigration.",
+    "An official cited mismatched birth details; Das denies any."
+   ],
+   "src": "The Hindu · BBC News Hindi"
+  },
+  {
+   "n": 3,
+   "label": "India · Religion",
+   "fig": "7",
+   "figlab": "villagers booked; none arrested",
+   "place": "Patraguda, Koraput, Odisha",
+   "head": "Family church razed after complaint",
+   "bullets": [
+    "The Christian family had reported vandalism on 21 Nov.",
+    "It was demolished the next day with officials present.",
+    "Officials say it was on government land; family says forced."
+   ],
+   "src": "Indian Express"
+  }
+ ]
+}
