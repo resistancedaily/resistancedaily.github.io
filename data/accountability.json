@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "figures": [
   {
    "fig": "170",
@@ -1058,6 +1058,46 @@
     ]
    ],
    "checked": "2026-11-22"
+  },
+  {
+   "id": "saharsa-custody",
+   "region": "india",
+   "kind": "Custody",
+   "state": "Bihar",
+   "place": "Saurbazar police station, Saharsa",
+   "date": "2026-11-24",
+   "power": "Police",
+   "head": "Man dies in police station washroom in Saharsa",
+   "text": "Anmol Kumar, held in a case at Saurbazar police station, died on 24 Nov; police say he hanged himself in the station washroom. Five personnel including the station house officer were suspended.",
+   "official": "Police say CCTV shows he entered the washroom alone; the SP formed an SIT and the post-mortem is being filmed under NHRC guidelines. Further action awaits the findings.",
+   "steps": [
+    {
+     "step": "Suspension",
+     "status": "done",
+     "date": "2026-11-24",
+     "note": "5 personnel incl. SHO, for lapses in custodial security"
+    },
+    {
+     "step": "SIT probe",
+     "status": "open",
+     "note": "Formed by the SP, led by Sadar SDPO"
+    },
+    {
+     "step": "Post-mortem report",
+     "status": "open"
+    },
+    {
+     "step": "Chargesheet or closure",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "Punjab Kesari (IANS)",
+     "https://english.punjabkesari.com/india/five-police-personnel-including-the-sho-were-suspended-after-an-accused-died-in-custody-in-saharsa/"
+    ]
+   ],
+   "checked": "2026-11-26"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25",
+ "updated": "2026-11-26",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -1137,6 +1137,31 @@
     [
      "Siasat (PTI)",
      "https://www.siasat.com/lingayat-leader-announces-bounty-on-kannada-author-ravi-hanj-3583744/"
+    ]
+   ]
+  },
+  {
+   "id": "hanj-interim-bail",
+   "date": "2026-11-25",
+   "kind": "Courts",
+   "rights": [
+    "Expression"
+   ],
+   "place": "Bengaluru, Karnataka",
+   "fig": "2",
+   "figcap": "given interim bail",
+   "headline": "Author and publisher get interim bail over book",
+   "text": "A Bengaluru court granted interim anticipatory bail to author Ravi Hanj and publisher Vishweshwar Bhat over 'Basava Mantapa'. The FIRs and the state's order seizing the book stand.",
+   "slide_head": "Interim bail for author",
+   "slide": "Court shields Basava book author and publisher from arrest",
+   "src": [
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/bengaluru/basava-mantapa-row-author-ravi-hanj-publisher-get-anticipatory-bail-over-publication-of-book-4231381"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/basava-mantapa-controversy-author-skips-police-questioning-granted-anticipatory-bail/article71741447.ece"
     ]
    ]
   }

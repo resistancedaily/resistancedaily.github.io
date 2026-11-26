@@ -1,0 +1,100 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 77.2397,
+   "lat": 28.6225,
+   "sev": "orange",
+   "label": "Delhi"
+  },
+  {
+   "n": 2,
+   "lon": 85.28,
+   "lat": 23.3,
+   "sev": "orange",
+   "label": "Jharkhand"
+  },
+  {
+   "n": 3,
+   "lon": 93.93,
+   "lat": 7.01,
+   "sev": "orange",
+   "label": "Nicobar"
+  },
+  {
+   "n": 4,
+   "lon": 77.585,
+   "lat": 12.977,
+   "sev": "grey",
+   "label": "Karnataka",
+   "dx": 13,
+   "dy": -6
+  },
+  {
+   "n": 5,
+   "lon": 77.58,
+   "lat": 12.978,
+   "sev": "grey",
+   "label": "",
+   "dx": -13,
+   "dy": 6
+  }
+ ],
+ "world": [
+  {
+   "n": 6,
+   "lon": 34.36,
+   "lat": 11.79,
+   "sev": "red",
+   "label": "Sudan",
+   "dy": -8
+  },
+  {
+   "n": 7,
+   "lon": 34.445,
+   "lat": 31.53,
+   "sev": "red",
+   "label": "Gaza"
+  },
+  {
+   "n": 8,
+   "lon": 35.1,
+   "lat": 31.53,
+   "sev": "orange",
+   "label": "West Bank"
+  },
+  {
+   "n": 9,
+   "lon": 28.28,
+   "lat": -15.42,
+   "sev": "orange",
+   "label": "Zambia"
+  },
+  {
+   "n": 10,
+   "lon": 114.17,
+   "lat": 22.45,
+   "sev": "orange",
+   "label": "Hong Kong"
+  },
+  {
+   "n": 11,
+   "lon": 33.59,
+   "lat": 4.77,
+   "sev": "orange",
+   "label": "",
+   "dx": 17,
+   "dy": 2
+  },
+  {
+   "n": 12,
+   "lon": 31.58,
+   "lat": 4.85,
+   "sev": "grey",
+   "label": "South Sudan",
+   "dx": -6,
+   "dy": 8,
+   "left": true
+  }
+ ]
+}

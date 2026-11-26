@@ -1,0 +1,504 @@
+{
+ "date": "2026-11-26",
+ "date_long": "Thu 26 Nov 2026",
+ "date_short": "Thu 26 Nov",
+ "window": "Wed 09:00 → Thu 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-26",
+ "items": [
+  {
+   "region": "india",
+   "place": "Supreme Court of India, New Delhi",
+   "short": "Delhi",
+   "thread": "still-waiting",
+   "rights": [
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "6+ yrs",
+   "figcap": "In custody",
+   "headline": "Khalid, Imam bail sent to larger bench",
+   "text": "The Supreme Court sought police replies by 14 Dec on bail for Umar Khalid and Sharjeel Imam, held over six years under UAPA, but refused interim bail until a three-judge bench rules.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/sharjeel-imam-umar-khalid-bail-supreme-court-notice-to-delhi-police-on-pleas-in-uapa-delhi-riots-case/article71741295.ece"
+    ]
+   ],
+   "lon": 77.2397,
+   "lat": 28.6225,
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019. File photo.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Near the Jharkhand Vidhan Sabha, Ranchi, Jharkhand",
+   "short": "Jharkhand",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "7,000",
+   "figcap": "Trees at risk",
+   "headline": "Tree-felling protesters detained near Ranchi Assembly",
+   "text": "Police detained over a dozen people protesting a 10-lane road that a petition says needs about 7,000 trees felled. Police said protests are barred within 1 km of the Assembly.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/ranchi-protest-tree-felling-detentions-10977816/"
+    ]
+   ],
+   "lon": 85.28,
+   "lat": 23.3,
+   "photo": {
+    "src": "images/2026-11-26/ranchi-road.webp",
+    "alt": "A wide, empty two-lane road with street lamps and roadside trees under heavy grey clouds.",
+    "caption": "A road leading into Ranchi from Birsa Munda Airport, in 2018. File photo of the city.",
+    "credit": "IM3847 / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Road_leading_to_Ranchi_city_from_Bisra_Munda_Airport.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Great Nicobar Island, Andaman and Nicobar Islands",
+   "short": "Nicobar",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "10 Dec",
+   "figcap": "Centre's deadline",
+   "headline": "Nicobar forest-rights hearing pushed to January",
+   "text": "The Calcutta High Court gave the Centre until 10 Dec to answer forest-rights challenges to the Great Nicobar project and deferred final hearings to January. The Centre says the Forest Rights Act doesn't apply.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/calcutta-high-court-great-nicobar-project-forest-rights-act-centre-affidavit-10978581/"
+    ]
+   ],
+   "lon": 93.93,
+   "lat": 7.01,
+   "photo": {
+    "src": "images/2026-11-26/great-nicobar-forest.webp",
+    "alt": "Dense green forest sloping down to a flooded coastal plain with dead tree trunks and the sea under rain.",
+    "caption": "Rain over forest and coast in the Great Nicobar Biosphere Reserve, seen from a watchtower in 2016. File photo.",
+    "credit": "Prasun Goswami / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Rain_over_Great_Nicobar_Biosphere_Reserve.jpg",
+    "kind": "file",
+    "year": "2016",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "City Civil and Sessions Court, Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "thread": "basava-book",
+   "upheld": true,
+   "rights": [
+    "Expression"
+   ],
+   "sev": "grey",
+   "fig": "2",
+   "figcap": "Given bail",
+   "headline": "Basava book author, publisher get interim bail",
+   "text": "A Bengaluru court granted interim anticipatory bail on 25 Nov to author Ravi Hanj and publisher Vishweshwar Bhat. Prosecutors said the book insulted Basavanna; police say they are still seizing copies.",
+   "src": [
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/bengaluru/basava-mantapa-row-author-ravi-hanj-publisher-get-anticipatory-bail-over-publication-of-book-4231381"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/basava-mantapa-controversy-author-skips-police-questioning-granted-anticipatory-bail/article71741447.ece"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Public TV",
+     "https://publictv.in/basava-mantapa-book-controversy-bengaluru-court-grants-anticipatory-bail-to-author-ravi-hanj/"
+    ]
+   ],
+   "lon": 77.585,
+   "lat": 12.977,
+   "map": {
+    "dx": 13,
+    "dy": -6
+   },
+   "photo": {
+    "src": "images/2026-11-20/vidhana-soudha.webp",
+    "alt": "A large domed granite government building with columns and an Indian flag, behind a fenced lawn under a cloudy sky.",
+    "caption": "Vidhana Soudha, seat of Karnataka's government in Bengaluru, in 2019. File photo.",
+    "credit": "Moheen Reeyad / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vidhana_Soudha,_front_(01).jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "thread": "asha-karnataka",
+   "rights": [
+    "Labour",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "9 days",
+   "figcap": "Sit-in",
+   "headline": "Five ASHA protesters taken to hospital",
+   "text": "Rain drenched about 200 ASHA workers on day nine at Freedom Park; five were hospitalised in two days. The CM promised to raise their ₹15,000 demand; they want it in writing.",
+   "src": [
+    [
+     "South First",
+     "https://thesouthfirst.com/karnataka/sick-cold-and-soaked-nine-days-into-bengaluru-protest-asha-workers-stand-firm-on-rs-15000-honorarium-demand/"
+    ],
+    [
+     "Prajavani (Kannada)",
+     "https://www.prajavani.net/news/karnataka-news/bengaluru-asha-workers-protest-enters-ninth-day-demanding-fair-wages-4420214"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Prajavani",
+     "https://www.prajavani.net/news/karnataka-news/bengaluru-asha-workers-protest-enters-ninth-day-demanding-fair-wages-4420214"
+    ]
+   ],
+   "lon": 77.58,
+   "lat": 12.978,
+   "map": {
+    "dx": -13,
+    "dy": 6,
+    "label": ""
+   },
+   "photo": {
+    "src": "images/2026-11-26/freedom-park-trees.webp",
+    "alt": "A curved wooden-slat path between low plants and tall trees in a green park.",
+    "caption": "A path among the trees at Freedom Park, Bengaluru, in 2024. File photo.",
+    "credit": "Gpkp / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park,_Bengaluru_(2024)_31.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Ed Damazin and El Roseires, Blue Nile, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "16+",
+   "figcap": "Killed",
+   "headline": "Drone strikes on homes kill families",
+   "text": "Drones hit homes in Ed Damazin and El Roseires on 24 Nov, killing at least 16, including 14 from three families, local officials said. They blamed the RSF and SPLM-N; no response was reported.",
+   "src": [
+    [
+     "Dabanga",
+     "https://www.dabangasudan.org/en/all-news/article/drone-attacks-kill-at-least-15-across-blue-nile"
+    ],
+    [
+     "Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-%d8%b9%d8%af%d8%af-%d8%b6%d8%ad%d8%a7%d9%8a%d8%a7-%d8%a7%d9%84%d9%87%d8%ac%d9%88%d9%85-%d8%a8%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Dabanga Arabic",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-%d8%b9%d8%af%d8%af-%d8%b6%d8%ad%d8%a7%d9%8a%d8%a7-%d8%a7%d9%84%d9%87%d8%ac%d9%88%d9%85-%d8%a8%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84"
+    ]
+   ],
+   "lon": 34.36,
+   "lat": 11.79,
+   "map": {
+    "dy": -8
+   },
+   "photo": {
+    "src": "images/2026-10-23/damazin.webp",
+    "alt": "Rooftops and a tall beige building seen through the branches of a leafy tree under a hazy sky.",
+    "caption": "A street view in Damazin, capital of Blue Nile state, in 2019. File photo.",
+    "credit": "Ola.mahadi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Damazin_City.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Shati refugee camp, Gaza City",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "4",
+   "figcap": "Killed",
+   "headline": "Strike on Shati flat kills family of four",
+   "text": "An Israeli strike on a Shati camp flat killed a Hamas security official, his wife and daughters aged 15 and 13, Gaza's interior ministry said. Israel's military said it 'eliminated' a 'terrorist'.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cmd718zydz9qo"
+    ]
+   ],
+   "lon": 34.445,
+   "lat": 31.53,
+   "photo": {
+    "src": "images/2026-11-26/beach-camp-aerial.webp",
+    "alt": "Aerial view of a coastal camp reduced to rubble and gutted buildings, with the sea on the right.",
+    "caption": "Destruction in Beach (Shati) refugee camp, Gaza City, seen from the air in July 2024. File photo.",
+    "credit": "Abedallah Alhaj, UNRWA / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "page": "https://commons.wikimedia.org/wiki/File:Aerial_view_of_destruction_in_Beach_refugee_camp,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 7
+  },
+  {
+   "region": "world",
+   "place": "Occupied West Bank",
+   "short": "West Bank",
+   "thread": "palestine",
+   "rights": [
+    "Life & safety",
+    "Due process & detention"
+   ],
+   "sev": "orange",
+   "fig": "42,666",
+   "figcap": "Displaced",
+   "headline": "UN rights chief warns of widening atrocity risk",
+   "text": "UN rights chief Volker Türk warned on 25 Nov of a widening risk of atrocity crimes against Palestinians; his office says 42,666 were displaced in the West Bank since Oct 2023. No Israeli response reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168879"
+    ]
+   ],
+   "lon": 35.1,
+   "lat": 31.53,
+   "photo": {
+    "src": "images/2026-10-24/hebron-checkpoint.webp",
+    "alt": "A metal turnstile and fenced checkpoint with a guard tower, between old stone buildings.",
+    "caption": "An Israeli checkpoint at Tel Rumeida in Hebron, in 2015. File photo.",
+    "credit": "Makbula Nassar / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hebron_checkpoint1.jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "cropped"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Lusaka, Zambia",
+   "short": "Zambia",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "orange",
+   "fig": "1",
+   "figcap": "March banned",
+   "headline": "Police ban march against term-limit change",
+   "text": "Zambian police banned a 25 Nov march by rights groups opposing calls to scrap presidential term limits, citing a rival rally. Organisers appealed; a minister said the president seeks no third term.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/26/zambia-bans-protest-against-push-to-remove-presidential-term-limits"
+    ]
+   ],
+   "lon": 28.28,
+   "lat": -15.42,
+   "photo": {
+    "src": "images/2026-11-26/lusaka-street.webp",
+    "alt": "A multi-lane road with a minibus and a white car, below a blue-glass tower block rising behind trees.",
+    "caption": "A main road in Lusaka, Zambia, in 2023. File photo.",
+    "credit": "Jae zambia / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lusaka_Morning_07.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Tai Po, Hong Kong",
+   "short": "Hong Kong",
+   "rights": [
+    "Expression"
+   ],
+   "sev": "orange",
+   "fig": "168",
+   "figcap": "Killed in fire",
+   "headline": "A year after deadly fire, critics face arrests",
+   "text": "A year after the Wang Fuk Court fire killed 168, HRW says critics were arrested for sedition and memorials curbed. Officials apologised and pledged reform; police say event decisions rest with organisers.",
+   "src": [
+    [
+     "Human Rights Watch",
+     "https://www.hrw.org/news/2026/11/25/hong-kong-fire-anniversary-underscores-growing-repression"
+    ]
+   ],
+   "lon": 114.17,
+   "lat": 22.45,
+   "photo": {
+    "src": "images/2026-11-26/wang-fuk-court.webp",
+    "alt": "A row of tall brown residential towers behind a waterfront park and trees, with green hills behind.",
+    "caption": "Wang Fuk Court in Tai Po, Hong Kong, in 2009, years before the fire. File photo.",
+    "credit": "WiNG / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wang_Fuk_Court.jpg",
+    "kind": "file",
+    "year": "2009",
+    "changes": "resized"
+   },
+   "n": 10
+  },
+  {
+   "region": "world",
+   "place": "Kapoeta, Eastern Equatoria, South Sudan",
+   "short": "South Sudan",
+   "rights": [
+    "Due process & detention",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "Men missing",
+   "headline": "Father says son killed after army arrest",
+   "text": "Two young men arrested by soldiers in Kapoeta on 30 Oct were killed, a father says; their bodies are missing. The army says they were freed that night; the governor's office is following up.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/father-demands-answers-after-son-killed-following-arrest-in-kapoeta"
+    ]
+   ],
+   "lon": 33.59,
+   "lat": 4.77,
+   "map": {
+    "dx": 17,
+    "dy": 2,
+    "label": ""
+   },
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Juba, South Sudan",
+   "short": "South Sudan",
+   "upheld": true,
+   "rights": [
+    "Movement",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "27 Dec",
+   "figcap": "Campaign starts",
+   "headline": "South Sudan orders free movement for campaigners",
+   "text": "President Salva Kiir ordered forces on 25 Nov not to arrest or harass candidates and campaigners for lawful activity, after parties complained of travel curbs. Campaigning runs 27 Dec to 9 Feb.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/kiir-orders-free-movement-ahead-of-election-campaigns"
+    ]
+   ],
+   "lon": 31.58,
+   "lat": 4.85,
+   "map": {
+    "dx": -6,
+    "dy": 8,
+    "left": true
+   },
+   "photo": {
+    "src": "images/2026-11-26/juba-aerial.webp",
+    "alt": "A wide view over low-rise buildings and tin roofs of a city stretching to a hazy horizon.",
+    "caption": "Juba, South Sudan's capital, seen from above in 2018. File photo.",
+    "credit": "Umar sheriff habibullah / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:AERIAL_VIEW_OF_JUBA,_SOUTH_SUDAN.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "Drone strikes on homes in Ed Damazin and El Roseires killed at least 16 people on 24 Nov, Blue Nile officials and residents said.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

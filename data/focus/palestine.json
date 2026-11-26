@@ -4,8 +4,8 @@
  "title": "Palestine: Gaza and the West Bank",
  "short": "Gaza & West Bank",
  "seo_title": "Palestine: Gaza ceasefire deaths, winter floods, West Bank raids",
- "dek": "Israeli strikes killed at least seven people in Gaza on 24 Nov, medics said. Health officials report meningitis cases eight times the usual monthly rate.",
- "updated": "2026-11-25",
+ "dek": "An Israeli strike killed a Hamas security official, his wife and two daughters in Shati camp on 25 Nov, as the UN rights chief warned of widening atrocity risk.",
+ "updated": "2026-11-26",
  "published": "2026-11-09",
  "rights": [
   "Life & safety",
@@ -592,10 +592,24 @@
      "https://www.bbc.co.uk/news/articles/c6rrg7ggq190o"
     ]
    ]
+  },
+  {
+   "date": "2026-11-25",
+   "text": "An Israeli air strike at dawn on 25 November on a flat in Shati refugee camp, Gaza City, killed Mohammed Abu al-Ouf, head of Hamas's internal security service in northern Gaza, with his wife and their daughters aged 15 and 13, local doctors and the Hamas-run interior ministry said. Israel's military called him a \"terrorist\" it had \"eliminated\". The same day, UN human rights chief Volker Türk warned of a widening risk of atrocity crimes against Palestinians; his office counts 42,666 Palestinians forcibly displaced in the West Bank since 7 October 2023.",
+   "src": [
+    [
+     "BBC",
+     "https://www.bbc.co.uk/news/articles/cmd718zydz9qo"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168879"
+    ]
+   ]
   }
  ],
  "official": {
-  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\". On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers. On the 22 November settler attacks near Ramallah, Foreign Minister Gideon Saar condemned a \"handful of extremists\" and police opened an investigation; no Israeli comment on the al-Mawasi strike was reported.",
+  "text": "Israel's military says its strikes in Gaza target Hamas fighters or \"terrorists\"; in many cases it gave no details. Israel rejects accusations that it restricts aid: security officials say 91,000 tents and tarps and 9,000 truckloads of winter supplies have entered, and that reconstruction equipment and mobile homes will not be allowed in while Hamas refuses to disarm. In Hebron, the military says it is dismantling \"terrorist infrastructure\", and the defence minister said residents cannot return until operations end. The military called the attack on diplomats in Taybeh \"severe\". No Israeli response to the UN rights chief's warning was reported. On the Nasser Hospital strike of 12 November, the military said it targeted Muhammad Abu Ismail, whom it called the commander of Hamas's Khan Younis Brigade, alleging militants were hiding inside; Hamas denied using the hospital. The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas. Asked about the Guardian's facial-recognition report, the IDF said it \"does not intend to comment on engagements or services related to operational needs\". On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers. On the 22 November settler attacks near Ramallah, Foreign Minister Gideon Saar condemned a \"handful of extremists\" and police opened an investigation; no Israeli comment on the al-Mawasi strike was reported. On the 25 November Shati camp strike, Israel's military said it had eliminated a \"terrorist\" to \"remove the threat he posed\".",
   "src": [
    [
     "Arab News (AFP)",
@@ -640,6 +654,10 @@
    [
     "The Guardian",
     "https://www.theguardian.com/world/2026/nov/16/israel-amazon-facial-recognition-palestinians"
+   ],
+   [
+    "BBC",
+    "https://www.bbc.co.uk/news/articles/cmd718zydz9qo"
    ]
   ],
   "points": [
@@ -650,7 +668,8 @@
    "The military says AFP contributor Mohammad Ateeq, detained on 15 November, is suspected of ties to Hamas.",
    "The military said it \"does not intend to comment\" on services related to operational needs after the Guardian's report on facial recognition.",
    "On the 21 November Gaza City van strike, the military said it hit Islamic Jihad operatives posing as aid workers.",
-   "On the 22 November settler arson near Ramallah, the foreign minister condemned a \"handful of extremists\"; police are investigating. No comment on the al-Mawasi strike was reported."
+   "On the 22 November settler arson near Ramallah, the foreign minister condemned a \"handful of extremists\"; police are investigating. No comment on the al-Mawasi strike was reported.",
+   "On the 25 November Shati strike, Israel's military said Mohammed Abu al-Ouf was a \"terrorist\" eliminated \"to remove the threat he posed\"."
   ]
  },
  "editions": [
@@ -691,11 +710,12 @@
   "2026-11-22",
   "2026-11-23",
   "2026-11-24",
-  "2026-11-25"
+  "2026-11-25",
+  "2026-11-26"
  ],
  "whats_new": {
-  "date": "2026-11-25",
-  "text": "Israeli strikes killed at least seven in Gaza on 24 Nov, including a boy and three police officers, medics said; Israel said it hit 'military operatives'. Meningitis cases hit 272 in October."
+  "date": "2026-11-26",
+  "text": "A strike on a Shati camp flat killed a Hamas official, his wife and daughters aged 15 and 13 on 25 Nov; Israel said it 'eliminated' a 'terrorist'. The UN rights chief warned of widening atrocity risk."
  },
  "instagram": {
   "hashtags": [
