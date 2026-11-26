@@ -1,0 +1,26 @@
+{
+ "cover": [
+  ["Blue Nile, Sudan", "Drone strikes on homes kill families"],
+  ["Gaza City", "Strike on Shati flat kills family of four"],
+  ["Delhi", "Khalid, Imam bail sent to larger bench"],
+  ["Ranchi, Jharkhand", "Tree-felling protesters detained"]
+ ],
+ "stories": [
+  {"n": 6, "label": "Sudan's war", "fig": "16+", "figlab": "killed in drone strikes on homes", "place": "Ed Damazin and El Roseires, Blue Nile",
+   "head": "Drone strikes on homes kill families",
+   "bullets": ["14 of the dead came from three families, residents said.", "Officials imposed a night curfew after the strikes.", "Officials blamed the RSF and SPLM-N; no response reported."],
+   "src": "Dabanga · Dabanga Arabic"},
+  {"n": 7, "label": "Palestine", "fig": "4", "figlab": "killed in one flat, incl. girls of 15 and 13", "place": "Shati camp, Gaza City",
+   "head": "Strike on Shati flat kills family of four",
+   "bullets": ["A Hamas security official was killed with his family.", "Gaza's interior ministry called it a 'heinous crime'.", "Israel's military said it 'eliminated' a 'terrorist'."],
+   "src": "BBC"},
+  {"n": 1, "label": "India · Detention", "fig": "6+ yrs", "figlab": "in custody under UAPA", "place": "Supreme Court, Delhi",
+   "head": "Khalid, Imam bail sent to larger bench",
+   "bullets": ["The court refused interim bail for Umar Khalid and Sharjeel Imam.", "A three-judge bench will rule on bail curbs under UAPA.", "Delhi Police must reply to the bail pleas by 14 Dec."],
+   "src": "The Hindu"},
+  {"n": 2, "label": "India · Assembly", "fig": "7,000", "figlab": "trees at risk from a 10-lane road", "place": "Ranchi, Jharkhand",
+   "head": "Tree-felling protesters detained",
+   "bullets": ["Over a dozen people, including activists, were detained.", "Two women allege police pushed and dragged them.", "Police say protests are barred within 1 km of the Assembly."],
+   "src": "Indian Express"}
+ ]
+}
