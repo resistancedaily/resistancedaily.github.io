@@ -1,0 +1,26 @@
+{
+ "cover": [
+  ["West Kordofan, Sudan", "Drone strike on passenger truck kills 11"],
+  ["Gaza", "Overnight Israeli strikes kill nine"],
+  ["West Bengal", "Police collect papers from people cut from rolls"],
+  ["Arunachal Pradesh", "Siang anti-dam activists granted bail"]
+ ],
+ "stories": [
+  {"n": 7, "label": "Sudan's war", "fig": "11+", "figlab": "killed on a passenger truck", "place": "Near Ghubeish, West Kordofan",
+   "head": "Drone strike on truck kills 11",
+   "bullets": ["The truck carried about 25 people and goods between markets.", "A medical source told AFP at least 11 died.", "The RSF's political wing blamed the army; no army response reported."],
+   "src": "Arab News (AFP) · Dabanga Arabic"},
+  {"n": 9, "label": "Palestine", "fig": "9", "figlab": "killed overnight, medics said", "place": "Deir al-Balah and Gaza City",
+   "head": "Overnight Israeli strikes kill nine",
+   "bullets": ["A Hamas deputy minister and his wife were among the dead.", "Strikes also hit Tuffah and Beach camp in Gaza City.", "Israel's military said he ran Hamas finances; no comment on the others."],
+   "src": "RTÉ (Reuters/AFP) · Times of Israel"},
+  {"n": 1, "label": "India · Due process", "fig": "6+", "figlab": "districts, parties say", "place": "Malda and other districts, West Bengal",
+   "head": "Police collect papers from people cut from rolls",
+   "bullets": ["The drive began on 24 Nov, parties and a police official say.", "Residents say police took details at camps and door to door.", "The poll office gave no such order; the DGP knew of no forms."],
+   "src": "Indian Express · Bartaman Patrika"},
+  {"n": 4, "label": "The Siang dam", "fig": "1 month", "figlab": "in jail before bail", "place": "Pasighat, Arunachal Pradesh",
+   "head": "Siang anti-dam activists granted bail",
+   "bullets": ["Ebo Mili and Otul Jerang were bailed on 26 Nov.", "The judge found at most a bailable 'mischief' case.", "The government says the dam is essential for national security."],
+   "src": "Indian Express · The Arunachal Times"}
+ ]
+}
