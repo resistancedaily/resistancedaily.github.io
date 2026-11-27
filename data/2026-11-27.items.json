@@ -1,0 +1,106 @@
+{
+ "india": [
+  {
+   "n": 1,
+   "lon": 88.14,
+   "lat": 25.01,
+   "sev": "orange",
+   "label": "West Bengal"
+  },
+  {
+   "n": 2,
+   "lon": 77.236,
+   "lat": 28.611,
+   "sev": "grey",
+   "label": "",
+   "dx": -13,
+   "dy": -4
+  },
+  {
+   "n": 3,
+   "lon": 77.24,
+   "lat": 28.622,
+   "sev": "grey",
+   "label": "Delhi",
+   "dx": 13,
+   "dy": 8
+  },
+  {
+   "n": 4,
+   "lon": 95.33,
+   "lat": 28.07,
+   "sev": "grey",
+   "label": "Arunachal"
+  },
+  {
+   "n": 5,
+   "lon": 77.585,
+   "lat": 12.977,
+   "sev": "grey",
+   "label": "",
+   "dx": 10,
+   "dy": 6
+  },
+  {
+   "n": 6,
+   "lon": 75.3,
+   "lat": 15.95,
+   "sev": "grey",
+   "label": "Karnataka"
+  }
+ ],
+ "world": [
+  {
+   "n": 7,
+   "lon": 27.33,
+   "lat": 12.15,
+   "sev": "red",
+   "label": "Sudan",
+   "dx": -6,
+   "dy": 0,
+   "left": true
+  },
+  {
+   "n": 8,
+   "lon": 34.38,
+   "lat": 11.8,
+   "sev": "orange",
+   "label": "",
+   "dx": 8,
+   "dy": 0
+  },
+  {
+   "n": 9,
+   "lon": 34.35,
+   "lat": 31.42,
+   "sev": "red",
+   "label": "Gaza",
+   "dx": -13,
+   "dy": 10,
+   "left": true
+  },
+  {
+   "n": 10,
+   "lon": 35.33,
+   "lat": 32.07,
+   "sev": "orange",
+   "label": "West Bank",
+   "dx": 6,
+   "dy": -8
+  },
+  {
+   "n": 11,
+   "lon": 90.42,
+   "lat": 24.0,
+   "sev": "orange",
+   "label": "Bangladesh"
+  },
+  {
+   "n": 12,
+   "lon": 29.3,
+   "lat": -0.4,
+   "sev": "orange",
+   "label": "DR Congo"
+  }
+ ]
+}

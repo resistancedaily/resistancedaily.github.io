@@ -1,0 +1,578 @@
+{
+ "date": "2026-11-27",
+ "date_long": "Fri 27 Nov 2026",
+ "date_short": "Fri 27 Nov",
+ "window": "Thu 09:00 → Fri 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-27",
+ "items": [
+  {
+   "region": "india",
+   "place": "Malda and other districts, West Bengal",
+   "short": "West Bengal",
+   "rights": [
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "6+",
+   "figcap": "Districts",
+   "headline": "Police collect papers from people cut from rolls",
+   "text": "Police in at least six Bengal districts have collected papers since 24 Nov from people cut from voter rolls, parties say. The poll office gave no such order; the DGP knew of no forms.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/cities/kolkata/in-west-bengal-police-go-to-those-deleted-from-rolls-seek-details-opposition-asks-under-what-law-10980297/"
+    ]
+   ],
+   "local": [
+    [
+     "bn",
+     "Bartaman Patrika",
+     "https://bartamanpatrika.com/news/police-are-collecting-documents-of-voters-whose-names-have-been-omitted-the-district-magistrate-is-unaware"
+    ]
+   ],
+   "lon": 88.14,
+   "lat": 25.01,
+   "photo": {
+    "src": "images/2026-11-27/malda-aerial.webp",
+    "alt": "An aerial view of a dense town of low and mid-rise buildings, trees and a few roads under a hazy sky.",
+    "caption": "An aerial view of Malda town, West Bengal, in 2018. File photo.",
+    "credit": "Chiranjit Halder / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Malda_City_Skyline.jpg",
+    "kind": "file",
+    "year": "2018",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Delhi High Court, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "sev": "grey",
+   "fig": "3",
+   "figcap": "Lookout notices",
+   "headline": "Mumbai Police behind activist's travel stop, Centre says",
+   "text": "The Centre told the Delhi High Court on 26 Nov that a Mumbai Police lookout circular stopped CJP's Saurav Das flying abroad; two more CJP leaders now face circulars. Police cite flight risk.",
+   "src": [
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097331/cjps-saurav-das-stopped-at-airport-after-mumbai-police-issued-lookout-circular-says-centre"
+    ],
+    [
+     "The Pioneer",
+     "https://dailypioneer.com/india/mumbai-police-issues-lookout-circulars-against-two-more-cjp-leaders-over-october-protest"
+    ]
+   ],
+   "lon": 77.236,
+   "lat": 28.611,
+   "photo": {
+    "src": "images/2026-11-25/delhi-airport-t3.webp",
+    "alt": "A long glass-and-steel terminal building labelled Terminal 3 in English and Hindi, with palms and parked cars in front.",
+    "caption": "Terminal 3 at Delhi's Indira Gandhi International Airport, in 2023. File photo.",
+    "credit": "Ravi Dwivedi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Delhi_airport_terminal_3.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "resized"
+   },
+   "n": 2,
+   "map": {
+    "dx": -13,
+    "dy": -4,
+    "label": ""
+   }
+  },
+  {
+   "region": "india",
+   "place": "Supreme Court of India, New Delhi",
+   "short": "Delhi",
+   "rights": [
+    "Press freedom"
+   ],
+   "sev": "grey",
+   "fig": "7",
+   "figcap": "Journalists' claims",
+   "headline": "Supreme Court to weigh who counts as journalist",
+   "text": "The Supreme Court said on 26 Nov it will examine whether accredited journalists merit more protection at protests, and sent seven journalists' detention claims to its inquiry panel. Delhi Police deny obstructing reporters.",
+   "src": [
+    [
+     "The Federal",
+     "https://thefederal.com/category/news/who-qualifies-as-a-journalist-supreme-court-to-examine-extent-of-protection-for-media-264150"
+    ],
+    [
+     "Scroll",
+     "https://scroll.in/latest/1097336/sc-to-review-protection-for-self-proclaimed-versus-accredited-journalists-during-protests"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Janchowk",
+     "https://janchowk.com/self-styled-journalists-do-not-require-the-same-protection-as-accredited-journalists-justice-joymalya-bagchi/"
+    ]
+   ],
+   "lon": 77.24,
+   "lat": 28.622,
+   "map": {
+    "dx": 13,
+    "dy": 8
+   },
+   "photo": {
+    "src": "images/2026-10-27/supreme-court.webp",
+    "alt": "A domed red and cream building with an Indian flag, behind trees and a black statue on a pedestal.",
+    "caption": "The Supreme Court of India in New Delhi, in 2019. File photo.",
+    "credit": "Subhashish Panigrahi / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Supreme_Court_of_India_01.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Pasighat, East Siang, Arunachal Pradesh",
+   "short": "Arunachal",
+   "thread": "siang",
+   "focus": "siang",
+   "upheld": true,
+   "rights": [
+    "Detention",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "1 month",
+   "figcap": "In jail",
+   "headline": "Siang anti-dam activists granted bail",
+   "text": "A Pasighat judge bailed activists Ebo Mili and Otul Jerang on 26 Nov after a month in jail, finding at most a bailable 'mischief' case. Geku villagers boycotted a government dam consultation on 25 Nov.",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/arunachal-pradesh-siang-upper-multipurpose-project-protest-activists-bail-10980277/"
+    ],
+    [
+     "The Arunachal Times",
+     "https://arunachaltimes.in/article/ebo-mili-and-otul-jerang-released-on-bail-in-sump-pasighat-case"
+    ],
+    [
+     "The Wire",
+     "https://m.thewire.in/article/rights/siang-dam-project-faces-village-level-resistance-despite-union-govts-outreach"
+    ]
+   ],
+   "lon": 95.33,
+   "lat": 28.07,
+   "photo": {
+    "src": "images/2026-10-23/siang-pasighat.webp",
+    "alt": "A wide river with sandbanks and a long bridge, seen between forested hills, under a cloudy sky.",
+    "caption": "The Siang river near Pasighat, Arunachal Pradesh, in 2023. File photo.",
+    "credit": "Rashid Jorvee / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_Pasighat.jpg",
+    "kind": "file",
+    "year": "2023",
+    "changes": "cropped"
+   },
+   "n": 4
+  },
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "thread": "asha-karnataka",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "fig": "₹15,000",
+   "figcap": "Demand",
+   "headline": "ASHA panel formed; sit-in goes on",
+   "text": "On day 10 the health department set up a committee to study higher ASHA pay. The CM said workers 'can't blackmail' the government and refused a written assurance; workers say they will stay.",
+   "src": [
+    [
+     "The Hans India",
+     "https://www.thehansindia.com/news/cities/bengaluru/panel-to-examine-incentive-hike-for-asha-workers-1146081"
+    ],
+    [
+     "ThePrint (PTI)",
+     "https://theprint.in/india/you-cannot-blackmail-govt-cm-shivakumar-tells-protesting-asha-workers/3109946/"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "TV9 Kannada",
+     "https://tv9kannada.com/karnataka/karnataka-asha-workers-protest-committee-formed-to-review-incentive-hike-rs-15000-honorarium-demand-1266755.html"
+    ]
+   ],
+   "lon": 77.585,
+   "lat": 12.977,
+   "photo": {
+    "src": "images/2026-11-23/freedom-park-path.webp",
+    "alt": "A paved path under green trees leading to low white and tiled-roof buildings.",
+    "caption": "A path inside Freedom Park, Bengaluru, a former jail now used as the city's protest site, in 2024. File photo.",
+    "credit": "Gpkp / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Freedom_Park,_Bengaluru_(2024)_23.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 5,
+   "map": {
+    "dx": 10,
+    "dy": 6,
+    "label": ""
+   }
+  },
+  {
+   "region": "india",
+   "place": "Ramdurg, Belagavi district, Karnataka",
+   "short": "Karnataka",
+   "thread": "accountability",
+   "upheld": true,
+   "rights": [
+    "Detention",
+    "Due process",
+    "Accountability Watch"
+   ],
+   "sev": "grey",
+   "fig": "₹1 lakh",
+   "figcap": "Compensation",
+   "headline": "Court orders ₹1 lakh for illegally held nurse",
+   "text": "Karnataka's High Court ruled Ramdurg police illegally held a nurse for over 72 hours to pressure his brother, and ordered ₹1 lakh compensation. Belagavi's SP apologised; a departmental inquiry is under way.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-directs-state-government-to-pay-1-lakh-compensation-to-government-hospital-staff-nurse-illegally-detained-by-police/article71747114.ece"
+    ],
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/karnataka-hc-fines-police-rs-1-lakh-for-illegally-detaining-hospital-nurse-4232779"
+    ]
+   ],
+   "lon": 75.3,
+   "lat": 15.95,
+   "photo": {
+    "src": "images/2026-11-04/karnataka-high-court.webp",
+    "alt": "A large red colonnaded building with a triangular pediment behind a fence and gardens.",
+    "caption": "The High Court of Karnataka in Bengaluru (Attara Kacheri), in 2019. File photo.",
+    "credit": "Rehman Abubakr / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Karnataka_High_Court_-_June_2019.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 6
+  },
+  {
+   "region": "world",
+   "place": "Near Ghubeish, West Kordofan, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "11+",
+   "figcap": "Killed",
+   "headline": "Drone strike on passenger truck kills 11",
+   "text": "A drone hit a truck carrying about 25 people near Ghubeish on 26 Nov, killing at least 11, a medical source told AFP. The RSF's political wing blamed the army; no army response was reported.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/drone-attack-kills-11-in-sudans-west-kordofan-medical-source-3014164"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Dabanga Arabic",
+     "https://www.dabangasudan.org/ar/all-news/article/%d9%85%d9%82%d8%aa%d9%84-%d9%88%d8%a5%d8%b5%d8%a7%d8%a8%d8%a9-25-%d8%b4%d8%ae%d8%b5%d8%a7-%d9%81%d9%8a-%d9%82%d8%b5%d9%81-%d8%ac%d9%88%d9%8a-%d8%b9%d9%84%d9%89-%d9%85%d8%b1%d9%83%d8%a8%d8%a9-%d8%a8"
+    ]
+   ],
+   "lon": 27.33,
+   "lat": 12.15,
+   "photo": {
+    "src": "images/2026-11-17/west-kordofan-muglad.webp",
+    "alt": "A wide dirt street at sunset with low buildings, trees, a white pickup truck and a few people walking.",
+    "caption": "A street in Muglad, West Kordofan, in 2011. File photo of the state.",
+    "credit": "Julia Joerin / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Muglad_in_front_of_ICRC_office_2011.jpg",
+    "kind": "file",
+    "year": "2011",
+    "changes": "resized"
+   },
+   "n": 7,
+   "map": {
+    "dx": -6,
+    "dy": 0,
+    "left": true,
+    "label": "Sudan"
+   }
+  },
+  {
+   "region": "world",
+   "place": "Ed Damazin and El Roseires, Blue Nile, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Detention",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "8",
+   "figcap": "Detained",
+   "headline": "Blue Nile security holds volunteers, general's relatives",
+   "text": "Intelligence agents have held three Damazin volunteers since 23 Nov, reportedly without lawyers; five relatives and neighbours of a general who joined the RSF were seized in Roseires on 26 Nov. No official comment.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/blue-nile-arrests-raise-fears-of-crackdown-on-activists"
+    ],
+    [
+     "Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-%d8%ae%d9%85%d8%b3-%d8%a3%d8%b4%d8%ae%d8%a7%d8%b5-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%88%d8%b5%d9%8a%d8%b1%d8%b5-%d8%a8%d8%a7%d9%84%d9%86%d9%8a%d9%84-%d8%a7%d9%84"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Dabanga Arabic",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-%d8%ae%d9%85%d8%b3-%d8%a3%d8%b4%d8%ae%d8%a7%d8%b5-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%88%d8%b5%d9%8a%d8%b1%d8%b5-%d8%a8%d8%a7%d9%84%d9%86%d9%8a%d9%84-%d8%a7%d9%84"
+    ]
+   ],
+   "lon": 34.38,
+   "lat": 11.8,
+   "photo": {
+    "src": "images/2026-11-27/roseires-dam.webp",
+    "alt": "A long concrete dam with many spillway gates and construction cranes, beside a brown river and green trees.",
+    "caption": "The Roseires Dam on the Blue Nile at El Roseires, in 2012. File photo of the town.",
+    "credit": "SimonChilly / Wikimedia Commons",
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Roseires_Dam.jpg",
+    "kind": "file",
+    "year": "2012",
+    "changes": "cropped"
+   },
+   "n": 8,
+   "map": {
+    "dx": 8,
+    "dy": 0,
+    "label": ""
+   }
+  },
+  {
+   "region": "world",
+   "place": "Deir al-Balah and Gaza City, Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "red",
+   "fig": "9",
+   "figcap": "Killed",
+   "headline": "Overnight Israeli strikes kill nine in Gaza",
+   "text": "Medics said Israeli strikes and gunfire killed at least nine Palestinians overnight into 26 Nov, including a Hamas deputy minister and his wife. Israel's military said he ran Hamas finances; no comment on others.",
+   "src": [
+    [
+     "RTÉ (Reuters/AFP)",
+     "https://www.rte.ie/news/world/2026/1126/1600737-nine-killed-gaza-abu-nada/"
+    ],
+    [
+     "Times of Israel",
+     "https://www.timesofisrael.com/senior-hamas-moneyman-killed-in-overnight-gaza-strike-idf-says-along-with-wife/"
+    ]
+   ],
+   "lon": 34.35,
+   "lat": 31.42,
+   "photo": {
+    "src": "images/2026-11-21/deir-al-balah.webp",
+    "alt": "Palm groves and green fields with low houses, and more buildings on the horizon.",
+    "caption": "Deir al-Balah, central Gaza, in 2008. File photo of the area.",
+    "credit": "شنكوتي / Wikimedia Commons",
+    "licence": "CC0",
+    "licence_url": "https://creativecommons.org/publicdomain/zero/1.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Deir_al-Balah.jpg",
+    "kind": "file",
+    "year": "2008",
+    "changes": "cropped"
+   },
+   "n": 9,
+   "map": {
+    "dx": -13,
+    "dy": 10,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "Jalud, near Nablus, occupied West Bank",
+   "short": "West Bank",
+   "thread": "palestine",
+   "rights": [
+    "Land & livelihood",
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "2",
+   "figcap": "Homes hit",
+   "headline": "Settlers bulldoze family's homes in Jalud",
+   "text": "Settlers bulldozed overnight on 26 Nov, partly breaking the foundations of two homes a family had returned to under a court order. Israel's military called it 'a serious criminal act' and is investigating.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/26/israeli-settlers-damage-palestinian-familys-homes-in-west-bank-attack"
+    ],
+    [
+     "Al Modon (Arabic)",
+     "https://www.almodon.com/arabworld/2026/11/26/%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%AA%D8%AD%D8%AF%D9%88%D9%86-%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D9%88%D9%8A%D9%87%D8%AF%D9%85%D9%88%D9%86-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al Modon",
+     "https://www.almodon.com/arabworld/2026/11/26/%D9%85%D8%B3%D8%AA%D9%88%D8%B7%D9%86%D9%88%D9%86-%D9%8A%D8%AA%D8%AD%D8%AF%D9%88%D9%86-%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D9%85%D8%AD%D9%83%D9%85%D8%A9-%D9%88%D9%8A%D9%87%D8%AF%D9%85%D9%88%D9%86-%D9%85%D9%86%D8%A7%D8%B2%D9%84-%D9%81%D9%84%D8%B3%D8%B7%D9%8A%D9%86%D9%8A%D9%8A%D9%86"
+    ]
+   ],
+   "lon": 35.33,
+   "lat": 32.07,
+   "photo": {
+    "src": "images/2026-11-27/jalud-village.webp",
+    "alt": "Low houses spread over rocky green hills, with a road and rubble in the foreground.",
+    "caption": "Jalud village, south of Nablus, in 2018. File photo of the village.",
+    "credit": "יעקב / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jalud9670.JPG",
+    "kind": "file",
+    "year": "2018",
+    "changes": "cropped"
+   },
+   "n": 10,
+   "map": {
+    "dx": 6,
+    "dy": -8
+   }
+  },
+  {
+   "region": "world",
+   "place": "Gazipur, near Dhaka, Bangladesh",
+   "short": "Bangladesh",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "orange",
+   "fig": "30+",
+   "figcap": "Factories shut",
+   "headline": "Police tear-gas garment workers over new wage",
+   "text": "Police used tear gas, sound grenades and batons as garment workers blocked highways for a second day on 26 Nov over a new 17,000-taka minimum wage. Police said workers vandalised a police motorcycle.",
+   "src": [
+    [
+     "Prothom Alo",
+     "https://en.prothomalo.com/bangladesh/local-news/abbfn6bafv"
+    ],
+    [
+     "The Independent",
+     "https://www.yahoo.com/news/world/articles/bangladesh-police-fire-tear-gas-110256293.html"
+    ]
+   ],
+   "lon": 90.42,
+   "lat": 24.0,
+   "n": 11
+  },
+  {
+   "region": "world",
+   "place": "Lake Edward shore, Lubero, North Kivu, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "3 days",
+   "figcap": "Of flight",
+   "headline": "Families flee fighting near Lake Edward",
+   "text": "Households have fled for three days as Wazalendo fighters attack FRN/M23 positions around Taliha, Lubero civil society said on 26 Nov; the displaced have had no aid. The army has not commented.",
+   "src": [
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/26/actualite/securite/combats-frn-wazalendo-la-societe-civile-de-lubero-lance-un-sos"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "Radio Okapi",
+     "https://www.radiookapi.net/2026/11/26/actualite/securite/combats-frn-wazalendo-la-societe-civile-de-lubero-lance-un-sos"
+    ]
+   ],
+   "lon": 29.3,
+   "lat": -0.4,
+   "photo": {
+    "src": "images/2026-11-27/lake-edward-shore.webp",
+    "alt": "An aerial view of wooden fishing boats pulled up on a sandy lake shore lined with green bushes.",
+    "caption": "Fishing boats on the shore of Lake Edward, North Kivu, in 2015. File photo of the area.",
+    "credit": "MONUSCO Photos / Wikimedia Commons",
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fishermen_on_shores_of_lake_Edouard_-_North_Kivu_(20875758169).jpg",
+    "kind": "file",
+    "year": "2015",
+    "changes": "resized"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "sudan-war",
+   "kicker": "Focus · Sudan",
+   "title": "Sudan's long war",
+   "dek": "A drone strike on a passenger truck near Ghubeish, West Kordofan, killed at least 11 on 26 Nov, a medical source said.",
+   "src": "images/focus/sudan-war/adre-refugees-aid-2026.webp",
+   "alt": "Women in long robes and headscarves walk across sandy ground carrying bags and boxes of supplies on their heads and in their arms, with more people behind them.",
+   "photos": 4
+  }
+ ]
+}

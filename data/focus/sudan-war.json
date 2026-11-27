@@ -2,8 +2,8 @@
  "slug": "sudan-war",
  "kicker": "Focus · Sudan",
  "title": "Sudan's long war",
- "dek": "Drone strikes on homes in Ed Damazin and El Roseires killed at least 16 people on 24 Nov, Blue Nile officials said.",
- "updated": "2026-11-26",
+ "dek": "A drone strike on a passenger truck near Ghubeish, West Kordofan, killed at least 11 on 26 Nov, a medical source said.",
+ "updated": "2026-11-27",
  "rights": [
   "Life & safety",
   "Displacement",
@@ -607,6 +607,30 @@
      "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b1%d8%aa%d9%81%d8%a7%d8%b9-%d8%b9%d8%af%d8%af-%d8%b6%d8%ad%d8%a7%d9%8a%d8%a7-%d8%a7%d9%84%d9%87%d8%ac%d9%88%d9%85-%d8%a8%d9%85%d8%b3%d9%8a%d8%b1%d8%a7%d8%aa-%d8%b9%d9%84%d9%89-%d8%a7%d9%84"
     ]
    ]
+  },
+  {
+   "date": "2026-11-23",
+   "text": "Sudan's General Intelligence Service arrested three members of a Damazin community volunteer initiative on 23 November over alleged funds from an anti-war activist abroad; no charges were reported and families and lawyers were reportedly denied access. On 26 November a security unit took five relatives and neighbours of an SPLM-N general who joined the RSF from their homes in El Roseires. No official comment was reported.",
+   "src": [
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/blue-nile-arrests-raise-fears-of-crackdown-on-activists"
+    ],
+    [
+     "Dabanga (Arabic)",
+     "https://www.dabangasudan.org/ar/all-news/article/%d8%a7%d8%b9%d8%aa%d9%82%d8%a7%d9%84-%d8%ae%d9%85%d8%b3-%d8%a3%d8%b4%d8%ae%d8%a7%d8%b5-%d9%81%d9%8a-%d8%a7%d9%84%d8%b1%d9%88%d8%b5%d9%8a%d8%b1%d8%b5-%d8%a8%d8%a7%d9%84%d9%86%d9%8a%d9%84-%d8%a7%d9%84"
+    ]
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "text": "A drone struck a truck carrying about 25 passengers and goods near Ghubeish, West Kordofan, on 26 November, killing at least 11 and wounding nine, a medical source told AFP. The RSF's political wing blamed the army and called it a civilian vehicle travelling between markets; no army response was reported.",
+   "src": [
+    [
+     "Arab News (AFP)",
+     "https://www.arabnews.com/middle-east/drone-attack-kills-11-in-sudans-west-kordofan-medical-source-3014164"
+    ]
+   ]
   }
  ],
  "official": {
@@ -700,7 +724,8 @@
   "2026-11-23",
   "2026-11-24",
   "2026-11-25",
-  "2026-11-26"
+  "2026-11-26",
+  "2026-11-27"
  ],
  "instagram": {
   "caption": "",
@@ -717,8 +742,8 @@
  "end_photo": 3,
  "seo_title": "Sudan war: civilian deaths, displacement and the RSF",
  "whats_new": {
-  "date": "2026-11-26",
-  "text": "Drones hit homes in Ed Damazin and El Roseires, Blue Nile, on 24 Nov, killing at least 16, including 14 from three families, officials said. They blamed the RSF and SPLM-N; no response reported."
+  "date": "2026-11-27",
+  "text": "A drone hit a passenger truck near Ghubeish, West Kordofan, on 26 Nov, killing at least 11, a medical source told AFP. The RSF's political wing blamed the army; no army response reported."
  },
  "summary": [
   {

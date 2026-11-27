@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "figures": [
   {
    "fig": "170",
@@ -113,6 +113,14 @@
    "src": [
     "ThePrint, 12 May 2026",
     "https://theprint.in/india/himanta-biswa-sarma-sworn-in-for-second-straight-term-as-assam-chief-minister/2928669/"
+   ]
+  },
+  "Karnataka": {
+   "cm": "D K Shivakumar",
+   "party": "Congress",
+   "src": [
+    "Scroll",
+    "https://scroll.in/latest/1093320/scroll_in"
    ]
   }
  },
@@ -1098,6 +1106,50 @@
     ]
    ],
    "checked": "2026-11-26"
+  },
+  {
+   "id": "ramdurg-nurse-detention",
+   "region": "india",
+   "kind": "Police force",
+   "state": "Karnataka",
+   "place": "Ramdurg, Belagavi district",
+   "date": "2026-09-19",
+   "power": "Police",
+   "head": "Police illegally held nurse to pressure his brother",
+   "text": "A government hospital nurse, not an accused, was held by Ramdurg police for over 72 hours without an FIR to pressure his brother to surrender, the High Court found. It ordered ₹1 lakh compensation within four weeks.",
+   "official": "Belagavi's Superintendent of Police told the court he takes moral responsibility, apologised unconditionally and said disciplinary action would begin against the investigating officer; a departmental inquiry is under way.",
+   "steps": [
+    {
+     "step": "Court ruling",
+     "status": "done",
+     "date": "2026-11-26",
+     "note": "Detention illegal; ₹1 lakh compensation in 4 weeks"
+    },
+    {
+     "step": "Departmental inquiry",
+     "status": "open",
+     "note": "Outcome to be filed with the court within two months"
+    },
+    {
+     "step": "Compensation paid",
+     "status": "open"
+    },
+    {
+     "step": "Disciplinary action",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-directs-state-government-to-pay-1-lakh-compensation-to-government-hospital-staff-nurse-illegally-detained-by-police/article71747114.ece"
+    ],
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/karnataka-hc-fines-police-rs-1-lakh-for-illegally-detaining-hospital-nurse-4232779"
+    ]
+   ],
+   "checked": "2026-11-27"
   }
  ]
 }

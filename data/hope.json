@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -1162,6 +1162,94 @@
     [
      "The Hindu",
      "https://www.thehindu.com/news/national/karnataka/basava-mantapa-controversy-author-skips-police-questioning-granted-anticipatory-bail/article71741447.ece"
+    ]
+   ]
+  },
+  {
+   "id": "ramdurg-nurse-compensation",
+   "date": "2026-11-26",
+   "kind": "Accountability",
+   "rights": [
+    "Detention",
+    "Due process"
+   ],
+   "place": "Ramdurg, Belagavi, Karnataka",
+   "fig": "₹1 lakh",
+   "figcap": "compensation ordered",
+   "headline": "Court orders ₹1 lakh for illegally held nurse",
+   "text": "Karnataka's High Court ruled police illegally held a nurse for over 72 hours to pressure his brother and ordered ₹1 lakh compensation. The SP apologised; a departmental inquiry is still open.",
+   "slide_head": "Nurse wins ₹1 lakh relief",
+   "slide": "Court: police held nurse 72 hours to pressure his brother",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/karnataka-high-court-directs-state-government-to-pay-1-lakh-compensation-to-government-hospital-staff-nurse-illegally-detained-by-police/article71747114.ece"
+    ],
+    [
+     "Deccan Herald",
+     "https://www.deccanherald.com/india/karnataka/karnataka-hc-fines-police-rs-1-lakh-for-illegally-detaining-hospital-nurse-4232779"
+    ]
+   ],
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ],
+   "edition": "2026-11-27#6"
+  },
+  {
+   "id": "siang-activists-bail",
+   "date": "2026-11-26",
+   "kind": "Releases",
+   "rights": [
+    "Detention",
+    "Assembly"
+   ],
+   "place": "Pasighat, Arunachal Pradesh",
+   "fig": "2",
+   "figcap": "activists bailed",
+   "headline": "Siang anti-dam activists granted bail",
+   "text": "A Pasighat judge bailed Ebo Mili and Otul Jerang after about a month in jail, finding at most a bailable 'mischief' case. The case against them continues.",
+   "slide_head": "Siang activists bailed",
+   "slide": "Judge finds at most a bailable case after a month in jail",
+   "src": [
+    [
+     "Indian Express",
+     "https://indianexpress.com/article/india/arunachal-pradesh-siang-upper-multipurpose-project-protest-activists-bail-10980277/"
+    ],
+    [
+     "The Arunachal Times",
+     "https://arunachaltimes.in/article/ebo-mili-and-otul-jerang-released-on-bail-in-sump-pasighat-case"
+    ]
+   ],
+   "link": [
+    "Siang Focus",
+    "focus/siang.html"
+   ],
+   "edition": "2026-11-27#4"
+  },
+  {
+   "id": "epenge-provisional-release",
+   "date": "2026-11-26",
+   "kind": "Courts",
+   "rights": [
+    "Detention",
+    "Expression"
+   ],
+   "place": "Kinshasa, DR Congo",
+   "fig": "~4 wks",
+   "figcap": "in detention",
+   "headline": "Congo court grants opponent provisional release",
+   "text": "A Kinshasa court granted provisional release to opposition spokesman Prince Epenge, held since 31 Oct for 'spreading false news'. Prosecutors had opposed it; his release awaits notification and the trial continues.",
+   "slide_head": "Provisional release, Congo",
+   "slide": "Provisional release for Prince Epenge; the trial continues",
+   "src": [
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/26/actualite/justice/liberte-provisoire-accordee-lopposant-prince-epenge-avocat"
+    ],
+    [
+     "MediaCongo (French)",
+     "https://www.mediacongo.net/article-actualite-169918_proces_prince_epenge_le_parquet_evoque_une_sollicitation_presumee_frauduleuse_d_un_medecin_et_s_oppose_a_sa_liberation.html"
     ]
    ]
   }
