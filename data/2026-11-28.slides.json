@@ -1,0 +1,26 @@
+{
+ "cover": [
+  ["East Darfur, Sudan", "Rights monitor reports 14 killed in raids"],
+  ["El Hierro, Spain", "Migrants found dead on boat"],
+  ["Bihar", "Mother of man killed by police begins fast"],
+  ["Madhya Pradesh", "Court acts on prisoner's missed cancer care"]
+ ],
+ "stories": [
+  {"n": 6, "label": "Sudan's war", "fig": "14", "figlab": "killed in three days, monitor says", "place": "East Darfur and West Kordofan",
+   "head": "Rights monitor reports 14 killed in raids",
+   "bullets": ["12 died in East Darfur villages, 2 in West Kordofan.", "The Sudan Human Rights Observatory blames RSF attacks.", "The RSF did not comment."],
+   "src": "A News (Anadolu)"},
+  {"n": 12, "label": "World · Life & safety", "fig": "8–14", "figlab": "found dead on one boat", "place": "South of El Hierro, Canary Islands",
+   "head": "Migrants found dead on boat off El Hierro",
+   "bullets": ["The boat left Gambia; about 90 people survived.", "Al Jazeera reports at least 8 dead; RTVC at least 14.", "Spain's minister cited the 'harshness of the Atlantic route'."],
+   "src": "Al Jazeera · RTVC"},
+  {"n": 3, "label": "India · Life & safety", "fig": "5", "figlab": "months since her son was killed", "place": "Bhojpur, Bihar",
+   "head": "Mother of man killed by police begins fast",
+   "bullets": ["Asha Devi's son died in a June police 'encounter'.", "She began a fast-unto-death on 27 Nov.", "Police say they fired in self-defence; a judicial inquiry was ordered."],
+   "src": "The Hindu · Prabhat Khabar"},
+  {"n": 4, "label": "Accountability Watch", "fig": "34", "figlab": "jail requests for an escort, unanswered", "place": "Gwalior, Madhya Pradesh",
+   "head": "Court rebukes police over prisoner's cancer care",
+   "bullets": ["A prisoner with cancer missed his AIIMS follow-up.", "The High Court said the police chief's conduct 'cannot be accepted'.", "Two officers were suspended; the DGP ordered an inquiry."],
+   "src": "LiveLaw · Aaj Tak"}
+ ]
+}
