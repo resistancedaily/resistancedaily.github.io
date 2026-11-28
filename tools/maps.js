@@ -62,6 +62,60 @@ function layout(pts, r, W, H) {
   return pts;
 }
 
+// ── callout style (Nov 2026, owner's choice): small dots at the exact places, never moved; each label is a number
+// chip + place name set just off the dot with a hairline, placed where it covers no dot and no other label. Stories in
+// the same place share one label ("6 7 Sudan"). opts.fs = label font size (larger on the world map, which is scaled down).
+function callouts(pts, W, H, fs) {
+  const cr = fs * 0.62, dotR = Math.max(4, fs * 0.3), ch = fs * 0.56;
+  // group same-label points that sit close together
+  const groups = [];
+  pts.forEach(p => {
+    const g = p.label && groups.find(g => g.label === p.label && g.pts.some(q => Math.hypot(q.x - p.x, q.y - p.y) < fs * 1.2));
+    if (g) g.pts.push(p); else groups.push({ label: p.label, sev: p.sev, pts: [p] });
+  });
+  groups.forEach(g => { g.x = g.pts.reduce((s, p) => s + p.x, 0) / g.pts.length; g.y = g.pts.reduce((s, p) => s + p.y, 0) / g.pts.length;
+    g.w = g.pts.length * (2 * cr + 3) + (g.label ? g.label.length * ch + 6 : 0) + 4; g.h = 2 * cr + 4; });
+  const dots = pts.map(p => [p.x - dotR - 3, p.y - dotR - 3, p.x + dotR + 3, p.y + dotR + 3]);
+  const ov = (a, b) => Math.max(0, Math.min(a[2], b[2]) - Math.max(a[0], b[0])) * Math.max(0, Math.min(a[3], b[3]) - Math.max(a[1], b[1]));
+  const placed = [];
+  const crowd = g => groups.filter(o => o !== g && Math.hypot(o.x - g.x, o.y - g.y) < fs * 8).length;
+  [...groups].sort((a, b) => crowd(b) - crowd(a)).forEach(g => {
+    let best = null;
+    for (const d of [6, 16, 30, 48, 70, 95]) {
+      for (const a of [0, 180, -35, 35, 145, -145, -70, 70, 110, -110, -90, 90]) {
+        const t = a * Math.PI / 180, cx = g.x + Math.cos(t) * (d + g.w / 2 * Math.abs(Math.cos(t)) + dotR), cy = g.y + Math.sin(t) * (d + g.h / 2 + dotR);
+        const b = [cx - g.w / 2, cy - g.h / 2, cx + g.w / 2, cy + g.h / 2];
+        let cost = dots.reduce((s, o) => s + ov(b, o), 0) * 3 + placed.reduce((s, o) => s + ov(b, o), 0) * 3;
+        if (b[0] < 2 || b[2] > W - 2 || b[1] < 2 || b[3] > H - 2) cost += 1e6;
+        cost += d * 0.5;
+        if (!best || cost < best.cost) best = { b, cost };
+      }
+      if (best && best.cost < 1e3 && best.cost <= d * 0.5 + 0.01) break;
+    }
+    g.box = best.b; placed.push(best.b);
+  });
+  const near = (b, x, y) => [Math.min(Math.max(x, b[0]), b[2]), Math.min(Math.max(y, b[1]), b[3])];
+  const lines = [], dotsSvg = [], labels = [];
+  groups.forEach(g => {
+    g.pts.forEach(p => {
+      const [nx, ny] = near(g.box, p.x, p.y);
+      if (Math.hypot(nx - p.x, ny - p.y) > dotR + 2) lines.push(`<line class="lead" x1="${p.x.toFixed(1)}" y1="${p.y.toFixed(1)}" x2="${nx.toFixed(1)}" y2="${ny.toFixed(1)}"/>`);
+      dotsSvg.push(`<circle class="dot ${p.sev}" cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="${dotR.toFixed(1)}"/>`);
+    });
+    const [x0, y0, x1, y1] = g.box, my = (y0 + y1) / 2;
+    let x = x0 + 2 + cr, chips = '';
+    g.pts.forEach(p => {
+      chips += `<a class="pinl" href="#i${p.n}" aria-label="${p.label || 'Story ' + p.n}"><circle class="chip ${p.sev}" cx="${x.toFixed(1)}" cy="${my.toFixed(1)}" r="${cr.toFixed(1)}"/><text class="cn" x="${x.toFixed(1)}" y="${(my + fs * 0.33).toFixed(1)}" text-anchor="middle" style="font-size:${(fs * 0.8).toFixed(1)}px">${p.n}</text></a>`;
+      x += 2 * cr + 3;
+    });
+    const tx = g.label ? `<a href="#i${g.pts[0].n}" tabindex="-1"><text class="pl" x="${(x - cr + 4).toFixed(1)}" y="${(my + fs * 0.35).toFixed(1)}" style="font-size:${fs}px">${g.label}</text></a>` : '';
+    labels.push(`<g class="callout"><rect class="lbg" x="${x0.toFixed(1)}" y="${y0.toFixed(1)}" width="${(x1 - x0).toFixed(1)}" height="${(y1 - y0).toFixed(1)}" rx="${((y1 - y0) / 2).toFixed(1)}"/>${chips}${tx}</g>`);
+  });
+  const all = [...placed, ...dots];
+  const bb = [Math.min(...all.map(b => b[0])), Math.min(...all.map(b => b[1])), Math.max(...all.map(b => b[2])), Math.max(...all.map(b => b[3]))].map(v => v.toFixed(0)).join(' ');
+  return { svg: `<g class="callouts">${lines.join('')}${dotsSvg.join('')}${labels.join('')}</g>`, bb };
+}
+
 function render(points, opts) {
   const W = opts.w, H = opts.h;
   const proj = d3.geoMercator();
@@ -78,6 +132,11 @@ function render(points, opts) {
   feats.forEach(f => { const g = f.geometry; if (!g) return; if (g.type === 'MultiPolygon') polys.push(...g.coordinates); else if (g.type === 'Polygon') polys.push(g.coordinates); });
   const keep = polys.filter(pc => { const b = path.bounds({type:'Polygon',coordinates:pc}); return b[1][0] > 0 && b[0][0] < W && b[1][1] > 0 && b[0][1] < H && (b[1][0]-b[0][0])*(b[1][1]-b[0][1]) > 4; });
   const land = path({type:'MultiPolygon',coordinates:keep});
+  if (opts.fs) {
+    const pp = points.map(p => { const [x, y] = proj([p.lon, p.lat]); return { ...p, x, y }; });
+    const co = callouts(pp, W, H, opts.fs);
+    return `<svg class="map map-co" data-bounds="${co.bb}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${opts.aria}"><path class="land" d="${land}"/>${co.svg}</svg>`;
+  }
   const r = opts.r;
   const laid = layout(points.map(p => { const [x, y] = proj([p.lon, p.lat]); return { ...p, x: x + (p.dx || 0), y: y + (p.dy || 0) }; }), r, W, H);
   const pins = laid
@@ -98,8 +157,9 @@ function render(points, opts) {
 // A point with an empty "n" draws a small dot instead of a numbered pin.
 const c = items.custom;
 const out = c ? { custom: render(c.points, { w: c.w || 860, h: c.h || 520, land: land50, minPad: 1, r: c.r || 9, box: c.box, aria: c.aria || 'Map' }) } : {
-  india: !(items.india || []).length ? '' : render(items.india, { w: 380, h: 340, land: land50, minPad: 3, r: 14, box: [68, 97, 8, 35], aria: 'Map of India with numbered locations' }),
-  world: !(items.world || []).length ? '' : render(items.world, { w: 860, h: 440, land: land110, minPad: 8, r: 16, aria: 'World map with numbered locations' }),
+  india: !(items.india || []).length ? '' : render(items.india, { w: 380, h: 340, land: land50, minPad: 3, r: 14, fs: 14, box: [68, 97, 8, 35], aria: 'Map of India with numbered locations' }),
+  world: !(items.world || []).length ? '' : render(items.world, { w: 860, h: 440, land: land110, minPad: 8, r: 16, fs: 18, aria: 'World map with numbered locations' }),
+  world_m: !(items.world || []).length ? '' : render(items.world, { w: 520, h: 440, land: land110, minPad: 8, r: 16, fs: 20, aria: 'World map with numbered locations' }),
 };
 process.stdout.write(JSON.stringify(out));
 

@@ -103,16 +103,11 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     if maps.get("india") or maps.get("world"):
         place_line = f"{len(items)} places · {n_in} in India, {n_w} worldwide"
         fix = lambda svg: svg.replace('href="#i', f'href="{sref}#i')
-        # Map key (Nov 2026): every number with its place, so a pin is never ambiguous when pins sit close together.
-        key = lambda reg: (f'<ol class="rd-mapkey" aria-label="Map key">' + "".join(
-            f'<li><a href="{sref}#i{i["n"]}"><b class="{"red" if i["sev"] == "orange" else ""}">{i["n"]}</b>{E(i.get("short", i["place"]))}</a></li>'
-            for i in sorted(items, key=lambda i: i["n"]) if (i["region"] == "india") == (reg == "india")) + '</ol>') if any(
-            (i["region"] == "india") == (reg == "india") for i in items) else ""
         # Owner's request (5 Nov 2026): the map is always open on the page, not behind a button.
         map_html = (f'<section class="rd-sec rd-mapsec" aria-label="Today on the map"><div class="rd-hd"><h2 class="rd-h">Today on the map</h2></div>'
                     f'<p class="rd-sub" style="margin:0">{place_line}. Tap a number to read that story.</p>'
                     f'<p class="rd-legend"><span><i class="lg lg-red"></i>Lives lost</span><span><i class="lg"></i>Other stories</span></p>'
-                    f'<div class="rd-mapd rd-mapin"><div class="rd-mapd-g"><div>{fix(maps.get("india", ""))}{key("india")}</div><div><div class="rd-mapw">{fix(zoom_world(maps.get("world", "")))}</div>{key("world")}</div></div></div></section>')
+                    f'<div class="rd-mapd rd-mapin"><div class="rd-mapd-g"><div>{fix(maps.get("india", ""))}</div><div><div class="rd-mapw">{world_maps(maps, fix)}</div></div></div></div></section>')
     two = map_html + upheld_html
 
     # All threads (key fact each) and past editions.
@@ -203,11 +198,18 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     return html_
 
 
+def world_maps(maps, fix):
+    """Callout maps (Nov 2026) come in a desktop and a phone version so labels read at the same size on both."""
+    if maps.get("world_m"):
+        return f'<div class="rd-map-desk">{fix(maps["world"])}</div><div class="rd-map-mob">{fix(maps["world_m"])}</div>'
+    return fix(zoom_world(maps.get("world", "")))
+
+
 def zoom_world(svg):
     """Crop the world map's viewBox to the area around today's pins, so pins and labels stay readable on a phone."""
     import re
     m = re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"', svg)
-    pts = [(float(x), float(y)) for x, y in re.findall(r'<circle cx="([\d.]+)" cy="([\d.]+)"', svg)]
+    pts = [(float(x), float(y)) for x, y in re.findall(r'<circle[^>]* cx="([\d.]+)" cy="([\d.]+)"', svg)]
     if not m or not pts:
         return svg
     W, H = float(m.group(1)), float(m.group(2))

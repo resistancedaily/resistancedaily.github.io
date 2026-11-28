@@ -453,3 +453,17 @@ a.rd-fol:hover { background: var(--color-neutral-300); }
 .rd-mapkey b.red { background: var(--color-accent); }
 
 .rd-mapd-g > div { min-width: 0; }
+
+/* Callout maps (Nov 2026): exact dots, labels as number chip + place on a soft pill, hairline to the dot. */
+.rd-mapd .map-co .lead { stroke: var(--color-neutral-700); stroke-width: 1.2; }
+.rd-mapd .map-co .dot { fill: var(--color-neutral-700); stroke: var(--color-neutral-100); stroke-width: 2; }
+.rd-mapd .map-co .dot.orange, .rd-mapd .map-co .dot.red { fill: var(--color-accent); }
+.rd-mapd .map-co .lbg { fill: var(--color-neutral-100); fill-opacity: .92; stroke: var(--color-neutral-400); stroke-width: 1; }
+.rd-mapd .map-co .chip { fill: var(--color-neutral-600); }
+.rd-mapd .map-co .chip.orange, .rd-mapd .map-co .chip.red { fill: var(--color-accent); }
+.rd-mapd .map-co text.cn { font-family: var(--font-body); font-weight: 700; fill: #fff; }
+.rd-mapd .map-co text.pl { font-family: var(--font-body); font-weight: 600; fill: var(--color-text); stroke: none; }
+.rd-mapd .map-co a:hover text.pl { text-decoration: underline; }
+
+.rd-map-mob { display: none; }
+@media (max-width: 720px) { .rd-map-desk { display: none; } .rd-map-mob { display: block; } }
