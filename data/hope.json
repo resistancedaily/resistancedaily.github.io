@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "items": [
   {
    "id": "sc-bonded-labour-aid",
@@ -1250,6 +1250,80 @@
     [
      "MediaCongo (French)",
      "https://www.mediacongo.net/article-actualite-169918_proces_prince_epenge_le_parquet_evoque_une_sollicitation_presumee_frauduleuse_d_un_medecin_et_s_oppose_a_sa_liberation.html"
+    ]
+   ]
+  },
+  {
+   "id": "gwalior-prisoner-escort",
+   "date": "2026-11-27",
+   "kind": "Accountability",
+   "rights": [
+    "Detention",
+    "Life & safety"
+   ],
+   "place": "Gwalior, Madhya Pradesh",
+   "fig": "2",
+   "figcap": "police suspended",
+   "headline": "Court acts on prisoner's missed cancer care",
+   "text": "After 34 unanswered jail requests for an escort to AIIMS, the High Court rebuked police over a prisoner's missed cancer care. Two officers were suspended; an inquiry is open.",
+   "slide_head": "Court acts for prisoner",
+   "slide": "Two police suspended over a prisoner's missed cancer care",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madhya-pradesh-high-court/madhya-pradesh-high-court-slams-gwalior-ssp-over-disregard-for-prisoners-fundamental-rights-560305"
+    ]
+   ],
+   "link": [
+    "Accountability Watch",
+    "accountability/"
+   ],
+   "edition": "2026-11-28#4"
+  },
+  {
+   "id": "hanumakonda-bonded-labour",
+   "date": "2026-11-27",
+   "kind": "Releases",
+   "rights": [
+    "Land & livelihood"
+   ],
+   "place": "Kamalapur, Hanumakonda, Telangana",
+   "fig": "25",
+   "figcap": "freed from bonded labour",
+   "headline": "25 tribal workers freed from bonded labour",
+   "text": "Officials rescued 25 Scheduled Tribe workers, including nine children, held in bonded labour for up to 14 years; the Collector issued 16 release certificates and ordered legal action.",
+   "slide_head": "25 freed from bondage",
+   "slide": "Tribal workers, nine of them children, held up to 14 years",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/telangana/25-workers-including-nine-children-rescued-from-bonded-labour-in-hanumakonda/article71751874.ece"
+    ]
+   ]
+  },
+  {
+   "id": "albanese-court-order",
+   "date": "2026-11-27",
+   "kind": "Courts",
+   "rights": [
+    "Expression",
+    "Due process"
+   ],
+   "place": "San José, Costa Rica",
+   "fig": "24 hrs",
+   "figcap": "for officials to explain",
+   "headline": "Court steps in for held UN rapporteur",
+   "text": "Costa Rica's Constitutional Court issued an interim order on Francesca Albanese's habeas corpus case and gave migration officials 24 hours to explain her refusal. A final ruling is pending.",
+   "slide_head": "Court steps in, Costa Rica",
+   "slide": "Officials get 24 hours to explain a UN expert's refusal",
+   "src": [
+    [
+     "ABC News (Australia)",
+     "https://www.abc.net.au/news/2026-11-28/francesca-albanese-detained-at-costa-rica-airport/107437818"
+    ],
+    [
+     "El Observador (Spanish)",
+     "https://observador.cr/oscar-arias-visito-a-francesca-albanese-relatora-pasara-segunda-noche-en-aeropuerto/"
     ]
    ]
   }

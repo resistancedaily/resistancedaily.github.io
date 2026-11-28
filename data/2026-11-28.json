@@ -1,0 +1,488 @@
+{
+ "date": "2026-11-28",
+ "date_long": "Sat 28 Nov 2026",
+ "date_short": "Sat 28 Nov",
+ "window": "Fri 09:00 → Sat 09:00 IST",
+ "acts": [
+  [
+   "Know your rights",
+   "If detained: ask why, tell family, get a lawyer · NALSA 15100"
+  ],
+  [
+   "Verify, then share",
+   "Check the date and the source first"
+  ],
+  [
+   "Report police abuse",
+   "Write to your State Human Rights Commission or NHRC (hrcnet.nic.in)"
+  ],
+  [
+   "Support aid",
+   "WFP · UNICEF · MSF"
+  ]
+ ],
+ "asof": "2026-11-28",
+ "items": [
+  {
+   "region": "india",
+   "place": "Freedom Park, Bengaluru, Karnataka",
+   "short": "Karnataka",
+   "thread": "asha-karnataka",
+   "rights": [
+    "Assembly",
+    "Land & livelihood"
+   ],
+   "sev": "grey",
+   "fig": "11",
+   "figcap": "Days",
+   "headline": "ASHAs reject CM's appeal, sit-in continues",
+   "text": "On day 11, ASHA workers said they will not leave Freedom Park until an official pay order is issued. The CM urged them to return to work: 'We will keep our word.'",
+   "src": [
+    [
+     "Punjab Kesari (IANS)",
+     "https://english.punjabkesari.com/india/karnataka-asha-workers-reject-cm-shivakumars-appeal-to-end-protest-insist-on-official-order-for-remuneration-hike"
+    ],
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/karnataka/nda-leaders-have-no-moral-right-to-speak-about-ashas-says-karnataka-cm-dk-shivakumar/article71751005.ece"
+    ]
+   ],
+   "local": [
+    [
+     "kn",
+     "Eesanje",
+     "https://eesanje.com/fresh-updates/karnataka-asha-workers-protest-challenge-government/"
+    ]
+   ],
+   "lon": 77.585,
+   "lat": 12.977,
+   "photo": {
+    "src": "images/2026-11-20/vidhana-soudha.webp",
+    "alt": "A large domed granite government building with columns and an Indian flag, behind a fenced lawn under a cloudy sky.",
+    "caption": "Vidhana Soudha, seat of Karnataka's government in Bengaluru, in 2019. File photo.",
+    "credit": "Moheen Reeyad / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Vidhana_Soudha,_front_(01).jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "resized"
+   },
+   "n": 1
+  },
+  {
+   "region": "india",
+   "place": "Geku and Komkar, Upper Siang, Arunachal Pradesh",
+   "short": "Arunachal",
+   "thread": "siang",
+   "focus": "siang",
+   "rights": [
+    "Land & livelihood",
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "6",
+   "figcap": "Districts marched",
+   "headline": "Siang villages boycott dam consultation meetings",
+   "text": "Geku and Komkar villagers declined officials' dam meetings; students marched in six districts on 27 Nov for arrested students' release. Officials say the meetings covered a survey and a development package.",
+   "src": [
+    [
+     "The Arunachal Times",
+     "https://arunachaltimes.in/article/fresh-effort-to-allay-public-fear-over-sump-meets-stiff-opposition"
+    ]
+   ],
+   "lon": 95.0,
+   "lat": 28.45,
+   "photo": {
+    "src": "images/focus/siang/siang-river-2019.webp",
+    "alt": "A wide, calm river between forested hills, with tall grass in the foreground.",
+    "caption": "The Siang river in Arunachal Pradesh, in 2019. File photo.",
+    "credit": "ঈশান জ্যোতি বৰা / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Siang_River_in_Arunachal_Pradesh.jpg",
+    "kind": "file",
+    "year": "2019",
+    "changes": "cropped"
+   },
+   "n": 2
+  },
+  {
+   "region": "india",
+   "place": "Bilauti, Shahpur, Bhojpur, Bihar",
+   "short": "Bihar",
+   "rights": [
+    "Life & safety",
+    "Due process"
+   ],
+   "sev": "orange",
+   "fig": "5",
+   "figcap": "Months waiting",
+   "headline": "Mother of man killed by police begins fast",
+   "text": "Asha Devi, whose son was killed in a June police 'encounter', began a fast-unto-death on 27 Nov, saying promised action never came. Police say they fired in self-defence; a judicial inquiry was ordered.",
+   "src": [
+    [
+     "The Hindu",
+     "https://www.thehindu.com/news/national/bihar/killed-bihar-youths-mother-sits-on-fast-unto-death-protest-mp-pappu-yadav-meets-her-demands-cbi-probe/article71750774.ece"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Prabhat Khabar",
+     "https://www.prabhatkhabar.com/state/bihar/arrah/bharat-tiwari-encounter-mother-asha-devi-hunger-strike"
+    ],
+    [
+     "hi",
+     "Patna Now",
+     "https://www.patnanow.com/awating-for-justice-after-5-month/"
+    ]
+   ],
+   "lon": 84.4,
+   "lat": 25.6,
+   "n": 3
+  },
+  {
+   "region": "india",
+   "place": "Madhya Pradesh High Court, Gwalior",
+   "short": "Madhya Pradesh",
+   "thread": "accountability",
+   "upheld": true,
+   "rights": [
+    "Detention",
+    "Life & safety",
+    "Accountability Watch"
+   ],
+   "sev": "grey",
+   "fig": "34",
+   "figcap": "Escort requests",
+   "headline": "Court rebukes police over prisoner's missed cancer care",
+   "text": "A prisoner with cancer missed his AIIMS follow-up as police sent no escort despite 34 jail requests, the High Court found. Two police officers were suspended; the DGP ordered an inquiry.",
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madhya-pradesh-high-court/madhya-pradesh-high-court-slams-gwalior-ssp-over-disregard-for-prisoners-fundamental-rights-560305"
+    ]
+   ],
+   "local": [
+    [
+     "hi",
+     "Aaj Tak",
+     "https://www.aajtak.in/madhya-pradesh/story/gwalior-ssp-faces-court-proceedings-after-police-fail-to-provide-security-for-cancer-patient-transfer-lcln-strc-2708083-2026-11-27"
+    ]
+   ],
+   "lon": 78.18,
+   "lat": 26.22,
+   "n": 4,
+   "map": {
+    "left": true
+   }
+  },
+  {
+   "region": "india",
+   "place": "Kolkata and districts, West Bengal",
+   "short": "West Bengal",
+   "rights": [
+    "Due process",
+    "Equality"
+   ],
+   "sev": "grey",
+   "fig": "1",
+   "figcap": "Rights forum",
+   "headline": "Forum urges deleted voters to refuse police checks",
+   "text": "A voting-rights forum urged people cut from Bengal's rolls not to give papers to police. The Election Commission says the checks are not at its behest; in most cases police showed no order.",
+   "src": [
+    [
+     "The Week",
+     "https://www.theweek.in/news/india/2026/11/27/west-bengal-who-authorised-police-to-verify-documents-of-deleted-voters-advocacy-group-urges-people-to-protest.html"
+    ]
+   ],
+   "lon": 88.36,
+   "lat": 22.57,
+   "n": 5
+  },
+  {
+   "region": "world",
+   "place": "Yassin, East Darfur, and West Kordofan, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "14",
+   "figcap": "Killed",
+   "headline": "Rights monitor reports 14 killed in village raids",
+   "text": "The Sudan Human Rights Observatory says RSF attacks over three days killed 14 people: 12 in East Darfur villages and 2 in West Kordofan. The RSF did not comment.",
+   "src": [
+    [
+     "A News (Anadolu)",
+     "https://www.anews.com.tr/world/2026/11/27/at-least-14-killed-in-rsf-attacks-on-east-darfur-west-kordofan-sudan-rights-group"
+    ]
+   ],
+   "lon": 25.4,
+   "lat": 12.0,
+   "n": 6,
+   "map": {
+    "dx": -10,
+    "left": true
+   }
+  },
+  {
+   "region": "world",
+   "place": "El Obeid, North Kordofan, and Damazin, Blue Nile, Sudan",
+   "short": "Sudan",
+   "thread": "sudan-war",
+   "rights": [
+    "Land & livelihood",
+    "Civilian harm"
+   ],
+   "sev": "grey",
+   "fig": "383,000+",
+   "figcap": "Fled Kordofan",
+   "headline": "383,000 fled Kordofan in a year, IOM says",
+   "text": "IOM says over 383,000 people fled Kordofan in a year, 15,000 this month. Stray bullets hit three people in a Damazin camp. No government response was reported.",
+   "src": [
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168893"
+    ],
+    [
+     "Radio Tamazuj",
+     "https://www.radiotamazuj.org/en/news/article/3-idps-injured-by-stray-bullets-in-damazins-camp"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "Al Jazeera Net",
+     "https://www.aljazeera.net/news/2026/11/27/%d9%81%d9%8a-%d8%a7%d9%84%d8%a3%d8%a8%d9%8a%d8%b6-%d9%88%d8%a7%d9%84%d8%af%d9%85%d8%a7%d8%b2%d9%8a%d9%86-%d8%b9%d8%b4%d8%b1%d8%a7%d8%aa-%d8%a2%d9%84%d8%a7%d9%81"
+    ]
+   ],
+   "lon": 30.22,
+   "lat": 13.18,
+   "photo": {
+    "src": "images/2026-11-16/el-obeid-road.webp",
+    "alt": "A wide road with street lights under a dark blue sky, a coach approaching and a man walking on the verge.",
+    "caption": "A main road in El Obeid, North Kordofan, in 2020. File photo of the city.",
+    "credit": "Matab Hamed / Wikimedia Commons",
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Transportation_in_Al-Ubayyid.jpg",
+    "kind": "file",
+    "year": "2020",
+    "changes": "resized"
+   },
+   "n": 7,
+   "map": {
+    "dx": 13,
+    "dy": 4,
+    "label": ""
+   }
+  },
+  {
+   "region": "world",
+   "place": "Jabalia, Rafah and Gaza City, Gaza",
+   "short": "Gaza",
+   "thread": "palestine",
+   "rights": [
+    "Life & safety",
+    "Civilian harm"
+   ],
+   "sev": "orange",
+   "fig": "4–8",
+   "figcap": "Killed",
+   "headline": "Israeli strikes kill at least four in Gaza",
+   "text": "Strikes on Jabalia, Rafah and Gaza City killed 4 (Al Jazeera) to 8 (WAFA) Palestinians on 27 Nov, counting bodies recovered in Rafah. No Israeli military statement was reported.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/27/israel-kills-four-in-gaza-as-hamas-chief-al-hayyas-son-survives-strike"
+    ],
+    [
+     "WAFA",
+     "https://english.wafa.ps/Pages/Details/177345"
+    ]
+   ],
+   "local": [
+    [
+     "ar",
+     "WAFA",
+     "https://www.wafa.ps/news/2026/11/27/انتهاكات-الاحتلال-8-شهداء-في-القطاع-وتواصل"
+    ]
+   ],
+   "lon": 34.48,
+   "lat": 31.53,
+   "photo": {
+    "src": "images/2026-11-15/jabalia.webp",
+    "alt": "Flattened concrete buildings and heaps of rubble under a blue sky, with damaged tower blocks behind.",
+    "caption": "Destroyed buildings in Jabaliya camp, northern Gaza, in October 2024. File photo.",
+    "credit": "Hussein Jaber / Wikimedia Commons",
+    "licence": "CC BY-SA 3.0 IGO",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+    "page": "https://commons.wikimedia.org/wiki/File:Destruction_caused_by_Israeli_bombing_of_Jabalia_camp,_Gaza_Strip.jpg",
+    "kind": "file",
+    "year": "2024",
+    "changes": "resized"
+   },
+   "n": 8
+  },
+  {
+   "region": "world",
+   "place": "Mwenga territory, South Kivu, DR Congo",
+   "short": "DR Congo",
+   "rights": [
+    "Land & livelihood",
+    "Civilian harm"
+   ],
+   "sev": "grey",
+   "fig": "14 Nov",
+   "figcap": "Blocked since",
+   "headline": "Rebels block main road, cutting Mwenga supplies",
+   "text": "Mwenga civil society says FRN rebels (formerly AFC/M23) have blocked the RN2 road since 14 Nov, cutting food supplies and market access. No response from the rebels or the army was reported.",
+   "src": [
+    [
+     "Radio Okapi (French)",
+     "https://www.radiookapi.net/2026/11/27/actualite/securite/les-rebelles-du-frn-bloquent-la-rn2-mwenga-la-societe-civile-exige-la"
+    ]
+   ],
+   "local": [
+    [
+     "fr",
+     "Radio Okapi",
+     "https://www.radiookapi.net/2026/11/27/actualite/securite/les-rebelles-du-frn-bloquent-la-rn2-mwenga-la-societe-civile-exige-la"
+    ]
+   ],
+   "lon": 28.43,
+   "lat": -3.03,
+   "n": 9
+  },
+  {
+   "region": "world",
+   "place": "Juan Santamaría airport, Alajuela, Costa Rica",
+   "short": "Costa Rica",
+   "rights": [
+    "Expression",
+    "Detention"
+   ],
+   "sev": "grey",
+   "fig": "2",
+   "figcap": "Nights held",
+   "headline": "UN rapporteur refused entry, held at airport",
+   "text": "Costa Rica refused entry to UN rapporteur Francesca Albanese, who spent two nights at the airport. Migration officials cite a 'national security risk' without evidence; the UN rights chief urged reversal.",
+   "src": [
+    [
+     "ABC News (Australia)",
+     "https://www.abc.net.au/news/2026-11-28/francesca-albanese-detained-at-costa-rica-airport/107437818"
+    ],
+    [
+     "UN News",
+     "https://news.un.org/en/story/2026/11/1168893"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "El Observador",
+     "https://observador.cr/oscar-arias-visito-a-francesca-albanese-relatora-pasara-segunda-noche-en-aeropuerto/"
+    ]
+   ],
+   "lon": -84.2,
+   "lat": 9.99,
+   "n": 10,
+   "map": {
+    "left": true,
+    "dx": -6
+   }
+  },
+  {
+   "region": "world",
+   "place": "Hato Rey, San Juan, Puerto Rico",
+   "short": "Puerto Rico",
+   "rights": [
+    "Assembly"
+   ],
+   "sev": "grey",
+   "fig": "8,000+",
+   "figcap": "Organisers' count",
+   "headline": "Thousands march over power costs in San Juan",
+   "text": "Organisers say over 8,000 marched over power rates and services and blocked a highway for an hour; no official count or arrests were reported. Officials said they respect the right to protest.",
+   "src": [
+    [
+     "El Nuevo Día (Spanish)",
+     "https://www.elnuevodia.com/noticias/locales/notas/manifestantes-llegan-desde-temprano-a-hato-rey-de-cara-al-dia-de-la-indignacion-nacional/"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "El Nuevo Día",
+     "https://www.elnuevodia.com/noticias/locales/notas/manifestantes-llegan-desde-temprano-a-hato-rey-de-cara-al-dia-de-la-indignacion-nacional/"
+    ]
+   ],
+   "lon": -66.06,
+   "lat": 18.42,
+   "n": 11,
+   "map": {
+    "label": ""
+   }
+  },
+  {
+   "region": "world",
+   "place": "South of El Hierro, Canary Islands, Spain",
+   "short": "Spain",
+   "rights": [
+    "Life & safety"
+   ],
+   "sev": "orange",
+   "fig": "8–14",
+   "figcap": "Dead",
+   "headline": "Migrants found dead on boat off El Hierro",
+   "text": "Between 8 and 14 people were found dead on a boat from Gambia south of El Hierro; about 90 survived. Spain's minister Ángel Víctor Torres cited the 'harshness of the Atlantic route'.",
+   "src": [
+    [
+     "Al Jazeera",
+     "https://www.aljazeera.com/news/2026/11/27/at-least-eight-found-dead-on-migrant-boat-off-spains-canary-islands"
+    ],
+    [
+     "RTVC (Spanish)",
+     "https://rtvc.es/llegada-migrantes-canarias-27-noviembre-2026/"
+    ]
+   ],
+   "local": [
+    [
+     "es",
+     "RTVC",
+     "https://rtvc.es/llegada-migrantes-canarias-27-noviembre-2026/"
+    ]
+   ],
+   "lon": -17.98,
+   "lat": 27.64,
+   "photo": {
+    "src": "images/2026-11-08/la-restinga.webp",
+    "alt": "A small harbour with a dark pebble beach, black lava rocks, sailing masts and a breakwater under a bright sky.",
+    "caption": "The fishing harbour at La Restinga, El Hierro, where most boats land, in 2005.",
+    "credit": "Mª. C. Mingorance Rodríguez / Wikimedia Commons",
+    "licence": "Public domain",
+    "licence_url": "https://commons.wikimedia.org/wiki/File:Puerto_de_La_Restinga.JPG",
+    "page": "https://commons.wikimedia.org/wiki/File:Puerto_de_La_Restinga.JPG",
+    "kind": "file",
+    "year": "2005",
+    "changes": "resized"
+   },
+   "n": 12
+  }
+ ],
+ "focus": [
+  {
+   "slug": "siang",
+   "kicker": "Focus · Siang",
+   "title": "The fight over the Siang dam",
+   "dek": "Geku and Komkar villagers boycotted officials' dam meetings; students marched in six districts on 27 Nov.",
+   "src": "images/focus/siang/siang-valley-2023.webp",
+   "alt": "A river valley between steep green hills, seen from a bridge.",
+   "photos": 4
+  }
+ ]
+}

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "figures": [
   {
    "fig": "170",
@@ -121,6 +121,14 @@
    "src": [
     "Scroll",
     "https://scroll.in/latest/1093320/scroll_in"
+   ]
+  },
+  "Madhya Pradesh": {
+   "cm": "Mohan Yadav",
+   "party": "BJP",
+   "src": [
+    "Indian Masterminds",
+    "https://indianmasterminds.com/news/mohan-yadav-surpasses-sunderlal-patwa-tenure-record-madhya-pradesh-250715/"
    ]
   }
  },
@@ -1150,6 +1158,52 @@
     ]
    ],
    "checked": "2026-11-27"
+  },
+  {
+   "id": "gwalior-prisoner-cancer-escort",
+   "kind": "Custody",
+   "state": "Madhya Pradesh",
+   "place": "Gwalior Central Jail and the High Court's Gwalior bench, Madhya Pradesh",
+   "date": "2026-11-26",
+   "power": "Police",
+   "head": "Prisoner with cancer denied escort to hospital",
+   "text": "A prisoner with cancer missed his AIIMS follow-up because police sent no escort despite 34 requests from the jail, the High Court found. The court said the district police chief's conduct 'cannot be accepted'.",
+   "official": "A reserve inspector and a constable were suspended; the DGP told the court a preliminary inquiry had been ordered.",
+   "steps": [
+    {
+     "step": "Court notice",
+     "status": "done",
+     "date": "2026-11-26",
+     "note": "High Court bench"
+    },
+    {
+     "step": "Officers suspended",
+     "status": "done",
+     "date": "2026-11-26",
+     "note": "reserve inspector and constable"
+    },
+    {
+     "step": "Inquiry",
+     "status": "done",
+     "date": "2026-11-27",
+     "note": "preliminary inquiry ordered by DGP"
+    },
+    {
+     "step": "Outcome",
+     "status": "open"
+    }
+   ],
+   "src": [
+    [
+     "LiveLaw",
+     "https://www.livelaw.in/high-court/madhya-pradesh-high-court/madhya-pradesh-high-court-slams-gwalior-ssp-over-disregard-for-prisoners-fundamental-rights-560305"
+    ],
+    [
+     "Aaj Tak (Hindi)",
+     "https://www.aajtak.in/madhya-pradesh/story/gwalior-ssp-faces-court-proceedings-after-police-fail-to-provide-security-for-cancer-patient-transfer-lcln-strc-2708083-2026-11-27"
+    ]
+   ],
+   "checked": "2026-11-28"
   }
  ]
 }

@@ -119,7 +119,10 @@ def link(t, prefix):
 
 
 def photo_of(t, ups):
-    """Latest update's photo, else the focus cover."""
+    """Latest update's photo, else the focus cover. Multi-case threads (a "page" and no focus, e.g. Accountability Watch)
+    use only the latest update's own photo: an older case's photo would show the wrong place."""
+    if t.get("page") and not t.get("focus"):
+        return ups[0].get("photo") if ups else None
     for u in ups:
         if u.get("photo"):
             return u["photo"]
