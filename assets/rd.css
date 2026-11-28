@@ -111,7 +111,10 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
 .rd-mapd { --land: var(--color-neutral-300); }
 .rd-mapd .land { fill: var(--color-neutral-400); }
 .rd-mapd .pin circle { stroke: var(--color-surface); stroke-width: 3; fill: var(--color-neutral-600); }
-.rd-mapd .pin.red circle { fill: var(--color-accent); }
+.rd-mapd .pin.red circle, .rd-mapd .pin.orange circle { fill: var(--color-accent); }
+.rd-mapd .pin .lead { stroke: var(--color-neutral-700); stroke-width: 1.5; }
+.rd-mapd .pin circle.anchor { fill: var(--color-neutral-800); stroke: var(--color-neutral-100); stroke-width: 1.5; }
+.rd-mapd .pin.orange circle.anchor, .rd-mapd .pin.red circle.anchor { fill: var(--color-accent-700); }
 .rd-mapd .pin text { font: 700 15px var(--font-body); fill: #fff; }
 .rd-mapd .pin text.pl { font: 600 15px var(--font-body); fill: var(--color-text); paint-order: stroke; stroke: var(--color-neutral-100); stroke-width: 4px; }
 .rd-mapd-x { float: right; }
@@ -356,8 +359,8 @@ dialog.rd-mapd::backdrop { background: color-mix(in srgb, #2e2b25 70%, transpare
 }
 @media (max-width: 720px) {
   /* world map: wider than the phone, swipe sideways, so pins and labels stay readable */
-  .rd-mapw { overflow-x: auto; border-radius: 20px; -webkit-overflow-scrolling: touch; }
-  .rd-mapw .map { min-width: 500px; }
+  /* world map fits the phone width (Nov 2026: swiping hid pins); the key under it names every number */
+  .rd-mapw { border-radius: 20px; }
 }
 .rd-legend { display: flex; flex-wrap: wrap; gap: 16px; margin: 0; font-size: 13.5px; color: var(--color-neutral-800); }
 .rd-legend span { display: inline-flex; align-items: center; gap: 7px; }
@@ -440,3 +443,13 @@ a.rd-fol:hover { background: var(--color-neutral-300); }
 .rd-pic .rd-info { line-height: 1.3; right: 10px; bottom: 10px; }
 .rd-pic .rd-info figcaption { width: 240px; }
 @media (max-width: 720px) { .rd-pics { grid-auto-columns: 72%; } .rd-pic img { height: 170px; } }
+
+/* Map key (Nov 2026): number + place under each map, so close pins are never ambiguous. */
+.rd-mapkey { list-style: none; margin: 10px 4px 2px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13.5px; }
+.rd-mapkey a { display: inline-flex; align-items: center; gap: 6px; color: var(--color-text); text-decoration: none; }
+.rd-mapkey a:hover { text-decoration: underline; }
+.rd-mapkey b { flex: none; width: 22px; height: 22px; border-radius: 50%; display: grid; place-items: center; font-size: 12px; font-weight: 700;
+  color: #fff; background: var(--color-neutral-600); }
+.rd-mapkey b.red { background: var(--color-accent); }
+
+.rd-mapd-g > div { min-width: 0; }

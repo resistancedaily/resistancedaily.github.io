@@ -47,8 +47,11 @@ Detention); never render red. Keep "sev" in the data: it still orders threads an
   upheld item in the visible threads when one exists in the window.
 - MAP: give every item "lon" and "lat" (the place in "place"; for a country-wide story, its capital or the main city
   named). publish.py builds data/DATE.items.json and data/DATE.maps.json itself (pins open from "Today on the map").
-  Pins in one city overlap: add "map": {"dx", "dy"} (about ±13), "label": "" on all but one, "left": true / "pos": "br"
-  to move a label. No national flags: several places we cover are disputed, and our maps show land only.
+  LAYOUT IS AUTOMATIC (owner's request, 28 Nov 2026): tools/maps.js pushes overlapping pins apart (a thin line runs
+  to a small dot on the true spot), puts each label where it covers nothing, drops a label only when no spot is clear,
+  and the home page shows a numbered key (number + place) under each map. Don't add nudges by default; check the map
+  in the screenshots and use "map": {"dx", "dy", "left": true, "pos": "br", "label": ""} only to fix something the
+  layout gets wrong. No national flags: several places we cover are disputed, and our maps show land only.
 - STILL WAITING (every Sunday): use data/cases.json. VERIFY every case: open each source and confirm it names the person
   and states the "since" date, the law or charge, and the current status; replace any source that doesn't, and give a
   case several sources as [name, url] pairs when one article doesn't cover every claim. Search for news from the past

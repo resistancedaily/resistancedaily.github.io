@@ -103,11 +103,16 @@ def build(date, out, prefix, canonical, kind="home", og_image=None, noindex=Fals
     if maps.get("india") or maps.get("world"):
         place_line = f"{len(items)} places · {n_in} in India, {n_w} worldwide"
         fix = lambda svg: svg.replace('href="#i', f'href="{sref}#i')
+        # Map key (Nov 2026): every number with its place, so a pin is never ambiguous when pins sit close together.
+        key = lambda reg: (f'<ol class="rd-mapkey" aria-label="Map key">' + "".join(
+            f'<li><a href="{sref}#i{i["n"]}"><b class="{"red" if i["sev"] == "orange" else ""}">{i["n"]}</b>{E(i.get("short", i["place"]))}</a></li>'
+            for i in sorted(items, key=lambda i: i["n"]) if (i["region"] == "india") == (reg == "india")) + '</ol>') if any(
+            (i["region"] == "india") == (reg == "india") for i in items) else ""
         # Owner's request (5 Nov 2026): the map is always open on the page, not behind a button.
         map_html = (f'<section class="rd-sec rd-mapsec" aria-label="Today on the map"><div class="rd-hd"><h2 class="rd-h">Today on the map</h2></div>'
                     f'<p class="rd-sub" style="margin:0">{place_line}. Tap a number to read that story.</p>'
                     f'<p class="rd-legend"><span><i class="lg lg-red"></i>Lives lost</span><span><i class="lg"></i>Other stories</span></p>'
-                    f'<div class="rd-mapd rd-mapin"><div class="rd-mapd-g"><div>{fix(maps.get("india", ""))}</div><div class="rd-mapw">{fix(zoom_world(maps.get("world", "")))}</div></div></div></section>')
+                    f'<div class="rd-mapd rd-mapin"><div class="rd-mapd-g"><div>{fix(maps.get("india", ""))}{key("india")}</div><div><div class="rd-mapw">{fix(zoom_world(maps.get("world", "")))}</div>{key("world")}</div></div></div></section>')
     two = map_html + upheld_html
 
     # All threads (key fact each) and past editions.
@@ -206,8 +211,13 @@ def zoom_world(svg):
     if not m or not pts:
         return svg
     W, H = float(m.group(1)), float(m.group(2))
-    x0, x1 = min(p[0] for p in pts) - 110, max(p[0] for p in pts) + 150   # room for labels on the right
-    y0, y1 = min(p[1] for p in pts) - 70, max(p[1] for p in pts) + 70
+    b = re.search(r'data-bounds="([\d.-]+) ([\d.-]+) ([\d.-]+) ([\d.-]+)"', svg)
+    if b:   # maps.js (Nov 2026) records the box around every pin and label it placed
+        x0, y0, x1, y1 = (float(v) for v in b.groups())
+        x0, x1, y0, y1 = x0 - 24, x1 + 24, y0 - 30, y1 + 30
+    else:
+        x0, x1 = min(p[0] for p in pts) - 110, max(p[0] for p in pts) + 150   # room for labels on the right
+        y0, y1 = min(p[1] for p in pts) - 70, max(p[1] for p in pts) + 70
     w = max(x1 - x0, 360); h = max(y1 - y0, w / 2.0)
     w = max(w, h * 1.6)
     cx, cy = (x0 + x1) / 2, (y0 + y1) / 2

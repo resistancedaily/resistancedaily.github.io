@@ -173,10 +173,7 @@
    ],
    "lon": 78.18,
    "lat": 26.22,
-   "n": 4,
-   "map": {
-    "left": true
-   }
+   "n": 4
   },
   {
    "region": "india",
@@ -223,11 +220,7 @@
    ],
    "lon": 25.4,
    "lat": 12.0,
-   "n": 6,
-   "map": {
-    "dx": -10,
-    "left": true
-   }
+   "n": 6
   },
   {
    "region": "world",
@@ -274,12 +267,7 @@
     "year": "2020",
     "changes": "resized"
    },
-   "n": 7,
-   "map": {
-    "dx": 13,
-    "dy": 4,
-    "label": ""
-   }
+   "n": 7
   },
   {
    "region": "world",
@@ -390,11 +378,7 @@
    ],
    "lon": -84.2,
    "lat": 9.99,
-   "n": 10,
-   "map": {
-    "left": true,
-    "dx": -6
-   }
+   "n": 10
   },
   {
    "region": "world",
@@ -423,10 +407,7 @@
    ],
    "lon": -66.06,
    "lat": 18.42,
-   "n": 11,
-   "map": {
-    "label": ""
-   }
+   "n": 11
   },
   {
    "region": "world",
